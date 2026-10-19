@@ -1,4 +1,5 @@
 {
+  "%d at a time, restocks slowly": "",
   "%d hunt is open at your skill: a recipe to find rather than buy.": "",
   "%d hunt open": "",
   "%d hunts are open at your skill: recipes to find rather than buy.": "",
@@ -101,7 +102,6 @@
   "rare": "",
   "recipe": "",
   "recipes": "",
-  "sells %d at a time, then waits to restock": "",
   "the next opens at": "",
   "too hard": "",
   "under 1% of the time": "",

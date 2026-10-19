@@ -1,4 +1,5 @@
 {
+  "%d at a time, restocks slowly": "%d à la fois, revient lentement",
   "%d hunt is open at your skill: a recipe to find rather than buy.": "%d chasse est ouverte à votre niveau : une recette à trouver plutôt qu'à acheter.",
   "%d hunt open": "%d chasse ouverte",
   "%d hunts are open at your skill: recipes to find rather than buy.": "%d chasses sont ouvertes à votre niveau : des recettes à trouver plutôt qu'à acheter.",
@@ -101,7 +102,6 @@
   "rare": "rare",
   "recipe": "recette",
   "recipes": "recettes",
-  "sells %d at a time, then waits to restock": "en vend %d à la fois, puis attend d'être réapprovisionné",
   "the next opens at": "la prochaine s'ouvre à",
   "too hard": "trop difficile",
   "under 1% of the time": "moins de 1 % du temps",

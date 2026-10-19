@@ -61,7 +61,7 @@ end
 -- A find's line: who, where, and what to know.
 local function stallCard(npc, stock)
   local at = ui.where(npc)
-  local bits = { L["sells %d at a time, then waits to restock"]:format(stock) }
+  local bits = { L["%d at a time, restocks slowly"]:format(stock) }
   if at ~= "" then table.insert(bits, 1, at) end
   page:card(ui.npcName(npc), table.concat(bits, "  -  "), ui.icon(KINDS.stall[2]))
 end

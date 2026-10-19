@@ -4,6 +4,7 @@ ns.translate({
   plural = "fr",
   words = {
     ["/mealbook opens the book."] = "/mealbook ouvre le livre.",
+    ["%d at a time, restocks slowly"] = "%d à la fois, revient lentement",
     ["%d hunt is open at your skill: a recipe to find rather than buy."] = "%d chasse est ouverte à votre niveau : une recette à trouver plutôt qu'à acheter.",
     ["%d hunt open"] = "%d chasse ouverte",
     ["%d hunts are open at your skill: recipes to find rather than buy."] = "%d chasses sont ouvertes à votre niveau : des recettes à trouver plutôt qu'à acheter.",
@@ -86,7 +87,6 @@ ns.translate({
     ["Recipes"] = "Recettes",
     ["Roasts and grills"] = "Rôtis et grillades",
     ["See the hunts"] = "Voir les chasses",
-    ["sells %d at a time, then waits to restock"] = "en vend %d à la fois, puis attend d'être réapprovisionné",
     ["Skill"] = "Compétence",
     ["Sold by %s"] = "Vendue par %s",
     ["Sold by %s, %s"] = "Vendue par %s, %s",

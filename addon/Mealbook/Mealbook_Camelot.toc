@@ -1,12 +1,14 @@
 ## Interface: 16001
 ## Title: Mealbook
 ## Notes: A chef's cookbook that fills in as you learn to cook, and the road to 300: what to cook next and how many.
+## Notes-frFR: Un livre de cuisine de chef qui se remplit à mesure que vous apprenez à cuisiner, et la route jusqu'à 300 : quoi cuisiner ensuite, et combien de fois.
 ## Category: Professions
 ## Author: salty-max
 ## Version: 0.1.0
 ## SavedVariablesPerCharacter: MealbookChar
 ## SavedVariables: MealbookSettings
 ## IconTexture: Interface\AddOns\Mealbook\Media\Logo
+## X-Website: https://github.com/salty-max/mealbook
 ## X-License: MIT
 
 # Each game loads its own TOC (_Vanilla: Classic Era, _Camelot: Forever), the

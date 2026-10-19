@@ -1,0 +1,63 @@
+# Mealbook: Cooking Guide & Cookbook
+
+<!-- Project description for curseforge.com and Wago (bun addon-kit/store.ts).
+The project's title on the stores: "Mealbook: Cooking Guide & Cookbook" (the
+addon's own name stays Mealbook). A draft, 19 October 2026: Mealbook is not
+released yet, read it again against what ships (the Hunts, the Milestones,
+the pantry) before the first release. -->
+
+<!-- Summary (the project's summary on CurseForge and Wago, and the TOCs' Notes):
+A chef's cookbook that fills in as you learn to cook, and the road to 300: what to cook next and how many. -->
+
+Mealbook is a cookbook that fills in as your character learns to cook, written by a real chef of Azeroth, and a guide that takes your cooking from where it is now to 300. Every recipe you learn gets its page, and the road tells you what to cook next, how many times, and what to buy on the way.
+
+For Classic Era (including Hardcore and Season of Discovery) and World of Warcraft: Forever, in one download.
+
+## The cookbook
+
+Your recipes sit in chapters: meat, fish, soups, baking, drinks, feasts and campfires. Each shows its colour for your skill right now, from orange to grey, so you can see at a glance what still teaches you something.
+
+A dish's page holds what it makes and how many, its ingredients as the game's own items with how many you carry, the skill where it turns yellow, green and grey, how you learned it, and how often you've cooked it.
+
+Above the facts, the chef has a word about the dish. Alliance cooks read **Kendor Kabonka**, Stormwind's master of cooking recipes, proud, exacting and rarely impressed. Horde cooks read **Eunice Burch**, who teaches in the Undercity's kitchens, cannot taste the food any more and cooks by smell and memory. Every dish has a page from each of them. `/mealbook chef` lets you read the other one.
+
+## The road to 300
+
+From your skill now to 300, Mealbook plans the road with the recipes you know:
+
+- at each step, the **surest recipe** you know, and among equals one your bags can already make,
+- **how many casts** each leg takes on average, by the game's own skill-up rule,
+- a **shopping list** for each leg, checked against your bags,
+- **where to train** when you reach your skill cap,
+- **what to learn next** when your recipes run out, from a trainer, a vendor or a quest.
+
+The road changes as you cook and learn. Open it with `/mealbook road`.
+
+## Compatibility
+
+One download covers Classic Era, Hardcore, Season of Discovery and World of Warcraft: Forever. Each game gets its own recipes: Forever's new dishes are in its book. Season of Discovery's own dishes are left out.
+
+The dishes, ingredients and places are the game's own, in your client's language. Mealbook's own words and the chefs' pages speak English and French. Other clients get English for those.
+
+## Commands
+
+- `/mealbook` opens the cookbook.
+- `/mealbook road` opens the road to 300.
+- `/mealbook chef` switches to the other chef's pages.
+
+## Other addons
+
+These share Mealbook's look and work independently:
+
+- **[Hearthtale](https://www.curseforge.com/wow/addons/hearthtale)** ([Wago](https://addons.wago.io/addons/E6gzPnN1)) writes a diary for your character as you play, with an epitaph when a Hardcore life ends.
+- **[Lorekeeper's Codex](https://www.curseforge.com/wow/addons/lorekeepers-codex)** ([Wago](https://addons.wago.io/addons/j6jAL0NR)) unlocks lore pages as you explore Azeroth and meet its people.
+- **[Yonder](https://www.curseforge.com/wow/addons/yonder)** ([Wago](https://addons.wago.io/addons/ZKbq5y61)) offers exploration riddles, rare hunts, a bestiary, an atlas and records of your fish and herbs.
+- **[Second Wind](https://www.curseforge.com/wow/addons/second-wind)** ([Wago](https://addons.wago.io/addons/XKqEjbKy)) gives you a debrief after a close call or death.
+
+## Support
+
+Mealbook is free and will stay free. If it's spared you a few stacks of wasted meat on the way to 300, you can support the addon with a coffee on [Ko-fi](https://ko-fi.com/salty_max). Thank you.
+
+## Source
+
+MIT licensed: [github.com/salty-max/mealbook](https://github.com/salty-max/mealbook). Recipes, their skill levels and sources come from the game's own tables, the CMaNGOS Classic database and Wowhead for Forever's newest. Thanks to their contributors. Not affiliated with Blizzard Entertainment.

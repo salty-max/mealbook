@@ -1,7 +1,7 @@
 /**
  * The addon's package: addon/Mealbook as it is, one zip for every game,
  * each game loading its own TOC (Mealbook_Vanilla.toc: Classic Era;
- * _TBC.toc: TBC Anniversary; _Camelot.toc: World of Warcraft: Forever). The
+ * _Camelot.toc: World of Warcraft: Forever). The
  * BigWigs packager makes the release's (.pkgmeta,
  * .github/workflows/release.yml); this one is for a test in the game before a
  * release, and checks the TOCs: the same header and files but for the interface

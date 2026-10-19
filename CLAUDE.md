@@ -89,6 +89,17 @@ the cookbook window's portrait. The mark is an open copper-bound cookbook
 with a wooden spoon and an ink drawing of a steaming pot, in the family's
 painted gold and navy style.
 
+Releases (prepared 19 October 2026, as Palaver's): `.pkgmeta` (the
+BigWigs packager: addon/Mealbook alone), `.github/workflows/release.yml` (a
+tag vX.Y.Z: the sims, the package checked to be the folder, then GitHub,
+CurseForge and Wago; HOLD_STORES=true holds the stores), `ci.yml` (every
+push: locales, lint, the three sims, the package; the recipes' and pages'
+checks need wow-data's databases, so the daily job runs them),
+`game-data.yml` (daily: recipes, pages, locales from wow-data's pins),
+`scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md`. The store page
+`addon/CURSEFORGE.md` (title "Mealbook: Cooking Guide & Cookbook", the
+summary the TOCs' Notes).
+
 ## Not yet
 
 - The Hunts tab (recipe drops and limited-stock vendors, named
@@ -98,7 +109,12 @@ painted gold and navy style.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it.
-- A GitHub repository, `.pkgmeta`, the release workflow, the store page.
+- The GitHub repository (salty-max/mealbook), the CurseForge and Wago
+  projects (their ids in the TOCs: X-Curse-Project-ID, X-Wago-ID; secrets
+  CURSEFORGE_TOKEN, WAGO_API_TOKEN and INBOX_EVENTS_TOKEN), batched with
+  Palaver's at the user's ask (19 October 2026); then Mealbook in Ravenpost's
+  inbox (`src/digest.ts`, `src/stats.ts`) and the siblings' store pages.
+  The store page is a draft: read it again against what ships.
 
 ## Commands
 
@@ -107,6 +123,7 @@ bun run check        # kit, recipes, languages, lint, the sim on three clients, 
 bun run package      # dist/Mealbook-<version>.zip for a test in the game
 bun run recipes      # the recipes again, after wow-data's databases change
 bun run kit:sync     # after a change to ../addon-kit/Kit.lua
+scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md   # tag, push; Actions publish
 bun run locales      # after a new L["..."] (then --keys for i18n/words.json)
 ```
 

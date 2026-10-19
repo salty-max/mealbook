@@ -109,8 +109,9 @@ summary the TOCs' Notes).
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it.
-- The CurseForge and Wago projects (their ids in the TOCs: X-Curse-Project-ID, X-Wago-ID; secrets
-  CURSEFORGE_TOKEN, WAGO_API_TOKEN and INBOX_EVENTS_TOKEN), batched with
+- The CurseForge and Wago projects (their ids in the TOCs:
+  X-Curse-Project-ID, X-Wago-ID; secrets CURSEFORGE_TOKEN, WAGO_API_TOKEN
+  and INBOX_EVENTS_TOKEN), batched with
   Palaver's at the user's ask (19 October 2026); then Mealbook in Ravenpost's
   inbox (`src/digest.ts`, `src/stats.ts`) and the siblings' store pages.
   The store page is a draft: read it again against what ships.

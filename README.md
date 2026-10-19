@@ -10,15 +10,18 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   learned it, how often you cooked it.
 - **The road:** from your skill now (or nothing) to 300, the surest recipe
   at each step, one you know or one to learn on the way, where to learn it,
-  how many casts it takes on average, what to buy or gather, and each rank
-  as it is really learned (a trainer, the Expert Cookbook, Artisan's quest).
+  how many casts it takes on average, what to buy or gather and where (the
+  nearest vendor of your side, the creatures that drop it, where it is
+  fished, the herb), and each rank as it is really learned (a trainer, the
+  Expert Cookbook, Artisan's quest).
 
 - **Hunts:** the recipes no trainer teaches and no shop keeps for long, a
   stall's limited stock, a creature's drop, a quest, each opening when your
   skill is ready for it: who has it, where, how often.
 
 - **The pantry:** an ingredient's tooltip names the dishes you know it
-  cooks into, and the book shows what your bags can cook right now.
+  cooks into (in the book, where it comes from too), and the book shows
+  what your bags can cook right now.
 - **Achievements:** the ranks, the recipes known, the dishes cooked, the
   first of each kind of dish, the hunts found.
 

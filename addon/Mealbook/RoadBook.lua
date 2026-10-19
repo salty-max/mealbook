@@ -295,10 +295,21 @@ local function showLeg(leg)
       function(tip)
         tip:AddLine(L["In your bags: %d"]:format(ui.have(item)), 1, 1, 1)
         if missing > 0 then tip:AddLine(L["Still to get: %d"]:format(missing), 1, 0.82, 0) end
+        ns.pantry.addSources(tip, item)
       end,
     })
   end
   page:items(items)
+  -- (where each comes from: the easiest way, the item's tooltip every way)
+  page:section(L["Where to get them"])
+  for _, it in ipairs(shopping) do
+    local item = it[1]
+    page:card(
+      K.itemName(item, ""),
+      ns.pantry.easiest(ns.pantry.sources(item)),
+      function(p) p.tex:SetTexture(K.itemIcon(item)) end
+    )
+  end
   page:section(L["Skill"])
   page:row(L["Colours"], ui.thresholds(d))
   page:chips({ { L["Open its recipe"], function() ns.openDish(leg.spell) end } })

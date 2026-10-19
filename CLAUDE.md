@@ -53,11 +53,35 @@ October 2026), not yet released: no store page.
   level and skill asked; one taught rank a cap, Forever's second chain of
   Cooking spells nothing teaches left out): Apprentice and Journeyman from
   the cooking trainers, Expert from the Expert Cookbook (Shandrina, Wulan),
-  Artisan from the quest Clamlette Surprise. A recipe item's `drops`: the likeliest droppers and their percent
-  (the best chance, then the most spawns; Forever's sources give none yet).
+  Artisan from the quest Clamlette Surprise. A recipe item's `drops`: the
+  likeliest droppers and their percent (the best chance, then the most
+  spawns; Forever's sources give none yet). `ingredients` (every reagent:
+  who sells it, any stock (four a side and continent, the capitals' first,
+  a zone each); the creatures that drop it (no one's people: a member of a
+  side by the template's group, the Warsong's scouts; one who talks
+  (`npc_flags`) and isn't hostile to every player, a quest giver the
+  Classic database gives clam meat, an innkeeper Questie says drops her
+  wares; friends with both; one hostile to a side only, Dalaran's in
+  Alterac, kept as that side's prey, the book hides it from the other; for
+  each side: placed ones, out of a battleground, ordinary ones, one no
+  source places, Alterac Valley's, a rare or a boss only where nothing else
+  carries it, half the best chance at least, two a continent and zone side,
+  eight at most); every zone it is fished in (a zone's fishing, its
+  reference template, a school's pools; Questie's Fishing Bobber,
+  `fishing`, where no zone is said: no source places the Greater Sagefish
+  Schools); a herb's Herbalism and the zones its nodes grow in (their loot
+  or a template it references); a container holding it one time in ten at
+  least by its own chance, a clam; the zones it is `picked` up in, a chest
+  of the world the same, a giant clam, a Warpwood Pod, a barrel of milk, not
+  a treasure chest's share of food) and `zones` (each one named there: its
+  continent, its side). A chance the Classic database gives as nought in a
+  group: that group's equal share of what its own chances leave (Elwynn's
+  fishing, the Brilliant Smallfish 59 in a hundred), the recipes' drops'
+  too. The sellers and droppers named in every language, Forever's nameless
+  traces left out.
   Also `i18n/names.json`, the game's names in every language, the client's:
   the cooking skill line's (Classic Era's skill list names a skill only by
-  its name), the chefs', and each game's npcs (complete in every language,
+  its name), Herbalism's, the chefs', and each game's npcs (complete in every language,
   the build refuses one missing) and quests (where the language has the
   title: none in Italian; a page names the giver instead), which
   `scripts/locales.ts` puts in each Text file (`ns.npcNames`,
@@ -112,7 +136,15 @@ October 2026), not yet released: no store page.
   each recipe learned, dish cooked, point or rank (`ns.progressed`, from
   Core), quietly at the login (`retro`); earned: the game's fanfare, a line
   in chat, the kit's banner among the game's alerts (a click opens it).
-- `Pantry.lua`: an ingredient's dishes (every dish's reagents, by item):
+- `Pantry.lua`: where an ingredient comes from, for the cook (`P.sources`:
+  the sellers of its side, the creatures it may hunt (none of its own
+  side's, half the likeliest's chance at least), the droppers and zones the
+  nearest first; one line, `P.easiest`: a seller, else where it is fished,
+  the herb's (Herbalism by its name in the client's, `ns.herbName`), the
+  nearest creature, a container or a chest of the world first where no
+  creature drops it one time in ten, else caught fishing, else sold only to
+  the other side; every way on a tooltip, `P.addSources`, the road's and the
+  dishes' ingredients). An ingredient's dishes (every dish's reagents, by item):
   on the item's tooltip, the known dishes it cooks into, each in its colour
   now, the surest first, three at most (Forever's tooltip processor, else
   the tooltips' OnTooltipSetItem; `/mealbook tooltips` turns it off,
@@ -132,15 +164,20 @@ October 2026), not yet released: no store page.
   either side: about 307 casts, 9 recipes to learn (Charred Wolf Meat to
   Baked Salmon).
 - `Book.lua`: the family's window and tabs in the kitchen's copper theme,
-  the parts every tab uses (`ns.ui`); `RecipesBook.lua` (the dishes known by
+  the parts every tab uses (`ns.ui`; the page again when the game tells an
+  item's name late, `GET_ITEM_INFO_RECEIVED`, only for one the book shows
+  and the game found); `RecipesBook.lua` (the dishes known by
   chapter, each in its colour now; a dish's page: its figures, ingredients
   and what it makes as the game's items, its colours, how it was learned;
   the chef's page above the facts); `RoadBook.lua` (the
   road's legs, the road as cards, where it stops; a leg's page: where to
-  learn its recipe, its casts and shopping list against the bags; a stop's
+  learn its recipe, its casts and shopping list against the bags, where to
+  get each ingredient as cards (`P.easiest`); a stop's
   page: how its rank is learned, the nearest trainers of the side (same
   zone, then the character's continent, a capital's first: `ui.byNearness`,
-  the data's `map` and `city`; the planner's lookups once a recipe a road), the
+  the data's `map` and `city`; zones the same way, the cook's side's or
+  neither's first, `ui.zonesByNearness`; either keeps the list's own order
+  between equals; the planner's lookups once a recipe a road), the
   cookbook and who sells it, the quest, and what it asks; no cooking yet:
   the road from 1, learning cooking first); `HuntsBook.lua`
   (the hunts open now, found of all, the next to open; a hunt's page: the
@@ -189,7 +226,11 @@ summary the TOCs' Notes).
   Palaver's) needs Ravenpost's list and a release too. German.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
-  sim models it.
+  sim models it, the "Where to get them" cards (measured with the game's
+  font against the card's 380 pixels, not seen).
+- The Greater Sagefish Schools' places: no source wow-data reads has them
+  (Questie's zone 0, no spawns), so Raw Greater Sagefish says only "caught
+  fishing". Wowhead's object pages would give them, through wow-data.
 - The first release: the projects are made (CurseForge 1754441, Wago
   YK9xja6L, their ids in the TOCs, the tokens set, the inbox counting
   them); then the siblings' "Other addons" lines. The store page is a

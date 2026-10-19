@@ -127,6 +127,40 @@ ns.onChange = function()
   end)
 end
 
+-- (an item's name the game tells late: the page again, its names in; only
+-- one the book shows, a dish, an ingredient, a recipe, a container, and one
+-- the game found: an item it never knows would ask again at each page)
+local shown
+local function bookItems()
+  if shown then return shown end
+  shown = {}
+  local D = ns.data
+  for _, d in pairs(D.recipes or {}) do
+    if d.item then shown[d.item] = true end
+    for i = 1, #(d.reagents or {}), 2 do
+      shown[d.reagents[i]] = true
+    end
+  end
+  for item in pairs(D.recipeItems or {}) do
+    shown[item] = true
+  end
+  for item, ing in pairs(D.ingredients or {}) do
+    shown[item] = true
+    for _, c in ipairs(ing.inside or {}) do
+      shown[c] = true
+    end
+  end
+  for _, r in pairs(D.ranks or {}) do
+    for _, i in ipairs(r.items or {}) do
+      shown[i] = true
+    end
+  end
+  return shown
+end
+ns.on("GET_ITEM_INFO_RECEIVED", function(item, success)
+  if success and bookItems()[item] and ns.onChange then ns.onChange() end
+end)
+
 -- ── the parts every tab is made of ───────────────────────────────────────────
 local function query() return strtrim((book.search:GetText() or ""):lower()) end
 local function day(stamp) return K.day(stamp and stamp.at) end
@@ -165,6 +199,23 @@ local function where(id)
   if n.x then return ("%s %d, %d"):format(zone, n.x, n.y) end
   return zone
 end
+-- A list sorted by a rank, the list's own order kept between equals.
+local function ranked(list, rank)
+  local out, at = {}, {}
+  for i, v in ipairs(list or {}) do
+    out[i], at[v] = v, i
+  end
+  local r = {}
+  for _, v in ipairs(out) do
+    r[v] = rank(v)
+  end
+  table.sort(out, function(a, b)
+    if r[a] ~= r[b] then return r[a] < r[b] end
+    return at[a] < at[b]
+  end)
+  return out
+end
+
 -- Several npcs, the nearest first: one in the zone the character stands in,
 -- then one on its continent (a capital's first), then a capital's, then the
 -- rest (the data's map: AreaTable's continent; the character's, the game's
@@ -172,24 +223,34 @@ end
 local function byNearness(ids)
   local here = GetRealZoneText and GetRealZoneText()
   local map = GetInstanceInfo and select(8, GetInstanceInfo())
-  local function rank(id)
+  return ranked(ids, function(id)
     local n = ns.data.npcs and ns.data.npcs[id] or {}
     if here and zoneName(n.area) == here then return 0 end
     if map and n.map == map then return n.city and 1 or 2 end
     return n.city and 3 or 4
-  end
-  local out = {}
-  for _, id in ipairs(ids or {}) do
-    table.insert(out, id)
-  end
-  table.sort(out, function(a, b)
-    local ra, rb = rank(a), rank(b)
-    if ra ~= rb then return ra < rb end
-    return a < b
   end)
-  return out
 end
 local function nearest(ids) return byNearness(ids)[1] end
+
+-- Zones the nearest first (an ingredient's, Recipes_<game>'s zones): the one
+-- the character stands in, then its continent's of its side or neither's,
+-- then its continent's, then its side's elsewhere, then the rest (one the
+-- data doesn't place last). `zoneOf` the zone of each, for a list of others.
+local function zonesByNearness(list, zoneOf)
+  local here = GetRealZoneText and GetRealZoneText()
+  local map = GetInstanceInfo and select(8, GetInstanceInfo())
+  local mine = ns.hunts and ns.hunts.mine()
+  return ranked(list, function(v)
+    local id = v
+    if zoneOf then id = zoneOf(v) end
+    local z = id and ns.data.zones and ns.data.zones[id]
+    if not z then return 5 end
+    if here and zoneName(id) == here then return 0 end
+    local ours = z.side == nil or z.side == mine
+    if map and z.map == map then return ours and 1 or 2 end
+    return ours and 3 or 4
+  end)
+end
 
 ns.ui = {
   T = T,
@@ -208,6 +269,7 @@ ns.ui = {
   where = where,
   nearest = nearest,
   byNearness = byNearness,
+  zonesByNearness = zonesByNearness,
   icon = K.icon,
   newList = K.list,
   newPage = function(parent, name) return K.page(parent, name, { labelWidth = 110, pairs = {} }) end,

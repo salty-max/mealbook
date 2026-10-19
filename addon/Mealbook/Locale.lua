@@ -26,12 +26,13 @@ ns.forever = build >= 16000 and build < 17000
 
 -- The game's own names in the reader's language (its Text file, from
 -- wow-data's databases): the cooking skill line's, as the client's skill
--- list writes it (Classic Era names a skill only by its name there), the
--- chefs', and this game's npcs and quests by id (who sells a recipe, drops
+-- list writes it (Classic Era names a skill only by its name there),
+-- Herbalism's (a herb's line), the chefs', and this game's npcs and quests by id (who sells a recipe, drops
 -- it, gives it). A quest the language has no title for has none: its page
 -- names its giver instead.
 function ns.names(t)
   ns.skillName = t.skillLine
+  ns.herbName = t.herbalism
   ns.chefNames = t.chefs or {}
   local game = ns.forever and "forever" or "classic"
   ns.npcNames = t.npcs and t.npcs[game] or {}

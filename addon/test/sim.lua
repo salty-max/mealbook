@@ -205,6 +205,95 @@ SlashCmdList.MEALBOOK("tooltips")
 local cookable = P.cookable(char.known, ns.skill(), function(i) return s.bags[i] or 0 end)
 check(#cookable > 0 and cookable[1][2] > 0, "what the bags can cook now, and how many times")
 
+-- where each ingredient comes from: every one of Classic Era's has a way
+-- (Forever's few of its own no source knows yet aside)
+local unsourced, seenItem = 0, {}
+for _, spell in ipairs(ns.data.order) do
+  local d = ns.data.recipes[spell]
+  for i = 1, #d.reagents, 2 do
+    local item = d.reagents[i]
+    if not seenItem[item] then
+      seenItem[item] = true
+      local src = P.sources(item)
+      if
+        not (src and (src.sellers[1] or src.drops[1] or src.fished[1] or src.fishing or src.herb or src.inside[1]))
+      then
+        unsourced = unsourced + 1
+      end
+    end
+  end
+end
+check(unsourced <= (G.FOREVER and 3 or 0), "every ingredient's source: a seller, a creature, a fishing zone, a herb")
+-- (a side's own people the other's prey, never its own cooks')
+local ownPrey = 0
+for _, side in ipairs({ "Alliance", "Horde" }) do
+  s.faction = side
+  for item in pairs(ns.data.ingredients) do
+    for _, d in ipairs(P.sources(item).drops) do
+      if ns.data.npcs[d[1]].side == side:sub(1, 1) then ownPrey = ownPrey + 1 end
+    end
+  end
+end
+s.faction = nil
+check(ownPrey == 0, "no creature of the cook's own side to hunt")
+local function has(list, v)
+  for _, x in ipairs(list or {}) do
+    if x == v or type(x) == "table" and x[1] == v then return true end
+  end
+end
+-- (the Classic database's nought in a group, its equal share: Elwynn's
+-- fishing gives the Brilliant Smallfish 59 in a hundred)
+check(has(ns.data.ingredients[6291].fished, 12), "a fish: where it is fished most, a group's share counted")
+s.zone, s.map = "Zone 141", 1 -- (Teldrassil)
+check(P.sources(6289).fished[1] == 141, "a fish: the cook's own zone first, every zone it is fished in kept") -- (Longjaw Mud Snapper)
+s.zone, s.map = nil, nil
+local inBattle = 0
+for _, ing in pairs(ns.data.ingredients) do
+  for i = 1, #(ing.drops or {}), 2 do
+    local m = ns.data.npcs[ing.drops[i]].map
+    if m == 30 or m == 489 or m == 529 then inBattle = inBattle + 1 end
+  end
+end
+check(inBattle == 0, "no creature of a battleground to hunt for a meal")
+check(
+  P.easiest(P.sources(18255)) == L["picked up in %s"]:format(ns.ui.zoneName(2557)),
+  "a chest of the world: Dire Maul's Warpwood Pods, before a 1% drop"
+) -- (Runn Tum Tuber)
+check(has(P.sources(20424).drops, 11741), "a hostile creature with a gossip, hunted all the same") -- (Sandworm Meat, the Dredge Crusher)
+if G.FOREVER then
+  check(P.sources(8838).herb == 230, "a herb whose nodes' loot a template references: Sungrass, Herbalism 230")
+end
+s.zone = "Zone 12" -- (Elwynn Forest)
+local wolf = P.sources(2672) -- (Stringy Wolf Meat)
+check(wolf.drops[1] and wolf.drops[1][2] > 50, "a meat: the likeliest creatures to drop it, and how often")
+check(ns.data.npcs[wolf.drops[1][1]].area == 12, "the creatures of the zone the cook stands in first")
+s.zone = nil
+local clam = P.sources(5503) -- (Clam Meat: in a Small Barnacled Clam)
+check(
+  P.easiest(clam) == L["found in %s"]:format(ns.kit.itemName(5523, "")),
+  "a clam's meat: the clam, before a crawler's few"
+)
+s.faction = "Horde"
+check(P.easiest(P.sources(2894)) == L["sold only to the other side"], "the other side's goods: said so") -- (Rhapsody Malt)
+s.faction = nil
+local spice = P.sources(2678) -- (Mild Spices, an Alliance cook)
+check(
+  spice.sellers[1] and ns.hunts.serves(ns.data.npcs[spice.sellers[1]].side, "A"),
+  "a spice: a seller of the cook's side"
+)
+check(P.easiest(spice):find(ns.ui.npcName(spice.sellers[1]), 1, true), "the easiest way, named")
+s.map = 0
+local fish = P.sources(6291) -- (Raw Brilliant Smallfish, on the Eastern Kingdoms)
+local z = ns.data.zones[fish.fished[1]]
+check(z.map == 0 and z.side ~= "H", "a fish: the zones it is fished in, the nearest of the cook's side first")
+s.map = nil
+GameTooltip.lines = {}
+P.addSources(GameTooltip, 2672)
+check(
+  GameTooltip.lines[1] and GameTooltip.lines[1]:find(L["Drops from %s"]:match("^(.-)%%s"), 1, true),
+  "an ingredient's tooltip: every way to it"
+)
+
 -- ── the hunts ────────────────────────────────────────────────────────────────
 local H, D = ns.hunts, ns.data
 check(H.mine() == "A", "the character's side: the Alliance")
@@ -339,5 +428,20 @@ ns.openRoad()
 fire("UNIT_SPELLCAST_SUCCEEDED", "player", "cast-4", 2540)
 G.advance(0.5)
 check(char.cooked[2540] == 1, "a dish cooked while the book is open")
+-- (an item's name told late: the page again, but only for one the book shows
+-- and the game found; one it never knows would ask again at every page)
+local redrawn, refresh = 0, ns.refresh
+ns.refresh = function(...)
+  redrawn = redrawn + 1
+  return refresh(...)
+end
+fire("GET_ITEM_INFO_RECEIVED", 239017, false)
+fire("GET_ITEM_INFO_RECEIVED", 6948, true) -- (a Hearthstone: not the book's)
+G.advance(0.5)
+check(redrawn == 0, "an item the game never finds, or not the book's: no page again")
+fire("GET_ITEM_INFO_RECEIVED", 2672, true)
+G.advance(0.5)
+check(redrawn == 1, "an ingredient's name in: the page again")
+ns.refresh = refresh
 
 io.write(("Mealbook: %d checks passed (%s, %s).\n"):format(count, G.LOCALE, G.FOREVER and "Forever" or "Classic Era"))

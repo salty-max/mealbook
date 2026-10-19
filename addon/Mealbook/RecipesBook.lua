@@ -131,7 +131,10 @@ local function showDish(spell)
       nil,
       false,
       n,
-      function(tip) tip:AddLine(L["In your bags: %d"]:format(ui.have(item)), 1, 1, 1) end,
+      function(tip)
+        tip:AddLine(L["In your bags: %d"]:format(ui.have(item)), 1, 1, 1)
+        ns.pantry.addSources(tip, item)
+      end,
     })
   end
   page:items(items)

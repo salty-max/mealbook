@@ -83,6 +83,26 @@ export type Npc = {
   rank?: number;
 };
 export type Quest = { id: number; giver?: number; side?: "A" | "H"; level?: number; min?: number; area?: number };
+// Where an ingredient comes from: who sells it (as many as a side needs to
+// find one near: the capitals first, then a zone each), the likeliest
+// creatures to drop it (npc, percent), the zones it is fished in (a zone's
+// fishing, a school's pools), the Herbalism a node of it asks and the zones
+// the nodes grow in, the containers it is found in (a clam), the zones it is
+// picked up in (a chest of the world: a giant clam, a pod).
+export type Ingredient = {
+  item: number;
+  sold: number[];
+  drops: [number, number][];
+  fished: number[];
+  fishing?: true; // (caught fishing, where no source says)
+  herb?: number;
+  herbZones: number[];
+  inside: number[];
+  picked: number[];
+};
+// A zone named by the ingredients: its continent and the side it belongs to.
+export type Zone = { id: number; map: number; side?: "A" | "H" };
+
 // A rank of the skill (its cap: 75 Apprentice, 150 Journeyman, 225 Expert,
 // 300 Artisan): its spell and what teaches it, trainers, a book and who
 // sells it, quests; the level and the skill it asks.
@@ -99,6 +119,26 @@ const chapters = (): Record<string, Chapter> => JSON.parse(readFileSync(join(ROO
 export function cookbook(game: Game) {
   const db = openDb(game);
   const all = <T>(sql: string, ...p: (number | string)[]) => db.query(sql).all(...p) as T[];
+  // (a loot row's chance as the game rolls it: the Classic database's nought
+  // in a group is an equal share of what the group's own chances leave, a
+  // fishing table's Brilliant Smallfish 59 in a hundred; a negative chance
+  // drops only on its quest, none)
+  const shares = new Map<string, number>();
+  const chanceOf = (l: { kind: string; source_id: number; chance: number | null; group_id: number | null; source: string }) => {
+    if (l.chance === null || l.chance < 0) return 0;
+    if (l.chance > 0 || !l.group_id || l.source !== "classicdb") return l.chance;
+    const key = `${l.kind}:${l.source_id}:${l.group_id}`;
+    if (!shares.has(key)) {
+      const g = all<{ s: number | null; z: number }>(
+        "SELECT sum(CASE WHEN chance > 0 THEN chance END) s, sum(chance = 0) z FROM loot WHERE kind = ? AND source_id = ? AND group_id = ? AND source = 'classicdb'",
+        l.kind,
+        l.source_id,
+        l.group_id,
+      )[0];
+      shares.set(key, g && g.z > 0 ? Math.max(0, 100 - (g.s ?? 0)) / g.z : 0);
+    }
+    return shares.get(key)!;
+  };
   // (how many it makes: Classic Era's client a base and a die, base + 1 to
   // base + sides; Forever's the number itself, EffectBasePointsF)
   const effectCols = new Set(all<{ name: string }>("PRAGMA table_info(client_SpellEffect)").map((c) => c.name));
@@ -129,8 +169,8 @@ export function cookbook(game: Game) {
   const rewards = all<{ quest_id: number; ref_id: number }>(`SELECT DISTINCT quest_id, ref_id FROM quest_reward WHERE kind IN ('item', 'choice') AND ref_id IN (${ids})`);
   // (the Classic database's loot: templates, read back to the creatures that
   // carry them; a reference template reached from many: a world drop)
-  const loot = all<{ kind: string; source_id: number; item_id: number; source: string; chance: number | null }>(
-    `SELECT kind, source_id, item_id, source, chance FROM loot WHERE item_id IN (${ids})`,
+  const loot = all<{ kind: string; source_id: number; item_id: number; source: string; chance: number | null; group_id: number | null }>(
+    `SELECT kind, source_id, item_id, source, chance, group_id FROM loot WHERE item_id IN (${ids})`,
   );
   const chance = new Map<string, number>(); // (item:npc, the best percent a source gives)
   const byTemplate = new Map<number, number[]>();
@@ -158,7 +198,8 @@ export function cookbook(game: Game) {
       for (const c of creatures) {
         if (!it.dropped.includes(c)) it.dropped.push(c);
         // (a negative chance drops only on its quest: no hunt)
-        if (l.chance !== null && l.chance > 0) chance.set(`${it.item}:${c}`, Math.max(chance.get(`${it.item}:${c}`) ?? 0, l.chance));
+        const p = chanceOf(l);
+        if (p > 0) chance.set(`${it.item}:${c}`, Math.max(chance.get(`${it.item}:${c}`) ?? 0, p));
       }
     } else it.world = true; // (an object's, a container's: found, not hunted)
   }
@@ -272,6 +313,167 @@ export function cookbook(game: Game) {
     if (twin && (!taught(ranks[i]) || (taught(twin) && ranks.indexOf(twin) < i))) ranks.splice(i, 1);
   }
 
+  // The ingredients' sources.
+  const ingredientIds = [...new Set(dishes.flatMap((d) => d.reagents.map(([i]) => i)))].sort((a, b) => a - b);
+  const zoneParent = new Map(
+    all<{ id: number; parent: number; map: number; mask: number }>("SELECT ID id, ParentAreaID parent, ContinentID map, FactionGroupMask mask FROM client_AreaTable").map((r) => [r.id, r]),
+  );
+  // (a subzone's zone: up its parents to the top)
+  const zoneOf = (area: number) => {
+    let a = area;
+    for (let i = 0; i < 5 && (zoneParent.get(a)?.parent ?? 0) > 0; i++) a = zoneParent.get(a)!.parent;
+    return zoneParent.has(a) ? a : undefined;
+  };
+  const objectsByTemplate = new Map<number, number[]>();
+  const objectType = new Map<number, number>();
+  for (const o of all<{ id: number; type: number | null; loot_id: number | null }>("SELECT id, type, loot_id FROM object")) {
+    if (o.type !== null) objectType.set(o.id, o.type);
+    if (o.loot_id) objectsByTemplate.set(o.loot_id, [...(objectsByTemplate.get(o.loot_id) ?? []), o.id]);
+  }
+  // (a battleground's, an arena's: a creature there no cook's road)
+  const pvpMaps = new Set(all<{ id: number }>("SELECT ID id FROM client_Map WHERE InstanceType IN (3, 4)").map((r) => r.id));
+  const herbNodes = new Map<number, number>();
+  const gatheredObjects = new Set<number>();
+  for (const g of all<{ id: number; skill_line_id: number; min_skill: number }>("SELECT object_id id, skill_line_id, min_skill FROM gathering_node")) {
+    gatheredObjects.add(g.id);
+    if (g.skill_line_id === 182) herbNodes.set(g.id, Math.min(herbNodes.get(g.id) ?? Infinity, g.min_skill));
+  }
+  const vendorCandidates = new Map<number, number[]>();
+  const ingredients: Ingredient[] = [];
+  const zoneIds = new Set<number>();
+  const ingredientDroppers: number[] = [];
+  for (const item of ingredientIds) {
+    const sold = all<{ npc: number }>("SELECT DISTINCT npc_id npc FROM vendor WHERE item_id = ? AND max_count IS NULL", item).map((r) => r.npc);
+    vendorCandidates.set(item, sold);
+    // (who sells it, any stock: Questie's drops name an innkeeper's wares)
+    const sells = new Set(all<{ npc: number }>("SELECT DISTINCT npc_id npc FROM vendor WHERE item_id = ?", item).map((r) => r.npc));
+    // (droppers: the Classic database's templates read back to their creatures,
+    // Questie's and Wowhead's creatures; the best chance each)
+    const best = new Map<number, number>();
+    for (const l of all<{ kind: string; source_id: number; chance: number | null; group_id: number | null; source: string }>(
+      "SELECT kind, source_id, chance, group_id, source FROM loot WHERE kind = 'creature' AND item_id = ? AND (chance IS NULL OR chance >= 0)",
+      item,
+    )) {
+      const creatures = l.source === "classicdb" || l.source === "players" ? (byTemplate.get(l.source_id) ?? []) : [l.source_id];
+      for (const c of creatures) if (!sells.has(c)) best.set(c, Math.max(best.get(c) ?? 0, chanceOf(l)));
+    }
+    // (fishing: a zone's table, or the template it references)
+    const fishedAreas = new Map<number, number>();
+    for (const f of all<{ area: number; kind: string; source_id: number; chance: number | null; group_id: number | null; source: string; rs: number | null; rc: number | null; rg: number | null }>(
+      `SELECT f.source_id area, f.kind, f.source_id, f.chance, f.group_id, f.source, r.source_id rs, r.chance rc, r.group_id rg
+       FROM loot f LEFT JOIN loot r ON r.kind = 'reference' AND r.source_id = f.ref_id AND r.item_id = ?
+       WHERE f.kind = 'fishing' AND (f.item_id = ? OR r.item_id IS NOT NULL)`,
+      item,
+      item,
+    )) {
+      const z = zoneOf(f.area);
+      const p = f.rs !== null ? (chanceOf(f) * chanceOf({ kind: "reference", source_id: f.rs, chance: f.rc, group_id: f.rg, source: f.source })) / 100 : chanceOf(f);
+      if (z !== undefined) fishedAreas.set(z, Math.max(fishedAreas.get(z) ?? 0, p));
+    }
+    // (the objects whose loot holds it, the likeliest chance each: a row of
+    // their own or of a template theirs references; the Classic database's
+    // by their template, Questie's and Wowhead's by the object; `own`, the
+    // chance a row gives it by name, not a share of a treasure's goods)
+    const holders = new Map<number, number>();
+    const own = new Map<number, number>();
+    const hold = (source: string, id: number, p: number, named: number) => {
+      for (const o of source === "classicdb" || source === "players" ? (objectsByTemplate.get(id) ?? []) : [id]) {
+        holders.set(o, Math.max(holders.get(o) ?? 0, p));
+        own.set(o, Math.max(own.get(o) ?? 0, named));
+      }
+    };
+    for (const l of all<{ kind: string; source_id: number; chance: number | null; group_id: number | null; source: string }>(
+      "SELECT kind, source_id, chance, group_id, source FROM loot WHERE kind = 'object' AND item_id = ? AND (chance IS NULL OR chance >= 0)",
+      item,
+    ))
+      hold(l.source, l.source_id, chanceOf(l), l.chance ?? 0);
+    for (const l of all<{ kind: string; source_id: number; chance: number | null; group_id: number | null; source: string; rs: number; rc: number | null; rg: number | null }>(
+      `SELECT p.kind, p.source_id, p.chance, p.group_id, p.source, r.source_id rs, r.chance rc, r.group_id rg FROM loot r
+       JOIN loot p ON p.kind = 'object' AND p.ref_id = r.source_id WHERE r.kind = 'reference' AND r.item_id = ? AND (r.chance IS NULL OR r.chance >= 0)`,
+      item,
+    ))
+      hold(
+        l.source,
+        l.source_id,
+        (chanceOf(l) * chanceOf({ kind: "reference", source_id: l.rs, chance: l.rc, group_id: l.rg, source: l.source })) / 100,
+        ((l.chance ?? 0) * (l.rc ?? 0)) / 100,
+      );
+    const zonesOf = (objects: number[], into: Map<number, number>) => {
+      if (objects.length)
+        for (const r of all<{ area: number; n: number }>(
+          `SELECT area_id area, count(*) n FROM spawn WHERE kind = 'object' AND area_id IS NOT NULL AND entity_id IN (${objects.join(",")}) GROUP BY area_id`,
+        )) {
+          const z = zoneOf(r.area);
+          if (z !== undefined) into.set(z, (into.get(z) ?? 0) + r.n);
+        }
+    };
+    // (a school's pools: objects of type 25, a fishing hole, where it is
+    // fished too; Questie's Fishing Bobber, 35591, holding it: caught
+    // fishing, no zone said)
+    const fishedObjects = [...holders.keys()].filter((o) => objectType.get(o) === 25 || o === 35591);
+    const schoolZones = new Map<number, number>();
+    zonesOf(
+      fishedObjects.filter((o) => objectType.get(o) === 25),
+      schoolZones,
+    );
+    for (const z of schoolZones.keys()) if (!fishedAreas.has(z)) fishedAreas.set(z, 0);
+    // (a container it is found in: a clam, the likeliest first; one in ten at
+    // least by its own chance, not a lockbox's odd herb or a share of its
+    // goods)
+    const insideAt = new Map<number, number>();
+    for (const l of all<{ source_id: number; chance: number }>("SELECT source_id, chance FROM loot WHERE kind = 'item' AND item_id = ? AND chance > 0", item))
+      insideAt.set(l.source_id, Math.max(insideAt.get(l.source_id) ?? 0, l.chance));
+    const inside = [...insideAt]
+      .filter(([, p]) => p >= 10)
+      .sort((a, b) => b[1] - a[1] || a[0] - b[0])
+      .slice(0, 2)
+      .map(([i]) => i);
+    // (herbs: the nodes whose loot holds it, their Herbalism, where they grow)
+    const nodes = [...holders].filter(([o, p]) => p > 0 && herbNodes.has(o)).map(([o]) => ({ id: o, skill: herbNodes.get(o)! }));
+    const herbCount = new Map<number, number>();
+    zonesOf(
+      nodes.map((n) => n.id),
+      herbCount,
+    );
+    // (picked up: a chest of the world, type 3, no skill's gathering node,
+    // holding it one time in ten at least by its own chance: a giant clam, a
+    // pod, not a treasure chest's share of food; where most of them stand)
+    const pickedCount = new Map<number, number>();
+    zonesOf(
+      [...own].filter(([o, p]) => p >= 10 && objectType.get(o) === 3 && !gatheredObjects.has(o)).map(([o]) => o),
+      pickedCount,
+    );
+    // (every zone, the likeliest first: the book shows the cook's nearest)
+    const fished = [...fishedAreas].sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([z]) => z);
+    const herbZones = [...herbCount].sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([z]) => z);
+    const picked = [...pickedCount].sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([z]) => z);
+    for (const z of [...fished, ...herbZones, ...picked]) zoneIds.add(z);
+    const drops = [...best].map(([c, p]) => [c, p] as [number, number]);
+    ingredientDroppers.push(...drops.map(([c]) => c));
+    ingredients.push({
+      item,
+      sold,
+      drops,
+      fished,
+      ...(nodes.length && { herb: Math.min(...nodes.map((n) => n.skill)) }),
+      herbZones,
+      inside,
+      picked,
+      ...(fishedObjects.length > 0 && fished.length === 0 && { fishing: true as const }),
+    });
+  }
+  // (an ingredient's sellers and droppers named in every language, else no
+  // help: Forever's new creatures some traces leave nameless)
+  const ingredientNpcs = [...new Set(ingredients.flatMap((i) => [...i.sold, ...i.drops.map(([c]) => c)]))];
+  const namedAll = new Set(
+    ingredientNpcs.length
+      ? all<{ id: number }>(
+          `SELECT id FROM name WHERE kind = 'creature' AND locale IN (${LOCALES.filter((l) => l !== "enGB").map((l) => `'${l}'`).join(",")})
+           AND id IN (${ingredientNpcs.join(",")}) GROUP BY id HAVING count(DISTINCT locale) = ${LOCALES.length - 1}`,
+        ).map((r) => r.id)
+      : [],
+  );
+
   // Who and where. Spawns: each creature's zone (where most of its spawns
   // are) and a spot there.
   // (a zone the client knows: an AreaTable id; Questie names some
@@ -327,7 +529,13 @@ export function cookbook(game: Game) {
     ))
       giverOf.set(r.quest_id, r.entity_id);
   const npcIds = [
-    ...new Set([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...giverOf.values(), ...ranks.flatMap((r) => [...r.trainers, ...r.sellers])]),
+    ...new Set([
+      ...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]),
+      ...giverOf.values(),
+      ...ranks.flatMap((r) => [...r.trainers, ...r.sellers]),
+      ...[...vendorCandidates.values()].flat(),
+      ...ingredientDroppers,
+    ]),
   ].sort((a, b) => a - b);
   const spawns = spawnsOf(npcIds);
   // (Questie's word for the sides a creature is friendly to, where wow-data
@@ -335,8 +543,9 @@ export function cookbook(game: Game) {
   const hasFriendly = all<{ name: string }>("PRAGMA table_info(creature)").some((c) => c.name === "friendly");
   const facts = new Map(
     (npcIds.length
-      ? all<{ id: number; min_level: number | null; max_level: number | null; rank: number | null; tmpl: number | null; eg: number | null; en: string | null; friendly: string | null }>(
+      ? all<{ id: number; min_level: number | null; max_level: number | null; rank: number | null; tmpl: number | null; eg: number | null; en: string | null; fg: number | null; fr: string | null; nf: number | null; g: number | null; friendly: string | null }>(
           `SELECT c.id, c.min_level, c.max_level, c.rank, t.ID tmpl, t.EnemyGroup eg, t.Enemies_0||','||t.Enemies_1||','||t.Enemies_2||','||t.Enemies_3 en,
+             c.npc_flags nf, t.FactionGroup g, t.FriendGroup fg, t.Friend_0||','||t.Friend_1||','||t.Friend_2||','||t.Friend_3||','||t.Friend_4||','||t.Friend_5||','||t.Friend_6||','||t.Friend_7 fr,
              ${hasFriendly ? "c.friendly" : "NULL"} friendly
            FROM creature c LEFT JOIN client_FactionTemplate t ON t.ID = c.faction_id WHERE c.id IN (${npcIds.join(",")})`,
         )
@@ -345,6 +554,14 @@ export function cookbook(game: Game) {
   );
   const continentOf = new Map(all<{ id: number; map: number }>("SELECT ID id, ContinentID map FROM client_AreaTable").map((r) => [r.id, r.map]));
   const npcs: Npc[] = [];
+  // (someone's people, no one's prey for a meal: a member of a side (the
+  // template's group: the Warsong's scouts, Theramore's guards), one who
+  // talks and isn't hostile to every player (a quest giver, a vendor: the
+  // Classic database gives the Barrens' quest givers clam meat; a Dredge
+  // Crusher's gossip no shield), friends with both; one only hostile to a
+  // side, Dalaran's in Alterac, that side's prey, the book's to sort;
+  // Questie's "friendly" means no more than not hostile, a boar's too)
+  const peaceful = new Set<number>();
   for (const id of npcIds) {
     const f = facts.get(id);
     const here = spawns.get(id) ?? [];
@@ -364,6 +581,8 @@ export function cookbook(game: Game) {
     // (no faction template and no source's word: whom it serves is unknown,
     // so no one is sent to it)
     const unknown = !f?.tmpl && !f?.friendly;
+    const friends = (f?.fr ?? "").split(",").map(Number);
+    if (((f?.g ?? 0) & 6) !== 0 || ((f?.nf ?? 0) !== 0 && ((f?.eg ?? 0) & 1) === 0) || ((f?.fg ?? 0) & 6) === 6 || (friends.includes(469) && friends.includes(67))) peaceful.add(id);
     npcs.push({
       id,
       ...(side && { side }),
@@ -405,6 +624,72 @@ export function cookbook(game: Game) {
     .sort((a, b) => a.id - b.id);
   db.close();
   // (the npcs something still names: a seller no one is sent to, gone)
+  // (an ingredient's sellers: those a side can be sent to, the capitals'
+  // first, then a zone each, four a side and continent; its droppers: the
+  // creatures, not someone's people, for each side those it may hunt (not
+  // its own side's): placed ones, out of a battleground, ordinary ones (one
+  // no source places, Alterac Valley's Frostwolves, a rare, a boss, only
+  // where nothing else carries it), half the best chance
+  // at least, the
+  // likeliest two a continent and its zones' side, eight at most, the best
+  // chance, then the most spawns; either named in every language, else no
+  // help: Forever's new creatures some traces leave nameless)
+  for (const ing of ingredients) {
+    ing.sold = ing.sold.filter((v) => namedAll.has(v));
+    ing.drops = ing.drops.filter(([c]) => namedAll.has(c) && !peaceful.has(c));
+    const picked: number[] = [];
+    const buckets = new Map<string, number[]>();
+    const sellers = ing.sold
+      .map((v) => npcOf.get(v))
+      .filter((n): n is Npc => !!n && !n.unknown && n.area !== undefined)
+      .sort((a, b) => Number(!!b.city) - Number(!!a.city) || a.id - b.id);
+    for (const n of sellers) {
+      const key = `${n.side ?? "-"}:${n.map ?? "-"}`;
+      const got = buckets.get(key) ?? [];
+      if (got.length >= 4 || got.some((o) => npcOf.get(o)?.area === n.area)) continue;
+      got.push(n.id);
+      buckets.set(key, got);
+      picked.push(n.id);
+    }
+    ing.sold = picked.sort((a, b) => a - b);
+    const spawnCount = (c: number) => spawns.get(c)?.length ?? 0;
+    const pick = (drops: [number, number][]) => {
+      const placed = drops.filter(([c]) => spawns.has(c));
+      if (placed.length) drops = placed;
+      const open = drops.filter(([c]) => !pvpMaps.has(npcOf.get(c)?.map ?? -1));
+      if (open.length) drops = open;
+      const ordinary = drops.filter(([c]) => (npcOf.get(c)?.rank ?? 0) <= 1);
+      if (ordinary.length) drops = ordinary;
+      const bestChance = Math.max(0, ...drops.map(([, p]) => p));
+      const perPlace = new Map<string, number>();
+      return drops
+        .filter(([, p]) => p >= bestChance / 2)
+        .sort((a, b) => b[1] - a[1] || spawnCount(b[0]) - spawnCount(a[0]) || a[0] - b[0])
+        .filter(([c]) => {
+          const n = npcOf.get(c);
+          const key = `${n?.map ?? "-"}:${(n?.area !== undefined && zoneParent.get(n.area)?.mask) || 0}`;
+          perPlace.set(key, (perPlace.get(key) ?? 0) + 1);
+          return perPlace.get(key)! <= 2;
+        })
+        .slice(0, 8);
+    };
+    const chosen = new Map<number, number>();
+    for (const side of ["A", "H"]) for (const [c, p] of pick(ing.drops.filter(([c]) => npcOf.get(c)?.side !== side))) chosen.set(c, p);
+    ing.drops = [...chosen]
+      .sort((a, b) => b[1] - a[1] || spawnCount(b[0]) - spawnCount(a[0]) || a[0] - b[0])
+      .map(([c, p]) => [c, Math.round(p * 10) / 10] as [number, number]);
+    // (a dropper's zone, for its side: the nearest of the cook's first)
+    for (const [c] of ing.drops) {
+      const a = npcOf.get(c)?.area;
+      if (a !== undefined && zoneParent.has(a)) zoneIds.add(a);
+    }
+  }
+  const zones: Zone[] = [...zoneIds]
+    .sort((a, b) => a - b)
+    .map((id) => {
+      const z = zoneParent.get(id)!;
+      return { id, map: z.map, ...(z.mask === 2 ? { side: "A" as const } : z.mask === 4 ? { side: "H" as const } : {}) };
+    });
   // (a rank's trainers and sellers no one can be sent to: gone too)
   for (const r of ranks) {
     r.trainers = r.trainers.filter((v) => !npcOf.get(v)?.unknown);
@@ -414,16 +699,17 @@ export function cookbook(game: Game) {
     ...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]),
     ...quests.flatMap((q) => (q.giver ? [q.giver] : [])),
     ...ranks.flatMap((r) => [...r.trainers, ...r.sellers]),
+    ...ingredients.flatMap((i) => [...i.sold, ...i.drops.map(([c]) => c)]),
   ]);
   // (the book's order: by the skill a dish is learned at, its yellow, its name)
   dishes.sort((a, b) => a.learn - b.learn || a.yellow - b.yellow || a.name.localeCompare(b.name));
-  return { dishes, items: kept, npcs: npcs.filter((n) => pointed.has(n.id)), quests, ranks, unchaptered };
+  return { dishes, items: kept, npcs: npcs.filter((n) => pointed.has(n.id)), quests, ranks, ingredients, zones, unchaptered };
 }
 
 const list = (xs: number[]) => `{ ${xs.join(", ")} }`;
 
 export function lua(game: Game): string {
-  const { dishes, items, npcs, quests, ranks } = cookbook(game);
+  const { dishes, items, npcs, quests, ranks, ingredients, zones } = cookbook(game);
   const out = [
     `-- Generated by scripts/recipes.ts from wow-data's ${game === "classic" ? "Classic Era" : "Forever"} database: edit the script or data/chapters.json, not this file.`,
     "-- recipes[spell]: what it makes (item, made = { least, most }), the skill it is",
@@ -437,6 +723,11 @@ export function lua(game: Game): string {
     "-- trainers: side (A, H: the faction it serves), area (its zone), map (its",
     "-- continent or instance), city (in a capital), x, y (a spot), lvl, rank.",
     "-- quests[id]: giver, side, level, min (the level it opens at), area.",
+    "-- ingredients[item]: who sells it (sold), the likeliest droppers (drops: npc,",
+    "-- percent...), the zones it is fished in (fished), the Herbalism its nodes",
+    "-- ask (herb) and the zones they grow in (herbZones), the containers it is",
+    "-- found in (inside), the zones it is picked up in (picked: a chest of the world).",
+    "-- zones[id]: an ingredient's zone: its continent (map), its side.",
     "-- ranks[cap]: the skill's rank that opens up to cap: its spell, who teaches",
     "-- it (trainers), the book (items) and who sells it (sellers), the quests;",
     "-- the level and the skill it asks.",
@@ -490,6 +781,21 @@ export function lua(game: Game): string {
     if (n.rank) parts.push(`rank = ${n.rank}`);
     out.push(`    [${n.id}] = { ${parts.join(", ")} },`);
   }
+  out.push("  },", "  ingredients = {");
+  for (const ing of ingredients) {
+    const parts: string[] = [];
+    if (ing.sold.length) parts.push(`sold = ${list(ing.sold)}`);
+    if (ing.drops.length) parts.push(`drops = ${list(ing.drops.flat())}`);
+    if (ing.fished.length) parts.push(`fished = ${list(ing.fished)}`);
+    if (ing.fishing) parts.push("fishing = true");
+    if (ing.herb !== undefined) parts.push(`herb = ${ing.herb}`);
+    if (ing.herbZones.length) parts.push(`herbZones = ${list(ing.herbZones)}`);
+    if (ing.inside.length) parts.push(`inside = ${list(ing.inside)}`);
+    if (ing.picked.length) parts.push(`picked = ${list(ing.picked)}`);
+    out.push(`    [${ing.item}] = { ${parts.join(", ")} },`);
+  }
+  out.push("  },", "  zones = {");
+  for (const z of zones) out.push(`    [${z.id}] = { map = ${z.map}${z.side ? `, side = "${z.side}"` : ""} },`);
   out.push("  },", "  ranks = {");
   for (const r of ranks) {
     const parts = [`spell = ${r.spell}`];
@@ -522,12 +828,13 @@ function chunk(xs: number[], n = 10): number[][] {
 
 // The game's own names in every language the game has, the client's: the
 // cooking skill line's (Classic Era's skill list names a skill only by its
-// name), the chefs' (their creatures'), for scripts/locales.ts to put in each
-// language's Text file.
+// name), Herbalism's (a herb's line), the chefs' (their creatures'), for
+// scripts/locales.ts to put in each language's Text file.
 const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
 export const CHEF_NPCS = { kendor: 340, eunice: 4552 };
 export type Names = {
   skillLine: string;
+  herbalism: string;
   kendor: string;
   eunice: string;
   // (each game's: the npcs and quests its Recipes file names, by id; a
@@ -552,6 +859,7 @@ export function gameNames(): Record<string, Names> {
   const named = (kind: string, id: number) =>
     Object.fromEntries((db.query("SELECT locale, name FROM name WHERE kind = ? AND id = ?").all(kind, id) as { locale: string; name: string }[]).map((r) => [r.locale, r.name]));
   const skill = named("skill_line", COOKING);
+  const herbalism = named("skill_line", 182);
   const chefs = Object.fromEntries(Object.entries(CHEF_NPCS).map(([chef, npc]) => [chef, named("creature", npc)]));
   db.close();
   const per: Record<Game, { npcs: Map<string, Record<string, string>>; quests: Map<string, Record<string, string>>; npcIds: number[] }> = {} as never;
@@ -565,8 +873,8 @@ export function gameNames(): Record<string, Names> {
   for (const l of LOCALES) {
     const own = l === "enGB" ? "enUS" : l;
     const from = (by: Record<string, string>) => by[own];
-    const entry: Names = { skillLine: from(skill)!, kendor: from(chefs.kendor)!, eunice: from(chefs.eunice)!, npcs: { classic: {}, forever: {} }, quests: { classic: {}, forever: {} } };
-    for (const k of ["skillLine", "kendor", "eunice"] as const) if (!entry[k]) throw new Error(`no ${k} name in ${l}`);
+    const entry: Names = { skillLine: from(skill)!, herbalism: from(herbalism)!, kendor: from(chefs.kendor)!, eunice: from(chefs.eunice)!, npcs: { classic: {}, forever: {} }, quests: { classic: {}, forever: {} } };
+    for (const k of ["skillLine", "herbalism", "kendor", "eunice"] as const) if (!entry[k]) throw new Error(`no ${k} name in ${l}`);
     for (const game of ["classic", "forever"] as Game[]) {
       const npcs = per[game].npcs.get(own) ?? {};
       const missing = per[game].npcIds.filter((id) => !npcs[id]);

@@ -52,11 +52,11 @@ const json = (file: string) => (existsSync(file) ? JSON.parse(readFileSync(file,
 const blanks = (s: string) => [...s.matchAll(/%%|%[0-9.]*[sdf]/g)].map((m) => m[0]).filter((b) => b !== "%%");
 
 // The game's own names a language's file carries, every language's whole
-// (English one of them): the cooking skill line's and the chefs'
-// (i18n/names.json, written by scripts/recipes.ts from the client's data).
+// (English one of them): the cooking skill line's, Herbalism's and the
+// chefs' (i18n/names.json, written by scripts/recipes.ts from the client's data).
 function namesLua(locale: string): string[] {
   type ByGame = Record<string, Record<string, string>>;
-  const names: Record<string, { skillLine: string; kendor: string; eunice: string; npcs: ByGame; quests: ByGame }> = json(join(I18N, "names.json"));
+  const names: Record<string, { skillLine: string; herbalism: string; kendor: string; eunice: string; npcs: ByGame; quests: ByGame }> = json(join(I18N, "names.json"));
   const mine = names[locale];
   if (!mine) throw new Error(`i18n/names.json names nothing in ${locale}: bun scripts/recipes.ts`);
   // (each game's npcs and quests by id: Recipes_<game>.lua's)
@@ -74,6 +74,7 @@ function namesLua(locale: string): string[] {
   return [
     "ns.names({",
     `  skillLine = ${q(mine.skillLine)},`,
+    `  herbalism = ${q(mine.herbalism)},`,
     `  chefs = { kendor = ${q(mine.kendor)}, eunice = ${q(mine.eunice)} },`,
     ...byGame("npcs", mine.npcs),
     ...byGame("quests", mine.quests),

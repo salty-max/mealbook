@@ -29,13 +29,13 @@ From your skill now to 300, even from nothing, Mealbook plans the whole road:
 - **how many casts** each leg takes on average, by the game's own skill-up rule,
 - **where to learn** each new recipe, the trainer or the vendor and where they stand,
 - **each rank** as it really works: Journeyman from a cooking trainer, Expert from the Expert Cookbook and who sells it, Artisan from its quest, with the level and skill each asks,
-- a **shopping list** for each leg, checked against your bags.
+- a **shopping list** for each leg, checked against your bags, and **where to get** each ingredient: the nearest vendor of your side, the creatures that drop it and how often, where it's fished, the herb and the Herbalism it asks.
 
 The road changes as you cook and learn. Open it with `/mealbook road`.
 
 ## The pantry
 
-Hover an ingredient and its tooltip names the dishes you know it cooks into, each in its colour for your skill. The book's front page shows what your bags can cook right now, and how many times.
+Hover an ingredient and its tooltip names the dishes you know it cooks into, each in its colour for your skill. In the book, it also tells where the ingredient comes from. The book's front page shows what your bags can cook right now, and how many times.
 
 ## Hunts
 

@@ -110,11 +110,16 @@ check(trained, "at 75, a stop to train Journeyman")
 check(legs.stuck == 85, "where every recipe known is grey, the road stops")
 local first = legs[1]
 check(math.abs(first.casts - (first.to - first.from)) < 1e-9 or first.to > 45, "orange points: a cast each")
-local worth = R.worth(known, 85, 5)
-check(#worth > 0, "the recipes worth learning where it stops")
-for _, spell in ipairs(worth) do
-  check(R.chance(ns.recipe(spell), 85) > 0 and not known[spell], "each still raises the skill there, and is new")
-end
+-- (and with what can be learned on the way, it goes on: the next recipe one
+-- the character doesn't know, learned at its leg)
+local on = R.plan(known, 85, 150, nil, 300, function(spell)
+  local src = ns.hunts.sources(spell, "A")
+  return (src.skill or src.trainer or src.shop[1]) and { trainer = true } or nil
+end)
+check(
+  not on.stuck and on[1].learn and not known[on[1].spell],
+  "where the recipes known stop, the road learns one and goes on"
+)
 -- (the bags: a recipe cooked from what is carried preferred, at the same chance)
 s.bags = { [2672] = 10 } -- Stringy Wolf Meat
 local egg = ns.recipe(8604)
@@ -235,18 +240,19 @@ local forA, wrongA = hunts("A")
 local forH, wrongH = hunts("H")
 check(#forA > 0 and #forH > 0, "hunts for each side")
 check(wrongA == 0 and wrongH == 0, "a hunt: no shop for its side, a find of its side")
--- the road's recipes worth learning: only from the shop of the cook's side
-local shopWrong = 0
-for _, side in ipairs({ "A", "H" }) do
-  for _, spell in ipairs(R.worth({}, 300, nil, side)) do
-    local s = H.sources(spell, side)
-    if not (s.skill or s.trainer or #s.shop > 0) then shopWrong = shopWrong + 1 end
-    for _, v in ipairs(s.shop) do
-      if D.npcs[v].side and D.npcs[v].side ~= side then shopWrong = shopWrong + 1 end
-    end
-  end
+-- the nearest of several: on the character's continent, a capital's first
+-- (a Horde cook on Kalimdor: Orgrimmar's trainer before Grom'gol's)
+s.map = 1
+local trainers = {}
+for _, id in ipairs(D.ranks[150].trainers) do
+  if D.npcs[id].side ~= "A" then table.insert(trainers, id) end
 end
-check(shopWrong == 0, "the road sends no one to a stall of the other side, nor after a hunt")
+local near = ns.ui.byNearness(trainers)
+check(
+  D.npcs[near[1]].map == 1 and D.npcs[near[1]].city,
+  "the nearest trainer: a capital's, on the character's continent"
+)
+s.map = nil
 local open0, next0 = H.list({}, 1, "A")
 check(#open0 == 0 and next0 and next0 > 1, "at cooking 1 no hunt is open, the next said")
 local open300, next300, found, total = H.list({}, 300, "A")

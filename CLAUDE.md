@@ -127,9 +127,8 @@ October 2026), not yet released: no store page.
   those to learn a trainer's, then the one orange the longest; a leg per
   recipe, `learn` where it is learned at its start, its casts the sum of one
   over the chance; a stop at each cap with the rank's sources, `D.ranks`;
-  where nothing known or learnable goes on, `stuck`), a leg's shopping
-  list, the recipes worth learning where it stops (the shop's of the side;
-  the rest are hunts, a line pointing there). The whole road from 1, for
+  where nothing known or learnable goes on, `stuck`: only the hunts go on,
+  a line pointing there), a leg's shopping list. The whole road from 1, for
   either side: about 307 casts, 9 recipes to learn (Charred Wolf Meat to
   Baked Salmon).
 - `Book.lua`: the family's window and tabs in the kitchen's copper theme,
@@ -139,7 +138,9 @@ October 2026), not yet released: no store page.
   the chef's page above the facts); `RoadBook.lua` (the
   road's legs, the road as cards, where it stops; a leg's page: where to
   learn its recipe, its casts and shopping list against the bags; a stop's
-  page: how its rank is learned, the nearest trainers of the side, the
+  page: how its rank is learned, the nearest trainers of the side (same
+  zone, then the character's continent, a capital's first: `ui.byNearness`,
+  the data's `map` and `city`; the planner's lookups once a recipe a road), the
   cookbook and who sells it, the quest, and what it asks; no cooking yet:
   the road from 1, learning cooking first); `HuntsBook.lua`
   (the hunts open now, found of all, the next to open; a hunt's page: the

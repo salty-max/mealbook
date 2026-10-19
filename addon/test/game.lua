@@ -331,6 +331,8 @@ function GetCursorPosition() return 300, 300 end
 C_Map = C_Map or {}
 function C_Map.GetAreaInfo(id) return id and ("Zone " .. id) or nil end
 function GetRealZoneText() return state.zone or "Zone 1" end
+-- (the instance map the character is on: 0 the Eastern Kingdoms, 1 Kalimdor)
+function GetInstanceInfo() return "World", "none", 0, "", 5, 0, false, state.map or 0 end
 
 -- ── cooking ──────────────────────────────────────────────────────────────────
 -- state.skill: { rank, max } (nil: no cooking); state.known[spell]: the

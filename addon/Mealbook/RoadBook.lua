@@ -1,6 +1,7 @@
 -- The road tab: from the skill now to 300 (Road.lua), its legs on the left
 -- (a recipe from one skill to another, one to learn first, a stop to train),
--- the road on the page (each leg as a card, where it stops), and a leg's own
+-- the road on the page (each leg as a card, where it stops: the hunts open
+-- there), and a leg's own
 -- page: where to learn its recipe (the nearest trainer or vendor of the
 -- character's side), its casts, its colours, its ingredients and how many of
 -- each, against the bags; a stop's: how the rank is learned there (the
@@ -24,36 +25,41 @@ local function style(row, kind)
   return 18
 end
 
--- (who serves the character's side, the one where it stands first)
+-- (who serves the character's side, the nearest first)
 local function serving(ids)
   local out, mine = {}, ns.hunts.mine()
   for _, id in ipairs(ids or {}) do
     local n = D.npcs[id]
     if n and ns.hunts.serves(n.side, mine) then table.insert(out, id) end
   end
-  local first = ui.nearest(out)
-  for i, id in ipairs(out) do
-    if id == first then
-      table.remove(out, i)
-      table.insert(out, 1, id)
-      break
-    end
-  end
-  return out
+  return ui.byNearness(out)
 end
 
 -- Where a recipe the road needs is learned: a cooking trainer (one the skill
 -- itself gives: the trainer's too), else a vendor of the side, the nearest.
-local function learnable(spell)
-  local s = ns.hunts.sources(spell, ns.hunts.mine())
-  if s.skill or s.trainer then return { trainer = true } end
-  if #s.shop > 0 then return { vendor = serving(s.shop)[1] } end
+-- (once a recipe a road: the planner asks at every point)
+local function learnableOnce()
+  local seen = {}
+  return function(spell)
+    if seen[spell] == nil then
+      local s = ns.hunts.sources(spell, ns.hunts.mine())
+      if s.skill or s.trainer then
+        seen[spell] = { trainer = true }
+      elseif #s.shop > 0 then
+        seen[spell] = { vendor = serving(s.shop)[1] }
+      else
+        seen[spell] = false
+      end
+    end
+    return seen[spell] or nil
+  end
 end
 
 local function plan()
   local char = ns.book()
   local skill, max = ns.skill()
   local known = char and char.known or {}
+  local learnable = learnableOnce()
   if skill == 0 then
     -- (no cooking yet: learning it first, then the road from 1)
     local road = ns.road.plan(known, 1, 75, ui.have, 300, learnable)
@@ -74,6 +80,9 @@ end
 -- A stop's line: how its rank is learned, short.
 local function trainLine(leg)
   local r = leg.rank or {}
+  if leg.train == 75 then
+    return r.level and L["From a cooking trainer, from level %d"]:format(r.level) or L["From a cooking trainer"]
+  end
   if r.trainers then return L["At %d: from a cooking trainer"]:format(leg.from) end
   if r.items then
     local seller = serving(r.sellers)[1]
@@ -107,32 +116,6 @@ local function refreshList()
     if current == i then list:pick(r) end
   end
   list:finish()
-end
-
-local function worthCards(skill)
-  local mine = ns.hunts.mine()
-  local worth = ns.road.worth(ns.book().known, skill, 5, mine)
-  if #worth == 0 then return end
-  page:section(L["Worth learning now"])
-  for _, spell in ipairs(worth) do
-    local d = D.recipes[spell]
-    local s = ns.hunts.sources(spell, mine)
-    local how
-    if s.skill or s.trainer then
-      how = L["From a cooking trainer"]
-    else
-      -- (a vendor's, the one where the character stands if one is)
-      -- (the vendor and where it stands, short: the card's line is one)
-      local v = ui.nearest(s.shop)
-      local at = ui.where(v)
-      how = at ~= "" and ("%s, %s"):format(ui.npcName(v), at) or ui.npcName(v)
-    end
-    page:card(
-      ns.dishName(spell),
-      ("%s  -  %s"):format(ui.colourWord(ns.road.colour(d, skill)), how),
-      ui.dishPicture(spell)
-    )
-  end
 end
 
 -- The hunts open at this skill, a word and the way to them (HuntsBook.lua).
@@ -205,7 +188,6 @@ local function showRoad()
       ),
       T.soft
     )
-    worthCards(legs.stuck)
     huntsLine(legs.stuck)
   elseif #legs == 0 then
     page:paragraph(L["Nothing left to cook: your skill is as high as it goes."], T.soft)

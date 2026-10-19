@@ -15,7 +15,7 @@
 -- learn, the one orange the longest (fewer to learn). At a rank's cap (75,
 -- 150, 225), a stop to train the next (`D.ranks`: who teaches it, what it
 -- asks). Where nothing known or learnable raises the skill any more, the road
--- stops: the recipes worth learning there (R.worth) go on from it.
+-- stops (`stuck`): only the hunts go on from there.
 local _, ns = ...
 local D = ns.data
 local R = {}
@@ -152,30 +152,4 @@ function R.shopping(leg)
     table.insert(out, { d.reagents[i], d.reagents[i + 1] * casts })
   end
   return out, casts
-end
-
--- The recipes worth learning at this skill: not known, learnable now (the
--- skill they ask), still raising it, from the shop (a trainer, the skill
--- itself, a vendor who sells it to the character's side without a limit:
--- the rest are hunts, Hunts.lua), the surest first.
-function R.worth(known, skill, limit, mine)
-  local out = {}
-  for _, spell in ipairs(D.order) do
-    local d = D.recipes[spell]
-    if not known[spell] and not d.unknown and skill >= d.learn and R.chance(d, skill) > 0 then
-      local s = ns.hunts.sources(spell, mine)
-      if s.skill or s.trainer or #s.shop > 0 then table.insert(out, spell) end
-    end
-  end
-  table.sort(out, function(a, b)
-    local ca, cb = R.chance(D.recipes[a], skill), R.chance(D.recipes[b], skill)
-    if math.abs(ca - cb) > 1e-9 then return ca > cb end
-    return D.recipes[a].yellow > D.recipes[b].yellow
-  end)
-  if limit then
-    for i = #out, limit + 1, -1 do
-      out[i] = nil
-    end
-  end
-  return out
 end

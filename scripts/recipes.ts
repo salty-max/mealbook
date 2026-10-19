@@ -70,7 +70,18 @@ export type RecipeItem = {
 // faction it serves; none: either, or a creature to kill), the zone (an
 // AreaTable id, its name the client's), a spot on its map (0-100, whole),
 // the levels, the rank.
-export type Npc = { id: number; side?: "A" | "H"; unknown?: true; area?: number; x?: number; y?: number; lvl?: [number, number]; rank?: number };
+export type Npc = {
+  id: number;
+  side?: "A" | "H";
+  unknown?: true;
+  area?: number;
+  map?: number; // (its zone's continent or instance: AreaTable's ContinentID, for the nearest)
+  city?: true; // (it stands in a capital)
+  x?: number;
+  y?: number;
+  lvl?: [number, number];
+  rank?: number;
+};
 export type Quest = { id: number; giver?: number; side?: "A" | "H"; level?: number; min?: number; area?: number };
 // A rank of the skill (its cap: 75 Apprentice, 150 Journeyman, 225 Expert,
 // 300 Artisan): its spell and what teaches it, trainers, a book and who
@@ -332,6 +343,7 @@ export function cookbook(game: Game) {
       : []
     ).map((r) => [r.id, r]),
   );
+  const continentOf = new Map(all<{ id: number; map: number }>("SELECT ID id, ContinentID map FROM client_AreaTable").map((r) => [r.id, r.map]));
   const npcs: Npc[] = [];
   for (const id of npcIds) {
     const f = facts.get(id);
@@ -357,6 +369,8 @@ export function cookbook(game: Game) {
       ...(side && { side }),
       ...(unknown && { unknown: true as const }),
       ...(area !== undefined && { area }),
+      ...(area !== undefined && continentOf.has(area) && { map: continentOf.get(area) }),
+      ...(area !== undefined && CAPITALS[area] && { city: true as const }),
       ...(spot && { x: Math.round(spot.x!), y: Math.round(spot.y!) }),
       ...(f?.min_level && { lvl: [f.min_level, f.max_level ?? f.min_level] as [number, number] }),
       ...(f?.rank && { rank: f.rank }),
@@ -419,8 +433,9 @@ export function lua(game: Game): string {
     "-- recipeItems[item]: the recipe it teaches, who sells it (limited: [npc] =",
     "-- the stock), who drops it (drops: the likeliest, npc, percent...; world: a",
     "-- drop of many), the quests that give it.",
-    "-- npcs[id]: the sellers, the likeliest droppers, the quest givers: side (A, H:",
-    "-- the faction it serves), area (its zone), x, y (a spot there), lvl, rank.",
+    "-- npcs[id]: the sellers, the likeliest droppers, the quest givers, the",
+    "-- trainers: side (A, H: the faction it serves), area (its zone), map (its",
+    "-- continent or instance), city (in a capital), x, y (a spot), lvl, rank.",
     "-- quests[id]: giver, side, level, min (the level it opens at), area.",
     "-- ranks[cap]: the skill's rank that opens up to cap: its spell, who teaches",
     "-- it (trainers), the book (items) and who sells it (sellers), the quests;",
@@ -468,6 +483,8 @@ export function lua(game: Game): string {
     const parts: string[] = [];
     if (n.side) parts.push(`side = "${n.side}"`);
     if (n.area) parts.push(`area = ${n.area}`);
+    if (n.map !== undefined) parts.push(`map = ${n.map}`);
+    if (n.city) parts.push("city = true");
     if (n.x !== undefined) parts.push(`x = ${n.x}`, `y = ${n.y}`);
     if (n.lvl) parts.push(`lvl = { ${n.lvl[0]}, ${n.lvl[1]} }`);
     if (n.rank) parts.push(`rank = ${n.rank}`);

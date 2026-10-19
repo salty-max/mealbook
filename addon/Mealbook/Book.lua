@@ -165,15 +165,31 @@ local function where(id)
   if n.x then return ("%s %d, %d"):format(zone, n.x, n.y) end
   return zone
 end
--- Of several npcs, one in the zone the character stands in, else the first.
-local function nearest(ids)
+-- Several npcs, the nearest first: one in the zone the character stands in,
+-- then one on its continent (a capital's first), then a capital's, then the
+-- rest (the data's map: AreaTable's continent; the character's, the game's
+-- instance map: 0 the Eastern Kingdoms, 1 Kalimdor).
+local function byNearness(ids)
   local here = GetRealZoneText and GetRealZoneText()
-  for _, id in ipairs(ids) do
-    local n = ns.data.npcs and ns.data.npcs[id]
-    if here and n and zoneName(n.area) == here then return id end
+  local map = GetInstanceInfo and select(8, GetInstanceInfo())
+  local function rank(id)
+    local n = ns.data.npcs and ns.data.npcs[id] or {}
+    if here and zoneName(n.area) == here then return 0 end
+    if map and n.map == map then return n.city and 1 or 2 end
+    return n.city and 3 or 4
   end
-  return ids[1]
+  local out = {}
+  for _, id in ipairs(ids or {}) do
+    table.insert(out, id)
+  end
+  table.sort(out, function(a, b)
+    local ra, rb = rank(a), rank(b)
+    if ra ~= rb then return ra < rb end
+    return a < b
+  end)
+  return out
 end
+local function nearest(ids) return byNearness(ids)[1] end
 
 ns.ui = {
   T = T,
@@ -191,6 +207,7 @@ ns.ui = {
   questName = questName,
   where = where,
   nearest = nearest,
+  byNearness = byNearness,
   icon = K.icon,
   newList = K.list,
   newPage = function(parent, name) return K.page(parent, name, { labelWidth = 110, pairs = {} }) end,

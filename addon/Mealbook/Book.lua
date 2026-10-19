@@ -1,5 +1,5 @@
 -- The cookbook as a book: the family's window (portrait, title bar), its tabs
--- (Recipes, The road, Hunts: each a file of its own, *Book.lua, registered with
+-- (Recipes, The road, Hunts, Achievements: each a file of its own, *Book.lua, registered with
 -- ns.addTab), and what every tab is made of (ns.ui): the kit's look in the
 -- cookbook's theme, its list on the left and page on the right. /mealbook
 -- opens it.
@@ -42,9 +42,9 @@ local CHAPTERS = {
 
 -- ── the window ───────────────────────────────────────────────────────────────
 local book
-local TAB = { recipes = 1, road = 2, hunts = 3 }
+local TAB = { recipes = 1, road = 2, hunts = 3, milestones = 4 }
 ns.TAB = TAB
-local tabs, TITLES = {}, { L["Recipes"], L["The road"], L["Hunts"] }
+local tabs, TITLES = {}, { L["Recipes"], L["The road"], L["Hunts"], L["Achievements"] }
 function ns.addTab(n, tab) tabs[n] = tab end
 
 function ns.refresh()
@@ -61,6 +61,11 @@ function ns.showTab(n)
     tab.build(book)
     tab.built = true
   end
+  -- (a tab over both panels, the achievements' board: the list, the sheet and
+  -- the search put away)
+  book.left:SetShown(not tab.whole)
+  book.sheet:SetShown(not tab.whole)
+  book.search:SetShown(not tab.whole)
   for _, t in ipairs(tabs) do
     if t.built then t.show(n) end
   end

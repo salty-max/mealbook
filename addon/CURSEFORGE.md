@@ -43,6 +43,10 @@ Some recipes no trainer teaches and no shop keeps for long. Mealbook keeps them 
 
 Only your side's: a vendor or a quest of the other faction never shows. The hunts tab counts how many you've found and when the next one opens.
 
+## Achievements
+
+The book keeps its own achievements: each cooking rank trained and 300 reached, the recipes you know, the dishes you've cooked, your first dish of each kind and the hunts you've found. Each one earned comes with the game's fanfare and a banner among its alerts, and the book remembers when and at what level.
+
 ## Compatibility
 
 One download covers Classic Era, Hardcore, Season of Discovery and World of Warcraft: Forever. Each game gets its own recipes: Forever's new dishes are in its book. Season of Discovery's own dishes are left out.

@@ -54,6 +54,20 @@ fire("UNIT_SPELLCAST_SUCCEEDED", "player", "cast-3", 133) -- (a fireball: no dis
 check(char.cooked[2538] == 2 and char.first[2538], "each dish cooked counted, the first time kept")
 check(char.cooked[133] == nil, "a spell that's no dish isn't")
 
+-- ── the achievements ─────────────────────────────────────────────────────────
+local earned = char.milestones or {}
+check(earned["rank-75"] and earned["rank-75"].retro, "an achievement already deserved at the login: recorded quietly")
+check(not said(L["Achievement earned: %s."]:format("|cffffd100[" .. L["Apprentice Cook"] .. "]|r")), "without a word")
+check(earned["first-meat"] and not earned["first-meat"].retro, "the first roast cooked: earned")
+check(said(L["Achievement earned: %s."]:format("|cffffd100[" .. L["First Roast"] .. "]|r")), "said in chat")
+check(MealbookBanner1 and MealbookBanner1:IsShown(), "and its banner among the game's alerts")
+check(not earned["first-fish"], "a chapter not cooked yet: not earned")
+local feasts = false
+for _, m in ipairs(ns.milestones) do
+  if m.id == "first-feast" then feasts = true end
+end
+check(feasts == (G.FOREVER and true or false), "a chapter's first only where the game has its dishes")
+
 -- ── the road ─────────────────────────────────────────────────────────────────
 local R = ns.road
 local wolf = ns.recipe(2538) -- (Charred Wolf Meat: orange to 45, grey at 85)
@@ -178,6 +192,9 @@ ns.openDish(2538)
 ns.refresh()
 SlashCmdList.MEALBOOK("road")
 check(MealbookFrame.tab == 2, "/mealbook road opens the road")
+ns.openMilestones("first-meat")
+check(MealbookFrame.tab == 4 and #ns.milestoneRows > 0, "the achievements' board, one picked out")
+check(not MealbookFrame.left:IsShown() and not MealbookFrame.sheet:IsShown(), "over both panels")
 -- the hunts' tab and every hunt's page, on each side (a page that fails to
 -- draw fails here)
 local skillBefore = char.skill

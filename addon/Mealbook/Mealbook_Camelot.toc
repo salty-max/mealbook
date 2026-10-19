@@ -24,7 +24,9 @@ Pages_[TextLocale].lua
 Core.lua
 Road.lua
 Hunts.lua
+Milestones.lua
 Book.lua
 RecipesBook.lua
 RoadBook.lua
 HuntsBook.lua
+MilestonesBook.lua

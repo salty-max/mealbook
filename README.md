@@ -16,10 +16,13 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   stall's limited stock, a creature's drop, a quest, each opening when your
   skill is ready for it: who has it, where, how often.
 
+- **Achievements:** the ranks, the recipes known, the dishes cooked, the
+  first of each kind of dish, the hunts found.
+
 `/mealbook` opens the book, `/mealbook road` the road.
 
-In English and French. Work in progress: the milestones, the pantry and the
-other languages are next.
+In English and French. Work in progress: the pantry and the other languages
+are next.
 
 ## Building
 

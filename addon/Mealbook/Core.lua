@@ -11,6 +11,8 @@
 --     first[spell] = { at, level }     the first time it was cooked
 --     skill = { rank, max, at }        the cooking skill as last read
 --     peak                             the highest skill read
+--     milestones[id] = { at, level, retro } each achievement earned
+--                                      (Milestones.lua)
 --   MealbookSettings (SavedVariables): chef, the reader's pick ("kendor",
 --     "eunice"), else their faction's
 --
@@ -99,10 +101,14 @@ ns.RANKS = RANKS
 
 local function setSkill(rank, max)
   if ns.secret(rank) or not rank or rank <= 0 then return end
-  local old = char.skill and char.skill.rank
-  char.skill = { rank = rank, max = max or (char.skill and char.skill.max) or 75, at = time() }
+  local old, oldMax = char.skill and char.skill.rank, char.skill and char.skill.max
+  char.skill = { rank = rank, max = max or oldMax or 75, at = time() }
   char.peak = math.max(char.peak or 0, rank)
-  if old ~= rank and ns.onChange then ns.onChange() end
+  if old ~= rank or oldMax ~= char.skill.max then
+    if ns.onChange then ns.onChange() end
+    -- (the achievements: a point or a rank trained; the login's quietly)
+    if ns.progressed and ns.loggedIn then ns.progressed() end
+  end
 end
 
 function ns.readSkill()
@@ -135,6 +141,7 @@ function ns.learnt(spell, quietly)
   if not quietly then
     print(ns.PREFIX .. L["A new page: %s."]:format("|cffffd27f" .. ns.dishName(spell) .. "|r"))
     if ns.onLearnt then ns.onLearnt(spell) end
+    if ns.progressed then ns.progressed() end
   end
   if ns.onChange then ns.onChange() end
 end
@@ -193,6 +200,9 @@ function ns.login()
   MealbookSettings = type(MealbookSettings) == "table" and MealbookSettings or {}
   ns.readSkill()
   ns.askKnown(true)
+  -- (achievements already deserved: recorded quietly)
+  if ns.progressed then ns.progressed(true) end
+  ns.loggedIn = true
   local rank = ns.skill()
   local n = 0
   for _ in pairs(char.known) do
@@ -229,6 +239,7 @@ ns.onUnit("UNIT_SPELLCAST_SUCCEEDED", "player", function(_, _, spell)
   if not char.first[spell] then char.first[spell] = at() end
   ns.learnt(spell, true) -- (cooked, so known: a book that missed it)
   if ns.onChange then ns.onChange() end
+  if ns.progressed then ns.progressed() end
 end)
 
 -- ── the chef ─────────────────────────────────────────────────────────────────

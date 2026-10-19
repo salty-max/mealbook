@@ -76,6 +76,15 @@ October 2026), not yet released: no store page.
   does; open when the skill reaches the one it is learned at (`H.list`:
   open, the skill the next opens at, found of all; those still raising the
   skill first).
+- `Milestones.lua`: the achievements (milestones in the code and the saved
+  book, achievements to the player, as Yonder's): the ranks (cooking
+  learned, Journeyman, Expert, Artisan by the skill's cap; 300), the recipes
+  known (10, 25, 50, 75, every one the side can learn), the dishes cooked
+  (50 to 5000), the first dish of each chapter the game has (Classic Era
+  has no feasts or fires), the hunts found (one, five, all). Checked at
+  each recipe learned, dish cooked, point or rank (`ns.progressed`, from
+  Core), quietly at the login (`retro`); earned: the game's fanfare, a line
+  in chat, the kit's banner among the game's alerts (a click opens it).
 - `Road.lua`: the game's skill-up rule (orange always, grey never, between
   (grey - skill) / (grey - yellow)), the road from the skill now (each point
   the surest recipe known, then one the bags can cook, then the fewest
@@ -94,7 +103,9 @@ October 2026), not yet released: no store page.
   (the hunts open now, found of all, the next to open; a hunt's page: the
   recipe and the dish as items, where to look as cards: a stall's stock,
   the droppers' zone, levels and chance, a quest's title or its giver; zone
-  names the client's, `ui.where`).
+  names the client's, `ui.where`); `MilestonesBook.lua` (the achievements'
+  tab over both panels, `whole`: the kit's board, a row per achievement
+  under its group, earned or how far along).
 - `addon/test/game.lua` (the addon's files loaded as its TOC lists them;
   Palaver's frames, events and timers; a zone's name by its id, the
   faction (`state.faction`); the skill as
@@ -130,7 +141,7 @@ summary the TOCs' Notes).
 
 ## Not yet
 
-- The Milestones, the pantry (an
+- The pantry (an
   ingredient's tooltip line), the welcome page, the minimap button, the
   opt-in collector, German.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe

@@ -229,7 +229,6 @@ ns.names({
       [17070] = "Boticário Quintino",
       [248198] = "Aza'bek",
       [251905] = "Zerril Brisabranda",
-      [256629] = "Dala Fairmaw",
       [256731] = "Kalsey Sanden",
       [257006] = "Nyalah Chamarrútila",
       [259860] = "Martha Wellsworth",

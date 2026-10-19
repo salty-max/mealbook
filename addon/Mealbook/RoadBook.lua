@@ -65,9 +65,10 @@ local function worthCards(skill)
       how = L["From a cooking trainer"]
     else
       -- (a vendor's, the one where the character stands if one is)
+      -- (the vendor and where it stands, short: the card's line is one)
       local v = ui.nearest(s.shop)
       local at = ui.where(v)
-      how = at ~= "" and L["Sold by %s, %s"]:format(ui.npcName(v), at) or L["Sold by %s"]:format(ui.npcName(v))
+      how = at ~= "" and ("%s, %s"):format(ui.npcName(v), at) or ui.npcName(v)
     end
     page:card(
       ns.dishName(spell),

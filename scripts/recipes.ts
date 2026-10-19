@@ -70,15 +70,14 @@ export type RecipeItem = {
 // faction it serves; none: either, or a creature to kill), the zone (an
 // AreaTable id, its name the client's), a spot on its map (0-100, whole),
 // the levels, the rank.
-export type Npc = { id: number; side?: "A" | "H"; area?: number; x?: number; y?: number; lvl?: [number, number]; rank?: number };
+export type Npc = { id: number; side?: "A" | "H"; unknown?: true; area?: number; x?: number; y?: number; lvl?: [number, number]; rank?: number };
 export type Quest = { id: number; giver?: number; side?: "A" | "H"; level?: number; min?: number; area?: number };
 
 // The capitals: someone friendly to all who stands in one serves its side
 // (the Winter Veil's vendors in Orgrimmar or Stormwind).
 const CAPITALS: Record<number, "A" | "H"> = { 1519: "A", 16509: "A", 1537: "A", 1657: "A", 1637: "H", 1497: "H", 1638: "H" };
-// (the player races' bits in a quest's race mask)
-const ALLIANCE_RACES = 1 | 4 | 8 | 64;
-const HORDE_RACES = 2 | 16 | 32 | 128;
+// (a quest's race mask: each playable race's bit and side from the game's own
+// ChrRaces, as BigInts: Forever's Skyborne sit on bits 32 and 33)
 
 const chapters = (): Record<string, Chapter> => JSON.parse(readFileSync(join(ROOT, "data", "chapters.json"), "utf8"));
 
@@ -204,13 +203,32 @@ export function cookbook(game: Game) {
 
   // Who and where. Spawns: each creature's zone (where most of its spawns
   // are) and a spot there.
+  // (a zone the client knows: an AreaTable id; Questie names some
+  // instances by ids of its own, 10026 for Dire Maul: the instance's own
+  // zone then, the one area of its map, from the Classic database's spawn)
+  const areas = new Set(all<{ ID: number }>("SELECT ID FROM client_AreaTable").map((r) => r.ID));
+  const rootOf = new Map<number, number>();
+  for (const r of all<{ map: number; area: number; n: number }>(
+    "SELECT ContinentID map, min(ID) area, count(*) n FROM client_AreaTable WHERE ParentAreaID = 0 GROUP BY ContinentID",
+  ))
+    if (r.n === 1) rootOf.set(r.map, r.area);
   const spawnsOf = (ids: number[]) => {
     const out = new Map<number, { area: number; x: number | null; y: number | null }[]>();
     if (!ids.length) return out;
+    const mapOf = new Map<number, number>();
+    for (const r of all<{ id: number; map: number }>(
+      `SELECT entity_id id, min(map_id) map FROM spawn WHERE kind = 'creature' AND map_id IS NOT NULL AND entity_id IN (${ids.join(",")}) GROUP BY entity_id`,
+    ))
+      mapOf.set(r.id, r.map);
     for (const r of all<{ id: number; area: number; x: number | null; y: number | null }>(
       `SELECT entity_id id, area_id area, ux x, uy y FROM spawn WHERE kind = 'creature' AND area_id IS NOT NULL AND entity_id IN (${ids.join(",")})`,
-    ))
-      out.set(r.id, [...(out.get(r.id) ?? []), r]);
+    )) {
+      const area = areas.has(r.area) ? r.area : rootOf.get(mapOf.get(r.id) ?? -1);
+      if (area === undefined) continue;
+      // (a spot on the map, 0-100: an instance's -1 is none)
+      const onMap = r.x !== null && r.y !== null && r.x >= 0 && r.x <= 100 && r.y >= 0 && r.y <= 100;
+      out.set(r.id, [...(out.get(r.id) ?? []), { area, x: onMap ? r.x : null, y: onMap ? r.y : null }]);
+    }
     return out;
   };
   // The likeliest droppers: the best chance, then the most spawns (the
@@ -239,10 +257,14 @@ export function cookbook(game: Game) {
       giverOf.set(r.quest_id, r.entity_id);
   const npcIds = [...new Set([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...giverOf.values()])].sort((a, b) => a - b);
   const spawns = spawnsOf(npcIds);
+  // (Questie's word for the sides a creature is friendly to, where wow-data
+  // has it: a creature without a faction template, Forever's new vendors)
+  const hasFriendly = all<{ name: string }>("PRAGMA table_info(creature)").some((c) => c.name === "friendly");
   const facts = new Map(
     (npcIds.length
-      ? all<{ id: number; min_level: number | null; max_level: number | null; rank: number | null; eg: number | null; en: string | null }>(
-          `SELECT c.id, c.min_level, c.max_level, c.rank, t.EnemyGroup eg, t.Enemies_0||','||t.Enemies_1||','||t.Enemies_2||','||t.Enemies_3 en
+      ? all<{ id: number; min_level: number | null; max_level: number | null; rank: number | null; tmpl: number | null; eg: number | null; en: string | null; friendly: string | null }>(
+          `SELECT c.id, c.min_level, c.max_level, c.rank, t.ID tmpl, t.EnemyGroup eg, t.Enemies_0||','||t.Enemies_1||','||t.Enemies_2||','||t.Enemies_3 en,
+             ${hasFriendly ? "c.friendly" : "NULL"} friendly
            FROM creature c LEFT JOIN client_FactionTemplate t ON t.ID = c.faction_id WHERE c.id IN (${npcIds.join(",")})`,
         )
       : []
@@ -263,10 +285,15 @@ export function cookbook(game: Game) {
     const hostileA = !!f && (((f.eg ?? 0) & 2) !== 0 || enemies.includes(469));
     const hostileH = !!f && (((f.eg ?? 0) & 4) !== 0 || enemies.includes(67));
     let side: Npc["side"] = hostileA && !hostileH ? "H" : hostileH && !hostileA ? "A" : undefined;
-    if (!hostileA && !hostileH && area !== undefined) side = CAPITALS[area];
+    if (!f?.tmpl) side = f?.friendly === "A" ? "A" : f?.friendly === "H" ? "H" : undefined;
+    if (!hostileA && !hostileH && side === undefined && area !== undefined) side = CAPITALS[area];
+    // (no faction template and no source's word: whom it serves is unknown,
+    // so no one is sent to it)
+    const unknown = !f?.tmpl && !f?.friendly;
     npcs.push({
       id,
       ...(side && { side }),
+      ...(unknown && { unknown: true as const }),
       ...(area !== undefined && { area }),
       ...(spot && { x: Math.round(spot.x!), y: Math.round(spot.y!) }),
       ...(f?.min_level && { lvl: [f.min_level, f.max_level ?? f.min_level] as [number, number] }),
@@ -274,11 +301,20 @@ export function cookbook(game: Game) {
     });
   }
   const npcOf = new Map(npcs.map((n) => [n.id, n]));
+  for (const it of kept) {
+    it.sold = it.sold.filter((v) => !npcOf.get(v)?.unknown);
+    for (const v of Object.keys(it.limited).map(Number)) if (npcOf.get(v)?.unknown) delete it.limited[v];
+  }
+  let allianceRaces = 0n, hordeRaces = 0n;
+  for (const r of all<{ bit: number; side: number }>("SELECT PlayableRaceBit bit, Alliance side FROM client_ChrRaces WHERE PlayableRaceBit >= 0")) {
+    if (r.side === 0) allianceRaces |= 1n << BigInt(r.bit);
+    else if (r.side === 1) hordeRaces |= 1n << BigInt(r.bit);
+  }
   const quests: Quest[] = questRows
     .map((q) => {
       const giver = giverOf.get(q.id);
-      const races = q.races ?? 0;
-      const a = (races & ALLIANCE_RACES) !== 0, h = (races & HORDE_RACES) !== 0;
+      const races = BigInt(q.races ?? 0);
+      const a = (races & allianceRaces) !== 0n, h = (races & hordeRaces) !== 0n;
       const side: Quest["side"] = a && !h ? "A" : h && !a ? "H" : giver !== undefined ? npcOf.get(giver)?.side : undefined;
       const area = q.zone_id && q.zone_id > 0 ? q.zone_id : giver !== undefined ? npcOf.get(giver)?.area : undefined;
       return {
@@ -292,9 +328,11 @@ export function cookbook(game: Game) {
     })
     .sort((a, b) => a.id - b.id);
   db.close();
+  // (the npcs something still names: a seller no one is sent to, gone)
+  const pointed = new Set<number>([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...quests.flatMap((q) => (q.giver ? [q.giver] : []))]);
   // (the book's order: by the skill a dish is learned at, its yellow, its name)
   dishes.sort((a, b) => a.learn - b.learn || a.yellow - b.yellow || a.name.localeCompare(b.name));
-  return { dishes, items: kept, npcs, quests, unchaptered };
+  return { dishes, items: kept, npcs: npcs.filter((n) => pointed.has(n.id)), quests, unchaptered };
 }
 
 const list = (xs: number[]) => `{ ${xs.join(", ")} }`;

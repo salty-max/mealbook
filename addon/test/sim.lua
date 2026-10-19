@@ -29,7 +29,7 @@ check(
   ns.option("chef") == 2 and ns.option("tooltips") == false,
   "a test build's settings taken into the character's profile"
 )
-check(MealbookSettings.chef == nil and MealbookSettings.profiles, "and kept there only")
+check(MealbookSettings.chef == "eunice" and MealbookSettings.profiles, "left for the other characters to take")
 ns.setOption("chef", 0)
 ns.setOption("tooltips", true)
 local char = MealbookChar
@@ -76,6 +76,16 @@ for _, m in ipairs(ns.milestones) do
   if m.id == "first-feast" then feasts = true end
 end
 check(feasts == (G.FOREVER and true or false), "a chapter's first only where the game has its dishes")
+-- a step past what this side can learn: not listed, never earned (Classic
+-- Era's Alliance can learn 75: the whole book is the last step)
+local learnable = ns.milestoneById["known-all"].progress
+local _, all = learnable()
+for _, need in ipairs({ 10, 25, 50, 75 }) do
+  check(
+    ns.milestoneVisible(ns.milestoneById["known-" .. need]) == (need < all),
+    ("know %d: listed only below %d"):format(need, all)
+  )
+end
 
 -- ── the road ─────────────────────────────────────────────────────────────────
 local R = ns.road

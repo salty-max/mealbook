@@ -16,8 +16,11 @@ October 2026), not yet released: no store page.
   the family dropped it), the same but for the interface and the game's
   recipes (`Recipes_Classic.lua`, `Recipes_Forever.lua`). Loads its recipes,
   `Kit.lua` (the kit's copy, `bun run kit:sync`; never edit it),
-  `Locale.lua`, `Text_[TextLocale].lua`, `Core.lua`, `Road.lua`, `Book.lua`,
-  `RecipesBook.lua`, `RoadBook.lua`.
+  `Locale.lua`, `Text_[TextLocale].lua`, `Pages_[TextLocale].lua`,
+  `Core.lua`, `Settings.lua`, `Road.lua`, `Hunts.lua`, `Milestones.lua`,
+  `Pantry.lua`, `Book.lua`, `RecipesBook.lua`, `RoadBook.lua`,
+  `HuntsBook.lua`, `MilestonesBook.lua`, `Welcome.lua`, `Minimap.lua` (the
+  test game loads them from the TOC).
 - `scripts/recipes.ts`: the recipes from wow-data's databases, each game's
   own (`--check` in `bun run check`): every dish of the cooking skill line
   (185, a spell that creates an item), what it makes and how many (Classic
@@ -35,11 +38,16 @@ October 2026), not yet released: no store page.
   Who and where, for the road's vendors and the hunts: `npcs` (every seller
   of a recipe, the three likeliest droppers of each, the quest givers: the
   side it serves, from its faction template's enemies (Alliance 469, Horde
-  67, or the groups), one friendly to all standing in a capital its city's;
-  its zone, the AreaTable id where most of its spawns are, its name the
-  client's; a spot there, 0-100; its levels and rank) and `quests` (giver,
-  side from the race mask else the giver's, level, the level it opens at,
-  zone). A recipe item's `drops`: the likeliest droppers and their percent
+  67, or the groups), else Questie's word for it (wow-data's
+  `creature.friendly`: Forever's new vendors have no template), one
+  friendly to all standing in a capital its city's; a seller with neither
+  left out, no one sent to it;
+  its zone, the AreaTable id where most of its spawns are (an id of
+  Questie's own for an instance, 10026 Dire Maul: the instance map's one
+  area), its name the client's; a spot there, 0-100, none in an instance;
+  its levels and rank) and `quests` (giver, side from the race mask, the
+  bits' sides the client's ChrRaces as BigInts (Forever's Skyborne on bits
+  32 and 33), else the giver's, level, the level it opens at, zone). A recipe item's `drops`: the likeliest droppers and their percent
   (the best chance, then the most spawns; Forever's sources give none yet).
   Also `i18n/names.json`, the game's names in every language, the client's:
   the cooking skill line's (Classic Era's skill list names a skill only by
@@ -67,7 +75,9 @@ October 2026), not yet released: no store page.
   quietly; the cooking window's lines, Classic Era's TradeSkillUI calls and
   Forever's C_TradeSkillUI; Forever's NEW_RECIPE_LEARNED; the game's own
   line when a recipe is learned, ERR_LEARN_RECIPE_S), a dish cooked
-  (UNIT_SPELLCAST_SUCCEEDED), `/mealbook` (`road`).
+  (UNIT_SPELLCAST_SUCCEEDED), `/mealbook` (`road`, `chef`, `tooltips`,
+  `minimap`, `settings`, `welcome`, `export`, `import CODE`: the code's
+  letters as typed).
 - `Settings.lua`: each character's settings, the kit's profiles (a profile
   "Name - Realm" in MealbookSettings, copied from another character of this
   game or a code `MB1:...`, `/mealbook export`, `/mealbook import CODE`):
@@ -89,7 +99,8 @@ October 2026), not yet released: no store page.
 - `Milestones.lua`: the achievements (milestones in the code and the saved
   book, achievements to the player, as Yonder's): the ranks (cooking
   learned, Journeyman, Expert, Artisan by the skill's cap; 300), the recipes
-  known (10, 25, 50, 75, every one the side can learn), the dishes cooked
+  known (10, 25, 50, 75, every one the side can learn: a step past that
+  number not listed, Classic Era's Horde learns 66), the dishes cooked
   (50 to 5000), the first dish of each chapter the game has (Classic Era
   has no feasts or fires), the hunts found (one, five, all). Checked at
   each recipe learned, dish cooked, point or rank (`ns.progressed`, from
@@ -99,7 +110,7 @@ October 2026), not yet released: no store page.
   on the item's tooltip, the known dishes it cooks into, each in its colour
   now, the surest first, three at most (Forever's tooltip processor, else
   the tooltips' OnTooltipSetItem; `/mealbook tooltips` turns it off,
-  `MealbookSettings.tooltips`); the dishes the bags can cook now and how
+  the character's `tooltips` setting); the dishes the bags can cook now and how
   many times, on the Recipes tab's front page.
 - `Road.lua`: the game's skill-up rule (orange always, grey never, between
   (grey - skill) / (grey - yellow)), the road from the skill now (each point

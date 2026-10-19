@@ -11,7 +11,7 @@
   "%d recipes, cooking %d.": "",
   "%d to %d": "",
   "%d to %d: about %d casts": "",
-  "%d%% of the time": "",
+  "%d%%": "",
   "%s's settings copied.": "",
   "%s, you were level %d": "",
   "/mealbook opens the book.": "",
@@ -123,8 +123,6 @@
   "See the hunts": "",
   "Settings imported for this character.": "",
   "Skill": "",
-  "Sold by %s": "",
-  "Sold by %s, %s": "",
   "Some recipes no trainer teaches and no shop keeps for long: a stall with one at a time, a creature that drops it, a quest. Each opens here when your skill is ready for it.": "",
   "Something to Drink": "",
   "Soups and stews": "",
@@ -186,7 +184,7 @@
   "recipes": "",
   "the next opens at": "",
   "too hard": "",
-  "under 1% of the time": "",
+  "under 1%": "",
   "yellow": "",
   "you can cook now": ""
 }

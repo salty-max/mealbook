@@ -76,10 +76,11 @@ local function dropCard(npc, percent)
     )
   end
   if RARE[n.rank] then table.insert(bits, L["rare"]) end
+  -- (short: the card's line is one, 11 points)
   if percent and percent >= 1 then
-    table.insert(bits, L["%d%% of the time"]:format(math.floor(percent + 0.5)))
+    table.insert(bits, L["%d%%"]:format(math.floor(percent + 0.5)))
   elseif percent and percent > 0 then
-    table.insert(bits, L["under 1% of the time"])
+    table.insert(bits, L["under 1%"])
   end
   local shown = {}
   for _, b in ipairs(bits) do

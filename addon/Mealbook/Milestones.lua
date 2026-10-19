@@ -15,8 +15,8 @@ local ICON = "Interface\\AddOns\\Mealbook\\Media\\Logo"
 local list = {}
 ns.milestones = list
 ns.milestoneById = {}
-local function add(group, id, title, text, progress)
-  local m = { group = group, id = id, title = title, text = text, progress = progress }
+local function add(group, id, title, text, progress, visible)
+  local m = { group = group, id = id, title = title, text = text, progress = progress, visible = visible }
   table.insert(list, m)
   ns.milestoneById[id] = m
 end
@@ -85,7 +85,16 @@ for _, step in ipairs({
   { 75, L["A Cook's Library"] },
 }) do
   local need, title = step[1], step[2]
-  add("recipes", "known-" .. need, title, L["Know %d recipes."]:format(need), function() return known(), need end)
+  -- (a step past what this side can learn in this game: none, the whole book
+  -- the last)
+  add(
+    "recipes",
+    "known-" .. need,
+    title,
+    L["Know %d recipes."]:format(need),
+    function() return known(), need end,
+    function() return need < learnable() end
+  )
 end
 add(
   "recipes",
@@ -147,7 +156,8 @@ add(
   "hunts-5",
   L["Five Finds"],
   L["Learn five recipes from hunts."],
-  function() return math.min(hunts(), 5), 5 end
+  function() return math.min(hunts(), 5), 5 end,
+  function() return select(2, hunts()) > 5 end
 )
 add("hunts", "hunts-all", L["Nothing Left to Find"], L["Learn every recipe of your side's hunts."], function()
   local found, total = hunts()
@@ -160,13 +170,17 @@ function ns.earnedMilestone(id)
   return c and c.milestones and c.milestones[id]
 end
 
+-- Listed: earned, or one this character can earn.
+function ns.milestoneVisible(m) return ns.earnedMilestone(m.id) ~= nil or not m.visible or m.visible() end
+
 -- Earned, and listed.
 function ns.milestoneCount()
-  local n = 0
+  local n, shown = 0, 0
   for _, m in ipairs(list) do
     if ns.earnedMilestone(m.id) then n = n + 1 end
+    if ns.milestoneVisible(m) then shown = shown + 1 end
   end
-  return n, #list
+  return n, shown
 end
 
 -- The fanfare of the game's achievements (a client without it: none).
@@ -205,7 +219,7 @@ function ns.checkMilestones(quiet)
   c.milestones = c.milestones or {}
   local earned = false
   for _, m in ipairs(list) do
-    if not c.milestones[m.id] then
+    if not c.milestones[m.id] and ns.milestoneVisible(m) then
       local done, need = m.progress()
       if need > 0 and done >= need then
         c.milestones[m.id] = { at = time(), level = UnitLevel("player"), retro = quiet or nil }

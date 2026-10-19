@@ -7,8 +7,8 @@
 --
 --   MealbookSettings.profiles["Name - Realm"] = { chef, tooltips,
 --     minimapHidden, minimapAngle, welcomed }
---   (the test builds' account-wide chef and tooltips, taken into the
---   character's profile at its login)
+--   (the test builds' account-wide chef and tooltips: each character's new
+--   profile seeded with them)
 local _, ns = ...
 local K = ns.kit
 local L = K.L
@@ -47,15 +47,14 @@ local P = K.profiles({
 })
 ns.profiles = P
 
--- This character's profile at its login: its own, else the defaults (the
--- test builds' account-wide values taken in, once).
+-- This character's profile at its login: its own, else the defaults, a new
+-- one seeded with the test builds' account-wide chef and tooltips (left in
+-- place: every character takes them in turn).
 function ns.loadProfile()
-  local old = type(MealbookSettings) == "table" and MealbookSettings or {}
-  local chef, tooltips = old.chef, old.tooltips
-  old.chef, old.tooltips = nil, nil
-  P:load()
-  if chef == "kendor" or chef == "eunice" then P:set("chef", chef == "kendor" and 1 or 2) end
-  if tooltips == false then P:set("tooltips", false) end
+  P:load(function(profile, saved)
+    if saved.chef == "kendor" or saved.chef == "eunice" then profile.chef = saved.chef == "kendor" and 1 or 2 end
+    if saved.tooltips == false then profile.tooltips = false end
+  end)
 end
 function ns.option(key) return P:get(key) end
 function ns.setOption(key, value) P:set(key, value) end

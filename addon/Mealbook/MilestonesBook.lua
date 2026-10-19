@@ -21,14 +21,16 @@ local FIGURES = { { "all", L["earned"] } }
 local function items()
   local out = {}
   for _, m in ipairs(ns.milestones) do
-    table.insert(out, {
-      id = m.id,
-      group = m.group,
-      title = m.title,
-      text = m.text,
-      earned = ns.earnedMilestone(m.id),
-      progress = m.progress,
-    })
+    if ns.milestoneVisible(m) then
+      table.insert(out, {
+        id = m.id,
+        group = m.group,
+        title = m.title,
+        text = m.text,
+        earned = ns.earnedMilestone(m.id),
+        progress = m.progress,
+      })
+    end
   end
   return out
 end

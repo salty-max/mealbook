@@ -16,13 +16,16 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   stall's limited stock, a creature's drop, a quest, each opening when your
   skill is ready for it: who has it, where, how often.
 
+- **The pantry:** an ingredient's tooltip names the dishes you know it
+  cooks into, and the book shows what your bags can cook right now.
 - **Achievements:** the ranks, the recipes known, the dishes cooked, the
   first of each kind of dish, the hunts found.
 
-`/mealbook` opens the book, `/mealbook road` the road.
+`/mealbook` opens the book, `/mealbook road` the road, `/mealbook tooltips`
+turns the ingredients' tooltip line off or on.
 
-In English and French. Work in progress: the pantry and the other languages
-are next.
+In English and French. Work in progress: the welcome page, the minimap
+button and the other languages are next.
 
 ## Building
 

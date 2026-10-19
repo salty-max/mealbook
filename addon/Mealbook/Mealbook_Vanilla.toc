@@ -25,6 +25,7 @@ Core.lua
 Road.lua
 Hunts.lua
 Milestones.lua
+Pantry.lua
 Book.lua
 RecipesBook.lua
 RoadBook.lua

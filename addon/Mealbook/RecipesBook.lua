@@ -181,6 +181,23 @@ local function showOverview()
     )
     return
   end
+  -- (the pantry: what the bags can cook now, Pantry.lua)
+  local cookable = ns.pantry.cookable(char.known, skill, ui.have)
+  if #cookable > 0 then
+    page:section(L["From your bags"])
+    for i = 1, math.min(#cookable, 6) do
+      local spell, casts = cookable[i][1], cookable[i][2]
+      page:card(
+        ns.dishName(spell),
+        table.concat({
+          ui.colourWord(ns.road.colour(D.recipes[spell], skill)),
+          L["enough for %d"]:format(casts),
+        }, "  -  "),
+        ui.dishPicture(spell),
+        function() ns.openDish(spell) end
+      )
+    end
+  end
   page:section(L["Chapters"])
   for _, chapter in ipairs(ui.CHAPTERS) do
     local count = 0

@@ -221,6 +221,10 @@ globals:
     any: true
   GameTooltip:
     any: true
+  ItemRefTooltip:
+    any: true
+  TooltipDataProcessor:
+    any: true
   GetBuildInfo:
     any: true
   GetCursorPosition:

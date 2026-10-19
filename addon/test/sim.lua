@@ -125,6 +125,24 @@ if G.LOCALE == "frFR" then
   end
 end
 
+-- ── the pantry ───────────────────────────────────────────────────────────────
+local P = ns.pantry
+GameTooltip:SetItemByID(2672) -- (Stringy Wolf Meat: Charred Wolf Meat, known)
+check(
+  GameTooltip.lines[1] and GameTooltip.lines[1]:find(ns.dishName(2538), 1, true),
+  "an ingredient's tooltip: the dishes known it cooks into"
+)
+GameTooltip:SetItemByID(6889) -- (Small Egg: Herb Baked Egg)
+check(#GameTooltip.lines == 1, "one line, the known dishes only")
+GameTooltip:SetItemByID(4306) -- (Silk Cloth: no dish)
+check(#GameTooltip.lines == 0, "none on what no dish uses")
+SlashCmdList.MEALBOOK("tooltips")
+GameTooltip:SetItemByID(2672)
+check(#GameTooltip.lines == 0 and MealbookSettings.tooltips == false, "/mealbook tooltips: the line off")
+SlashCmdList.MEALBOOK("tooltips")
+local cookable = P.cookable(char.known, ns.skill(), function(i) return s.bags[i] or 0 end)
+check(#cookable > 0 and cookable[1][2] > 0, "what the bags can cook now, and how many times")
+
 -- ── the hunts ────────────────────────────────────────────────────────────────
 local H, D = ns.hunts, ns.data
 check(H.mine() == "A", "the character's side: the Alliance")

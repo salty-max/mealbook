@@ -85,6 +85,12 @@ October 2026), not yet released: no store page.
   each recipe learned, dish cooked, point or rank (`ns.progressed`, from
   Core), quietly at the login (`retro`); earned: the game's fanfare, a line
   in chat, the kit's banner among the game's alerts (a click opens it).
+- `Pantry.lua`: an ingredient's dishes (every dish's reagents, by item):
+  on the item's tooltip, the known dishes it cooks into, each in its colour
+  now, the surest first, three at most (Forever's tooltip processor, else
+  the tooltips' OnTooltipSetItem; `/mealbook tooltips` turns it off,
+  `MealbookSettings.tooltips`); the dishes the bags can cook now and how
+  many times, on the Recipes tab's front page.
 - `Road.lua`: the game's skill-up rule (orange always, grey never, between
   (grey - skill) / (grey - yellow)), the road from the skill now (each point
   the surest recipe known, then one the bags can cook, then the fewest
@@ -141,18 +147,15 @@ summary the TOCs' Notes).
 
 ## Not yet
 
-- The pantry (an
-  ingredient's tooltip line), the welcome page, the minimap button, the
+- The welcome page, the minimap button, the
   opt-in collector, German.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it.
-- The CurseForge and Wago projects (their ids in the TOCs:
-  X-Curse-Project-ID, X-Wago-ID; secrets CURSEFORGE_TOKEN, WAGO_API_TOKEN
-  and INBOX_EVENTS_TOKEN), batched with
-  Palaver's at the user's ask (19 October 2026); then Mealbook in Ravenpost's
-  inbox (`src/digest.ts`, `src/stats.ts`) and the siblings' store pages.
-  The store page is a draft: read it again against what ships.
+- The first release: the projects are made (CurseForge 1754441, Wago
+  YK9xja6L, their ids in the TOCs, the tokens set, the inbox counting
+  them); then the siblings' "Other addons" lines. The store page is a
+  draft: read it again against what ships.
 
 ## Commands
 

@@ -33,6 +33,10 @@ From your skill now to 300, Mealbook plans the road with the recipes you know:
 
 The road changes as you cook and learn. Open it with `/mealbook road`.
 
+## The pantry
+
+Hover an ingredient and its tooltip names the dishes you know it cooks into, each in its colour for your skill. The book's front page shows what your bags can cook right now, and how many times.
+
 ## Hunts
 
 Some recipes no trainer teaches and no shop keeps for long. Mealbook keeps them as hunts, each opening when your skill is ready for it:
@@ -58,6 +62,7 @@ The dishes, ingredients and places are the game's own, in your client's language
 - `/mealbook` opens the cookbook.
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.
+- `/mealbook tooltips` turns the ingredients' tooltip line off or on.
 
 The hunts have their tab in the book.
 

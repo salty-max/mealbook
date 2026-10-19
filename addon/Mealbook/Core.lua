@@ -14,7 +14,8 @@
 --     milestones[id] = { at, level, retro } each achievement earned
 --                                      (Milestones.lua)
 --   MealbookSettings (SavedVariables): chef, the reader's pick ("kendor",
---     "eunice"), else their faction's
+--     "eunice"), else their faction's; tooltips (false: no pantry line on
+--     an ingredient's tooltip, /mealbook tooltips)
 --
 -- Every record by id: a dish by its spell, an ingredient by its item; their
 -- names are the game's, in the client's language, when shown.
@@ -263,6 +264,15 @@ SlashCmdList.MEALBOOK = function(msg)
     MealbookSettings.chef = ns.chef() == "kendor" and "eunice" or "kendor"
     print(ns.PREFIX .. L["Your cookbook is now %s's."]:format(ns.chefName()))
     if ns.onChange then ns.onChange() end
+  elseif msg == "tooltips" then
+    MealbookSettings.tooltips = MealbookSettings.tooltips == false
+    print(
+      ns.PREFIX
+        .. (
+          MealbookSettings.tooltips and L["Ingredients' tooltips name the dishes they cook into."]
+          or L["Ingredients' tooltips left as the game's."]
+        )
+    )
   elseif ns.toggle then
     ns.toggle()
   end

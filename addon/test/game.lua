@@ -201,6 +201,30 @@ GameTooltip = obj("Frame", "GameTooltip")
 GameTooltip.lines = {}
 function GameTooltip:SetOwner() wipe(self.lines) end
 function GameTooltip:AddLine(text) table.insert(self.lines, text) end
+-- (an item's tooltip: its lines, then the hooks a set item runs: Forever's
+-- modern client its tooltip processor's post-calls, Classic Era the
+-- tooltip's own script)
+local postCalls = {}
+if FOREVER then
+  Enum = Enum or {}
+  Enum.TooltipDataType = { Item = 0, Unit = 2 }
+  TooltipDataProcessor = {
+    AddTooltipPostCall = function(kind, f) table.insert(postCalls, { kind, f }) end,
+  }
+end
+function GameTooltip:SetItemByID(id)
+  wipe(self.lines)
+  self.item = id
+  if FOREVER then
+    for _, p in ipairs(postCalls) do
+      if p[1] == Enum.TooltipDataType.Item then p[2](self, { id = id }) end
+    end
+    return
+  end
+  local f = self.scripts.OnTooltipSetItem
+  if f then f(self) end
+end
+function GameTooltip:GetItem() return "Item " .. self.item, "|Hitem:" .. self.item .. "::::|h[Item]|h" end
 WorldFrame = obj("Frame", "WorldFrame")
 
 G.invalidEvents = {}

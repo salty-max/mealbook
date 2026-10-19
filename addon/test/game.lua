@@ -1,0 +1,407 @@
+-- A small game for Mealbook's tests (Palaver's frames, events and timers):
+-- the cooking skill as each client tells it (Classic Era's skill list by its
+-- name, Forever's professions by their id), the recipes the character knows
+-- (IsPlayerSpell), the cooking window's lines (Classic Era's TradeSkillUI
+-- calls, Forever's C_TradeSkillUI), the dishes' and items' names by id, the
+-- bags. FOREVER=1 plays Forever's client, LOCALE=frFR a French one.
+local G = {}
+local state = { time = 1000, calls = {}, printed = {}, timers = {}, combat = false, talking = false }
+G.state = state
+local FOREVER = os.getenv("FOREVER") == "1"
+local LOCALE = os.getenv("LOCALE") or "enUS"
+G.FOREVER, G.LOCALE = FOREVER, LOCALE
+
+local function call(name, ...) table.insert(state.calls, { name, ... }) end
+function G.called(name)
+  local n, last = 0, nil
+  for _, c in ipairs(state.calls) do
+    if c[1] == name then
+      n = n + 1
+      last = c
+    end
+  end
+  return n, last
+end
+function G.forget() state.calls = {} end
+
+-- ── frames ───────────────────────────────────────────────────────────────────
+local registry = {} -- event -> frames, in registration order
+local function obj(kind, name)
+  local o = {
+    kind = kind,
+    name = name,
+    shown = kind ~= "Frame" and kind ~= "Button" and kind ~= "ScrollFrame",
+    scripts = {},
+    events = {},
+    text = nil,
+    w = 0,
+    h = 0,
+    font = 15,
+  }
+  return setmetatable(o, {
+    -- (a method the test game lacks does nothing, as long as it is a
+    -- method: the game's are capitalized, a field the addon never set is nil)
+    __index = function(self, k)
+      local m = G.methods[k]
+      if m then return m end
+      if type(k) == "string" and k:match("^%u") then
+        return function() end
+      end
+    end,
+  })
+end
+G.methods = {
+  Show = function(self)
+    self.shown = true
+    local s = self.scripts.OnShow
+    if s then s(self) end
+  end,
+  Hide = function(self)
+    local was = self.shown
+    self.shown = false
+    local s = self.scripts.OnHide
+    if was and s then s(self) end
+  end,
+  IsShown = function(self) return self.shown end,
+  IsVisible = function(self) return self.shown end,
+  SetShown = function(self, v)
+    if v then
+      self:Show()
+    else
+      self:Hide()
+    end
+  end,
+  SetText = function(self, t) self.text = t end,
+  GetText = function(self) return self.text end,
+  SetFormattedText = function(self, f, ...) self.text = f:format(...) end,
+  SetScript = function(self, k, f) self.scripts[k] = f end,
+  GetScript = function(self, k) return self.scripts[k] end,
+  HookScript = function(self, k, f)
+    local old = self.scripts[k]
+    self.scripts[k] = function(...)
+      if old then old(...) end
+      f(...)
+    end
+  end,
+  RegisterEvent = function(self, e)
+    if G.invalidEvents[e] then error('Attempt to register unknown event "' .. e .. '"') end
+    if self.events[e] then return end
+    self.events[e] = true
+    registry[e] = registry[e] or {}
+    table.insert(registry[e], self)
+  end,
+  -- (a unit's event: heard for that unit alone, as the game filters it)
+  RegisterUnitEvent = function(self, e, unit)
+    self.unitOf = self.unitOf or {}
+    self.unitOf[e] = unit
+    G.methods.RegisterEvent(self, e)
+  end,
+  UnregisterEvent = function(self, e)
+    if not self.events[e] then return end
+    self.events[e] = nil
+    for i, f in ipairs(registry[e] or {}) do
+      if f == self then
+        table.remove(registry[e], i)
+        break
+      end
+    end
+  end,
+  UnregisterAllEvents = function(self)
+    for e in pairs(self.events) do
+      G.methods.UnregisterEvent(self, e)
+    end
+  end,
+  IsEventRegistered = function(self, e) return self.events[e] == true end,
+  SetWidth = function(self, w) self.w = w end,
+  SetHeight = function(self, h) self.h = h end,
+  SetSize = function(self, w, h)
+    self.w, self.h = w, h
+  end,
+  GetWidth = function(self) return self.w end,
+  GetHeight = function(self) return self.h end,
+  SetFont = function(self, _, size) self.font = size end,
+  GetStringHeight = function(self)
+    local t = self.text or ""
+    if t == "" then return 0 end
+    local per = math.max(1, math.floor((self.w > 0 and self.w or 300) / (self.font * 0.55)))
+    local lines = 0
+    for para in (t .. "\n"):gmatch("(.-)\n") do
+      lines = lines + math.max(1, math.ceil(#para / per))
+    end
+    return lines * (self.font + 4)
+  end,
+  GetStringWidth = function(self) return #(self.text or "") * self.font * 0.55 end,
+  CreateTexture = function() return obj("Texture") end,
+  CreateFontString = function() return obj("FontString") end,
+  CreateMaskTexture = function() return obj("MaskTexture") end,
+  GetPoint = function(self) return "RIGHT", UIParent, "RIGHT", -100, 20 end,
+  SetScrollChild = function(self, c) self.scrollChild = c end,
+  GetVerticalScroll = function(self) return self.vscroll or 0 end,
+  SetVerticalScroll = function(self, v) self.vscroll = v end,
+  EnableKeyboard = function(self, on)
+    if state.combat then error("EnableKeyboard is protected in combat") end
+    self.keyboard = on
+  end,
+  SetPropagateKeyboardInput = function(self, on)
+    if state.combat then error("SetPropagateKeyboardInput is protected in combat") end
+    self.propagate = on
+  end,
+  GetName = function(self) return self.name end,
+  SetAlpha = function(self, a) self.alpha = a end,
+  SetParent = function(self, p) self.parent = p end,
+  -- the game's window: its title bar, the face in its corner
+  SetTitle = function(self, t) self.titleText = t end,
+  SetPortraitToUnit = function(self, unit) self.face = unit end,
+  SetPortraitToAsset = function(self, asset) self.face = asset end,
+  GetAlpha = function(self) return self.alpha or 1 end,
+  SetVertexColor = function(self, r, g, b) self.color = { r, g, b } end,
+  SetScale = function(self, v) self.scale = v end,
+  GetScale = function(self) return self.scale or 1 end,
+  GetParent = function(self) return self.parent end,
+  -- (the kit's books: levels, sizes and text as the page lays them out)
+  GetFrameLevel = function(self) return self.level or 1 end,
+  SetFrameLevel = function(self, v) self.level = v end,
+  GetTextColor = function(self) return unpack(self.textColor or { 1, 1, 1 }) end,
+  SetTextColor = function(self, r, g, b) self.textColor = { r, g, b } end,
+  GetNumLines = function(self) return math.max(1, math.ceil(self:GetStringHeight() / (self.font + 4))) end,
+  GetLineHeight = function(self) return self.font + 4 end,
+  GetTop = function() return 500 end,
+  GetBottom = function() return 100 end,
+  GetLeft = function() return 100 end,
+  GetRight = function() return 600 end,
+  GetCenter = function() return 350, 300 end,
+  GetEffectiveScale = function() return 1 end,
+  IsMouseOver = function() return false end,
+}
+
+local frames = {}
+function CreateFrame(kind, name, parent, template)
+  local f = obj(kind, name)
+  table.insert(frames, f)
+  f.parent = parent
+  f.template = template
+  if name then _G[name] = f end
+  -- (the game's window: a close button that hides it, as HideUIPanel does)
+  if template == "ButtonFrameTemplate" then
+    f.CloseButton = CreateFrame("Button", nil, f)
+    f.CloseButton:SetScript("OnClick", function(self) self.parent:Hide() end)
+  end
+  -- (a tooltip of the template: it keeps its lines, as the game's does)
+  if kind == "GameTooltip" then
+    f.lines = {}
+    function f:SetOwner() wipe(self.lines) end
+    function f:AddLine(text) table.insert(self.lines, text) end
+  end
+  return f
+end
+UIParent = obj("Frame", "UIParent")
+UIParent.shown = true
+UIParent.w, UIParent.h = 1365, 768
+GameTooltip = obj("Frame", "GameTooltip")
+GameTooltip.lines = {}
+function GameTooltip:SetOwner() wipe(self.lines) end
+function GameTooltip:AddLine(text) table.insert(self.lines, text) end
+WorldFrame = obj("Frame", "WorldFrame")
+
+G.invalidEvents = {}
+if FOREVER then
+  G.invalidEvents.TRADE_SKILL_UPDATE = true
+else
+  G.invalidEvents.TRADE_SKILL_LIST_UPDATE = true
+  G.invalidEvents.NEW_RECIPE_LEARNED = true
+end
+
+function G.fire(e, ...)
+  local list = {}
+  for _, f in ipairs(registry[e] or {}) do
+    table.insert(list, f)
+  end
+  for _, f in ipairs(list) do
+    local s = f.scripts.OnEvent
+    local unit = f.unitOf and f.unitOf[e]
+    if s and f.events[e] and (not unit or unit == ...) then s(f, e, ...) end
+  end
+end
+
+-- ── timers ───────────────────────────────────────────────────────────────────
+function GetTime() return state.time end
+function time() return 1790000000 + math.floor(state.time) end
+C_Timer = {
+  After = function(delay, fn) table.insert(state.timers, { at = state.time + delay, fn = fn }) end,
+}
+function G.advance(seconds)
+  local stop = state.time + seconds
+  -- (frames' OnUpdate, a tenth of a second at a time, before the timers due)
+  local t = state.time
+  while t < stop - 1e-9 do
+    local step = math.min(0.1, stop - t)
+    t = t + step
+    for _, f in ipairs(frames) do
+      local u = f.scripts.OnUpdate
+      if u then u(f, step) end
+    end
+  end
+  while true do
+    table.sort(state.timers, function(a, b) return a.at < b.at end)
+    local t = state.timers[1]
+    if not t or t.at > stop then break end
+    table.remove(state.timers, 1)
+    state.time = t.at
+    t.fn()
+  end
+  state.time = stop
+end
+
+-- ── the game's basics ────────────────────────────────────────────────────────
+local BUILD = FOREVER and 16001 or 11509
+function GetBuildInfo() return "x", "1", "Oct 2026", BUILD end
+function GetLocale() return LOCALE end
+function print(...)
+  local t = {}
+  for i = 1, select("#", ...) do
+    t[#t + 1] = tostring(select(i, ...))
+  end
+  table.insert(state.printed, table.concat(t, " "))
+end
+function wipe(t)
+  for k in pairs(t) do
+    t[k] = nil
+  end
+  return t
+end
+date = os.date
+function strtrim(s) return (s:gsub("^%s+", ""):gsub("%s+$", "")) end
+function debugstack() return "stack" end
+function geterrorhandler()
+  return function(err) error(err, 0) end
+end
+function InCombatLockdown() return state.combat end
+SlashCmdList = {}
+STANDARD_TEXT_FONT = "Fonts\\FRIZQT__.TTF"
+UISpecialFrames = {}
+SOUNDKIT = {}
+function PlaySound() end
+function hooksecurefunc() end
+function PanelTemplates_SetNumTabs() end
+function PanelTemplates_SetTab(f, n) f.tab = n end
+function PanelTemplates_TabResize() end
+ITEM_QUALITY_COLORS = { [1] = { r = 1, g = 1, b = 1 }, [2] = { r = 0.1, g = 1, b = 0.1 } }
+ERR_LEARN_RECIPE_S = LOCALE == "frFR" and "Vous avez appris à fabriquer un nouvel objet : %s."
+  or "You have learned how to create a new item: %s."
+
+-- the character: a dwarf of the Alliance, level 12
+state.guid, state.level = "Player-1-0001", 12
+function UnitGUID() return state.guid end
+function UnitLevel() return state.level end
+function UnitFactionGroup() return "Alliance" end
+
+-- ── cooking ──────────────────────────────────────────────────────────────────
+-- state.skill: { rank, max } (nil: no cooking); state.known[spell]: the
+-- recipes the character has; state.window: the cooking window open, its lines
+-- (the known recipes, by the book's own spells and their items)
+state.known = {}
+local SKILL_NAME = LOCALE == "frFR" and "Cuisine" or "Cooking"
+if FOREVER then
+  -- (Forever: the professions, cooking fifth, by its skill line's id)
+  function GetProfessions() return nil, nil, nil, nil, state.skill and 7 or nil end
+  function GetProfessionInfo(i)
+    if i ~= 7 or not state.skill then return nil end
+    return SKILL_NAME, 133971, state.skill.rank, state.skill.max, 0, 0, 185
+  end
+  C_TradeSkillUI = {
+    GetAllRecipeIDs = function()
+      local out = {}
+      for spell in pairs(state.windowRecipes or {}) do
+        table.insert(out, spell)
+      end
+      table.sort(out)
+      return out
+    end,
+    GetRecipeInfo = function(id) return { recipeID = id, learned = state.known[id] == true } end,
+  }
+else
+  -- (Classic Era: the skill list, by its name in the client's language)
+  function GetNumSkillLines() return 3 end
+  function GetSkillLineInfo(i)
+    if i == 1 then return LOCALE == "frFR" and "Métiers secondaires" or "Secondary Skills", true end
+    if i == 2 and state.skill then return SKILL_NAME, false, nil, state.skill.rank, 0, 0, state.skill.max end
+    if i == 3 then return LOCALE == "frFR" and "Pêche" or "Fishing", false, nil, 20, 0, 0, 75 end
+    return LOCALE == "frFR" and "Langues" or "Languages", true
+  end
+  function GetTradeSkillLine()
+    if not state.window then return "UNKNOWN", 0, 0 end
+    return SKILL_NAME, state.skill.rank, state.skill.max
+  end
+  local lines = function()
+    local out = {}
+    for spell in pairs(state.windowRecipes or {}) do
+      table.insert(out, spell)
+    end
+    table.sort(out)
+    return out
+  end
+  function GetNumTradeSkills() return state.window and #lines() + 1 or 0 end
+  function GetTradeSkillInfo(i)
+    if i == 1 then return "Meat", "header" end
+    local spell = lines()[i - 1]
+    return G.names[spell] or "?", "orange"
+  end
+  function GetTradeSkillRecipeLink(i)
+    local spell = lines()[i - 1]
+    return spell and ("|cffffd000|Henchant:%d|h[%s]|h|r"):format(spell, G.names[spell] or "?")
+  end
+  function GetTradeSkillItemLink() return nil end
+end
+function IsPlayerSpell(spell) return state.known[spell] == true end
+
+-- the dishes' and items' names by id, in the client's language (the few the
+-- tests meet)
+G.names = {
+  [2538] = "Charred Wolf Meat",
+  [2540] = "Roasted Boar Meat",
+  [8604] = "Herb Baked Egg",
+  [6412] = "Kaldorei Spider Kabob",
+  [2539] = "Spiced Wolf Meat",
+  [2795] = "Beer Basted Boar Ribs",
+}
+if FOREVER then
+  C_Spell = { GetSpellName = function(id) return G.names[id] end }
+else
+  function GetSpellInfo(id) return G.names[id] end
+end
+state.bags = {}
+function GetItemCount(item) return state.bags[item] or 0 end
+function GetItemInfo(id) return "Item " .. id, nil, 1 end
+function GetItemIcon() return 134400 end
+
+-- ── the addon ────────────────────────────────────────────────────────────────
+local DIR = "addon/Mealbook/"
+local ns = {}
+G.ns = ns
+for _, file in ipairs({
+  FOREVER and "Recipes_Forever.lua" or "Recipes_Classic.lua",
+  "Kit.lua",
+  "Locale.lua",
+  "Text_" .. LOCALE .. ".lua",
+  "Core.lua",
+  "Road.lua",
+  "Book.lua",
+  "RecipesBook.lua",
+  "RoadBook.lua",
+}) do
+  assert(loadfile(DIR .. file))("Mealbook", ns)
+end
+function G.login()
+  G.fire("ADDON_LOADED", "Mealbook")
+  G.fire("PLAYER_LOGIN")
+end
+-- The cooking window opened, showing these recipes.
+function G.openWindow(recipes)
+  state.window, state.windowRecipes = true, {}
+  for _, spell in ipairs(recipes) do
+    state.windowRecipes[spell] = true
+    state.known[spell] = true -- (the window lists what the character knows)
+  end
+  G.fire("TRADE_SKILL_SHOW")
+end
+return G

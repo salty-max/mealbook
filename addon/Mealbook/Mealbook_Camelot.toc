@@ -6,7 +6,7 @@
 ## Version: 0.1.0
 ## SavedVariablesPerCharacter: MealbookChar
 ## SavedVariables: MealbookSettings
-## IconTexture: Interface\Icons\INV_Misc_Food_15
+## IconTexture: Interface\AddOns\Mealbook\Media\Logo
 ## X-License: MIT
 
 # Each game loads its own TOC (_Vanilla: Classic Era, _Camelot: Forever), the

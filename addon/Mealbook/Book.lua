@@ -18,7 +18,7 @@ K.theme({
   highlight = { 1.00, 0.85, 0.65 },
 })
 local T = K.T
-local ICON = "Interface\\Icons\\INV_Misc_Food_15"
+local ICON = "Interface\\AddOns\\Mealbook\\Media\\Logo"
 
 -- The skill's colours, the game's cooking window's.
 local COLOURS = {

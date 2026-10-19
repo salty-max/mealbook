@@ -79,6 +79,16 @@ page.
   clients English until translated. The dishes', ingredients' and
   recipes' names are the game's, by id, in the client's language.
 
+## Artwork
+
+`assets/logo-master.png` is the original generated logo, with 1024px and
+512px PNG exports and the exact prompt in `assets/logo-prompts.json`.
+`addon/Mealbook/Media/Logo.tga` is the uncompressed 256px game texture,
+rounded as the siblings' (radius 34), used by both TOCs' IconTexture and
+the cookbook window's portrait. The mark is an open copper-bound cookbook
+with a wooden spoon and an ink drawing of a steaming pot, in the family's
+painted gold and navy style.
+
 ## Not yet
 
 - The Hunts tab (recipe drops and limited-stock vendors, named

@@ -11,7 +11,8 @@
 --     first[spell] = { at, level }     the first time it was cooked
 --     skill = { rank, max, at }        the cooking skill as last read
 --     peak                             the highest skill read
---   MealbookSettings (SavedVariables)
+--   MealbookSettings (SavedVariables): chef, the reader's pick ("kendor",
+--     "eunice"), else their faction's
 --
 -- Every record by id: a dish by its spell, an ingredient by its item; their
 -- names are the game's, in the client's language, when shown.
@@ -230,12 +231,27 @@ ns.onUnit("UNIT_SPELLCAST_SUCCEEDED", "player", function(_, _, spell)
   if ns.onChange then ns.onChange() end
 end)
 
+-- ── the chef ─────────────────────────────────────────────────────────────────
+-- Whose book: the reader's pick, else their faction's chef (Kendor Kabonka
+-- the Alliance's, Eunice Burch the Horde's).
+ns.CHEFS = { "kendor", "eunice" }
+function ns.chef()
+  local pick = MealbookSettings and MealbookSettings.chef
+  if pick == "kendor" or pick == "eunice" then return pick end
+  return UnitFactionGroup("player") == "Horde" and "eunice" or "kendor"
+end
+function ns.chefName(chef) return ns.chefNames and ns.chefNames[chef or ns.chef()] or "" end
+
 -- ── /mealbook ────────────────────────────────────────────────────────────────
 SLASH_MEALBOOK1 = "/mealbook"
 SlashCmdList.MEALBOOK = function(msg)
   msg = strtrim((msg or ""):lower())
   if msg == "road" then
     if ns.openRoad then ns.openRoad() end
+  elseif msg == "chef" then
+    MealbookSettings.chef = ns.chef() == "kendor" and "eunice" or "kendor"
+    print(ns.PREFIX .. L["Your cookbook is now %s's."]:format(ns.chefName()))
+    if ns.onChange then ns.onChange() end
   elseif ns.toggle then
     ns.toggle()
   end

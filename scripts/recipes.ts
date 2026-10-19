@@ -22,8 +22,9 @@
  * yet (its own, before launch: `unknown`), the road never sending anyone
  * after it.
  *
- *   i18n/skill_line.json: the cooking skill line's name in every language,
- *     the client's own, for scripts/locales.ts.
+ *   i18n/names.json: the game's own names Mealbook shows or reads in every
+ *     language, the client's, for scripts/locales.ts: the cooking skill
+ *     line's (Classic Era's skill list names it only so), the chefs'.
  *
  *   bun scripts/recipes.ts           write them
  *   bun scripts/recipes.ts --check   fail if one isn't up to date, or a dish
@@ -233,20 +234,26 @@ function chunk(xs: number[], n = 10): number[][] {
   return out;
 }
 
-// The cooking skill line's name in every language the game has, the client's
-// own (Classic Era's skill list names a skill only by its name): for
-// scripts/locales.ts to put in each language's Text file.
+// The game's own names in every language the game has, the client's: the
+// cooking skill line's (Classic Era's skill list names a skill only by its
+// name), the chefs' (their creatures'), for scripts/locales.ts to put in each
+// language's Text file.
 const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
-export function skillNames(): Record<string, string> {
+export const CHEF_NPCS = { kendor: 340, eunice: 4552 };
+export function gameNames(): Record<string, Record<string, string>> {
   const db = openDb("classic");
-  const rows = db.query("SELECT locale, name FROM name WHERE kind = 'skill_line' AND id = ?").all(COOKING) as { locale: string; name: string }[];
+  const named = (kind: string, id: number) =>
+    Object.fromEntries((db.query("SELECT locale, name FROM name WHERE kind = ? AND id = ?").all(kind, id) as { locale: string; name: string }[]).map((r) => [r.locale, r.name]));
+  const skill = named("skill_line", COOKING);
+  const chefs = Object.fromEntries(Object.entries(CHEF_NPCS).map(([chef, npc]) => [chef, named("creature", npc)]));
   db.close();
-  const by = Object.fromEntries(rows.map((r) => [r.locale, r.name]));
-  const out: Record<string, string> = {};
+  const out: Record<string, Record<string, string>> = {};
   for (const l of LOCALES) {
-    const name = by[l] ?? (l === "enGB" ? by.enUS : undefined);
-    if (!name) throw new Error(`no name for the cooking skill line in ${l}`);
-    out[l] = name;
+    const from = (by: Record<string, string>) => by[l] ?? (l === "enGB" ? by.enUS : undefined);
+    const entry: Record<string, string> = { skillLine: from(skill)! };
+    for (const [chef, by] of Object.entries(chefs)) entry[chef] = from(by)!;
+    for (const [k, v] of Object.entries(entry)) if (!v) throw new Error(`no ${k} name in ${l}`);
+    out[l] = entry;
   }
   return out;
 }
@@ -255,12 +262,12 @@ if (import.meta.main) {
   const check = process.argv.includes("--check");
   let bad = false;
   {
-    const path = join(ROOT, "i18n", "skill_line.json");
-    const want = `${JSON.stringify(skillNames(), null, 2)}\n`;
+    const path = join(ROOT, "i18n", "names.json");
+    const want = `${JSON.stringify(gameNames(), null, 2)}\n`;
     const have = existsSync(path) ? readFileSync(path, "utf8") : "";
     if (have !== want) {
       if (check) {
-        console.error("✗ i18n/skill_line.json is not up to date: bun scripts/recipes.ts");
+        console.error("✗ i18n/names.json is not up to date: bun scripts/recipes.ts");
         bad = true;
       } else writeFileSync(path, want);
     }

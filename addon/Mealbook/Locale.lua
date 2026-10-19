@@ -22,8 +22,12 @@ end
 
 -- The game's own names in the reader's language (its Text file, from
 -- wow-data's databases): the cooking skill line's, as the client's skill
--- list writes it (Classic Era names a skill only by its name there).
-function ns.names(t) ns.skillName = t.skillLine end
+-- list writes it (Classic Era names a skill only by its name there), and the
+-- chefs'.
+function ns.names(t)
+  ns.skillName = t.skillLine
+  ns.chefNames = t.chefs or {}
+end
 
 -- The game this is: Forever's client is a modern one (interface 1.60, 16001).
 local build = select(4, GetBuildInfo())

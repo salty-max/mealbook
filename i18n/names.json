@@ -1,0 +1,62 @@
+{
+  "enUS": {
+    "skillLine": "Cooking",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "enGB": {
+    "skillLine": "Cooking",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "deDE": {
+    "skillLine": "Kochkunst",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "frFR": {
+    "skillLine": "Cuisine",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "esES": {
+    "skillLine": "Cocina",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "esMX": {
+    "skillLine": "Cocina",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "ruRU": {
+    "skillLine": "Кулинария",
+    "kendor": "Кендор Кабонка",
+    "eunice": "Эвника Барч"
+  },
+  "ptBR": {
+    "skillLine": "Culinária",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Amora"
+  },
+  "itIT": {
+    "skillLine": "Cooking",
+    "kendor": "Kendor Kabonka",
+    "eunice": "Eunice Burch"
+  },
+  "koKR": {
+    "skillLine": "요리",
+    "kendor": "켄로드 카본카",
+    "eunice": "유니스 버치"
+  },
+  "zhCN": {
+    "skillLine": "烹饪",
+    "kendor": "肯多尔·卡邦卡",
+    "eunice": "尤奈斯·伯奇"
+  },
+  "zhTW": {
+    "skillLine": "烹飪",
+    "kendor": "肯多爾·卡邦卡",
+    "eunice": "尤奈斯·伯奇"
+  }
+}

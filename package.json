@@ -8,9 +8,10 @@
     "kit:check": "bun ../addon-kit/sync.ts --check addon/Mealbook",
     "recipes": "bun scripts/recipes.ts",
     "locales": "bun scripts/locales.ts",
+    "pages": "bun scripts/pages.ts",
     "lint:lua": "stylua --check addon && selene addon/Mealbook",
     "format:lua": "stylua addon",
-    "check": "bun run kit:check && bun scripts/recipes.ts --check && bun scripts/locales.ts --check && bun run lint:lua && luajit addon/test/sim.lua && FOREVER=1 luajit addon/test/sim.lua && LOCALE=frFR luajit addon/test/sim.lua && bun scripts/package.ts --check",
+    "check": "bun run kit:check && bun scripts/recipes.ts --check && bun scripts/locales.ts --check && bun scripts/pages.ts --check && bun run lint:lua && luajit addon/test/sim.lua && FOREVER=1 luajit addon/test/sim.lua && LOCALE=frFR luajit addon/test/sim.lua && bun scripts/package.ts --check",
     "package": "bun scripts/package.ts"
   }
 }

@@ -383,6 +383,7 @@ for _, file in ipairs({
   "Kit.lua",
   "Locale.lua",
   "Text_" .. LOCALE .. ".lua",
+  "Pages_" .. LOCALE .. ".lua",
   "Core.lua",
   "Road.lua",
   "Book.lua",

@@ -16,6 +16,7 @@ Recipes_Forever.lua
 Kit.lua
 Locale.lua
 Text_[TextLocale].lua
+Pages_[TextLocale].lua
 Core.lua
 Road.lua
 Book.lua

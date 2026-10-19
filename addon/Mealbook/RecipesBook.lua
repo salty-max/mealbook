@@ -80,6 +80,27 @@ local HOW = {
   quest = L["From a quest"],
 }
 
+-- The chef's page of the dish: a note in their hand, signed (the kit's
+-- aside). A translation names places as Forever's client does: Classic Era's
+-- names swapped in there (ns.classicNames, from the Pages file).
+local function swapped(text)
+  if ns.forever or not ns.classicNames then return text end
+  for forever, classic in pairs(ns.classicNames) do
+    text = text:gsub(forever:gsub("%p", "%%%0"), (classic:gsub("%%", "%%%%")))
+  end
+  return text
+end
+local function chefPage(spell)
+  local chef = ns.chef()
+  local paragraphs = ns.pages and ns.pages[chef] and ns.pages[chef][spell]
+  if not paragraphs then return end
+  local out = {}
+  for i, p in ipairs(paragraphs) do
+    out[i] = swapped(p)
+  end
+  page:text({ { table.concat(out, "\n\n"), aside = true, sign = ns.chefName(chef) } })
+end
+
 local function showDish(spell)
   local d, char = D.recipes[spell], ns.book()
   local skill = ns.skill()
@@ -89,6 +110,7 @@ local function showDish(spell)
     if c[1] == d.chapter then chapter = c[2] end
   end
   page:start(ns.dishName(spell), table.concat({ chapter or "", ui.colourWord(colour) }, "  -  "), ui.dishPicture(spell))
+  chefPage(spell)
   local made = d.made[1] == d.made[2] and tostring(d.made[1]) or ("%d-%d"):format(d.made[1], d.made[2])
   page:stats({
     { tostring(char.cooked[spell] or 0), L["cooked"] },

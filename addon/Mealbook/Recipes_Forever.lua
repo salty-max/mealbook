@@ -109,7 +109,7 @@ ns.data = {
     [1249966] = { item = 249874, made = { 1, 1 }, learn = 180, yellow = 185, grey = 195, chapter = "drink", reagents = { 1708, 1, 2692, 3, 5637, 1 }, items = { 249888 } }, -- Calcified Smoothie
     [1249960] = { item = 249868, made = { 1, 1 }, learn = 180, yellow = 195, grey = 235, chapter = "drink", reagents = { 1708, 1, 3818, 2 }, items = { 249882 }, unknown = true }, -- Triage Tea
     [1250150] = { item = 250073, made = { 1, 1 }, learn = 180, yellow = 280, grey = 310, chapter = "meat", reagents = { 12184, 2, 2692, 3 }, items = { 250181 }, unknown = true }, -- Raging Raptor Ribs
-    [1295834] = { item = 274976, made = { 1, 1 }, learn = 185, yellow = 200, grey = 230, chapter = "fish", reagents = { 769, 2, 2678, 1 }, items = { 274977 } }, -- Plain Ol' Paletusk
+    [1295834] = { item = 274976, made = { 1, 1 }, learn = 185, yellow = 200, grey = 230, chapter = "meat", reagents = { 769, 2, 2678, 1 }, items = { 274977 } }, -- Plain Ol' Paletusk
     [1291341] = { item = 279974, made = { 1, 1 }, learn = 200, yellow = 205, grey = 220, chapter = "fire", reagents = { 272941, 1 }, items = { 273101 }, unknown = true }, -- Expert Campfire
     [1249967] = { item = 249875, made = { 1, 1 }, learn = 200, yellow = 215, grey = 225, chapter = "drink", reagents = { 1645, 1, 3713, 3, 4402, 1 }, items = { 249889 } }, -- Spicy Smoothie
     [1295805] = { item = 274971, made = { 1, 1 }, learn = 200, yellow = 220, grey = 240, chapter = "soup", reagents = { 730, 2, 12206, 1, 2692, 1 }, items = { 274972 }, unknown = true }, -- Briny Seafood Stew

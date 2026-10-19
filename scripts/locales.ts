@@ -47,12 +47,13 @@ const json = (file: string) => (existsSync(file) ? JSON.parse(readFileSync(file,
 const blanks = (s: string) => [...s.matchAll(/%%|%[0-9.]*[sdf]/g)].map((m) => m[0]).filter((b) => b !== "%%");
 
 // The game's own names a language's file carries, every language's whole
-// (English one of them): the cooking skill line's (i18n/skill_line.json,
-// written by scripts/recipes.ts from the client's SkillLine).
+// (English one of them): the cooking skill line's and the chefs'
+// (i18n/names.json, written by scripts/recipes.ts from the client's data).
 function namesLua(locale: string): string[] {
-  const names: Record<string, string> = json(join(I18N, "skill_line.json"));
-  if (!names[locale]) throw new Error(`i18n/skill_line.json names nothing in ${locale}: bun scripts/recipes.ts`);
-  return [`ns.names({ skillLine = ${q(names[locale])} })`];
+  const names: Record<string, Record<string, string>> = json(join(I18N, "names.json"));
+  const mine = names[locale];
+  if (!mine) throw new Error(`i18n/names.json names nothing in ${locale}: bun scripts/recipes.ts`);
+  return [`ns.names({ skillLine = ${q(mine.skillLine)}, chefs = { kendor = ${q(mine.kendor)}, eunice = ${q(mine.eunice)} } })`];
 }
 
 function luaFor(locale: string): string {

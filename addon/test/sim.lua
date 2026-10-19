@@ -9,12 +9,15 @@ local function check(ok, what)
   if not ok then error("✗ " .. what, 2) end
   count = count + 1
 end
-local function said(pattern)
+local L = ns.kit.L
+local function said(text)
   for _, line in ipairs(s.printed) do
-    if line:find(pattern) then return true end
+    if line:find(text, 1, true) then return true end
   end
   return false
 end
+-- (the start of a line the addon says, in the client's language)
+local NEW_PAGE = L["A new page: %s."]:match("^(.-)%%s")
 
 -- ── a cook's first login ─────────────────────────────────────────────────────
 s.skill = { rank = 12, max = 75 }
@@ -24,14 +27,14 @@ local char = MealbookChar
 check(char.guid == s.guid, "the book is this character's")
 check(ns.skill() == 12, "the cooking skill read, by its id (Forever) or its name in the client's language")
 check(char.known[2538] and char.known[2540] and char.known[8604], "the recipes the character knows, taken")
-check(not said("A new page"), "quietly at the first login")
-check(said("3 recipes, cooking 12"), "the login's line: the recipes and the skill")
+check(not said(NEW_PAGE), "quietly at the first login")
+check(said(L["%d recipes, cooking %d."]:format(3, 12)), "the login's line: the recipes and the skill")
 
 -- ── the cooking window ───────────────────────────────────────────────────────
 s.printed = {}
 G.openWindow({ 2538, 2540, 8604, 6412 })
 check(char.known[6412], "a recipe the window lists joins the book")
-check(said("A new page"), "said in chat")
+check(said(NEW_PAGE), "said in chat")
 
 -- ── a recipe learned from its item ───────────────────────────────────────────
 s.printed = {}

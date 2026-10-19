@@ -1,4 +1,8 @@
 {
+  "%d recipe": "",
+  "%d recipe, cooking %d.": "",
+  "%d recipes": "",
+  "%d recipes, cooking %d.": "",
   "%d to %d": "",
   "%d to %d: about %d casts": "",
   "%s, you were level %d": "",
@@ -49,6 +53,7 @@
   "With the skill itself": "",
   "Worth learning now": "",
   "Your cookbook": "",
+  "Your cookbook is now %s's.": "",
   "Your page": "",
   "Your skill can't go past %d until you train. A cooking trainer teaches the next rank.": "",
   "a cast makes": "",
@@ -62,6 +67,8 @@
   "orange": "",
   "points": "",
   "points on the road": "",
+  "recipe": "",
+  "recipes": "",
   "too hard": "",
   "yellow": "",
   "you can cook now": ""

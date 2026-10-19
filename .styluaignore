@@ -1,3 +1,4 @@
 # Generated (scripts/recipes.ts)
 addon/Mealbook/Recipes_*.lua
 addon/Mealbook/Pages_*.lua
+addon/Mealbook/Text_*.lua

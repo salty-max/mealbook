@@ -6,3 +6,5 @@ exclude = ["addon/Mealbook/Text_*.lua", "addon/Mealbook/Recipes_*.lua", "addon/M
 [lints]
 # layout is StyLua's: a guard or a callback on one line is as it writes them
 multiple_statements = "allow"
+# the kit's page takes a note as { text, aside = true, sign = ... } (Kit.lua, Page:text)
+mixed_table = "allow"

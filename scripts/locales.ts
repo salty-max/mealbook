@@ -30,7 +30,7 @@ const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR",
 const ENGLISH = new Set(["enUS", "enGB"]);
 const BORROWS: Record<string, string> = { esMX: "esES" };
 
-// every L["..."] of the addon's own files (the kit's copy aside: its words are
+// every L["..."] and plural("one", "many") of the addon's own files (the kit's copy aside: its words are
 // the kit's, translated with the addon's when they appear)
 function keys(): string[] {
   const found = new Set<string>();
@@ -38,6 +38,11 @@ function keys(): string[] {
     if (!f.endsWith(".lua") || f.startsWith("Text_") || f === "Kit.lua") continue;
     const src = readFileSync(join(ADDON, f), "utf8");
     for (const m of src.matchAll(/\bL\["((?:[^"\\]|\\.)*)"\]/g)) found.add(m[1].replace(/\\"/g, '"').replace(/\\n/g, "\n"));
+    // (and the kit's plural("one", "many"): both forms are words to translate)
+    for (const m of src.matchAll(/plural\([^,]+,\s*"((?:[^"\\]|\\.)*)",\s*"((?:[^"\\]|\\.)*)"\s*\)/g)) {
+      found.add(m[1]);
+      found.add(m[2]);
+    }
   }
   return [...found].sort();
 }

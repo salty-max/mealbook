@@ -476,3 +476,5 @@ globals:
     any: true
   ERR_LEARN_RECIPE_S:
     any: true
+  UnitFactionGroup:
+    any: true

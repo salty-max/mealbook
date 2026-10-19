@@ -111,6 +111,65 @@ if G.LOCALE == "frFR" then
   end
 end
 
+-- ── the hunts ────────────────────────────────────────────────────────────────
+local H, D = ns.hunts, ns.data
+check(H.mine() == "A", "the character's side: the Alliance")
+-- every npc and quest the data names: a name (an npc's in every language)
+local unnamed = 0
+for id in pairs(D.npcs) do
+  if not ns.npcNames[id] or ns.npcNames[id] == "" then unnamed = unnamed + 1 end
+end
+check(unnamed == 0, "every seller, dropper and quest giver named in the client's language")
+-- the Winter Veil's vendors stand in the capitals: their side is their city's
+if not G.FOREVER then
+  check(D.npcs[13420].side == "H" and D.npcs[13435].side == "A", "a capital's vendor serves its side")
+end
+local function hunts(side)
+  local out, wrong = {}, 0
+  for _, spell in ipairs(D.order) do
+    local s = H.of(spell, side)
+    if s then
+      table.insert(out, spell)
+      if s.skill or s.trainer or #s.shop > 0 then wrong = wrong + 1 end
+      if #s.limited + #s.drops + #s.quests == 0 and not s.world then wrong = wrong + 1 end
+      for _, v in ipairs(s.limited) do
+        if D.npcs[v].side and D.npcs[v].side ~= side then wrong = wrong + 1 end
+      end
+      for _, q in ipairs(s.quests) do
+        if D.quests[q].side and D.quests[q].side ~= side then wrong = wrong + 1 end
+      end
+    end
+  end
+  return out, wrong
+end
+local forA, wrongA = hunts("A")
+local forH, wrongH = hunts("H")
+check(#forA > 0 and #forH > 0, "hunts for each side")
+check(wrongA == 0 and wrongH == 0, "a hunt: no shop for its side, a find of its side")
+-- the road's recipes worth learning: only from the shop of the cook's side
+local shopWrong = 0
+for _, side in ipairs({ "A", "H" }) do
+  for _, spell in ipairs(R.worth({}, 300, nil, side)) do
+    local s = H.sources(spell, side)
+    if not (s.skill or s.trainer or #s.shop > 0) then shopWrong = shopWrong + 1 end
+    for _, v in ipairs(s.shop) do
+      if D.npcs[v].side and D.npcs[v].side ~= side then shopWrong = shopWrong + 1 end
+    end
+  end
+end
+check(shopWrong == 0, "the road sends no one to a stall of the other side, nor after a hunt")
+local open0, next0 = H.list({}, 1, "A")
+check(#open0 == 0 and next0 and next0 > 1, "at cooking 1 no hunt is open, the next said")
+local open300, next300, found, total = H.list({}, 300, "A")
+check(#open300 > 0 and next300 == nil and found == 0 and total == #forA, "at 300 every hunt of the side is open")
+local known1 = { [open300[1]] = { at = 0 } }
+local open1, _, found1 = H.list(known1, 300, "A")
+check(found1 == 1 and #open1 == #open300 - 1, "a hunt found leaves the list and counts")
+for i = 2, #open300 do
+  local a, b = D.recipes[open300[i - 1]], D.recipes[open300[i]]
+  if R.chance(a, 300) == 0 and R.chance(b, 300) > 0 then check(false, "the hunts that still raise the skill first") end
+end
+
 -- ── the book ─────────────────────────────────────────────────────────────────
 SlashCmdList.MEALBOOK("")
 check(MealbookFrame and MealbookFrame:IsShown(), "/mealbook opens the book")
@@ -119,6 +178,30 @@ ns.openDish(2538)
 ns.refresh()
 SlashCmdList.MEALBOOK("road")
 check(MealbookFrame.tab == 2, "/mealbook road opens the road")
+-- the hunts' tab and every hunt's page, on each side (a page that fails to
+-- draw fails here)
+local skillBefore = char.skill
+char.skill = { rank = 300, max = 300, at = 0 }
+for _, side in ipairs({ "Alliance", "Horde" }) do
+  s.faction = side
+  ns.openHunts()
+  check(MealbookFrame.tab == 3, "the hunts' tab")
+  for _, spell in ipairs(H.list({}, 300, H.mine())) do
+    ns.openHunt(spell)
+  end
+end
+-- a quest the language has no title for: its giver named instead
+local q = next(D.quests)
+local title = ns.questNames[q]
+ns.questNames[q] = nil
+for _, spell in ipairs(D.order) do
+  local src = H.of(spell, "A") or H.of(spell, "H")
+  if src and src.quests[1] == q then ns.openHunt(spell) end
+end
+ns.questNames[q] = title
+s.faction = nil
+char.skill = skillBefore
+ns.openRoad()
 fire("UNIT_SPELLCAST_SUCCEEDED", "player", "cast-4", 2540)
 G.advance(0.5)
 check(char.cooked[2540] == 1, "a dish cooked while the book is open")

@@ -123,20 +123,16 @@ function R.shopping(leg)
 end
 
 -- The recipes worth learning at this skill: not known, learnable now (the
--- skill they ask), still raising it, from a source a player can go to (a
--- trainer, a recipe someone sells, a quest; not only a drop: those are
--- hunts), the surest first.
-function R.worth(known, skill, limit)
+-- skill they ask), still raising it, from the shop (a trainer, the skill
+-- itself, a vendor who sells it to the character's side without a limit:
+-- the rest are hunts, Hunts.lua), the surest first.
+function R.worth(known, skill, limit, mine)
   local out = {}
   for _, spell in ipairs(D.order) do
     local d = D.recipes[spell]
     if not known[spell] and not d.unknown and skill >= d.learn and R.chance(d, skill) > 0 then
-      local sold = false
-      for _, item in ipairs(d.items or {}) do
-        local it = D.recipeItems[item]
-        if it and (it.sold or it.quests) then sold = true end
-      end
-      if d.skill or d.trainer or d.quests or sold then table.insert(out, spell) end
+      local s = ns.hunts.sources(spell, mine)
+      if s.skill or s.trainer or #s.shop > 0 then table.insert(out, spell) end
     end
   end
   table.sort(out, function(a, b)

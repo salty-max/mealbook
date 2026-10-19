@@ -29,9 +29,19 @@ From your skill now to 300, Mealbook plans the road with the recipes you know:
 - **how many casts** each leg takes on average, by the game's own skill-up rule,
 - a **shopping list** for each leg, checked against your bags,
 - **where to train** when you reach your skill cap,
-- **what to learn next** when your recipes run out, from a trainer, a vendor or a quest.
+- **what to learn next** when your recipes run out, from a trainer or a vendor of your side, with where the vendor stands.
 
 The road changes as you cook and learn. Open it with `/mealbook road`.
+
+## Hunts
+
+Some recipes no trainer teaches and no shop keeps for long. Mealbook keeps them as hunts, each opening when your skill is ready for it:
+
+- **a stall's limited stock**, like Super-Seller 680's in Desolace: who sells it, where, how many at a time,
+- **a drop**: the likeliest creatures to carry it, their zone, their level and how often it falls,
+- **a quest**: who gives it, where, and from what level.
+
+Only your side's: a vendor or a quest of the other faction never shows. The hunts tab counts how many you've found and when the next one opens.
 
 ## Compatibility
 
@@ -44,6 +54,8 @@ The dishes, ingredients and places are the game's own, in your client's language
 - `/mealbook` opens the cookbook.
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.
+
+The hunts have their tab in the book.
 
 ## Other addons
 

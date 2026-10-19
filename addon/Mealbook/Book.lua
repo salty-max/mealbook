@@ -1,5 +1,5 @@
 -- The cookbook as a book: the family's window (portrait, title bar), its tabs
--- (Recipes, The road: each a file of its own, *Book.lua, registered with
+-- (Recipes, The road, Hunts: each a file of its own, *Book.lua, registered with
 -- ns.addTab), and what every tab is made of (ns.ui): the kit's look in the
 -- cookbook's theme, its list on the left and page on the right. /mealbook
 -- opens it.
@@ -42,9 +42,9 @@ local CHAPTERS = {
 
 -- ── the window ───────────────────────────────────────────────────────────────
 local book
-local TAB = { recipes = 1, road = 2 }
+local TAB = { recipes = 1, road = 2, hunts = 3 }
 ns.TAB = TAB
-local tabs, TITLES = {}, { L["Recipes"], L["The road"] }
+local tabs, TITLES = {}, { L["Recipes"], L["The road"], L["Hunts"] }
 function ns.addTab(n, tab) tabs[n] = tab end
 
 function ns.refresh()
@@ -108,6 +108,7 @@ function ns.openTab(n)
   end
 end
 function ns.openRoad() ns.openTab(TAB.road) end
+function ns.openHunts() ns.openTab(TAB.hunts) end
 
 -- What the game tells while the book is open shows at once (a moment later:
 -- a batch of dishes cooks one cast after another).
@@ -141,6 +142,34 @@ local function dishPicture(spell)
   return function(p) p.tex:SetTexture(d and K.itemIcon(d.item) or ICON) end
 end
 
+-- Who and where (Recipes_<game>.lua's npcs and quests): a zone's name is the
+-- client's, by its id; an npc's and a quest's the Text file's. A quest the
+-- language has no title for: none (its giver named instead).
+local function zoneName(area)
+  local name = area and C_Map and C_Map.GetAreaInfo and C_Map.GetAreaInfo(area)
+  return type(name) == "string" and name ~= "" and name or nil
+end
+local function npcName(id) return ns.npcNames and ns.npcNames[id] or "" end
+local function questName(id) return ns.questNames and ns.questNames[id] end
+-- "Stormwind City 75, 37": its zone and a spot there (a zone alone when the
+-- data has no spot).
+local function where(id)
+  local n = ns.data.npcs and ns.data.npcs[id]
+  local zone = n and zoneName(n.area)
+  if not zone then return "" end
+  if n.x then return ("%s %d, %d"):format(zone, n.x, n.y) end
+  return zone
+end
+-- Of several npcs, one in the zone the character stands in, else the first.
+local function nearest(ids)
+  local here = GetRealZoneText and GetRealZoneText()
+  for _, id in ipairs(ids) do
+    local n = ns.data.npcs and ns.data.npcs[id]
+    if here and n and zoneName(n.area) == here then return id end
+  end
+  return ids[1]
+end
+
 ns.ui = {
   T = T,
   ICON = ICON,
@@ -152,6 +181,11 @@ ns.ui = {
   thresholds = thresholds,
   have = have,
   dishPicture = dishPicture,
+  zoneName = zoneName,
+  npcName = npcName,
+  questName = questName,
+  where = where,
+  nearest = nearest,
   icon = K.icon,
   newList = K.list,
   newPage = function(parent, name) return K.page(parent, name, { labelWidth = 110, pairs = {} }) end,

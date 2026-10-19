@@ -293,7 +293,13 @@ ERR_LEARN_RECIPE_S = LOCALE == "frFR" and "Vous avez appris à fabriquer un nouv
 state.guid, state.level = "Player-1-0001", 12
 function UnitGUID() return state.guid end
 function UnitLevel() return state.level end
-function UnitFactionGroup() return "Alliance" end
+function UnitFactionGroup() return state.faction or "Alliance" end
+
+-- the map: a zone's name by its AreaTable id (the game's, here a made-up
+-- one for any id), where the character stands
+C_Map = C_Map or {}
+function C_Map.GetAreaInfo(id) return id and ("Zone " .. id) or nil end
+function GetRealZoneText() return state.zone or "Zone 1" end
 
 -- ── cooking ──────────────────────────────────────────────────────────────────
 -- state.skill: { rank, max } (nil: no cooking); state.known[spell]: the
@@ -378,18 +384,14 @@ function GetItemIcon() return 134400 end
 local DIR = "addon/Mealbook/"
 local ns = {}
 G.ns = ns
-for _, file in ipairs({
-  FOREVER and "Recipes_Forever.lua" or "Recipes_Classic.lua",
-  "Kit.lua",
-  "Locale.lua",
-  "Text_" .. LOCALE .. ".lua",
-  "Pages_" .. LOCALE .. ".lua",
-  "Core.lua",
-  "Road.lua",
-  "Book.lua",
-  "RecipesBook.lua",
-  "RoadBook.lua",
-}) do
+-- (the files as the game loads them: the game's TOC, in its order, the
+-- client's language in [TextLocale])
+local files = {}
+for line in io.lines(DIR .. (FOREVER and "Mealbook_Camelot.toc" or "Mealbook_Vanilla.toc")) do
+  line = line:gsub("%s+$", "")
+  if line ~= "" and not line:find("^#") then table.insert(files, (line:gsub("%[TextLocale%]", LOCALE))) end
+end
+for _, file in ipairs(files) do
   assert(loadfile(DIR .. file))("Mealbook", ns)
 end
 function G.login()

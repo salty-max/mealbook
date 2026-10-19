@@ -23,6 +23,8 @@ Text_[TextLocale].lua
 Pages_[TextLocale].lua
 Core.lua
 Road.lua
+Hunts.lua
 Book.lua
 RecipesBook.lua
 RoadBook.lua
+HuntsBook.lua

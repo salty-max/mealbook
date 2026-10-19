@@ -12,10 +12,14 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   each step, how many casts it takes on average, what to buy or gather,
   where to train, and what to learn when your recipes run out.
 
+- **Hunts:** the recipes no trainer teaches and no shop keeps for long, a
+  stall's limited stock, a creature's drop, a quest, each opening when your
+  skill is ready for it: who has it, where, how often.
+
 `/mealbook` opens the book, `/mealbook road` the road.
 
-In English and French. Work in progress: the hunts for rare recipes, the
-milestones and the other languages are next.
+In English and French. Work in progress: the milestones, the pantry and the
+other languages are next.
 
 ## Building
 

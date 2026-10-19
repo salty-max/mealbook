@@ -32,9 +32,22 @@ October 2026), not yet released: no store page.
   a dish its world can't teach (Season of Discovery's, the Crystal Throat
   Lozenge): 81 dishes. Forever keeps its own whose recipe no source has seen
   yet (`unknown`, 27 before launch): a page when learned, never on the road.
-  Also `i18n/skill_line.json`, the cooking skill line's name in every
-  language, the client's own (Classic Era's skill list names a skill only by
-  its name), which `scripts/locales.ts` puts in each Text file.
+  Who and where, for the road's vendors and the hunts: `npcs` (every seller
+  of a recipe, the three likeliest droppers of each, the quest givers: the
+  side it serves, from its faction template's enemies (Alliance 469, Horde
+  67, or the groups), one friendly to all standing in a capital its city's;
+  its zone, the AreaTable id where most of its spawns are, its name the
+  client's; a spot there, 0-100; its levels and rank) and `quests` (giver,
+  side from the race mask else the giver's, level, the level it opens at,
+  zone). A recipe item's `drops`: the likeliest droppers and their percent
+  (the best chance, then the most spawns; Forever's sources give none yet).
+  Also `i18n/names.json`, the game's names in every language, the client's:
+  the cooking skill line's (Classic Era's skill list names a skill only by
+  its name), the chefs', and each game's npcs (complete in every language,
+  the build refuses one missing) and quests (where the language has the
+  title: none in Italian; a page names the giver instead), which
+  `scripts/locales.ts` puts in each Text file (`ns.npcNames`,
+  `ns.questNames`, this game's).
 - `recipes/<chef>/<chapter>.md`: the chefs' pages, one `## <spell> <name>`
   section a dish, every dish of both games for both chefs (132 each):
   English, plain ASCII. Their French in `i18n/frFR/recipes/<chef>/`, the
@@ -55,21 +68,36 @@ October 2026), not yet released: no store page.
   Forever's C_TradeSkillUI; Forever's NEW_RECIPE_LEARNED; the game's own
   line when a recipe is learned, ERR_LEARN_RECIPE_S), a dish cooked
   (UNIT_SPELLCAST_SUCCEEDED), `/mealbook` (`road`).
+- `Hunts.lua`: a recipe's sources for the character's side (`H.mine()`,
+  UnitFactionGroup), split in two: the shop (a trainer, the skill, a vendor
+  who sells it to that side without a limit) and the finds (a vendor's
+  limited stock, the droppers, a world drop, a quest of that side's). A dish
+  is a hunt when it isn't known, no shop has it for that side and a find
+  does; open when the skill reaches the one it is learned at (`H.list`:
+  open, the skill the next opens at, found of all; those still raising the
+  skill first).
 - `Road.lua`: the game's skill-up rule (orange always, grey never, between
   (grey - skill) / (grey - yellow)), the road from the skill now (each point
   the surest recipe known, then one the bags can cook, then the fewest
   ingredients; a leg per recipe, its casts the sum of one over the chance; a
   stop to train at each cap; where no recipe known goes on, `stuck`), a
-  leg's shopping list, the recipes worth learning (from a trainer, a vendor,
-  a quest: a drop is a hunt).
+  leg's shopping list, the recipes worth learning (the shop's only, for the
+  character's side: a vendor named with where it stands, the one in the
+  character's zone if one is; the rest are hunts, a line pointing there).
 - `Book.lua`: the family's window and tabs in the kitchen's copper theme,
   the parts every tab uses (`ns.ui`); `RecipesBook.lua` (the dishes known by
   chapter, each in its colour now; a dish's page: its figures, ingredients
   and what it makes as the game's items, its colours, how it was learned;
   the chef's page above the facts); `RoadBook.lua` (the
   road's legs, the road as cards, where it stops and what to learn there; a
-  leg's page: its casts and shopping list against the bags).
-- `addon/test/game.lua` (Palaver's frames, events and timers; the skill as
+  leg's page: its casts and shopping list against the bags); `HuntsBook.lua`
+  (the hunts open now, found of all, the next to open; a hunt's page: the
+  recipe and the dish as items, where to look as cards: a stall's stock,
+  the droppers' zone, levels and chance, a quest's title or its giver; zone
+  names the client's, `ui.where`).
+- `addon/test/game.lua` (the addon's files loaded as its TOC lists them;
+  Palaver's frames, events and timers; a zone's name by its id, the
+  faction (`state.faction`); the skill as
   each client tells it, the recipes known, the cooking window, the dishes'
   names by id, the bags) and `addon/test/sim.lua`: a first login, the
   window, a recipe learned, dishes cooked, the road, the book's tabs, on
@@ -102,8 +130,7 @@ summary the TOCs' Notes).
 
 ## Not yet
 
-- The Hunts tab (recipe drops and limited-stock vendors, named
-  through name files from wow-data), the Milestones, the pantry (an
+- The Milestones, the pantry (an
   ingredient's tooltip line), the welcome page, the minimap button, the
   opt-in collector, German.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe

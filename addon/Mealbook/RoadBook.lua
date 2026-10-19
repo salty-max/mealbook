@@ -4,7 +4,7 @@
 -- and a leg's own page: its casts, its colours, its ingredients and how many
 -- of each, against the bags.
 local _, ns = ...
-local L, D, ui = ns.kit.L, ns.data, ns.ui
+local K, L, D, ui = ns.kit, ns.kit.L, ns.data, ns.ui
 local T = ui.T
 local book, list, page
 local current -- (a leg's index, else the road)
@@ -53,18 +53,43 @@ local function refreshList()
 end
 
 local function worthCards(skill)
-  local worth = ns.road.worth(ns.book().known, skill, 5)
+  local mine = ns.hunts.mine()
+  local worth = ns.road.worth(ns.book().known, skill, 5, mine)
   if #worth == 0 then return end
   page:section(L["Worth learning now"])
   for _, spell in ipairs(worth) do
     local d = D.recipes[spell]
-    local how = d.trainer and L["From a cooking trainer"] or d.quests and L["From a quest"] or L["From a recipe"]
+    local s = ns.hunts.sources(spell, mine)
+    local how
+    if s.skill or s.trainer then
+      how = L["From a cooking trainer"]
+    else
+      -- (a vendor's, the one where the character stands if one is)
+      local v = ui.nearest(s.shop)
+      local at = ui.where(v)
+      how = at ~= "" and L["Sold by %s, %s"]:format(ui.npcName(v), at) or L["Sold by %s"]:format(ui.npcName(v))
+    end
     page:card(
       ns.dishName(spell),
       ("%s  -  %s"):format(ui.colourWord(ns.road.colour(d, skill)), how),
       ui.dishPicture(spell)
     )
   end
+end
+
+-- The hunts open at this skill, a word and the way to them (HuntsBook.lua).
+local function huntsLine(skill)
+  local open = ns.hunts.list(ns.book().known, skill, ns.hunts.mine())
+  if #open == 0 then return end
+  page:paragraph(
+    K.plural(
+      #open,
+      "%d hunt is open at your skill: a recipe to find rather than buy.",
+      "%d hunts are open at your skill: recipes to find rather than buy."
+    ):format(#open),
+    T.soft
+  )
+  page:chips({ { L["See the hunts"], ns.openHunts } })
 end
 
 local function showRoad()
@@ -125,10 +150,12 @@ local function showRoad()
       T.soft
     )
     worthCards(legs.stuck)
+    huntsLine(legs.stuck)
   elseif #legs == 0 then
     page:paragraph(L["Nothing left to cook: your skill is as high as it goes."], T.soft)
   else
     worthCards(skill)
+    huntsLine(skill)
   end
 end
 

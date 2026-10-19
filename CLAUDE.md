@@ -6,8 +6,8 @@ what). The first chapter of the professions addon (`../ideas/professions.md`),
 planned in `../ideas/cookbook.md`: the chefs (Kendor Kabonka for the
 Alliance, Eunice Burch for the Horde), their voices (`../ideas/cookbook-voices.md`,
 the cards the pages follow), the Hunts, the Milestones, the pantry.
-Started 19 October 2026. Local only so far: no GitHub repository, no store
-page.
+Started 19 October 2026. On GitHub (salty-max/mealbook, public, 19
+October 2026), not yet released: no store page.
 
 ## Layout
 
@@ -109,8 +109,7 @@ summary the TOCs' Notes).
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it.
-- The GitHub repository (salty-max/mealbook), the CurseForge and Wago
-  projects (their ids in the TOCs: X-Curse-Project-ID, X-Wago-ID; secrets
+- The CurseForge and Wago projects (their ids in the TOCs: X-Curse-Project-ID, X-Wago-ID; secrets
   CURSEFORGE_TOKEN, WAGO_API_TOKEN and INBOX_EVENTS_TOKEN), batched with
   Palaver's at the user's ask (19 October 2026); then Mealbook in Ravenpost's
   inbox (`src/digest.ts`, `src/stats.ts`) and the siblings' store pages.

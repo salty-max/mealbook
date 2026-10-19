@@ -13,9 +13,9 @@
 --     peak                             the highest skill read
 --     milestones[id] = { at, level, retro } each achievement earned
 --                                      (Milestones.lua)
---   MealbookSettings (SavedVariables): chef, the reader's pick ("kendor",
---     "eunice"), else their faction's; tooltips (false: no pantry line on
---     an ingredient's tooltip, /mealbook tooltips)
+--   MealbookSettings (SavedVariables): each character's settings, the kit's
+--     profiles (Settings.lua: the chef, the pantry's tooltip line, the
+--     minimap button)
 --
 -- Every record by id: a dish by its spell, an ingredient by its item; their
 -- names are the game's, in the client's language, when shown.
@@ -198,7 +198,9 @@ function ns.login()
   if type(MealbookChar) ~= "table" or MealbookChar.guid ~= guid then MealbookChar = newBook(guid) end
   char = MealbookChar
   char.known, char.cooked, char.first = char.known or {}, char.cooked or {}, char.first or {}
-  MealbookSettings = type(MealbookSettings) == "table" and MealbookSettings or {}
+  ns.loadProfile()
+  if ns.createMinimapButton then ns.createMinimapButton() end
+  if ns.createSettingsPanel then ns.createSettingsPanel() end
   ns.readSkill()
   ns.askKnown(true)
   -- (achievements already deserved: recorded quietly)
@@ -248,8 +250,8 @@ end)
 -- the Alliance's, Eunice Burch the Horde's).
 ns.CHEFS = { "kendor", "eunice" }
 function ns.chef()
-  local pick = MealbookSettings and MealbookSettings.chef
-  if pick == "kendor" or pick == "eunice" then return pick end
+  local pick = ns.option and ns.CHEF_CHOICES and ns.CHEF_CHOICES[ns.option("chef")]
+  if pick then return pick end
   return UnitFactionGroup("player") == "Horde" and "eunice" or "kendor"
 end
 function ns.chefName(chef) return ns.chefNames and ns.chefNames[chef or ns.chef()] or "" end
@@ -257,22 +259,36 @@ function ns.chefName(chef) return ns.chefNames and ns.chefNames[chef or ns.chef(
 -- ── /mealbook ────────────────────────────────────────────────────────────────
 SLASH_MEALBOOK1 = "/mealbook"
 SlashCmdList.MEALBOOK = function(msg)
-  msg = strtrim((msg or ""):lower())
+  local raw = strtrim(msg or "") -- (a code's letters as typed)
+  msg = raw:lower()
   if msg == "road" then
     if ns.openRoad then ns.openRoad() end
   elseif msg == "chef" then
-    MealbookSettings.chef = ns.chef() == "kendor" and "eunice" or "kendor"
+    ns.setOption("chef", ns.chef() == "kendor" and 2 or 1)
     print(ns.PREFIX .. L["Your cookbook is now %s's."]:format(ns.chefName()))
-    if ns.onChange then ns.onChange() end
   elseif msg == "tooltips" then
-    MealbookSettings.tooltips = MealbookSettings.tooltips == false
+    ns.setOption("tooltips", not ns.option("tooltips"))
     print(
       ns.PREFIX
         .. (
-          MealbookSettings.tooltips and L["Ingredients' tooltips name the dishes they cook into."]
+          ns.option("tooltips") and L["Ingredients' tooltips name the dishes they cook into."]
           or L["Ingredients' tooltips left as the game's."]
         )
     )
+  elseif msg == "minimap" then
+    ns.setOption("minimapHidden", not ns.option("minimapHidden"))
+  elseif msg == "settings" then
+    if not ns.openSettings() then print(ns.PREFIX .. L["The game's Options have no page for addons here."]) end
+  elseif msg == "welcome" then
+    if ns.showWelcome then ns.showWelcome() end
+  elseif msg == "export" then
+    if ns.showWelcome then ns.showWelcome("export") end
+  elseif msg:match("^import%s") then
+    if ns.profiles:import(raw:match("^%a+%s+(.+)$")) then
+      print(ns.PREFIX .. L["Settings imported for this character."])
+    else
+      print(ns.PREFIX .. L["That isn't a Mealbook settings code."])
+    end
   elseif ns.toggle then
     ns.toggle()
   end

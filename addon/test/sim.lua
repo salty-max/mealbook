@@ -22,7 +22,16 @@ local NEW_PAGE = L["A new page: %s."]:match("^(.-)%%s")
 -- ── a cook's first login ─────────────────────────────────────────────────────
 s.skill = { rank = 12, max = 75 }
 s.known = { [2538] = true, [2540] = true, [8604] = true }
+-- (a test build's account-wide settings, before the profiles)
+MealbookSettings = { chef = "eunice", tooltips = false }
 G.login()
+check(
+  ns.option("chef") == 2 and ns.option("tooltips") == false,
+  "a test build's settings taken into the character's profile"
+)
+check(MealbookSettings.chef == nil and MealbookSettings.profiles, "and kept there only")
+ns.setOption("chef", 0)
+ns.setOption("tooltips", true)
 local char = MealbookChar
 check(char.guid == s.guid, "the book is this character's")
 check(ns.skill() == 12, "the cooking skill read, by its id (Forever) or its name in the client's language")
@@ -111,7 +120,7 @@ check(ns.chef() == "kendor", "an Alliance cook's book is Kendor's")
 local kendor = ns.pageText("kendor", 2538)
 check(kendor and #kendor > 0 and #ns.pageText("eunice", 2538) > 0, "every dish has both chefs' pages")
 SlashCmdList.MEALBOOK("chef")
-check(ns.chef() == "eunice" and MealbookSettings.chef == "eunice", "/mealbook chef: the other chef's book")
+check(ns.chef() == "eunice" and ns.option("chef") == 2, "/mealbook chef: the other chef's book")
 check(said(ns.chefName("eunice")), "said in chat, with her name as the game gives it")
 SlashCmdList.MEALBOOK("chef")
 check(ns.chef() == "kendor", "and back")
@@ -138,7 +147,7 @@ GameTooltip:SetItemByID(4306) -- (Silk Cloth: no dish)
 check(#GameTooltip.lines == 0, "none on what no dish uses")
 SlashCmdList.MEALBOOK("tooltips")
 GameTooltip:SetItemByID(2672)
-check(#GameTooltip.lines == 0 and MealbookSettings.tooltips == false, "/mealbook tooltips: the line off")
+check(#GameTooltip.lines == 0 and ns.option("tooltips") == false, "/mealbook tooltips: the line off")
 SlashCmdList.MEALBOOK("tooltips")
 local cookable = P.cookable(char.known, ns.skill(), function(i) return s.bags[i] or 0 end)
 check(#cookable > 0 and cookable[1][2] > 0, "what the bags can cook now, and how many times")
@@ -201,6 +210,26 @@ for i = 2, #open300 do
   local a, b = D.recipes[open300[i - 1]], D.recipes[open300[i]]
   if R.chance(a, 300) == 0 and R.chance(b, 300) > 0 then check(false, "the hunts that still raise the skill first") end
 end
+
+-- ── the settings, the button, the welcome ────────────────────────────────────
+check(MealbookMinimapButton and MealbookMinimapButton:IsShown(), "the book's button by the minimap")
+SlashCmdList.MEALBOOK("minimap")
+check(not MealbookMinimapButton:IsShown() and ns.option("minimapHidden"), "/mealbook minimap: hidden")
+SlashCmdList.MEALBOOK("minimap")
+check(MealbookMinimapButton:IsShown(), "and back")
+local code = ns.profiles:export()
+check(code:find("^MB1:"), "this character's settings as a code")
+ns.setOption("tooltips", false)
+SlashCmdList.MEALBOOK("import " .. code)
+check(
+  ns.option("tooltips") == true and said(L["Settings imported for this character."]),
+  "/mealbook import CODE: taken back"
+)
+SlashCmdList.MEALBOOK("import nonsense")
+check(said(L["That isn't a Mealbook settings code."]), "a code that isn't one: said so")
+SlashCmdList.MEALBOOK("welcome")
+check(MealbookWelcome and MealbookWelcome:IsShown(), "/mealbook welcome")
+MealbookWelcome:Hide()
 
 -- ── the book ─────────────────────────────────────────────────────────────────
 SlashCmdList.MEALBOOK("")

@@ -1,6 +1,7 @@
 -- The pantry: what the ingredients in hand cook into. On an ingredient's
 -- tooltip, a line naming the dishes the character knows that use it, each in
--- its colour now, the surest first (`/mealbook tooltips` turns it off); and
+-- its colour now, the surest first (`/mealbook tooltips` and the Options
+-- page turn it off); and
 -- for the Recipes tab's front page, the dishes the bags can cook now and how
 -- many times.
 local _, ns = ...
@@ -79,7 +80,7 @@ function P.line(item)
 end
 
 local function addLine(tip, item)
-  if MealbookSettings and MealbookSettings.tooltips == false then return end
+  if ns.option and not ns.option("tooltips") then return end
   if ns.secret(item) then return end
   local line = P.line(item)
   if line then tip:AddLine(line, 0.95, 0.68, 0.38, true) end

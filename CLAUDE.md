@@ -68,6 +68,16 @@ October 2026), not yet released: no store page.
   Forever's C_TradeSkillUI; Forever's NEW_RECIPE_LEARNED; the game's own
   line when a recipe is learned, ERR_LEARN_RECIPE_S), a dish cooked
   (UNIT_SPELLCAST_SUCCEEDED), `/mealbook` (`road`).
+- `Settings.lua`: each character's settings, the kit's profiles (a profile
+  "Name - Realm" in MealbookSettings, copied from another character of this
+  game or a code `MB1:...`, `/mealbook export`, `/mealbook import CODE`):
+  the chef (0 the side's, 1 Kendor, 2 Eunice: a number, as the codes carry),
+  the pantry's tooltip line, the minimap button and its place (165 degrees,
+  clear of the siblings'); the test builds' account-wide chef and tooltips
+  taken in at the login. The Options page (`/mealbook settings`, a
+  right-click on the button). `Welcome.lua`: the kit's welcome page, once
+  per character (`/mealbook welcome`). `Minimap.lua`: the book's button, as
+  the siblings'.
 - `Hunts.lua`: a recipe's sources for the character's side (`H.mine()`,
   UnitFactionGroup), split in two: the shop (a trainer, the skill, a vendor
   who sells it to that side without a limit) and the finds (a vendor's
@@ -147,8 +157,9 @@ summary the TOCs' Notes).
 
 ## Not yet
 
-- The welcome page, the minimap button, the
-  opt-in collector, German.
+- The opt-in collector (the kit's `K.collect`): Ravenpost reads the four
+  older addons' `<Addon>Collect` only (`shared.go`), so Mealbook's (and
+  Palaver's) needs Ravenpost's list and a release too. German.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it.

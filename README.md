@@ -21,11 +21,11 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
 - **Achievements:** the ranks, the recipes known, the dishes cooked, the
   first of each kind of dish, the hunts found.
 
-`/mealbook` opens the book, `/mealbook road` the road, `/mealbook tooltips`
-turns the ingredients' tooltip line off or on.
+`/mealbook` opens the book (or its button by the minimap), `/mealbook road`
+the road, `/mealbook settings` its page in the game's Options: whose pages
+the book shows, the ingredients' tooltip line, the minimap button.
 
-In English and French. Work in progress: the welcome page, the minimap
-button and the other languages are next.
+In English and French. German and the other languages are next.
 
 ## Building
 

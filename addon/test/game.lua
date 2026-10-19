@@ -318,6 +318,13 @@ state.guid, state.level = "Player-1-0001", 12
 function UnitGUID() return state.guid end
 function UnitLevel() return state.level end
 function UnitFactionGroup() return state.faction or "Alliance" end
+function UnitName() return "Tester" end
+function GetRealmName() return "Realm" end
+
+-- the minimap (its button's place: a circle around it), the cursor
+Minimap = obj("Frame", "Minimap")
+Minimap.shown, Minimap.w, Minimap.h = true, 140, 140
+function GetCursorPosition() return 300, 300 end
 
 -- the map: a zone's name by its AreaTable id (the game's, here a made-up
 -- one for any id), where the character stands

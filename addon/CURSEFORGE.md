@@ -57,14 +57,16 @@ One download covers Classic Era, Hardcore, Season of Discovery and World of Warc
 
 The dishes, ingredients and places are the game's own, in your client's language. Mealbook's own words and the chefs' pages speak English and French. Other clients get English for those.
 
-## Commands
+## Settings and commands
 
-- `/mealbook` opens the cookbook.
+Open the book with `/mealbook` or the minimap button. The welcome page appears once per character and can be reopened with `/mealbook welcome`.
+
+Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's within the same game, or use `/mealbook export` and `/mealbook import CODE`.
+
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.
 - `/mealbook tooltips` turns the ingredients' tooltip line off or on.
-
-The hunts have their tab in the book.
+- `/mealbook minimap` shows or hides the minimap button.
 
 ## Other addons
 

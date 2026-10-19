@@ -55,10 +55,30 @@ const blanks = (s: string) => [...s.matchAll(/%%|%[0-9.]*[sdf]/g)].map((m) => m[
 // (English one of them): the cooking skill line's and the chefs'
 // (i18n/names.json, written by scripts/recipes.ts from the client's data).
 function namesLua(locale: string): string[] {
-  const names: Record<string, Record<string, string>> = json(join(I18N, "names.json"));
+  type ByGame = Record<string, Record<string, string>>;
+  const names: Record<string, { skillLine: string; kendor: string; eunice: string; npcs: ByGame; quests: ByGame }> = json(join(I18N, "names.json"));
   const mine = names[locale];
   if (!mine) throw new Error(`i18n/names.json names nothing in ${locale}: bun scripts/recipes.ts`);
-  return [`ns.names({ skillLine = ${q(mine.skillLine)}, chefs = { kendor = ${q(mine.kendor)}, eunice = ${q(mine.eunice)} } })`];
+  // (each game's npcs and quests by id: Recipes_<game>.lua's)
+  const byGame = (field: string, t: ByGame) => [
+    `  ${field} = {`,
+    ...Object.entries(t).flatMap(([game, m]) => [
+      `    ${game} = {`,
+      ...Object.entries(m)
+        .sort(([a], [b]) => Number(a) - Number(b))
+        .map(([id, name]) => `      [${id}] = ${q(name)},`),
+      "    },",
+    ]),
+    "  },",
+  ];
+  return [
+    "ns.names({",
+    `  skillLine = ${q(mine.skillLine)},`,
+    `  chefs = { kendor = ${q(mine.kendor)}, eunice = ${q(mine.eunice)} },`,
+    ...byGame("npcs", mine.npcs),
+    ...byGame("quests", mine.quests),
+    "})",
+  ];
 }
 
 function luaFor(locale: string): string {

@@ -20,15 +20,20 @@ function ns.translate(t)
   if t.plural and PLURALS[t.plural] then K.isOne = PLURALS[t.plural] end
 end
 
--- The game's own names in the reader's language (its Text file, from
--- wow-data's databases): the cooking skill line's, as the client's skill
--- list writes it (Classic Era names a skill only by its name there), and the
--- chefs'.
-function ns.names(t)
-  ns.skillName = t.skillLine
-  ns.chefNames = t.chefs or {}
-end
-
 -- The game this is: Forever's client is a modern one (interface 1.60, 16001).
 local build = select(4, GetBuildInfo())
 ns.forever = build >= 16000 and build < 17000
+
+-- The game's own names in the reader's language (its Text file, from
+-- wow-data's databases): the cooking skill line's, as the client's skill
+-- list writes it (Classic Era names a skill only by its name there), the
+-- chefs', and this game's npcs and quests by id (who sells a recipe, drops
+-- it, gives it). A quest the language has no title for has none: its page
+-- names its giver instead.
+function ns.names(t)
+  ns.skillName = t.skillLine
+  ns.chefNames = t.chefs or {}
+  local game = ns.forever and "forever" or "classic"
+  ns.npcNames = t.npcs and t.npcs[game] or {}
+  ns.questNames = t.quests and t.quests[game] or {}
+end

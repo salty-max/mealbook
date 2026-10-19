@@ -24,7 +24,9 @@
  *
  *   i18n/names.json: the game's own names Mealbook shows or reads in every
  *     language, the client's, for scripts/locales.ts: the cooking skill
- *     line's (Classic Era's skill list names it only so), the chefs'.
+ *     line's (Classic Era's skill list names it only so), the chefs', and
+ *     each game's npcs and quests the Recipes files name (who sells a
+ *     recipe, drops it, gives it), by id.
  *
  *   bun scripts/recipes.ts           write them
  *   bun scripts/recipes.ts --check   fail if one isn't up to date, or a dish
@@ -54,7 +56,29 @@ export type Dish = {
   from: { skill?: true; trainer?: true; items: number[]; quests: number[] };
   unknown?: true;
 };
-export type RecipeItem = { item: number; spell: number; sold: number[]; limited: Record<number, number>; dropped: number[]; world?: true; quests: number[] };
+export type RecipeItem = {
+  item: number;
+  spell: number;
+  sold: number[];
+  limited: Record<number, number>;
+  dropped: number[];
+  drops: [number, number][]; // (the likeliest droppers: npc, percent)
+  world?: true;
+  quests: number[];
+};
+// Who and where, for the road's vendors and the hunts: a side ("A", "H": the
+// faction it serves; none: either, or a creature to kill), the zone (an
+// AreaTable id, its name the client's), a spot on its map (0-100, whole),
+// the levels, the rank.
+export type Npc = { id: number; side?: "A" | "H"; area?: number; x?: number; y?: number; lvl?: [number, number]; rank?: number };
+export type Quest = { id: number; giver?: number; side?: "A" | "H"; level?: number; min?: number; area?: number };
+
+// The capitals: someone friendly to all who stands in one serves its side
+// (the Winter Veil's vendors in Orgrimmar or Stormwind).
+const CAPITALS: Record<number, "A" | "H"> = { 1519: "A", 16509: "A", 1537: "A", 1657: "A", 1637: "H", 1497: "H", 1638: "H" };
+// (the player races' bits in a quest's race mask)
+const ALLIANCE_RACES = 1 | 4 | 8 | 64;
+const HORDE_RACES = 2 | 16 | 32 | 128;
 
 const chapters = (): Record<string, Chapter> => JSON.parse(readFileSync(join(ROOT, "data", "chapters.json"), "utf8"));
 
@@ -91,7 +115,10 @@ export function cookbook(game: Game) {
   const rewards = all<{ quest_id: number; ref_id: number }>(`SELECT DISTINCT quest_id, ref_id FROM quest_reward WHERE kind IN ('item', 'choice') AND ref_id IN (${ids})`);
   // (the Classic database's loot: templates, read back to the creatures that
   // carry them; a reference template reached from many: a world drop)
-  const loot = all<{ kind: string; source_id: number; item_id: number; source: string }>(`SELECT kind, source_id, item_id, source FROM loot WHERE item_id IN (${ids})`);
+  const loot = all<{ kind: string; source_id: number; item_id: number; source: string; chance: number | null }>(
+    `SELECT kind, source_id, item_id, source, chance FROM loot WHERE item_id IN (${ids})`,
+  );
+  const chance = new Map<string, number>(); // (item:npc, the best percent a source gives)
   const byTemplate = new Map<number, number[]>();
   for (const c of all<{ id: number; loot_id: number }>("SELECT id, loot_id FROM creature WHERE loot_id IS NOT NULL AND loot_id > 0 AND removed IS NOT 1"))
     byTemplate.set(c.loot_id, [...(byTemplate.get(c.loot_id) ?? []), c.id]);
@@ -99,7 +126,7 @@ export function cookbook(game: Game) {
   const recipeOf = new Map<number, number>();
   for (const s of sources) if (s.kind === "item" && s.ref_id) recipeOf.set(s.ref_id, s.spell_id);
   const itemFor = (id: number) => {
-    if (!items.has(id)) items.set(id, { item: id, spell: recipeOf.get(id)!, sold: [], limited: {}, dropped: [], quests: [] });
+    if (!items.has(id)) items.set(id, { item: id, spell: recipeOf.get(id)!, sold: [], limited: {}, dropped: [], drops: [], quests: [] });
     return items.get(id)!;
   };
   for (const v of vendors) {
@@ -114,7 +141,11 @@ export function cookbook(game: Game) {
     else if (l.kind === "creature") {
       // (Questie's and Wowhead's are creatures; the Classic database's, templates)
       const creatures = l.source === "classicdb" || l.source === "players" ? (byTemplate.get(l.source_id) ?? []) : [l.source_id];
-      for (const c of creatures) if (!it.dropped.includes(c)) it.dropped.push(c);
+      for (const c of creatures) {
+        if (!it.dropped.includes(c)) it.dropped.push(c);
+        // (a negative chance drops only on its quest: no hunt)
+        if (l.chance !== null && l.chance > 0) chance.set(`${it.item}:${c}`, Math.max(chance.get(`${it.item}:${c}`) ?? 0, l.chance));
+      }
     } else it.world = true; // (an object's, a container's: found, not hunted)
   }
   for (const it of items.values()) {
@@ -168,17 +199,108 @@ export function cookbook(game: Game) {
       ...(!known && { unknown: true as const }),
     });
   }
+  const used = new Set(dishes.flatMap((d) => d.from.items));
+  const kept = [...items.values()].filter((it) => used.has(it.item)).sort((a, b) => a.item - b.item);
+
+  // Who and where. Spawns: each creature's zone (where most of its spawns
+  // are) and a spot there.
+  const spawnsOf = (ids: number[]) => {
+    const out = new Map<number, { area: number; x: number | null; y: number | null }[]>();
+    if (!ids.length) return out;
+    for (const r of all<{ id: number; area: number; x: number | null; y: number | null }>(
+      `SELECT entity_id id, area_id area, ux x, uy y FROM spawn WHERE kind = 'creature' AND area_id IS NOT NULL AND entity_id IN (${ids.join(",")})`,
+    ))
+      out.set(r.id, [...(out.get(r.id) ?? []), r]);
+    return out;
+  };
+  // The likeliest droppers: the best chance, then the most spawns (the
+  // easiest found).
+  const allDroppers = [...new Set(kept.flatMap((it) => it.dropped))];
+  const dropSpawns = spawnsOf(allDroppers);
+  for (const it of kept) {
+    it.drops = it.dropped
+      .map((c) => [c, chance.get(`${it.item}:${c}`) ?? 0] as [number, number])
+      .filter(([c]) => dropSpawns.has(c))
+      .sort((a, b) => b[1] - a[1] || (dropSpawns.get(b[0])?.length ?? 0) - (dropSpawns.get(a[0])?.length ?? 0) || a[0] - b[0])
+      .slice(0, 3)
+      .map(([c, p]) => [c, Math.round(p * 10) / 10] as [number, number]);
+  }
+  const questIds = [...new Set([...kept.flatMap((it) => it.quests), ...dishes.flatMap((d) => d.from.quests)])];
+  const questRows = questIds.length
+    ? all<{ id: number; level: number | null; min_level: number | null; zone_id: number | null; races: number | null }>(
+        `SELECT id, level, min_level, zone_id, races FROM quest WHERE id IN (${questIds.join(",")})`,
+      )
+    : [];
+  const giverOf = new Map<number, number>();
+  if (questIds.length)
+    for (const r of all<{ quest_id: number; entity_id: number }>(
+      `SELECT quest_id, min(entity_id) entity_id FROM quest_relation WHERE role = 'start' AND kind = 'creature' AND quest_id IN (${questIds.join(",")}) GROUP BY quest_id`,
+    ))
+      giverOf.set(r.quest_id, r.entity_id);
+  const npcIds = [...new Set([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...giverOf.values()])].sort((a, b) => a - b);
+  const spawns = spawnsOf(npcIds);
+  const facts = new Map(
+    (npcIds.length
+      ? all<{ id: number; min_level: number | null; max_level: number | null; rank: number | null; eg: number | null; en: string | null }>(
+          `SELECT c.id, c.min_level, c.max_level, c.rank, t.EnemyGroup eg, t.Enemies_0||','||t.Enemies_1||','||t.Enemies_2||','||t.Enemies_3 en
+           FROM creature c LEFT JOIN client_FactionTemplate t ON t.ID = c.faction_id WHERE c.id IN (${npcIds.join(",")})`,
+        )
+      : []
+    ).map((r) => [r.id, r]),
+  );
+  const npcs: Npc[] = [];
+  for (const id of npcIds) {
+    const f = facts.get(id);
+    const here = spawns.get(id) ?? [];
+    const byArea = new Map<number, number>();
+    for (const sp of here) byArea.set(sp.area, (byArea.get(sp.area) ?? 0) + 1);
+    const area = [...byArea].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]?.[0];
+    const spot = here.find((sp) => sp.area === area && sp.x !== null && sp.y !== null);
+    // (its side: whom its faction template is hostile to, Alliance's 469 or
+    // Horde's 67 among its enemies, or the groups; friendly to both in a
+    // capital: that capital's)
+    const enemies = (f?.en ?? "").split(",").map(Number);
+    const hostileA = !!f && (((f.eg ?? 0) & 2) !== 0 || enemies.includes(469));
+    const hostileH = !!f && (((f.eg ?? 0) & 4) !== 0 || enemies.includes(67));
+    let side: Npc["side"] = hostileA && !hostileH ? "H" : hostileH && !hostileA ? "A" : undefined;
+    if (!hostileA && !hostileH && area !== undefined) side = CAPITALS[area];
+    npcs.push({
+      id,
+      ...(side && { side }),
+      ...(area !== undefined && { area }),
+      ...(spot && { x: Math.round(spot.x!), y: Math.round(spot.y!) }),
+      ...(f?.min_level && { lvl: [f.min_level, f.max_level ?? f.min_level] as [number, number] }),
+      ...(f?.rank && { rank: f.rank }),
+    });
+  }
+  const npcOf = new Map(npcs.map((n) => [n.id, n]));
+  const quests: Quest[] = questRows
+    .map((q) => {
+      const giver = giverOf.get(q.id);
+      const races = q.races ?? 0;
+      const a = (races & ALLIANCE_RACES) !== 0, h = (races & HORDE_RACES) !== 0;
+      const side: Quest["side"] = a && !h ? "A" : h && !a ? "H" : giver !== undefined ? npcOf.get(giver)?.side : undefined;
+      const area = q.zone_id && q.zone_id > 0 ? q.zone_id : giver !== undefined ? npcOf.get(giver)?.area : undefined;
+      return {
+        id: q.id,
+        ...(giver !== undefined && { giver }),
+        ...(side && { side }),
+        ...(q.level && q.level > 0 && { level: q.level }),
+        ...(q.min_level && q.min_level > 0 && { min: q.min_level }),
+        ...(area && { area }),
+      };
+    })
+    .sort((a, b) => a.id - b.id);
   db.close();
   // (the book's order: by the skill a dish is learned at, its yellow, its name)
   dishes.sort((a, b) => a.learn - b.learn || a.yellow - b.yellow || a.name.localeCompare(b.name));
-  const used = new Set(dishes.flatMap((d) => d.from.items));
-  return { dishes, items: [...items.values()].filter((it) => used.has(it.item)).sort((a, b) => a.item - b.item), unchaptered };
+  return { dishes, items: kept, npcs, quests, unchaptered };
 }
 
 const list = (xs: number[]) => `{ ${xs.join(", ")} }`;
 
 export function lua(game: Game): string {
-  const { dishes, items } = cookbook(game);
+  const { dishes, items, npcs, quests } = cookbook(game);
   const out = [
     `-- Generated by scripts/recipes.ts from wow-data's ${game === "classic" ? "Classic Era" : "Forever"} database: edit the script or data/chapters.json, not this file.`,
     "-- recipes[spell]: what it makes (item, made = { least, most }), the skill it is",
@@ -186,7 +308,11 @@ export function lua(game: Game): string {
     "-- chapter, its ingredients (item, count, item, count...), how it is learned",
     "-- (skill, trainer, items: recipe items, quests), unknown: no source seen yet.",
     "-- recipeItems[item]: the recipe it teaches, who sells it (limited: [npc] =",
-    "-- the stock), who drops it (world: a drop of many), the quests that give it.",
+    "-- the stock), who drops it (drops: the likeliest, npc, percent...; world: a",
+    "-- drop of many), the quests that give it.",
+    "-- npcs[id]: the sellers, the likeliest droppers, the quest givers: side (A, H:",
+    "-- the faction it serves), area (its zone), x, y (a spot there), lvl, rank.",
+    "-- quests[id]: giver, side, level, min (the level it opens at), area.",
     "local _, ns = ...",
     "ns.data = {",
     `  skillLine = ${COOKING},`,
@@ -220,9 +346,30 @@ export function lua(game: Game): string {
     const limited = Object.entries(it.limited);
     if (limited.length) parts.push(`limited = { ${limited.map(([npc, n]) => `[${npc}] = ${n}`).join(", ")} }`);
     if (it.dropped.length) parts.push(`dropped = ${list(it.dropped.slice(0, 40))}`);
+    if (it.drops.length) parts.push(`drops = ${list(it.drops.flat())}`);
     if (it.world) parts.push("world = true");
     if (it.quests.length) parts.push(`quests = ${list(it.quests)}`);
     out.push(`    [${it.item}] = { ${parts.join(", ")} },`);
+  }
+  out.push("  },", "  npcs = {");
+  for (const n of npcs) {
+    const parts: string[] = [];
+    if (n.side) parts.push(`side = "${n.side}"`);
+    if (n.area) parts.push(`area = ${n.area}`);
+    if (n.x !== undefined) parts.push(`x = ${n.x}`, `y = ${n.y}`);
+    if (n.lvl) parts.push(`lvl = { ${n.lvl[0]}, ${n.lvl[1]} }`);
+    if (n.rank) parts.push(`rank = ${n.rank}`);
+    out.push(`    [${n.id}] = { ${parts.join(", ")} },`);
+  }
+  out.push("  },", "  quests = {");
+  for (const q of quests) {
+    const parts: string[] = [];
+    if (q.giver) parts.push(`giver = ${q.giver}`);
+    if (q.side) parts.push(`side = "${q.side}"`);
+    if (q.level) parts.push(`level = ${q.level}`);
+    if (q.min) parts.push(`min = ${q.min}`);
+    if (q.area) parts.push(`area = ${q.area}`);
+    out.push(`    [${q.id}] = { ${parts.join(", ")} },`);
   }
   out.push("  },", "}");
   return `${out.join("\n")}\n`;
@@ -240,19 +387,55 @@ function chunk(xs: number[], n = 10): number[][] {
 // language's Text file.
 const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
 export const CHEF_NPCS = { kendor: 340, eunice: 4552 };
-export function gameNames(): Record<string, Record<string, string>> {
+export type Names = {
+  skillLine: string;
+  kendor: string;
+  eunice: string;
+  // (each game's: the npcs and quests its Recipes file names, by id; a
+  // creature's name in every language, a quest's where the language has it:
+  // none, and the page says "a quest from" its giver)
+  npcs: Record<Game, Record<string, string>>;
+  quests: Record<Game, Record<string, string>>;
+};
+export function gameNames(): Record<string, Names> {
+  const games: Record<Game, ReturnType<typeof cookbook>> = { classic: cookbook("classic"), forever: cookbook("forever") };
+  const byLocale = (db: ReturnType<typeof openDb>, kind: string, ids: number[]) => {
+    const out = new Map<string, Record<string, string>>();
+    if (!ids.length) return out;
+    for (const r of db.query(`SELECT locale, id, name FROM name WHERE kind = ? AND id IN (${ids.join(",")})`).all(kind) as { locale: string; id: number; name: string }[]) {
+      const m = out.get(r.locale) ?? {};
+      m[r.id] = r.name;
+      out.set(r.locale, m);
+    }
+    return out;
+  };
   const db = openDb("classic");
   const named = (kind: string, id: number) =>
     Object.fromEntries((db.query("SELECT locale, name FROM name WHERE kind = ? AND id = ?").all(kind, id) as { locale: string; name: string }[]).map((r) => [r.locale, r.name]));
   const skill = named("skill_line", COOKING);
   const chefs = Object.fromEntries(Object.entries(CHEF_NPCS).map(([chef, npc]) => [chef, named("creature", npc)]));
   db.close();
-  const out: Record<string, Record<string, string>> = {};
+  const per: Record<Game, { npcs: Map<string, Record<string, string>>; quests: Map<string, Record<string, string>>; npcIds: number[] }> = {} as never;
+  for (const game of ["classic", "forever"] as Game[]) {
+    const g = openDb(game);
+    const npcIds = games[game].npcs.map((n) => n.id);
+    per[game] = { npcs: byLocale(g, "creature", npcIds), quests: byLocale(g, "quest", games[game].quests.map((q) => q.id)), npcIds };
+    g.close();
+  }
+  const out: Record<string, Names> = {};
   for (const l of LOCALES) {
-    const from = (by: Record<string, string>) => by[l] ?? (l === "enGB" ? by.enUS : undefined);
-    const entry: Record<string, string> = { skillLine: from(skill)! };
-    for (const [chef, by] of Object.entries(chefs)) entry[chef] = from(by)!;
-    for (const [k, v] of Object.entries(entry)) if (!v) throw new Error(`no ${k} name in ${l}`);
+    const own = l === "enGB" ? "enUS" : l;
+    const from = (by: Record<string, string>) => by[own];
+    const entry: Names = { skillLine: from(skill)!, kendor: from(chefs.kendor)!, eunice: from(chefs.eunice)!, npcs: { classic: {}, forever: {} }, quests: { classic: {}, forever: {} } };
+    for (const k of ["skillLine", "kendor", "eunice"] as const) if (!entry[k]) throw new Error(`no ${k} name in ${l}`);
+    for (const game of ["classic", "forever"] as Game[]) {
+      const npcs = per[game].npcs.get(own) ?? {};
+      const missing = per[game].npcIds.filter((id) => !npcs[id]);
+      // (a creature unnamed in a language: the family's rule, no English in its place)
+      if (missing.length) throw new Error(`${game}: no ${l} name for creature ${missing.slice(0, 5).join(", ")}${missing.length > 5 ? "..." : ""}`);
+      entry.npcs[game] = Object.fromEntries(per[game].npcIds.map((id) => [id, npcs[id]]));
+      entry.quests[game] = per[game].quests.get(own) ?? {};
+    }
     out[l] = entry;
   }
   return out;

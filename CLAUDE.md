@@ -47,7 +47,13 @@ October 2026), not yet released: no store page.
   area), its name the client's; a spot there, 0-100, none in an instance;
   its levels and rank) and `quests` (giver, side from the race mask, the
   bits' sides the client's ChrRaces as BigInts (Forever's Skyborne on bits
-  32 and 33), else the giver's, level, the level it opens at, zone). A recipe item's `drops`: the likeliest droppers and their percent
+  32 and 33), else the giver's, level, the level it opens at, zone). `ranks` (the skill line's rank spells, by the cap they open, their
+  tier the effect 118's value: what teaches each, the spells whose effect 36
+  learns it, trainers, a cookbook and who sells it, a quest's reward; the
+  level and skill asked; one taught rank a cap, Forever's second chain of
+  Cooking spells nothing teaches left out): Apprentice and Journeyman from
+  the cooking trainers, Expert from the Expert Cookbook (Shandrina, Wulan),
+  Artisan from the quest Clamlette Surprise. A recipe item's `drops`: the likeliest droppers and their percent
   (the best chance, then the most spawns; Forever's sources give none yet).
   Also `i18n/names.json`, the game's names in every language, the client's:
   the cooking skill line's (Classic Era's skill list names a skill only by
@@ -113,20 +119,29 @@ October 2026), not yet released: no store page.
   the character's `tooltips` setting); the dishes the bags can cook now and how
   many times, on the Recipes tab's front page.
 - `Road.lua`: the game's skill-up rule (orange always, grey never, between
-  (grey - skill) / (grey - yellow)), the road from the skill now (each point
-  the surest recipe known, then one the bags can cook, then the fewest
-  ingredients; a leg per recipe, its casts the sum of one over the chance; a
-  stop to train at each cap; where no recipe known goes on, `stuck`), a
-  leg's shopping list, the recipes worth learning (the shop's only, for the
-  character's side: a vendor named with where it stands, the one in the
-  character's zone if one is; the rest are hunts, a line pointing there).
+  (grey - skill) / (grey - yellow)), the road from the skill now to 300
+  (each point the surest recipe known or learnable there: `learnable`, the
+  road's book's, a trainer's or a vendor of the side's; a recipe to learn
+  only when a tenth surer than one in hand, `LEARN_COST`; at the same chance
+  one known, then one the bags can cook, then the fewest ingredients, and of
+  those to learn a trainer's, then the one orange the longest; a leg per
+  recipe, `learn` where it is learned at its start, its casts the sum of one
+  over the chance; a stop at each cap with the rank's sources, `D.ranks`;
+  where nothing known or learnable goes on, `stuck`), a leg's shopping
+  list, the recipes worth learning where it stops (the shop's of the side;
+  the rest are hunts, a line pointing there). The whole road from 1, for
+  either side: about 307 casts, 9 recipes to learn (Charred Wolf Meat to
+  Baked Salmon).
 - `Book.lua`: the family's window and tabs in the kitchen's copper theme,
   the parts every tab uses (`ns.ui`); `RecipesBook.lua` (the dishes known by
   chapter, each in its colour now; a dish's page: its figures, ingredients
   and what it makes as the game's items, its colours, how it was learned;
   the chef's page above the facts); `RoadBook.lua` (the
-  road's legs, the road as cards, where it stops and what to learn there; a
-  leg's page: its casts and shopping list against the bags); `HuntsBook.lua`
+  road's legs, the road as cards, where it stops; a leg's page: where to
+  learn its recipe, its casts and shopping list against the bags; a stop's
+  page: how its rank is learned, the nearest trainers of the side, the
+  cookbook and who sells it, the quest, and what it asks; no cooking yet:
+  the road from 1, learning cooking first); `HuntsBook.lua`
   (the hunts open now, found of all, the next to open; a hunt's page: the
   recipe and the dish as items, where to look as cards: a stall's stock,
   the droppers' zone, levels and chance, a quest's title or its giver; zone

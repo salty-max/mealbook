@@ -72,6 +72,10 @@ export type RecipeItem = {
 // the levels, the rank.
 export type Npc = { id: number; side?: "A" | "H"; unknown?: true; area?: number; x?: number; y?: number; lvl?: [number, number]; rank?: number };
 export type Quest = { id: number; giver?: number; side?: "A" | "H"; level?: number; min?: number; area?: number };
+// A rank of the skill (its cap: 75 Apprentice, 150 Journeyman, 225 Expert,
+// 300 Artisan): its spell and what teaches it, trainers, a book and who
+// sells it, quests; the level and the skill it asks.
+export type Rank = { cap: number; spell: number; trainers: number[]; items: number[]; sellers: number[]; quests: number[]; level?: number; skill?: number };
 
 // The capitals: someone friendly to all who stands in one serves its side
 // (the Winter Veil's vendors in Orgrimmar or Stormwind).
@@ -201,6 +205,62 @@ export function cookbook(game: Game) {
   const used = new Set(dishes.flatMap((d) => d.from.items));
   const kept = [...items.values()].filter((it) => used.has(it.item)).sort((a, b) => a.item - b.item);
 
+  // The ranks: the skill line's spells that set its cap (effect 118, its
+  // value the tier: Classic Era's base points and a die of one, Forever's the
+  // number), what teaches each (the spells whose effect 36 learns it: a
+  // trainer's lesson, a book's use, a quest's cast), and what that asks.
+  const tierOf = effectCols.has("EffectBasePoints") ? "e.EffectBasePoints + 1" : "round(e.EffectBasePointsF)";
+  const ranks: Rank[] = [];
+  for (const r of all<{ spell: number; tier: number }>(
+    `SELECT s.Spell spell, ${tierOf} tier FROM client_SkillLineAbility s JOIN client_SpellEffect e ON e.SpellID = s.Spell AND e.Effect = 118 WHERE s.SkillLine = ? ORDER BY tier`,
+    COOKING,
+  )) {
+    const teach = [r.spell, ...all<{ s: number }>("SELECT SpellID s FROM client_SpellEffect WHERE Effect = 36 AND EffectTriggerSpell = ?", r.spell).map((x) => x.s)];
+    const list = teach.join(",");
+    const trainerRows = all<{ npc: number; level: number | null; skill: number | null }>(
+      `SELECT npc_id npc, level, skill_value skill FROM trainer_spell WHERE spell_id IN (${list})`,
+    );
+    const itemRows = all<{ item: number; level: number | null; skill: number | null }>(
+      `SELECT DISTINCT i.item_id item, p.RequiredLevel level, p.RequiredSkillRank skill FROM item_spell i LEFT JOIN client_ItemSparse p ON p.ID = i.item_id WHERE i.spell_id IN (${list})`,
+    );
+    const sellers = new Set<number>();
+    const items: number[] = [];
+    for (const it of itemRows) {
+      const sold = all<{ npc: number }>("SELECT DISTINCT npc_id npc FROM vendor WHERE item_id = ?", it.item).map((x) => x.npc);
+      // (a book no one sells: no way to it, left out)
+      if (!sold.length) continue;
+      items.push(it.item);
+      for (const v of sold) sellers.add(v);
+    }
+    const questRows = all<{ id: number; level: number | null; skill: number | null }>(
+      `SELECT DISTINCT q.id, q.min_level level, q.skill_value skill FROM quest_reward r JOIN quest q ON q.id = r.quest_id
+       WHERE r.kind IN ('spell', 'cast') AND r.ref_id IN (${list}) AND q.removed IS NOT 1`,
+    );
+    const asks = (rows: { level: number | null; skill: number | null }[], k: "level" | "skill") => {
+      const v = rows.map((x) => x[k] ?? 0).filter((x) => x > 0);
+      return v.length ? Math.min(...v) : undefined;
+    };
+    const used = [...trainerRows, ...itemRows.filter((it) => items.includes(it.item)), ...questRows];
+    ranks.push({
+      cap: 75 * r.tier,
+      spell: r.spell,
+      trainers: [...new Set(trainerRows.map((x) => x.npc))].sort((a, b) => a - b),
+      items,
+      sellers: [...sellers].sort((a, b) => a - b),
+      quests: [...new Set(questRows.map((x) => x.id))].sort((a, b) => a - b),
+      ...(asks(used, "level") && { level: asks(used, "level") }),
+      ...(asks(used, "skill") && { skill: asks(used, "skill") }),
+    });
+  }
+
+  // (one rank a cap: Forever's client has a second chain of Cooking ranks
+  // that nothing teaches, its own profession's: the one something teaches)
+  const taught = (r: Rank) => r.trainers.length + r.items.length + r.quests.length > 0;
+  for (let i = ranks.length - 1; i >= 0; i--) {
+    const twin = ranks.find((o, j) => j !== i && o.cap === ranks[i].cap);
+    if (twin && (!taught(ranks[i]) || (taught(twin) && ranks.indexOf(twin) < i))) ranks.splice(i, 1);
+  }
+
   // Who and where. Spawns: each creature's zone (where most of its spawns
   // are) and a spot there.
   // (a zone the client knows: an AreaTable id; Questie names some
@@ -243,7 +303,7 @@ export function cookbook(game: Game) {
       .slice(0, 3)
       .map(([c, p]) => [c, Math.round(p * 10) / 10] as [number, number]);
   }
-  const questIds = [...new Set([...kept.flatMap((it) => it.quests), ...dishes.flatMap((d) => d.from.quests)])];
+  const questIds = [...new Set([...kept.flatMap((it) => it.quests), ...dishes.flatMap((d) => d.from.quests), ...ranks.flatMap((r) => r.quests)])];
   const questRows = questIds.length
     ? all<{ id: number; level: number | null; min_level: number | null; zone_id: number | null; races: number | null }>(
         `SELECT id, level, min_level, zone_id, races FROM quest WHERE id IN (${questIds.join(",")})`,
@@ -255,7 +315,9 @@ export function cookbook(game: Game) {
       `SELECT quest_id, min(entity_id) entity_id FROM quest_relation WHERE role = 'start' AND kind = 'creature' AND quest_id IN (${questIds.join(",")}) GROUP BY quest_id`,
     ))
       giverOf.set(r.quest_id, r.entity_id);
-  const npcIds = [...new Set([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...giverOf.values()])].sort((a, b) => a - b);
+  const npcIds = [
+    ...new Set([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...giverOf.values(), ...ranks.flatMap((r) => [...r.trainers, ...r.sellers])]),
+  ].sort((a, b) => a - b);
   const spawns = spawnsOf(npcIds);
   // (Questie's word for the sides a creature is friendly to, where wow-data
   // has it: a creature without a faction template, Forever's new vendors)
@@ -329,16 +391,25 @@ export function cookbook(game: Game) {
     .sort((a, b) => a.id - b.id);
   db.close();
   // (the npcs something still names: a seller no one is sent to, gone)
-  const pointed = new Set<number>([...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]), ...quests.flatMap((q) => (q.giver ? [q.giver] : []))]);
+  // (a rank's trainers and sellers no one can be sent to: gone too)
+  for (const r of ranks) {
+    r.trainers = r.trainers.filter((v) => !npcOf.get(v)?.unknown);
+    r.sellers = r.sellers.filter((v) => !npcOf.get(v)?.unknown);
+  }
+  const pointed = new Set<number>([
+    ...kept.flatMap((it) => [...it.sold, ...it.drops.map(([c]) => c)]),
+    ...quests.flatMap((q) => (q.giver ? [q.giver] : [])),
+    ...ranks.flatMap((r) => [...r.trainers, ...r.sellers]),
+  ]);
   // (the book's order: by the skill a dish is learned at, its yellow, its name)
   dishes.sort((a, b) => a.learn - b.learn || a.yellow - b.yellow || a.name.localeCompare(b.name));
-  return { dishes, items: kept, npcs: npcs.filter((n) => pointed.has(n.id)), quests, unchaptered };
+  return { dishes, items: kept, npcs: npcs.filter((n) => pointed.has(n.id)), quests, ranks, unchaptered };
 }
 
 const list = (xs: number[]) => `{ ${xs.join(", ")} }`;
 
 export function lua(game: Game): string {
-  const { dishes, items, npcs, quests } = cookbook(game);
+  const { dishes, items, npcs, quests, ranks } = cookbook(game);
   const out = [
     `-- Generated by scripts/recipes.ts from wow-data's ${game === "classic" ? "Classic Era" : "Forever"} database: edit the script or data/chapters.json, not this file.`,
     "-- recipes[spell]: what it makes (item, made = { least, most }), the skill it is",
@@ -351,6 +422,9 @@ export function lua(game: Game): string {
     "-- npcs[id]: the sellers, the likeliest droppers, the quest givers: side (A, H:",
     "-- the faction it serves), area (its zone), x, y (a spot there), lvl, rank.",
     "-- quests[id]: giver, side, level, min (the level it opens at), area.",
+    "-- ranks[cap]: the skill's rank that opens up to cap: its spell, who teaches",
+    "-- it (trainers), the book (items) and who sells it (sellers), the quests;",
+    "-- the level and the skill it asks.",
     "local _, ns = ...",
     "ns.data = {",
     `  skillLine = ${COOKING},`,
@@ -398,6 +472,16 @@ export function lua(game: Game): string {
     if (n.lvl) parts.push(`lvl = { ${n.lvl[0]}, ${n.lvl[1]} }`);
     if (n.rank) parts.push(`rank = ${n.rank}`);
     out.push(`    [${n.id}] = { ${parts.join(", ")} },`);
+  }
+  out.push("  },", "  ranks = {");
+  for (const r of ranks) {
+    const parts = [`spell = ${r.spell}`];
+    if (r.trainers.length) parts.push(`trainers = ${list(r.trainers)}`);
+    if (r.items.length) parts.push(`items = ${list(r.items)}`, `sellers = ${list(r.sellers)}`);
+    if (r.quests.length) parts.push(`quests = ${list(r.quests)}`);
+    if (r.level) parts.push(`level = ${r.level}`);
+    if (r.skill) parts.push(`skill = ${r.skill}`);
+    out.push(`    [${r.cap}] = { ${parts.join(", ")} },`);
   }
   out.push("  },", "  quests = {");
   for (const q of quests) {

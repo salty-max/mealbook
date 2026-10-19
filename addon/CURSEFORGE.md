@@ -23,13 +23,13 @@ Above the facts, the chef has a word about the dish. Alliance cooks read **Kendo
 
 ## The road to 300
 
-From your skill now to 300, Mealbook plans the road with the recipes you know:
+From your skill now to 300, even from nothing, Mealbook plans the whole road:
 
-- at each step, the **surest recipe** you know, and among equals one your bags can already make,
+- at each step, the **surest recipe**, one you know or one to learn from a trainer or a vendor of your side, with a new recipe only when it's worth the trip,
 - **how many casts** each leg takes on average, by the game's own skill-up rule,
-- a **shopping list** for each leg, checked against your bags,
-- **where to train** when you reach your skill cap,
-- **what to learn next** when your recipes run out, from a trainer or a vendor of your side, with where the vendor stands.
+- **where to learn** each new recipe, the trainer or the vendor and where they stand,
+- **each rank** as it really works: Journeyman from a cooking trainer, Expert from the Expert Cookbook and who sells it, Artisan from its quest, with the level and skill each asks,
+- a **shopping list** for each leg, checked against your bags.
 
 The road changes as you cook and learn. Open it with `/mealbook road`.
 

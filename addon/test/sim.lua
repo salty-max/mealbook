@@ -125,6 +125,44 @@ check(withBags[1].spell == 2538, "the same chance: the one the bags can cook fir
 local shopping, casts = R.shopping(withBags[1])
 check(casts >= 1 and shopping[1][1] == 2672, "a leg's ingredients, its casts rounded up")
 
+-- ── the whole road, from nothing ─────────────────────────────────────────────
+-- (what to learn on the way: a trainer's, else a vendor of the side's, as the
+-- road's book asks)
+for _, side in ipairs({ "A", "H" }) do
+  local function learnable(spell)
+    local src = ns.hunts.sources(spell, side)
+    if src.skill or src.trainer then return { trainer = true } end
+    if src.shop[1] then return { vendor = src.shop[1] } end
+  end
+  local road = R.plan({}, 1, 75, nil, 300, learnable)
+  check(not road.stuck and road[#road].to == 300, side .. ": the whole road from 1 to 300, learning on the way")
+  local trains, learnt, wrong, casts = {}, 0, 0, 0
+  for _, leg in ipairs(road) do
+    if leg.train then
+      trains[leg.train] = leg.rank
+    else
+      casts = casts + leg.casts
+      if leg.learn then
+        learnt = learnt + 1
+        local v = leg.learn.vendor and ns.data.npcs[leg.learn.vendor]
+        if v and v.side and v.side ~= side then wrong = wrong + 1 end
+      end
+    end
+  end
+  check(wrong == 0, side .. ": every recipe to learn from a vendor of its side")
+  check(
+    learnt > 0 and learnt <= 12 and casts < 330,
+    side .. ": a handful of recipes to learn, the casts near one a point"
+  )
+  local r150, r225, r300 = trains[150], trains[225], trains[300]
+  check(r150 and r150.trainers and r150.skill == 50, side .. ": Journeyman from the cooking trainers, at 50")
+  check(
+    r225 and r225.items and #r225.sellers > 0 and r225.skill == 125,
+    side .. ": Expert from a cookbook and who sells it, at 125"
+  )
+  check(r300 and r300.quests and r300.level == 35, side .. ": Artisan from a quest, at level 35")
+end
+
 -- ── the chef ─────────────────────────────────────────────────────────────────
 check(ns.chef() == "kendor", "an Alliance cook's book is Kendor's")
 local kendor = ns.pageText("kendor", 2538)
@@ -249,6 +287,22 @@ ns.openDish(2538)
 ns.refresh()
 SlashCmdList.MEALBOOK("road")
 check(MealbookFrame.tab == 2, "/mealbook road opens the road")
+-- every leg's page, a stop's and a recipe to learn's among them, on each side
+-- and with no cooking yet (a page that fails to draw fails here)
+for _, side in ipairs({ "Alliance", "Horde" }) do
+  s.faction = side
+  for i = 1, 20 do
+    ns.openRoadLeg(i)
+  end
+end
+local cooking = char.skill
+char.skill = nil
+ns.openRoadLeg(1)
+for i = 1, 20 do
+  ns.openRoadLeg(i)
+end
+char.skill = cooking
+s.faction = nil
 ns.openMilestones("first-meat")
 check(MealbookFrame.tab == 4 and #ns.milestoneRows > 0, "the achievements' board, one picked out")
 check(not MealbookFrame.left:IsShown() and not MealbookFrame.sheet:IsShown(), "over both panels")

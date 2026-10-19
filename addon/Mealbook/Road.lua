@@ -5,12 +5,17 @@
 -- window shows (green halfway between yellow and grey).
 --
 -- The road: for every point from the skill now to the goal, the surest
--- recipe known (then one whose ingredients are in the bags, then the fewest
--- ingredients, then the book's order), consecutive points cooked with one
--- recipe a leg, its casts the sum of one over the chance at each point. At a
--- rank's cap (75, 150, 225), a stop to train the next. Where no recipe known
--- raises the skill any more, the road stops: the recipes worth learning there
--- (R.worth) go on from it.
+-- recipe known or that can be learned there (from a trainer, a vendor of the
+-- character's side: `learnable`, the road's book's), consecutive points cooked
+-- with one recipe a leg, its casts the sum of one over the chance at each
+-- point; a recipe first cooked on the road is learned at its leg's start,
+-- only when a tenth surer than one in hand (fewer recipes to fetch, a few
+-- casts more). At the same chance, one known first (then one whose ingredients are in the
+-- bags, then the fewest ingredients, then the book's order), and of those to
+-- learn, the one orange the longest (fewer to learn). At a rank's cap (75,
+-- 150, 225), a stop to train the next (`D.ranks`: who teaches it, what it
+-- asks). Where nothing known or learnable raises the skill any more, the road
+-- stops: the recipes worth learning there (R.worth) go on from it.
 local _, ns = ...
 local D = ns.data
 local R = {}
@@ -59,43 +64,66 @@ local function capOf(max)
   return 300
 end
 
--- The surest recipe of these at this skill.
-local function best(known, skill, have)
-  local pick, pickChance, pickCan
+local LEARN_COST = 0.1
+
+-- The surest recipe at this skill: of those known (or learned on the road),
+-- and of those learnable here (learnable(spell): where, else nil).
+local function best(known, skill, have, learnable)
+  local pick, pickChance, pickCan, pickNew
   for _, spell in ipairs(D.order) do
-    local d = known[spell] and D.recipes[spell]
-    if d then
-      local c = R.chance(d, skill)
-      if c > 0 then
+    local d = D.recipes[spell]
+    local isNew = not known[spell]
+    if d and (not isNew or (learnable and not d.unknown and skill >= d.learn and learnable(spell))) then
+      local real = R.chance(d, skill)
+      -- (a recipe to learn must be worth the trip: a tenth surer than one in
+      -- hand, else the one in hand goes on)
+      local c = isNew and real - LEARN_COST or real
+      if real > 0 then
         local can = have and R.cookable(d, have) > 0 or false
-        local better = not pick
-          or c > pickChance + 1e-9
-          or (
-            math.abs(c - pickChance) < 1e-9
-            and (can and not pickCan or can == pickCan and weight(d) < weight(D.recipes[pick]))
-          )
+        local better
+        if not pick or c > pickChance + 1e-9 then
+          better = true
+        elseif math.abs(c - pickChance) < 1e-9 then
+          if isNew ~= pickNew then
+            better = not isNew
+          elseif isNew then
+            -- (of two to learn: a trainer's first, at hand and given with
+            -- the skill, then the one orange the longest, then the fewest
+            -- ingredients)
+            local t, pt = learnable(spell).trainer and 1 or 0, learnable(pick).trainer and 1 or 0
+            local py = D.recipes[pick].yellow
+            better = t > pt or t == pt and (d.yellow > py or (d.yellow == py and weight(d) < weight(D.recipes[pick])))
+          else
+            better = can and not pickCan or can == pickCan and weight(d) < weight(D.recipes[pick])
+          end
+        end
         if better then
-          pick, pickChance, pickCan = spell, c, can
+          pick, pickChance, pickCan, pickNew = spell, c, can, isNew
         end
       end
     end
   end
-  return pick, pickChance
+  return pick, pick and R.chance(D.recipes[pick], skill), pickNew
 end
 
 -- The road from skill to goal (300 unless said): its legs, each { spell, from,
--- to, casts } or { train = the next cap }, and stuck, the skill where no
--- recipe known goes further.
-function R.plan(known, skill, max, have, goal)
+-- to, casts, learn = where (learnable's: a recipe to learn at its start) } or
+-- { train = the next cap, rank = D.ranks' }, and stuck, the skill where
+-- nothing goes further. learnable: nil, the recipes known only.
+function R.plan(known, skill, max, have, goal, learnable)
   goal = goal or 300
   local legs, s, cap = {}, skill, capOf(max)
+  local on = {} -- (the recipes known, and those learned on the road)
+  for spell in pairs(known) do
+    on[spell] = true
+  end
   while s < goal do
     if s >= cap then
       if cap >= 300 then break end
-      table.insert(legs, { train = cap + 75, from = s })
+      table.insert(legs, { train = cap + 75, from = s, rank = D.ranks and D.ranks[cap + 75] })
       cap = cap + 75
     end
-    local spell, chance = best(known, s, have)
+    local spell, chance, isNew = best(on, s, have, learnable)
     if not spell then
       legs.stuck = s
       break
@@ -104,8 +132,12 @@ function R.plan(known, skill, max, have, goal)
     if leg and leg.spell == spell then
       leg.to, leg.casts = s + 1, leg.casts + 1 / chance
     else
-      table.insert(legs, { spell = spell, from = s, to = s + 1, casts = 1 / chance })
+      table.insert(
+        legs,
+        { spell = spell, from = s, to = s + 1, casts = 1 / chance, learn = isNew and learnable(spell) or nil }
+      )
     end
+    on[spell] = true
     s = s + 1
   end
   return legs

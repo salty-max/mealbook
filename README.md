@@ -8,9 +8,10 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   Undercity): what it makes, its colours now and at each threshold, its
   ingredients as the game's items (with how many you carry), how you
   learned it, how often you cooked it.
-- **The road:** from your skill now to 300, the surest recipe you know at
-  each step, how many casts it takes on average, what to buy or gather,
-  where to train, and what to learn when your recipes run out.
+- **The road:** from your skill now (or nothing) to 300, the surest recipe
+  at each step, one you know or one to learn on the way, where to learn it,
+  how many casts it takes on average, what to buy or gather, and each rank
+  as it is really learned (a trainer, the Expert Cookbook, Artisan's quest).
 
 - **Hunts:** the recipes no trainer teaches and no shop keeps for long, a
   stall's limited stock, a creature's drop, a quest, each opening when your

@@ -89,9 +89,12 @@ function reagentNames(locale: string, ids: number[]): Map<number, string[]> {
 }
 
 // The ingredients a page names that aren't the recipe's own.
+// (compared without case or accents: a page writes "épices fortes" where the
+// client writes "Epices fortes", and either is the same ingredient)
+const plain = (t: string) => t.normalize("NFD").replace(/\p{M}/gu, "").replace(/[’]/g, "'").toLowerCase();
 function strangers(text: string, own: Set<number>, names: Map<number, string[]>): string[] {
-  let rest = text.toLowerCase();
-  const all = [...names].flatMap(([id, ns]) => ns.map((n) => [id, n.toLowerCase()] as const)).sort((a, b) => b[1].length - a[1].length);
+  let rest = plain(text);
+  const all = [...names].flatMap(([id, ns]) => ns.map((n) => [id, plain(n)] as const)).sort((a, b) => b[1].length - a[1].length);
   const found: string[] = [];
   for (const [id, name] of all) {
     const re = new RegExp(`(^|[^\\p{L}])${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=$|[^\\p{L}])`, "gu");

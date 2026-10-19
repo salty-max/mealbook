@@ -73,7 +73,7 @@ A snapper caught at night, and spring water, and nothing else. Simmer the fish g
 
 ## 1250145 Savory Turtle Stew
 
-Turtle stewed and not strained, a farm stew rather than a lord's bisque. Three portions of turtle and plenty of soothing spice, simmered until the meat comes apart. Leave it thick. The texture is the point, and the smell, round and warm and slow, is the reason people stay at the counter after they have finished. I have stopped asking them to move. They will, when the bowl is empty, and not before.
+Turtle stewed and not strained, a farm stew rather than a lord's bisque. We made it by a river in Lordaeron, I am nearly sure, though I could not tell you which. Three portions of turtle and plenty of soothing spice, simmered until the meat comes apart. Leave it thick. The texture is the point, and the smell, round and warm and slow, is the reason people stay at the counter after they have finished. I have stopped asking them to move. They will, when the bowl is empty, and not before.
 
 ## 18245 Lobster Stew
 

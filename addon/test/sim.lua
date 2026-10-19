@@ -89,6 +89,25 @@ check(withBags[1].spell == 2538, "the same chance: the one the bags can cook fir
 local shopping, casts = R.shopping(withBags[1])
 check(casts >= 1 and shopping[1][1] == 2672, "a leg's ingredients, its casts rounded up")
 
+-- ── the chef ─────────────────────────────────────────────────────────────────
+check(ns.chef() == "kendor", "an Alliance cook's book is Kendor's")
+local kendor = ns.pageText("kendor", 2538)
+check(kendor and #kendor > 0 and #ns.pageText("eunice", 2538) > 0, "every dish has both chefs' pages")
+SlashCmdList.MEALBOOK("chef")
+check(ns.chef() == "eunice" and MealbookSettings.chef == "eunice", "/mealbook chef: the other chef's book")
+check(said(ns.chefName("eunice")), "said in chat, with her name as the game gives it")
+SlashCmdList.MEALBOOK("chef")
+check(ns.chef() == "kendor", "and back")
+if G.LOCALE == "frFR" then
+  -- (a French page names places as Forever does: Classic Era's names swapped in there)
+  local p = ns.pageText("kendor", 2795)[1]
+  if G.FOREVER then
+    check(p:find("Hurlevent"), "Forever: Hurlevent, as its client names Stormwind")
+  else
+    check(p:find("Stormwind") and not p:find("Hurlevent"), "Classic Era: Stormwind, as its French client names it")
+  end
+end
+
 -- ── the book ─────────────────────────────────────────────────────────────────
 SlashCmdList.MEALBOOK("")
 check(MealbookFrame and MealbookFrame:IsShown(), "/mealbook opens the book")

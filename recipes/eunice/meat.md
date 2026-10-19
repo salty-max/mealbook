@@ -37,7 +37,7 @@ A dwarven dish, which means it comes with a story about whose grandfather invent
 
 ## 6414 Roasted Kodo Meat
 
-The tauren of Mulgore roast kodo the way they do most things, slowly and without fuss. I cook it the same way. Kodo is a great, slow animal, and its meat is tough until it decides otherwise. A pinch of spice, a low fire, and an afternoon. It is done when it smells of warm grass and smoke. A tauren trader once told me mine was nearly as good as his mother's. I chose to believe the nearly was politeness.
+The tauren of Mulgore roast kodo the way they do most things, slowly and without fuss. I cook it the same way. Kodo is a great, slow animal, and its meat is tough until it decides otherwise. A pinch of spice, a low fire, and an afternoon. It is done when it smells of warm grass and smoke. I cannot taste it, so I asked a tauren trader, who told me mine was nearly as good as his mother's. I chose to believe the nearly was politeness.
 
 ## 8607 Smoked Bear Meat
 
@@ -45,7 +45,7 @@ No spice and no sauce, only smoke and time. This is food for people who are goin
 
 ## 2541 Coyote Steak
 
-Coyotes eat whatever the world drops, and their meat remembers every meal. It takes no spice, only a hot pan and a cook who does not apologise for it. Sear it until the edges curl and the smell turns from blood to toasted nuts, then take it off the heat and leave it alone. A coyote steak is never tender. It is honest, and honest food keeps a traveller on their feet for a long road.
+Coyotes eat whatever the world drops, and their meat remembers every meal. It takes no spice, only a hot pan and a cook who does not apologise for it. Sear it until the edges curl and the smell turns from blood to toasted nuts, then take it off the heat and leave it alone. A coyote steak is never tender, the living tell me, chewing. It is honest, and honest food keeps a traveller on their feet for a long road.
 
 ## 3371 Blood Sausage
 
@@ -61,7 +61,7 @@ Crocolisk reaches the Undercity from the Wetlands by way of people who would rat
 
 ## 2546 Dry Pork Ribs
 
-No sauce, only spice and a low fire and the whole of an afternoon. The ribs are done when the bones show a finger's width at the ends and the smell has gone from meat to something closer to toasted bread. I serve them on paper, to people who eat with their hands and do not mind who sees. In the Undercity, that is most people, and the rest are lying.
+No sauce, only spice and a low fire and the whole of an afternoon, the way the farms cooked them at the end of the harvest, or at the start of it, I forget which. The ribs are done when the bones show a finger's width at the ends and the smell has gone from meat to something closer to toasted bread. I serve them on paper, to people who eat with their hands and do not mind who sees. In the Undercity, that is most people.
 
 ## 6418 Crispy Lizard Tail
 
@@ -73,11 +73,11 @@ Stormwind Seasoning Herbs, the packet says, and they smell exactly as I remember
 
 ## 2548 Succulent Pork Ribs
 
-Two racks of ribs and hot spice, turned every few minutes so the fat bastes the meat as it melts. The turning is the recipe. A rib left to itself burns on the bottom and sulks on top. A rib turned often comes out glossy and generous. I give this one to the students who think cooking is waiting. It is not. It is paying attention while you wait.
+Two racks of ribs and hot spice, turned every few minutes so the fat bastes the meat as it melts. The turning is the recipe. A rib left to itself burns on the bottom and sulks on top. A rib turned often comes out glossy and generous. A farmer taught me that, a neighbour, I think, with a red beard, or a red barn. I give this one to the students who think cooking is waiting. It is not. It is paying attention while you wait.
 
 ## 3397 Big Bear Steak
 
-The bears of the south are bigger than ours, and their meat is darker, with a smell of pine and wet earth that the hot spice cuts through. Sear the steak until it smells of smoke and iron, then let it rest a long while. A big steak goes on cooking after the fire, and many a cook has ruined one by staring at it. I tell my students to walk away and count to a hundred. Most reach forty.
+The bears of the south are bigger than ours, and their meat is darker, with a smell of pine and wet earth that the hot spice cuts through. Sear the steak until it smells of smoke and iron, then let it rest a long while. A big steak goes on cooking after the fire, and many a cook has ruined one by staring at it. I tell my students to walk away and count to a hundred, and to tell me afterwards how it tastes. Most reach forty.
 
 ## 6419 Lean Venison
 
@@ -85,7 +85,7 @@ There were deer in the woods above the farm, and my father, or my uncle, or a ne
 
 ## 15853 Lean Wolf Steak
 
-A plain steak from a wolf's flank, with a pinch of spice and nothing to hide behind. That is what makes it a test. Sear it fast, rest it long, slice it thin across the grain. I make my students cook it until they stop flinching at the hiss of the pan. It takes some of them a week. One took a year. He is very good now, and he still flinches, a little.
+A plain steak from a wolf's flank, with a pinch of spice and nothing to hide behind. That is what makes it a test. Sear it fast, rest it long, slice it thin across the grain. I judge it by its colour and by the face of whoever eats it, since I cannot do otherwise. I make my students cook it until they stop flinching at the hiss of the pan. It takes some of them a week. One took a year.
 
 ## 3398 Hot Lion Chops
 
@@ -137,7 +137,7 @@ Small rounds of chopped stag and hot spice, pressed once and fried quickly. Pres
 
 ## 22480 Tender Wolf Steak
 
-The wolves of the cold places live slowly and keep their fat, and their meat is the best of any wolf. Soothing spice, a short hot sear, a long rest. You will smell when it is ready: the spice warms and the meat turns sweet, like a loaf just out of the oven. A cook who has fought a hundred stringy wolves deserves this one. I serve it to my best students, and I do not tell the others.
+The wolves of the cold places live slowly and keep their fat, and their meat is the best of any wolf. Soothing spice, a short hot sear, a long rest. You will smell when it is ready: the spice warms and the meat turns sweet, like a loaf just out of the oven. My students swear they taste the difference from the first bite, and I believe them, because they stop talking. A cook who has fought a hundred stringy wolves deserves this one. I serve it to my best students.
 
 ## 1225759 Filet o' Flank
 

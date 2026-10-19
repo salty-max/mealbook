@@ -90,15 +90,20 @@ local function swapped(text)
   end
   return text
 end
-local function chefPage(spell)
-  local chef = ns.chef()
+-- The chef's page as the book shows it, its paragraphs (nil: none).
+function ns.pageText(chef, spell)
   local paragraphs = ns.pages and ns.pages[chef] and ns.pages[chef][spell]
-  if not paragraphs then return end
+  if not paragraphs then return nil end
   local out = {}
   for i, p in ipairs(paragraphs) do
     out[i] = swapped(p)
   end
-  page:text({ { table.concat(out, "\n\n"), aside = true, sign = ns.chefName(chef) } })
+  return out
+end
+local function chefPage(spell)
+  local chef = ns.chef()
+  local text = ns.pageText(chef, spell)
+  if text then page:text({ { table.concat(text, "\n\n"), aside = true, sign = ns.chefName(chef) } }) end
 end
 
 local function showDish(spell)

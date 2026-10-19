@@ -5,7 +5,7 @@ learns to cook, and the road to 300 (what to cook next, how many times, with
 what). The first chapter of the professions addon (`../ideas/professions.md`),
 planned in `../ideas/cookbook.md`: the chefs (Kendor Kabonka for the
 Alliance, Eunice Burch for the Horde), their voices (`../ideas/cookbook-voices.md`,
-waiting for the user's read), the Hunts, the Milestones, the pantry.
+the cards the pages follow), the Hunts, the Milestones, the pantry.
 Started 19 October 2026. Local only so far: no GitHub repository, no store
 page.
 
@@ -35,6 +35,18 @@ page.
   Also `i18n/skill_line.json`, the cooking skill line's name in every
   language, the client's own (Classic Era's skill list names a skill only by
   its name), which `scripts/locales.ts` puts in each Text file.
+- `recipes/<chef>/<chapter>.md`: the chefs' pages, one `## <spell> <name>`
+  section a dish, every dish of both games for both chefs (132 each):
+  English, plain ASCII. Their French in `i18n/frFR/recipes/<chef>/`, the
+  same sections, stamped against the English they were translated from
+  (`i18n/frFR/recipes-stamp.json`). `scripts/pages.ts` checks them (no
+  semicolons, the lengths: 70 to 100 words, 130 to 150 for the signature
+  dishes, a fifth more in a translation; an ingredient of another dish
+  named on a page; a translation whose English changed since, `--stamp`
+  once read) and writes `Pages_<locale>.lua` (`ns.pages[chef][spell]`, and
+  `ns.classicNames`: the French text uses Forever's place names,
+  `i18n/frFR/classic-names.json` swaps Classic Era's back in on that
+  client). The chef is the character's faction's.
 - `Core.lua`: the book (`MealbookChar`: known, cooked, first, skill, peak;
   ids only), the events (`ns.on`, `ns.onUnit`), the skill (Forever's
   professions by the skill line's id, Classic Era's skill list by its name
@@ -54,7 +66,7 @@ page.
   the parts every tab uses (`ns.ui`); `RecipesBook.lua` (the dishes known by
   chapter, each in its colour now; a dish's page: its figures, ingredients
   and what it makes as the game's items, its colours, how it was learned;
-  the chef's page goes above the facts once written); `RoadBook.lua` (the
+  the chef's page above the facts); `RoadBook.lua` (the
   road's legs, the road as cards, where it stops and what to learn there; a
   leg's page: its casts and shopping list against the bags).
 - `addon/test/game.lua` (Palaver's frames, events and timers; the skill as
@@ -63,16 +75,16 @@ page.
   window, a recipe learned, dishes cooked, the road, the book's tabs, on
   Classic Era, Forever and a French client (`bun run check` runs all).
 - Languages: Mealbook's own words through `L` (`i18n/<locale>/words.json`,
-  `bun run locales`); English only so far. The dishes', ingredients' and
+  `bun run locales`): English and French (interface and pages), the other
+  clients English until translated. The dishes', ingredients' and
   recipes' names are the game's, by id, in the client's language.
 
 ## Not yet
 
-- The chefs' pages (`recipes/<chef>/<spell>.md`, the voices first read by
-  the user), the Hunts tab (recipe drops and limited-stock vendors, named
+- The Hunts tab (recipe drops and limited-stock vendors, named
   through name files from wow-data), the Milestones, the pantry (an
   ingredient's tooltip line), the welcome page, the minimap button, the
-  opt-in collector, French and German.
+  opt-in collector, German.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it.

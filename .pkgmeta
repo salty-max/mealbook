@@ -17,6 +17,7 @@ ignore:
   - addon/test
   - addon/CURSEFORGE.md
   - data
+  - docs
   - i18n
   - recipes
   - scripts

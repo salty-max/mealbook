@@ -25,7 +25,8 @@ one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 ## Commands
 
 ```bash
-bun run check        # kit, recipes, languages, pages, lint, the sim on three clients, TOCs
+bun run check        # kit, saved ids, recipes, languages, pages, lint, the sim on three clients, TOCs
+bun run ids          # every table saved-ids.json lists keeps the ids it had at the fork point from origin/main (addon-kit's ids.ts)
 bun scripts/root.ts --run addon-kit/q.ts check -- bun run check   # the same, quiet, stamping the tree for the push
 bun run package      # dist/Mealbook-<version>.zip for a test in the game
 bun run recipes      # the recipes again, after wow-data's databases change
@@ -41,6 +42,9 @@ scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md   # check, tag, push; Act
   through `scripts/root.ts`, the kit's copy). Generated files
   (`Recipes_*.lua`, `Text_*.lua`, `Pages_*.lua`, `i18n/names.json`) are
   never edited by hand; `--check` fails a stale one.
+- A regenerated table keeps every id a saved book may hold (`saved-ids.json`,
+  `bun run ids` in the check): an id leaves only with the user's go, under
+  `removed`.
 - Saved data (`MealbookChar`) keeps ids only. Dishes, ingredients, recipes,
   npcs and zones are named by id in the client's language, never matched
   by an English name.

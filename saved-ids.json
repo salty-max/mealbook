@@ -1,0 +1,7 @@
+{
+  "//": "The tables naming the ids a saved book keeps (known, cooked, first: a recipe's spell): a regeneration never drops one (bun run ids, in check). An id leaves on purpose only with the user's go: under removed, with why and approved.",
+  "tables": {
+    "recipes": { "lua": "addon/Mealbook/Recipes_*.lua", "at": "data.recipes" }
+  },
+  "removed": []
+}

@@ -1,4 +1,4 @@
--- addon-kit 10d9669: a copy (kit:sync); edit the addon-kit repository's Kit.lua instead
+-- addon-kit ff50e08: a copy (kit:sync); edit the addon-kit repository's Kit.lua instead
 -- The kit shared by Hearthtale, Lorekeeper's Codex, Yonder and
 -- Second Wind: the books' look and the pieces their windows are made of
 -- (the list on the left, the page on the right and every part of a page, a

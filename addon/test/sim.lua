@@ -205,9 +205,16 @@ SlashCmdList.MEALBOOK("tooltips")
 local cookable = P.cookable(char.known, ns.skill(), function(i) return s.bags[i] or 0 end)
 check(#cookable > 0 and cookable[1][2] > 0, "what the bags can cook now, and how many times")
 
--- where each ingredient comes from: every one of Classic Era's has a way
--- (Forever's few of its own no source knows yet aside)
-local unsourced, seenItem = 0, {}
+-- where each ingredient comes from: every one of Classic Era's has a way.
+-- Forever's: one only dishes no source teaches yet use (unknown, before
+-- launch) may have none either, and one more of its own aside
+local unsourced, seenItem, taught = 0, {}, {}
+for _, spell in ipairs(ns.data.order) do
+  local d = ns.data.recipes[spell]
+  for i = 1, #d.reagents, 2 do
+    taught[d.reagents[i]] = taught[d.reagents[i]] or not d.unknown
+  end
+end
 for _, spell in ipairs(ns.data.order) do
   local d = ns.data.recipes[spell]
   for i = 1, #d.reagents, 2 do
@@ -217,13 +224,14 @@ for _, spell in ipairs(ns.data.order) do
       local src = P.sources(item)
       if
         not (src and (src.sellers[1] or src.drops[1] or src.fished[1] or src.fishing or src.herb or src.inside[1]))
+        and (taught[item] or not G.FOREVER)
       then
         unsourced = unsourced + 1
       end
     end
   end
 end
-check(unsourced <= (G.FOREVER and 3 or 0), "every ingredient's source: a seller, a creature, a fishing zone, a herb")
+check(unsourced <= (G.FOREVER and 1 or 0), "every ingredient's source: a seller, a creature, a fishing zone, a herb")
 -- (a side's own people the other's prey, never its own cooks')
 local ownPrey = 0
 for _, side in ipairs({ "Alliance", "Horde" }) do

@@ -23,19 +23,19 @@ ns.data = {
   skillLine = 185,
   order = {
     1255241, 1229737, 7751, 2538, 15935, 21143, 8604, 2540, 7752, 1270632,
-    1247741, 6412, 2539, 6413, 1249957, 1270633, 1249963, 1250156, 2795, 1270635,
-    21144, 6414, 8607, 6499, 2541, 6415, 2542, 7754, 7753, 7827,
-    6416, 3371, 9513, 1250157, 2544, 1250154, 2543, 3370, 2546, 25704,
-    2545, 8238, 1252566, 1283400, 6501, 6417, 3372, 1249958, 1249964, 2547,
-    7755, 6418, 2549, 2548, 3397, 3377, 6419, 3373, 1249965, 1249959,
-    6500, 15853, 3398, 3376, 1262978, 24418, 3399, 7828, 1250155, 1250151,
-    4094, 15863, 7213, 13028, 15856, 15861, 20916, 15865, 15855, 25954,
-    3400, 1249966, 1249960, 1250150, 1295834, 1291341, 1249967, 1295805, 1249961, 15906,
-    15910, 21175, 1250153, 1250142, 1319313, 18239, 18241, 15933, 15915, 18238,
-    22480, 20626, 18240, 18242, 1249968, 1225759, 1225758, 1249962, 1225760, 18243,
-    18244, 1250144, 1250147, 1250158, 1250152, 1250145, 1250143, 1250148, 1294014, 1250149,
-    1250146, 18247, 18245, 18246, 22761, 1225763, 1225762, 24801, 1263067, 470359,
-    25659, 470370,
+    1247741, 1225759, 1225758, 1225760, 1225763, 1225762, 470359, 470370, 6412, 2539,
+    6413, 1249957, 1270633, 1249963, 1250156, 2795, 1270635, 21144, 6414, 8607,
+    6499, 2541, 6415, 2542, 7754, 7753, 7827, 6416, 3371, 9513,
+    1250157, 2544, 1250154, 2543, 3370, 2546, 25704, 2545, 8238, 1252566,
+    1283400, 6501, 6417, 3372, 1249958, 1249964, 2547, 7755, 6418, 2549,
+    2548, 3397, 3377, 6419, 3373, 1249965, 1249959, 6500, 15853, 3398,
+    3376, 1262978, 24418, 3399, 7828, 1250155, 1250151, 4094, 15863, 7213,
+    13028, 15856, 15861, 20916, 15865, 15855, 25954, 3400, 1249966, 1249960,
+    1250150, 1295834, 1291341, 1249967, 1295805, 1249961, 15906, 15910, 21175, 1250153,
+    1250142, 1319313, 18239, 18241, 15933, 15915, 18238, 22480, 20626, 18240,
+    18242, 1249968, 1249962, 18243, 18244, 1250144, 1250147, 1250158, 1250152, 1250145,
+    1250143, 1250148, 1294014, 1250149, 1250146, 18247, 18245, 18246, 22761, 24801,
+    1263067, 25659,
   },
   recipes = {
     [1255241] = { item = 252683, made = { 1, 1 }, learn = 1, yellow = 0, grey = 0, chapter = "soup", reagents = { 252948, 1, 5471, 1, 12207, 1 }, items = { 252949 }, unknown = true }, -- Cleansing Stew
@@ -49,6 +49,13 @@ ns.data = {
     [7752] = { item = 787, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "fish", reagents = { 6303, 1 }, items = { 6326 } }, -- Slitherskin Mackerel
     [1270632] = { item = 263507, made = { 1, 1 }, learn = 1, yellow = 80, grey = 85, chapter = "bake", reagents = { 10284, 5 }, items = { 263505 }, unknown = true }, -- Critter Cookie
     [1247741] = { item = 8957, made = { 1, 1 }, learn = 1, yellow = 210, grey = 220, chapter = "fish", reagents = { 8959, 1 }, unknown = true }, -- Spinefin Halibut
+    [1225759] = { item = 238638, made = { 2, 2 }, learn = 1, yellow = 260, grey = 280, chapter = "meat", reagents = { 12203, 2, 239016, 1 }, items = { 250395 }, unknown = true }, -- Filet o' Flank
+    [1225758] = { item = 238637, made = { 2, 2 }, learn = 1, yellow = 260, grey = 280, chapter = "meat", reagents = { 12202, 2, 239016, 1 }, items = { 250394 }, unknown = true }, -- Prowler Steak
+    [1225760] = { item = 238639, made = { 2, 2 }, learn = 1, yellow = 260, grey = 280, chapter = "bake", reagents = { 12207, 2, 239016, 1 }, items = { 250396 }, unknown = true }, -- Sunrise Omelette
+    [1225763] = { item = 238642, made = { 1, 1 }, learn = 1, yellow = 290, grey = 310, chapter = "feast", reagents = { 13888, 12, 3712, 4, 3404, 3, 239017, 1 }, items = { 250399 }, unknown = true }, -- Grand Lobster Banquet
+    [1225762] = { item = 238641, made = { 1, 1 }, learn = 1, yellow = 290, grey = 310, chapter = "feast", reagents = { 4603, 12, 12184, 4, 6362, 3, 239017, 1 }, items = { 250398 }, unknown = true }, -- Specklefin Feast
+    [470359] = { item = 232436, made = { 1, 1 }, learn = 1, yellow = 325, grey = 365, chapter = "soup", reagents = { 13888, 1, 227813, 1 }, unknown = true }, -- Darkclaw Bisque
+    [470370] = { item = 232438, made = { 1, 1 }, learn = 1, yellow = 325, grey = 365, chapter = "fish", reagents = { 13758, 1 }, unknown = true }, -- Smoked Redgill
     [6412] = { item = 5472, made = { 1, 1 }, learn = 10, yellow = 50, grey = 90, chapter = "meat", reagents = { 5465, 1 }, items = { 5482 } }, -- Kaldorei Spider Kabob
     [2539] = { item = 2680, made = { 1, 1 }, learn = 10, yellow = 50, grey = 90, chapter = "meat", reagents = { 2672, 1, 2678, 1 }, trainer = true }, -- Spiced Wolf Meat
     [6413] = { item = 5473, made = { 1, 1 }, learn = 20, yellow = 60, grey = 100, chapter = "meat", reagents = { 5466, 1 }, items = { 5483 } }, -- Scorpid Surprise
@@ -143,10 +150,7 @@ ns.data = {
     [18240] = { item = 13928, made = { 1, 1 }, learn = 240, yellow = 280, grey = 320, chapter = "fish", reagents = { 13755, 1, 3713, 1 }, items = { 13942 } }, -- Grilled Squid
     [18242] = { item = 13929, made = { 1, 1 }, learn = 240, yellow = 280, grey = 320, chapter = "fish", reagents = { 13756, 1, 2692, 2 }, items = { 13943 } }, -- Hot Smoked Bass
     [1249968] = { item = 249876, made = { 1, 1 }, learn = 250, yellow = 255, grey = 270, chapter = "drink", reagents = { 8766, 1, 3713, 4, 8146, 1 }, items = { 249890 } }, -- Wicked Smoothie
-    [1225759] = { item = 238638, made = { 2, 2 }, learn = 250, yellow = 260, grey = 280, chapter = "meat", reagents = { 12203, 2, 239016, 1 }, items = { 238646, 250395 }, unknown = true }, -- Filet o' Flank
-    [1225758] = { item = 238637, made = { 2, 2 }, learn = 250, yellow = 260, grey = 280, chapter = "meat", reagents = { 12202, 2, 239016, 1 }, items = { 238645, 250394 }, unknown = true }, -- Prowler Steak
     [1249962] = { item = 249870, made = { 1, 1 }, learn = 250, yellow = 260, grey = 290, chapter = "drink", reagents = { 8766, 1, 13465, 2 }, items = { 249884 }, unknown = true }, -- Sage's Tea
-    [1225760] = { item = 238639, made = { 2, 2 }, learn = 250, yellow = 260, grey = 280, chapter = "bake", reagents = { 12207, 2, 239016, 1 }, items = { 238647, 250396 }, unknown = true }, -- Sunrise Omelette
     [18243] = { item = 13931, made = { 1, 1 }, learn = 250, yellow = 290, grey = 330, chapter = "soup", reagents = { 13759, 1, 159, 1 }, items = { 13945 } }, -- Nightfin Soup
     [18244] = { item = 13932, made = { 1, 1 }, learn = 250, yellow = 290, grey = 330, chapter = "fish", reagents = { 13760, 1 }, items = { 13946 } }, -- Poached Sunscale Salmon
     [1250144] = { item = 250067, made = { 1, 1 }, learn = 275, yellow = 280, grey = 310, chapter = "meat", reagents = { 12223, 3, 3713, 2 }, items = { 250175 }, unknown = true }, -- Bat Hachee
@@ -163,13 +167,9 @@ ns.data = {
     [18245] = { item = 13933, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "soup", reagents = { 13888, 1, 159, 1 }, items = { 13947 } }, -- Lobster Stew
     [18246] = { item = 13934, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "fish", reagents = { 13893, 1, 2692, 1, 3713, 1 }, items = { 13948 } }, -- Mightfish Steak
     [22761] = { item = 18254, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "bake", reagents = { 18255, 1, 3713, 1 }, items = { 18267 } }, -- Runn Tum Tuber Surprise
-    [1225763] = { item = 238642, made = { 1, 1 }, learn = 280, yellow = 290, grey = 310, chapter = "feast", reagents = { 13888, 12, 3712, 4, 3404, 3, 239017, 1 }, items = { 238650, 239021, 250399 }, unknown = true }, -- Grand Lobster Banquet
-    [1225762] = { item = 238641, made = { 1, 1 }, learn = 280, yellow = 290, grey = 310, chapter = "feast", reagents = { 4603, 12, 12184, 4, 6362, 3, 239017, 1 }, items = { 238649, 250398 }, unknown = true }, -- Specklefin Feast
     [24801] = { item = 20452, made = { 1, 1 }, learn = 285, yellow = 325, grey = 365, chapter = "bake", reagents = { 20424, 1, 3713, 1 }, quests = { 8313 } }, -- Smoked Desert Dumplings
     [1263067] = { item = 279982, made = { 1, 1 }, learn = 300, yellow = 300, grey = 300, chapter = "fire", reagents = { 10284, 10, 159, 5, 3713, 4 }, items = { 273115 }, unknown = true }, -- Iron Oven
-    [470359] = { item = 232436, made = { 1, 1 }, learn = 300, yellow = 325, grey = 365, chapter = "soup", reagents = { 13888, 1, 227813, 1 }, items = { 232437 } }, -- Darkclaw Bisque
     [25659] = { item = 21023, made = { 5, 5 }, learn = 300, yellow = 325, grey = 365, chapter = "meat", reagents = { 2692, 1, 9061, 1, 8150, 1, 21024, 1 }, items = { 21025 } }, -- Dirge's Kickin' Chimaerok Chops
-    [470370] = { item = 232438, made = { 1, 1 }, learn = 300, yellow = 325, grey = 365, chapter = "fish", reagents = { 13758, 1 }, items = { 232443 } }, -- Smoked Redgill
   },
   recipeItems = {
     [728] = { spell = 2543, sold = { 340 }, quests = { 38 } },
@@ -241,8 +241,6 @@ ns.data = {
     [21025] = { spell = 25659, quests = { 8586 } },
     [21099] = { spell = 25704, sold = { 2381, 2397, 2664, 3027, 3085, 3400, 4223, 4265, 4553, 5160, 5483, 8307, 12033, 14738 } },
     [21219] = { spell = 25954, sold = { 2381, 2397, 2664, 3027, 3085, 3400, 4223, 4265, 4553, 5160, 5483, 8307, 12033, 14738 } },
-    [232437] = { spell = 470359, sold = { 17068, 17070 } },
-    [232443] = { spell = 470370, sold = { 17068, 17070 } },
     [249879] = { spell = 1249957, dropped = { 1397 }, drops = { 1397, 0 } },
     [249880] = { spell = 1249958, dropped = { 4003 }, drops = { 4003, 0 } },
     [249881] = { spell = 1249959, dropped = { 2376 }, drops = { 2376, 0 } },
@@ -702,8 +700,6 @@ ns.data = {
     [10387] = { area = 2017, map = 329, lvl = { 56, 57 } },
     [10720] = { area = 400, map = 1, x = 21, y = 32, lvl = { 27, 28 } },
     [10737] = { area = 618, map = 1, x = 50, y = 10, lvl = { 60, 60 }, rank = 1 },
-    [10856] = { area = 85, map = 0, x = 83, y = 68, lvl = { 58, 58 } },
-    [10857] = { area = 28, map = 0, x = 43, y = 84, lvl = { 58, 58 } },
     [11038] = { area = 139, map = 0, x = 70, y = 54, lvl = { 52, 52 } },
     [11118] = { area = 618, map = 1, x = 61, y = 39, lvl = { 30, 30 } },
     [11187] = { area = 618, map = 1, x = 61, y = 39, lvl = { 60, 60 } },
@@ -712,7 +708,6 @@ ns.data = {
     [11368] = { area = 1977, map = 309, lvl = { 60, 60 } },
     [11458] = { area = 2557, map = 429, lvl = { 57, 59 }, rank = 1 },
     [11465] = { area = 2557, map = 429, lvl = { 57, 58 }, rank = 1 },
-    [11536] = { area = 139, map = 0, x = 72, y = 50, lvl = { 58, 58 } },
     [11555] = { area = 361, map = 1, x = 65, y = 3, lvl = { 55, 55 } },
     [11673] = { area = 2717, map = 409, lvl = { 62, 62 }, rank = 1 },
     [11740] = { area = 1377, map = 1, x = 37, y = 16, lvl = { 55, 56 } },
@@ -757,10 +752,6 @@ ns.data = {
     [14624] = { area = 51, map = 0, x = 39, y = 29, lvl = { 52, 52 } },
     [14738] = { side = "H", area = 47, map = 0, x = 79, y = 79, lvl = { 48, 48 } },
     [15419] = { area = 1377, map = 1, x = 52, y = 40, lvl = { 54, 54 } },
-    [17068] = { side = "A", area = 1377, map = 1, x = 33, y = 51, lvl = { 55, 55 } },
-    [17070] = { side = "H", area = 1377, map = 1, x = 51, y = 70, lvl = { 55, 55 } },
-    [241120] = { lvl = { 61, 62 }, rank = 1 },
-    [241121] = { lvl = { 61, 62 }, rank = 1 },
     [242498] = { area = 40, map = 0, x = 42, y = 71, lvl = { 25, 25 } },
     [248198] = { side = "H", area = 17, map = 1, x = 50, y = 29, lvl = { 60, 60 } },
     [251905] = { area = 16593, map = 2991, x = 44, y = 44, lvl = { 20, 20 } },
@@ -875,8 +866,8 @@ ns.data = {
     [21024] = { drops = { 12801, 48.7, 12802, 47.4 } },
     [21071] = { fished = { 267, 331 } },
     [21153] = { fishing = true },
-    [227813] = { sold = { 10856, 10857, 11536 } },
-    [239016] = { drops = { 241120, 0, 241121, 0 } },
+    [227813] = {  },
+    [239016] = {  },
     [239017] = {  },
     [249796] = {  },
     [251524] = { fishing = true },

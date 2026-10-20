@@ -48,7 +48,7 @@ echo "release $TAG: addon $current → $VERSION$([ "$HOLD" = 1 ] && echo ", GitH
 perl -pi -e "s/^## Version: .*/## Version: $VERSION/" "${TOCS[@]}"
 # The whole check on the bumped tree, the one pushed: q stamps it, and the
 # pre-push hook refuses a tree without a stamp.
-bun "$(bun scripts/root.ts addon-kit/q.ts)" check -- bun run check
+bun scripts/root.ts --run addon-kit/q.ts check -- bun run check
 
 git add -A
 # Nothing to commit when the TOC already had this version (the first release).

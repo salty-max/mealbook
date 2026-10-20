@@ -26,7 +26,7 @@ one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 
 ```bash
 bun run check        # kit, recipes, languages, pages, lint, the sim on three clients, TOCs
-bun ../addon-kit/q.ts check -- bun run check   # the same, quiet, stamping the tree for the push
+bun scripts/root.ts --run addon-kit/q.ts check -- bun run check   # the same, quiet, stamping the tree for the push
 bun run package      # dist/Mealbook-<version>.zip for a test in the game
 bun run recipes      # the recipes again, after wow-data's databases change
 bun run kit:sync     # after a change to the kit (Kit.lua, Media, scripts/root.ts)

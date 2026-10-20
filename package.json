@@ -4,8 +4,8 @@
   "description": "Mealbook, a World of Warcraft addon: a chef's cookbook that fills in as you learn to cook, and the road to 300",
   "license": "MIT",
   "scripts": {
-    "kit:sync": "bun \"$(bun scripts/root.ts addon-kit/sync.ts)\" addon/Mealbook",
-    "kit:check": "bun \"$(bun scripts/root.ts addon-kit/sync.ts)\" --check addon/Mealbook",
+    "kit:sync": "bun scripts/root.ts --run addon-kit/sync.ts addon/Mealbook",
+    "kit:check": "bun scripts/root.ts --run addon-kit/sync.ts --check addon/Mealbook",
     "recipes": "bun scripts/recipes.ts",
     "locales": "bun scripts/locales.ts",
     "pages": "bun scripts/pages.ts",

@@ -19,7 +19,7 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
   templates, a world drop said as one, the quests). Classic Era leaves out
   a dish its world can't teach (Season of Discovery's, the Crystal Throat
   Lozenge): 81 dishes. Forever keeps its own whose recipe no source has seen
-  yet (`unknown`, 27 before launch): a page when learned, never on the road.
+  yet (`unknown`, 29 on 20 October 2026, before launch): a page when learned, never on the road.
   Who and where, for the road's vendors and the hunts: `npcs` (every seller
   of a recipe, the three likeliest droppers of each, the quest givers: the
   side it serves, from its faction template's enemies (Alliance 469, Horde

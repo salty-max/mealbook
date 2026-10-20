@@ -206,8 +206,9 @@ local cookable = P.cookable(char.known, ns.skill(), function(i) return s.bags[i]
 check(#cookable > 0 and cookable[1][2] > 0, "what the bags can cook now, and how many times")
 
 -- where each ingredient comes from: every one of Classic Era's has a way.
--- Forever's: one only dishes no source teaches yet use (unknown, before
--- launch) may have none either, and one more of its own aside
+-- On Forever, an ingredient only unknown dishes use (no source teaches them
+-- yet, before launch) may have none either, and so may 249796, Hyjal
+-- Berries (Sweetpaw Jam's), which no source sells or drops yet
 local unsourced, seenItem, taught = 0, {}, {}
 for _, spell in ipairs(ns.data.order) do
   local d = ns.data.recipes[spell]
@@ -224,14 +225,14 @@ for _, spell in ipairs(ns.data.order) do
       local src = P.sources(item)
       if
         not (src and (src.sellers[1] or src.drops[1] or src.fished[1] or src.fishing or src.herb or src.inside[1]))
-        and (taught[item] or not G.FOREVER)
+        and (not G.FOREVER or (taught[item] and item ~= 249796))
       then
         unsourced = unsourced + 1
       end
     end
   end
 end
-check(unsourced <= (G.FOREVER and 1 or 0), "every ingredient's source: a seller, a creature, a fishing zone, a herb")
+check(unsourced == 0, "every ingredient's source: a seller, a creature, a fishing zone, a herb")
 -- (a side's own people the other's prey, never its own cooks')
 local ownPrey = 0
 for _, side in ipairs({ "Alliance", "Horde" }) do

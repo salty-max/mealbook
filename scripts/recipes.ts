@@ -164,6 +164,22 @@ export function cookbook(game: Game) {
   const questSkill = new Map(
     all<{ id: number; skill_value: number }>("SELECT id, skill_value FROM quest WHERE skill_line_id = ? AND skill_value > 0", COOKING).map((q) => [q.id, q.skill_value]),
   );
+  // (where no source gives one: the lowest skill the client's recipe items
+  // teaching the dish ask, ItemSparse's RequiredSkillRank, whether or not a
+  // source has the item: Season of Discovery's in Forever, 20 October 2026)
+  const itemSkill = new Map<number, number>();
+  for (const r of all<{ spell: number; skill: number }>(
+    `SELECT spell, MIN(skill) AS skill FROM (
+       SELECT i.spell_id AS spell, s.RequiredSkillRank AS skill FROM item_spell i JOIN client_ItemSparse s ON s.ID = i.item_id
+        WHERE i.trigger = 6 AND s.RequiredSkill = ? AND s.RequiredSkillRank > 0
+       UNION ALL
+       SELECT t.taught_spell_id, s.RequiredSkillRank FROM teaching t JOIN item_spell i ON i.spell_id = t.spell_id JOIN client_ItemSparse s ON s.ID = i.item_id
+        WHERE s.RequiredSkill = ? AND s.RequiredSkillRank > 0
+     ) GROUP BY spell`,
+    COOKING,
+    COOKING,
+  ))
+    itemSkill.set(r.spell, r.skill);
   const reagentRows = all<Record<string, number>>(`SELECT * FROM client_SpellReagents WHERE SpellID IN (${rows.map((r) => r.spell).join(",") || 0})`);
 
   // A recipe item's sources.
@@ -249,7 +265,7 @@ export function cookbook(game: Game) {
       name: r.name ?? String(r.spell),
       item: r.item,
       made: [Math.max(1, r.least), Math.max(1, r.most)],
-      learn: learned.length ? Math.min(...learned) : 1,
+      learn: learned.length ? Math.min(...learned) : (itemSkill.get(r.spell) ?? 1),
       yellow: r.yellow,
       grey: r.grey,
       chapter,

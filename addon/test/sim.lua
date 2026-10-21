@@ -389,6 +389,20 @@ check(MealbookFrame and MealbookFrame:IsShown(), "/mealbook opens the book")
 ns.refresh()
 ns.openDish(2538)
 ns.refresh()
+-- a dish's page: its ingredient and what it makes, each in a row of its own
+-- (the kit's one box carried the first row onto the second: Roasted Boar
+-- Meat showed one slot, with the ingredient's tooltip on the dish)
+ns.openDish(2540)
+local dishPage, boar = MealbookRecipePage, D.recipes[2540]
+local ingredient, made = dishPage.itemPool[1], dishPage.itemPool[2]
+check(
+  ingredient.shown
+    and made.shown
+    and ingredient.itemId == boar.reagents[1]
+    and made.itemId == boar.item
+    and ingredient.point[2] ~= made.point[2],
+  "a dish's page: its ingredient and what it makes, each in its own row"
+)
 SlashCmdList.MEALBOOK("road")
 check(MealbookFrame.tab == 2, "/mealbook road opens the road")
 -- every leg's page, a stop's and a recipe to learn's among them, on each side

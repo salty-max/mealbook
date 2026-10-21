@@ -135,6 +135,9 @@ G.methods = {
   CreateFontString = function() return obj("FontString") end,
   CreateMaskTexture = function() return obj("MaskTexture") end,
   GetPoint = function(self) return "RIGHT", UIParent, "RIGHT", -100, 20 end,
+  -- (the last anchor a frame was given: what it is laid against)
+  SetPoint = function(self, ...) self.point = { ... } end,
+  ClearAllPoints = function(self) self.point = nil end,
   SetScrollChild = function(self, c) self.scrollChild = c end,
   GetVerticalScroll = function(self) return self.vscroll or 0 end,
   SetVerticalScroll = function(self, v) self.vscroll = v end,

@@ -25,7 +25,7 @@ Je l'enseigne le deuxième jour, après le loup grillé, pour que mes élèves a
 
 ## 6413 Surprise du scorpide
 
-Les cuisiniers d'Orgrimmar ont envoyé ce plat vers le nord avec les premiers zeppelins, et Fossoyeuse l'a adopté. La surprise est dans le dard. Cuit jusqu'à passer du verre à la craie, il perd son venin et garde un croquant agréable. Pas assez cuit, il garde le venin, et la surprise est d'un autre genre. On entend le changement. Un dard cru cliquette dans la poêle. Un dard cuit se tient tranquille.
+Les cuisiniers d'Orgrimmar ont envoyé ce plat vers le nord avec les premiers zeppelins, et Fossoyeuse l'a adopté. La surprise est dans le dard. Cuit jusqu'à passer du translucide à la craie, il perd son venin et garde un croquant agréable. Pas assez cuit, il garde le venin, et la surprise est d'un autre genre. On entend le changement. Un dard cru cliquette dans la poêle. Un dard cuit se tient tranquille.
 
 ## 1250156 Délicieuses bouchées au raptor
 

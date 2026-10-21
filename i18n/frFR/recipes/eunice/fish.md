@@ -93,7 +93,7 @@ Un gros poisson riche du sud chaud, taillé en tranches assez épaisses pour rep
 
 ## 18241 Filet de rouget
 
-Le rouget n'a besoin que d'une poêle chaude. Posez le filet côté peau et attendez qu'il se décolle tout seul. C'est toute la leçon, et la plupart des élèves mettent un mois à l'apprendre, parce qu'attendre est plus difficile que faire. L'odeur passe du cru au sucré, et les bords passent du verre au blanc. Retirez-le alors. Il vous a dit tout ce qu'il savait.
+Le rouget n'a besoin que d'une poêle chaude. Posez le filet côté peau et attendez qu'il se décolle tout seul. C'est toute la leçon, et la plupart des élèves mettent un mois à l'apprendre, parce qu'attendre est plus difficile que faire. L'odeur passe du cru au sucré, et les bords passent du translucide au blanc. Retirez-le alors. Il vous a dit tout ce qu'il savait.
 
 ## 15915 Chili de crabe épicé
 
@@ -109,7 +109,7 @@ Un instant ou une heure, rien entre les deux. Je choisis l'instant. Quadrillez l
 
 ## 18242 Perche fumée
 
-Fumée chaude et de près, pour que le poisson cuise en fumant. Frottez la perche d'épices fortes et suspendez-la juste au-dessus d'un feu fumeux. Surveillez la chair : quand elle passe du verre au blanc, décrochez-la. Une perche fumée ainsi se garde des jours. J'en prépare pour les voyageurs qui prennent le zeppelin, qui ont toujours faim et sont toujours en retard, et qui la mangent avant que le zeppelin ait quitté la tour.
+Fumée chaude et de près, pour que le poisson cuise en fumant. Frottez la perche d'épices fortes et suspendez-la juste au-dessus d'un feu fumeux. Surveillez la chair : quand elle passe de translucide à blanche, décrochez-la. Une perche fumée ainsi se garde des jours. J'en prépare pour les voyageurs qui prennent le zeppelin, qui ont toujours faim et sont toujours en retard, et qui la mangent avant que le zeppelin ait quitté la tour.
 
 ## 18244 Saumon solécaille poché
 

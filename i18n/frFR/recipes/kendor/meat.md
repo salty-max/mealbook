@@ -53,7 +53,7 @@ Les nains de Thelsamar font le boudin chaque hiver et en envoient quelques-uns �
 
 ## 1250154 Émincé de raptor aux deux épices
 
-Deux fois épicé, et pour une fois un plat dit la vérité sur lui-même. Le raptor est frotté une fois avant d'être tranché et une fois après la cuisson, et la seconde fois n'est pas pour le goût mais pour la croûte. La chair de raptor est maigre et sèche vite. Tranchez-la contre le fil, assez fin pour voir une bougie au travers, et donnez-lui le feu le temps d'un souffle, pas plus. Une recette que je n'ai pas inventée, et que j'aurais inventée, avec le temps.
+Deux fois épicé, et pour une fois un plat dit la vérité sur lui-même. Le raptor est frotté une fois avant d'être tranché et une fois après la cuisson, et la seconde fois n'est pas pour le goût mais pour la croûte. La chair de raptor est maigre et sèche vite. Tranchez-la en travers des fibres, assez fin pour voir une bougie au travers, et donnez-lui le feu le temps d'un souffle, pas plus. Une recette que je n'ai pas inventée, et que j'aurais inventée, avec le temps.
 
 ## 3370 Steak de crocilisque
 
@@ -93,7 +93,7 @@ Des lions des Tarides, coupés en côtelettes et brûlés aux épices fortes par
 
 ## 3399 Délicieux steak de lion
 
-Délicieux, dit-il de lui-même, et c'est trop modeste de moitié. Deux morceaux de lion et des épices apaisantes, cuits en steak plutôt qu'en côtelettes, ce qui est la seule façon civilisée de manger un lion. L'épice apaisante n'est pas là pour calmer le cuisinier. Elle arrondit la douceur de la viande. Saisissez, laissez reposer, tranchez contre le fil. Un steak de lion tranché dans le sens du fil se mâche comme une dispute qu'on ne peut pas gagner.
+Délicieux, dit-il de lui-même, et c'est trop modeste de moitié. Deux morceaux de lion et des épices apaisantes, cuits en steak plutôt qu'en côtelettes, ce qui est la seule façon civilisée de manger un lion. L'épice apaisante n'est pas là pour calmer le cuisinier. Elle arrondit la douceur de la viande. Saisissez, laissez reposer, tranchez en travers des fibres. Un steak de lion tranché dans le sens du fil se mâche comme une dispute qu'on ne peut pas gagner.
 
 ## 1250151 Poitrine d'ours
 

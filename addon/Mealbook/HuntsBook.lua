@@ -1,6 +1,7 @@
 -- The Hunts tab: the recipes to find rather than buy (Hunts.lua), open at the
 -- character's skill, on the left; the hunts on the page (how many found, the
--- next to open); and a hunt's own page: the recipe and the dish, and where to
+-- next to open), the auction house's apart (they count for none of it); and
+-- a hunt's own page: the recipe and the dish, and where to
 -- look, each find as a card: a stall's limited stock (who, where, how many
 -- at once), the likeliest creatures to drop it (where, their level, how
 -- often), a world drop, a quest (its title where the language has one, else
@@ -23,6 +24,13 @@ local KINDS = {
 local RARE = { [2] = true, [4] = true } -- (rare elite, rare)
 
 local function style(row, kind)
+  if kind == "section" then
+    row.text:SetPoint("LEFT", 4, 0)
+    row.text:SetPoint("RIGHT", -4, 0)
+    row.text:SetFont(ns.kit.TITLE_FONT, 14, "")
+    row.text:SetTextColor(unpack(T.gold))
+    return 22
+  end
   row.count:SetPoint("RIGHT", -4, 0)
   row.text:SetPoint("LEFT", kind == "overview" and 4 or 14, 0)
   row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
@@ -37,7 +45,7 @@ local function hunts()
   return skill, ns.hunts.mine(), ns.hunts.list(ns.book().known, skill, ns.hunts.mine())
 end
 
-local function refreshList(open)
+local function refreshList(open, auction)
   list:begin()
   local row = list:add("overview", L["Hunts"], tostring(#open))
   row:SetScript("OnClick", function()
@@ -47,17 +55,28 @@ local function refreshList(open)
   if not current then list:pick(row) end
   local q = ui.query()
   local mine = ns.hunts.mine()
-  for _, spell in ipairs(open) do
-    local name = ns.dishName(spell)
-    if q == "" or name:lower():find(q, 1, true) then
-      local r = list:add("hunt", name, KINDS[ns.hunts.kind(ns.hunts.of(spell, mine))][1])
-      r:SetScript("OnClick", function()
-        current = spell
-        ns.refresh()
-      end)
-      if current == spell then list:pick(r) end
+  -- (the side's own, then the auction house's under their heading)
+  local function rowsOf(spells, heading)
+    local first = true
+    for _, spell in ipairs(spells) do
+      local name = ns.dishName(spell)
+      if q == "" or name:lower():find(q, 1, true) then
+        if heading and first then
+          list:gap(6)
+          list:add("section", heading)
+        end
+        first = false
+        local r = list:add("hunt", name, KINDS[ns.hunts.kind(ns.hunts.of(spell, mine))][1])
+        r:SetScript("OnClick", function()
+          current = spell
+          ns.refresh()
+        end)
+        if current == spell then list:pick(r) end
+      end
     end
   end
+  rowsOf(open)
+  rowsOf(auction, L["At the auction house"])
   list:finish()
 end
 
@@ -143,7 +162,7 @@ end
 -- find it.
 local function showAuction(s, d)
   page:paragraph(
-    L["Your side can't get this recipe on its own. The other side can, and may sell it at a neutral auction house, where both sides trade."],
+    L["Your side can't get this recipe on its own. The other side can, and may sell it at a neutral auction house, where both sides trade. It counts for no achievement."],
     T.soft
   )
   for _, npc in ipairs(auctionHouses()) do
@@ -200,7 +219,21 @@ local function showHunt(spell)
   end
 end
 
-local function showHunts(skill, open, nextAt, found, total)
+-- A hunt open now, as a card: its colour, its kind.
+local function huntCard(spell, skill, mine)
+  local kind = KINDS[ns.hunts.kind(ns.hunts.of(spell, mine))]
+  page:card(
+    ns.dishName(spell),
+    table.concat({ ui.colourWord(ns.road.colour(D.recipes[spell], skill)), kind[1] }, "  -  "),
+    ui.dishPicture(spell),
+    function()
+      current = spell
+      ns.refresh()
+    end
+  )
+end
+
+local function showHunts(skill, open, nextAt, found, total, auction)
   page:start(L["Hunts"], L["At cooking %d"]:format(skill), ui.icon(ui.ICON))
   page:stats({
     { tostring(#open), L["open now"] },
@@ -211,39 +244,40 @@ local function showHunts(skill, open, nextAt, found, total)
     L["Some recipes no trainer teaches and no shop keeps for long: a stall with one at a time, a creature that drops it, a quest, or one only the other side gets, traded at a neutral auction house. Each opens here when your skill is ready for it."],
     T.soft
   )
+  local mine = ns.hunts.mine()
   if #open == 0 then
     page:paragraph(
       nextAt and L["None open at your skill. The next opens at cooking %d."]:format(nextAt)
         or L["None left to find: every hunt of your side is in your book."],
       T.soft
     )
-    return
+  else
+    page:section(L["Open now"])
+    for _, spell in ipairs(open) do
+      huntCard(spell, skill, mine)
+    end
   end
-  page:section(L["Open now"])
-  local mine = ns.hunts.mine()
-  for _, spell in ipairs(open) do
-    local kind = KINDS[ns.hunts.kind(ns.hunts.of(spell, mine))]
-    page:card(
-      ns.dishName(spell),
-      table.concat({ ui.colourWord(ns.road.colour(D.recipes[spell], skill)), kind[1] }, "  -  "),
-      ui.dishPicture(spell),
-      function()
-        current = spell
-        ns.refresh()
-      end
+  if #auction > 0 then
+    page:section(L["At the auction house"])
+    page:paragraph(
+      L["Recipes only the other side gets, bought at a neutral auction house. They count for no achievement."],
+      T.soft
     )
+    for _, spell in ipairs(auction) do
+      huntCard(spell, skill, mine)
+    end
   end
 end
 
 local function refresh()
-  local skill, _, open, nextAt, found, total = hunts()
+  local skill, _, open, nextAt, found, total, auction = hunts()
   book.count:SetText(K.plural(#open, "%d hunt open", "%d hunts open"):format(#open))
   if current and (ns.knows(current) or not ns.hunts.of(current, ns.hunts.mine())) then current = nil end
-  refreshList(open)
+  refreshList(open, auction)
   if current then
     showHunt(current)
   else
-    showHunts(skill, open, nextAt, found, total)
+    showHunts(skill, open, nextAt, found, total, auction)
   end
   page:finish()
 end

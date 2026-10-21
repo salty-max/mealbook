@@ -22,19 +22,22 @@ local function add(group, id, title, text, progress, visible)
 end
 
 local function book() return ns.book() end
+-- (a recipe only the other side gets, learned at the auction house, counts
+-- for no achievement: not known, not cooked, not a chapter's first)
+local function counts(spell) return D.recipes[spell] ~= nil and not ns.hunts.theirs(spell, ns.hunts.mine()) end
 local function known()
   local c = book()
   local n = 0
   for spell in pairs(c and c.known or {}) do
-    if D.recipes[spell] then n = n + 1 end
+    if counts(spell) then n = n + 1 end
   end
   return n
 end
 local function cooked()
   local c = book()
   local n = 0
-  for _, times in pairs(c and c.cooked or {}) do
-    n = n + times
+  for spell, times in pairs(c and c.cooked or {}) do
+    if counts(spell) then n = n + times end
   end
   return n
 end
@@ -64,16 +67,17 @@ add(
 )
 
 -- ── the recipes known ────────────────────────────────────────────────────────
--- (the last: every dish this side can learn in this game, a hunt at the
--- auction house too, the known ones it can't counting as well)
+-- (the last: every dish this side can learn in this game on its own, not the
+-- auction house's, a known one no source has seen yet counting too)
 local function learnable()
   local mine, n = ns.hunts.mine(), 0
   local c = book()
   for _, spell in ipairs(D.order) do
     local d = D.recipes[spell]
     local s = ns.hunts.sources(spell, mine)
-    local reachable = not d.unknown and (s.skill or s.trainer or #s.shop > 0 or ns.hunts.of(spell, mine) ~= nil)
-    if reachable or (c and c.known[spell]) then n = n + 1 end
+    local h = ns.hunts.of(spell, mine)
+    local reachable = not d.unknown and (s.skill or s.trainer or #s.shop > 0 or (h ~= nil and not h.auction))
+    if reachable or (c and c.known[spell] and counts(spell)) then n = n + 1 end
   end
   return n
 end
@@ -136,7 +140,7 @@ for _, f in ipairs(FIRSTS) do
       local c = book()
       for spell in pairs(c and c.cooked or {}) do
         local d = D.recipes[spell]
-        if d and d.chapter == chapter then return 1, 1 end
+        if d and d.chapter == chapter and counts(spell) then return 1, 1 end
       end
       return 0, 1
     end)

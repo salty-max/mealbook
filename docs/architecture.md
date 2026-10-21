@@ -47,14 +47,17 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   theirs) and its recipe trades: `auction`, bought at a neutral auction
   house (the data's `auctioneers`; one that binds when picked up, `bound`,
   never); open when the skill reaches the one it is learned at (`H.list`:
-  open, the skill the next opens at, found of all; those still raising the
-  skill first).
+  open, the skill the next opens at, found of all, the side's own only; the
+  auction house's open apart; those still raising the skill first). A
+  recipe only the other side gets (`H.theirs`) counts for nothing but its
+  auction hunt: no achievement, none of the hunts' figures.
 - `Milestones.lua`: the achievements (milestones in the code and the saved
   book, achievements to the player, as Yonder's): the ranks (cooking
   learned, Journeyman, Expert, Artisan by the skill's cap; 300), the recipes
   known (10, 25, 50, 75, every one the side can learn: a step past that
-  number not listed, the auction house's hunts counting: every dish on
-  Classic Era, 66 for the Horde on its own), the dishes cooked
+  number not listed, Classic Era's Horde learns 66: the other side's
+  recipes, `H.theirs`, never counted, not known, cooked or a chapter's
+  first), the dishes cooked
   (50 to 5000), the first dish of each chapter the game has (Classic Era
   has no feasts or fires), the hunts found (one, five, all). Checked at
   each recipe learned, dish cooked, point or rank (`ns.progressed`, from
@@ -105,7 +108,9 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   between equals; the planner's lookups once a recipe a road), the
   cookbook and who sells it, the quest, and what it asks; no cooking yet:
   the road from 1, learning cooking first); `HuntsBook.lua`
-  (the hunts open now, found of all, the next to open; a hunt's page: the
+  (the hunts open now, found of all, the next to open, the side's own; the
+  auction house's under their own heading, counting for none of it; a
+  hunt's page: the
   recipe and the dish as items, where to look as cards: a stall's stock,
   the droppers' zone, levels and chance, a quest's title or its giver; an
   auction hunt's: the neutral auction houses, an auctioneer a town the

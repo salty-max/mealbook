@@ -85,11 +85,26 @@ for _, need in ipairs({ 10, 25, 50, 75 }) do
     ("know %d: listed only below %d"):format(need, all)
   )
 end
--- the other side's recipes count, bought at a neutral auction house: Classic
--- Era's Horde learns every dish (66 on its own), Forever's all but the two
--- that bind when picked up and the one no source gives
+-- the other side's recipes count for no achievement, bought at a neutral
+-- auction house: Classic Era's Horde learns 66 on its own; one learned there
+-- is neither known nor cooked for them (an Alliance vendor's, not in the
+-- book yet), one of their own is
 s.faction = "Horde"
-check(select(2, learnable()) == (G.FOREVER and 101 or 81), "every recipe your side can learn, at the auction house too")
+check(select(2, learnable()) == (G.FOREVER and 86 or 66), "every recipe your side can learn, on its own")
+local theirs, ours = 6415, 2538
+check(not char.known[theirs] and ns.hunts.theirs(theirs, "H") and not ns.hunts.theirs(ours, "H"), "(the sim's recipes)")
+local function counted() return ns.milestoneById["known-10"].progress(), ns.milestoneById["cooked-50"].progress() end
+local knownBefore, cookedBefore = counted()
+local oursCooked = char.cooked[ours]
+char.known[theirs], char.cooked[theirs] = { at = 0 }, 5
+local knownTheirs, cookedTheirs = counted()
+char.cooked[ours] = (oursCooked or 0) + 5
+local _, cookedOurs = counted()
+check(
+  knownTheirs == knownBefore and cookedTheirs == cookedBefore and cookedOurs == cookedBefore + 5,
+  "the other side's recipe, learned at the auction house: no achievement counts it"
+)
+char.known[theirs], char.cooked[theirs], char.cooked[ours] = nil, nil, oursCooked
 s.faction = nil
 
 -- ── the road ─────────────────────────────────────────────────────────────────
@@ -378,14 +393,15 @@ check(
 s.map = nil
 -- (at cooking 1 only a hunt learned at 1: Crispy Bat Wing, the Horde's, at
 -- the auction house)
-local open0, next0 = H.list({}, 1, "A")
-local early = true
-for _, spell in ipairs(open0) do
-  early = early and D.recipes[spell].learn <= 1
-end
-check(early and next0 and next0 > 1, "at cooking 1 only the hunts learned at 1 are open, the next said")
-local open300, next300, found, total = H.list({}, 300, "A")
-check(#open300 > 0 and next300 == nil and found == 0 and total == #forA, "at 300 every hunt of the side is open")
+-- (the auction house's apart: Crispy Bat Wing, the Horde's, open at 1)
+local open0, next0, _, _, auction0 = H.list({}, 1, "A")
+check(#open0 == 0 and next0 and next0 > 1, "at cooking 1 no hunt of the side's own is open, the next said")
+check(#auction0 > 0 and auction0[1] == 15935, "at cooking 1 the auction house's learned at 1, apart")
+local open300, next300, found, total, auction300 = H.list({}, 300, "A")
+check(
+  #open300 > 0 and next300 == nil and found == 0 and total == #forA - auctionsA and #auction300 == auctionsA,
+  "at 300 every hunt of the side is open, the auction house's not counted"
+)
 local known1 = { [open300[1]] = { at = 0 } }
 local open1, _, found1 = H.list(known1, 300, "A")
 check(found1 == 1 and #open1 == #open300 - 1, "a hunt found leaves the list and counts")
@@ -499,8 +515,11 @@ for _, side in ipairs({ "Alliance", "Horde" }) do
   s.faction = side
   ns.openHunts()
   check(MealbookFrame.tab == 3, "the hunts' tab")
-  for _, spell in ipairs(H.list({}, 300, H.mine())) do
-    ns.openHunt(spell)
+  local own, _, _, _, auction = H.list({}, 300, H.mine())
+  for _, list in ipairs({ own, auction }) do
+    for _, spell in ipairs(list) do
+      ns.openHunt(spell)
+    end
   end
 end
 -- an auction hunt's page: an auctioneer a town, how the other side gets it
@@ -514,6 +533,17 @@ for _, h in ipairs(huntPage.headings) do
   if h.shown and h.text.text == L["How the other side gets it"] then other = true end
 end
 check(auctioneers == 3 and other, "an auction hunt: the three neutral towns, how the other side gets it")
+-- the hunts' page: the side's own found of all, the auction house's apart
+ns.openHunt(nil)
+local apart = false
+for _, h in ipairs(huntPage.headings) do
+  if h.shown and h.text.text == L["At the auction house"] then apart = true end
+end
+local _, _, foundA, totalA = H.list(char.known, 300, "A")
+check(
+  apart and totalA == #forA - auctionsA and huntPage.tiles[2].value.text == ("%d / %d"):format(foundA, totalA),
+  "the hunts' page: the side's own counted, the auction house's apart"
+)
 -- a quest the language has no title for: its giver named instead
 local q = next(D.quests)
 local title = ns.questNames[q]

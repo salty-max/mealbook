@@ -44,7 +44,7 @@ Some recipes no trainer teaches and no shop keeps for long. Mealbook keeps them 
 - **a stall's limited stock**, like Super-Seller 680's in Desolace: who sells it, where, how many at a time,
 - **a drop**: the likeliest creatures to carry it, their zone, their level and how often it falls,
 - **a quest**: who gives it, where, and from what level,
-- **the auction house**, for a recipe only the other faction can learn, like Crispy Bat Wing for an Alliance cook: the neutral auction houses of Booty Bay, Gadgetzan and Everlook, the nearest first, and where the other side finds it.
+- **the auction house**, for a recipe only the other faction can learn, like Crispy Bat Wing for an Alliance cook: the neutral auction houses of Booty Bay, Gadgetzan and Everlook, the nearest first, and where the other side finds it. These count for no achievement.
 
 The hunts tab counts how many you've found and when the next one opens.
 

@@ -16,8 +16,9 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   Expert Cookbook, Artisan's quest).
 
 - **Hunts:** the recipes no trainer teaches and no shop keeps for long, a
-  stall's limited stock, a creature's drop, a quest, each opening when your
-  skill is ready for it: who has it, where, how often.
+  stall's limited stock, a creature's drop, a quest, or the other faction's
+  recipe at a neutral auction house, each opening when your skill is ready
+  for it: who has it, where, how often.
 
 - **The pantry:** an ingredient's tooltip names the dishes you know it
   cooks into (in the book, where it comes from too), and the book shows

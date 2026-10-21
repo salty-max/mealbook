@@ -4,8 +4,9 @@
 -- road's, Road.lua) and the finds (a vendor's limited stock, a creature that
 -- drops it, a world drop, a quest of that side's). A dish is a hunt when it
 -- isn't known, the character cooks at the skill it is learned at, no shop
--- has it for them and a find does. Never a list of everything: a hunt opens
--- with the skill.
+-- has it for them and a find does, or only the other side gets it and trades
+-- it at a neutral auction house (a recipe that binds when picked up never).
+-- Never a list of everything: a hunt opens with the skill.
 local _, ns = ...
 local D = ns.data
 local H = {}
@@ -19,6 +20,9 @@ end
 
 -- Does someone of that side serve this character? (none: either side)
 function H.serves(side, mine) return side == nil or mine == nil or side == mine end
+
+-- The other side.
+function H.other(mine) return mine == "A" and "H" or "A" end
 
 local function npc(id) return D.npcs and D.npcs[id] end
 local function has(list, v)
@@ -67,13 +71,30 @@ function H.sources(spell, mine)
   return out
 end
 
--- Is it a hunt for this side, whatever the skill? Its sources if so.
+-- A recipe item of the dish someone can trade (none: each binds when picked up).
+local function traded(d)
+  for _, item in ipairs(d.items or {}) do
+    local it = D.recipeItems[item]
+    if it and not it.bound then return item end
+  end
+end
+
+-- Is it a hunt for this side, whatever the skill? Its sources if so: a find
+-- of its own, else (auction) the other side's sources (other) and the recipe
+-- they trade (item), where the game has a neutral auction house. (A drop and
+-- a world drop are either side's: the other side's are a vendor, a stall, a
+-- quest.)
 function H.of(spell, mine)
   local d = D.recipes[spell]
   if not d or d.unknown then return nil end
   local s = H.sources(spell, mine)
   if s.skill or s.trainer or #s.shop > 0 then return nil end
-  if #s.limited == 0 and #s.drops == 0 and #s.quests == 0 and not s.world then return nil end
+  if #s.limited > 0 or #s.drops > 0 or #s.quests > 0 or s.world then return s end
+  if not mine or #(D.auctioneers or {}) == 0 then return nil end
+  local o = H.sources(spell, H.other(mine))
+  local item = traded(d)
+  if not item or (#o.shop == 0 and #o.limited == 0 and #o.quests == 0) then return nil end
+  s.auction, s.other, s.item = true, o, item
   return s
 end
 
@@ -109,8 +130,9 @@ function H.list(known, skill, mine)
 end
 
 -- A hunt's kind, for its row: the first find it has (a stall's stock, a
--- drop, a quest).
+-- drop, a quest), else the auction house.
 function H.kind(s)
+  if s.auction then return "auction" end
   if #s.limited > 0 then return "stall" end
   if #s.drops > 0 or s.world then return "drop" end
   return "quest"

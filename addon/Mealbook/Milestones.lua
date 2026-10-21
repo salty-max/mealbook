@@ -64,16 +64,15 @@ add(
 )
 
 -- ── the recipes known ────────────────────────────────────────────────────────
--- (the last: every dish this side can learn in this game, the known ones of
--- the other side's counting too)
+-- (the last: every dish this side can learn in this game, a hunt at the
+-- auction house too, the known ones it can't counting as well)
 local function learnable()
   local mine, n = ns.hunts.mine(), 0
   local c = book()
   for _, spell in ipairs(D.order) do
     local d = D.recipes[spell]
     local s = ns.hunts.sources(spell, mine)
-    local reachable = not d.unknown
-      and (s.skill or s.trainer or #s.shop > 0 or #s.limited > 0 or #s.drops > 0 or #s.quests > 0 or s.world)
+    local reachable = not d.unknown and (s.skill or s.trainer or #s.shop > 0 or ns.hunts.of(spell, mine) ~= nil)
     if reachable or (c and c.known[spell]) then n = n + 1 end
   end
   return n

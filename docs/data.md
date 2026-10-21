@@ -16,7 +16,14 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
   chapter (`data/chapters.json`, by hand: the script refuses a dish without
   one), how it is learned, each recipe item's sources (who sells it and a
   limited stock, who drops it, read back from the Classic database's loot
-  templates, a world drop said as one, the quests). Classic Era leaves out
+  templates, a world drop said as one, the quests; `bound` when it binds
+  when picked up or is a quest's, the client's ItemSparse Bonding 1 or 4:
+  never traded, no auction hunt). `auctioneers`: the neutral auction
+  houses', where a recipe only the other side gets is traded (an
+  auctioneer, npc flag 4096, who sells nothing, Questie flagging a smith in
+  Searing Gorge one too, serving neither side, placed, named in every
+  language: Booty Bay's, Gadgetzan's and Everlook's in both games, their
+  `npcs` rows too). Classic Era leaves out
   a dish its world can't teach (Season of Discovery's, the Crystal Throat
   Lozenge): 81 dishes. Forever keeps its own whose recipe no source has seen
   yet (`unknown`, 29 on 20 October 2026, before launch): a page when learned, never on the road.

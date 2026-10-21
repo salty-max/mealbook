@@ -4,7 +4,9 @@
 -- look, each find as a card: a stall's limited stock (who, where, how many
 -- at once), the likeliest creatures to drop it (where, their level, how
 -- often), a world drop, a quest (its title where the language has one, else
--- its giver; where, its level).
+-- its giver; where, its level); a recipe only the other side gets: the
+-- neutral auction houses (an auctioneer a town, the nearest first), and how
+-- the other side gets it.
 local _, ns = ...
 local K, L, D, ui = ns.kit, ns.kit.L, ns.data, ns.ui
 local T = ui.T
@@ -16,6 +18,7 @@ local KINDS = {
   stall = { L["a stall"], "Interface\\Icons\\INV_Misc_Coin_02" },
   drop = { L["a drop"], "Interface\\Icons\\INV_Misc_Bag_10_Blue" },
   quest = { L["a quest"], "Interface\\GossipFrame\\AvailableQuestIcon" },
+  auction = { L["an auction"], "Interface\\Icons\\INV_Misc_Coin_01" },
 }
 local RARE = { [2] = true, [4] = true } -- (rare elite, rare)
 
@@ -59,6 +62,15 @@ local function refreshList(open)
 end
 
 -- A find's line: who, where, and what to know.
+local function vendorCard(npc)
+  local at = ui.where(npc)
+  page:card(
+    ui.npcName(npc),
+    table.concat(at ~= "" and { L["sells it"], at } or { L["sells it"] }, "  -  "),
+    ui.icon(KINDS.stall[2])
+  )
+end
+
 local function stallCard(npc, stock)
   local at = ui.where(npc)
   local bits = { L["%d at a time, restocks slowly"]:format(stock) }
@@ -105,6 +117,55 @@ local function questCard(id)
   )
 end
 
+-- (how many a stall holds of the dish's recipe)
+local function stockOf(d, npc)
+  for _, item in ipairs(d.items or {}) do
+    local it = D.recipeItems[item]
+    if it and it.limited and it.limited[npc] then return it.limited[npc] end
+  end
+  return 1
+end
+
+-- The neutral auction houses: an auctioneer a town, the nearest first.
+local function auctionHouses()
+  local out, seen = {}, {}
+  for _, id in ipairs(ui.byNearness(D.auctioneers or {})) do
+    local area = D.npcs[id] and D.npcs[id].area
+    if area and not seen[area] then
+      seen[area] = true
+      table.insert(out, id)
+    end
+  end
+  return out
+end
+
+-- A recipe only the other side gets: where it is traded, and where they
+-- find it.
+local function showAuction(s, d)
+  page:paragraph(
+    L["Your side can't get this recipe on its own. The other side can, and may sell it at a neutral auction house, where both sides trade."],
+    T.soft
+  )
+  for _, npc in ipairs(auctionHouses()) do
+    local at = ui.where(npc)
+    page:card(
+      ui.npcName(npc),
+      table.concat(at ~= "" and { L["an auctioneer"], at } or { L["an auctioneer"] }, "  -  "),
+      ui.icon(KINDS.auction[2])
+    )
+  end
+  page:section(L["How the other side gets it"])
+  for _, npc in ipairs(s.other.shop) do
+    vendorCard(npc)
+  end
+  for _, npc in ipairs(s.other.limited) do
+    stallCard(npc, stockOf(d, npc))
+  end
+  for _, q in ipairs(s.other.quests) do
+    questCard(q)
+  end
+end
+
 local function showHunt(spell)
   local mine = ns.hunts.mine()
   local s = ns.hunts.of(spell, mine)
@@ -123,13 +184,9 @@ local function showHunt(spell)
   page:row(L["Learned at"], L["cooking %d"]:format(d.learn))
   page:row(L["Colours"], ui.thresholds(d))
   page:section(L["Where to look"])
+  if s.auction then return showAuction(s, d) end
   for _, npc in ipairs(s.limited) do
-    local stock
-    for _, item in ipairs(d.items or {}) do
-      local it = D.recipeItems[item]
-      stock = stock or (it and it.limited and it.limited[npc])
-    end
-    stallCard(npc, stock or 1)
+    stallCard(npc, stockOf(d, npc))
   end
   for _, q in ipairs(s.quests) do
     questCard(q)
@@ -151,7 +208,7 @@ local function showHunts(skill, open, nextAt, found, total)
     { nextAt and tostring(nextAt) or "-", L["the next opens at"] },
   })
   page:paragraph(
-    L["Some recipes no trainer teaches and no shop keeps for long: a stall with one at a time, a creature that drops it, a quest. Each opens here when your skill is ready for it."],
+    L["Some recipes no trainer teaches and no shop keeps for long: a stall with one at a time, a creature that drops it, a quest, or one only the other side gets, traded at a neutral auction house. Each opens here when your skill is ready for it."],
     T.soft
   )
   if #open == 0 then

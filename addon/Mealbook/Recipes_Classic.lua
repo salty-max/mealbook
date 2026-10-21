@@ -5,7 +5,8 @@
 -- (skill, trainer, items: recipe items, quests), unknown: no source seen yet.
 -- recipeItems[item]: the recipe it teaches, who sells it (limited: [npc] =
 -- the stock), who drops it (drops: the likeliest, npc, percent...; world: a
--- drop of many), the quests that give it.
+-- drop of many), the quests that give it, bound: never traded (it binds
+-- when picked up).
 -- npcs[id]: the sellers, the likeliest droppers, the quest givers, the
 -- trainers: side (A, H: the faction it serves), area (its zone), map (its
 -- continent or instance), city (in a capital), x, y (a spot), lvl, rank.
@@ -18,6 +19,8 @@
 -- ranks[cap]: the skill's rank that opens up to cap: its spell, who teaches
 -- it (trainers), the book (items) and who sells it (sellers), the quests;
 -- the level and the skill it asks.
+-- auctioneers: the neutral auction houses' (npcs), where a recipe only the
+-- other side gets is traded.
 local _, ns = ...
 ns.data = {
   skillLine = 185,
@@ -179,8 +182,8 @@ ns.data = {
     [17200] = { spell = 21143, sold = { 13420, 13429, 13432, 13433, 13435 } },
     [17201] = { spell = 21144, sold = { 13420, 13429, 13432, 13433, 13435 } },
     [18046] = { spell = 22480, sold = { 4782, 7733, 8125 } },
-    [18160] = { spell = 9513, sold = { 6779 }, quests = { 2359, 2478 } },
-    [18267] = { spell = 22761, dropped = { 14354 }, drops = { 14354, 100 } },
+    [18160] = { spell = 9513, sold = { 6779 }, quests = { 2359, 2478 }, bound = true },
+    [18267] = { spell = 22761, dropped = { 14354 }, drops = { 14354, 100 }, bound = true },
     [20075] = { spell = 24418, sold = { 4879 } },
     [21025] = { spell = 25659, quests = { 8586 } },
     [21099] = { spell = 25704, sold = { 2381, 2397, 2664, 3027, 3085, 3400, 4223, 4265, 4553, 5160, 5483, 8307, 12033, 14738 } },
@@ -552,11 +555,14 @@ ns.data = {
     [8447] = { area = 51, map = 0, x = 35, y = 52, lvl = { 48, 48 }, rank = 1 },
     [8508] = { side = "A", area = 1, map = 0, x = 32, y = 45, lvl = { 10, 10 } },
     [8596] = { area = 139, map = 0, x = 45, y = 87, lvl = { 53, 54 } },
+    [8661] = { area = 440, map = 1, x = 52, y = 30, lvl = { 50, 50 } },
     [8762] = { area = 16, map = 1, x = 39, y = 41, lvl = { 47, 48 } },
     [8961] = { area = 361, map = 1, x = 57, y = 21, lvl = { 51, 52 } },
     [9636] = { side = "H", area = 405, map = 1, x = 51, y = 54, lvl = { 41, 41 } },
     [9691] = { area = 46, map = 0, x = 91, y = 33, lvl = { 52, 53 } },
     [9695] = { area = 46, map = 0, x = 63, y = 56, lvl = { 54, 55 } },
+    [9857] = { area = 618, map = 1, x = 61, y = 37, lvl = { 50, 50 } },
+    [9858] = { area = 33, map = 0, x = 28, y = 77, lvl = { 50, 50 } },
     [10118] = { side = "A", area = 141, map = 1, x = 56, y = 92, lvl = { 25, 25 } },
     [10323] = { area = 148, map = 1, x = 36, y = 77, lvl = { 19, 19 } },
     [10367] = { side = "H", area = 2597, map = 30, x = 49, y = 80, lvl = { 55, 55 } },
@@ -603,6 +609,8 @@ ns.data = {
     [14398] = { area = 2557, map = 429, lvl = { 58, 59 }, rank = 1 },
     [14624] = { area = 51, map = 0, x = 39, y = 29, lvl = { 52, 52 } },
     [14738] = { side = "H", area = 47, map = 0, x = 79, y = 79, lvl = { 48, 48 } },
+    [15677] = { area = 33, map = 0, x = 28, y = 76, lvl = { 50, 50 } },
+    [15681] = { area = 33, map = 0, x = 27, y = 76, lvl = { 50, 50 } },
   },
   ingredients = {
     [159] = { sold = { 151, 227, 982, 1149, 1285, 2084, 2115, 2664, 2803, 2806, 3027, 3072, 3313, 3498, 3587, 3625, 4167, 4255, 4553, 5101, 6495, 7733, 11038, 11118, 11287, 12785, 12794, 14371, 14624 }, drops = { 3662, 100 }, picked = { 12, 14, 215, 1, 141, 85 } },
@@ -789,4 +797,5 @@ ns.data = {
     [8313] = { level = 57, min = 54 },
     [8586] = { giver = 8125, level = 60, min = 60, area = 440 },
   },
+  auctioneers = { 8661, 9857, 9858, 15677, 15681 },
 }

@@ -76,8 +76,7 @@ for _, m in ipairs(ns.milestones) do
   if m.id == "first-feast" then feasts = true end
 end
 check(feasts == (G.FOREVER and true or false), "a chapter's first only where the game has its dishes")
--- a step past what this side can learn: not listed, never earned (Classic
--- Era's Alliance can learn 75: the whole book is the last step)
+-- a step past what this side can learn: not listed, never earned
 local learnable = ns.milestoneById["known-all"].progress
 local _, all = learnable()
 for _, need in ipairs({ 10, 25, 50, 75 }) do
@@ -86,6 +85,12 @@ for _, need in ipairs({ 10, 25, 50, 75 }) do
     ("know %d: listed only below %d"):format(need, all)
   )
 end
+-- the other side's recipes count, bought at a neutral auction house: Classic
+-- Era's Horde learns every dish (66 on its own), Forever's all but the two
+-- that bind when picked up and the one no source gives
+s.faction = "Horde"
+check(select(2, learnable()) == (G.FOREVER and 101 or 81), "every recipe your side can learn, at the auction house too")
+s.faction = nil
 
 -- ── the road ─────────────────────────────────────────────────────────────────
 local R = ns.road
@@ -317,13 +322,21 @@ if not G.FOREVER then
   check(D.npcs[13420].side == "H" and D.npcs[13435].side == "A", "a capital's vendor serves its side")
 end
 local function hunts(side)
-  local out, wrong = {}, 0
+  local out, wrong, auctions = {}, 0, 0
   for _, spell in ipairs(D.order) do
     local s = H.of(spell, side)
     if s then
       table.insert(out, spell)
       if s.skill or s.trainer or #s.shop > 0 then wrong = wrong + 1 end
-      if #s.limited + #s.drops + #s.quests == 0 and not s.world then wrong = wrong + 1 end
+      local finds = #s.limited + #s.drops + #s.quests > 0 or s.world
+      if s.auction then
+        -- (none of its own, one of the other side's, a recipe that trades)
+        auctions = auctions + 1
+        if finds or #s.other.shop + #s.other.limited + #s.other.quests == 0 then wrong = wrong + 1 end
+        if D.recipeItems[s.item].bound or H.kind(s) ~= "auction" then wrong = wrong + 1 end
+      elseif not finds then
+        wrong = wrong + 1
+      end
       for _, v in ipairs(s.limited) do
         if D.npcs[v].side and D.npcs[v].side ~= side then wrong = wrong + 1 end
       end
@@ -332,12 +345,24 @@ local function hunts(side)
       end
     end
   end
-  return out, wrong
+  return out, wrong, auctions
 end
-local forA, wrongA = hunts("A")
-local forH, wrongH = hunts("H")
+local forA, wrongA, auctionsA = hunts("A")
+local forH, wrongH, auctionsH = hunts("H")
 check(#forA > 0 and #forH > 0, "hunts for each side")
-check(wrongA == 0 and wrongH == 0, "a hunt: no shop for its side, a find of its side")
+check(wrongA == 0 and wrongH == 0, "a hunt: no shop for its side, a find of its side, else the other side's to trade")
+-- (Crispy Bat Wing the Horde's vendor sells, Kaldorei Spider Kabob an
+-- Alliance quest's: each the other side's hunt at the auction house)
+local bat, kabob = H.of(15935, "A"), H.of(6412, "H")
+check(
+  auctionsA > 0 and auctionsH > 0 and bat.auction and kabob.auction and not H.of(15935, "H"),
+  "the other side's recipe: a hunt at a neutral auction house"
+)
+if G.FOREVER then
+  -- (Twice-Spiced Raptor Slice, a Horde quest's, binds when picked up)
+  check(not H.of(1250154, "A") and H.of(1250154, "H"), "a recipe that binds when picked up: never at the auction house")
+end
+check(#D.auctioneers >= 3, "the neutral auction houses' auctioneers")
 -- the nearest of several: on the character's continent, a capital's first
 -- (a Horde cook on Kalimdor: Orgrimmar's trainer before Grom'gol's)
 s.map = 1
@@ -351,8 +376,14 @@ check(
   "the nearest trainer: a capital's, on the character's continent"
 )
 s.map = nil
+-- (at cooking 1 only a hunt learned at 1: Crispy Bat Wing, the Horde's, at
+-- the auction house)
 local open0, next0 = H.list({}, 1, "A")
-check(#open0 == 0 and next0 and next0 > 1, "at cooking 1 no hunt is open, the next said")
+local early = true
+for _, spell in ipairs(open0) do
+  early = early and D.recipes[spell].learn <= 1
+end
+check(early and next0 and next0 > 1, "at cooking 1 only the hunts learned at 1 are open, the next said")
 local open300, next300, found, total = H.list({}, 300, "A")
 check(#open300 > 0 and next300 == nil and found == 0 and total == #forA, "at 300 every hunt of the side is open")
 local known1 = { [open300[1]] = { at = 0 } }
@@ -472,6 +503,17 @@ for _, side in ipairs({ "Alliance", "Horde" }) do
     ns.openHunt(spell)
   end
 end
+-- an auction hunt's page: an auctioneer a town, how the other side gets it
+s.faction = "Alliance"
+ns.openHunt(15935)
+local huntPage, auctioneers, other = MealbookHuntsPage, 0, false
+for _, c in ipairs(huntPage.cards) do
+  if c.shown and (c.facts.text or ""):find(L["an auctioneer"], 1, true) == 1 then auctioneers = auctioneers + 1 end
+end
+for _, h in ipairs(huntPage.headings) do
+  if h.shown and h.text.text == L["How the other side gets it"] then other = true end
+end
+check(auctioneers == 3 and other, "an auction hunt: the three neutral towns, how the other side gets it")
 -- a quest the language has no title for: its giver named instead
 local q = next(D.quests)
 local title = ns.questNames[q]

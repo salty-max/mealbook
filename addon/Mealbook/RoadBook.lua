@@ -144,7 +144,8 @@ local function showRoad()
   page:stats({
     { tostring(skill), L["cooking now"] },
     { tostring(toLearn), L["recipes to learn"] },
-    { ("~%d"):format(casts), L["casts to 300"] },
+    -- (a road that stops: its casts to the stop, not to 300)
+    { ("~%d"):format(casts), legs.stuck and L["casts"] or L["casts to 300"] },
   })
   if skill == 0 then
     page:paragraph(

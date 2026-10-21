@@ -98,10 +98,14 @@ local knownBefore, cookedBefore = counted()
 local oursCooked = char.cooked[ours]
 char.known[theirs], char.cooked[theirs] = { at = 0 }, 5
 local knownTheirs, cookedTheirs = counted()
+local learnableTheirs = select(2, learnable())
 char.cooked[ours] = (oursCooked or 0) + 5
 local _, cookedOurs = counted()
 check(
-  knownTheirs == knownBefore and cookedTheirs == cookedBefore and cookedOurs == cookedBefore + 5,
+  knownTheirs == knownBefore
+    and cookedTheirs == cookedBefore
+    and cookedOurs == cookedBefore + 5
+    and learnableTheirs == (G.FOREVER and 86 or 66),
   "the other side's recipe, learned at the auction house: no achievement counts it"
 )
 char.known[theirs], char.cooked[theirs], char.cooked[ours] = nil, nil, oursCooked
@@ -391,8 +395,6 @@ check(
   "the nearest trainer: a capital's, on the character's continent"
 )
 s.map = nil
--- (at cooking 1 only a hunt learned at 1: Crispy Bat Wing, the Horde's, at
--- the auction house)
 -- (the auction house's apart: Crispy Bat Wing, the Horde's, open at 1)
 local open0, next0, _, _, auction0 = H.list({}, 1, "A")
 check(#open0 == 0 and next0 and next0 > 1, "at cooking 1 no hunt of the side's own is open, the next said")

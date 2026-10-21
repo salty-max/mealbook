@@ -37,7 +37,7 @@ La vase est dans la peau, pas dans la chair, et on la sent dès que le poisson r
 
 ## 7827 Thon arc-en-ciel
 
-Ferme, sombre et riche, plus viande que poisson, et il faut le cuire comme une viande : une saisie franche dehors et très peu au coeur. La couleur vous renseigne. Rose dedans, c'est juste, gris, c'est trop. Je ne peux pas goûter la différence. Je peux la voir, et le visage de celui qui le mange la voit aussi. Le rose vaut un hochement de tête. Le gris vaut de la politesse, ce qui est pire.
+Ferme, sombre et riche, plus viande que poisson, et il faut le cuire comme une viande : une saisie franche dehors et très peu au coeur. La couleur vous renseigne. Rose dedans, c'est juste. Gris, c'est trop. Je ne peux pas goûter la différence. Je peux la voir, et le visage de celui qui le mange la voit aussi. Le rose vaut un hochement de tête. Le gris vaut de la politesse, ce qui est pire.
 
 ## 2544 Beignet de crabe
 
@@ -65,7 +65,7 @@ Le poisson-chat, c'était ce que la rivière nous donnait quand elle nous donnai
 
 ## 6500 Palourdes gobelines
 
-Les gobelins mettent trop de chaleur dans tout, palourdes comprises. Je l'enseigne la chaleur corrigée. De la chair de palourde relevée, des épices fortes, un feu chaud sans être furieux. L'odeur vous dira quand vous arrêter : quand l'épice cesse de sentir le cru et se met à sentir le grillé, retirez la poêle. Une palourde cuite avec fureur devient du cuir. Les gobelins vous vendraient le cuir en l'appelant moelleux.
+Les gobelins mettent trop de chaleur dans tout, palourdes comprises. Je l'enseigne avec la chaleur corrigée. De la chair de palourde relevée, des épices fortes, un feu chaud sans être furieux. L'odeur vous dira quand vous arrêter : quand l'épice cesse de sentir le cru et se met à sentir le grillé, retirez la poêle. Une palourde cuite avec fureur devient du cuir. Les gobelins vous vendraient le cuir en l'appelant moelleux.
 
 ## 7828 Morue rochécaille
 
@@ -85,7 +85,7 @@ La grande sagerelle, engraissée de la sauge de son lac, avec des épices fortes
 
 ## 1319313 Poisson cuirassé
 
-Un poisson en armure. Les plaques s'enlèvent avec un couteau lourd et beaucoup de patience, et la chair dessous est ferme et pâle, comme celle d'un homard. Des épices apaisantes, une chaleur modérée, et sans hâte. Les choses en armure mettent du temps à cuire, comme vous le diront les gardes noirs, et ce n'est pas des poissons qu'ils parlent. Servez-le dans ses propres plaques, lavées. Cela fait sourire les gens.
+Un poisson en armure. Les plaques s'enlèvent avec un couteau lourd et beaucoup de patience, et la chair dessous est ferme et pâle, comme celle d'un homard. Des épices apaisantes, une chaleur modérée, et sans hâte. Les choses en armure mettent du temps à cuire, comme vous le diront les gardes noirs, et ce n'est pas de poissons qu'ils parlent. Servez-le dans ses propres plaques, lavées. Cela fait sourire les gens.
 
 ## 18239 Barracuda luisant cuit
 

@@ -9,7 +9,7 @@ Avant le plat, il y a le feu, et avant le feu, il y a un cuisinier qui sait le f
 
 ## 1283400 Feu de camp de compagnon
 
-Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, et un cuisinier compagnon devrait connaître la différence avant qu'on le laisse approcher d'un meilleur feu. La recette a été trouvée dans les Cavernes des Lamentations, parmi les druides qui s'y sont égarés, ce qui fait beaucoup de chemin pour un meilleur feu de camp. Empilez-le de la même façon, sans serrer, et laissez-le retomber plus bas avant de cuisiner. Un feu plus chaud pardonne moins. C'est ce que signifie être compagnon.
+Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, et un cuisinier compagnon devrait connaître la différence avant qu'on le laisse approcher d'un meilleur feu. La recette a été trouvée dans les Cavernes des lamentations, parmi les druides qui s'y sont égarés, ce qui fait beaucoup de chemin pour un meilleur feu de camp. Empilez-le de la même façon, sans serrer, et laissez-le retomber plus bas avant de cuisiner. Un feu plus chaud pardonne moins. C'est ce que signifie être compagnon.
 
 ## 1291341 Feu de camp de spécialiste
 

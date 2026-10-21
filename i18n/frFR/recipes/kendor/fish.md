@@ -17,7 +17,7 @@ Un poisson que je n'ai pas encore vu au marché de Hurlevent, même si les pêch
 
 ## 1270635 Bouchées à la chair de pinces
 
-La saison des crabes, appelle-t-on la tâche qui enseigne ce plat, comme si les crabes avaient des saisons et n'étaient pas simplement toujours là, à trottiner au bord de chaque plage. On casse les pinces, on en tire la chair, on la lie avec un peu de farine et on la frit en petites bouchées. Mettez le moins de farine possible. Elle tient le crabe ensemble. Elle ne doit pas devenir le plat. Une bouchée qui a le goût du pain vous a menti sur la plage.
+On appelle « La saison des crabes » la quête qui enseigne ce plat, comme si les crabes avaient des saisons et n'étaient pas simplement toujours là, à trottiner au bord de chaque plage. On casse les pinces, on en tire la chair, on la lie avec un peu de farine et on la frit en petites bouchées. Mettez le moins de farine possible. Elle tient le crabe ensemble. Elle ne doit pas devenir le plat. Une bouchée qui a le goût du pain vous a menti sur la plage.
 
 ## 6499 Palourdes bouillies
 
@@ -57,7 +57,7 @@ Les poissons déviants viennent des bassins empoisonnés des Cavernes des lament
 
 ## 1252566 Délice de fantaileron
 
-Fantaileron. Quelqu'un a donné ce nom à un poisson, et quelqu'un d'autre a été d'accord. La recette apparaît dans les Carmines, dans les sacs des gnolls et des murlocs, qui ne sont pas réputés pour leur cuisine, alors je suppose qu'ils l'ont volée à quelqu'un qui l'était. Le poisson est petit, vif et délicat. Une pincée d'épices douces, une poêle chaude, très peu de temps. Le nom promet de la fantaisie. Le plat livre un souper, ce qui vaut mieux.
+Fantaileron. Quelqu'un a donné ce nom à un poisson, et quelqu'un d'autre l'a approuvé. La recette apparaît dans les Carmines, dans les sacs des gnolls et des murlocs, qui ne sont pas réputés pour leur cuisine, alors je suppose qu'ils l'ont volée à quelqu'un qui l'était. Le poisson est petit, vif et délicat. Une pincée d'épices douces, une poêle chaude, très peu de temps. Le nom promet de la fantaisie. Le plat livre un souper, ce qui vaut mieux.
 
 ## 7755 Poisson-chat moustachu
 
@@ -101,7 +101,7 @@ Le crabe au chili est un plat du sud brûlant, où les cuisiniers croient que l'
 
 ## 18238 Jaune-queue tacheté
 
-Un jaune-queue des eaux chaudes au large de Tanaris, vendu par un gobelin qui pèse son poisson d'une main et le client de l'autre. Le poisson est excellent malgré tout. Il est ferme et gras et ne demande qu'une poêle chaude et un seul retournement. Ne vous agitez pas autour. Le jaune-queue tacheté est ce poisson rare qui est meilleur moins le cuisinier en fait, et beaucoup de cuisiniers trouvent cela insupportable.
+Un jaune-queue des eaux chaudes au large de Tanaris, vendu par un gobelin qui pèse son poisson d'une main et le client de l'autre. Le poisson est excellent malgré tout. Il est ferme et gras et ne demande qu'une poêle chaude et un seul retournement. Ne vous agitez pas autour. Le jaune-queue tacheté est ce poisson rare qui est d'autant meilleur que le cuisinier en fait moins, et beaucoup de cuisiniers trouvent cela insupportable.
 
 ## 18240 Calmar grillé
 
@@ -109,7 +109,7 @@ Le calmar se cuit un instant ou une heure, et tout ce qui est entre les deux est
 
 ## 18242 Perche fumée
 
-Fumer à chaud, c'est fumer à une chaleur qui cuit en même temps, plus vite que le fumage à froid et moins indulgent. Frottez la perche d'épices fortes, suspendez-la tout près au-dessus d'un feu fumeux et surveillez-la. Quand la chair passe du verre au blanc, c'est cuit. Une perche fumée ainsi se garde des jours et voyage bien. C'est le seul poisson que je confierais au sac d'un soldat, et je l'ai confié à plusieurs.
+Fumer à chaud, c'est fumer à une chaleur qui cuit en même temps, plus vite que le fumage à froid et moins indulgent. Frottez la perche d'épices fortes, suspendez-la tout près au-dessus d'un feu fumeux et surveillez-la. Quand la chair passe de translucide à blanche, c'est cuit. Une perche fumée ainsi se garde des jours et voyage bien. C'est le seul poisson que je confierais au sac d'un soldat, et je l'ai confié à plusieurs.
 
 ## 18244 Saumon solécaille poché
 

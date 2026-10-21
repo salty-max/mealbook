@@ -85,7 +85,7 @@ Il y avait des cerfs dans les bois au-dessus de la ferme, et mon père, ou mon o
 
 ## 15853 Steak de loup
 
-Un steak tout simple, pris au flanc d'un loup, avec une pincée d'épices et rien derrière quoi se cacher. C'est ce qui en fait une épreuve. Saisissez vite, laissez reposer longtemps, tranchez fin contre le fil. Je le juge à sa couleur et au visage de celui qui le mange, puisque je ne peux faire autrement. Je le fais cuisiner à mes élèves jusqu'à ce qu'ils ne tressaillent plus au sifflement de la poêle. Certains mettent une semaine. L'un d'eux a mis un an.
+Un steak tout simple, pris au flanc d'un loup, avec une pincée d'épices et rien derrière quoi se cacher. C'est ce qui en fait une épreuve. Saisissez vite, laissez reposer longtemps, tranchez fin en travers des fibres. Je le juge à sa couleur et au visage de celui qui le mange, puisque je ne peux faire autrement. Je fais cuisiner ce steak à mes élèves jusqu'à ce qu'ils ne tressaillent plus au sifflement de la poêle. Certains mettent une semaine. L'un d'eux a mis un an.
 
 ## 3398 Côtelettes de lion épicées
 
@@ -93,7 +93,7 @@ Les lions des Tarides sont maigres et doux près de l'os, alors les côtelettes 
 
 ## 3399 Délicieux steak de lion
 
-Du lion cuit en steak plutôt qu'en côtelettes, avec des épices apaisantes pour arrondir la douceur de la viande. L'épice apaisante sent le clou de girofle et la pierre tiède. Frottez-la, saisissez le steak fort, laissez-le reposer aussi longtemps que vous l'avez saisi. Tranchez contre le fil, sinon il se défend dans la bouche. Le nom a été écrit par quelqu'un qui l'avait mangé et qui était trop occupé pour trouver mieux.
+Du lion cuit en steak plutôt qu'en côtelettes, avec des épices apaisantes pour arrondir la douceur de la viande. L'épice apaisante sent le clou de girofle et la pierre tiède. Frottez-la, saisissez le steak fort, laissez-le reposer aussi longtemps que vous l'avez saisi. Tranchez en travers des fibres, sinon il se défend dans la bouche. Le nom a été écrit par quelqu'un qui l'avait mangé et qui était trop occupé pour trouver mieux.
 
 ## 1250151 Poitrine d'ours
 
@@ -117,7 +117,7 @@ Les camps de Strangleronce rôtissent le raptor en gros morceaux, et moi aussi, 
 
 ## 1250150 Côtelettes de raptor bouillantes
 
-Une recette que j'ai lue sans jamais me la faire vendre, ce qui me la rend suspecte. Les côtelettes cuisent à feu doux jusqu'à ce que la viande lâche l'os, puis sur une flamme féroce pour fixer une croûte d'épices fortes, et il y en a beaucoup. La fumée seule m'a fait pleurer les yeux. Je ne peux pas vous dire à quel point elles sont fortes. Je peux vous dire que personne de ceux à qui je les ai servies n'a demandé plus d'épices.
+Une recette que j'ai lue sans qu'on me l'ait jamais vendue, ce qui me la rend suspecte. Les côtelettes cuisent à feu doux jusqu'à ce que la viande lâche l'os, puis sur une flamme féroce pour fixer une croûte d'épices fortes, et il y en a beaucoup. La fumée seule m'a fait monter les larmes aux yeux. Je ne peux pas vous dire à quel point elles sont fortes. Je peux vous dire que personne de ceux à qui je les ai servies n'a demandé plus d'épices.
 
 ## 1295834 Bonne vieille viande de brochepâle
 

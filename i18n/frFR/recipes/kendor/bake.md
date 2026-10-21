@@ -9,11 +9,11 @@ Un biscuit du Voile d'hiver, vendu quelques semaines par an par des marchands so
 
 ## 8604 Oeufs aux herbes
 
-Dans cette ville, tous les cuisiniers se croient capables de cuire un oeuf. La plupart se trompent, et toujours de la même façon : trop chaud, trop longtemps, et pressés d'en finir. C'est le premier plat que j'enseigne, et celui sur lequel je juge un cuisinier. Assaisonnez le blanc, jamais le jaune. Le jaune est déjà parfait et se passe très bien de votre avis. Tomas, à Comté-de-l’Or, en fait de tout à fait honorables. C'est moi qui le lui ai appris.
+Dans cette ville, tous les cuisiniers se croient capables de cuire un oeuf. La plupart se trompent, et toujours de la même façon : trop chaud, trop longtemps, et pressés d'en finir. C'est le premier plat que j'enseigne, et celui sur lequel je juge un cuisinier. Assaisonnez le blanc, jamais le jaune. Le jaune est déjà parfait et se passe très bien de votre avis. Tomas, à Comté-de-l’Or, en réussit de fort honorables. C'est moi qui le lui ai appris.
 
 ## 1270632 Biscuit en forme de bestiole
 
-Un biscuit fait pour les petits animaux qui suivent les aventuriers partout, et fait, je le note, de rien d'autre que de farine, ce qui vous dit à quel point on consulte les petits animaux. Cinq mesures de farine, travaillées d'une main légère et cuites jusqu'à un or pâle. On me dit que les bestioles les adorent. J'ai vu un chat en manger un. Le chat m'a regardé ensuite comme s'il en attendait davantage, ce qui est la seule critique qu'un animal de compagnie ait jamais rendue.
+Un biscuit conçu pour les petits animaux qui suivent les aventuriers partout, et composé, je le note, de rien d'autre que de farine, ce qui vous dit à quel point on consulte les petits animaux. Cinq mesures de farine, travaillées d'une main légère et cuites jusqu'à un or pâle. On me dit que les bestioles les adorent. J'ai vu un chat en manger un. Le chat m'a regardé ensuite comme s'il en attendait davantage, ce qui est la seule critique qu'un animal de compagnie ait jamais rendue.
 
 ## 1270633 Soufflé de Mur-Céleste
 
@@ -53,7 +53,7 @@ Une confiture des baies d'Hyjal, qui poussent sur les pentes d'une montagne qu'o
 
 ## 22761 Courante-surprise
 
-La recette de ce plat est portée par un diablotin des ruines de Hache-tripes, qui ne s'en sépare qu'après avoir entraîné son poursuivant dans une course folle à travers des salles pleines de satyres très en colère. Je le sais parce qu'un de mes élèves a fait cette course et en est revenu avec la recette, une jambe qui boite et une opinion des diablotins que je partage. La racine de courante pousse dans l'ombre de ces ruines et a le goût, bien cuite, de la meilleure racine dont vous ignoriez l'existence : terreuse, douce et un peu fumée. Pelez-la, tranchez-la épais et rôtissez-la lentement avec des épices apaisantes jusqu'à ce que les bords caramélisent et que le coeur cède sous la fourchette. La surprise, c'est qu'une chose si bonne vienne d'un endroit si mauvais. J'enseigne la recette volontiers. Je n'enseigne pas la course, et j'ai conseillé à mon élève de ne jamais la refaire.
+La recette de ce plat est portée par un diablotin des ruines de Hache-tripes, qui ne s'en sépare qu'après avoir entraîné son poursuivant dans une course folle à travers des salles pleines de satyres très en colère. Je le sais parce qu'un de mes élèves a fait cette course et en est revenu avec la recette, une jambe boiteuse et une opinion des diablotins que je partage. La racine de courante pousse dans l'ombre de ces ruines et a le goût, bien cuite, de la meilleure racine dont vous ignoriez l'existence : terreuse, douce et un peu fumée. Pelez-la, tranchez-la épais et rôtissez-la lentement avec des épices apaisantes jusqu'à ce que les bords caramélisent et que le coeur cède sous la fourchette. La surprise, c'est qu'une chose si bonne vienne d'un endroit si mauvais. J'enseigne la recette volontiers. Je n'enseigne pas la course, et j'ai conseillé à mon élève de ne jamais la refaire.
 
 ## 24801 Boulettes fumées du désert
 

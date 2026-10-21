@@ -5,7 +5,7 @@ chapter: bake
 
 ## 21143 Biscuit au pain d'épices
 
-Le Voile d'hiver, en Lordaeron, sentait ces biscuits, toutes les cuisines de la rue à la fois, ou du moins je le crois. Je me souviens si nettement de l'odeur qu'il m'arrive de la sentir à Fossoyeuse en plein été, ce qui ne peut pas être vrai. Des épices spéciales et un oeuf, travaillés ensemble et cuits jusqu'à ce que les bords foncent et que le coeur cède encore. Ils durcissent en refroidissant. J'en fais à chaque Voile d'hiver pour les enfants des équipages des zeppelins. Ils ne demandent pas pourquoi j'en fais autant.
+Le Voile d'hiver, en Lordaeron, sentait ces biscuits dans toutes les cuisines de la rue à la fois, ou du moins je le crois. Je me souviens si nettement de l'odeur qu'il m'arrive de la sentir à Fossoyeuse en plein été, ce qui ne peut pas être vrai. Des épices spéciales et un oeuf, travaillés ensemble et cuits jusqu'à ce que les bords foncent et que le coeur cède encore. Ils durcissent en refroidissant. J'en fais à chaque Voile d'hiver pour les enfants des équipages des zeppelins. Ils ne demandent pas pourquoi j'en fais autant.
 
 ## 8604 Oeufs aux herbes
 
@@ -17,7 +17,7 @@ De la farine et rien d'autre, cuite en petits biscuits pour les créatures qui s
 
 ## 1270633 Soufflé de Mur-Céleste
 
-Deux oeufs et un peu de farine, les blancs montés jusqu'à se tenir, incorporés, et cuits sans jamais ouvrir la porte. On ne voit pas un soufflé monter depuis l'extérieur du four, mais on le sent : l'odeur passe de l'oeuf mouillé au pain chaud au moment où il culmine. Sortez-le alors, et portez-le vite. Un soufflé est une respiration retenue. Il n'attendra pas que l'invité ait fini de parler.
+Deux oeufs et un peu de farine, les blancs montés en neige ferme, incorporés, et cuits sans jamais ouvrir la porte. On ne voit pas un soufflé monter depuis l'extérieur du four, mais on le sent : l'odeur passe de l'oeuf mouillé au pain chaud au moment où il culmine. Sortez-le alors, et portez-le vite. Un soufflé est une respiration retenue. Il n'attendra pas que l'invité ait fini de parler.
 
 ## 2542 Tourte au foie de Broche-tripes
 
@@ -45,7 +45,7 @@ Un seul oeuf géant nourrit une table, et à Fossoyeuse, une table, c'est quicon
 
 ## 1225760 Omelette du Lever de soleil
 
-Deux oeufs géants et des sels sacrés, dont on m'avait dit qu'ils me brûleraient et qui ne me brûlent pas. Cuisez-la lentement, pour que le jaune reste vif comme le matin. L'odeur est nette et simple, l'oeuf, le sel et la poêle. Je la prépare à l'heure que les vivants appellent l'aube, ce qui ne veut rien dire ici, par une habitude que je ne me rappelle pas avoir prise. Quelqu'un vient toujours la chercher. Quelqu'un vient toujours.
+Deux oeufs géants et des sels sacrés, dont on m'avait dit qu'ils me brûleraient et qui ne me brûlent pas. Cuisez-la lentement, pour que le jaune reste vif comme le matin. L'odeur est nette et simple, l'oeuf, le sel et la poêle. Je la prépare à l'heure que les vivants appellent l'aube, ce qui ne veut rien dire ici, par une habitude que je ne me rappelle pas avoir prise. Quelqu'un vient toujours la chercher. Toujours.
 
 ## 1294014 Confiture patte-douce
 

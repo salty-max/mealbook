@@ -53,7 +53,7 @@ Du jus de baie lunaire, des épices apaisantes et un petit sac de flammes, perc�
 
 ## 1249961 Thé du soleil
 
-De la soleillette infusée dans du jus de baie lunaire jusqu'à ce que la boisson devienne dorée. Elle sent le foin l'après-midi et un mur tiède au soleil. Il n'y a pas de soleil à Fossoyeuse. Je prépare ce thé quand mes élèves sont devenus silencieux et pâles et commencent à oublier la surface, et je le leur mets entre les mains, et il la leur rappelle. Ce n'est pas dans la recette. Cela devrait y être.
+De la soleillette infusée dans du jus de baie lunaire jusqu'à ce que la boisson devienne dorée. Elle sent le foin l'après-midi et un mur tiède au soleil. Il n'y a pas de soleil à Fossoyeuse. Je prépare ce thé quand mes élèves deviennent silencieux et pâles et commencent à oublier la surface, et je le leur mets entre les mains, et il la leur rappelle. Ce n'est pas dans la recette. Cela devrait y être.
 
 ## 1249968 Frappé pernicieux
 

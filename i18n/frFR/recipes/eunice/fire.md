@@ -9,7 +9,7 @@ Avant le plat, le feu. Du bois simple, empilé sans serrer pour que l'air puisse
 
 ## 1283400 Feu de camp de compagnon
 
-Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, avec une odeur de résine et de givre. La recette vient des Cavernes des Lamentations, où les druides ont mal rêvé, et quelqu'un a décidé qu'un meilleur feu de camp valait le voyage. Empilez-le de la même façon et laissez-le retomber davantage avant de cuisiner, parce qu'un feu plus chaud pardonne moins. Quand les braises blanchissent sur les bords, il est temps de cuisiner.
+Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, avec une odeur de résine et de givre. La recette vient des Cavernes des lamentations, où les druides ont mal rêvé, et quelqu'un a décidé qu'un meilleur feu de camp valait le voyage. Empilez-le de la même façon et laissez-le retomber davantage avant de cuisiner, parce qu'un feu plus chaud pardonne moins. Quand les braises blanchissent sur les bords, il est temps de cuisiner.
 
 ## 1291341 Feu de camp de spécialiste
 

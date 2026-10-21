@@ -13,7 +13,7 @@ Cette recette vient de Tirisfal, où les cuisiniers sont morts et les chauves-so
 
 ## 2540 Viande de sanglier rôtie
 
-Les sangliers d'Elwynn nourrissent cette ville depuis avant qu'elle ait des murs, et ils la nourriront encore quand il faudra rebâtir les murs. Tomas, à Comté-de-l’Or, les rôtit entiers pour son auberge en tournant la broche à la main, et il appelle cela la tradition. C'est une belle tradition. C'est aussi pourquoi son sanglier est cuit d'un côté et plein d'espoir de l'autre. Coupez la viande en morceaux égaux, pour que la chaleur les traite tous de la même façon. En cuisine, la justice est affaire de couteau.
+Les sangliers d'Elwynn nourrissent cette ville depuis avant qu'elle ait des murs, et ils la nourriront encore quand il faudra rebâtir les murs. Tomas, à Comté-de-l’Or, les rôtit entiers pour son auberge en tournant la broche à la main, et il appelle cela la tradition. C'est une belle tradition. C'est aussi pour cela que son sanglier est cuit d'un côté et plein d'espoir de l'autre. Coupez la viande en morceaux égaux, pour que la chaleur les traite tous de la même façon. En cuisine, la justice est affaire de couteau.
 
 ## 6412 Kébab d'araignée kaldorei
 
@@ -25,7 +25,7 @@ Le deuxième plat que tout maître enseigne, et le premier que la plupart des cu
 
 ## 6413 Surprise du scorpide
 
-Un plat de la Horde, venu de la poussière de Durotar, et la surprise, c'est qu'on puisse manger un scorpide exprès. Je n'ai nul besoin de goûter la cuisine d'Orgrimmar. J'en ai cependant lu la recette, car un maître lit tout. Sa seule sagesse tient au dard. Cuit jusqu'à passer du verre à la craie, il perd son venin et garde son mordant. Pas assez cuit, il garde les deux. Je vous laisse juger lequel des deux mérite le nom de surprise.
+Un plat de la Horde, venu de la poussière de Durotar, et la surprise, c'est qu'on puisse manger un scorpide exprès. Je n'ai nul besoin de goûter la cuisine d'Orgrimmar. J'en ai cependant lu la recette, car un maître lit tout. Sa seule sagesse tient au dard. Cuit jusqu'à passer du translucide à la craie, il perd son venin et garde son mordant. Pas assez cuit, il garde les deux. Je vous laisse juger lequel des deux mérite le nom de surprise.
 
 ## 1250156 Délicieuses bouchées au raptor
 
@@ -61,7 +61,7 @@ Le crocilisque est le steak de ceux qui trouvent le boeuf trop complaisant. Les 
 
 ## 2546 Côtes de porc séchées
 
-Les côtes sèches sont un plat de fermier, des côtes de sanglier et une friction d'épices, sans la moindre sauce. Certains cuisiniers en ont peur. Ils croient qu'une côte doit dégouliner pour être bonne. Une côte doit être cuite pour être bonne. Frottez l'épice la veille, laissez le feu retomber jusqu'à une lueur sourde et donnez aux côtes l'après-midi entier. Elles en sortent sombres, croustillantes et sèches au toucher, et ne laissent rien sur l'os.
+Les côtes sèches sont un plat de fermier, des côtes de sanglier et une croûte d'épices, sans la moindre sauce. Certains cuisiniers en ont peur. Ils croient qu'une côte doit dégouliner pour être bonne. Une côte doit être cuite pour être bonne. Frottez l'épice la veille, laissez le feu retomber jusqu'à une lueur sourde et donnez aux côtes l'après-midi entier. Elles en sortent sombres, croustillantes et sèches au toucher, et ne laissent rien sur l'os.
 
 ## 6418 Queue de lézard croquante
 
@@ -73,11 +73,11 @@ Voilà le plat auquel je mettrais mon nom, et je l'ai fait. Du steak de loup et 
 
 ## 2548 Côtes de porc aux herbes
 
-Les gnolls des Carmines trimballent cette recette dans leurs sacs, volée dans quelque ferme, et n'en font rien. Je vends la même recette à Hurlevent et j'en fais beaucoup. Deux portions de côtes de sanglier et des épices fortes, et tout le secret est de les retourner. Retournez-les toutes les quelques minutes, pour que la graisse arrose la viande en fondant. Le moelleux n'est pas une promesse du nom. C'est une récompense de l'attention.
+Les gnolls des Carmines trimballent cette recette dans leurs sacs, volée dans quelque ferme, et n'en font rien. Je vends la même recette à Hurlevent et j'en fais beaucoup. Deux portions de côtes de sanglier et des épices fortes, et tout le secret est de les retourner. Retournez-les toutes les quelques minutes, pour que la graisse arrose la viande en fondant. Le moelleux ne s'achète pas. C'est la récompense de l'attention.
 
 ## 3397 Steak de grand ours
 
-Les ours d'Orneval deviennent plus grands que les nôtres, nourris de la patience des elfes de la nuit et de ce qu'ils trouvent sous les arbres. Leur viande est sombre et riche et réclame une épice forte pour la trancher. Saisissez-la fort et laissez-la reposer longtemps, plus longtemps qu'un animal plus petit, car un gros steak continue de cuire une fois sorti du feu. En Désolace, me dit-on, une machine gobeline vend mes recettes un exemplaire à la fois. J'aimerais rencontrer son cuisinier.
+Les ours d'Orneval deviennent plus grands que les nôtres, nourris de la patience des elfes de la nuit et de ce qu'ils trouvent sous les arbres. Leur viande est sombre et riche et réclame une épice forte pour lui tenir tête. Saisissez-la fort et laissez-la reposer longtemps, plus longtemps qu'un animal plus petit, car un gros steak continue de cuire une fois sorti du feu. En Désolace, me dit-on, une machine gobeline vend mes recettes un exemplaire à la fois. J'aimerais rencontrer son cuisinier.
 
 ## 6419 Venaison dégraissée
 
@@ -93,7 +93,7 @@ Des lions des Tarides, coupés en côtelettes et brûlés aux épices fortes par
 
 ## 3399 Délicieux steak de lion
 
-Délicieux, se dit-il, et c'est trop modeste de moitié. Deux morceaux de lion et des épices apaisantes, cuits en steak plutôt qu'en côtelettes, ce qui est la seule façon civilisée de manger un lion. L'épice apaisante n'est pas là pour calmer le cuisinier. Elle arrondit la douceur de la viande. Saisissez, laissez reposer, tranchez contre le fil. Un steak de lion tranché dans le sens du fil se mâche comme une dispute qu'on ne peut pas gagner.
+Délicieux, dit-il de lui-même, et c'est trop modeste de moitié. Deux morceaux de lion et des épices apaisantes, cuits en steak plutôt qu'en côtelettes, ce qui est la seule façon civilisée de manger un lion. L'épice apaisante n'est pas là pour calmer le cuisinier. Elle arrondit la douceur de la viande. Saisissez, laissez reposer, tranchez contre le fil. Un steak de lion tranché dans le sens du fil se mâche comme une dispute qu'on ne peut pas gagner.
 
 ## 1250151 Poitrine d'ours
 
@@ -133,7 +133,7 @@ Paupiette : un mot de cuisine savante pour une chose simple, de la viande roulé
 
 ## 1250142 Mini-burgers de cerf savoureux
 
-Des mini-burgers, me dit-on, c'est petit et nombreux, comme les jeunes cuisiniers aiment toute chose. Le cerf est haché fin avec des épices fortes et pressé en galettes de la taille d'une paume. Pressez-les une fois et plus jamais : une galette pressée deux fois donne son jus à la poêle au lieu de l'invité. Je n'approuve pas la nourriture conçue pour être mangée debout. J'approuve celle-ci, debout, et je n'en suis pas fier.
+Des mini-burgers, me dit-on, c'est petit et nombreux, comme les jeunes cuisiniers aiment tout. Le cerf est haché fin avec des épices fortes et pressé en galettes de la taille d'une paume. Pressez-les une fois et plus jamais : une galette pressée deux fois donne son jus à la poêle au lieu de l'invité. Je n'approuve pas la nourriture conçue pour être mangée debout. J'approuve celle-ci, debout, et je n'en suis pas fier.
 
 ## 22480 Steak de loup tendre
 

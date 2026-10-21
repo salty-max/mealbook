@@ -91,8 +91,9 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   and what it makes as the game's items, its colours, how it was learned;
   the chef's page above the facts); `RoadBook.lua` (the
   road's legs, the road as cards, where it stops; a leg's page: where to
-  learn its recipe, its casts and shopping list against the bags, where to
-  get each ingredient as cards (`P.easiest`); a stop's
+  learn its recipe, its casts (about), what the bags can cook and still
+  lack, its shopping list against the bags, where to get each ingredient
+  as cards (`P.easiest`), a link to its recipe's page once known; a stop's
   page: how its rank is learned, the nearest trainers of the side (same
   zone, then the character's continent, a capital's first: `ui.byNearness`,
   the data's `map` and `city`; zones the same way, the cook's side's or

@@ -144,7 +144,7 @@ local function showRoad()
   page:stats({
     { tostring(skill), L["cooking now"] },
     { tostring(toLearn), L["recipes to learn"] },
-    { tostring(casts), L["casts, about"] },
+    { ("~%d"):format(casts), L["casts to 300"] },
   })
   if skill == 0 then
     page:paragraph(
@@ -263,11 +263,17 @@ local function showLeg(leg)
   if leg.train then return showTrain(leg) end
   local d = D.recipes[leg.spell]
   local shopping, casts = ns.road.shopping(leg)
+  -- (what the bags still lack of the leg's ingredients, all of them: the
+  -- leg's own skill points are its line, from and to)
+  local toGet = 0
+  for _, it in ipairs(shopping) do
+    toGet = toGet + math.max(0, it[2] - ui.have(it[1]))
+  end
   page:start(legTitle(leg), L["%d to %d"]:format(leg.from, leg.to), ui.dishPicture(leg.spell))
   page:stats({
-    { tostring(casts), L["casts, about"] },
+    { ("~%d"):format(casts), L["casts"] },
     { tostring(ns.road.cookable(d, ui.have)), L["you can cook now"] },
-    { tostring(leg.to - leg.from), L["points"] },
+    { tostring(toGet), L["still to get"] },
   })
   if leg.learn then
     page:section(L["Learn it first"])
@@ -312,7 +318,8 @@ local function showLeg(leg)
   end
   page:section(L["Skill"])
   page:row(L["Colours"], ui.thresholds(d))
-  page:chips({ { L["Open its recipe"], function() ns.openDish(leg.spell) end } })
+  -- (a recipe still to learn has no page in the book yet)
+  if ns.knows(leg.spell) then page:chips({ { L["Open its recipe"], function() ns.openDish(leg.spell) end } }) end
 end
 
 local function refresh()

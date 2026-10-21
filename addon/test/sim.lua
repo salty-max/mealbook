@@ -413,6 +413,42 @@ for _, side in ipairs({ "Alliance", "Horde" }) do
     ns.openRoadLeg(i)
   end
 end
+-- a leg's page: its casts (about), what the bags can cook, what they still
+-- lack; its recipe's page offered only once the recipe is known (one still
+-- to learn has none in the book)
+local roadPage, openDish, opened = MealbookRoadPage, ns.openDish, {}
+ns.openDish = function(spell) table.insert(opened, spell) end
+local toLearn, offered, wrong, figures = 0, 0, 0, true
+for i = 1, 40 do
+  ns.openRoadLeg(i)
+  -- (past the last leg: the road's own page)
+  if roadPage.title.text == L["The road to 300"] then break end
+  local learn = false
+  for _, h in ipairs(roadPage.headings) do
+    if h.shown and h.text.text == L["Learn it first"] then learn = true end
+  end
+  local chip = roadPage.chipPool[1]
+  local link = chip and chip.shown and chip.text.text == L["Open its recipe"]
+  if learn then
+    toLearn = toLearn + 1
+    if link then wrong = wrong + 1 end
+  elseif link then
+    offered = offered + 1
+    chip.click()
+  end
+  local t = roadPage.tiles
+  if t[3] and t[3].shown then
+    figures = figures and t[1].value.text:match("^~%d+$") and t[3].label.text == L["still to get"]
+  end
+end
+ns.openDish = openDish
+local allKnown = #opened == offered
+for _, spell in ipairs(opened) do
+  allKnown = allKnown and ns.knows(spell)
+end
+check(toLearn > 0 and wrong == 0, "a recipe still to learn: no link to its page")
+check(offered > 0 and allKnown, "a known recipe: the link to its page")
+check(figures, "a leg's figures: its casts about, what the bags still lack")
 local cooking = char.skill
 char.skill = nil
 ns.openRoadLeg(1)

@@ -30,12 +30,12 @@ const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR",
 const ENGLISH = new Set(["enUS", "enGB"]);
 const BORROWS: Record<string, string> = { esMX: "esES" };
 
-// every L["..."] and plural("one", "many") of the addon's own files (the kit's copy aside: its words are
-// the kit's, translated with the addon's when they appear)
+// every L["..."] and plural("one", "many") of the addon's files, the kit's copy included (its welcome
+// page, its board, its dates speak to the player too: Yonder's way)
 function keys(): string[] {
   const found = new Set<string>();
   for (const f of readdirSync(ADDON).sort()) {
-    if (!f.endsWith(".lua") || f.startsWith("Text_") || f === "Kit.lua") continue;
+    if (!f.endsWith(".lua") || f.startsWith("Text_")) continue;
     const src = readFileSync(join(ADDON, f), "utf8");
     for (const m of src.matchAll(/\bL\["((?:[^"\\]|\\.)*)"\]/g)) found.add(m[1].replace(/\\"/g, '"').replace(/\\n/g, "\n"));
     // (and the kit's plural("one", "many"): both forms are words to translate)
@@ -44,12 +44,20 @@ function keys(): string[] {
       found.add(m[2]);
     }
   }
+  // the kit's month names, read through L by K.day
+  for (const m of ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]) found.add(m);
   return [...found].sort();
 }
 
 const q = (s: string) => `"${s.replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\n/g, "\\n")}"`;
 const json = (file: string) => (existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {});
-const blanks = (s: string) => [...s.matchAll(/%%|%[0-9.]*[sdf]/g)].map((m) => m[0]).filter((b) => b !== "%%");
+// (a blank's kind, precision and order: its width is the language's, French days unpadded: "%d %s %d"
+// for "%02d %s %d"; "%.1f" stays "%.1f")
+const blanks = (s: string) =>
+  [...s.matchAll(/%%|%[0-9.]*[sdf]/g)]
+    .map((m) => m[0])
+    .filter((b) => b !== "%%")
+    .map((b) => `%${b.match(/\.\d+/)?.[0] ?? ""}${b.slice(-1)}`);
 
 // The game's own names a language's file carries, every language's whole
 // (English one of them): the cooking skill line's, Herbalism's and the

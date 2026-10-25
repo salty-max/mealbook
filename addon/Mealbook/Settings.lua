@@ -21,7 +21,7 @@ local DEFAULTS = {
   chef = 0,
   tooltips = true,
   minimapHidden = false,
-  minimapAngle = 165,
+  minimapAngle = K.MINIMAP_ANGLES.Mealbook,
   welcomed = false,
 }
 local SHARED = { "chef", "tooltips", "minimapHidden", "minimapAngle" }

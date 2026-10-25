@@ -52,7 +52,7 @@ local function refreshList()
     local first = true
     for _, spell in ipairs(known()) do
       local name = ns.dishName(spell)
-      if D.recipes[spell].chapter == chapter[1] and (q == "" or name:lower():find(q, 1, true)) then
+      if D.recipes[spell].chapter == chapter[1] and ns.kit.finds(name, q) then
         if first then
           list:gap(6)
           list:add("section", chapter[2])

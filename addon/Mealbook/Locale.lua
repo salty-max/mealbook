@@ -6,23 +6,9 @@
 local _, ns = ...
 local K = ns.kit
 
--- (is n the "one" form? English, German, Spanish: 1; French: 0 and 1)
-local PLURALS = {
-  one = function(n) return n == 1 end,
-  fr = function(n) return n == 0 or n == 1 end,
-  none = function() return false end,
-}
-
-function ns.translate(t)
-  for english, word in pairs(t.words or {}) do
-    K.L[english] = word
-  end
-  if t.plural and PLURALS[t.plural] then K.isOne = PLURALS[t.plural] end
-end
-
--- The game this is: Forever's client is a modern one (interface 1.60, 16001).
-local build = select(4, GetBuildInfo())
-ns.forever = build >= 16000 and build < 17000
+-- (the kit's: the language's plural rule, every word through it; which game
+-- this is the kit says too, ns.forever)
+function ns.translate(t) K.translate(t) end
 
 -- The game's own names in the reader's language (its Text file, from
 -- wow-data's databases): the cooking skill line's, as the client's skill

@@ -54,8 +54,10 @@ scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md   # check, tag, push; Act
   another dish named. A translation is stamped against its English.
 - Classic Era leaves out a dish its world can't teach. Forever keeps one no
   source has seen yet (`unknown`): a page when learned, never on the road.
-- `Kit.lua`, `Media/Ring.tga` and `scripts/root.ts` are the kit's copies:
-  edit addon-kit, then `bun run kit:sync`.
+- `Kit.lua`, `Media/`, `scripts/root.ts` (and `root.py`), `scripts/locales-lib.ts`,
+  `i18n/kit/` (the kit's words, translated once), `wow.yml` and `stylua.toml`
+  are the kit's copies: edit addon-kit, then `bun run kit:sync`. The addon's
+  own globals for selene are `mealbook.yml`.
 - No other addon's API, even optional. Stepping aside for a rival is fine.
 - Conventional Commits, lowercase subjects, no AI trailers. Commit locally;
   ask before any push, release or deploy. The pre-push hook wants a check

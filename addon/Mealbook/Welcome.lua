@@ -44,12 +44,7 @@ local W = K.welcome({
         get = function() return ns.option("tooltips") end,
         set = function(v) ns.setOption("tooltips", v) end,
       },
-      {
-        text = L["The book by the minimap"],
-        hint = L["Click it to open the book, or drag it around the minimap."],
-        get = function() return not ns.option("minimapHidden") end,
-        set = function(v) ns.setOption("minimapHidden", not v) end,
-      },
+      K.minimapChoice(ns.option, ns.setOption),
     }
   end,
   footnote = L["Change them any time: /mealbook settings, or a right-click on the minimap button. /mealbook opens the book."],

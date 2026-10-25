@@ -162,7 +162,7 @@ ns.on("GET_ITEM_INFO_RECEIVED", function(item, success)
 end)
 
 -- ── the parts every tab is made of ───────────────────────────────────────────
-local function query() return strtrim((book.search:GetText() or ""):lower()) end
+local function query() return ns.kit.query(book.search) end
 local function day(stamp) return K.day(stamp and stamp.at) end
 local function colourWord(name) return COLOURS[name][1] .. COLOURS[name][2] .. "|r" end
 local function colourCode(name) return COLOURS[name][1] end

@@ -215,19 +215,6 @@ local function addLine(tip, item)
   if line then tip:AddLine(line, 0.95, 0.68, 0.38, true) end
 end
 
--- The game's tooltips: the modern client's post-call for every item tooltip,
--- else the item tooltips' own hook (the game's and a chat link's).
-if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType then
-  TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(tip, data)
-    if data then addLine(tip, data.id) end
-  end)
-else
-  local function onItem(tip)
-    local _, link = tip:GetItem()
-    local item = link and tonumber(link:match("item:(%d+)"))
-    if item then addLine(tip, item) end
-  end
-  for _, tip in ipairs({ GameTooltip, ItemRefTooltip }) do
-    if tip and tip.HookScript then tip:HookScript("OnTooltipSetItem", onItem) end
-  end
-end
+-- The game's item tooltips, every one (the kit's hook: the modern client's
+-- post-call, else the tooltips' own, the game's and a chat link's).
+ns.kit.onItemTooltip(addLine)

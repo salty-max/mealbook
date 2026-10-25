@@ -1,0 +1,10 @@
+# The addon's own globals: its saved variables and its slash command
+# (selene.toml: std = "wow+mealbook"; the game's are the kit's wow.yml).
+name: mealbook
+globals:
+  MealbookChar:
+    any: true
+  MealbookSettings:
+    any: true
+  SLASH_MEALBOOK1:
+    any: true

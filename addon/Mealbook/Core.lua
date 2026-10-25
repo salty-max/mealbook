@@ -24,64 +24,23 @@ local L, D = ns.kit.L, ns.data
 ns.PREFIX = "|cffe0a050Mealbook:|r "
 
 -- Forever hides some values from addons ("secret values"): never compare one.
-ns.secret = issecretvalue or function() return false end
+ns.secret = ns.kit.secret
 
 local char
 function ns.book() return char end
 
 -- ── events ───────────────────────────────────────────────────────────────────
--- Every file listens through ns.on (an event a client doesn't know is never
--- heard), unit events through ns.onUnit. Nothing is heard before the login.
-local frame = CreateFrame("Frame")
-local listeners = {}
-
--- (one listener's error is reported, and the others still hear the event)
-local function run(fn, ...)
-  local ok, err = pcall(fn, ...)
-  if not ok then geterrorhandler()(err) end
-end
-
-frame:SetScript("OnEvent", function(_, event, ...)
-  if event == "PLAYER_LOGIN" then run(ns.login) end
-  if not char then return end
-  for _, fn in ipairs(listeners[event] or {}) do
-    run(fn, ...)
-  end
-end)
-frame:RegisterEvent("PLAYER_LOGIN")
-
-function ns.on(event, fn)
-  if not listeners[event] then
-    listeners[event] = {}
-    pcall(frame.RegisterEvent, frame, event)
-  end
-  table.insert(listeners[event], fn)
-end
-
-local unitFrame = CreateFrame("Frame")
-local unitListeners = {}
-unitFrame:SetScript("OnEvent", function(_, event, ...)
-  if not char then return end
-  for _, fn in ipairs(unitListeners[event] or {}) do
-    run(fn, ...)
-  end
-end)
-function ns.onUnit(event, unit, fn)
-  if not unitListeners[event] then
-    unitListeners[event] = {}
-    pcall(unitFrame.RegisterUnitEvent, unitFrame, event, unit)
-  end
-  table.insert(unitListeners[event], fn)
-end
+-- Every file listens through ns.on (the kit's events: each listener on its
+-- own, an event a client doesn't know never heard), unit events through
+-- ns.onUnit (a frame a unit), nothing before the login has opened this
+-- character's book.
+local events = ns.kit.events({ login = function() ns.login() end, ready = function() return char ~= nil end })
+ns.on, ns.onUnit = events.on, events.onUnit
 
 -- ── the dishes ───────────────────────────────────────────────────────────────
 -- A dish's facts (Recipes_<game>.lua), its name and the item it makes, by id.
 function ns.recipe(spell) return D.recipes[spell] end
-function ns.dishName(spell)
-  local name = GetSpellInfo and GetSpellInfo(spell)
-  if not name and C_Spell and C_Spell.GetSpellName then name = C_Spell.GetSpellName(spell) end
-  return name or ("#" .. spell)
-end
+function ns.dishName(spell) return ns.kit.spellName(spell, "#" .. spell) end
 
 -- The dish an item is (a window's line names the item made where it gives no
 -- recipe link).

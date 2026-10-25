@@ -60,7 +60,7 @@ local function refreshList(open, auction)
     local first = true
     for _, spell in ipairs(spells) do
       local name = ns.dishName(spell)
-      if q == "" or name:lower():find(q, 1, true) then
+      if ns.kit.finds(name, q) then
         if heading and first then
           list:gap(6)
           list:add("section", heading)

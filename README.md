@@ -30,7 +30,7 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
 the road, `/mealbook settings` its page in the game's Options: whose pages
 the book shows, the ingredients' tooltip line, the minimap button.
 
-In English and French. German and the other languages are next.
+In English, French and German. Spanish and the other languages are next.
 
 ## Building
 

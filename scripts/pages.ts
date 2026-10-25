@@ -39,7 +39,7 @@ const ROOT = join(import.meta.dir, "..");
 const ADDON = join(ROOT, "addon", "Mealbook");
 export const CHEFS = ["kendor", "eunice"] as const;
 const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
-const TRANSLATED = ["frFR"];
+const TRANSLATED = ["frFR", "deDE"];
 // (the dozen dishes a chef has more to say about: cookbook-voices.md)
 export const SIGNATURE = new Set([2543, 2542, 2795, 15906, 15910, 15865, 15933, 22761, 24801, 25659, 1262978, 1225763, 1225762]);
 

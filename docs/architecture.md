@@ -137,6 +137,9 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
 ## Languages
 
 - Languages: Mealbook's own words through `L` (`i18n/<locale>/words.json`,
-  `bun run locales`): English and French (interface and pages), the other
-  clients English until translated. The dishes', ingredients' and
+  `bun run locales`): English, French and German (interface and pages;
+  German flagged, a first translation, `i18n/deDE/meta.json`), the other
+  clients English until translated. The chefs speak to the reader as the
+  game's people do: "vous" in French, "Ihr" in German (the interface says
+  "du"). The dishes', ingredients' and
   recipes' names are the game's, by id, in the client's language.

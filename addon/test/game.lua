@@ -3,7 +3,7 @@
 -- name, Forever's professions by their id), the recipes the character knows
 -- (IsPlayerSpell), the cooking window's lines (Classic Era's TradeSkillUI
 -- calls, Forever's C_TradeSkillUI), the dishes' and items' names by id, the
--- bags. FOREVER=1 plays Forever's client, LOCALE=frFR a French one.
+-- bags. FOREVER=1 plays Forever's client, LOCALE=frFR a French one (deDE, esES, esMX the others).
 local G = dofile("addon/test/wowmock.lua")
 local state, FOREVER, LOCALE, obj = G.state, G.FOREVER, G.LOCALE, G.obj
 if FOREVER then
@@ -13,15 +13,48 @@ else
   G.invalidEvents.NEW_RECIPE_LEARNED = true
 end
 
-ERR_LEARN_RECIPE_S = LOCALE == "frFR" and "Vous avez appris à fabriquer un nouvel objet : %s."
-  or "You have learned how to create a new item: %s."
+-- (the client's own words, in each language the sim plays)
+local WORDS = {
+  frFR = {
+    learned = "Vous avez appris à fabriquer un nouvel objet : %s.",
+    cooking = "Cuisine",
+    secondary = "Métiers secondaires",
+    fishing = "Pêche",
+    languages = "Langues",
+  },
+  deDE = {
+    learned = "Ihr habt gelernt, einen neuen Gegenstand herzustellen: %s.",
+    cooking = "Kochkunst",
+    secondary = "Sekundäre Fertigkeiten",
+    fishing = "Angeln",
+    languages = "Sprachen",
+  },
+  esES = {
+    learned = "Has aprendido a hacer un nuevo objeto: %s.",
+    cooking = "Cocina",
+    secondary = "Habilidades secundarias",
+    fishing = "Pesca",
+    languages = "Idiomas",
+  },
+}
+WORDS.esMX = WORDS.esES
+local W = WORDS[LOCALE]
+  or {
+    learned = "You have learned how to create a new item: %s.",
+    cooking = "Cooking",
+    secondary = "Secondary Skills",
+    fishing = "Fishing",
+    languages = "Languages",
+  }
+
+ERR_LEARN_RECIPE_S = W.learned
 
 -- ── cooking ──────────────────────────────────────────────────────────────────
 -- state.skill: { rank, max } (nil: no cooking); state.known[spell]: the
 -- recipes the character has; state.window: the cooking window open, its lines
 -- (the known recipes, by the book's own spells and their items)
 state.known = {}
-local SKILL_NAME = LOCALE == "frFR" and "Cuisine" or "Cooking"
+local SKILL_NAME = W.cooking
 if FOREVER then
   -- (Forever: the professions, cooking fifth, by its skill line's id)
   function GetProfessions() return nil, nil, nil, nil, state.skill and 7 or nil end
@@ -44,10 +77,10 @@ else
   -- (Classic Era: the skill list, by its name in the client's language)
   function GetNumSkillLines() return 3 end
   function GetSkillLineInfo(i)
-    if i == 1 then return LOCALE == "frFR" and "Métiers secondaires" or "Secondary Skills", true end
+    if i == 1 then return W.secondary, true end
     if i == 2 and state.skill then return SKILL_NAME, false, nil, state.skill.rank, 0, 0, state.skill.max end
-    if i == 3 then return LOCALE == "frFR" and "Pêche" or "Fishing", false, nil, 20, 0, 0, 75 end
-    return LOCALE == "frFR" and "Langues" or "Languages", true
+    if i == 3 then return W.fishing, false, nil, 20, 0, 0, 75 end
+    return W.languages, true
   end
   function GetTradeSkillLine()
     if not state.window then return "UNKNOWN", 0, 0 end

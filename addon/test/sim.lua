@@ -1,7 +1,7 @@
 -- Mealbook played through: a cook's first login (the recipes known taken
 -- quietly), the cooking window read, a recipe learned from its item, dishes
 -- cooked, the road to 300 from the skill now, and the book opened on each
--- tab. FOREVER=1, LOCALE=frFR: those clients.
+-- tab. FOREVER=1, LOCALE=frFR (or deDE): those clients.
 local G = dofile("addon/test/game.lua")
 local s, fire, ns = G.state, G.fire, G.ns
 local count = 0
@@ -236,6 +236,14 @@ if G.LOCALE == "frFR" then
     check(p:find("Hurlevent"), "Forever: Hurlevent, as its client names Stormwind")
   else
     check(p:find("Stormwind") and not p:find("Hurlevent"), "Classic Era: Stormwind, as its French client names it")
+  end
+elseif G.LOCALE == "deDE" then
+  -- (German: Forever writes Sturmwind, Classic Era's client still Stormwind)
+  local p = ns.pageText("kendor", 2795)[1]
+  if G.FOREVER then
+    check(p:find("Sturmwind"), "Forever: Sturmwind, as its German client names Stormwind")
+  else
+    check(p:find("Stormwind") and not p:find("Sturmwind"), "Classic Era: Stormwind, as its German client names it")
   end
 end
 

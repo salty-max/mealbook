@@ -83,13 +83,13 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
 
 - `recipes/<chef>/<chapter>.md`: the chefs' pages, one `## <spell> <name>`
   section a dish, every dish of both games for both chefs (132 each):
-  English, plain ASCII. Their French in `i18n/frFR/recipes/<chef>/`, the
-  same sections, stamped against the English they were translated from
-  (`i18n/frFR/recipes-stamp.json`). `scripts/pages.ts` checks them (no
+  English, plain ASCII. Their translations in
+  `i18n/<locale>/recipes/<chef>/` (French, German), the same sections, stamped against the English they were translated from
+  (`i18n/<locale>/recipes-stamp.json`). `scripts/pages.ts` checks them (no
   semicolons, the lengths: 70 to 100 words, 130 to 150 for the signature
   dishes, a fifth more in a translation; an ingredient of another dish
   named on a page; a translation whose English changed since, `--stamp`
   once read) and writes `Pages_<locale>.lua` (`ns.pages[chef][spell]`, and
-  `ns.classicNames`: the French text uses Forever's place names,
-  `i18n/frFR/classic-names.json` swaps Classic Era's back in on that
+  `ns.classicNames`: a translation uses Forever's place names,
+  `i18n/<locale>/classic-names.json` swaps Classic Era's back in on that
   client). The chef is the character's faction's.

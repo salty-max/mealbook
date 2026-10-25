@@ -179,13 +179,34 @@ if (import.meta.main) {
     const theirs = reagentNames(lender, itemIds);
     const ours = reagentNames(locale, itemIds);
     const only = [...theirs].flatMap(([id, ns]) => ns.filter((n) => !(ours.get(id) ?? []).some((o) => plain(o) === plain(n))));
+    const escape = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const said = (p: Page, n: string) => problems.push(`${p.file}: ${p.spell}: "${n}" is ${lender}'s name, ${locale}'s client writes it otherwise (i18n/${locale}/regional.json)`);
     for (const p of pages.values()) {
       const text = plain(p.paragraphs.join(" "));
-      for (const n of only) {
-        const re = new RegExp(`(^|[^\\p{L}])${plain(n).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=$|[^\\p{L}])`, "u");
-        if (re.test(text)) problems.push(`${p.file}: ${p.spell}: "${n}" is ${lender}'s name, ${locale}'s client writes it otherwise (i18n/${locale}/regional.json)`);
-      }
+      for (const n of only) if (new RegExp(`(^|[^\\p{L}])${escape(plain(n))}(?=$|[^\\p{L}])`, "u").test(text)) said(p, n);
+      // (places as written, a capital and all: "la masacre" is a word too)
+      const raw = p.paragraphs.join(" ");
+      for (const n of placesOnly(lender, locale)) if (new RegExp(`(^|[^\\p{L}])${escape(n)}(?=$|[^\\p{L}])`, "u").test(raw)) said(p, n);
     }
+  };
+  // The places the lender's client names one way and the borrower's another,
+  // leaving out a name the borrower's client also gives some place or faction
+  // (esES's La Masacre is Dire Maul on both, and The Maul's on esES alone).
+  const placeCache = new Map<string, string[]>();
+  const placesOnly = (lender: string, locale: string): string[] => {
+    const key = `${lender}>${locale}`;
+    if (placeCache.has(key)) return placeCache.get(key)!;
+    const out = new Set<string>();
+    for (const game of ["classic", "forever"] as const) {
+      const db = openDb(game);
+      const theirs = db.query("SELECT DISTINCT name FROM name WHERE kind IN ('area', 'wmo_area') AND locale = ?").all(lender) as { name: string }[];
+      const ours = new Set((db.query("SELECT DISTINCT name FROM name WHERE kind IN ('area', 'wmo_area', 'faction') AND locale = ?").all(locale) as { name: string }[]).map((r) => r.name));
+      for (const { name } of theirs) if (!ours.has(name) && name.length > 3) out.add(name);
+      db.close();
+    }
+    const list = [...out];
+    placeCache.set(key, list);
+    return list;
   };
 
   const files: Record<string, string> = {};

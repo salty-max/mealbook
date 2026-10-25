@@ -184,10 +184,7 @@ end
 -- Who and where (Recipes_<game>.lua's npcs and quests): a zone's name is the
 -- client's, by its id; an npc's and a quest's the Text file's. A quest the
 -- language has no title for: none (its giver named instead).
-local function zoneName(area)
-  local name = area and C_Map and C_Map.GetAreaInfo and C_Map.GetAreaInfo(area)
-  return type(name) == "string" and name ~= "" and name or nil
-end
+local function zoneName(area) return K.areaName(area) end
 local function npcName(id) return ns.npcNames and ns.npcNames[id] or "" end
 local function questName(id) return ns.questNames and ns.questNames[id] end
 -- "Stormwind City 75, 37": its zone and a spot there (a zone alone when the

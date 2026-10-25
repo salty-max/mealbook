@@ -50,7 +50,7 @@ The hunts tab counts how many you've found and when the next one opens.
 
 ## Achievements
 
-The book keeps its own achievements: each cooking rank trained and 300 reached, the recipes you know, the dishes you've cooked, your first dish of each kind and the hunts you've found. Each one earned comes with the game's fanfare and a banner among its alerts, and the book remembers when and at what level.
+The book keeps its own achievements: each cooking rank trained and 300 reached, the recipes you know, the dishes you've cooked, your first dish of each kind and the hunts you've found. Each one earned comes with the game's fanfare and its own achievement alert (a switch in the settings turns the alert off), and the book remembers when and at what level.
 
 ## Compatibility
 
@@ -62,7 +62,7 @@ The dishes, ingredients and places are the game's own, in your client's language
 
 Open the book with `/mealbook` or the minimap button. The welcome page appears once per character and can be reopened with `/mealbook welcome`.
 
-Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's within the same game, or use `/mealbook export` and `/mealbook import CODE`.
+Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the achievements' alert, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's within the same game, or use `/mealbook export` and `/mealbook import CODE`.
 
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.

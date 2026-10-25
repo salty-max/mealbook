@@ -6,7 +6,7 @@
 -- button; the welcome page (Welcome.lua) offers them too.
 --
 --   MealbookSettings.profiles["Name - Realm"] = { chef, tooltips,
---     minimapHidden, minimapAngle, welcomed }
+--     achievementToast, minimapHidden, minimapAngle, welcomed }
 --   (the test builds' account-wide chef and tooltips: each character's new
 --   profile seeded with them)
 local _, ns = ...

@@ -1,4 +1,4 @@
--- addon-kit 8dd400e: a copy (kit:sync); edit the addon-kit repository's wowmock.lua instead
+-- addon-kit 01a145f: a copy (kit:sync); edit the addon-kit repository's wowmock.lua instead
 -- A small game for an addon's tests, the family's one (the kit's copy,
 -- kit:sync: edit addon-kit's wowmock.lua): frames, events and timers as the
 -- game runs them, the character (a dwarf warrior of the Alliance, level 12),
@@ -345,6 +345,41 @@ function GetRealZoneText() return state.zone or "Zone 1" end
 function GetInstanceInfo() return "World", "none", 0, "", 5, 0, false, state.map or 0 end
 
 G.obj = obj
+
+-- The game's Options (its Settings panel): what the addon registers kept,
+-- G.panel.settings[VARIABLE] = { name, default, get, set } (a box, a slider,
+-- a choice and its options), G.panel.opened (the page opened).
+local panel = { settings = {}, opened = nil }
+G.panel = panel
+MinimalSliderWithSteppersMixin = { Label = { Right = 2 } }
+Settings = {
+  VarType = { Boolean = "boolean", Number = "number", String = "string" },
+  RegisterVerticalLayoutCategory = function(name)
+    panel.name = name
+    return { GetID = function() return 42 end }
+  end,
+  RegisterProxySetting = function(_, variable, _, name, default, get, set)
+    local s = { variable = variable, name = name, default = default, get = get, set = set }
+    panel.settings[variable] = s
+    return s
+  end,
+  CreateCheckbox = function() end,
+  CreateDropdown = function(_, setting, options) setting.options = options end,
+  CreateSliderOptions = function(min, max, step)
+    return { min = min, max = max, step = step, SetLabelFormatter = function(self, _, fn) self.format = fn end }
+  end,
+  CreateSlider = function(_, setting, options) setting.slider = options end,
+  CreateControlTextContainer = function()
+    local data = {}
+    return {
+      Add = function(_, v, l) table.insert(data, { value = v, label = l }) end,
+      GetData = function() return data end,
+    }
+  end,
+  RegisterAddOnCategory = function() panel.registered = true end,
+  OpenToCategory = function(id) panel.opened = id end,
+  NotifyUpdate = function() end,
+}
 
 -- ── the addon ────────────────────────────────────────────────────────────────
 -- Its files as the game loads them (the game's TOC, in its order, the

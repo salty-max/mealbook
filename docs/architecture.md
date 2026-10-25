@@ -25,17 +25,19 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   quietly; the cooking window's lines, Classic Era's TradeSkillUI calls and
   Forever's C_TradeSkillUI; Forever's NEW_RECIPE_LEARNED; the game's own
   line when a recipe is learned, ERR_LEARN_RECIPE_S), a dish cooked
-  (UNIT_SPELLCAST_SUCCEEDED), `/mealbook` (`road`, `chef`, `tooltips`,
-  `minimap`, `settings`, `welcome`, `export`, `import CODE`: the code's
-  letters as typed).
+  (UNIT_SPELLCAST_SUCCEEDED), `/mealbook`, the kit's command (`road`,
+  `chef`, `tooltips`, `minimap`, `settings`, `welcome`, `export`, `import
+  CODE`: the code's letters as typed; an unknown word prints the usage, the
+  replies capitalised).
 - `Settings.lua`: each character's settings, the kit's profiles (a profile
   "Name - Realm" in MealbookSettings, copied from another character of this
   game or a code `MB1:...`, `/mealbook export`, `/mealbook import CODE`):
   the chef (0 the side's, 1 Kendor, 2 Eunice: a number, as the codes carry),
-  the pantry's tooltip line, the minimap button and its place (165 degrees,
+  the achievements' alert (`achievementToast`, a `v` in the code), the
+  pantry's tooltip line, the minimap button and its place (165 degrees,
   clear of the siblings'); the test builds' account-wide chef and tooltips
-  taken in at the login. The Options page (`/mealbook settings`, a
-  right-click on the button). `Welcome.lua`: the kit's welcome page, once
+  taken in at the login. The Options page (the kit's `K.options`:
+  `/mealbook settings`, a right-click on the button). `Welcome.lua`: the kit's welcome page, once
   per character (`/mealbook welcome`). `Minimap.lua`: the book's button, as
   the siblings'.
 - `Hunts.lua`: a recipe's sources for the character's side (`H.mine()`,
@@ -62,7 +64,9 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   has no feasts or fires), the hunts found (one, five, all). Checked at
   each recipe learned, dish cooked, point or rank (`ns.progressed`, from
   Core), quietly at the login (`retro`); earned: the game's fanfare, a line
-  in chat, the kit's banner among the game's alerts (a click opens it).
+  in chat, the game's own achievement alert behind a switch
+  (`achievementToast`; the kit's banner where a client lacks the alert; a
+  click opens the book).
 - `Pantry.lua`: where an ingredient comes from, for the cook (`P.sources`:
   the sellers of its side, the creatures it may hunt (none of its own
   side's, half the likeliest's chance at least), the droppers and zones the
@@ -121,8 +125,9 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
 
 ## Tests
 
-- `addon/test/game.lua` (the addon's files loaded as its TOC lists them;
-  Palaver's frames, events and timers; a zone's name by its id, the
+- `addon/test/game.lua` (the kit's game, `wowmock.lua`: frames, events,
+  timers, the character, the map, the Options panel; then Mealbook's own
+  world and the addon loaded as its TOC lists it: a zone's name by its id, the
   faction (`state.faction`); the skill as
   each client tells it, the recipes known, the cooking window, the dishes'
   names by id, the bags) and `addon/test/sim.lua`: a first login, the

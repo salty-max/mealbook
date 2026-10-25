@@ -16,9 +16,11 @@ painted gold and navy style.
 
 Releases (prepared 19 October 2026, as Palaver's): `.pkgmeta` (the
 BigWigs packager: addon/Mealbook alone), `.github/workflows/release.yml` (a
-tag vX.Y.Z: the sims, the package checked to be the folder, then GitHub,
-CurseForge and Wago; HOLD_STORES=true holds the stores), `ci.yml` (every
-push: locales, lint, the three sims, the package; the recipes' and pages'
+tag vX.Y.Z: the tag checked as a release's, `bun run check:ci`, the package
+checked to be the folder, each store's token and the TOCs' ids, then
+GitHub, CurseForge and Wago; HOLD_STORES=true holds the stores; by hand,
+`-f stores=curseforge|wago` retries one store alone), `ci.yml` (every
+push: `bun run check:ci` (locales, lint, the three sims, the package); the recipes' and pages'
 checks need wow-data's databases, so the daily job runs them),
 `game-data.yml` (daily: recipes, pages, locales from wow-data's pins),
 `scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md`. The store page

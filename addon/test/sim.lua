@@ -69,8 +69,36 @@ check(earned["rank-75"] and earned["rank-75"].retro, "an achievement already des
 check(not said(L["Achievement earned: %s."]:format("|cffffd100[" .. L["Apprentice Cook"] .. "]|r")), "without a word")
 check(earned["first-meat"] and not earned["first-meat"].retro, "the first roast cooked: earned")
 check(said(L["Achievement earned: %s."]:format("|cffffd100[" .. L["First Roast"] .. "]|r")), "said in chat")
-check(MealbookBanner1 and MealbookBanner1:IsShown(), "and its banner among the game's alerts")
+check(
+  MealbookBanner1 and MealbookBanner1:IsShown(),
+  "and on the game's alert (here its banner stand-in: this test game has none)"
+)
 check(not earned["first-fish"], "a chapter not cooked yet: not earned")
+-- the alert's switch off: the fanfare and the line in chat still, no banner
+do
+  local fish
+  for _, spell in ipairs(ns.data.order) do
+    if not fish and ns.data.recipes[spell].chapter == "fish" then fish = spell end
+  end
+  ns.setOption("achievementToast", false)
+  for i = 1, 10 do
+    local b = _G["MealbookBanner" .. i]
+    if b then b:Hide() end
+  end
+  s.printed = {}
+  s.known[fish] = true
+  fire("UNIT_SPELLCAST_SUCCEEDED", "player", "cast-fish", fish)
+  local shown = false
+  for i = 1, 10 do
+    local b = _G["MealbookBanner" .. i]
+    if b and b:IsShown() then shown = true end
+  end
+  check(
+    earned["first-fish"] and said(L["Achievement earned: %s."]:match("^(.-)%%s")) and not shown,
+    "the alert's switch off: the line in chat, no banner"
+  )
+  ns.setOption("achievementToast", true)
+end
 local feasts = false
 for _, m in ipairs(ns.milestones) do
   if m.id == "first-feast" then feasts = true end
@@ -431,8 +459,12 @@ check(
   said(L["That isn't a %s settings code (%s export makes one)."]:format("Mealbook", "/mealbook")),
   "a code that isn't one: said so, and how to make one"
 )
+local open = MealbookFrame and MealbookFrame:IsShown()
 SlashCmdList.MEALBOOK("nonsense")
-check(said("/mealbook road"), "/mealbook nonsense: the usage, the book left closed")
+check(
+  said("/mealbook road") and (MealbookFrame and MealbookFrame:IsShown()) == open,
+  "/mealbook nonsense: the usage, the book left as it was"
+)
 SlashCmdList.MEALBOOK("welcome")
 check(MealbookWelcome and MealbookWelcome:IsShown(), "/mealbook welcome")
 MealbookWelcome:Hide()

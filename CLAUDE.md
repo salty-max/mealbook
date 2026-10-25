@@ -26,6 +26,7 @@ one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 
 ```bash
 bun run check        # kit, saved ids, recipes, languages, pages, lint, the sim on three clients, TOCs
+bun run check:ci     # what CI and the release gate run: no family folder (the kit, the saved ids and the generators' checks aside)
 bun run ids          # every table saved-ids.json lists keeps the ids it had at the fork point from origin/main (addon-kit's ids.ts)
 bun scripts/root.ts --run addon-kit/q.ts check -- bun run check   # the same, quiet, stamping the tree for the push
 bun run package      # dist/Mealbook-<version>.zip for a test in the game
@@ -54,7 +55,7 @@ scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md   # check, tag, push; Act
   another dish named. A translation is stamped against its English.
 - Classic Era leaves out a dish its world can't teach. Forever keeps one no
   source has seen yet (`unknown`): a page when learned, never on the road.
-- `Kit.lua`, `Media/`, `scripts/root.ts` (and `root.py`), `scripts/locales-lib.ts`,
+- `Kit.lua`, `Media/`, `scripts/root.ts` (and `root.py`), `scripts/locales-lib.ts`, `scripts/package-lib.ts`,
   `i18n/kit/` (the kit's words, translated once), `wow.yml`, `stylua.toml` and
   `addon/test/wowmock.lua` (the tests' game) are the kit's copies: edit addon-kit, then `bun run kit:sync`. The addon's
   own globals for selene are `mealbook.yml`.

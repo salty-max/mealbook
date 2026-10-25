@@ -55,8 +55,8 @@ scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md   # check, tag, push; Act
 - Classic Era leaves out a dish its world can't teach. Forever keeps one no
   source has seen yet (`unknown`): a page when learned, never on the road.
 - `Kit.lua`, `Media/`, `scripts/root.ts` (and `root.py`), `scripts/locales-lib.ts`,
-  `i18n/kit/` (the kit's words, translated once), `wow.yml` and `stylua.toml`
-  are the kit's copies: edit addon-kit, then `bun run kit:sync`. The addon's
+  `i18n/kit/` (the kit's words, translated once), `wow.yml`, `stylua.toml` and
+  `addon/test/wowmock.lua` (the tests' game) are the kit's copies: edit addon-kit, then `bun run kit:sync`. The addon's
   own globals for selene are `mealbook.yml`.
 - No other addon's API, even optional. Stepping aside for a rival is fine.
 - Conventional Commits, lowercase subjects, no AI trailers. Commit locally;

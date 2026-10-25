@@ -568,8 +568,8 @@ G.advance(0.5)
 check(char.cooked[2540] == 1, "a dish cooked while the book is open")
 -- (an item's name told late: the page again, but only for one the book shows
 -- and the game found; one it never knows would ask again at every page)
-local redrawn, refresh = 0, ns.refresh
-ns.refresh = function(...)
+local redrawn, refresh = 0, ns.kitBook.refresh
+ns.kitBook.refresh = function(...)
   redrawn = redrawn + 1
   return refresh(...)
 end
@@ -580,6 +580,6 @@ check(redrawn == 0, "an item the game never finds, or not the book's: no page ag
 fire("GET_ITEM_INFO_RECEIVED", 2672, true)
 G.advance(0.5)
 check(redrawn == 1, "an ingredient's name in: the page again")
-ns.refresh = refresh
+ns.kitBook.refresh = refresh
 
 io.write(("Mealbook: %d checks passed (%s, %s).\n"):format(count, G.LOCALE, G.FOREVER and "Forever" or "Classic Era"))

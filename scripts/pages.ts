@@ -16,7 +16,9 @@
  *     isn't read as "Bear Meat"
  *   - a translation stamped with its English (i18n/<locale>/recipes-stamp.json,
  *     --stamp): an English page changed since is said
- * esMX reads esES's pages, its own names swapped in (i18n/esMX/regional.json).
+ * esMX reads esES's pages, its own names swapped in (i18n/esMX/regional.json):
+ * an ingredient or a dish still named as esES's client names it, where esMX's
+ * writes it otherwise, is refused.
  * A translation names places as Forever's client does; Classic Era's names
  * where they differ (i18n/<locale>/classic-names.json, Hurlevent: Stormwind)
  * go in the Pages file, swapped in on Classic Era by the book.
@@ -169,6 +171,23 @@ if (import.meta.main) {
   };
   for (const chef of CHEFS) verify("enUS", chef, english[chef], false);
 
+  // A borrowed page still writing a name the way the lender's client does,
+  // where its own client writes it otherwise: an ingredient or a dish
+  // regional.json doesn't swap yet (Kebab de lobo salpimentado: sazonado).
+  const itemIds = [...new Set([...reagentIds, ...[...all.values()].map((d) => d.item)])];
+  const unswapped = (locale: string, lender: string, chef: string, pages: Map<number, Page>) => {
+    const theirs = reagentNames(lender, itemIds);
+    const ours = reagentNames(locale, itemIds);
+    const only = [...theirs].flatMap(([id, ns]) => ns.filter((n) => !(ours.get(id) ?? []).some((o) => plain(o) === plain(n))));
+    for (const p of pages.values()) {
+      const text = plain(p.paragraphs.join(" "));
+      for (const n of only) {
+        const re = new RegExp(`(^|[^\\p{L}])${plain(n).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=$|[^\\p{L}])`, "u");
+        if (re.test(text)) problems.push(`${p.file}: ${p.spell}: "${n}" is ${lender}'s name, ${locale}'s client writes it otherwise (i18n/${locale}/regional.json)`);
+      }
+    }
+  };
+
   const files: Record<string, string> = {};
   for (const locale of LOCALES) {
     let pages = english;
@@ -185,6 +204,7 @@ if (import.meta.main) {
       for (const chef of CHEFS) {
         const mine = new Map([...read(join(ROOT, "i18n", from, "recipes", chef))].map(([s, p]) => [s, regionalise(p)]));
         verify(locale, chef, mine, true);
+        if (from !== locale) unswapped(locale, from, chef, mine);
         // (a page not translated yet: its English)
         pages[chef] = new Map([...english[chef]].map(([s, p]) => [s, mine.get(s) ?? p]));
         for (const s of mine.keys()) {

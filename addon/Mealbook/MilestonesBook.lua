@@ -5,9 +5,7 @@
 -- far along it is). Achievements: Milestones.lua.
 local _, ns = ...
 local K, L = ns.kit, ns.kit.L
-local book, panel, board
 ns.milestoneRows = {} -- (for the tests)
-local picked -- (one opened from its banner: picked out, in view)
 
 local GROUPS = {
   { "ranks", L["Ranks"], ns.milestoneIcons.ranks, "all" },
@@ -16,53 +14,14 @@ local GROUPS = {
   { "firsts", L["Firsts"], ns.milestoneIcons.firsts, "all" },
   { "hunts", L["Hunts"], ns.milestoneIcons.hunts, "all" },
 }
-local FIGURES = { { "all", L["earned"] } }
 
-local function items()
-  local out = {}
-  for _, m in ipairs(ns.milestones) do
-    if ns.milestoneVisible(m) then
-      table.insert(out, {
-        id = m.id,
-        group = m.group,
-        title = m.title,
-        text = m.text,
-        earned = ns.earnedMilestone(m.id),
-        progress = m.progress,
-      })
-    end
-  end
-  return out
-end
-
-local function refresh()
-  local n, all = ns.milestoneCount()
-  book.count:SetText(L["%d of %d achievements"]:format(n, all))
-  board:refresh(picked)
-end
-
-ns.addTab(ns.TAB.milestones, {
-  whole = true,
-  build = function(b)
-    book = b
-    panel = K.panel(book)
-    panel:SetPoint("TOPLEFT", book.left, "TOPLEFT")
-    panel:SetPoint("BOTTOMRIGHT", book.sheet, "BOTTOMRIGHT")
-    board = K.board({
-      parent = panel,
-      name = "MealbookMilestones",
-      groups = GROUPS,
-      figures = FIGURES,
-      items = items,
-      rows = ns.milestoneRows,
-    })
-  end,
-  show = function(n) panel:SetShown(n == ns.TAB.milestones) end,
-  refresh = refresh,
-})
+-- (the kit's tab: K.deedsTab, its board over both panels and the count)
+local tab =
+  K.deedsTab(ns.deeds, { name = "MealbookMilestones", groups = GROUPS, rows = ns.milestoneRows, n = ns.TAB.milestones })
+ns.addTab(ns.TAB.milestones, tab.tab)
 
 -- Open the book at the achievements, one of them picked out.
 function ns.openMilestones(id)
-  picked = id
+  tab:pick(id)
   ns.openTab(ns.TAB.milestones)
 end

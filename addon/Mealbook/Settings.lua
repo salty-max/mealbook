@@ -22,12 +22,13 @@ local DEFAULTS = {
   tooltips = true,
   minimapHidden = false,
   minimapAngle = K.MINIMAP_ANGLES.Mealbook,
+  achievementToast = true,
   welcomed = false,
 }
-local SHARED = { "chef", "tooltips", "minimapHidden", "minimapAngle" }
+local SHARED = { "chef", "tooltips", "minimapHidden", "minimapAngle", "achievementToast" }
 ns.CHEF_CHOICES = { [0] = false, [1] = "kendor", [2] = "eunice" }
 
--- The profiles: a code "MB1:c0:t1:h0:a165".
+-- The profiles: a code "MB1:c0:t1:h0:a165:v1".
 local P = K.profiles({
   saved = function()
     if type(MealbookSettings) ~= "table" then MealbookSettings = {} end
@@ -35,7 +36,7 @@ local P = K.profiles({
   end,
   defaults = DEFAULTS,
   shared = SHARED,
-  letters = { chef = "c", tooltips = "t", minimapHidden = "h", minimapAngle = "a" },
+  letters = { chef = "c", tooltips = "t", minimapHidden = "h", minimapAngle = "a", achievementToast = "v" },
   tag = "MB1",
   changed = function(key)
     if key == "minimapHidden" or key == "minimapAngle" then
@@ -59,62 +60,40 @@ end
 function ns.option(key) return P:get(key) end
 function ns.setOption(key, value) P:set(key, value) end
 
-local category
+-- The page in the game's Options (the kit's: K.options).
+local O
 
 function ns.createSettingsPanel()
-  if category or not (Settings and Settings.RegisterVerticalLayoutCategory) then return end
-  category = Settings.RegisterVerticalLayoutCategory("Mealbook")
-
-  local chef = Settings.RegisterProxySetting(
-    category,
-    "MEALBOOK_CHEF",
-    Settings.VarType.Number,
+  if O then return end
+  O = K.options({
+    title = "Mealbook",
+    key = "MEALBOOK",
+    get = ns.option,
+    set = ns.setOption,
+    defaults = DEFAULTS,
+    profiles = P,
+    slash = "/mealbook",
+    prefix = ns.PREFIX,
+  })
+  O:choice(
+    "chef",
     L["The chef's pages"],
-    DEFAULTS.chef,
-    function() return ns.option("chef") end,
-    function(value) ns.setOption("chef", value) end
+    L["Whose pages the book shows above each dish: your side's chef, or the other one."],
+    function() return { { 0, L["Your side's chef"] }, { 1, ns.chefName("kendor") }, { 2, ns.chefName("eunice") } } end
   )
-  Settings.CreateDropdown(category, chef, function()
-    local options = Settings.CreateControlTextContainer()
-    options:Add(0, L["Your side's chef"])
-    options:Add(1, ns.chefName("kendor"))
-    options:Add(2, ns.chefName("eunice"))
-    return options:GetData()
-  end, L["Whose pages the book shows above each dish: your side's chef, or the other one."])
-
-  local function checkbox(key, name, tooltip, invert)
-    invert = invert or false
-    local setting = Settings.RegisterProxySetting(
-      category,
-      "MEALBOOK_" .. key:upper(),
-      Settings.VarType.Boolean,
-      name,
-      not DEFAULTS[key] == invert,
-      function() return ns.option(key) ~= invert end,
-      function(value) ns.setOption(key, value ~= invert) end
-    )
-    Settings.CreateCheckbox(category, setting, tooltip)
-  end
-  checkbox(
+  O:check(
     "tooltips",
     L["Dishes on ingredients' tooltips"],
     L["An ingredient's tooltip names the dishes you know it cooks into."]
   )
-  checkbox("minimapHidden", L["Minimap button"], L["The book by the minimap: click to open it, drag to move it."], true)
-
-  -- Another character's settings (of this game), for this one.
-  K.copySetting(
-    category,
-    "MEALBOOK_COPYFROM",
-    P,
-    L["Another character's choices, for this one (of this game: Classic and Forever keep their own). From elsewhere: /mealbook export there, then /mealbook import CODE here."],
-    function(other) print(ns.PREFIX .. L["%s's settings copied."]:format(other)) end
+  O:check(
+    "achievementToast",
+    L["Alert for achievements"],
+    L["Show each achievement earned in the game's achievement alert. A click on it opens the achievements."]
   )
-
-  Settings.RegisterAddOnCategory(category)
+  O:check("minimapHidden", L["Minimap button"], L["The book by the minimap: click to open it, drag to move it."], true)
+  O:copy()
+  O:done()
 end
 
-function ns.openSettings()
-  if category then Settings.OpenToCategory(category:GetID()) end
-  return category ~= nil
-end
+function ns.openSettings() return O ~= nil and O:open() end

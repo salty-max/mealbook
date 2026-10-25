@@ -4,22 +4,48 @@
 -- this game has, the hunts found. Each character earns its own, and each
 -- remembers when and at what level:
 --   MealbookChar.milestones[id] = { at, level, retro }
--- Earned as the game's own achievements are: its fanfare, a banner among its
--- alerts (the kit's), a line in chat. Those already deserved when the book
+-- Earned as the game's own achievements are: its fanfare, its own alert
+-- (behind a switch of the options: achievementToast), a line in chat. Those already deserved when the book
 -- first looks (a cook from before milestones, at the login) are recorded
 -- quietly.
 local _, ns = ...
 local K, L, D = ns.kit, ns.kit.L, ns.data
 local ICON = "Interface\\AddOns\\Mealbook\\Media\\Logo"
 
-local list = {}
-ns.milestones = list
-ns.milestoneById = {}
-local function add(group, id, title, text, progress, visible)
-  local m = { group = group, id = id, title = title, text = text, progress = progress, visible = visible }
-  table.insert(list, m)
-  ns.milestoneById[id] = m
-end
+-- (the kit's achievements: K.deeds, the family's one way; the game's alert
+-- behind a switch, the fanfare, a line in chat)
+local GROUP_ICONS = {
+  ranks = "Interface\\Icons\\INV_Misc_Food_15",
+  recipes = "Interface\\Icons\\INV_Misc_Book_11",
+  cooked = "Interface\\Icons\\INV_Misc_Food_14",
+  firsts = "Interface\\Icons\\INV_Misc_Food_13",
+  hunts = "Interface\\Icons\\INV_Misc_Bag_10_Blue",
+}
+ns.milestoneIcons = GROUP_ICONS
+local A = K.deeds({
+  saved = function()
+    local c = ns.book()
+    if not c then return nil end
+    c.milestones = c.milestones or {}
+    return c.milestones
+  end,
+  name = "Mealbook",
+  prefix = ns.PREFIX,
+  art = ICON,
+  kicker = L["Mealbook achievement"],
+  alert = function() return ns.option("achievementToast") end,
+  open = function(id)
+    if ns.openMilestones then ns.openMilestones(id) end
+  end,
+  picture = function(d) return K.icon(GROUP_ICONS[d.group] or ICON) end,
+  banners = K.banners({ name = "MealbookBanner", art = ICON }),
+  changed = function()
+    if ns.onChange then ns.onChange() end
+  end,
+})
+ns.deeds = A
+ns.milestones, ns.milestoneById = A.list, A.byId
+local function add(group, id, title, text, progress, visible) A:add(group, id, title, text, progress, visible) end
 
 local function book() return ns.book() end
 -- (a recipe only the other side gets, learned at the auction house, counts
@@ -168,70 +194,11 @@ add("hunts", "hunts-all", L["Nothing Left to Find"], L["Learn every recipe of yo
 end)
 
 -- ── earning ──────────────────────────────────────────────────────────────────
-function ns.earnedMilestone(id)
-  local c = book()
-  return c and c.milestones and c.milestones[id]
-end
-
+function ns.earnedMilestone(id) return A:earned(id) end
 -- Listed: earned, or one this character can earn.
-function ns.milestoneVisible(m) return ns.earnedMilestone(m.id) ~= nil or not m.visible or m.visible() end
-
+function ns.milestoneVisible(m) return A:visible(m) end
 -- Earned, and listed.
-function ns.milestoneCount()
-  local n, shown = 0, 0
-  for _, m in ipairs(list) do
-    if ns.earnedMilestone(m.id) then n = n + 1 end
-    if ns.milestoneVisible(m) then shown = shown + 1 end
-  end
-  return n, shown
-end
-
--- The fanfare of the game's achievements (a client without it: none).
-local FANFARE = 12891
-local function fanfare() pcall(PlaySound, FANFARE, "Master") end
-
-local banners
-local GROUP_ICONS = {
-  ranks = "Interface\\Icons\\INV_Misc_Food_15",
-  recipes = "Interface\\Icons\\INV_Misc_Book_11",
-  cooked = "Interface\\Icons\\INV_Misc_Food_14",
-  firsts = "Interface\\Icons\\INV_Misc_Food_13",
-  hunts = "Interface\\Icons\\INV_Misc_Bag_10_Blue",
-}
-ns.milestoneIcons = GROUP_ICONS
-
-local function announce(m)
-  print(ns.PREFIX .. L["Achievement earned: %s."]:format("|cffffd100[" .. m.title .. "]|r"))
-  fanfare()
-  banners = banners or K.banners({ name = "MealbookBanner", art = ICON })
-  banners:show({
-    picture = K.icon(GROUP_ICONS[m.group] or ICON),
-    kicker = L["Mealbook achievement"],
-    title = m.title,
-    tip = m.text,
-    click = function()
-      if ns.openMilestones then ns.openMilestones(m.id) end
-    end,
-  })
-end
-
+function ns.milestoneCount() return A:count() end
 -- quiet: record without a word (reached before the book looked: the login).
-function ns.checkMilestones(quiet)
-  local c = book()
-  if not c then return end
-  c.milestones = c.milestones or {}
-  local earned = false
-  for _, m in ipairs(list) do
-    if not c.milestones[m.id] and ns.milestoneVisible(m) then
-      local done, need = m.progress()
-      if need > 0 and done >= need then
-        c.milestones[m.id] = { at = time(), level = UnitLevel("player"), retro = quiet or nil }
-        earned = true
-        if not quiet then announce(m) end
-      end
-    end
-  end
-  if earned and ns.onChange then ns.onChange() end
-  return earned
-end
+function ns.checkMilestones(quiet) return A:check(quiet) end
 ns.progressed = ns.checkMilestones

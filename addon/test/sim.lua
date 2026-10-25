@@ -427,7 +427,12 @@ check(
   "/mealbook import CODE: taken back"
 )
 SlashCmdList.MEALBOOK("import nonsense")
-check(said(L["That isn't a Mealbook settings code."]), "a code that isn't one: said so")
+check(
+  said(L["That isn't a %s settings code (%s export makes one)."]:format("Mealbook", "/mealbook")),
+  "a code that isn't one: said so, and how to make one"
+)
+SlashCmdList.MEALBOOK("nonsense")
+check(said("/mealbook road"), "/mealbook nonsense: the usage, the book left closed")
 SlashCmdList.MEALBOOK("welcome")
 check(MealbookWelcome and MealbookWelcome:IsShown(), "/mealbook welcome")
 MealbookWelcome:Hide()

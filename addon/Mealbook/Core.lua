@@ -216,39 +216,41 @@ end
 function ns.chefName(chef) return ns.chefNames and ns.chefNames[chef or ns.chef()] or "" end
 
 -- ── /mealbook ────────────────────────────────────────────────────────────────
-SLASH_MEALBOOK1 = "/mealbook"
-SlashCmdList.MEALBOOK = function(msg)
-  local raw = strtrim(msg or "") -- (a code's letters as typed)
-  msg = raw:lower()
-  if msg == "road" then
-    if ns.openRoad then ns.openRoad() end
-  elseif msg == "chef" then
-    ns.setOption("chef", ns.chef() == "kendor" and 2 or 1)
-    print(ns.PREFIX .. L["Your cookbook is now %s's."]:format(ns.chefName()))
-  elseif msg == "tooltips" then
-    ns.setOption("tooltips", not ns.option("tooltips"))
-    print(
-      ns.PREFIX
-        .. (
-          ns.option("tooltips") and L["Ingredients' tooltips name the dishes they cook into."]
-          or L["Ingredients' tooltips left as the game's."]
-        )
-    )
-  elseif msg == "minimap" then
-    ns.setOption("minimapHidden", not ns.option("minimapHidden"))
-  elseif msg == "settings" then
-    if not ns.openSettings() then print(ns.PREFIX .. L["The game's Options have no page for addons here."]) end
-  elseif msg == "welcome" then
-    if ns.showWelcome then ns.showWelcome() end
-  elseif msg == "export" then
-    if ns.showWelcome then ns.showWelcome("export") end
-  elseif msg:match("^import%s") then
-    if ns.profiles:import(raw:match("^%a+%s+(.+)$")) then
-      print(ns.PREFIX .. L["Settings imported for this character."])
-    else
-      print(ns.PREFIX .. L["That isn't a Mealbook settings code."])
-    end
-  elseif ns.toggle then
-    ns.toggle()
-  end
-end
+-- The kit's command (K.commands): alone it opens the book, an unknown word
+-- prints the usage.
+ns.kit.commands({
+  names = { "/mealbook" },
+  key = "MEALBOOK",
+  name = "Mealbook",
+  prefix = ns.PREFIX,
+  profiles = function() return ns.profiles end, -- (Settings.lua makes them, after this file)
+  open = function()
+    if ns.toggle then ns.toggle() end
+  end,
+  usage = L["/mealbook opens the book, /mealbook road the road to 300 and /mealbook settings its settings. /mealbook chef changes chef, /mealbook tooltips shows or hides the dishes on ingredients' tooltips, /mealbook minimap the button. /mealbook welcome shows the welcome page again. /mealbook export gives this character's settings as a code, and /mealbook import CODE takes them."],
+  settings = function() return ns.openSettings() end,
+  welcome = function(mode)
+    if ns.showWelcome then ns.showWelcome(mode) end
+  end,
+  -- (looked up when used: Settings.lua makes them, after this file)
+  minimap = { get = function(k) return ns.option(k) end, set = function(k, v) ns.setOption(k, v) end },
+  commands = {
+    road = function()
+      if ns.openRoad then ns.openRoad() end
+    end,
+    chef = function()
+      ns.setOption("chef", ns.chef() == "kendor" and 2 or 1)
+      print(ns.PREFIX .. L["Your cookbook is now %s's."]:format(ns.chefName()))
+    end,
+    tooltips = function()
+      ns.setOption("tooltips", not ns.option("tooltips"))
+      print(
+        ns.PREFIX
+          .. (
+            ns.option("tooltips") and L["Ingredients' tooltips name the dishes they cook into."]
+            or L["Ingredients' tooltips left as the game's."]
+          )
+      )
+    end,
+  },
+})

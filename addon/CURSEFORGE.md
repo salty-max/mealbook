@@ -56,7 +56,7 @@ The book keeps its own achievements: each cooking rank trained and 300 reached, 
 
 One download covers Classic Era, Hardcore, Season of Discovery and World of Warcraft: Forever. Each game gets its own recipes: Forever's new dishes are in its book. Season of Discovery's own dishes are left out.
 
-The dishes, ingredients and places are the game's own, in your client's language. Mealbook's own words and the chefs' pages speak English and French. Other clients get English for those.
+The dishes, ingredients and places are the game's own, in your client's language. Mealbook's own words and the chefs' pages speak English, French, German and Spanish. German and Spanish are first translations: corrections are welcome on GitHub. Both Spanish clients share one text, each with its own game names and decimal separator. Other clients get English for those.
 
 ## Settings and commands
 

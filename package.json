@@ -12,7 +12,7 @@
     "pages": "bun scripts/pages.ts",
     "lint:lua": "stylua --check addon && selene addon/Mealbook",
     "format:lua": "stylua addon",
-    "check:ci": "bun scripts/locales.ts --check && bun run lint:lua && luajit addon/test/sim.lua && FOREVER=1 luajit addon/test/sim.lua && LOCALE=frFR luajit addon/test/sim.lua && LOCALE=deDE luajit addon/test/sim.lua && FOREVER=1 LOCALE=deDE luajit addon/test/sim.lua && bun scripts/package.ts --check",
+    "check:ci": "bun scripts/locales.ts --check && bun run lint:lua && luajit addon/test/sim.lua && FOREVER=1 luajit addon/test/sim.lua && LOCALE=frFR luajit addon/test/sim.lua && LOCALE=deDE luajit addon/test/sim.lua && FOREVER=1 LOCALE=deDE luajit addon/test/sim.lua && LOCALE=esES luajit addon/test/sim.lua && FOREVER=1 LOCALE=esES luajit addon/test/sim.lua && LOCALE=esMX luajit addon/test/sim.lua && FOREVER=1 LOCALE=esMX luajit addon/test/sim.lua && bun scripts/package.ts --check",
     "check": "bun run kit:check && bun run ids && bun scripts/recipes.ts --check && bun scripts/pages.ts --check && bun run check:ci",
     "package": "bun scripts/package.ts"
   }

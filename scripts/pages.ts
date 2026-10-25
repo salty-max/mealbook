@@ -186,25 +186,39 @@ if (import.meta.main) {
       for (const n of only) if (new RegExp(`(^|[^\\p{L}])${escape(plain(n))}(?=$|[^\\p{L}])`, "u").test(text)) said(p, n);
       // (places as written, a capital and all: "la masacre" is a word too)
       const raw = p.paragraphs.join(" ");
-      for (const n of placesOnly(lender, locale)) if (new RegExp(`(^|[^\\p{L}])${escape(n)}(?=$|[^\\p{L}])`, "u").test(raw)) said(p, n);
+      for (const [n, re] of placesOnly(lender, locale)) if (re.test(raw)) said(p, n);
     }
   };
   // The places the lender's client names one way and the borrower's another,
-  // leaving out a name the borrower's client also gives some place or faction
-  // (esES's La Masacre is Dire Maul on both, and The Maul's on esES alone).
-  const placeCache = new Map<string, string[]>();
-  const placesOnly = (lender: string, locale: string): string[] => {
+  // leaving out a name the borrower's client gives some place or faction of
+  // either game (esES's La Masacre is Dire Maul on both, and The Maul's on
+  // esES alone). Each as a pattern, built once: a capital name as written, an
+  // article-led one after any form of its article ("del Salón de los
+  // Feudales"), a one-word one only inside a sentence, so that a common noun
+  // opening one (Establo) is left alone.
+  const placeCache = new Map<string, [string, RegExp][]>();
+  const placesOnly = (lender: string, locale: string): [string, RegExp][] => {
     const key = `${lender}>${locale}`;
     if (placeCache.has(key)) return placeCache.get(key)!;
-    const out = new Set<string>();
+    const theirs = new Set<string>();
+    const ours = new Set<string>();
     for (const game of ["classic", "forever"] as const) {
       const db = openDb(game);
-      const theirs = db.query("SELECT DISTINCT name FROM name WHERE kind IN ('area', 'wmo_area') AND locale = ?").all(lender) as { name: string }[];
-      const ours = new Set((db.query("SELECT DISTINCT name FROM name WHERE kind IN ('area', 'wmo_area', 'faction') AND locale = ?").all(locale) as { name: string }[]).map((r) => r.name));
-      for (const { name } of theirs) if (!ours.has(name) && name.length > 3) out.add(name);
+      const names = (l: string) => (db.query("SELECT DISTINCT name FROM name WHERE kind IN ('area', 'wmo_area', 'faction') AND locale = ?").all(l) as { name: string }[]).map((r) => r.name);
+      for (const n of names(lender)) theirs.add(n);
+      for (const n of names(locale)) ours.add(n);
       db.close();
     }
-    const list = [...out];
+    const escape = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const end = "(?=$|[^\\p{L}])";
+    const list: [string, RegExp][] = [];
+    for (const n of theirs) {
+      if (ours.has(n) || n.length < 4 || !/^\p{Lu}/u.test(n)) continue;
+      const led = n.match(/^(?:El|La|Los|Las) (.+)$/);
+      if (led) list.push([n, new RegExp(`(^|[^\\p{L}])(?:[Ee]l|[Ll]a|[Ll]os|[Ll]as|del|al) ${escape(led[1])}${end}`, "u")]);
+      else if (!n.includes(" ")) list.push([n, new RegExp(`[\\p{Ll},] ${escape(n)}${end}`, "u")]);
+      else list.push([n, new RegExp(`(^|[^\\p{L}])${escape(n)}${end}`, "u")]);
+    }
     placeCache.set(key, list);
     return list;
   };

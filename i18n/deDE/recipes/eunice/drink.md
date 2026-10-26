@@ -41,7 +41,7 @@ Ein Golddorn ergibt vier Tassen, was Euch sagt, wie kräftig er ist. Lasst ihn i
 
 ## 1249966 Verkalkter Smoothie
 
-Süßer Nektar, scharfe Gewürze und ein großer Fangzahn, zu Pulver gemahlen. Der Zahn macht das Getränk kreidig und dick, wie Milch, die zu lange in der Sonne stand und es sich dort bequem gemacht hat. Seiht ihn gut ab, zweimal, denn Grieß in einem Getränk verzeiht niemand. Die Lebenden, die vom Kämpfen leben, trinken ihn morgens. Die Todeswachen, die vom Kämpfen leben und nicht leben, trinken ihn aus Solidarität.
+Süßer Nektar, scharfe Gewürze und ein großer Fangzahn, zu Pulver gemahlen. Der Zahn macht das Getränk kreidig und dick, wie Milch, die zu lange in der Sonne stand und es sich dort bequem machte. Seiht ihn gut ab, zweimal, denn Grieß in einem Getränk verzeiht niemand. Die Lebenden, die vom Kämpfen leben, trinken ihn morgens. Die Todeswachen, die vom Kämpfen leben und nicht leben, trinken ihn aus Solidarität.
 
 ## 1249960 Triagetee
 

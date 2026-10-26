@@ -45,7 +45,7 @@ Todos los instructores enseñan el pastel de cangrejo, y todos lo enseñan demas
 
 ## 25704 Sabiola ahumada
 
-Las sabiolas vienen de los lagos de Trabalomas, donde el agua es fría y clara y los pescadores tienen paciencia. El pez toma el aroma de la salvia de las orillas, de ahí su nombre, y ahumarlo con suavidad hace que ese aroma salga a relucir. Humo bajo, una pizca de especia y una tarde. Los granjeros de Costasur la venden desde sus ventanas. Es lo mejor de Costasur, que no es mucho decir, pero lo consigue con nobleza.
+Las sabiolas vienen de los lagos de Trabalomas, donde el agua es fría y clara y los pescadores tienen paciencia. El pez toma el aroma de la salvia de las orillas, de ahí su nombre, y ahumarlo con suavidad hace que ese aroma salga a relucir. Humo bajo, una pizca de especia y una tarde. Los granjeros de Costasur la venden desde sus ventanas. Es lo mejor de Costasur. El listón está bajo, pero lo salva con nobleza.
 
 ## 2545 Pinza de cangrejo cocida
 

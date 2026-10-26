@@ -218,7 +218,7 @@ ns.translate({
     ["Ranks"] = "Rangos",
     ["rare"] = "raro",
     ["Reach cooking 300."] = "Llega a 300 en cocina.",
-    ["Ready check"] = "Comprobación de preparados",
+    ["Ready check"] = "Control de disponibilidad",
     ["recipe"] = "receta",
     ["recipes"] = "recetas",
     ["Recipes"] = "Recetas",

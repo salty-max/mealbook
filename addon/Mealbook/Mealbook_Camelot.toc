@@ -7,7 +7,7 @@
 ## Notes-esMX: El recetario de un chef que se va llenando a medida que aprendes a cocinar, y el camino hasta 300: qué cocinar a continuación y cuántas veces.
 ## Category: Professions
 ## Author: salty-max
-## Version: 0.1.0
+## Version: 0.1.1
 ## SavedVariablesPerCharacter: MealbookChar
 ## SavedVariables: MealbookSettings
 ## IconTexture: Interface\AddOns\Mealbook\Media\Logo

@@ -211,7 +211,7 @@ ns.translate({
     ["orange"] = "naranja",
     ["Out of the Oven"] = "Recién horneado",
     ["Page turn"] = "Pasar página",
-    ["Paste the code (/mealbook export on the other character), then press Enter."] = "Pega el código (/mealbook export en el otro personaje) y presiona Enter.",
+    ["Paste the code (/mealbook export on the other character), then press Enter."] = "Pega el código (/mealbook export en el otro personaje) y pulsa Enter.",
     ["picked up in %s"] = "se recoge en %s",
     ["Picked up in %s"] = "Se recoge en %s",
     ["Quest complete"] = "Misión completada",

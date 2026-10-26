@@ -5,7 +5,7 @@ chapter: meat
 
 ## 2538 Carne de lobo carbonizada
 
-El primer plato de todo cocinero, vivo o no. Se aprende en el camino, con un cuchillo y un fuego, porque siempre hay un lobo y siempre hay alguien con hambre. Escúchala. La carne de lobo sisea cuando toca el calor por primera vez y se calla cuando el exterior se ha sellado. Dale la vuelta una vez, en el silencio. Mis alumnos quieren pincharla. Les dejo, una vez, y luego les dejo comerse lo que han pinchado.
+El primer plato de todo cocinero, vivo o no. Se aprende en el camino, con un cuchillo y un fuego, porque siempre hay un lobo y siempre hay alguien con hambre. Escúchala. La carne de lobo sisea cuando toca el calor por primera vez y se calla cuando el exterior se ha sellado. Dale la vuelta una vez, en el silencio. Mis alumnos quieren pincharla. Los dejo, una vez, y luego los dejo comerse lo que han pinchado.
 
 ## 15935 Ala de murciélago crujiente
 
@@ -17,7 +17,7 @@ En Lordaeron asábamos jabalí en la cosecha, en un hoyo detrás del granero, o 
 
 ## 6412 Kebab de araña Kaldorei
 
-Una receta élfica, de un árbol tan alto que dicen que los elfos de la noche cocinan en sus ramas. Nunca he estado, y no me esperan. La receta me llegó a través de tres comerciantes, dos de ellos honrados. Ensarta las patas de araña en una brocheta y dales un calor rápido y fiero hasta que las cáscaras crujan como ramitas en el fuego. Ese sonido es la señal. Después, cada instante te cuesta algo.
+Una receta élfica, de un árbol tan alto que dicen que los elfos de la noche cocinan en sus ramas. Nunca he estado, y no me esperan. La receta me llegó a través de tres comerciantes, dos de ellos honrados. Ensarta las patas de araña en una brocheta y dales un calor rápido y fiero hasta que las cáscaras crujan como ramitas en el fuego. Ese sonido es la señal. Después de eso, cada instante te sale caro.
 
 ## 2539 Carne de lobo especiada
 
@@ -33,7 +33,7 @@ Un huevo de raptor es del tamaño de mis dos puños y huele, cuando se casca, un
 
 ## 2795 Costillas de jabalí a la cerveza
 
-Un plato enano, lo que significa que viene con una historia sobre qué abuelo lo inventó, y la historia cambia según quién la cuente. Yo no tomo partido. Las costillas y la malta son honradas, las cocinara quien las cocinara primero. Todos los enanos de los que he oído hablar untan desde el primer minuto y luego culpan al fuego de lo que pasa. Asa las costillas al natural hasta que la grasa salga clara, y solo entonces empieza con la malta, poco a poco, para que se convierta en un glaseado. Cuando huela a azúcar quemado, te has pasado. Cuando huela a pan y a humo, has acertado de lleno. Los guardias de la muerte piden este plato por su nombre, que es más de lo que hacen con sus sargentos. Lo preparo los días de fiesta, y los días que necesitan una.
+Un plato enano, lo que significa que viene con una historia sobre qué abuelo lo inventó, y la historia cambia según quién la cuente. Yo no tomo partido. Las costillas y la malta son honradas, las cocinara quien las cocinara primero. Todos los enanos de los que he oído hablar untan desde el primer minuto y luego culpan al fuego de lo que pasa. Asa las costillas al natural hasta que la grasa salga clara, y solo entonces empieza con la malta, poco a poco, para que se convierta en un glaseado. Cuando huela a azúcar quemado, te has pasado. Cuando huela a pan y a humo, has acertado de lleno. Los guardias de la Muerte piden este plato por su nombre, que es más de lo que hacen con sus sargentos. Lo preparo los días de fiesta, y los días que necesitan una.
 
 ## 6414 Carne de kodo asado
 
@@ -41,7 +41,7 @@ Los tauren de Mulgore asan el kodo como hacen casi todo, despacio y sin alboroto
 
 ## 8607 Carne de oso ahumado
 
-Ni especia ni salsa, solo humo y tiempo. Esto es comida para gente que va a algún sitio. Corta la carne a favor de la fibra y cuélgala alto sobre un fuego bajo de leña verde, donde el calor nunca llega y el humo hace todo el trabajo. Por la mañana las tiras deberían doblarse antes de romperse. Se las preparo a los guardias de la muerte que van camino del Sepulcro. No necesitan comer, y se llevan tres cada uno.
+Ni especia ni salsa, solo humo y tiempo. Esto es comida para gente que va a algún sitio. Corta la carne a favor de la fibra y cuélgala alto sobre un fuego bajo de leña verde, donde el calor nunca llega y el humo hace todo el trabajo. Por la mañana las tiras deberían doblarse antes de romperse. Se las preparo a los guardias de la Muerte que van camino del Sepulcro. No necesitan comer, y se llevan tres cada uno.
 
 ## 2541 Filete de coyote
 
@@ -49,7 +49,7 @@ Los coyotes comen lo que el mundo deja caer, y su carne recuerda cada comida. No
 
 ## 3371 Morcilla
 
-Cada otoño, las granjas de Lordaeron hacían morcilla, y cada otoño la abuela de alguien conocía la única forma correcta. La mía juraba por el tomillo. O por la salvia. Estuve segura durante años. Aquí abajo la liga el icor de araña, donde antes lo hacía la sangre, y la Sociedad Real de Boticarios me asegura que es inofensiva para los vivos, que es más de lo que dice de casi todo. Los vivos vuelven a pedir más, la única reseña de la que me fío. Escalda las morcillas antes de que vean la sartén. Una morcilla que revienta la rellenó alguien con prisas.
+Cada otoño, las granjas de Lordaeron hacían morcilla, y cada otoño la abuela de alguien conocía la única forma correcta. La mía juraba por el tomillo. O por la salvia. Estuve segura durante años. Aquí abajo la liga el icor de araña, donde antes lo hacía la sangre, y la Sociedad Real de Boticarios me asegura que es inofensiva para los vivos, que es más de lo que dice de casi todo. Los vivos piden más, la única reseña de la que me fío. Escalda las morcillas antes de que vean la sartén. Una morcilla que revienta la rellenó alguien con prisas.
 
 ## 1250154 Filete de raptor con dos especias
 
@@ -57,7 +57,7 @@ Especiado antes y después, porque el raptor es magro y la primera capa se va co
 
 ## 3370 Chuleta de crocolisco
 
-El crocolisco llega a Entrañas desde Los Humedales por medio de gente que prefiere no decir cómo. Yo no pregunto, y me lo agradecen. La carne es blanca y firme, más pescado que bestia, y pide una pizca de especia y muy poco tiempo. Cocínala una vez. El crocolisco calentado por segunda vez huele al pantano, y el pantano no es lo que nadie ha pedido. Sírvela enseguida, a quien tengas más cerca.
+El crocolisco llega a Entrañas desde Los Humedales por medio de gente que prefiere no decir cómo. Yo no pregunto, y me lo agradecen. La carne es blanca y firme, más pescado que bestia, y pide una pizca de especia y muy poco tiempo. Cocínala una vez. El crocolisco calentado por segunda vez huele al pantano, y nadie ha pedido nunca el sabor del pantano. Sírvela enseguida, a quien tengas más cerca.
 
 ## 2546 Costillas de cerdo secas
 
@@ -109,7 +109,7 @@ Los trols del pantano llaman a esto un pastel y lo dicen con cariño. Carne mist
 
 ## 15856 Costillas de lobo picantes
 
-Lobos rojos del lejano sur, más grasos que los grises del Bosque de Argénteos, con costillas que necesitan tiempo para soltar la grasa. Especias picantes y un fuego vivo, y luego paciencia. La grasa sale clara antes de salir humeante, y el momento entre las dos es el que quieres. Los guardias de la muerte que vuelven del sur las traen envueltas en tela, como si hubieran encontrado un tesoro. Para una cocinera, lo han encontrado.
+Lobos rojos del lejano sur, más grasos que los grises del Bosque de Argénteos, con costillas que necesitan tiempo para soltar la grasa. Especias picantes y un fuego vivo, y luego paciencia. La grasa sale clara antes de salir humeante, y el momento entre las dos es el que quieres. Los guardias de la Muerte que vuelven del sur las traen envueltas en tela, como si hubieran encontrado un tesoro. Para una cocinera, lo han encontrado.
 
 ## 15855 Raptor asado
 
@@ -157,7 +157,7 @@ Lonchas finas de carne de oso grande en capas con especias calmantes y asadas de
 
 ## 1250152 Carne mechada de raptor prehistórico
 
-Raptor cocinado durante casi todo un día sobre el fuego más bajo que soy capaz de mantener, con mucha especia calmante, hasta que se deshaga al tocarlo con un tenedor. Desmenúzalo con dos tenedores, nunca con cuchillo. A los guardias de la muerte les encanta porque se conserva, y porque se puede comer de un cuenco mientras se camina. Prehistórico, se hace llamar. También lo son los modales de algunos de mis alumnos.
+Raptor cocinado durante casi todo un día sobre el fuego más bajo que soy capaz de mantener, con mucha especia calmante, hasta que se deshaga al tocarlo con un tenedor. Desmenúzalo con dos tenedores, nunca con cuchillo. A los guardias de la Muerte les encanta porque se conserva, y porque se puede comer de un cuenco mientras se camina. Prehistórico, se hace llamar. También lo son los modales de algunos de mis alumnos.
 
 ## 1250143 Pamplona rasante
 

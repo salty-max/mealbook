@@ -9,7 +9,7 @@ Flor de paz en infusión en agua de manantial hasta que el agua tome el color de
 
 ## 1249963 Batido venenoso
 
-Agua de manantial, especias suaves y una glándula de veneno pequeña, machacada y colada para que solo quede el picor. Los boticarios revisaron mi primera tanda. La declararon inofensiva para los vivos con una decepción sobre la que preferí no comentar nada. Agítalo con fuerza y sírvelo frío. Los vivos dicen que muerde la lengua. Me fío de su palabra, y veo cómo alargan la mano hacia un segundo vaso.
+Agua de manantial, especias suaves y una glándula de veneno pequeña, machacada y colada para que solo quede el picor. Los boticarios revisaron mi primera tanda. La declararon inofensiva para los vivos con una decepción que preferí no comentar. Agítalo con fuerza y sírvelo frío. Los vivos dicen que muerde la lengua. Me fío de su palabra, y veo cómo alargan la mano hacia un segundo vaso.
 
 ## 21144 Ponche de huevo
 
@@ -25,7 +25,7 @@ Marregal en infusión en leche tibia hasta que la leche se vuelva ligeramente vi
 
 ## 1249964 Batido baboso
 
-Leche fría como el hielo, especias suaves e icor de araña, agitado hasta que el icor se rinda y se mezcla. Huele un poco a almendras y mucho a araña. Sírvelo enseguida. Si reposa, se separa, y un batido baboso separado es algo que nadie debería tener que ver. Los boticarios se lo beben por jarras mientras trabajan, lo que dice algo de los boticarios, y no voy a decir qué.
+Leche fría como el hielo, especias suaves e icor de araña, agitado hasta que el icor se rinda y se mezcle. Huele un poco a almendras y mucho a araña. Sírvelo enseguida. Si reposa, se separa, y un batido baboso separado es algo que nadie debería tener que ver. Los boticarios se lo beben por jarras mientras trabajan, lo que dice algo de los boticarios, y no voy a decir qué.
 
 ## 1249965 Mrrgltido
 
@@ -37,11 +37,11 @@ Vidarraíz, lavada y en rodajas, en infusión en zumo de melón tibio hasta que 
 
 ## 13028 Té de espina de oro
 
-Una espina de oro da para cuatro tazas, lo que te dice lo fuerte que es. Déjala en agua recién apartada del hervor hasta que tome el color del latón viejo, y luego cuélala a conciencia. El olor es agudo y brillante, como una espada que están puliendo. Todos los guardias de la muerte de las murallas se lo beben, y ninguno lo necesita. No pueden saborearlo mejor que yo. Creo que les gusta el calor de la taza en las manos. Nunca lo he preguntado.
+Una espina de oro da para cuatro tazas, lo que te dice lo fuerte que es. Déjala en agua recién apartada del hervor hasta que tome el color del latón viejo, y luego cuélala a conciencia. El olor es agudo y brillante, como una espada que están puliendo. Todos los guardias de la Muerte de las murallas se lo beben, y ninguno lo necesita. No pueden saborearlo mejor que yo. Creo que les gusta el calor de la taza en las manos. Nunca lo he preguntado.
 
 ## 1249966 Batido calcificado
 
-Néctar dulce, especias picantes y un colmillo grande molido hasta hacerse polvo. El colmillo vuelve la bebida calcárea y espesa, como leche que se ha quedado demasiado rato al sol. Cuélalo bien, dos veces, porque la arenilla en una bebida es lo único que nadie perdona. Los vivos que se ganan la vida peleando se lo beben por las mañanas. Los guardias de la muerte, que se ganan la vida peleando y no viven, se lo beben por solidaridad.
+Néctar dulce, especias picantes y un colmillo grande molido hasta hacerse polvo. El colmillo vuelve la bebida calcárea y espesa, como leche que se ha quedado demasiado rato al sol. Cuélalo bien, dos veces, porque la arenilla en una bebida es lo único que nadie perdona. Los vivos que se ganan la vida peleando se lo beben por las mañanas. Los guardias de la Muerte, que se ganan la vida peleando y no viven, se lo beben por solidaridad.
 
 ## 1249960 Té reconstituyente
 
@@ -53,11 +53,11 @@ Zumo de baya lunar, especias calmantes y una glándula de llamas pequeña, pinch
 
 ## 1249961 Té soleado
 
-Solea en infusión en zumo de baya lunar hasta que la bebida se vuelva dorada. Huele a heno por la tarde y a una pared caliente al sol. En Entrañas no hay sol. Preparo este té cuando mis alumnos se han quedado callados y pálidos y empiezan a olvidar cómo es la superficie, y se lo pongo en las manos, y se lo recuerda. Eso no está en la receta. Debería estarlo.
+Solea en infusión en zumo de baya lunar hasta que la bebida se vuelva dorada. Huele a heno por la tarde y a una pared caliente al sol. En Entrañas no hay sol. Preparo este té cuando mis alumnos se han quedado callados y pálidos y empiezan a olvidar cómo es la superficie, y se lo pongo en las manos, y el té se lo recuerda. Eso no está en la receta. Debería estarlo.
 
 ## 1249968 Batido perverso
 
-Rocío de gloria matinal, mucha especia calmante y una garra maligna, molida fina. La garra le da un filo oscuro y amargo que la especia no consigue suavizar del todo. Huele a flores aplastadas y a algo que querría morderte. Sírvelo frío. Los guardias de la muerte jóvenes se lo beben por una apuesta. Los viejos se lo beben porque ya no aceptan apuestas, y les gusta de todos modos.
+Rocío de gloria matinal, mucha especia calmante y una garra maligna, molida fina. La garra le da un filo oscuro y amargo que la especia no consigue suavizar del todo. Huele a flores aplastadas y a algo que querría morderte. Sírvelo frío. Los guardias de la Muerte jóvenes se lo beben por una apuesta. Los viejos se lo beben porque ya no aceptan apuestas, y les gusta de todos modos.
 
 ## 1249962 Té de salvia
 

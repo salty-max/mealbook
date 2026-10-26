@@ -25,7 +25,7 @@ Esto me lo enseñaron Los Baldíos, y a Entrañas le gustó, porque aquí tampoc
 
 ## 3372 Sopa de aleta de múrloc
 
-Dos aletas de múrloc y especias picantes, a fuego lento hasta que las aletas se fundan en el caldo y lo dejan espeso y sabroso, como un fondo de huesos. El olor es el mar con la marea baja, que suena desagradable y no lo es, una vez que la especia se encarga. Los múrlocs de la costa del Bosque de Argénteos pondrían objeciones, si lo supieran. Ponen objeciones a casi todo, a gritos, y hace mucho que dejé de escucharlos.
+Dos aletas de múrloc y especias picantes, a fuego lento hasta que las aletas se fundan en el caldo y lo dejen espeso y sabroso, como un fondo de huesos. El olor es el mar con la marea baja, que suena desagradable y no lo es, una vez que la especia se encarga. Los múrlocs de la costa del Bosque de Argénteos pondrían objeciones, si lo supieran. Ponen objeciones a casi todo, a gritos, y hace mucho que dejé de escucharlos.
 
 ## 2547 Estofado Crestagrana
 
@@ -37,11 +37,11 @@ Carne de crocolisco tierna y especias picantes, reducidas hasta que el caldo sea
 
 ## 24418 Estofado de crocolisco pesado
 
-El doble de crocolisco, especias calmantes y un estofado en el que una cuchara se sostiene de pie. Remuévelo desde el fondo, a menudo, porque un estofado tan espeso se pega y se quema donde no lo ves, y el olor solo te delata cuando ya es tarde. Los soldados del marjal se lo comen en cuencos de lata bajo la lluvia, me cuentan. Mis guardias de la muerte se lo comen en cuencos de lata a cubierto. Los cuencos de lata son iguales en todas partes.
+El doble de crocolisco, especias calmantes y un estofado en el que una cuchara se sostiene de pie. Remuévelo desde el fondo, a menudo, porque un estofado tan espeso se pega y se quema donde no lo ves, y el olor solo te delata cuando ya es tarde. Los soldados del marjal se lo comen en cuencos de lata bajo la lluvia, me cuentan. Mis guardias de la Muerte se lo comen en cuencos de lata a cubierto. Los cuencos de lata son iguales en todas partes.
 
 ## 15861 Estofado de la selva
 
-Carne de tigre, agua de manantial y manzanas, el estofado de la Vega de Tuercespina. Dora primero la carne, añade luego el agua y las manzanas y déjalo a fuego lento hasta que la fruta se haya ido al caldo. El olor se vuelve dulce, luego hondo, luego dulce otra vez. El segundo dulzor significa que está listo. Me lo enseñaron unos trols, Lanza Negra camino de algún lugar más cálido. Dijeron que sabe a hogar. Me fié de su palabra.
+Carne de tigre, agua de manantial y manzanas, el estofado de la Vega de Tuercespina. Dora primero la carne, añade luego el agua y las manzanas y déjalo a fuego lento hasta que la fruta se haya ido al caldo. El olor se vuelve dulce, luego hondo, luego dulce otra vez. El segundo dulzor significa que está listo. Me lo enseñaron unos trols Lanza Negra, de camino a algún lugar más cálido. Dijeron que sabe a hogar. Me fié de su palabra.
 
 ## 15865 Estofado misterioso
 
@@ -57,11 +57,11 @@ Un estofado de la orilla: cangrejo, ojos de múrloc y especias picantes. Los ojo
 
 ## 15906 Ají aliento de dragón
 
-La carne misteriosa no es ningún misterio para mí. Puedo oler exactamente lo que era, y en la mayoría de los casos prefiero no decirlo. Este plato me lo enseñaron Los Baldíos, no Lordaeron, que nunca comió nada que se defendiera tanto. No puedo decirte lo picante que es este chili. Puedo decirte que las especias tostadas me pican en los ojos, que es la única parte que todavía siento. Y el último tauren que probó el mío dejó la cuchara con muchísimo cuidado y pidió agua con una voz que nunca le había oído. Pincha la glándula de llamas antes de echarla, o reventará por su cuenta. Prepáralo para gente que te caiga bien, y avísales. Luego mírales la cara. El plato está hecho cuando dejan de hablar.
+La carne misteriosa no es ningún misterio para mí. Puedo oler exactamente lo que era, y en la mayoría de los casos prefiero no decirlo. Este plato me lo enseñaron Los Baldíos, no Lordaeron, que nunca comió nada que se defendiera tanto. No puedo decirte lo picante que es este ají. Puedo decirte que las especias tostadas me pican en los ojos, que es la única parte que todavía siento. Y el último tauren que probó el mío dejó la cuchara con muchísimo cuidado y pidió agua con una voz que nunca le había oído. Pincha la glándula de llamas antes de echarla, o reventará por su cuenta. Prepáralo para gente que te caiga bien, y avísales. Luego mírales la cara. El plato está hecho cuando dejan de hablar.
 
 ## 15910 Estofado de kodo pesado
 
-Los kodos de Desolace pesan más que los de Los Baldíos, con una dieta de casi nada, y su carne es la más densa que conozco. Los tauren me enseñaron este estofado, y nunca le he cambiado nada, porque no hay nada que cambiar. Dos raciones de carne de kodo pesada, especias calmantes y agua de manantial, y un día entero a fuego bajo. Olerás cómo cambia: crudo, luego a hierba, luego hondo y tostado, como un campo después de la lluvia. En algún momento de la tarde la carne se deshace en hebras al tocarla con una cuchara. Ese es el momento, y ningún otro. Lo preparo los días más fríos para los guardias de la muerte de las murallas de arriba, y lo subo yo misma. No lo necesitan. Hacen cola de todos modos, y se quedan muy callados mientras comen.
+Los kodos de Desolace pesan más que los de Los Baldíos, con una dieta de casi nada, y su carne es la más densa que conozco. Los tauren me enseñaron este estofado, y nunca le he cambiado nada, porque no hay nada que cambiar. Dos raciones de carne de kodo pesada, especias calmantes y agua de manantial, y un día entero a fuego bajo. Olerás cómo cambia: crudo, luego a hierba, luego hondo y tostado, como un campo después de la lluvia. En algún momento de la tarde la carne se deshace en hebras al tocarla con una cuchara. Ese es el momento, y ningún otro. Lo preparo los días más fríos para los guardias de la Muerte de las murallas de arriba, y lo subo yo misma. No lo necesitan. Hacen cola de todos modos, y se quedan muy callados mientras comen.
 
 ## 20626 Sopa de almejas de Villabajo
 

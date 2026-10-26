@@ -37,7 +37,7 @@ Un pargo de los fondos fangosos de los ríos lentos, y sabe a ellos si no sabes 
 
 ## 7827 Atún blanco arco iris
 
-El atún es un pescado para quienes creen que el pescado debería comportarse como la carne. Es firme, oscuro y sabroso, y admite un sellado fuerte por fuera y muy poca cocción en el centro. Los marineros de Menethil lo cocinan del todo hasta que queda gris y le echan la culpa al pescado. Yo no vendo receta para él, pero lo haría, y cobraría más. Rosado en el centro es lo correcto. Gris es una confesión.
+El atún es un pescado para quienes creen que el pescado debería comportarse como la carne. Es firme, oscuro y sabroso, y admite un sellado fuerte por fuera y muy poca cocción en el centro. Los marineros de Menethil lo cocinan del todo hasta que queda gris y le echan la culpa al pescado. Yo no vendo su receta, pero lo haría, y cobraría más. Rosado en el centro es lo correcto. Gris es una confesión.
 
 ## 2544 Pastel de cangrejo
 
@@ -45,11 +45,11 @@ Todos los instructores enseñan el pastel de cangrejo, y todos lo enseñan demas
 
 ## 25704 Sabiola ahumada
 
-Las sabiolas vienen de los lagos de Trabalomas, donde el agua es fría y clara y los pescadores tienen paciencia. El pez toma el aroma de la salvia de las orillas, de ahí su nombre, y ahumarlo con suavidad hace que ese aroma salga a relucir. Humo bajo, una pizca de especia y una tarde. Los granjeros de Costasur la venden desde sus ventanas. Es lo mejor de Costasur, que no es mucho decir, aunque lo dice con nobleza.
+Las sabiolas vienen de los lagos de Trabalomas, donde el agua es fría y clara y los pescadores tienen paciencia. El pez toma el aroma de la salvia de las orillas, de ahí su nombre, y ahumarlo con suavidad hace que ese aroma salga a relucir. Humo bajo, una pizca de especia y una tarde. Los granjeros de Costasur la venden desde sus ventanas. Es lo mejor de Costasur, que no es mucho decir, pero lo consigue con nobleza.
 
 ## 2545 Pinza de cangrejo cocida
 
-La costa de los Páramos de Poniente está plagada de cangrejos, y los contrabandistas Defias que se esconden allí, según me dicen, me han robado la receta para sus pinzas. Me siento halagado. Una pinza debe cascarse antes de tocar el fuego, para que el calor llegue a la carne de dentro en lugar de cocerla al vapor en su propia armadura. Una pizca de especias suaves en la grieta. Un fuego corto y fuerte. Luego sácala con un tenedor y recuerda que hasta los ladrones comen bien cuando le roban a quien deben.
+La costa de los Páramos de Poniente está plagada de cangrejos, y los contrabandistas Defias que se esconden allí, según me dicen, me han robado la receta para sus pinzas. Me siento halagado. Una pinza debe cascarse antes de tocar el fuego, para que el calor llegue a la carne de dentro en lugar de cocerla al vapor en su propia armadura. Una pizca de especias suaves en la grieta. Un fuego corto y fuerte. Luego sácala con un tenedor y recuerda que hasta los ladrones comen bien cuando le roban a la persona adecuada.
 
 ## 8238 Delicia desviada sabrosa
 

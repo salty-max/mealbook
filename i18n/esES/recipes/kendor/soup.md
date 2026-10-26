@@ -25,7 +25,7 @@ Un estofado de ratas, que la Horda enseña en Los Baldíos a cualquiera que les 
 
 ## 3372 Sopa de aleta de múrloc
 
-Las aletas de múrloc dan una sopa con más cuerpo del que creerías, si solo has visto múrlocs al otro lado de una espada. Dos aletas y especias picantes, a fuego lento hasta que las aletas se disuelvan en el caldo y le dan una riqueza como el mejor fondo de huesos. Sospecho que los múrlocs pondrían objeciones. Los múrlocs ponen objeciones a todo, largo y tendido, y ninguna en un idioma que me interese aprender.
+Las aletas de múrloc dan una sopa con más cuerpo del que creerías, si solo has visto múrlocs al otro lado de una espada. Dos aletas y especias picantes, a fuego lento hasta que las aletas se disuelvan en el caldo y le den una riqueza como el mejor fondo de huesos. Sospecho que los múrlocs pondrían objeciones. Los múrlocs ponen objeciones a todo, largo y tendido, y ninguna en un idioma que me interese aprender.
 
 ## 2547 Estofado Crestagrana
 
@@ -57,7 +57,7 @@ Un estofado de la orilla, hecho con lo que ofrece la orilla, que es cangrejo y, 
 
 ## 15906 Ají aliento de dragón
 
-Me cuentan que este plato empezó como una apuesta en alguna taberna en la que nadie admite beber. Ha superado sus orígenes, como yo. La mayoría de los cocineros lo trata como una competición y lo cocina como un arma, lo que dice más de los cocineros que del chili. Carne misteriosa es un nombre, no una excusa. Límpiala como si tuviera una reputación que perder. Tuesta las especias antes de que nada más las toque, para que despierten. La glándula de llamas pequeña va la última, pinchada una sola vez, y apártate bien. Entenderás por qué el día que lo hagas mal. Bien hecho, el picor llega tarde y se marcha despacio, como un buen invitado. Mal hecho, llega el primero y se queda toda la velada, y la Guardia Nocturna puede quedárselo.
+Me cuentan que este plato empezó como una apuesta en alguna taberna en la que nadie admite beber. Ha superado sus orígenes, como yo. La mayoría de los cocineros lo trata como una competición y lo cocina como un arma, lo que dice más de los cocineros que del ají. Carne misteriosa es un nombre, no una excusa. Límpiala como si tuviera una reputación que perder. Tuesta las especias antes de que nada más las toque, para que despierten. La glándula de llamas pequeña va la última, pinchada una sola vez, y apártate bien. Entenderás por qué el día que lo hagas mal. Bien hecho, el picor llega tarde y se marcha despacio, como un buen invitado. Mal hecho, llega el primero y se queda toda la velada, y la Guardia Nocturna puede quedárselo.
 
 ## 15910 Estofado de kodo pesado
 

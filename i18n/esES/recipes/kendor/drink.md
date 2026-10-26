@@ -21,11 +21,11 @@ El té de cardo es la bebida de los pícaros de este reino, que lo preparan con 
 
 ## 1249958 Té regio
 
-El marregal es una hierba con muy buena opinión de sí misma, y el té regio es marregal en infusión en leche fría como el hielo, lo que le da a la leche muy buena opinión de sí misma también. La leche se calienta con suavidad y la hierba se deja en ella hasta que la leche adquiera un tono violeta suave y el aroma de un jardín refinado. No la hiervas. La leche hervida forma nata, y una nata sobre el té regio es la corona de un campesino. Se lo sirvo a los nobles, que disfrutan de la ironía menos que yo.
+El marregal es una hierba con muy buena opinión de sí misma, y el té regio es marregal en infusión en leche fría como el hielo, lo que también le da a la leche una muy buena opinión de sí misma. La leche se calienta con suavidad y la hierba se deja en ella hasta que la leche adquiera un tono violeta suave y el aroma de un jardín refinado. No la hiervas. La leche hervida forma nata, y una nata sobre el té regio es la corona de un campesino. Se lo sirvo a los nobles, que disfrutan de la ironía menos que yo.
 
 ## 1249964 Batido baboso
 
-Baboso, se hace llamar, y es el nombre más exacto de este capítulo. Leche fría como el hielo, especias suaves e icor de araña, agitado hasta que el icor deje de enfurruñarse en el fondo del vaso y accede a ser una bebida. Sírvelo enseguida, porque no se mantiene dócil mucho tiempo. Yo no lo habría inventado. Eso sí, he visto a un gnomo beberse tres, lo cual creo que dice más de los gnomos que del batido.
+Baboso, se hace llamar, y es el nombre más exacto de este capítulo. Leche fría como el hielo, especias suaves e icor de araña, agitado hasta que el icor deje de enfurruñarse en el fondo del vaso y acceda a ser una bebida. Sírvelo enseguida, porque no se mantiene dócil mucho tiempo. Yo no lo habría inventado. Eso sí, he visto a un gnomo beberse tres, lo cual creo que dice más de los gnomos que del batido.
 
 ## 1249965 Mrrgltido
 
@@ -53,7 +53,7 @@ Zumo de baya lunar, especias calmantes y una pequeña glándula de llamas, pinch
 
 ## 1249961 Té soleado
 
-Solea en infusión en zumo de baya lunar, que es una broma sobre el sol y la luna que la receta no se molesta en explicar. El zumo se calienta y la solea se deja en él hasta que la bebida se vuelva dorada y huele a heno por la tarde. Cuélalo y sírvelo caliente. Es una bebida alegre, cosa rara, y no tengo nada mordaz que decir de ella, cosa más rara todavía.
+Solea en infusión en zumo de baya lunar, que es una broma sobre el sol y la luna que la receta no se molesta en explicar. El zumo se calienta y la solea se deja en él hasta que la bebida se vuelva dorada y huela a heno por la tarde. Cuélalo y sírvelo caliente. Es una bebida alegre, cosa rara, y no tengo nada mordaz que decir de ella, cosa más rara todavía.
 
 ## 1249968 Batido perverso
 

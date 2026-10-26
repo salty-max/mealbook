@@ -33,7 +33,7 @@ Vendo una receta llamada pastel de araña babosa, y la vendo sin inmutarme, porq
 
 ## 3376 Tortilla con un sabor curioso
 
-Lo del sabor curioso es el nombre más honesto de mi catálogo, porque todo el que la prueba siente curiosidad por saber por qué está tan buena. Es un huevo de raptor, mucho más rico que uno de gallina, con especias picantes. Bátelo con energía, cocínalo rápido y dóblalo tierno. Un huevo de raptor cuaja más despacio que uno de gallina, así que ten paciencia con el centro. La curiosidad está justificada. La tortilla es mía, por derecho de mejora.
+«Con un sabor curioso» es el nombre más honesto de mi catálogo, porque todo el que la prueba siente curiosidad por saber por qué está tan buena. Es un huevo de raptor, mucho más rico que uno de gallina, con especias picantes. Bátelo con energía, cocínalo rápido y dóblalo tierno. Un huevo de raptor cuaja más despacio que uno de gallina, así que ten paciencia con el centro. La curiosidad está justificada. La tortilla es mía, por derecho de mejora.
 
 ## 1250155 Huevos gigantes revueltos
 
@@ -57,4 +57,4 @@ La receta de este plato la lleva un diablillo en las ruinas de La Masacre, que n
 
 ## 24801 Bolas de masa del desierto ahumadas
 
-Esta receta no se vende. La enseñan los cocineros del Círculo Cenarion en Silithus a quienes han demostrado su valía en un desierto que los quiere muertos. Nunca he estado en Silithus. No necesito haber estado para saber que la carne de gusano de arena es todo un reto: densa, blanquecina y aficionada a guardar arena en cada pliegue. Lávala hasta que el agua salga limpia, pícala fina con especias calmantes y forma con ella bolitas pequeñas, bien apretadas para que aguanten juntas en el humo. Después ahúmalas despacio sobre un fuego bajo. El humo da sabor al exterior y el vapor cocina el centro, y cuando están hechas quedan firmes, fragantes y del todo libres de arena, que es el verdadero logro. El Círculo guarda esta receta con celo, y lo respeto por ello. Yo he guardado cosas peores por menos.
+Esta receta no se vende. La enseñan los cocineros del Círculo Cenarion en Silithus a quienes han demostrado su valía en un desierto que los quiere muertos. Nunca he estado en Silithus. No necesito haber estado para saber que la carne de gusano de arena es todo un reto: densa, blanquecina y aficionada a guardar arena en cada pliegue. Lávala hasta que el agua salga limpia, pícala fina con especias calmantes y forma con ella bolitas, bien apretadas para que aguanten juntas en el humo. Después ahúmalas despacio sobre un fuego bajo. El humo da sabor al exterior y el vapor cocina el centro, y cuando están hechas quedan firmes, fragantes y del todo libres de arena, que es el verdadero logro. El Círculo guarda esta receta con celo, y lo respeto por ello. Yo he guardado cosas peores por menos.

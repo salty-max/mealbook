@@ -9,7 +9,7 @@ Los niños los pescan en todos los muelles de Tirisfal, y yo les compro los cubo
 
 ## 7752 Caballa de piel escurridiza
 
-La caballa es grasa, y la grasa es lo importante. Ponla con la piel hacia abajo en una sartén caliente y seca y deja que su propia grasa la cocine. El olor llena la cocina, sube las escaleras y llega a la calle, y siempre baja alguien a preguntar qué es. Así encuentro a la mayoría de mis clientes. El pescado se anuncia mejor de lo que yo podría, y no pide sueldo.
+La caballa es un pescado graso, y la grasa es lo importante. Ponla con la piel hacia abajo en una sartén caliente y seca y deja que su propia grasa la cocine. El olor llena la cocina, sube las escaleras y llega a la calle, y siempre baja alguien a preguntar qué es. Así encuentro a la mayoría de mis clientes. El pescado se anuncia mejor de lo que yo podría, y no pide sueldo.
 
 ## 1247741 Mero espinoso
 
@@ -85,7 +85,7 @@ La sabiola superior, engordada con la salvia de su lago, con especias picantes p
 
 ## 1319313 Pez coraza de placas
 
-Un pez con armadura. Las placas se quitan con un cuchillo pesado y mucha paciencia, y la carne de debajo es firme y blanca, como la de una langosta. Especias calmantes, un fuego moderado y sin prisa. Las cosas acorazadas tardan en hacerse, como te dirán los guardias de la muerte, y no están hablando de pescado. Sírvelo en sus propias placas, lavadas. Hace sonreír a la gente.
+Un pez con armadura. Las placas se quitan con un cuchillo pesado y mucha paciencia, y la carne de debajo es firme y blanca, como la de una langosta. Especias calmantes, un fuego moderado y sin prisa. Las cosas acorazadas tardan en hacerse, como te dirán los guardias de la Muerte, y no están hablando de pescado. Sírvelo en sus propias placas, lavadas. Hace sonreír a la gente.
 
 ## 18239 Vigorpez lustroso cocido
 
@@ -125,7 +125,7 @@ Un salmón entero de los ríos fríos, horneado con especias calmantes en un hor
 
 ## 18246 Filete de vigorpez
 
-Un vigorpez es lo bastante grande como para cortarlo en filetes como la ternera, y debería cocinarse como la ternera. Especias picantes para despertarlo, especias calmantes para calmarlo, un sellado fuerte por ambos lados y un reposo largo. El olor es a mar y a herrería a la vez. Se lo sirvo a los guardias de la muerte las noches antes de una larga patrulla. No dicen nada, que es lo que dicen los guardias de la muerte cuando algo está bueno.
+Un vigorpez es lo bastante grande como para cortarlo en filetes como la ternera, y debería cocinarse como la ternera. Especias picantes para despertarlo, especias calmantes para calmarlo, un sellado fuerte por ambos lados y un reposo largo. El olor es a mar y a herrería a la vez. Se lo sirvo a los guardias de la Muerte las noches antes de una larga patrulla. No dicen nada, que es lo que dicen los guardias de la Muerte cuando algo está bueno.
 
 ## 470370 Branquirrojo ahumado
 

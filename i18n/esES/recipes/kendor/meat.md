@@ -149,7 +149,7 @@ El filete de merodeador es tigre, cosa que el nombre es demasiado educado para d
 
 ## 1250144 Hachee de murciélago
 
-Es un viejo guiso de granja de carne picada, hecho a fuego lento, y aquí la carne es murciélago. Yo no habría elegido el murciélago. El murciélago no me habría elegido a mí. Tres alas, picadas, con especias calmantes, y un fuego bajo durante casi toda una velada, hasta que los tendones se ablanden y se convierten en algo que se le puede servir a un invitado. Quien lo inventó era pobre y listo. Respeto a los listos, y con los años he aprendido a perdonar a los pobres.
+Es un viejo guiso de granja de carne picada, hecho a fuego lento, y aquí la carne es murciélago. Yo no habría elegido el murciélago. El murciélago no me habría elegido a mí. Tres alas, picadas, con especias calmantes, y un fuego bajo durante casi toda una velada, hasta que los tendones se ablanden y se conviertan en algo que se le puede servir a un invitado. Quien lo inventó era pobre y listo. Respeto a los listos, y con los años he aprendido a perdonar a los pobres.
 
 ## 1250147 Bruscitti de oso
 

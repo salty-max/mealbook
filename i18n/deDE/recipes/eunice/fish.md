@@ -29,7 +29,7 @@ Frenzys sind nichts als Zähne und Temperament, und ihr Fleisch ist das Weichste
 
 ## 7754 Lochfrenzy Supreme
 
-Das kalte Wasser des Lochs macht einen festeren Fisch als die Frenzys des Südens, und die Zwerge haben ihn ein Supreme genannt, was für sie, wie man mir sagt, ungewöhnlich ist. Eine Prise milder Gewürze, ein schnelles Feuer, und serviert ihn heiß. Der Geruch ist sauber und kalt, wie ein Morgen an einem See. Ich war nie in Loch Modan. Ich war an Seen. Ich stelle mir vor, es ist ähnlich, mit mehr Geschrei.
+Das kalte Wasser von Loch Modan macht einen festeren Fisch als die Frenzys des Südens, und die Zwerge haben ihn ein Supreme genannt, was für sie, wie man mir sagt, ungewöhnlich ist. Eine Prise milder Gewürze, ein schnelles Feuer, und serviert ihn heiß. Der Geruch ist sauber und kalt, wie ein Morgen an einem See. Ich war nie in Loch Modan. Ich war an Seen. Ich stelle mir vor, es ist ähnlich, mit mehr Geschrei.
 
 ## 7753 Langzahniger Matschschnapper
 

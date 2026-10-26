@@ -61,7 +61,7 @@ Man sagt mir, dieses Gericht habe als Mutprobe in irgendeiner Taverne begonnen, 
 
 ## 15910 Schwerer Kodoeintopf
 
-Die Kodos von Desolace werden schwerer als die des Brachlands, von einer Kost aus gar nichts, und ihr Fleisch ist das dichteste, das ich kenne. Ich habe es nicht nötig, die Küche der Horde zu kosten, und ich mache eine Ausnahme für diesen Eintopf, weil er weniger Horde ist als Kodo, und der Kodo ist ohne Schuld. Zwei Portionen schweres Kodofleisch, feine Gewürze und Quellwasser, und ein ganzer Tag über kleinem Feuer. Das Fleisch kommt kalt hinein und in Fäden wieder heraus. Überstürzt es nicht, und hebt nicht jede Stunde den Deckel, um nachzusehen, wie es ihm geht. Es tut, was Kodo tut: Es lässt sich Zeit. In Desolace verkauft man dieses Rezept in Sichtweite der Kodoknochen, die das Tal übersäen, was mir ein wenig taktlos scheint, und durch und durch praktisch.
+Die Kodos von Desolace werden schwerer als die des Brachlands, obwohl sie von gar nichts leben, und ihr Fleisch ist das dichteste, das ich kenne. Ich habe es nicht nötig, die Küche der Horde zu kosten, und ich mache eine Ausnahme für diesen Eintopf, weil er weniger Horde ist als Kodo, und der Kodo ist ohne Schuld. Zwei Portionen schweres Kodofleisch, feine Gewürze und Quellwasser, und ein ganzer Tag über kleinem Feuer. Das Fleisch kommt kalt hinein und in Fäden wieder heraus. Überstürzt es nicht, und hebt nicht jede Stunde den Deckel, um nachzusehen, wie es ihm geht. Es tut, was Kodo tut: Es lässt sich Zeit. In Desolace verkauft man dieses Rezept in Sichtweite der Kodoknochen, die das Tal übersäen, was mir ein wenig taktlos scheint, und durch und durch praktisch.
 
 ## 20626 Undermine-Muschelsuppe
 

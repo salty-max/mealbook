@@ -61,7 +61,7 @@ Eigenartiges Fleisch ist für mich nicht eigenartig. Ich kann genau riechen, was
 
 ## 15910 Schwerer Kodoeintopf
 
-Die Kodos von Desolace sind schwerer als die des Brachlands, von einer Kost aus sehr wenig, und ihr Fleisch ist das dichteste, das ich kenne. Die Tauren haben mir diesen Eintopf beigebracht, und ich habe nie etwas daran geändert, denn es gibt nichts zu ändern. Zwei Portionen schweres Kodofleisch, feine Gewürze und Quellwasser, und ein ganzer Tag über kleinem Feuer. Ihr werdet riechen, wie er sich wandelt: roh, dann grasig, dann tief und braun, wie ein Feld nach dem Regen. Irgendwann am Abend zerfällt das Fleisch bei der Berührung eines Löffels in Fäden. Das ist der Moment, und kein anderer. Ich mache ihn an den kältesten Tagen für die Todeswachen auf den Mauern darüber, und ich trage ihn selbst hinauf. Sie brauchen ihn nicht. Sie stellen sich trotzdem an, und sie sind sehr still, während sie essen.
+Die Kodos von Desolace sind schwerer als die des Brachlands, obwohl sie von sehr wenig leben, und ihr Fleisch ist das dichteste, das ich kenne. Die Tauren haben mir diesen Eintopf beigebracht, und ich habe nie etwas daran geändert, denn es gibt nichts zu ändern. Zwei Portionen schweres Kodofleisch, feine Gewürze und Quellwasser, und ein ganzer Tag über kleinem Feuer. Ihr werdet riechen, wie er sich wandelt: roh, dann grasig, dann tief und braun, wie ein Feld nach dem Regen. Irgendwann am Abend zerfällt das Fleisch bei der Berührung eines Löffels in Fäden. Das ist der Moment, und kein anderer. Ich mache ihn an den kältesten Tagen für die Todeswachen auf den Mauern darüber, und ich trage ihn selbst hinauf. Sie brauchen ihn nicht. Sie stellen sich trotzdem an, und sie sind sehr still, während sie essen.
 
 ## 20626 Undermine-Muschelsuppe
 

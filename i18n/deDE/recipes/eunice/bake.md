@@ -17,7 +17,7 @@ Mehl und sonst nichts, zu kleinen Keksen gebacken für die Geschöpfe, die Abent
 
 ## 1270633 Himmelswallsoufflé
 
-Zwei Eier und ein wenig Mehl, das Eiweiß geschlagen, bis es steht, untergehoben und gebacken, ohne ein einziges Mal die Tür zu öffnen. Von außerhalb des Ofens könnt Ihr ein Soufflé nicht aufgehen sehen, aber Ihr könnt es riechen: Der Geruch wechselt von nassem Ei zu warmem Brot in dem Augenblick, in dem es seinen Höhepunkt erreicht. Nehmt es dann heraus und tragt es schnell. Ein Soufflé ist ein angehaltener Atem. Es wartet nicht, bis der Gast ausgeredet hat.
+Zwei Eier und ein wenig Mehl, das Eiweiß geschlagen, bis es steht, untergehoben und gebacken, ohne ein einziges Mal die Tür zu öffnen. Von außen könnt Ihr ein Soufflé nicht aufgehen sehen, aber Ihr könnt es riechen: Der Geruch wechselt von nassem Ei zu warmem Brot in dem Augenblick, in dem es seinen Höhepunkt erreicht. Nehmt es dann heraus und tragt es schnell. Ein Soufflé ist ein angehaltener Atem. Es wartet nicht, bis der Gast ausgeredet hat.
 
 ## 2542 Pastete aus Geiferzahnleber
 
@@ -41,11 +41,11 @@ Zwei Rieseneier und scharfe Gewürze, bei kleiner Hitze gerührt, bis sie zu wei
 
 ## 15933 Monsteromelett
 
-Ein einziges Riesenei macht einen ganzen Tisch satt, und in Undercity ist ein Tisch, wer gerade dem Herd am nächsten steht. Die Eier stammen von den großen Vögeln des Nordens, aus dem Teufelswald und aus Winterspring, heruntergebracht von Händlern, die gelernt haben, nicht zu sagen, wo sie sie gefunden haben. Schlagt das Ei mit feinen Gewürzen, bis es glatt und blass ist, gießt es dann in die breiteste Pfanne, die Ihr besitzt, bei mittlerer Hitze, und zieht die Ränder ein, sobald sie stocken. Der Geruch ist der Wegweiser: zuerst warm und rund, dann nussig an den Rändern. Nussig ist der Moment zum Zusammenklappen. Braun ist zu spät. Tragt es mit beiden Händen zum Tisch. Ich habe eine ganze Streife Todeswachen eines davon schweigend teilen sehen, mit großer Sorgfalt, als wäre es ein Schatz. Für einen Augenblick war es das. Dann baten sie um ein zweites, und das war das Schönste daran.
+Ein einziges Riesenei macht einen ganzen Tisch satt, und in Undercity gilt als Tisch, wer gerade dem Herd am nächsten steht. Die Eier stammen von den großen Vögeln des Nordens, aus dem Teufelswald und aus Winterspring, heruntergebracht von Händlern, die gelernt haben, nicht zu sagen, wo sie sie gefunden haben. Schlagt das Ei mit feinen Gewürzen, bis es glatt und blass ist, gießt es dann in die breiteste Pfanne, die Ihr besitzt, bei mittlerer Hitze, und zieht die Ränder ein, sobald sie stocken. Der Geruch ist der Wegweiser: zuerst warm und rund, dann nussig an den Rändern. Nussig ist der Moment zum Zusammenklappen. Braun ist zu spät. Tragt es mit beiden Händen zum Tisch. Ich habe eine ganze Streife Todeswachen eines davon schweigend teilen sehen, mit großer Sorgfalt, als wäre es ein Schatz. Für einen Augenblick war es das. Dann baten sie um ein zweites, und das war das Schönste daran.
 
 ## 1225760 Morgengrauenomelett
 
-Zwei Rieseneier und Weihsalz, vor dem man mich gewarnt hat, es würde mich verbrennen, und das tut es nicht. Gart es langsam, damit der Dotter leuchtend bleibt wie der Morgen. Der Geruch ist sauber und schlicht, Ei und Salz und die Pfanne. Ich koche es zu der Stunde, die die Lebenden Morgendämmerung nennen, was hier unten nichts bedeutet, aus einer Gewohnheit, an deren Entstehen ich mich nicht erinnere. Jemand kommt immer dafür herein. Jemand kommt immer.
+Zwei Rieseneier und Weihsalz. Man hat mich gewarnt, es würde mich verbrennen, und das tut es nicht. Gart es langsam, damit der Dotter leuchtend bleibt wie der Morgen. Der Geruch ist sauber und schlicht, Ei und Salz und die Pfanne. Ich koche es zu der Stunde, die die Lebenden Morgendämmerung nennen, was hier unten nichts bedeutet, aus einer Gewohnheit, an deren Entstehen ich mich nicht erinnere. Jemand kommt immer dafür herein. Jemand kommt immer.
 
 ## 1294014 Süßtatzenmarmelade
 

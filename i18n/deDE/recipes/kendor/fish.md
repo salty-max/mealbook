@@ -29,7 +29,7 @@ Die Frenzys der Dunkelküste sind nichts als Zähne und Temperament, und die Nac
 
 ## 7754 Lochfrenzy Supreme
 
-Die Zwerge von Loch Modan haben dieses Gericht ein Supreme genannt, und das ist das großzügigste Wort, das ich je einen Zwerg über etwas ohne Malz darin habe sagen hören. Der Frenzy aus dem Loch ist fester als seine Vettern im Süden, Fleisch aus kaltem Wasser, das in der Pfanne zusammenhält. Würzt ihn mit milden Gewürzen, bratet ihn schnell und serviert ihn heiß. Den Namen gestehe ich den Zwergen zu. Die Methode nicht, denn zu ihr gehört eine Menge Geschrei.
+Die Zwerge von Loch Modan haben dieses Gericht ein Supreme genannt, und das ist das großzügigste Wort, das ich je einen Zwerg über etwas ohne Malz darin habe sagen hören. Der Frenzy von dort ist fester als seine Vettern im Süden, Fleisch aus kaltem Wasser, das in der Pfanne zusammenhält. Würzt ihn mit milden Gewürzen, bratet ihn schnell und serviert ihn heiß. Den Namen gestehe ich den Zwergen zu. Die Methode nicht, denn zu ihr gehört eine Menge Geschrei.
 
 ## 7753 Langzahniger Matschschnapper
 
@@ -45,7 +45,7 @@ Jeder Lehrer lehrt Krebsküchlein, und jeder Lehrer lehrt sie zu nass. Kriecherf
 
 ## 25704 Geräucherter Weisenfisch
 
-Weisenfische kommen aus den Seen von Hillsbrad, wo das Wasser kalt und klar ist und die Fischer geduldig sind. Der Fisch nimmt den Duft des Salbeis an den Ufern an, daher sein Name, und sanftes Räuchern hebt diesen Duft hervor. Wenig Rauch, eine Prise Gewürz und ein Nachmittag. Die Bauern von Southshore verkaufen ihn aus ihren Fenstern. Er ist das Beste in Southshore. Die Latte liegt dort niedrig, aber er nimmt sie mit Anstand.
+Weisenfische kommen aus den Seen von Hillsbrad, wo das Wasser kalt und klar ist und die Fischer geduldig sind. Der Fisch nimmt den Duft des Salbeis an den Ufern an, und sanftes Räuchern hebt diesen Duft hervor. Wenig Rauch, eine Prise Gewürz und ein Nachmittag. Die Bauern von Southshore verkaufen ihn aus ihren Fenstern. Er ist das Beste in Southshore. Die Latte liegt dort niedrig, aber er nimmt sie mit Anstand.
 
 ## 2545 Gekochte Krebsschere
 

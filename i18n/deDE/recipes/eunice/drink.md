@@ -9,7 +9,7 @@ Friedensblume, in Quellwasser gezogen, bis das Wasser die Farbe von Stroh annimm
 
 ## 1249963 Giftiger Smoothie
 
-Quellwasser, milde Gewürze und ein kleiner Giftbeutel, zerdrückt und durchgeseiht, sodass nur die Schärfe bleibt. Die Apotheker haben meine erste Mischung geprüft. Sie erklärten sie für unbedenklich für die Lebenden, mit einer Enttäuschung, zu der ich mich lieber nicht geäußert habe. Schüttelt ihn kräftig und serviert ihn kalt. Die Lebenden sagen, er brenne auf der Zunge. Ich glaube ihnen, und ich sehe zu, wie sie nach einem zweiten Glas greifen.
+Quellwasser, milde Gewürze und ein kleiner Giftbeutel, zerdrückt und durchgeseiht, sodass nur die Schärfe bleibt. Die Apotheker haben meine erste Mischung geprüft. Das Urteil: unbedenklich für die Lebenden, gesprochen mit einer Enttäuschung, zu der ich mich lieber nicht geäußert habe. Schüttelt ihn kräftig und serviert ihn kalt. Die Lebenden sagen, er brenne auf der Zunge. Ich glaube ihnen, und ich sehe zu, wie sie nach einem zweiten Glas greifen.
 
 ## 21144 Eierflip
 
@@ -41,7 +41,7 @@ Ein Golddorn ergibt vier Tassen, was Euch sagt, wie kräftig er ist. Lasst ihn i
 
 ## 1249966 Verkalkter Smoothie
 
-Süßer Nektar, scharfe Gewürze und ein großer Fangzahn, zu Pulver gemahlen. Der Zahn macht das Getränk kreidig und dick, wie Milch, die zu lange in der Sonne gestanden hat und es sich dort bequem gemacht hat. Seiht ihn gut ab, zweimal, denn Grieß in einem Getränk verzeiht niemand. Die Lebenden, die vom Kämpfen leben, trinken ihn morgens. Die Todeswachen, die vom Kämpfen leben und nicht leben, trinken ihn aus Solidarität.
+Süßer Nektar, scharfe Gewürze und ein großer Fangzahn, zu Pulver gemahlen. Der Zahn macht das Getränk kreidig und dick, wie Milch, die zu lange in der Sonne stand und es sich dort bequem gemacht hat. Seiht ihn gut ab, zweimal, denn Grieß in einem Getränk verzeiht niemand. Die Lebenden, die vom Kämpfen leben, trinken ihn morgens. Die Todeswachen, die vom Kämpfen leben und nicht leben, trinken ihn aus Solidarität.
 
 ## 1249960 Triagetee
 

@@ -145,7 +145,7 @@ Weihsalz, aus den Kirchen der Lebenden, was mich zum Lachen brachte, als ich zum
 
 ## 1225758 Pirschersteak
 
-Tiger, heißt der Name, dick geschnitten und eine Stunde vor dem Garen mit Weihsalz eingerieben. Tiger ist ein fleißiges Fleisch, und das Salz beruhigt es. Dann ein heißes Eisen, ein kurzes Anbraten und eine lange Ruhe. Ihr werdet hören, wie es sich auf dem Brett entspannt, ein leises Setzen, wie ein Hund, der sich hinlegt. Dann schneidet Ihr. Nicht vorher. Ein Tiger, der sich nicht gesetzt hat, setzt sich auch bei Tisch nicht.
+Tiger, das meint der Name, dick geschnitten und eine Stunde vor dem Garen mit Weihsalz eingerieben. Tiger ist ein fleißiges Fleisch, und das Salz beruhigt es. Dann ein heißes Eisen, ein kurzes Anbraten und eine lange Ruhe. Ihr werdet hören, wie es sich auf dem Brett entspannt, ein leises Setzen, wie ein Hund, der sich hinlegt. Dann schneidet Ihr. Nicht vorher. Ein Tiger, der sich nicht gesetzt hat, setzt sich auch bei Tisch nicht.
 
 ## 1250144 Fledermausragout
 

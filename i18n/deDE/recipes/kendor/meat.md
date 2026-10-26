@@ -53,7 +53,7 @@ Die Zwerge von Thelsamar machen jeden Winter Blutwurst und schicken ein paar nac
 
 ## 1250154 Zweifach gewürzte Raptorscheibe
 
-Zweifach gewürzt, und ausnahmsweise sagt ein Gericht die Wahrheit über sich selbst. Der Raptor wird einmal eingerieben, bevor er geschnitten wird, und einmal, nachdem er gegart ist, und das zweite Mal nicht für den Geschmack, sondern für die Kruste. Raptorfleisch ist mager und trocknet schnell aus. Schneidet es quer zur Faser, so dünn, dass man eine Kerze hindurchscheinen sieht, und gebt es dem Feuer für einen Atemzug, nicht länger. Ein Rezept, das ich nicht erfunden habe, und das ich erfunden hätte, mit etwas Zeit.
+Zweifach gewürzt, und ausnahmsweise sagt ein Gericht die Wahrheit über sich selbst. Der Raptor wird einmal eingerieben, bevor er geschnitten wird, und einmal, nachdem er gegart ist, und das zweite Mal nicht für den Geschmack, sondern für die Kruste. Raptorfleisch ist mager und trocknet schnell aus. Schneidet es quer zur Faser, so dünn, dass man eine Kerze hindurchscheinen sieht, und gebt es dem Feuer für einen Atemzug, nicht länger. Ein Rezept, das ich nicht erfunden habe und das ich erfunden hätte, mit etwas Zeit.
 
 ## 3370 Krokiliskensteak
 
@@ -145,7 +145,7 @@ Filet aus der Flanke, ein bescheidener Name für ein Gericht, dem nichts fehlt. 
 
 ## 1225758 Pirschersteak
 
-Pirschersteak ist Tiger, was auszusprechen der Name zu höflich ist. Zwei Stücke davon, mit Weihsalz eingerieben und eine Stunde liegen gelassen, bevor das Feuer sie berührt. Tiger ist ein mageres, fleißiges Fleisch, und das Salz zähmt es. Der Rest ist Zurückhaltung: ein heißes Eisen, ein kurzes Anbraten und eine lange Ruhe. Ich habe Jäger behaupten hören, ein Tiger müsse zornig gegart werden. Jäger sollten jagen und die Küche jenen überlassen, die bis sechzig zählen können.
+Pirschersteak ist Tiger, nur ist der Name zu höflich, es zu sagen. Zwei Stücke davon, mit Weihsalz eingerieben und eine Stunde liegen gelassen, bevor das Feuer sie berührt. Tiger ist ein mageres, fleißiges Fleisch, und das Salz zähmt es. Der Rest ist Zurückhaltung: ein heißes Eisen, ein kurzes Anbraten und eine lange Ruhe. Ich habe Jäger behaupten hören, ein Tiger müsse zornig gegart werden. Jäger sollten jagen und die Küche jenen überlassen, die bis sechzig zählen können.
 
 ## 1250144 Fledermausragout
 
@@ -169,7 +169,7 @@ Ein Hirschsteak, dampfend serviert, also sofort serviert, und so sollte jedes St
 
 ## 1250149 Flinkschlagsteak
 
-Ein Jägername für ein Kochgericht, als wäre der Tiger von einem Blitz gefangen worden. Der Tiger wurde von einem Jäger und sehr viel Warten gefangen. Das Steak jedoch verdient seinen Namen: drei Stücke Tiger, feine Gewürze und das heißeste Feuer, das Ihr machen könnt, für die kürzeste Zeit, die Ihr ertragt. Schnell zuschlagen, lange ruhen. Bei der zweiten Hälfte verlieren die meisten Köche die Nerven.
+Ein Jägername für ein Gericht, als wäre der Tiger von einem Blitz gefangen worden. Der Tiger wurde von einem Jäger und sehr viel Warten gefangen. Das Steak jedoch verdient seinen Namen: drei Stücke Tiger, feine Gewürze und das heißeste Feuer, das Ihr machen könnt, für die kürzeste Zeit, die Ihr ertragt. Schnell zuschlagen, lange ruhen. Bei der zweiten Hälfte verlieren die meisten Köche die Nerven.
 
 ## 1250146 Pfefferflanke
 

@@ -35,7 +35,7 @@ bun run recipes      # the recipes again, after wow-data's databases change
 bun run kit:sync     # after a change to the kit (Kit.lua, Media, scripts/root.ts)
 bun run locales      # after a new L["..."] (then --keys for i18n/words.json)
 bun scripts/pages.ts --stamp   # once a translation was read against its changed English
-scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md   # check, tag, push; Actions publish
+scripts/release.sh --version X.Y.Z [--hold] NOTES.md   # check, tag, push; Actions publish
 ```
 
 ## Hard rules

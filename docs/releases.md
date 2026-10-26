@@ -23,7 +23,7 @@ GitHub, CurseForge and Wago; HOLD_STORES=true holds the stores; by hand,
 push: `bun run check:ci` (locales, lint, the three sims, the package); the recipes' and pages'
 checks need wow-data's databases, so the daily job runs them),
 `game-data.yml` (daily: recipes, pages, locales from wow-data's pins),
-`scripts/release.sh [--version X.Y.Z] [--hold] NOTES.md`. The store page
+`scripts/release.sh --version X.Y.Z [--hold] NOTES.md`. The store page
 `addon/CURSEFORGE.md` (title "Mealbook: Cooking Guide & Cookbook", the
 summary the TOCs' Notes).
 

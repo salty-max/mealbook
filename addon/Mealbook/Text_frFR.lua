@@ -4,7 +4,7 @@ ns.translate({
   locale = "frFR",
   plural = "fr",
   words = {
-    ["/mealbook opens the book, /mealbook road the road to 300 and /mealbook settings its settings. /mealbook chef changes chef, /mealbook tooltips shows or hides the dishes on ingredients' tooltips, /mealbook minimap the button. /mealbook welcome shows the welcome page again. /mealbook export gives this character's settings as a code, and /mealbook import CODE takes them."] = "/mealbook ouvre le livre, /mealbook road la route vers 300 et /mealbook settings ses réglages. /mealbook chef change de chef, /mealbook tooltips affiche ou masque les plats sur les bulles d'aide des ingrédients, /mealbook minimap le bouton. /mealbook welcome réaffiche la page d'accueil. /mealbook export donne les réglages de ce personnage sous forme de code, et /mealbook import CODE les reprend.",
+    ["/mealbook opens the book, /mealbook road the road to 300 and /mealbook settings its settings. /mealbook chef changes chef, /mealbook tooltips shows or hides the dishes on ingredients' tooltips, /mealbook minimap the button. /mealbook welcome shows the welcome page again. /mealbook export gives this character's settings as a code, and /mealbook import CODE takes them."] = "/mealbook ouvre le livre, /mealbook road la route vers 300 et /mealbook settings ses réglages. /mealbook chef change de chef, /mealbook tooltips affiche ou masque les plats dans les infobulles des ingrédients, /mealbook minimap le bouton. /mealbook welcome réaffiche la page d'accueil. /mealbook export donne les réglages de ce personnage sous forme de code, et /mealbook import CODE les reprend.",
     ["/mealbook opens the book."] = "/mealbook ouvre le livre.",
     ["%d %s"] = "%d %s",
     ["%d %s %d"] = "%d %s %d",

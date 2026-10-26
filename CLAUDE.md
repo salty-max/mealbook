@@ -27,6 +27,7 @@ one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 ```bash
 bun run check        # kit, saved ids, recipes, languages, pages, lint, the sim on three clients, TOCs
 bun run check:ci     # what CI and the release gate run: no family folder (the kit, the saved ids and the generators' checks aside)
+bun scripts/root.ts --run addon-kit/regional.ts   # esMX's game names from wow-data into i18n/esMX/regional.resolved.json (first, after a wow-data change; --check is in `check`)
 bun run ids          # every table saved-ids.json lists keeps the ids it had at the fork point from origin/main (addon-kit's ids.ts)
 bun scripts/root.ts --run addon-kit/q.ts check -- bun run check   # the same, quiet, stamping the tree for the push
 bun run package      # dist/Mealbook-<version>.zip for a test in the game

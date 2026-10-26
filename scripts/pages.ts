@@ -196,7 +196,8 @@ if (import.meta.main) {
   // article-led one after any form of its article ("del Salón de los
   // Feudales"), a one-word one, or one whose second word is lowercase, only
   // inside a sentence, so that a common noun or phrase opening one (Establo,
-  // Torre abandonada) is left alone, at the cost of a real one opening one.
+  // Torre abandonada) is left alone, at the cost of a real one opening one
+  // (a particle is no lowercase word: Puertas de Ahn'Qiraj matches anywhere).
   // Two names differing only by their article are one (Coliseo, El Coliseo).
   const placeCache = new Map<string, [string, RegExp][]>();
   const placesOnly = (lender: string, locale: string): [string, RegExp][] => {
@@ -221,7 +222,7 @@ if (import.meta.main) {
       const led = n.match(/^(?:El|La|Los|Las) (.+)$/);
       if (led && /^\p{Ll}/u.test(led[1])) continue;
       if (led) list.push([n, new RegExp(`(^|[^\\p{L}])(?:[Ee]l|[Ll]a|[Ll]os|[Ll]as|[Dd]el|[Aa]l) ${escape(led[1])}${end}`, "u")]);
-      else if (!n.includes(" ") || /^\S+ \p{Ll}/u.test(n)) list.push([n, new RegExp(`(?:[\\p{Ll},:] |[(«—-])${escape(n)}${end}`, "u")]);
+      else if (!n.includes(" ") || /^\S+ (?!(?:de|del|y|en)\b)\p{Ll}/u.test(n)) list.push([n, new RegExp(`(?:[\\p{Ll},:] |[(«—-])${escape(n)}${end}`, "u")]);
       else list.push([n, new RegExp(`(^|[^\\p{L}])${escape(n)}${end}`, "u")]);
     }
     placeCache.set(key, list);

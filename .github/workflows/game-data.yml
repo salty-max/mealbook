@@ -23,6 +23,8 @@ jobs:
     with:
       kit: true
       generate: |
+        # (esMX's game names from wow-data, the hand file's words beside them)
+        bun scripts/root.ts --run addon-kit/regional.ts
         bun scripts/recipes.ts
         bun scripts/pages.ts
         bun scripts/locales.ts

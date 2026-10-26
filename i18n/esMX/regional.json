@@ -1,23 +1,27 @@
 {
-  "Cardoveloz": "Cardopresto",
-  "cardoveloz": "cardopresto",
-  "Aletantojo": "Descarrioaleta",
-  "aletantojo": "descarrioaleta",
-  "Clarofluvial": "Claros del Río",
-  "Villabajo": "Minahonda",
-  "ratas de excavación": "ratas de madriguera",
-  "rata de excavación": "rata de madriguera",
-  "pastel de araña babosa": "pastel de araña pegajosa",
-  "Sorpresa de carroñero": "Sorpresa de carroña",
-  "Filete de falda": "Filete de lomo",
-  "Una tortilla de monstruo": "Una tortilla gigante",
-  "una tortilla de monstruo": "una tortilla gigante",
-  "té regio": "té real",
-  "Una tortilla de desayuno": "Un omelette de desayuno",
-  "huevos gigantes revueltos": "huevos revueltos gigantes",
-  "suflé del Muro Celeste": "suflé de Muro Celeste",
-  "festín de pez moteado": "festín de motaletas",
-  "Piedrescama": "piedrescama",
-  "del chili": "del ají",
-  "este chili": "este ají"
+  "names": [
+    "Cardoveloz",
+    "Aletantojo",
+    "Clarofluvial",
+    "Sorpresa de carroñero",
+    "Filete de falda"
+  ],
+  "words": {
+    "cardoveloz": "cardopresto",
+    "aletantojo": "descarrioaleta",
+    "Villabajo": "Minahonda",
+    "ratas de excavación": "ratas de madriguera",
+    "rata de excavación": "rata de madriguera",
+    "pastel de araña babosa": "pastel de araña pegajosa",
+    "Una tortilla de monstruo": "Una tortilla gigante",
+    "una tortilla de monstruo": "una tortilla gigante",
+    "té regio": "té real",
+    "Una tortilla de desayuno": "Un omelette de desayuno",
+    "huevos gigantes revueltos": "huevos revueltos gigantes",
+    "suflé del Muro Celeste": "suflé de Muro Celeste",
+    "festín de pez moteado": "festín de motaletas",
+    "Piedrescama": "piedrescama",
+    "del chili": "del ají",
+    "este chili": "este ají"
+  }
 }

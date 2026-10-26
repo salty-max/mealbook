@@ -143,5 +143,5 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   the game's people do: "vous" in French, "Ihr" in German (the interface
   says "du"), "tú" in Spanish, never agreeing with the reader's gender.
   esMX shares esES's words and pages, with its own client's names
-  (`i18n/esMX/regional.json`, swapped in by the build) and decimal point. The dishes', ingredients' and
+  (`i18n/esMX/regional.json` (game names from wow-data through addon-kit/regional.ts, `regional.resolved.json`; the hand file keeps words), swapped in by the build) and decimal point. The dishes', ingredients' and
   recipes' names are the game's, by id, in the client's language.

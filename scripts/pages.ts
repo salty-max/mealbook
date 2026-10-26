@@ -44,7 +44,7 @@ export const CHEFS = ["kendor", "eunice"] as const;
 const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
 const TRANSLATED = ["frFR", "deDE", "esES", "esMX"];
 // A language that borrows another's pages (esMX reads esES's), with its own
-// client's names swapped in (i18n/<locale>/regional.json, esES's name: its
+// client's names swapped in (i18n/<locale>/regional.resolved.json from regional.json by addon-kit/regional.ts, esES's name: its
 // own) and its own Classic Era swaps (classic-names.json, never the lender's).
 const BORROWS: Record<string, string> = { esMX: "esES" };
 // (the dozen dishes a chef has more to say about: cookbook-voices.md)
@@ -236,7 +236,7 @@ if (import.meta.main) {
     if (TRANSLATED.includes(locale)) {
       pages = {};
       const from = BORROWS[locale] ?? locale;
-      const regionalFile = join(ROOT, "i18n", locale, "regional.json");
+      const regionalFile = join(ROOT, "i18n", locale, "regional.resolved.json");
       const regional = from !== locale && existsSync(regionalFile) ? Object.entries(JSON.parse(readFileSync(regionalFile, "utf8")) as Record<string, string>).sort((a, b) => b[0].length - a[0].length) : [];
       const regionalise = (p: Page): Page => ({ ...p, paragraphs: p.paragraphs.map((t) => regional.reduce((t, [a, b]) => t.replaceAll(a, b), t)) });
       const stampFile = join(ROOT, "i18n", from, "recipes-stamp.json");

@@ -10,21 +10,7 @@ local book, list, page
 local current
 local rows = {}
 
-local function style(row, kind)
-  if kind == "section" then
-    row.text:SetPoint("LEFT", 4, 0)
-    row.text:SetPoint("RIGHT", -4, 0)
-    row.text:SetFont(ns.kit.TITLE_FONT, 14, "")
-    row.text:SetTextColor(unpack(T.gold))
-    return 22
-  end
-  row.count:SetPoint("RIGHT", -4, 0)
-  row.text:SetPoint("LEFT", kind == "overview" and 4 or 14, 0)
-  row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
-  row.text:SetFont(ns.kit.BODY_FONT, 12, "")
-  row.text:SetTextColor(unpack(kind == "overview" and T.gold or T.text))
-  return 18
-end
+local style = ns.kit.listStyle -- (the kinds every book shares)
 
 local function known()
   local out = {}
@@ -80,8 +66,8 @@ local HOW = {
   quest = L["From a quest"],
 }
 
--- The chef's page of the dish: a note in their hand, signed (the kit's
--- aside). A translation names places as Forever's client does: Classic Era's
+-- The chef's page of the dish, in the chef's own words, signed (the kit's
+-- voice). A translation names places as Forever's client does: Classic Era's
 -- names swapped in there (ns.classicNames, from the Pages file).
 local function swapped(text)
   if ns.forever or not ns.classicNames then return text end
@@ -103,7 +89,7 @@ end
 local function chefPage(spell)
   local chef = ns.chef()
   local text = ns.pageText(chef, spell)
-  if text then page:text({ { table.concat(text, "\n\n"), aside = true, sign = ns.chefName(chef) } }) end
+  if text then page:text({ { table.concat(text, "\n\n"), voice = true, sign = ns.chefName(chef) } }) end
 end
 
 local function showDish(spell)

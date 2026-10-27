@@ -23,22 +23,7 @@ local KINDS = {
 }
 local RARE = { [2] = true, [4] = true } -- (rare elite, rare)
 
-local function style(row, kind)
-  if kind == "section" then
-    row.text:SetPoint("LEFT", 4, 0)
-    row.text:SetPoint("RIGHT", -4, 0)
-    row.text:SetFont(ns.kit.TITLE_FONT, 14, "")
-    row.text:SetTextColor(unpack(T.gold))
-    return 22
-  end
-  row.count:SetPoint("RIGHT", -4, 0)
-  row.text:SetPoint("LEFT", kind == "overview" and 4 or 14, 0)
-  row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
-  row.text:SetFont(ns.kit.BODY_FONT, 12, "")
-  row.text:SetTextColor(unpack(kind == "overview" and T.gold or T.text))
-  row.count:SetTextColor(unpack(T.soft))
-  return 18
-end
+local style = ns.kit.listStyle -- (the kinds every book shares)
 
 local function hunts()
   local skill = ns.skill()

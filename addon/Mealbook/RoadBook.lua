@@ -16,14 +16,7 @@ local current -- (a leg's index, else the road)
 local legs = {}
 local rows = {}
 
-local function style(row, kind)
-  row.count:SetPoint("RIGHT", -4, 0)
-  row.text:SetPoint("LEFT", kind == "overview" and 4 or 14, 0)
-  row.text:SetPoint("RIGHT", row.count, "LEFT", -4, 0)
-  row.text:SetFont(ns.kit.BODY_FONT, 12, "")
-  row.text:SetTextColor(unpack(kind == "overview" and T.gold or T.text))
-  return 18
-end
+local style = ns.kit.listStyle -- (the kinds every book shares)
 
 -- (who serves the character's side, the nearest first)
 local function serving(ids)
@@ -130,7 +123,7 @@ local function huntsLine(skill)
     ):format(#open),
     T.soft
   )
-  page:chips({ { L["See the hunts"], ns.openHunts } })
+  page:buttons({ { L["See the hunts"], ns.openHunts } })
 end
 
 local function showRoad()
@@ -320,7 +313,7 @@ local function showLeg(leg)
   page:section(L["Skill"])
   page:row(L["Colours"], ui.thresholds(d))
   -- (a recipe still to learn has no page in the book yet)
-  if ns.knows(leg.spell) then page:chips({ { L["Open its recipe"], function() ns.openDish(leg.spell) end } }) end
+  if ns.knows(leg.spell) then page:buttons({ { L["Open its recipe"], function() ns.openDish(leg.spell) end } }) end
 end
 
 local function refresh()

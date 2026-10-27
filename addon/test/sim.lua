@@ -529,14 +529,14 @@ for i = 1, 40 do
   for _, h in ipairs(roadPage.headings) do
     if h.shown and h.text.text == L["Learn it first"] then learn = true end
   end
-  local chip = roadPage.chipPool[1]
-  local link = chip and chip.shown and chip.text.text == L["Open its recipe"]
+  local button = roadPage.buttonPool[1]
+  local link = button and button.shown and button.text == L["Open its recipe"]
   if learn then
     toLearn = toLearn + 1
     if link then wrong = wrong + 1 end
   elseif link then
     offered = offered + 1
-    chip.click()
+    button.click()
   end
   local t = roadPage.tiles
   if t[3] and t[3].shown then

@@ -7,16 +7,7 @@ local _, ns = ...
 local K, L = ns.kit, ns.kit.L
 
 -- ── look ─────────────────────────────────────────────────────────────────────
--- The kit's (Kit.lua), in the kitchen's theme: a copper accent, the panels a
--- faint warm brown, like a page near the stove.
-K.theme({
-  accent = { 0.95, 0.68, 0.38 },
-  ring = { 0.72, 0.45, 0.24 },
-  bar = { 0.85, 0.55, 0.25 },
-  tint = { 1.00, 0.94, 0.86 },
-  shade = { 0.04, 0.02, 0.01, 0.55 },
-  highlight = { 1.00, 0.85, 0.65 },
-})
+-- The kit's (Kit.lua), its theme (the kitchen's: copper) set first thing in Core.lua.
 local T = K.T
 local ICON = "Interface\\AddOns\\Mealbook\\Media\\Logo"
 
@@ -48,6 +39,11 @@ ns.TAB = TAB
 local B = K.book({
   name = "MealbookFrame",
   title = "Mealbook",
+  -- (where it was left, kept with the account's settings)
+  place = function()
+    MealbookSettings = MealbookSettings or {}
+    return K.place(MealbookSettings, "book")
+  end,
   art = ICON,
   titles = { L["Recipes"], L["The road"], L["Hunts"], L["Achievements"] },
   first = TAB.recipes,

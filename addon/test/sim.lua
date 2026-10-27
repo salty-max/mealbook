@@ -44,6 +44,7 @@ s.printed = {}
 G.openWindow({ 2538, 2540, 8604, 6412 })
 check(char.known[6412], "a recipe the window lists joins the book")
 check(said(NEW_PAGE), "said in chat")
+check(said("|Hmealbook:dish:6412|h"), "the new page a link in chat, to its page")
 
 -- ── a recipe learned from its item ───────────────────────────────────────────
 s.printed = {}

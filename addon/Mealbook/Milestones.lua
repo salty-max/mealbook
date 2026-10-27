@@ -38,7 +38,12 @@ local A = K.deeds({
     if ns.openMilestones then ns.openMilestones(id) end
   end,
   picture = function(d) return K.icon(GROUP_ICONS[d.group] or ICON) end,
-  banners = K.banners({ name = "MealbookBanner", art = ICON }),
+  sound = function() return ns.option("achievementSound") end,
+  banners = K.banners({
+    name = "MealbookBanner",
+    art = ICON,
+    seconds = function() return ns.option("bannerSeconds") end,
+  }),
   changed = function()
     if ns.onChange then ns.onChange() end
   end,

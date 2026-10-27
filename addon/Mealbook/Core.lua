@@ -21,7 +21,18 @@
 -- names are the game's, in the client's language, when shown.
 local _, ns = ...
 local L, D = ns.kit.L, ns.data
-ns.PREFIX = "|cffe0a050Mealbook:|r "
+-- The kit's look (Kit.lua), in the kitchen's theme: a copper accent, the panels a
+-- faint warm brown, like a page near the stove.
+ns.kit.theme({
+  accent = { 0.95, 0.68, 0.38 },
+  ring = { 0.72, 0.45, 0.24 },
+  bar = { 0.85, 0.55, 0.25 },
+  tint = { 1.00, 0.94, 0.86 },
+  shade = { 0.04, 0.02, 0.01, 0.55 },
+  highlight = { 1.00, 0.85, 0.65 },
+})
+
+ns.PREFIX = ns.kit.prefix("Mealbook")
 
 -- Forever hides some values from addons ("secret values"): never compare one.
 ns.secret = ns.kit.secret
@@ -92,6 +103,13 @@ end
 
 function ns.skill() return char and char.skill and char.skill.rank or 0, char and char.skill and char.skill.max or 0 end
 
+-- A dish's link in chat (|Hmealbook:dish:<spell>|h, the kit's): a click opens
+-- its page, as the Codex's and Yonder's links open theirs.
+local dishLink = ns.kit.links("mealbook", function(target)
+  local spell = tonumber(target:match("^dish:(%d+)$") or "")
+  if spell and ns.openDish then ns.openDish(spell) end
+end)
+
 -- ── the recipes known ────────────────────────────────────────────────────────
 -- A recipe joins the book the first time the game says it is known: quietly
 -- at the login (a character who already cooks), else with a line in chat.
@@ -99,7 +117,7 @@ function ns.learnt(spell, quietly)
   if not D.recipes[spell] or char.known[spell] then return end
   char.known[spell] = at()
   if not quietly then
-    print(ns.PREFIX .. L["A new page: %s."]:format("|cffffd27f" .. ns.dishName(spell) .. "|r"))
+    print(ns.PREFIX .. L["A new page: %s."]:format(dishLink("dish:" .. spell, ns.dishName(spell))))
     if ns.onLearnt then ns.onLearnt(spell) end
     if ns.progressed then ns.progressed() end
   end

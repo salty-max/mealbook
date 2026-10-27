@@ -23,12 +23,15 @@ local DEFAULTS = {
   minimapHidden = false,
   minimapAngle = K.MINIMAP_ANGLES.Mealbook,
   achievementToast = true,
+  achievementSound = K.ACHIEVEMENT_SOUND,
+  bannerSeconds = K.BANNER_SECONDS,
   welcomed = false,
 }
-local SHARED = { "chef", "tooltips", "minimapHidden", "minimapAngle", "achievementToast" }
+local SHARED =
+  { "chef", "tooltips", "minimapHidden", "minimapAngle", "achievementToast", "achievementSound", "bannerSeconds" }
 ns.CHEF_CHOICES = { [0] = false, [1] = "kendor", [2] = "eunice" }
 
--- The profiles: a code "MB1:c0:t1:h0:a165:v1".
+-- The profiles: a code "MB1:c0:t1:h0:a165:v1:f12891:n10".
 local P = K.profiles({
   saved = function()
     if type(MealbookSettings) ~= "table" then MealbookSettings = {} end
@@ -36,7 +39,15 @@ local P = K.profiles({
   end,
   defaults = DEFAULTS,
   shared = SHARED,
-  letters = { chef = "c", tooltips = "t", minimapHidden = "h", minimapAngle = "a", achievementToast = "v" },
+  letters = {
+    chef = "c",
+    tooltips = "t",
+    minimapHidden = "h",
+    minimapAngle = "a",
+    achievementToast = "v",
+    achievementSound = "f",
+    bannerSeconds = "n",
+  },
   tag = "MB1",
   changed = function(key)
     if key == "minimapHidden" or key == "minimapAngle" then
@@ -91,6 +102,8 @@ function ns.createSettingsPanel()
     L["Alert for achievements"],
     L["Show each achievement earned in the game's achievement alert. A click on it opens the achievements."]
   )
+  O:achievementSound("achievementSound")
+  O:bannerSeconds("bannerSeconds")
   O:check("minimapHidden", L["Minimap button"], L["The book by the minimap: click to open it, drag to move it."], true)
   O:copy()
   O:done()

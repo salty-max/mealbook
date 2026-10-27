@@ -170,7 +170,8 @@ end
 function P.addSources(tip, item)
   local src, ui = P.sources(item), ns.ui
   if not src then return end
-  local function line(text) tip:AddLine(text, 0.95, 0.68, 0.38, true) end
+  local accent = ns.kit.T.accent
+  local function line(text) tip:AddLine(text, accent[1], accent[2], accent[3], true) end
   if src.sellers[1] then
     line(L["Sold by %s"]:format(joined(src.sellers, 2, function(v)
       local at = ui.where(v)
@@ -212,7 +213,9 @@ local function addLine(tip, item)
   if ns.option and not ns.option("tooltips") then return end
   if ns.secret(item) then return end
   local line = P.line(item)
-  if line then tip:AddLine(line, 0.95, 0.68, 0.38, true) end
+  -- (the family's line on the game's tooltip: the addon's name first, the
+  -- quiet ink of something known)
+  if line then ns.kit.tooltipLine(tip, ns.kit.L["%s:"]:format("Mealbook") .. " " .. line, false, true) end
 end
 
 -- The game's item tooltips, every one (the kit's hook: the modern client's

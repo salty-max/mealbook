@@ -62,7 +62,7 @@ The dishes, ingredients and places are the game's own, in your client's language
 
 Open the book with `/mealbook` or the minimap button. The welcome page appears once per character and can be reopened with `/mealbook welcome`.
 
-Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the achievements' alert, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's within the same game, or use `/mealbook export` and `/mealbook import CODE`.
+Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the achievements' alert and sound, how long banners stay, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's within the same game, or use `/mealbook export` and `/mealbook import CODE`.
 
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.
@@ -77,6 +77,8 @@ These share Mealbook's look and work independently:
 - **[Lorekeeper's Codex](https://www.curseforge.com/wow/addons/lorekeepers-codex)** ([Wago](https://addons.wago.io/addons/j6jAL0NR)) unlocks lore pages as you explore Azeroth and meet its people.
 - **[Yonder](https://www.curseforge.com/wow/addons/yonder)** ([Wago](https://addons.wago.io/addons/ZKbq5y61)) offers exploration riddles, rare hunts, a bestiary, an atlas and records of your fish and herbs.
 - **[Second Wind](https://www.curseforge.com/wow/addons/second-wind)** ([Wago](https://addons.wago.io/addons/XKqEjbKy)) gives you a debrief after a close call or death.
+- **[Goodwill](https://www.curseforge.com/wow/addons/goodwill)** ([Wago](https://addons.wago.io/addons/ZKbqa961)) shows every faction's road to Exalted from where you stand, with a chapter of its story at each standing.
+- **[Yours Truly](https://www.curseforge.com/wow/addons/yours-truly)** ([Wago](https://addons.wago.io/addons/j6jAx1NR)) brings letters from the people whose quest chains you finished, waiting at your next mailbox.
 
 ## Support
 

@@ -52,6 +52,7 @@ ns.translate({
     ["A Table for Everyone"] = "Ein Tisch für alle",
     ["A Thousand Meals"] = "Tausend Mahlzeiten",
     ["Achievement earned: %s."] = "Erfolg errungen: %s.",
+    ["Achievement fanfare"] = "Erfolgsfanfare",
     ["Achievement sound"] = "Erfolgsklang",
     ["Achievements"] = "Erfolge",
     ["Alert for achievements"] = "Meldung bei Erfolgen",

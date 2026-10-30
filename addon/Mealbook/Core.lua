@@ -205,11 +205,13 @@ ns.on("TRADE_SKILL_LIST_UPDATE", ns.readWindow)
 ns.on("NEW_RECIPE_LEARNED", function(id) ns.learnt(id) end)
 ns.on("SKILL_LINES_CHANGED", ns.readSkill)
 -- (a recipe learned from its item or a trainer: the game's line in chat, then
--- the recipes asked again)
+-- the recipes asked again; its pattern built once, every system line heard)
+local learnPattern
 ns.on("CHAT_MSG_SYSTEM", function(msg)
   if ns.secret(msg) or not ERR_LEARN_RECIPE_S then return end
-  local pattern = "^" .. ERR_LEARN_RECIPE_S:gsub("([%.%(%)%-%+%*%?%[%]%^%$])", "%%%1"):gsub("%%s", ".+") .. "$"
-  if msg:find(pattern) then ns.askKnown(false) end
+  learnPattern = learnPattern
+    or "^" .. ERR_LEARN_RECIPE_S:gsub("([%.%(%)%-%+%*%?%[%]%^%$])", "%%%1"):gsub("%%s", ".+") .. "$"
+  if msg:find(learnPattern) then ns.askKnown(false) end
 end)
 
 -- A dish cooked: counted by its cast.

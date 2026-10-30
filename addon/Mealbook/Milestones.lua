@@ -99,16 +99,30 @@ add(
 
 -- ── the recipes known ────────────────────────────────────────────────────────
 -- (the last: every dish this side can learn in this game on its own, not the
--- auction house's, a known one no source has seen yet counting too)
+-- auction house's, a known one no source has seen yet counting too; those a
+-- side reaches are the game's data alone, found once a side)
+local reach = {}
+local function reachable(mine)
+  local key = mine or "none"
+  if not reach[key] then
+    local set, n = {}, 0
+    for _, spell in ipairs(D.order) do
+      local s = ns.hunts.sources(spell, mine)
+      local h = ns.hunts.of(spell, mine)
+      if not D.recipes[spell].unknown and (s.skill or s.trainer or #s.shop > 0 or (h ~= nil and not h.auction)) then
+        set[spell], n = true, n + 1
+      end
+    end
+    reach[key] = { set = set, n = n }
+  end
+  return reach[key]
+end
 local function learnable()
-  local mine, n = ns.hunts.mine(), 0
+  local r = reachable(ns.hunts.mine())
+  local n = r.n
   local c = book()
-  for _, spell in ipairs(D.order) do
-    local d = D.recipes[spell]
-    local s = ns.hunts.sources(spell, mine)
-    local h = ns.hunts.of(spell, mine)
-    local reachable = not d.unknown and (s.skill or s.trainer or #s.shop > 0 or (h ~= nil and not h.auction))
-    if reachable or (c and c.known[spell] and counts(spell)) then n = n + 1 end
+  for spell in pairs(c and c.known or {}) do
+    if not r.set[spell] and D.recipes[spell] and counts(spell) then n = n + 1 end
   end
   return n
 end

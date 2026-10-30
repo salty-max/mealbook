@@ -35,10 +35,41 @@ local function has(list, v)
 end
 local function quest(id) return D.quests and D.quests[id] end
 
+-- The answers below come from the game's data alone (Recipes_<game>.lua,
+-- never changed after the load), so each is built once a side and kept: a
+-- dish cast checks every achievement, which asks them of every dish. Shared,
+-- so read only.
+local NONE = {} -- (a side's key where there's no side: a test client)
+local function memo(build)
+  local bySide = {}
+  return function(spell, mine)
+    local key = mine or NONE
+    local cache = bySide[key]
+    if not cache then
+      cache = {}
+      bySide[key] = cache
+    end
+    local hit = cache[spell]
+    if hit == nil then
+      -- (n: as many answers as the build gave, a nil "no" one too)
+      hit = { n = 0 }
+      local function keep(...)
+        hit.n = math.max(1, select("#", ...))
+        for i = 1, hit.n do
+          hit[i] = (select(i, ...))
+        end
+      end
+      keep(build(spell, mine))
+      cache[spell] = hit
+    end
+    return unpack(hit, 1, hit.n)
+  end
+end
+
 -- A dish's sources for a side: shop (vendors selling freely), limited
 -- (vendors with a stock), drops ({ npc, percent }), world (a drop of many),
 -- quests; skill and trainer as the dish says.
-function H.sources(spell, mine)
+local function sources(spell, mine)
   local d = D.recipes[spell]
   local out = { shop = {}, limited = {}, drops = {}, quests = {} }
   if not d then return out end
@@ -72,6 +103,7 @@ function H.sources(spell, mine)
   end
   return out
 end
+H.sources = memo(sources)
 
 -- A recipe item of the dish someone can trade (none: each binds when picked up).
 local function traded(d)
@@ -86,7 +118,7 @@ local function finds(s) return #s.limited > 0 or #s.drops > 0 or #s.quests > 0 o
 -- Does only the other side get it: none of this side's, a vendor, a stall or
 -- a quest of theirs (a drop and a world drop are either side's)? This side's
 -- sources and theirs if so (none: a test client, of neither side).
-function H.theirs(spell, mine)
+local function theirs(spell, mine)
   local d = D.recipes[spell]
   if not d or d.unknown or not mine then return nil end
   local s = H.sources(spell, mine)
@@ -95,11 +127,12 @@ function H.theirs(spell, mine)
   if #o.shop == 0 and #o.limited == 0 and #o.quests == 0 then return nil end
   return s, o
 end
+H.theirs = memo(theirs)
 
 -- Is it a hunt for this side, whatever the skill? Its sources if so: a find
 -- of its own, else (auction) a recipe only the other side gets (other: their
 -- sources) and trades (item), where the game has a neutral auction house.
-function H.of(spell, mine)
+local function of(spell, mine)
   local d = D.recipes[spell]
   if not d or d.unknown then return nil end
   local s = H.sources(spell, mine)
@@ -108,9 +141,15 @@ function H.of(spell, mine)
   local _, o = H.theirs(spell, mine)
   local item = o and #(D.auctioneers or {}) > 0 and traded(d)
   if not item then return nil end
-  s.auction, s.other, s.item = true, o, item
-  return s
+  -- (a copy: the sources stay as they are, shared)
+  local hunt = {}
+  for k, v in pairs(s) do
+    hunt[k] = v
+  end
+  hunt.auction, hunt.other, hunt.item = true, o, item
+  return hunt
 end
+H.of = memo(of)
 
 -- The hunts open at this skill: not known, learned at or below it, the
 -- side's own (open) and the auction house's apart (auction), each those that

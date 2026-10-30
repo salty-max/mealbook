@@ -138,6 +138,25 @@ check(
   "the other side's recipe, learned at the auction house: no achievement counts it"
 )
 char.known[theirs], char.cooked[theirs], char.cooked[ours] = nil, nil, oursCooked
+-- (a dish cast checks every achievement: the sources are the game's, built
+-- once a side, so a check makes next to no garbage; it made over 1 MB)
+for _, faction in ipairs({ "Alliance", "Horde" }) do
+  s.faction = faction
+  ns.progressed()
+  collectgarbage("collect")
+  collectgarbage("stop")
+  local before = collectgarbage("count")
+  for _ = 1, 20 do
+    ns.progressed()
+  end
+  local perCheck = (collectgarbage("count") - before) / 20
+  collectgarbage("restart")
+  check(perCheck < 32, ("an achievement check, %s: %.1f KB of garbage, under 32"):format(faction, perCheck))
+end
+-- (built once, never changed: the hunt's own fields are on a copy)
+local H = ns.hunts
+check(H.sources(15935, "A") == H.sources(15935, "A"), "a dish's sources built once a side")
+check(H.of(15935, "A").auction and not H.sources(15935, "A").auction, "an auction hunt leaves its sources as they were")
 s.faction = nil
 
 -- ── the road ─────────────────────────────────────────────────────────────────
@@ -373,7 +392,7 @@ check(
 )
 
 -- ── the hunts ────────────────────────────────────────────────────────────────
-local H, D = ns.hunts, ns.data
+local D = ns.data
 check(H.mine() == "A", "the character's side: the Alliance")
 -- every npc and quest the data names: a name (an npc's in every language)
 local unnamed = 0

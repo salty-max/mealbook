@@ -1,5 +1,6 @@
 # Every push and pull request: the addon's Lua is formatted and linted, the
-# addon passes its simulation on every game and a French client, its TOCs
+# addon passes its simulation on nine clients (both games, French, German,
+# Spanish and Mexican Spanish), its TOCs
 # agree, and the release's package (the BigWigs packager, as release.yml
 # makes it) is the addon's folder.
 name: CI

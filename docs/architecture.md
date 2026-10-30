@@ -6,8 +6,7 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
 ## The package
 
 - `addon/Mealbook`: one package for every game (`Mealbook_Vanilla.toc`:
-  Classic Era, 11509; `_Camelot.toc`: Forever, 16001; no TBC Anniversary:
-  the family dropped it), the same but for the interface and the game's
+  Classic Era, 11509; `_Camelot.toc`: Forever, 16001), the same but for the interface and the game's
   recipes (`Recipes_Classic.lua`, `Recipes_Forever.lua`). Loads its recipes,
   `Kit.lua` (the kit's copy, `bun run kit:sync`; never edit it),
   `Locale.lua`, `Text_[TextLocale].lua`, `Pages_[TextLocale].lua`,
@@ -18,13 +17,15 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
 
 ## The files
 
-- `Core.lua`: the book (`MealbookChar`: known, cooked, first, skill, peak;
-  ids only), the events (`ns.on`, `ns.onUnit`), the skill (Forever's
+- `Core.lua`: the book (`MealbookChar`: version, known, cooked, first,
+  skill, peak; ids only; `version` 1 is 0.1.x's shape, stamped on a book
+  from before it), the events (`ns.on`, `ns.onUnit`), the skill (Forever's
   professions by the skill line's id, Classic Era's skill list by its name
   in the client's language), the recipes known (IsPlayerSpell at the login,
   quietly; the cooking window's lines, Classic Era's TradeSkillUI calls and
   Forever's C_TradeSkillUI; Forever's NEW_RECIPE_LEARNED; the game's own
-  line when a recipe is learned, ERR_LEARN_RECIPE_S), a dish cooked
+  line when a recipe is learned, ERR_LEARN_RECIPE_S, its pattern built
+  once), a dish cooked
   (UNIT_SPELLCAST_SUCCEEDED), `/mealbook`, the kit's command (`road`,
   `chef`, `tooltips`, `minimap`, `settings`, `welcome`, `export`, `import
   CODE`: the code's letters as typed; an unknown word prints the usage, the
@@ -35,8 +36,7 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   the chef (0 the side's, 1 Kendor, 2 Eunice: a number, as the codes carry),
   the achievements' alert (`achievementToast`, a `v` in the code), the
   pantry's tooltip line, the minimap button and its place (165 degrees,
-  clear of the siblings'); the test builds' account-wide chef and tooltips
-  taken in at the login. The Options page (the kit's `K.options`:
+  clear of the siblings'). The Options page (the kit's `K.options`:
   `/mealbook settings`, a right-click on the button). `Welcome.lua`: the kit's welcome page, once
   per character (`/mealbook welcome`). `Minimap.lua`: the book's button, as
   the siblings'.
@@ -52,7 +52,10 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   open, the skill the next opens at, found of all, the side's own only; the
   auction house's open apart; those still raising the skill first). A
   recipe only the other side gets (`H.theirs`) counts for nothing but its
-  auction hunt: no achievement, none of the hunts' figures.
+  auction hunt: no achievement, none of the hunts' figures. `H.sources`,
+  `H.theirs` and `H.of` come from the game's data alone, built once a side
+  and shared (read only): every dish cast checks the achievements, which ask
+  them of every dish (it made over 1 MB of garbage a cast before).
 - `Milestones.lua`: the achievements (milestones in the code and the saved
   book, achievements to the player, as Yonder's): the ranks (cooking
   learned, Journeyman, Expert, Artisan by the skill's cap; 300), the recipes
@@ -132,7 +135,9 @@ stays there). The recipes' data and the chefs' pages: `docs/data.md`.
   each client tells it, the recipes known, the cooking window, the dishes'
   names by id, the bags) and `addon/test/sim.lua`: a first login, the
   window, a recipe learned, dishes cooked, the road, the book's tabs, on
-  Classic Era, Forever and a French client (`bun run check` runs all).
+  nine clients: Classic Era and Forever, French, German, Spanish and
+  Mexican Spanish (both games for the last three), and an achievement
+  check's garbage held under 32 KB (`bun run check` runs all).
 
 ## Languages
 

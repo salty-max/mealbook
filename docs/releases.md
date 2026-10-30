@@ -20,7 +20,7 @@ tag vX.Y.Z: the tag checked as a release's, `bun run check:ci`, the package
 checked to be the folder, each store's token and the TOCs' ids, then
 GitHub, CurseForge and Wago; HOLD_STORES=true holds the stores; by hand,
 `-f stores=curseforge|wago` retries one store alone), `ci.yml` (every
-push: `bun run check:ci` (locales, lint, the three sims, the package); the recipes' and pages'
+push: `bun run check:ci` (locales, lint, the nine sims, the package); the recipes' and pages'
 checks need wow-data's databases, so the daily job runs them),
 `game-data.yml` (daily: recipes, pages, locales from wow-data's pins),
 `scripts/release.sh --version X.Y.Z [--hold] NOTES.md`. The store page
@@ -31,15 +31,13 @@ summary the TOCs' Notes).
 
 - The opt-in collector (the kit's `K.collect`): Ravenpost reads the four
   older addons' `<Addon>Collect` only (`shared.go`), so Mealbook's (and
-  Palaver's) needs Ravenpost's list and a release too. German.
+  Palaver's) needs Ravenpost's list and a release too.
 - To check in the game: whether Classic Era's IsPlayerSpell knows a recipe
   (else the window's read is the only one), Forever's C_TradeSkillUI as the
   sim models it, the "Where to get them" cards (measured with the game's
   font against the card's 380 pixels, not seen).
-- The Greater Sagefish Schools' places: no source wow-data reads has them
-  (Questie's zone 0, no spawns), so Raw Greater Sagefish says only "caught
-  fishing". Wowhead's object pages would give them, through wow-data.
-- The first release: the projects are made (CurseForge 1754441, Wago
-  YK9xja6L, their ids in the TOCs, the tokens set, the inbox counting
-  them); then the siblings' "Other addons" lines. The store page is a
-  draft: read it again against what ships.
+- The Greater Sagefish Schools' places: wow-data has them (52 pooled
+  spawns of object 180684), but `recipes.ts` reads spawns by entity only,
+  never through a pool, so Raw Greater Sagefish says only "caught fishing".
+  A spawns-with-pools helper in wow-data's `db.ts` would give them (the
+  audit of 30 October 2026, Part 3).

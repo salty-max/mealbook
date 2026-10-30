@@ -7,7 +7,8 @@ planned in `../ideas/cookbook.md`: the chefs (Kendor Kabonka for the
 Alliance, Eunice Burch for the Horde), their voices (`../ideas/cookbook-voices.md`,
 the cards the pages follow), the Hunts, the Milestones, the pantry.
 Started 19 October 2026. On GitHub (salty-max/mealbook, public, 19
-October 2026), not yet released. Classic Era (11509) and Forever (16001),
+October 2026), released since v0.1.0 (21 October 2026) on GitHub,
+CurseForge and Wago. Classic Era (11509) and Forever (16001),
 one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 
 ## Where things are
@@ -25,7 +26,7 @@ one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 ## Commands
 
 ```bash
-bun run check        # kit, saved ids, recipes, languages, pages, lint, the sim on three clients, TOCs
+bun run check        # kit, saved ids, recipes, languages, pages, lint, the sim on nine clients, TOCs
 bun run check:ci     # what CI and the release gate run: no family folder (the kit, the saved ids and the generators' checks aside)
 bun scripts/root.ts --run addon-kit/regional.ts   # esMX's game names from wow-data into i18n/esMX/regional.resolved.json (first, after a wow-data change; --check is in `check`)
 bun run ids          # every table saved-ids.json lists keeps the ids it had at the fork point from origin/main (addon-kit's ids.ts)

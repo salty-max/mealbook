@@ -87,4 +87,4 @@ Mealbook is free and will stay free. If it's spared you a few stacks of wasted m
 
 ## Source
 
-MIT licensed: [github.com/salty-max/mealbook](https://github.com/salty-max/mealbook). Recipes, their skill levels and sources come from the game's own tables, the CMaNGOS Classic database and Wowhead for Forever's newest. Thanks to their contributors. Not affiliated with Blizzard Entertainment.
+MIT licensed: [github.com/salty-max/mealbook](https://github.com/salty-max/mealbook). Recipes, their skill levels and sources come from the game's own tables, the CMaNGOS Classic database, Questie's data and Wowhead for Forever's newest. Thanks to their contributors. Not affiliated with Blizzard Entertainment.

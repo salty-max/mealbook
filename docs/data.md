@@ -75,7 +75,7 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
   the cooking skill line's (Classic Era's skill list names a skill only by
   its name), Herbalism's, the chefs', and each game's npcs (complete in every language,
   the build refuses one missing) and quests (where the language has the
-  title: none in Italian; a page names the giver instead), which
+  title: a page names the giver instead where it has none), which
   `scripts/locales.ts` puts in each Text file (`ns.npcNames`,
   `ns.questNames`, this game's).
 

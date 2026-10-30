@@ -32,6 +32,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type * as WowDb from "../../wow-data/src/db";
+import { LOCALES } from "./locales-lib";
 import { cookbook, type Dish } from "./recipes";
 import { familyPath } from "./root";
 
@@ -41,7 +42,6 @@ const { openDb } = (await import(familyPath("wow-data", "src", "db.ts"))) as typ
 const ROOT = join(import.meta.dir, "..");
 const ADDON = join(ROOT, "addon", "Mealbook");
 export const CHEFS = ["kendor", "eunice"] as const;
-const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
 const TRANSLATED = ["frFR", "deDE", "esES", "esMX"];
 // A language that borrows another's pages (esMX reads esES's), with its own
 // client's names swapped in (i18n/<locale>/regional.resolved.json from regional.json by addon-kit/regional.ts, esES's name: its

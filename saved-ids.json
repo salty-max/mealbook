@@ -16,5 +16,13 @@
   "unlisted": {
     "data/chapters.json": "Build input that sorts each dish into a chapter, written into Recipes_*.lua, whose dish ids are the listed recipes table"
   },
-  "removed": []
+  "removed": [
+    {
+      "table": "chefs' pages",
+      "file": "addon/Mealbook/Pages_itIT.lua",
+      "ids": "*",
+      "why": "Italian dropped from every addon: the client ships none and the file was English copies; the same ids stay in every other language's Pages file",
+      "approved": "2026-10-30, the user's go (Italian and TBC Anniversary out of every addon, before Forever's launch)"
+    }
+  ]
 }

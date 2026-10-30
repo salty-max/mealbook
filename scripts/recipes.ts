@@ -35,6 +35,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type * as WowDb from "../../wow-data/src/db";
+import { LOCALES } from "./locales-lib";
 import { familyPath } from "./root";
 
 // through the family folder, from a worktree too (scripts/root.ts)
@@ -889,7 +890,6 @@ function chunk(xs: number[], n = 10): number[][] {
 // cooking skill line's (Classic Era's skill list names a skill only by its
 // name), Herbalism's (a herb's line), the chefs' (their creatures'), for
 // scripts/locales.ts to put in each language's Text file.
-const LOCALES = ["enUS", "enGB", "deDE", "frFR", "esES", "esMX", "ruRU", "ptBR", "itIT", "koKR", "zhCN", "zhTW"];
 export const CHEF_NPCS = { kendor: 340, eunice: 4552 };
 export type Names = {
   skillLine: string;

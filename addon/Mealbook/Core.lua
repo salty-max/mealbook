@@ -3,7 +3,8 @@
 -- tells them, and /mealbook. The road (Road.lua) reads them; the book shows
 -- them (Book.lua and its tabs).
 --
---   MealbookChar (SavedVariablesPerCharacter), whose book: guid
+--   MealbookChar (SavedVariablesPerCharacter), whose book: guid, its shape's
+--     version
 --     known[spell] = { at, level }     each recipe learned (the game's cooking
 --                                      window read, the spell known, the
 --                                      game's line when one is learned)
@@ -168,13 +169,16 @@ function ns.readWindow()
 end
 
 -- ── the login ────────────────────────────────────────────────────────────────
-local function newBook(guid) return { guid = guid, known = {}, cooked = {}, first = {} } end
+-- (the book's shape: 1, 0.1.x's, whose books had no version)
+local VERSION = 1
+local function newBook(guid) return { version = VERSION, guid = guid, known = {}, cooked = {}, first = {} } end
 
 function ns.login()
   local guid = UnitGUID("player")
   if type(MealbookChar) ~= "table" or MealbookChar.guid ~= guid then MealbookChar = newBook(guid) end
   char = MealbookChar
   char.known, char.cooked, char.first = char.known or {}, char.cooked or {}, char.first or {}
+  char.version = char.version or VERSION
   ns.loadProfile()
   if ns.createMinimapButton then ns.createMinimapButton() end
   if ns.createSettingsPanel then ns.createSettingsPanel() end

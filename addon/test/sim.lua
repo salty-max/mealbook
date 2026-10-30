@@ -22,18 +22,12 @@ local NEW_PAGE = L["A new page: %s."]:match("^(.-)%%s")
 -- ── a cook's first login ─────────────────────────────────────────────────────
 s.skill = { rank = 12, max = 75 }
 s.known = { [2538] = true, [2540] = true, [8604] = true }
--- (a test build's account-wide settings, before the profiles)
-MealbookSettings = { chef = "eunice", tooltips = false }
+-- (a book from before its version, 0.1.x's shape: kept, then stamped)
+MealbookChar = { guid = s.guid, known = { [2538] = { at = 1, level = 5 } }, cooked = {}, first = {} }
 G.login()
-check(
-  ns.option("chef") == 2 and ns.option("tooltips") == false,
-  "a test build's settings taken into the character's profile"
-)
-check(MealbookSettings.chef == "eunice" and MealbookSettings.profiles, "left for the other characters to take")
-ns.setOption("chef", 0)
-ns.setOption("tooltips", true)
 local char = MealbookChar
 check(char.guid == s.guid, "the book is this character's")
+check(char.known[2538].at == 1 and char.version == 1, "an old book kept, its version stamped")
 check(ns.skill() == 12, "the cooking skill read, by its id (Forever) or its name in the client's language")
 check(char.known[2538] and char.known[2540] and char.known[8604], "the recipes the character knows, taken")
 check(not said(NEW_PAGE), "quietly at the first login")

@@ -59,15 +59,8 @@ local P = K.profiles({
 })
 ns.profiles = P
 
--- This character's profile at its login: its own, else the defaults, a new
--- one seeded with the test builds' account-wide chef and tooltips (left in
--- place: every character takes them in turn).
-function ns.loadProfile()
-  P:load(function(profile, saved)
-    if saved.chef == "kendor" or saved.chef == "eunice" then profile.chef = saved.chef == "kendor" and 1 or 2 end
-    if saved.tooltips == false then profile.tooltips = false end
-  end)
-end
+-- This character's profile at its login: its own, else the defaults.
+function ns.loadProfile() P:load() end
 function ns.option(key) return P:get(key) end
 function ns.setOption(key, value) P:set(key, value) end
 

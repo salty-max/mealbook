@@ -113,9 +113,6 @@ export type Zone = { id: number; map: number; side?: "A" | "H" };
 // sells it, quests; the level and the skill it asks.
 export type Rank = { cap: number; spell: number; trainers: number[]; items: number[]; sellers: number[]; quests: number[]; level?: number; skill?: number };
 
-// The capitals: someone friendly to all who stands in one serves its side
-// (the Winter Veil's vendors in Orgrimmar or Stormwind).
-const CAPITALS: Record<number, "A" | "H"> = { 1519: "A", 16509: "A", 1537: "A", 1657: "A", 1637: "H", 1497: "H", 1638: "H" };
 // (a quest's race mask: each playable race's bit and side from the game's own
 // ChrRaces, as BigInts: Forever's Skyborne sit on bits 32 and 33)
 
@@ -124,6 +121,12 @@ const chapters = (): Record<string, Chapter> => JSON.parse(readFileSync(join(ROO
 export function cookbook(game: Game) {
   const db = openDb(game);
   const all = <T>(sql: string, ...p: (number | string)[]) => db.query(sql).all(...p) as T[];
+  // The capitals (the game's own: a top-level area flagged a capital, its side
+  // from the area's faction mask): someone friendly to all who stands in one
+  // serves its side (the Winter Veil's vendors in Orgrimmar or Stormwind).
+  const CAPITALS: Record<number, "A" | "H"> = Object.fromEntries(
+    all<{ id: number; mask: number }>("SELECT ID id, FactionGroupMask mask FROM client_AreaTable WHERE (Flags_0 & 256) != 0 AND ParentAreaID = 0 AND FactionGroupMask IN (2, 4)").map((r) => [r.id, r.mask === 2 ? "A" : "H"]),
+  );
   // (a loot row's chance as the game rolls it: the Classic database's nought
   // in a group is an equal share of what the group's own chances leave, a
   // fishing table's Brilliant Smallfish 59 in a hundred; a negative chance

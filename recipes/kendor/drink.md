@@ -5,7 +5,7 @@ chapter: drink
 
 ## 1249957 Peace Tea
 
-Peacebloom is the pale flower that grows along every road, and the Frostmane trolls of Dun Morogh, I am told, brew it into this tea before they attack our dwarves. I find that reassuring, somehow. Two peacebloom flowers to a measure of spring water, brought just below a boil and left to steep until the water turns the colour of straw. Boil it, and it tastes of hay. Steep it, and it tastes of a quiet afternoon. The trolls, clearly, have never had one.
+Peacebloom is the pale flower that grows along every road, and the Frostmane trolls of Dun Morogh, I am told, brew it into this tea before they attack our dwarves. I find that reassuring, somehow. Peacebloom in spring water, brought just below a boil and left to steep until the water turns the colour of straw. Boil it, and it tastes of hay. Steep it, and it tastes of a quiet afternoon. The trolls, clearly, have never had one.
 
 ## 1249963 Venomous Smoothie
 
@@ -37,7 +37,7 @@ Liferoot, steeped in melon juice, which is an odd way to make tea and a good one
 
 ## 13028 Goldthorn Tea
 
-Goldthorn grows in the hard places, Stranglethorn and the Hinterlands, and it makes a tea that every trainer teaches and every soldier carries. One goldthorn makes four cups, which tells you how strong it is. Steep it in water just off the boil until the water turns the colour of old brass, then strain it hard. A goldthorn left in the cup makes the tea bitter enough to strip paint. I have seen it done. The paint did not recover.
+Goldthorn grows in the hard places, Stranglethorn and the Hinterlands, and it makes a tea that every trainer teaches and every soldier carries. It is strong, and it is a mistake to insult it with a furious kettle. Let the kettle rest a moment, pour, and lift the goldthorn out when the cup goes the amber of a good lamp. A goldthorn left in the cup makes the tea bitter enough to strip paint. I have seen it done. The paint did not recover.
 
 ## 1249966 Calcified Smoothie
 

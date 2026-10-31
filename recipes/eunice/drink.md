@@ -37,7 +37,7 @@ Liferoot, washed and sliced, steeped in warm melon juice until the juice goes da
 
 ## 13028 Goldthorn Tea
 
-One goldthorn makes four cups, which tells you how strong it is. Steep it in water just off the boil until it turns the colour of old brass, then strain it hard. The smell is sharp and bright, like a sword being polished. Every deathguard on the walls drinks this, and none of them need to. They cannot taste it any better than I can. I think they like the warmth of the cup in their hands. I have never asked.
+A little goldthorn goes a long way, which tells you how strong it is. Steep it in water just off the boil until it turns the colour of old brass, then strain it hard. The smell is sharp and bright, like a sword being polished. Every deathguard on the walls drinks this, and none of them need to. They cannot taste it any better than I can. I think they like the warmth of the cup in their hands. I have never asked.
 
 ## 1249966 Calcified Smoothie
 

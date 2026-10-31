@@ -25,7 +25,7 @@ The Barrens taught me this, and the Undercity took to it, because we are not sho
 
 ## 3372 Murloc Fin Soup
 
-Two murloc fins and hot spice, simmered until the fins melt into the broth and leave it thick and rich, like bone stock. The smell is the sea at low tide, which sounds unpleasant and is not, once the spice gets to it. The murlocs along the coast of Silverpine would object, if they knew. They object to most things, loudly, and I have long since stopped listening.
+Murloc fins and hot spice, simmered until they melt into the broth and leave it thick and rich, like bone stock. The smell is the sea at low tide, which sounds unpleasant and is not, once the spice gets to it. The murlocs along the coast of Silverpine would object, if they knew. They object to most things, loudly, and I have long since stopped listening.
 
 ## 2547 Redridge Goulash
 
@@ -37,7 +37,7 @@ Tender crocolisk meat and hot spice, cooked down until the broth is thick and da
 
 ## 24418 Heavy Crocolisk Stew
 
-Twice the crocolisk, soothing spice, and a stew that a spoon can stand in. Stir it from the bottom, often, because a stew this thick sticks and burns where you cannot see, and the smell gives you away only when it is too late. The soldiers of the marshes eat it out of tin bowls in the rain, I am told. My deathguards eat it out of tin bowls in the dry. Tin bowls are the same everywhere.
+Crocolisk by the potful, soothing spice, and a stew that a spoon can stand in. Stir it from the bottom, often, because a stew this thick sticks and burns where you cannot see, and the smell gives you away only when it is too late. The soldiers of the marshes eat it out of tin bowls in the rain, I am told. My deathguards eat it out of tin bowls in the dry. Tin bowls are the same everywhere.
 
 ## 15861 Jungle Stew
 
@@ -61,7 +61,7 @@ Mystery Meat is no mystery to me. I can smell exactly what it was, and in most c
 
 ## 15910 Heavy Kodo Stew
 
-The kodos of Desolace are heavier than those of the Barrens, on a diet of very little, and their meat is the densest I know. The tauren taught me this stew, and I have never changed a thing, because there is nothing to change. Two portions of heavy kodo meat, soothing spice and spring water, and a whole day over a low fire. You will smell it turn: raw, then grassy, then deep and brown, like a field after rain. Somewhere in the evening the meat comes apart in threads at the touch of a spoon. That is the moment, and no other. I make it on the coldest days for the deathguards on the walls above, and I carry it up myself. They do not need it. They line up anyway, and they are very quiet while they eat.
+The kodos of Desolace are heavier than those of the Barrens, on a diet of very little, and their meat is the densest I know. The tauren taught me this stew, and I have never changed a thing, because there is nothing to change. Heavy kodo meat, soothing spice and spring water, and a whole day over a low fire. You will smell it turn: raw, then grassy, then deep and brown, like a field after rain. Somewhere in the evening the meat comes apart in threads at the touch of a spoon. That is the moment, and no other. I make it on the coldest days for the deathguards on the walls above, and I carry it up myself. They do not need it. They line up anyway, and they are very quiet while they eat.
 
 ## 20626 Undermine Clam Chowder
 
@@ -73,7 +73,7 @@ A snapper caught at night, and spring water, and nothing else. Simmer the fish g
 
 ## 1250145 Savory Turtle Stew
 
-Turtle stewed and not strained, a farm stew rather than a lord's bisque. We made it by a river in Lordaeron, I am nearly sure, though I could not tell you which. Three portions of turtle and plenty of soothing spice, simmered until the meat comes apart. Leave it thick. The texture is the point, and the smell, round and warm and slow, is the reason people stay at the counter after they have finished. I have stopped asking them to move. They will, when the bowl is empty, and not before.
+Turtle stewed and not strained, a farm stew rather than a lord's bisque. We made it by a river in Lordaeron, I am nearly sure, though I could not tell you which. Turtle and plenty of soothing spice, simmered until the meat comes apart. Leave it thick. The texture is the point, and the smell, round and warm and slow, is the reason people stay at the counter after they have finished. I have stopped asking them to move. They will, when the bowl is empty, and not before.
 
 ## 18245 Lobster Stew
 

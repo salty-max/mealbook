@@ -73,7 +73,7 @@ Stormwind Seasoning Herbs, the packet says, and they smell exactly as I remember
 
 ## 2548 Succulent Pork Ribs
 
-Two racks of ribs and hot spice, turned every few minutes so the fat bastes the meat as it melts. The turning is the recipe. A rib left to itself burns on the bottom and sulks on top. A rib turned often comes out glossy and generous. A farmer taught me that, a neighbour, I think, with a red beard, or a red barn. I give this one to the students who think cooking is waiting. It is not. It is paying attention while you wait.
+Ribs and hot spice, turned every few minutes so the fat bastes the meat as it melts. The turning is the recipe. A rib left to itself burns on the bottom and sulks on top. A rib turned often comes out glossy and generous. A farmer taught me that, a neighbour, I think, with a red beard, or a red barn. I give this one to the students who think cooking is waiting. It is not. It is paying attention while you wait.
 
 ## 3397 Big Bear Steak
 

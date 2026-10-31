@@ -18,6 +18,10 @@ game cooks it with one click, and the facts sit right under the prose
 (what it gives, the skill, its colours now, the ingredients with their
 counts as the game's items, where they and the recipe come from), so the
 prose never lists steps, counts or numbers, and never promises an effect.
+The one exemption is the three feasts (Cookie's Feast, Grand Lobster Banquet,
+Specklefin Feast): their recipe is a list, so the chef may count it and give
+an order of work. Nothing else on a feast page is a recipe card: no other
+measure, no steps beyond the order the parts finish in.
 
 Each page carries one craft detail: a single trick a good cook knows, true
 to cooking ("season the white, never the yolk", "lift them when the steam

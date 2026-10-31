@@ -17,4 +17,4 @@ Thick logs, slow to catch and slow to die, a fire for the whole of an evening. L
 
 ## 1263067 Iron Oven
 
-Flour, spring water and soothing spice, ten measures, five and four, for an iron oven, which has no iron in its recipe at all. I believe the dough is worked into the new oven and baked hard, to season it, as a new pan is seasoned. I have not been sold the recipe, only told of it, by a goblin trader who thought I would be impressed. I was. I did not tell him. Goblins are unbearable when impressed upon, and they put it on the bill.
+Flour, spring water and soothing spice, for an iron oven, which has no iron in its recipe at all. I believe the dough is worked into the new oven and baked hard, to season it, as a new pan is seasoned. I have not been sold the recipe, only told of it, by a goblin trader who thought I would be impressed. I was. I did not tell him. Goblins are unbearable when impressed upon, and they put it on the bill.

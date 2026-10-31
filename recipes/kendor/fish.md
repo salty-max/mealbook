@@ -125,7 +125,7 @@ Whitescale salmon from the cold rivers, baked whole with soothing spice in a mod
 
 ## 18246 Mightfish Steak
 
-A mightfish is large enough to be cut into steaks like a bull, and it should be treated like one. Two spices, hot and soothing, one to wake the meat and one to calm it. Sear the steaks hard on both sides and rest them before serving. The fishermen of the far south bring these in with nets and a great deal of shouting. I prefer them on a plate, in silence, with the applause afterwards.
+A mightfish is large enough to be cut into steaks like a bull, and it should be treated like one. Hot spice and soothing spice, one to wake the meat and one to calm it. Sear the steaks hard on both sides and rest them before serving. The fishermen of the far south bring these in with nets and a great deal of shouting. I prefer them on a plate, in silence, with the applause afterwards.
 
 ## 470370 Smoked Redgill
 

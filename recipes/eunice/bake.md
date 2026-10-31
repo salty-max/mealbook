@@ -17,7 +17,7 @@ Flour and nothing else, baked into small biscuits for the creatures that follow 
 
 ## 1270633 Skywall Souffle
 
-Two eggs and a little flour, the whites beaten until they stand, folded in, and baked without once opening the door. You cannot see a souffle rise from outside the oven, but you can smell it: the smell changes from wet egg to warm bread at the moment it peaks. Take it out then, and carry it fast. A souffle is a held breath. It will not wait for the guest to finish talking.
+Eggs and a little flour, the whites beaten until they stand, folded in, and baked without once opening the door. You cannot see a souffle rise from outside the oven, but you can smell it: the smell changes from wet egg to warm bread at the moment it peaks. Take it out then, and carry it fast. A souffle is a held breath. It will not wait for the guest to finish talking.
 
 ## 2542 Goretusk Liver Pie
 
@@ -37,19 +37,19 @@ A raptor egg and hot spice. The egg is richer than a hen's and sets more slowly,
 
 ## 1250155 Giant Scrambled Eggs
 
-Two giant eggs and hot spice, stirred over a low heat until they set in soft curds. It takes a long time and a steady hand, and it smells, all the while, of something rich and warm, though there is nothing in the pan but egg and spice. When the smell sharpens, stop. The eggs are about to go too far. I feed these to the deathguards after the night watch, and they eat them standing at the counter, still in their armour.
+Giant eggs and hot spice, stirred over a low heat until they set in soft curds. It takes a long time and a steady hand, and it smells, all the while, of something rich and warm, though there is nothing in the pan but egg and spice. When the smell sharpens, stop. The eggs are about to go too far. I feed these to the deathguards after the night watch, and they eat them standing at the counter, still in their armour.
 
 ## 15933 Monster Omelet
 
-A single giant egg feeds a table, and in the Undercity a table is whoever is standing nearest the stove. The eggs come from the great birds of the north, from Felwood and Winterspring, carried down by traders who have learned not to say where they found them. Beat the egg with soothing spice until it is smooth and pale, then pour it into the widest pan you own over a moderate heat and draw the edges in as they set. The smell is the guide: warm and round at first, then nutty at the edges. Nutty is the moment to fold. Brown is too late. Carry it to the table with both hands. I have watched a whole patrol of deathguards divide one of these in silence, with great care, as if it were treasure. For a moment, it was. Then they asked for another, which was the best part.
+A giant egg feeds a table, and in the Undercity a table is whoever is standing nearest the stove. The eggs come from the great birds of the north, from Felwood and Winterspring, carried down by traders who have learned not to say where they found them. Beat the egg with soothing spice until it is smooth and pale, then pour it into the widest pan you own over a moderate heat and draw the edges in as they set. The smell is the guide: warm and round at first, then nutty at the edges. Nutty is the moment to fold. Brown is too late. Carry it to the table with both hands. I have watched a whole patrol of deathguards divide one of these in silence, with great care, as if it were treasure. For a moment, it was. Then they asked for another, which was the best part.
 
 ## 1225760 Sunrise Omelette
 
-Two giant eggs and holy salts, which I was warned would sting me and which do not. Cook it slowly, so the yolk stays bright as morning. The smell is clean and simple, egg and salt and the pan. I cook it at the hour the living call dawn, which down here means nothing, out of a habit I do not remember forming. Someone always comes in for it. Someone always does.
+Giant eggs and holy salts, which I was warned would sting me and which do not. Cook it slowly, so the yolk stays bright as morning. The smell is clean and simple, egg and salt and the pan. I cook it at the hour the living call dawn, which down here means nothing, out of a habit I do not remember forming. Someone always comes in for it. Someone always does.
 
 ## 1294014 Sweetpaw Jam
 
-Berries from Hyjal, three measures of them, cooked down slowly with soothing spice until a drop on a cold plate wrinkles when you push it. The smell is the best part, and I can tell you that with some authority: dark fruit and warm spice, so sweet it is almost loud. The bears raid the bushes for these berries, the recipe says. I would too, if I were a bear.
+Berries from Hyjal, cooked down slowly with soothing spice until a drop on a cold plate wrinkles when you push it. The smell is the best part, and I can tell you that with some authority: dark fruit and warm spice, so sweet it is almost loud. The bears raid the bushes for these berries, the recipe says. I would too, if I were a bear.
 
 ## 22761 Runn Tum Tuber Surprise
 

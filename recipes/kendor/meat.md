@@ -73,7 +73,7 @@ This is the dish I would put my name to, and I have. Lean wolf flank and Stormwi
 
 ## 2548 Succulent Pork Ribs
 
-The gnolls of Redridge carry this recipe around in their packs, stolen from some farmhouse, and do nothing with it. I sell the same recipe in Stormwind and do a great deal with it. Two racks of boar ribs and hot spice, and the whole secret is the turning. Turn them every few minutes, so the fat bastes the meat as it renders. Succulent is not a promise in the name. It is a reward for attention.
+The gnolls of Redridge carry this recipe around in their packs, stolen from some farmhouse, and do nothing with it. I sell the same recipe in Stormwind and do a great deal with it. Boar ribs and hot spice, and the whole secret is the turning. Turn them every few minutes, so the fat bastes the meat as it renders. Succulent is not a promise in the name. It is a reward for attention.
 
 ## 3397 Big Bear Steak
 
@@ -93,7 +93,7 @@ Lions of the Barrens, cut into chops and burned with hot spice by cooks who call
 
 ## 3399 Tasty Lion Steak
 
-Tasty, it calls itself, and it is too modest by half. Two cuts of lion and soothing spice, cooked as a steak rather than chopped, which is the only civilised way to eat a lion. The soothing spice is not there to calm the cook. It rounds the meat's sweetness. Sear it, rest it, slice it across the grain. A lion steak sliced along the grain chews like an argument you cannot win.
+Tasty, it calls itself, and it is too modest by half. Lion and soothing spice, cooked as a steak rather than chopped, which is the only civilised way to eat a lion. The soothing spice is not there to calm the cook. It rounds the meat's sweetness. Sear it, rest it, slice it across the grain. A lion steak sliced along the grain chews like an argument you cannot win.
 
 ## 1250151 Bear Brisket
 
@@ -145,11 +145,11 @@ Filet o' Flank, a name with a letter missing and a dish with nothing missing at 
 
 ## 1225758 Prowler Steak
 
-Prowler steak is tiger, which the name is too polite to say. Two cuts of it, rubbed with holy salts and left an hour before the fire touches them. Tiger is a lean, hard-working meat, and the salt tames it. The rest is restraint: a hot iron, a short sear and a long rest. I have heard hunters argue that a tiger should be cooked angry. Hunters should hunt, and leave the kitchen to those who can count to sixty.
+Prowler steak is tiger, which the name is too polite to say. The steaks are cut thick, rubbed with holy salts and left an hour before the fire touches them. Tiger is a lean, hard-working meat, and the salt tames it. The rest is restraint: a hot iron, a short sear and a long rest. I have heard hunters argue that a tiger should be cooked angry. Hunters should hunt, and leave the kitchen to those who can count to sixty.
 
 ## 1250144 Bat Hachee
 
-Hachee is an old farmhouse word for a slow stew of chopped meat, and here the meat is bat. I would not have chosen bat. Bat would not have chosen me. Three wings, chopped, with soothing spice, and a low heat for most of an evening, until the sinew softens into something you could serve a guest. Whoever invented it was poor and clever. I respect the clever, and I have learned, over the years, to forgive the poor.
+Hachee is an old farmhouse word for a slow stew of chopped meat, and here the meat is bat. I would not have chosen bat. Bat would not have chosen me. Wings, chopped, with soothing spice, and a low heat for most of an evening, until the sinew softens into something you could serve a guest. Whoever invented it was poor and clever. I respect the clever, and I have learned, over the years, to forgive the poor.
 
 ## 1250147 Bear Bruscitti
 
@@ -157,19 +157,19 @@ Bruscitti. I have looked for the word in three languages and found it in none. T
 
 ## 1250152 Prehistoric Pulled Raptor
 
-Prehistoric, as though the raptor had been waiting since the world began to be pulled apart with two forks. Perhaps it had. Three portions of raptor and a great deal of soothing spice, then the lowest fire you can tend for most of a day. The meat is done when it falls apart at a touch. Pull it with forks, never a knife. A knife makes it sliced raptor, and sliced raptor is a different and lesser book.
+Prehistoric, as though the raptor had been waiting since the world began to be pulled apart with two forks. Perhaps it had. Raptor and a great deal of soothing spice, then the lowest fire you can tend for most of a day. The meat is done when it falls apart at a touch. Pull it with forks, never a knife. A knife makes it sliced raptor, and sliced raptor is a different and lesser book.
 
 ## 1250143 Soaring Pamplona
 
-A pamplona is meat flattened, filled and rolled, and the soaring one is made of buzzard, which is the only thing about it that soars. Three wings, boned and beaten flat, rolled around soothing spice and tied. It is fiddly work, and fiddly work is where a cook is tested. Roll it tight, roast it gently, and slice it into rounds. The rounds show your knife work. Make sure they show something you would sign.
+A pamplona is meat flattened, filled and rolled, and the soaring one is made of buzzard, which is the only thing about it that soars. The wings, boned and beaten flat, rolled around soothing spice and tied. It is fiddly work, and fiddly work is where a cook is tested. Roll it tight, roast it gently, and slice it into rounds. The rounds show your knife work. Make sure they show something you would sign.
 
 ## 1250148 Steaming Stag Steak
 
-A stag steak served steaming, which is to say served at once, which is how every steak ought to be served and how almost none are. Three cuts of stag, soothing spice rubbed in deep, a very hot iron. The steam is the point. If it reaches the table without steam, it waited somewhere it should not have, and someone in your kitchen owes you an apology, and very likely a new steak.
+A stag steak served steaming, which is to say served at once, which is how every steak ought to be served and how almost none are. Stag, soothing spice rubbed in deep, a very hot iron. The steam is the point. If it reaches the table without steam, it waited somewhere it should not have, and someone in your kitchen owes you an apology, and very likely a new steak.
 
 ## 1250149 Swiftstrike Steak
 
-A hunter's name for a cook's dish, as though the tiger had been caught by a thunderbolt. The tiger was caught by a hunter and a great deal of waiting. The steak, however, earns its name: three cuts of tiger, soothing spice, and the hottest fire you can make, for the shortest time you can bear. Strike fast, rest long. The second half is where most cooks lose their nerve.
+A hunter's name for a cook's dish, as though the tiger had been caught by a thunderbolt. The tiger was caught by a hunter and a great deal of waiting. The steak, however, earns its name: tiger, soothing spice, and the hottest fire you can make, for the shortest time you can bear. Strike fast, rest long. The second half is where most cooks lose their nerve.
 
 ## 1250146 Flank au Poivre
 

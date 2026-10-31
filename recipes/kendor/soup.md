@@ -25,7 +25,7 @@ A stew of rats, taught by the Horde in the Barrens to anyone who will catch the 
 
 ## 3372 Murloc Fin Soup
 
-Murloc fins make a soup with more body than you would believe, if you have only met murlocs at the end of a sword. Two fins and hot spice, simmered until the fins dissolve into the broth and give it a richness like the best bone stock. The murlocs, I suspect, would object. The murlocs object to everything, at length, and none of it in a language I care to learn.
+Murloc fins make a soup with more body than you would believe, if you have only met murlocs at the end of a sword. Fins and hot spice, simmered until they dissolve into the broth and give it a richness like the best bone stock. The murlocs, I suspect, would object. The murlocs object to everything, at length, and none of it in a language I care to learn.
 
 ## 2547 Redridge Goulash
 
@@ -37,7 +37,7 @@ Gumbo is a dish of the swamps, a thick, dark stew that the people of the Wetland
 
 ## 24418 Heavy Crocolisk Stew
 
-Heavy, it says, and it is no lie: twice the crocolisk, with soothing spice, stewed until a spoon stands in it. Theramore's soldiers eat it out of tin bowls in the rain of Dustwallow and swear it is the only warm thing in the marsh. I believe them. A stew this heavy must be stirred from the bottom, often, or it sticks and burns where you cannot see. Most ruined stews die at the bottom of the pot.
+Heavy, it says, and it is no lie: crocolisk in quantity, with soothing spice, stewed until a spoon stands in it. Theramore's soldiers eat it out of tin bowls in the rain of Dustwallow and swear it is the only warm thing in the marsh. I believe them. A stew this heavy must be stirred from the bottom, often, or it sticks and burns where you cannot see. Most ruined stews die at the bottom of the pot.
 
 ## 15861 Jungle Stew
 
@@ -61,7 +61,7 @@ I am told this dish began as a dare in some tavern no one admits to drinking in.
 
 ## 15910 Heavy Kodo Stew
 
-The kodos of Desolace grow heavier than those of the Barrens, on a diet of nothing at all, and their meat is the densest I know. I have no need to taste the cooking of the Horde, and I make an exception for this stew, because it is less Horde than it is kodo, and the kodo is blameless. Two portions of heavy kodo meat, soothing spice and spring water, and a whole day over a low fire. The meat goes in cold and comes out in threads. Do not hurry it, and do not lift the lid every hour to see how it is doing. It is doing what kodo does: taking its time. In Desolace they sell this recipe within sight of the kodo bones that litter the valley, which seems to me a little indelicate, and entirely practical.
+The kodos of Desolace grow heavier than those of the Barrens, on a diet of nothing at all, and their meat is the densest I know. I have no need to taste the cooking of the Horde, and I make an exception for this stew, because it is less Horde than it is kodo, and the kodo is blameless. Heavy kodo meat, soothing spice and spring water, and a whole day over a low fire. The meat goes in cold and comes out in threads. Do not hurry it, and do not lift the lid every hour to see how it is doing. It is doing what kodo does: taking its time. In Desolace they sell this recipe within sight of the kodo bones that litter the valley, which seems to me a little indelicate, and entirely practical.
 
 ## 20626 Undermine Clam Chowder
 
@@ -73,7 +73,7 @@ Nightfin is a snapper caught after dark, which is how the fishermen explain thei
 
 ## 1250145 Savory Turtle Stew
 
-Turtle stewed rather than strained, which makes it a peasant's dish and none the worse for that. Three portions of turtle and a generous hand of soothing spice, simmered until the meat comes apart. Do not sieve it. The texture is the point of a stew, and a turtle stew has a great deal of texture, some of it deliberate. Serve it thick, in bowls, with no apology for being honest.
+Turtle stewed rather than strained, which makes it a peasant's dish and none the worse for that. Turtle and a generous hand of soothing spice, simmered until the meat comes apart. Do not sieve it. The texture is the point of a stew, and a turtle stew has a great deal of texture, some of it deliberate. Serve it thick, in bowls, with no apology for being honest.
 
 ## 18245 Lobster Stew
 

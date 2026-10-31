@@ -9,7 +9,7 @@ Felbloom, cleansed by the druids so that it no longer does what felbloom does. I
 
 ## 6416 Strider Stew
 
-Strider and apple, the first stew of the Barrens. The apple goes in with the meat and cooks away to nothing, and when you can no longer find it in the pot, the stew is done. Strider is a stubborn bird. The apple talks it round. I make this for orcs who miss home and for trolls who have never had a home to miss, and they all eat it the same way, very fast.
+Strider and apple, the first stew of the Barrens. The apple goes in with the meat and cooks away to nothing, and when you can no longer find it in the pot, the stew is done. Strider is a stubborn bird. The apple softens it. I make this for orcs who miss home and for trolls who have never had a home to miss, and they all eat it the same way, very fast.
 
 ## 2543 Westfall Stew
 
@@ -17,7 +17,7 @@ A farmer's stew from the south, made from what the land gives when it gives very
 
 ## 6501 Clam Chowder
 
-There was a chowder house in Southshore, or a woman who sold chowder from her door, and the smell carried to the harbour. I remember the smell exactly and the door not at all. Warm the milk gently, add the clam meat and a pinch of mild spice, and keep it below a simmer. Milk that boils splits, and you can smell it happen, a sour edge on the steam. If you smell it, start again.
+Somebody in Southshore sold chowder from a door near the harbour, and the smell carried along the quay. I remember the smell exactly and the door not at all. Warm the milk gently, add the clam meat and a pinch of mild spice, and keep it below a simmer. Milk that boils splits, and you can smell it happen, a sour edge on the steam. If you smell it, start again.
 
 ## 6417 Dig Rat Stew
 
@@ -45,7 +45,7 @@ Tiger meat, spring water and apples, the stew of Stranglethorn. Brown the meat f
 
 ## 15865 Mystery Stew
 
-Mystery meat stewed in dwarven stout, and to me there is no mystery about either. I can smell exactly what the meat was. I can smell the brewery the stout came from, and what was spilled on its floor. Down here, where we sniff out mysteries for a living, this dish is more of an autobiography. Cook it long and gently, and never let it boil, or the stout turns sour and you will smell that from the stairs. Skim the pot as it simmers. The stout makes the meat dark and soft and gives the broth a bitterness the living seem to like a great deal. The apothecaries, who should know better, eat it in quantity and refuse to say what they think is in it. I have stopped telling them. They enjoy it more not knowing, and so, I think, does everyone.
+Mystery meat stewed in dwarven stout, and to me there is no mystery about either. I can smell exactly what the meat was. I can smell the brewery the stout came from, and what was spilled on its floor. Cook it long and gently, and never let it boil, or the stout turns sour and you will smell that from the stairs. Skim the pot as it simmers. The stout makes the meat dark and soft and gives the broth a bitterness the living seem to like a great deal. The apothecaries, who should know better, eat it in quantity and refuse to say what they think is in it. I have watched a whole table of them argue over it for an evening. I have stopped telling them. They enjoy it more not knowing, and so, I think, does everyone.
 
 ## 3400 Soothing Turtle Bisque
 
@@ -57,7 +57,7 @@ A stew of the shore: crab, murloc eyes and hot spice. The eyes thicken the broth
 
 ## 15906 Dragonbreath Chili
 
-Mystery Meat is no mystery to me. I can smell exactly what it was, and in most cases I would rather not say. The Barrens taught me this dish, not Lordaeron, which never ate anything that fought back this hard. I cannot tell you how hot this chili is. I can tell you that the toasted spices sting my eyes, which is the one part of it I still feel, and that the last tauren who tried mine set his spoon down very carefully and asked for water in a voice I had not heard from him before. Pierce the flame sac before it goes in, or it will pierce itself. Make it for people you like, and warn them. Then watch their faces. The dish is done when they stop talking.
+Mystery Meat is no mystery to me. I can smell exactly what it was, and in most cases I would rather not say. The Barrens taught me this dish, not Lordaeron, which never ate anything that fought back this hard. I cannot tell you how hot this chili is. I can tell you that the toasted spices sting my eyes, which is the one part of it I still feel. The last tauren who tried mine set his spoon down very carefully and asked for water in a voice I had not heard from him before. Pierce the flame sac before it goes in, or it will pierce itself. Make it for people you like, and warn them. Then watch their faces. The dish is done when they stop talking.
 
 ## 15910 Heavy Kodo Stew
 
@@ -65,7 +65,7 @@ The kodos of Desolace are heavier than those of the Barrens, on a diet of very l
 
 ## 20626 Undermine Clam Chowder
 
-A goblin chowder from Tanaris: zesty clam meat, hot spice and ice cold milk, warmed together without ever boiling. The goblins eat it scalding, which tells you everything about goblins. Keep the heat low and watch the steam. When it smells of the sea and of warm spice, and not yet of scorched milk, ladle it out. The goblin who sells it keeps one copy at a time. I bought it, and now there are two.
+A goblin chowder from Tanaris: zesty clam meat, hot spice and ice cold milk, warmed together without ever boiling. The goblins eat it scalding, which tells you everything about goblins. Keep the heat low and watch the steam. When it smells of the sea and of warm spice, and not yet of scorched milk, ladle it out. The goblin who sells it keeps one copy at a time. I bought it, so now there are two copies.
 
 ## 18243 Nightfin Soup
 
@@ -73,7 +73,7 @@ A snapper caught at night, and spring water, and nothing else. Simmer the fish g
 
 ## 1250145 Savory Turtle Stew
 
-Turtle stewed and not strained, a farm stew rather than a lord's bisque. We made it by a river in Lordaeron, I am nearly sure, though I could not tell you which. Turtle and plenty of soothing spice, simmered until the meat comes apart. Leave it thick. The texture is the point, and the smell, round and warm and slow, is the reason people stay at the counter after they have finished. I have stopped asking them to move. They will, when the bowl is empty, and not before.
+I stew this turtle and never strain it, because it is a farm stew and not a lord's bisque. We made it by a river in Lordaeron, I am nearly sure, though I could not tell you which. Turtle and plenty of soothing spice, simmered until the meat comes apart. Leave it thick. The texture is the point, and the smell, round and warm and slow, is the reason people stay at the counter after they have finished. I have stopped asking them to move. They will, when the bowl is empty, and not before.
 
 ## 18245 Lobster Stew
 

@@ -41,15 +41,15 @@ A little goldthorn goes a long way, which tells you how strong it is. Steep it i
 
 ## 1249966 Calcified Smoothie
 
-Sweet nectar, hot spice and a large fang ground to powder. The fang makes the drink chalky and thick, like milk left in the sun. Strain it well, twice, because grit in a drink is the one thing nobody forgives. The living who fight for a living drink it in the mornings. The deathguards, who fight for a living and do not live, drink it out of solidarity.
+Sweet nectar, hot spice and a large fang ground to powder. The fang makes the drink chalky and thick, like milk left in the sun. Strain it well, twice, because grit in a drink is the one thing nobody forgives. I make it in the evening and leave it overnight, which is the only way the last of the chalk sinks. Soldiers drink it in the mornings. The deathguards, who fight and do not live, drink it out of solidarity.
 
 ## 1249960 Triage Tea
 
-Sweet nectar and fadeleaf, a tea for the wounded, though fadeleaf is what rogues chew to slip out of sight. Perhaps the wounded would like to slip out of sight too. Warm the nectar until it steams, steep the fadeleaf and strain it before it turns bitter. I have not been sold this recipe. I have made it from description, for the apothecaries' patients, who did not complain, but then they rarely can.
+Sweet nectar and fadeleaf, a tea for the wounded, though fadeleaf is what rogues chew to slip out of sight. Perhaps the wounded would like to slip out of sight too. Warm the nectar until it steams, steep the fadeleaf and strain it before it turns bitter. Nobody has sold me this recipe. I have made it from a description, for the apothecaries' patients, who drank it without a word.
 
 ## 1249967 Spicy Smoothie
 
-Moonberry juice, soothing spice and a small flame sac, pierced and squeezed into the glass. The flame sac does the heating and the spice does the apologising. Shake it and drink it fast. I cannot tell you how hot it is. I can tell you that I once watched an orc drink one and then stand very still for a long time, looking at the ceiling, as if it had insulted him.
+Moonberry juice, soothing spice and a small flame sac, pierced and squeezed into the glass. The flame sac does the heating and the spice softens the blow. Shake it and drink it fast. I cannot tell you how hot it is. I can tell you that I once watched an orc drink one and then stand very still for a long time, looking at the ceiling, as if it had insulted him.
 
 ## 1249961 Sunny Tea
 

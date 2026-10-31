@@ -21,7 +21,7 @@ Eggs and a little flour, the whites beaten until they stand, folded in, and bake
 
 ## 2542 Goretusk Liver Pie
 
-A farm pie from the south, and we made one very like it in Lordaeron, with pig's liver, or calf's, on the days the butcher had been. I can see the pie dish. It was blue, with a chip on the rim, and it sat on the windowsill to cool, and I do not know whose window it was. The goretusk's liver is strong and dark. Soak it in cold water before you cook it, to draw out the bitterness, then season it with mild spice and give it a slow oven. Liver cooked fast smells of iron and turns grey. Liver cooked slowly smells of something rich and gentle, like warm earth after rain, and that is when it is ready. My students make it for the living who pass through, and the living eat it as if it were familiar. Perhaps it is, to them.
+A farm pie from the south, and we made one very like it in Lordaeron, with pig's liver, on the days the butcher had been. I can see the pie dish. It was blue, with a chip on the rim, and it sat on the windowsill to cool, and I do not know whose window it was. The goretusk's liver is strong and dark. Rinse it in cold water before you cook it, to calm the bitterness, then season it with mild spice and give it a slow oven. Liver cooked fast smells of iron and turns grey. Liver cooked slowly smells of something rich and gentle, like warm earth after rain, and that is when it is ready. My students make it for the living who pass through, and the living eat it as if it were familiar. Perhaps it is, to them.
 
 ## 1250157 Breakfast Omelette
 
@@ -33,7 +33,7 @@ Spider legs, the meat drawn out and pressed into cakes with hot spice, fried unt
 
 ## 3376 Curiously Tasty Omelet
 
-A raptor egg and hot spice. The egg is richer than a hen's and sets more slowly, so be patient with the middle. Beat it hard, cook it fast, fold it soft. The curious part, I am told, is how good it is. I cannot tell you that myself. I can tell you that people who eat it go quiet and then look at the plate as if it owed them an explanation.
+A raptor egg and hot spice. The egg is richer than a hen's and sets more slowly, so be patient with the middle. Beat it hard, cook it fast, fold it soft. The curious part, the living say, is how good it is. I believe them, because they go quiet and then look at the plate as if it owed them an explanation. I make it for my students on their first good day.
 
 ## 1250155 Giant Scrambled Eggs
 
@@ -45,7 +45,7 @@ A giant egg feeds a table, and in the Undercity a table is whoever is standing n
 
 ## 1225760 Sunrise Omelette
 
-Giant eggs and holy salts, which I was warned would sting me and which do not. Cook it slowly, so the yolk stays bright as morning. The smell is clean and simple, egg and salt and the pan. I cook it at the hour the living call dawn, which down here means nothing, out of a habit I do not remember forming. Someone always comes in for it. Someone always does.
+Giant eggs and holy salts, which I was warned would sting me and which do not. Cook it slowly, so the yolk stays bright as morning. The smell is clean and simple, egg and salt and the pan. I cook it at the hour the living call dawn, which down here means nothing, out of a habit I do not remember forming. Someone always comes in for it. I serve it on a white plate, so the yolk can show off.
 
 ## 1294014 Sweetpaw Jam
 
@@ -57,4 +57,4 @@ The recipe comes from an imp in the ruins of Dire Maul who leads anyone who want
 
 ## 24801 Smoked Desert Dumplings
 
-The Cenarion Circle teaches this in Silithus to those who have proven themselves in the desert, and the Horde's soldiers came back with it among their scars. Sandworm meat is dense and pale and full of sand. Wash it until the water runs clear, chop it fine with soothing spice, and roll it into small dumplings, pressed tight so they hold together in the smoke. Then smoke them slowly over a low fire. The smoke flavours the outside while the steam cooks the middle, and the smell moves from raw to sweet to something like toasted grain. When it reaches the grain, they are done. I cannot tell you how they taste. I can tell you that a soldier who had lost three friends in that desert ate a plate of them in my kitchen and wept, and then asked for the recipe, and I gave it to him.
+The Cenarion Circle teaches this in Silithus to those who have proven themselves in the desert. The Horde's soldiers came back with it among their scars. Sandworm meat is dense and pale and full of sand. Wash it until the water runs clear, chop it fine with soothing spice, and roll it into small dumplings, pressed tight so they hold together in the smoke. Then smoke them slowly over a low fire. The smoke flavours the outside while the steam cooks the middle, and the smell moves from raw to sweet to something like toasted grain. When it reaches the grain, they are done. I cannot tell you how they taste. I can tell you that a soldier who had lost three friends in that desert ate a plate of them in my kitchen and wept. Then he asked for the recipe, and I gave it to him.

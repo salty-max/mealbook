@@ -29,7 +29,7 @@ Orgrimmar's cooks sent this north on the first zeppelins, and the Undercity took
 
 ## 1250156 Tasty Raptor Bites
 
-A raptor's egg is the size of my two fists and smells, when cracked, faintly of the swamp its mother walked through. The spice is there to answer that smell, and there is a great deal of it. Beat the egg, season it, and cook it in small rounds on a hot stone. The rounds puff when they are done. My students eat them before I can count them, which tells me the recipe works.
+A raptor's egg is the size of my two fists and smells, when cracked, faintly of the swamp its mother walked through. The spice is there to answer that smell, and it takes a lot of answering. Beat the egg, season it, and cook it in small rounds on a hot stone. The rounds puff when they are done. My students eat them before I can count them, which tells me the recipe works.
 
 ## 2795 Beer Basted Boar Ribs
 
@@ -61,7 +61,7 @@ Crocolisk reaches the Undercity from the Wetlands by way of people who would rat
 
 ## 2546 Dry Pork Ribs
 
-No sauce, only spice and a low fire and the whole of an afternoon, the way the farms cooked them at the end of the harvest, or at the start of it, I forget which. The ribs are done when the bones show a finger's width at the ends and the smell has gone from meat to something closer to toasted bread. I serve them on paper, to people who eat with their hands and do not mind who sees. In the Undercity, that is most people.
+No sauce, only spice and a low fire and the whole of an afternoon, the way the farms cooked them at harvest, though I have lost which end of it. The ribs are done when the bones show a finger's width at the ends and the smell has gone from meat to something closer to toasted bread. I serve them on paper, to people who eat with their hands and do not mind who sees. In the Undercity, that is most people.
 
 ## 6418 Crispy Lizard Tail
 
@@ -69,7 +69,7 @@ The Barrens taught me this one, along with patience and a respect for anything t
 
 ## 2549 Seasoned Wolf Kabob
 
-Stormwind Seasoning Herbs, the packet says, and they smell exactly as I remember the market of the old capital smelling, which is to say I cannot tell you whether the memory is of Stormwind, or of Lordaeron, or of a dream. The wolf does not care. Thread the meat with gaps between the pieces, so the heat reaches every side, and listen for the fat to spit. When it stops spitting and starts to sing, turn the skewers.
+Stormwind Seasoning Herbs, the packet says, and they smell exactly like a market I remember. Whether the market stood in Stormwind or in Lordaeron, I no longer know. The wolf does not care. Thread the meat with gaps between the pieces, so the heat reaches every side, and listen for the fat to spit. When it stops spitting and starts to sing, turn the skewers. The first one goes to whoever has been waiting longest.
 
 ## 2548 Succulent Pork Ribs
 
@@ -81,7 +81,7 @@ The bears of the south are bigger than ours, and their meat is darker, with a sm
 
 ## 6419 Lean Venison
 
-There were deer in the woods above the farm, and my father, or my uncle, or a neighbour with a bow, brought one down each autumn. The face is gone. The smell of the meat in the pan is not. Venison is lean and proud and wants a great deal of spice and very little fire. Take it off while the middle is still dark. Lean meat cooked through tastes of nothing but regret.
+There were deer in the woods above the farm, and my father, or my uncle, or a neighbour with a bow, brought one down each autumn. The face is gone. The smell of the meat in the pan is not. Venison is lean and proud and wants plenty of spice and very little fire. Take it off while the middle is still dark. Lean meat cooked through smells of nothing but regret.
 
 ## 15853 Lean Wolf Steak
 
@@ -89,7 +89,7 @@ A plain steak from a wolf's flank, with a pinch of spice and nothing to hide beh
 
 ## 3398 Hot Lion Chops
 
-The lions of the Barrens are lean and sweet close to the bone, so the chops stay on the bone. Hot spice, a moderate fire, and many turns. I cannot tell you how hot they come out. I can tell you the orcs from the Crossroads ask for more spice every time and the trolls ask for less, and I make two pans and let them argue about who has the right one.
+The lions of the Barrens are lean and sweet close to the bone, so the chops stay on the bone. Hot spice, a moderate fire, and many turns. The heat is for others to judge, and they do. The orcs from the Crossroads ask for more spice every time and the trolls ask for less, so I make two pans and let them argue about who has the right one.
 
 ## 3399 Tasty Lion Steak
 
@@ -97,7 +97,7 @@ Lion cooked as a steak rather than chopped, with soothing spice to round the swe
 
 ## 1250151 Bear Brisket
 
-The toughest cut of the toughest animal, and the reason a cook learns to keep a fire low. Rub the brisket with hot spice and let it cook through a whole day, until it gives under a fork like wet bread. You cannot rush it. You can only watch it, and smell it change from raw iron to smoke to something rich and dark. When it smells like a winter evening, it is ready.
+My students learn to keep a fire low on this, the toughest cut of the toughest animal. Rub the brisket with hot spice and let it cook through a whole day, until it gives under a fork like wet bread. You cannot rush it. You can only watch it, and smell it change from raw iron to smoke to something rich and dark. When it smells like a winter evening, it is ready.
 
 ## 4094 Barbecued Buzzard Wing
 
@@ -117,7 +117,7 @@ The camps of Stranglethorn roast raptor in large pieces, and so do I, because ra
 
 ## 1250150 Raging Raptor Ribs
 
-A recipe I have read but never been sold, which makes me suspicious of it. The ribs cook low until the meat lets go of the bone, then over a fierce flame to set a crust of hot spice, and there is a great deal of it. The smoke alone made my eyes water. I cannot tell you how hot they are. I can tell you nobody I fed them to asked for more spice.
+I have read this recipe but never been sold it, which makes me suspicious of it. The ribs cook low until the meat lets go of the bone, then over a fierce flame to set a thick crust of hot spice. The smoke alone made my eyes water, and nobody I fed them to asked for more spice. The crust should crack like burnt sugar under the knife. If it bends, the ribs go back over the flame.
 
 ## 1295834 Plain Ol' Paletusk
 
@@ -125,15 +125,15 @@ Boar, roasted on the bone with a little mild spice and nothing else, the way far
 
 ## 21175 Spider Sausage
 
-Spiders are the one thing the Undercity is never short of. White spider meat is sweet and delicate and takes no spice at all, which is a mercy in a city that smells of everything. Press it into casings firm enough to hold and thin enough to crack. In the pan, listen for the snap. It is the most satisfying sound in my kitchen, and my students learn to wait for it.
+Spiders are the one thing the Undercity is never short of. White spider meat is sweet and delicate and takes no spice at all, which is a mercy in a city that smells of everything. Press it tight with your hands so it holds together, and fry it until the outside crisps. In the pan, listen for the crust to snap under the spoon. It is the most satisfying sound in my kitchen, and my students learn to wait for it.
 
 ## 1250153 Raptor Rouladen
 
-Thin slices of raptor rolled around hot spice and tied with string. The rolls cook from the outside in, so keep the outer turn thin. Brown them on every side, then lower the fire and leave them. When the string darkens and smells of burnt hay, cut it away before anyone sees it. A guest will forgive a great deal, but not string. I learned that from a guest.
+I roll thin slices of raptor around hot spice and tie them with string. The rolls cook from the outside in, so keep the outer turn thin. Brown them on every side, then lower the fire and leave them. When the string darkens and smells of burnt hay, cut it away before anyone sees it. A guest will forgive a great deal, but not string. I learned that from a guest.
 
 ## 1250142 Savory Stag Sliders
 
-Small rounds of chopped stag and hot spice, pressed once and fried quickly. Press them twice and the juice runs into the pan instead of the guest. The living like food they can eat with one hand. I have watched dockworkers at the zeppelin tower finish a dozen of these between two arrivals and go back to work without a word. That is the review that matters.
+The living like food they can eat with one hand, and this is it: stag chopped fine with hot spice, pressed once into small rounds and fried quickly. Press them twice and the juice runs into the pan instead of the guest. I have watched dockworkers at the zeppelin tower finish a dozen of these between two arrivals and go back to work without a word. That is the review that matters.
 
 ## 22480 Tender Wolf Steak
 
@@ -149,31 +149,31 @@ Tiger, the name means, cut thick and rubbed with holy salts an hour before cooki
 
 ## 1250144 Bat Hachee
 
-A poor farmer's stew of chopped meat, cooked long and slow. In Lordaeron it was beef, when there was beef, or I believe it was. Down here it is bat. Chop the wings fine, add the soothing spice, and give it a low fire for an evening, until the sinew softens and the kitchen smells of cloves and of something like home. My students call it bat hash. I call it supper.
+Poor farmers made this stew, chopped meat cooked long and slow. In Lordaeron it was beef, when there was beef, or I believe it was. Down here it is bat. Chop the wings fine, add the soothing spice, and give it a low fire for an evening, until the sinew softens and the kitchen smells of cloves and of something like home. My students call it bat hash. I call it supper.
 
 ## 1250147 Bear Bruscitti
 
-Thin slices of big bear meat layered with soothing spice and roasted slowly, until the layers press together into one. Slice the meat cold, or it tears. The smell when it is done is the best part, dark and sweet and close to burnt sugar. The name means nothing to me, nor to anyone I have asked. Whoever named it was showing off. Whoever cooked it first was not.
+My students remember this one by its smell: big bear meat in thin slices, layered with soothing spice and roasted slowly until the layers press together into one. Slice the meat cold, or it tears. The smell when it is done is the best part, dark and sweet and close to burnt sugar. The name means nothing to me, nor to anyone I have asked. Whoever named it was showing off. Whoever cooked it first was not.
 
 ## 1250152 Prehistoric Pulled Raptor
 
-Raptor cooked for most of a day over the lowest fire I can keep, with a great deal of soothing spice, until it falls apart at the touch of a fork. Pull it with two forks, never a knife. The deathguards love this one because it keeps, and because it can be eaten from a bowl while walking. Prehistoric, it calls itself. So are some of my students' manners.
+The deathguards love this one because it keeps. The raptor cooks for most of a day over the lowest fire I can keep, with plenty of soothing spice, until it falls apart at the touch of a fork. Pull it with two forks, never a knife. It can be eaten from a bowl while walking, which suits them. Prehistoric, it calls itself. So are some of my students' manners.
 
 ## 1250143 Soaring Pamplona
 
-Buzzard wings, boned and beaten flat, rolled around soothing spice and tied. It is slow, fiddly work, and I give it to students who are proud of their knife. Roast it gently and slice it in rounds. The spiral inside tells me everything about the cook who rolled it. A tight spiral, a careful hand. A loose one, someone who was thinking about lunch.
+My students who are proud of their knife get this one: buzzard wings, boned and beaten flat, rolled around soothing spice and tied. It is slow, fiddly work, and I check every roll before it goes in the oven. Roast it gently and slice it in rounds. The spiral inside tells me everything about the cook who rolled it. A tight spiral, a careful hand. A loose one, someone who was thinking about lunch.
 
 ## 1250148 Steaming Stag Steak
 
-Stag, rubbed deep with soothing spice and seared on a very hot iron, served at once while it still steams. The steam carries the smell, and the smell is half the meal for anyone who can taste and all of it for me. Do not let it wait. A steak that stops steaming has started to cool, and a cold steak is a promise someone broke on the way from the kitchen.
+I rub the stag deep with soothing spice, sear it on a very hot iron and serve it at once, while it still steams. The steam carries the smell, and the smell is half the meal for anyone who can taste and all of it for me. Do not let it wait. A steak that stops steaming has started to cool, and a cold steak is a promise someone broke on the way from the kitchen.
 
 ## 1250149 Swiftstrike Steak
 
-Tiger and soothing spice, the hottest fire you can make, the shortest time you can bear. The name is a hunter's. The method is a cook's. Strike fast, then rest long, and the resting is where everyone fails, because the smell is wonderful and the fork is right there. I make my students sit on their hands. The first time, I mean it.
+Give the tiger its soothing spice, the hottest fire you can make and the shortest time you can bear. The name is a hunter's. The method is a cook's. Strike fast, then rest long, and the resting is where everyone fails, because the smell is wonderful and the fork is right there. I make my students sit on their hands. The first time, I mean it. I learned the method from a hunter who could not wait either.
 
 ## 1250146 Flank au Poivre
 
-There is no pepper in it, whatever the name says, only red wolf flank and soothing spice, which does pepper's work well enough. Sear the flank hard, rest it while the pan cools, then pour its juices back over it. The smell when the juices meet the hot meat again is the whole point of the dish. I serve it to the apothecaries when I want something from them, and it works.
+I looked for the pepper in this recipe and found none, whatever the name says, only red wolf flank and soothing spice, which does pepper's work well enough. Sear the flank hard, rest it while the pan cools, then pour its juices back over it. The smell when the juices meet the hot meat again is the whole point of the dish. I serve it to the apothecaries when I want something from them, and it works.
 
 ## 25659 Dirge's Kickin' Chimaerok Chops
 

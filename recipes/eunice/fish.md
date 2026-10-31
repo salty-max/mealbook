@@ -33,7 +33,7 @@ The cold water of the loch makes a firmer fish than the southern frenzies, and t
 
 ## 7753 Longjaw Mud Snapper
 
-The mud is in the skin, not the flesh, and you can smell it the moment the fish meets the heat. Cook it whole over a moderate fire and lift the skin away before you serve it. The flesh beneath smells of nothing but fish, which is exactly what you want from a fish. The fishermen of Tirisfal eat the skin too. They say it reminds them of the river. They did not need to say.
+The mud is in the skin, not the flesh, and you can smell it the moment the fish meets the heat. Cook it whole over a moderate fire and lift the skin away before you serve it. The flesh beneath smells of nothing but fish, which is exactly what you want from a fish. The fishermen of Tirisfal eat the skin too. They say it reminds them of the river. They did not need to tell me why.
 
 ## 7827 Rainbow Fin Albacore
 
@@ -41,11 +41,11 @@ Firm and dark and rich, more like meat than fish, and it should be cooked like m
 
 ## 2544 Crab Cake
 
-Southshore made crab cakes on every holiday, or every other holiday, and the women argued about the spice through the window of the inn, or of the bakery. I remember the arguing better than the cakes. Pick the crawler meat clean, add a pinch of mild spice, and press it together with your hands. Fry it until the outside sets. If it falls apart, press harder next time. If it bounces, press less. The arguing is optional.
+Southshore made crab cakes on holidays, and the women argued about the spice through an open window, though I no longer know whose. I remember the arguing better than the cakes. Pick the crawler meat clean, add a pinch of mild spice, and press it together with your hands. Fry it until the outside sets. If it falls apart, press harder next time. If it bounces, press less. The arguing is optional.
 
 ## 25704 Smoked Sagefish
 
-Sagefish come from the lakes of Hillsbrad, where my family went in summer, or where we always said we would go. The fish smells of the sage along the banks, and the smoke brings it forward. I am sure of the smell. I am less sure of the summers. Low smoke, a pinch of mild spice and an afternoon. When the flesh turns golden and smells of herbs and woodsmoke, it is done.
+Sagefish come from the lakes of Hillsbrad, where my family went in summer, I think. The fish smells of the sage along the banks, and the smoke brings it forward. I am sure of the smell. I am less sure of the summers. Low smoke, a pinch of mild spice and an afternoon. When the flesh turns golden and smells of herbs and woodsmoke, it is done. I smoke it in batches, because the living buy it by the armful.
 
 ## 2545 Cooked Crab Claw
 
@@ -61,7 +61,7 @@ A small, bright fish with a ridiculous name. The recipe turns up in Redridge in 
 
 ## 7755 Bristle Whisker Catfish
 
-Catfish were what the river gave us when it gave us anything, and my mother skinned them on the back step, or my grandmother did. Skin it always. The skin smells of the riverbed, and the riverbed is not supper. The flesh beneath is white and sweet and wants a hot pan and one turn. I can still hear that knife on the step. I cannot see the hand that held it.
+Catfish were what the river gave us when it gave us anything, and someone in my family skinned them on the back step. Skin it always. The skin smells of the riverbed, and the riverbed is not supper. The flesh beneath is white and sweet and wants a hot pan and one turn. I can still hear that knife on the step. I cannot see the hand that held it.
 
 ## 6500 Goblin Deviled Clams
 
@@ -73,7 +73,7 @@ Its scales would blunt a cheap knife, so buy a good one before you buy the fish.
 
 ## 7213 Giant Clam Scorcho
 
-A giant clam is dense and sweet, and in Booty Bay they scorch it in hot spice for pirates. Slice it thin before the heat touches it, so the spice reaches through, then fire it fiercely and quickly. The smoke will make your eyes run. That is how you know you have used enough spice. When the smoke clears, so has the dish. Serve it to someone with a strong stomach and a short memory.
+A giant clam is dense and sweet, and in Booty Bay they scorch it in hot spice for pirates. Slice it thin before the heat touches it, so the spice reaches through, then fire it fiercely and quickly. The smoke will make your eyes run. That is how you know you have used enough spice. When the smoke clears, the dish is done. Serve it to someone with a strong stomach and a short memory.
 
 ## 20916 Mithril Headed Trout
 
@@ -85,7 +85,7 @@ The greater sagefish, grown fat on the sage along its lake, with hot spice to wa
 
 ## 1319313 Plated Armorfish
 
-A fish in armour. The plates come off with a heavy knife and a good deal of patience, and the flesh beneath is firm and pale, like a lobster's. Soothing spice, a moderate heat, and no hurry. Armoured things take time to cook, as the deathguards will tell you, and they are not talking about fish. Serve it in its own plates, washed. It makes people smile.
+A fish in armour. The plates come off with a heavy knife and a good deal of patience, and the flesh beneath is firm and pale, like a lobster's. Soothing spice, a moderate heat, and no hurry. Armoured things take their time. The deathguards in their plate would say the same. Serve it in its own plates, washed. It makes people smile. My students learn more about patience from this fish than they ever learn from me.
 
 ## 18239 Cooked Glossy Mightfish
 
@@ -97,11 +97,11 @@ Redgill needs nothing but a hot pan. Lay the fillet skin side down and wait unti
 
 ## 15915 Spiced Chili Crab
 
-Tender crab meat and a great deal of hot spice, stirred constantly in a pan hot enough to make you step back. The spice must cook into the crab, not sit on it. I cannot tell you how hot it is. I can tell you the trolls eat it without blinking and the orcs eat it while pretending not to blink, and I serve both with the same straight face.
+Tender crab meat and plenty of hot spice, stirred constantly in a pan hot enough to make you step back. The spice must cook into the crab, not sit on it. How hot it is, I leave to the trolls, who eat it without blinking, and to the orcs, who eat it while pretending not to blink. I serve both with the same straight face. Eat it with your hands. Nobody in my kitchen will judge you.
 
 ## 18238 Spotted Yellowtail
 
-Firm and oily, from the warm waters off Tanaris, and better the less you do. A hot pan, a single turn. The smell when it is done is clean and bright, like a sea breeze that has not yet met the docks. My students want to add things. I take the spice jar away and give it back when the fish is eaten. Most of them never ask for it again.
+Firm and oily, from the warm waters off Tanaris, and better the less you do. Lay it in a hot pan and leave it be until the edge turns white, then turn it. The smell when it is done is clean and bright, like a sea breeze that has not yet met the docks. My students want to add things. I take the spice jar away and give it back when the fish is eaten. Most of them never ask for it again.
 
 ## 18240 Grilled Squid
 
@@ -117,7 +117,7 @@ Water that never quite boils, for a fish that would fall apart under anything ha
 
 ## 1250158 Clam Linguine
 
-There is no noodle in it, whatever the name promises. There is zesty clam meat, a great deal of it, sliced into long ribbons and tossed in soothing spice. Cook it in a hot pan for a moment and serve it at once, tangled. It eats like noodles and smells like the sea. I do not know who invented it. I suspect a cook who had no flour and plenty of clams, and did not complain.
+There is no noodle in it, whatever the name promises. There is zesty clam meat, sliced into long ribbons and tossed in soothing spice. Cook it in a hot pan for a moment and serve it at once, tangled. It eats like noodles and smells like the sea. I do not know who invented it. I suspect a cook who had no flour and plenty of clams, and did not complain.
 
 ## 18247 Baked Salmon
 

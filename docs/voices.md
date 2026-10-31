@@ -104,7 +104,12 @@ plague. She cannot taste. She cooks by smell, by colour and sound, by the
 faces of whoever eats, and by what she is fairly sure she remembers.
 
 **The voice.** Practical, plain, measured. Full sentences, never clipped:
-her people show in how she sees things, not in how short she talks. Dry
+her people show in how she sees things, not in how short she talks. A
+drink's page may open on what goes in it, because a tea is its ingredients
+("Sungrass steeped in moonberry juice until the drink turns gold."). Elsewhere an
+opening list is the exception, never the habit: most pages open on a
+sentence with a verb and a person in it ("My students learn to keep a fire
+low on this"), and no run of pages opens the same way. Dry
 humour, warmth that slips out and is not dwelt on. She cares about feeding
 people: her students, the Horde's travellers off the zeppelins, the
 deathguards who do not need to eat and do anyway. Her trick a page is a
@@ -116,10 +121,14 @@ dead. The dishes of living Lordaeron, the farmhouse food she cooked alive
 she thinks it was, the kitchen she half sees. The dishes she learned in the
 Undercity and from the Horde (bats, spiders, kodo, the Barrens' food) she
 knows cold, and they never carry one. About one page in six, falling where
-they mean something, so the reader finds the pattern on their own.
+they mean something, so the reader finds the pattern on their own. A gap
+takes many shapes (the smell kept and the place lost, a face gone, a name
+gone, "X, or Y"), none of them more than a few times in the book.
 
-**Her condition.** That she cannot taste comes up about one page in four,
-never as a complaint. Not every page ends on something tender: several end
+**Her condition.** That she cannot taste comes up about one page in six,
+never as a complaint, said through the faces of the living as often as in
+her own words. "I cannot tell you how it tastes. I can tell you..." is one
+way to say it, kept for a few pages. Not every page ends on something tender: several end
 on the food.
 
 **Never.** Self-pity, gore for its own sake, the Forsaken played as a joke.

@@ -13,8 +13,8 @@ Star wood burns hotter and cleaner than common wood, with a smell like resin and
 
 ## 1291341 Expert Campfire
 
-Thick logs, slow to catch and slow to die, a fire for the whole of an evening. Lay them in a square with a gap for the air and light the kindling beneath. Then wait. The smell changes when it is ready, from green smoke to dry, from sharp to sweet. That is an expert's fire, and an expert's lesson: the best heat is the one you waited for. I have not been sold this recipe. I build it from what I was told, and I was told well.
+Thick logs, slow to catch and slow to die, a fire for the whole of an evening. Lay them in a square with a gap for the air and light them from beneath. Then wait. The smell changes when it is ready, from green smoke to dry, from sharp to sweet. That is an expert's fire, and an expert's lesson: the best heat is the one you waited for. I have not been sold this recipe. I build it from what I was told, and I was told well.
 
 ## 1263067 Iron Oven
 
-Flour, spring water and soothing spice, for an iron oven, which has no iron in its recipe at all. I believe the dough is worked into the new oven and baked hard, to season it, as a new pan is seasoned. I have not been sold the recipe, only told of it, by a goblin trader who thought I would be impressed. I was. I did not tell him. Goblins are unbearable when impressed upon, and they put it on the bill.
+Flour, spring water and soothing spice: that is the whole recipe for an iron oven. I believe the dough is worked into the new oven and baked hard, to season it, as a new pan is seasoned. I have never seen it for sale. A goblin trader told me of it, thinking I would be impressed. I was. I did not tell him. Goblins are unbearable when impressed upon, and they put it on the bill.

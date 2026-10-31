@@ -61,4 +61,4 @@ A drink named for its worst ingredient, which is a rare piece of honesty in a re
 
 ## 1249962 Sage's Tea
 
-Mountain silversage steeped in morning glory dew. The sages of Stormwind drink it while they think, which is to say all day, and charge the cost to the Crown. The dew is warmed only until it is no longer cold, and the silversage kept in only until the dew takes a faint green. It is a very good tea. It is also an expensive way to feel wise, which is the most common kind.
+A tea of mountain silversage and morning glory dew. The sages of Stormwind drink it while they think, which is to say all day, and charge the cost to the Crown. The dew is warmed only until it is no longer cold, and the silversage kept in only until the dew takes a faint green. It is a very good tea. It is also an expensive way to feel wise, which is the most common kind.

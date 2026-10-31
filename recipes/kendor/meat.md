@@ -57,7 +57,7 @@ Twice spiced, and for once a dish tells the truth about itself. The raptor is ru
 
 ## 3370 Crocolisk Steak
 
-Crocolisk is the steak for those who think beef too obliging. The Wetlands are full of them, and the hunters of Menethil bring me the tails in barrels of brine. The flesh is white and dense, closer to fish than to beast. Cook it as you would a thick fish: hot, short, and never twice. Reheated crocolisk tastes of the swamp it came from, which is a taste no one has ever asked for.
+Crocolisk is the steak for those who think beef too obliging. The Wetlands are full of them, and the hunters of Menethil bring me the tails in barrels of brine. For all the teeth, the tail eats like a fish, white and close-grained, and it must be cooked as a thick fish is: a fierce heat, briefly, and once. Crocolisk warmed over the next day is a punishment I reserve for pupils who left it out.
 
 ## 2546 Dry Pork Ribs
 
@@ -101,7 +101,7 @@ Brisket is the cut of a patient cook, and bear brisket is the cut of a saint. It
 
 ## 4094 Barbecued Buzzard Wing
 
-In the Badlands they will tell you a buzzard is not worth the coals. They have not eaten it barbecued. A buzzard wing is mostly sinew and spite, so it wants hot spice and a long, low heat, then a short, fierce one at the end to blister the skin. The hunters of Arathi sell the recipe for a pittance, which is a crime against cooking, and I have reported it to no one.
+In the Badlands they will tell you a buzzard is not worth the coals. They have not eaten it barbecued. A buzzard wing is mostly sinew and spite, so it wants hot spice and hours of gentle heat, and only at the very end a fierce blaze for the skin. The hunters of Arathi sell the recipe for a pittance, which is a crime against cooking, and I have reported it to no one.
 
 ## 15863 Carrion Surprise
 
@@ -129,7 +129,7 @@ White spider meat, pressed into a sausage and taught by every cooking trainer in
 
 ## 1250153 Raptor Rouladen
 
-Rouladen is a dwarvish word, or a dwarvish claim on a word, and the dish is rolled meat: raptor, cut thin, spread with hot spice, rolled up and tied. Rolled meat cooks from the outside in, so the outer turn must be thin or the middle stays raw. Colour the rolls all over first, then turn the fire down and let them be. When the string chars, cut it away. If you serve a guest the string, you deserve the look you get.
+Rouladen is a dwarvish word, or a dwarvish claim on a word, and the dish is rolled meat: raptor, cut thin, spread with hot spice, rolled up and tied. The thinner the slice, the sooner the heat reaches the middle, and a thick roll burns outside before its heart is cooked. Colour the rolls all over first, then turn the fire down and let them be. Snip the string off before the rolls go to the plate. String on a plate is a confession that the cook stopped paying attention.
 
 ## 1250142 Savory Stag Sliders
 
@@ -145,7 +145,7 @@ Filet o' Flank, a name with a letter missing and a dish with nothing missing at 
 
 ## 1225758 Prowler Steak
 
-Prowler steak is tiger, which the name is too polite to say. The steaks are cut thick, rubbed with holy salts and left an hour before the fire touches them. Tiger is a lean, hard-working meat, and the salt tames it. The rest is restraint: sear it briefly on a hot iron and rest it longer than you seared it. I have heard hunters argue that a tiger should be cooked angry. Hunters should hunt, and leave the kitchen to those who can count to sixty.
+Prowler steak is tiger, which the name is too polite to say. The steaks are cut generously and rubbed with holy salts, then left alone a good while before the fire is lit. The salt does quiet work in the meantime, drawing up the juice and settling the meat. Then a hot iron, briefly, on each side. I have heard hunters argue that a tiger should be cooked angry. Hunters should hunt, and leave the stove to cooks.
 
 ## 1250144 Bat Hachee
 
@@ -157,23 +157,23 @@ Bruscitti. I have looked for the word in three languages and found it in none. T
 
 ## 1250152 Prehistoric Pulled Raptor
 
-Prehistoric, as though the raptor had been waiting since the world began to be pulled apart with two forks. Perhaps it had. Raptor, heavy with soothing spice, then the lowest fire you can tend for most of a day. The meat is done when it falls apart at a touch. Pull it with forks, never a knife. A knife makes it sliced raptor, and sliced raptor is a lesser dish.
+Prehistoric, as though the raptor had been waiting since the world began to be pulled apart. Perhaps it had. This is a dish of time, not skill: raptor, heavy with soothing spice, on embers you keep checking are still alive, from morning until the evening lamps. Leave it be. When it is ready, it surrenders. Tear it with forks, never a blade. A knife makes it sliced raptor, and sliced raptor is a lesser dish.
 
 ## 1250143 Soaring Pamplona
 
-A pamplona is meat flattened, filled and rolled, and the soaring one is made of buzzard, which is the only thing about it that soars. The wings are boned and beaten flat, spread with soothing spice, rolled and tied. It is fiddly work, and fiddly work is where a cook is tested. Roll it tight, give it a gentle oven, and cut it into rounds. The rounds show your knife work. Make sure they show something you would sign.
+A pamplona is meat flattened, filled and rolled, and the soaring one is made of buzzard, which is the only thing about it that soars. The wings must be boned and beaten thin under a heavy pan before the soothing spice goes on, and then rolled tight and tied. It is fiddly work, and fiddly work is where a cook is tested. A gentle oven, then the knife. The rounds show your knife work. Make sure they show something you would sign.
 
 ## 1250148 Steaming Stag Steak
 
-A stag steak served steaming, which is to say served at once, which is how every steak ought to be served and how almost none are. Stag, soothing spice rubbed in deep, a very hot iron. The steam is the point. If it reaches the table without steam, it waited somewhere it should not have, and someone in your kitchen owes you an apology, and very likely a new steak.
+A stag steak served steaming, which is to say served at once, which is how every steak ought to be served and how almost none are. Work the soothing spice deep into the stag, then lay it on an iron hot enough that it hisses the moment the meat touches. Turn it once. Then carry it straight out. If it reaches the table without steam, it waited somewhere it should not have, and someone in your kitchen owes you an apology, and very likely a new steak.
 
 ## 1250149 Swiftstrike Steak
 
-A hunter's name for a cook's dish, as though the tiger had been caught by a thunderbolt. The tiger was caught by a hunter and a long wait. The steak, however, earns its name: tiger, soothing spice, and a fire as fierce as you can build, for a moment and no longer. Strike fast, rest long. The resting is where most cooks lose their nerve, and most steaks their juice.
+The tiger in this dish was not, whatever the name suggests, caught by a thunderbolt. It was caught by a hunter and a long wait, and the swiftness belongs to the cooking. Rub the tiger with soothing spice and give it a fire so fierce it must be watched, for so short a time that turning your back is a mistake. Then put it on a warm board and leave it there. A steak cut at once bleeds onto the board and arrives dry, and nobody remembers the fire.
 
 ## 1250146 Flank au Poivre
 
-Au poivre means with pepper, in some foreign kitchen, and the recipe has none. It has red wolf flank and soothing spice instead, and the spice carries the heat so well that nobody misses the pepper. Sear the flank hard, then let it rest while the pan cools, and pour the juices back over it. Never carve it in the pan it seared in. The pan remembers the heat, and so will the meat.
+Au poivre means with pepper, in some foreign kitchen, and the recipe has none. It has red wolf flank and soothing spice, and the spice carries the heat so well that nobody misses the pepper. The flank is a hard-working cut and wants a fierce pan and a quick hand. What the meat leaves in the pan matters as much as the meat: scrape it up and spoon it over before serving. Never carve it in the pan it seared in. The pan remembers the heat, and so will the meat.
 
 ## 25659 Dirge's Kickin' Chimaerok Chops
 

@@ -9,15 +9,15 @@ Peacebloom is the pale flower that grows along every road, and the Frostmane tro
 
 ## 1249963 Venomous Smoothie
 
-A smoothie made with a venom sac, which the vendor assured me is safe, with the confidence of a man who had not yet drunk one. The venom sac is crushed into spring water with mild spice and strained through cloth, so that its sharpness remains and its purpose does not. Shake it hard and drink it cold. It bites the tongue on the way down, which is the point. I sell nothing like it. I may yet, if the vendor survives.
+A smoothie made with a venom sac, which the vendor assured me is safe, with the confidence of a man who had not yet drunk one. The sac is broken into spring water with mild spice and the whole of it passed through fine cloth, so the drink keeps the venom's edge and leaves the venom behind. Serve it chilled. The first mouthful is a warning and the second a pleasure, which is the right order for both. I sell nothing like it. I may yet, if the vendor survives.
 
 ## 21144 Egg Nog
 
-Egg nog is the drink of Winter Veil and the reason so many Winter Veil mornings begin late. Beat the egg into the ice cold milk with the holiday spices until it is pale and thick and smells like the inside of a good cupboard. The holiday spirits go in last and in moderation, which no one has ever achieved. Serve it cold, in small cups, and do not refill the cups of people who have begun to sing.
+Egg nog is the drink of Winter Veil and the reason so many Winter Veil mornings begin late. The egg is beaten into ice cold milk with the holiday spices until it is pale, thick and smells like the inside of a good cupboard. The holiday spirits come last. Measure them as if the guests could see you, which they can. Serve it cold, in small cups, and do not refill the cups of people who have begun to sing.
 
 ## 9513 Thistle Tea
 
-Thistle tea is the drink of this kingdom's rogues, who brew it from swiftthistle and spring water and drink it before doing whatever it is rogues do. I do not ask. Steep the swiftthistle in water just off the boil until it turns green-gold, then strain it. Swiftthistle steeped too long turns bitter, and rogues prefer it that way. I prefer to know where my purse is when they drink it.
+Thistle tea is the drink of this kingdom's rogues, who brew it from swiftthistle and spring water before doing whatever it is rogues do. I do not ask. The water should have stopped boiling a breath before it meets the leaf, and the leaf should leave the cup the moment the colour comes, green with a little gold. Left longer, it grows harsh. Rogues drink it harsh. I prefer to know where my purse is while they drink it.
 
 ## 1249958 Royal Tea
 
@@ -29,7 +29,7 @@ Slimy, it calls itself, and it is the most accurate name in this chapter. Spider
 
 ## 1249965 Mrrggl Smrrthle
 
-I will not try to pronounce the name of this drink. I have heard a murloc try, and it did not go well for either of us. The murloc fin is shaken with melon juice and hot spice until it gives up its body to the juice. It is sweet, then hot, then something I can only call coastal. The murlocs drink it as an insult to the rest of us. It is, I admit, a well-made insult.
+I will not try to pronounce the name of this drink. I have heard a murloc try, and it did not go well for either of us. The fin must be fresh and shaken hard in melon juice with hot spice, long enough that the juice turns faintly cloudy and takes on the sea. It is sweet, then hot, then something I can only call coastal. The murlocs drink it as an insult to the rest of us. It is, I admit, a well-made insult.
 
 ## 1249959 Root Tea
 
@@ -53,12 +53,12 @@ A drink with a flame sac in it, which the fire mages consider a recommendation. 
 
 ## 1249961 Sunny Tea
 
-Sungrass, steeped in moonberry juice, which is a joke about the sun and the moon that the recipe does not trouble to explain. The juice is warmed and the sungrass left in it until the drink turns the gold of late sun. Strain it and serve it warm, never hot. It is a cheerful drink, which is rare, and I have nothing cutting to say about it, which is rarer still.
+Sungrass, steeped in moonberry juice, which is a joke about the sun and the moon that the recipe does not trouble to explain. The juice is warmed and the sungrass steeped until the drink turns the gold of late sun. Strain it and serve it warm, never hot. It is a cheerful drink, which is rare, and I have nothing cutting to say about it, which is rarer still.
 
 ## 1249968 Wicked Smoothie
 
-Wicked is the right word, and the recipe makes no attempt to hide it. A wicked claw, ground fine, goes into morning glory dew with a heavy hand of soothing spice to make amends. The claw gives the drink a dark, bitter edge, and the spice loses to it every time, however heavy the hand. Shake it cold. I do not know who drinks this for pleasure. I know who drinks it on a dare, and I have shown several of them out of my kitchen.
+A drink named for its worst ingredient, which is a rare piece of honesty in a recipe. The wicked claw is ground to dust, because a shard in the throat is a poor way to end an evening, and stirred into morning glory dew with a heavy hand of soothing spice. The spice is a peace offering. The claw refuses it. What you drink is bitter, dark and faintly hostile. I have never served it for pleasure. I serve it to pupils who boast, and they boast less afterwards.
 
 ## 1249962 Sage's Tea
 
-Mountain silversage steeped in morning glory dew, which is a tea made entirely of things that are difficult to find. That is why it is called a sage's tea. The dew is warmed only until it is no longer cold, and the silversage left in it until the drink pales. It is a very good tea. It is also an expensive way to feel wise, which is the most common kind.
+Mountain silversage steeped in morning glory dew. The sages of Stormwind drink it while they think, which is to say all day, and charge the cost to the Crown. The dew is warmed only until it is no longer cold, and the silversage kept in only until the dew takes a faint green. It is a very good tea. It is also an expensive way to feel wise, which is the most common kind.

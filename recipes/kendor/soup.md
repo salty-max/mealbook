@@ -29,7 +29,7 @@ Murloc fins make a soup with more body than you would believe, if you have only 
 
 ## 2547 Redridge Goulash
 
-Redridge goulash is spider and condor, stewed together by the people of Lakeshire, who have had spiders and condors to spare since the gnolls took the rest. The two meats cook at different speeds. Put the condor in first, because it is tough, and the spider later, because it is not. Cooked together from the start, you get one meat ruined and the other raw. I sell the recipe with that warning written in the margin, in my own hand.
+Redridge goulash is spider and condor, stewed together by the people of Lakeshire, who have had spiders and condors to spare since the gnolls took the rest. The two meats cook at very different speeds, and the art is in the timing. The condor needs most of the afternoon to soften. The spider needs a fraction of it and goes stringy if it stays longer. Add it late. I sell the recipe with that warning written in the margin, in my own hand.
 
 ## 3373 Crocolisk Gumbo
 
@@ -37,7 +37,7 @@ Gumbo is a dish of the swamps, a thick, dark stew that the people of the Wetland
 
 ## 24418 Heavy Crocolisk Stew
 
-Heavy, it says, and it is no lie: crocolisk in quantity, with soothing spice, stewed until a spoon stands in it. Theramore's soldiers eat it from tin bowls under the rain of Dustwallow and swear it is the only warm thing in the marsh. I believe them. A stew this heavy needs the spoon dragged across the floor of the pot, often, or it catches there, out of sight. Most ruined stews die at the bottom of the pot.
+Heavy, it says, and it is no lie: crocolisk in quantity, with soothing spice, stewed until it is closer to a pudding than a soup. Theramore's garrison lives on it through the Dustwallow winters and swears it is the only warm thing in the marsh. They are right. The danger of a stew this dense is that the heat gathers at the base of the pot, so keep a wooden spoon moving there. Most ruined stews die down there.
 
 ## 15861 Jungle Stew
 
@@ -45,11 +45,11 @@ A stew from Stranglethorn, made by soldiers who had tiger meat, spring water and
 
 ## 15865 Mystery Stew
 
-Mystery Stew is mystery meat stewed in dwarven stout, and the mystery is which of the two does more of the work. I will tell you: the stout. A skin of good dwarven stout darkens and softens the meat and lends the broth a bitterness that hides a multitude of sins. Daryl Riknussun teaches this in Ironforge as a dwarven dish, which is generous of him, since the dwarves contributed only the beer and the questions. Cook it long. Whatever the meat once was, it must forget. Skim the scum as it rises. A boil sours the stout and turns the meat to string. Served in Theramore and Desolace to people who have stopped asking questions, it is, I admit, very good. I have stopped asking questions too. It was easier than I expected.
+Mystery Stew is mystery meat stewed in dwarven stout, and the mystery is which of the two does more of the work. I will tell you: the stout. A good dwarven stout stains the meat dark, loosens it, and leaves the broth a bitterness that hides a multitude of sins. Daryl Riknussun teaches this in Ironforge as a dwarven dish, which is generous of him, since the dwarves contributed only the beer and the questions. Cook it long. Whatever the meat once was, it must forget. Skim the scum as it rises. A boil sours the stout and turns the meat to string. Served in Theramore and Desolace to people who have stopped asking questions, it is, I admit, very good. I have stopped asking questions too. It was easier than I expected.
 
 ## 3400 Soothing Turtle Bisque
 
-Bisque is a smooth soup, and turtle bisque is smooth because the turtle has given up everything it had to give. Turtle meat and soothing spice go into the pot for the afternoon, and then through a fine sieve, pressed with the back of a ladle until nothing is left that a spoon could catch on. Skip that step and you have turtle soup, which is a different and lesser thing. Soothing, it calls itself. I would say patient, and I would be right.
+Bisque is a smooth soup, and turtle bisque is smooth because the turtle has given up everything it had to give. Turtle meat and soothing spice simmer through the afternoon, and then the whole pot goes through a fine sieve. Press it with the back of a ladle until nothing is left that a spoon could catch on. Skip that step and you have turtle soup, which is a different and lesser thing. Soothing, it calls itself. I would say patient, and I would be right.
 
 ## 1295805 Briny Seafood Stew
 
@@ -65,7 +65,7 @@ The kodos of Desolace grow larger than any in the Barrens while eating nothing a
 
 ## 20626 Undermine Clam Chowder
 
-A goblin chowder, sold in Tanaris by a goblin named Jabbey who never has more than a single copy to sell and enjoys the scarcity more than the soup. The soup is better than the goblin. Zesty clam meat and hot spice in ice cold milk, which is warmed and never once allowed to boil. The goblins of Undermine are said to eat it scalding. I recommend eating it at a temperature that does not require a healer.
+A chowder from Undermine, sold in Tanaris by a goblin named Jabbey who never has more than a single copy to sell and enjoys the scarcity more than the soup. The soup is better than the goblin. Zesty clam meat and hot spice go into ice cold milk, and the pot is warmed with great care, because milk takes its revenge on a careless cook by splitting. In Undermine they serve it scalding, to show they can. I recommend eating it at a temperature that does not require a healer.
 
 ## 18243 Nightfin Soup
 

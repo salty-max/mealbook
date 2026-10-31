@@ -21,11 +21,11 @@ A souffle is an egg persuaded to stand up, and the Skywall souffle, named for so
 
 ## 2542 Goretusk Liver Pie
 
-Goretusk liver pie is the pride of the Westfall farms, or was, when there were Westfall farms to be proud of. A farmer's wife on the coast road taught it to half the province, and I sell it here with a few corrections she has not yet travelled to Stormwind to dispute. The liver of a goretusk is strong, dark and rich, and it must be rinsed in cold water before it is cooked, to calm its bitterness. Then a pinch of mild spice and a slow oven. A hot oven makes liver grey and grainy, with a taste of iron. A slow one leaves it soft and sweet and tasting of the farm it came from. The crust is a matter of opinion. The liver is not. When the pie comes out, let it rest until it stops whispering. Then cut it, and then you may be proud.
+Goretusk liver pie is the pride of the Westfall farms, or was, when there were Westfall farms to be proud of. A farmer's wife on the coast road taught it to half the province, and I sell it here with a few corrections she has not yet travelled to Stormwind to dispute. The liver of a goretusk is strong, dark and rich, and it must be rinsed in cold water before it is cooked, to calm its bitterness. Then mild spice, and an oven that never hurries. A hot oven makes liver grey and grainy, with a taste of iron. A slow one leaves it soft and sweet and tasting of the farm it came from. The crust is a matter of opinion. The liver is not. When the pie comes out, let it rest until it stops whispering. Then cut it, and then you may be proud.
 
 ## 1250157 Breakfast Omelette
 
-A breakfast omelette, with an egg and a frankly alarming quantity of mild spice. Whoever wrote this recipe woke up hungry and angry. The trick of any omelette is heat and speed: a hot pan, the egg beaten until it is one colour, and a fork pulling the set edges into the middle. Fold it while the middle is still soft. The recipe was found in Redridge, in the nest of a condor, which explains the anger, if not the spice.
+A breakfast omelette, with an egg and a frankly alarming quantity of mild spice. Whoever wrote this recipe woke up hungry and angry. The trick of any omelette is heat and speed: whisk the egg smooth, give it a pan already hot, and keep a fork moving through it while it sets. Fold it while the middle is still soft. The recipe was found in Redridge, in the nest of a condor, which explains the anger, if not the spice.
 
 ## 3377 Gooey Spider Cake
 
@@ -45,11 +45,11 @@ A monster omelette is made from a giant egg, and a giant egg is enough to feed a
 
 ## 1225760 Sunrise Omelette
 
-An omelette of giant eggs seasoned with holy salts, which someone decided was a sunrise. I suppose it is the colour: a very bright yolk, a pale white, and a pinch of salt that the clergy blessed and the merchants priced accordingly. Cook it slowly, so the colour stays bright. A sunrise cooked fast turns to noon, and nobody writes poems about noon. I serve it to priests, who appreciate the joke, and to paladins, who do not.
+An omelette of giant eggs seasoned with holy salts, which someone decided was a sunrise. It is the colour: a very bright yolk, a pale white, and a pinch of salt that the clergy blessed and the merchants priced accordingly. Keep the heat gentle, or the yolk dulls. A sunrise cooked fast turns to noon, and nobody writes poems about noon. I serve it to priests, who appreciate the joke, and to paladins, who do not.
 
 ## 1294014 Sweetpaw Jam
 
-Jam from the berries of Hyjal, which grow on the slopes of a mountain the druids call sacred and which is, above all, very cold. Berries and soothing spice, cooked down slowly. To test it, chill a saucer and drop a little jam on it: if it wrinkles when pushed, it is ready. Too runny, and you have made sauce. Too stiff, and you have made a brick. Sweetpaw, they call it, after the bears who raid the bushes. The bears are right about the berries.
+Jam from the berries of Hyjal, which grow on the slopes of a mountain the druids call sacred and which is, above all, very cold. Berries and soothing spice, reduced over a gentle fire. To test it, chill a saucer and drop a little jam on it: if it wrinkles when pushed, it is ready. Too runny, and you have made sauce. Too stiff, and you have made a brick. Sweetpaw, they call it, after the bears who raid the bushes. The bears are right about the berries.
 
 ## 22761 Runn Tum Tuber Surprise
 

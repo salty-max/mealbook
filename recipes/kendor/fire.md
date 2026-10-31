@@ -9,11 +9,11 @@ Before there is a dish, there is a fire, and before there is a fire there is a c
 
 ## 1283400 Journeyman Campfire
 
-Star wood burns hotter and cleaner than the common kind, and a journeyman cook should know the difference before he is allowed near a better fire. The recipe was found in the Wailing Caverns, among the druids who went wrong there, which is a long way to go for a better campfire. Stack it as loosely as the basic fire, and wait longer for the coals. A hotter fire forgives less. That is what it means to be a journeyman.
+A journeyman must learn that not all wood is equal, and star wood is the lesson. It burns with a white, clean heat that the common kind never reaches, and gets there quickly. The recipe turned up in the Wailing Caverns, among druids who had other things on their minds. Build it as you would the basic fire, but do not cook on it until the flames have died right back, because this heat punishes a hurried cook. A better fire makes a better cook only if he waits for it.
 
 ## 1291341 Expert Campfire
 
-Thick logs, which take an age to catch and then burn for an evening, steady as a hearth. This is the fire of an expert, and it teaches an expert's lesson: the long, even heat is worth the wait. Lay the logs in a square, leave a gap for the air, light the kindling beneath and be patient. I have not yet seen this recipe sold. I have seen cooks who thought they did not need it, and they were never quite experts.
+Thick logs are the fire of a master: a trial to light, and once lit they keep the same heat all evening, steady as a hearth. A beginner wants flame. An expert wants coals that will not change their mind halfway through a roast, and only thick logs give them. Stack them so the air can climb through the middle, and wait while they take. The recipe has not yet reached my shelves, and I have asked every trader who passes. I have seen cooks who thought they did not need it, and they were never quite experts.
 
 ## 1263067 Iron Oven
 

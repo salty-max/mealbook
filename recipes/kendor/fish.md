@@ -17,7 +17,7 @@ A fish I have not yet seen in Stormwind's market, though the fishermen speak of 
 
 ## 1270635 Pincer Bites
 
-Crab season, they call the errand that teaches this, as though crabs had seasons and were not simply always there, scuttling at the edge of every beach. The claws are cracked, the meat picked out and bound with a little flour, then fried in small bites. Use the least flour you can manage. It holds the crab together. It must not become the dish. A bite that tastes of bread is a bite that lied to you about the beach.
+Crab season, they call the errand that teaches this, which is a grand title for picking claws on a beach. The meat is picked from the claws, bound with flour and fried a mouthful at a time. Flour is there only to keep each bite in one piece. Use a pinch, not a grain more. A bite that tastes of bread is a bite that lied to you about the beach.
 
 ## 6499 Boiled Clams
 
@@ -25,7 +25,7 @@ A clam is a mouthful of the sea, and the only way to ruin it is to forget it in 
 
 ## 6415 Fillet of Frenzy
 
-The frenzies of Darkshore are all teeth and bad manners, and the night elves fillet them with a reverence I find excessive. Alegorn would have you lay the fillet on a leaf and murmur over it. I would have you season it lightly and cook it fast, because frenzy flesh is soft and falls apart if you so much as look at it slowly. Skin side down, a hot pan, one turn. The leaf is optional. The murmuring is not my business.
+The frenzies of Darkshore are all teeth and bad manners, and the night elves fillet them with a reverence I find excessive. Alegorn would have you lay the fillet on a leaf and murmur over it. I would have you season it lightly and cook it fast, because frenzy flesh is soft and falls apart if you so much as look at it slowly. A hot pan, the skin first, and a single turn when the flesh goes white at the edge. The leaf is optional. The murmuring is not my business.
 
 ## 7754 Loch Frenzy Delight
 
@@ -37,7 +37,7 @@ A snapper from the muddy bottoms of slow rivers, and it tastes of them unless yo
 
 ## 7827 Rainbow Fin Albacore
 
-Albacore is a fish for people who think fish should behave like meat. It is firm, dark and rich, and it takes a hard sear on the outside and very little cooking in the middle. The sailors of Menethil cook it through until it is grey and blame the fish. I sell no recipe for it, but I would, and I would charge more. Pink in the middle is correct. Grey is a confession.
+Albacore is a fish for people who think fish should behave like meat, and for once the fish agrees. Its flesh is firm, dark and rich, so give it a hard sear and stop long before the centre is cooked through. The sailors of Menethil cook it until it is grey from edge to edge and blame the fish. I sell no recipe for it, but I would, and I would charge more. A sailor's albacore is a ration. Mine is a meal.
 
 ## 2544 Crab Cake
 
@@ -45,7 +45,7 @@ Every trainer teaches crab cakes, and every trainer teaches them too wet. Crawle
 
 ## 25704 Smoked Sagefish
 
-Sagefish live in the cold, clear lakes of Hillsbrad, where the fishermen are patient. The fish takes on the scent of the sage that grows at the water's edge, which is where its name comes from, and smoking it gently brings that smell forward. Low smoke, a pinch of spice, and an afternoon. The farmers of Southshore sell it from their windows. It is the best thing in Southshore, which is a low bar, nobly cleared.
+Smoked sagefish is a Southshore dish, and the best thing in Southshore, which is a low bar, nobly cleared. The fish lives among the sage at the edge of the Hillsbrad lakes and carries its scent in the flesh. So the smoking must be cool and slow, or the herb burns off before the fish is cooked. Dust it with mild spice and keep the fire smouldering, never flaming, until the light goes. The farmers sell it from their windows. Stormwind's cooks have the method written down. The farmers never needed to.
 
 ## 2545 Cooked Crab Claw
 
@@ -57,11 +57,11 @@ Deviate fish live in the poisoned pools of the Wailing Caverns, in the Barrens, 
 
 ## 1252566 Savory Whimsyfin Delight
 
-Whimsyfin. Somebody named a fish that, and somebody else agreed. Gnolls and murlocs carry the recipe about Redridge in their packs, and neither is known for its kitchen, so I assume they stole it from someone who was. The fish is small and bright and delicate. Mild spice, barely, and a hot pan, briefly. The name promises whimsy. The dish delivers supper, which is better and far more reliable. Eat it at once.
+Whimsyfin. Somebody named a fish that, and somebody else agreed. Gnolls and murlocs carry the recipe about Redridge in their packs, and neither is known for its kitchen, so they stole it from someone who was. The fish is a little jewel of a thing, and fragile. Mild spice, barely, and a hot pan, briefly. The name promises whimsy. The dish delivers supper, which is better and far more reliable. Eat it at once.
 
 ## 7755 Bristle Whisker Catfish
 
-Catfish is a river fish, wide-mouthed and whiskered and generally despised by people who have never cooked it properly. Take the skin off, always. The skin of a catfish tastes of the riverbed, and no one has ever asked me for a riverbed. Beneath it the flesh is pale and sweet, and it needs nothing but a hot pan and the nerve to turn it only once. The fishermen of the Hillsbrad rivers swear by it, skin and all, which is how they ruin it.
+Catfish is a river fish, wide-mouthed and whiskered and generally despised by people who have never cooked it properly. Their mistake is the skin. It holds every flavour of the riverbed, and no one has ever asked me for a riverbed. Strip it away before the pan sees the fish, and what remains is mild, sweet and firm enough to fry hot without falling apart. The fishermen of the Hillsbrad rivers swear by it, and then fry it whole, which explains their reputation as cooks.
 
 ## 6500 Goblin Deviled Clams
 
@@ -77,7 +77,7 @@ Booty Bay's cooks scorch a giant clam in hot spice and serve it to pirates, who 
 
 ## 20916 Mithril Headed Trout
 
-A trout with a silvery head the colour of mithril, which explains the name, and a temper to match, which explains the fishermen's bandages. It is a mountain fish and cold-blooded in every sense. Keep the skin on, and spoon the pan's own fat over the back as it cooks. The flesh is pale and fine. The head stays on for the table. A trout without its head looks embarrassed, and so does the cook who served it.
+A trout with a silvery head the colour of mithril, which explains the name, and a temper to match, which explains the fishermen's bandages. It is a mountain fish and cold-blooded in every sense. Keep the skin on, and spoon the pan's own fat over the back as it cooks. Its meat is pale and fine. The head stays on for the table. A trout without its head looks embarrassed, and so does the cook who served it.
 
 ## 25954 Sagefish Delight
 
@@ -89,11 +89,11 @@ A fish that wears armour, which seems only fair, given what happens to the ones 
 
 ## 18239 Cooked Glossy Mightfish
 
-A big, glossy fish from the warm waters of the south, rich enough to be served in thick steaks. Soothing spice suits it, rounding the richness rather than fighting it. Sear the steaks hard and let them rest, as you would meat. The sailors of Booty Bay cook it in great slabs over driftwood and eat it with their knives. I have seen it, and I would rather not describe it.
+A big, glossy fish of the southern seas, and a rich one, cut into thick steaks. Rich fish tempts a cook to fight it with strong spice. Do not. Soothing spice is the right partner, because it agrees with the fish instead of arguing. Sear the steaks dark and give them time to settle off the heat. The sailors of Booty Bay cook it in great slabs over driftwood and eat it with their knives. I have seen it, and I would rather not describe it.
 
 ## 18241 Filet of Redgill
 
-Redgill is a coastal fish, named for the flush along its gills, which fades once it is caught and cooked, as most things do. It needs nothing. A fillet, a hot pan, the skin side down until it lifts on its own. I have watched cooks reach for every spice on the shelf with this fish, out of nerves. A good redgill is not a problem to be solved. It is a fish to be left alone.
+Redgill is a coastal fish, named for the flush along its gills, which fades once it is caught and cooked, as most things do. It needs nothing. A fillet, a hot pan, and the restraint to leave the skin alone until the pan lets go of it. I have watched cooks reach for every spice on the shelf with this fish, out of nerves. A good redgill is not a problem to be solved. It is a fish to be left alone.
 
 ## 15915 Spiced Chili Crab
 
@@ -109,7 +109,7 @@ Squid has two good cooking times, very short and very long, and everything betwe
 
 ## 18242 Hot Smoked Bass
 
-Hot smoking is smoking at a heat that also cooks, which is faster than cold smoking and less forgiving. The summer bass takes a rub of hot spice and hangs close above a smoky fire, where you must watch it. When the flesh turns from glass to white, it is done. Smoked this way, it keeps and it travels. It is the only fish I would trust to a soldier's pack, and I have trusted it to several.
+Hot smoking is smoking at a heat that also cooks, which is faster than cold smoking and less forgiving. Hot spice goes on the summer bass. Then the bass goes into the thick of the smoke, near enough to the coals to cook through in the time cold smoke would barely colour it. Stay with it. It is done when the flesh flakes at the thickest part, and soon after that it is dry. It is the only fish I would trust to a soldier's pack, and I have trusted it to several.
 
 ## 18244 Poached Sunscale Salmon
 
@@ -117,15 +117,15 @@ Poaching is the art of cooking in water that never quite boils, and it is the mo
 
 ## 1250158 Clam Linguine
 
-Linguine is a long flat noodle from some distant kitchen. There is no noodle in the recipe. There is zesty clam meat, cut in long strips and turned through soothing spice, which I suppose is where the name came from. The strips want a hot pan and a moment, no more, and they go to the table at once. They tangle like noodles and eat like clams. I approve of the deception.
+Linguine is a long flat noodle, and the recipe, to its credit, does not pretend to have one. It has zesty clam meat, cut in long strips to look the part, and turned through soothing spice. A hot pan, hardly any time, and straight to the table, because clam cooked a moment too long turns tough. On the plate the strips tangle like noodles and eat like clams. I approve of the deception.
 
 ## 18247 Baked Salmon
 
-Whitescale salmon, a cold-river fish, baked whole with soothing spice in an oven that is warm rather than hot. A whole fish bakes evenly where a fillet dries at the edges, and the skin protects the flesh like a lid. Tug a fin: when it comes away without argument, the fish is done. Feralas sells this recipe to the few who come that far. They deserve it, for the journey alone.
+Whitescale salmon, a cold-river fish, baked whole with soothing spice in an oven that is warm rather than hot. A whole fish bakes evenly where a fillet dries at the edges, and the skin keeps the juice where it belongs. Slide a knife along the backbone: when the flesh lifts from the bone in one piece, the fish is done. The recipe is sold in Feralas, and I would make the journey for it, if Feralas were nearer.
 
 ## 18246 Mightfish Steak
 
-A mightfish is large enough to be cut into steaks like a bull, and it should be treated like one. Hot spice and soothing spice, one to wake the meat and one to calm it. Sear the steaks hard on both sides and rest them before serving. The fishermen of the far south bring these in with nets and much shouting. I prefer them on a plate, in silence, as a steak ought to be eaten.
+The mightfish is the one fish I butcher as if it were beef, because it is cut into steaks and behaves like them. Hot spice and soothing spice, the first for vigour and the second for manners, pressed into both faces of the steak. A pan as hot as you dare, both sides seared dark, and then leave it on the board a while before the knife. The fishermen of the far south bring these in with nets and much shouting. I prefer them on a plate, in silence, as a steak ought to be eaten.
 
 ## 470370 Smoked Redgill
 

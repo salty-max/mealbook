@@ -4,8 +4,8 @@ A World of Warcraft addon: a chef's cookbook that fills in as the character
 learns to cook, and the road to 300 (what to cook next, how many times, with
 what). The first chapter of the professions addon (`../ideas/professions.md`),
 planned in `../ideas/cookbook.md`: the chefs (Kendor Kabonka for the
-Alliance, Eunice Burch for the Horde), their voices (`../ideas/cookbook-voices.md`,
-the cards the pages follow), the Hunts, the Milestones, the pantry.
+Alliance, Eunice Burch for the Horde), their voices (`docs/voices.md`,
+the rules and cards the pages follow), the Hunts, the Milestones, the pantry.
 Started 19 October 2026. On GitHub (salty-max/mealbook, public, 19
 October 2026), released since v0.1.0 (21 October 2026) on GitHub,
 CurseForge and Wago. Classic Era (11509) and Forever (16001),
@@ -18,7 +18,8 @@ one package. Read the family's CLAUDE.md (`../CLAUDE.md`) first.
 | The addon file by file: the package, Core, Settings, Hunts, Milestones, Pantry, Road, the book's tabs, the tests, languages | `docs/architecture.md` |
 | The recipes from wow-data (`scripts/recipes.ts`: dishes, sources, npcs, ingredients, ranks) and the chefs' pages (`scripts/pages.ts`) | `docs/data.md` |
 | Artwork, the release pipeline, what isn't done yet | `docs/releases.md` |
-| The chefs' voices and the plan | `../ideas/cookbook-voices.md`, `../ideas/cookbook.md` |
+| The chefs' voices: how a page reads, the two cards, the French | `docs/voices.md` |
+| The plan | `../ideas/cookbook.md` |
 | The pages themselves | `recipes/<chef>/<chapter>.md`, French in `i18n/frFR/recipes/<chef>/` |
 | The chapters, by hand | `data/chapters.json` |
 | The store page | `addon/CURSEFORGE.md` |
@@ -53,7 +54,7 @@ scripts/release.sh --version X.Y.Z [--hold] NOTES.md   # check, tag, push; Actio
   by an English name.
 - Every dish of both games has a page from both chefs. Pages are English
   in plain ASCII, 70 to 100 words (130 to 150 for a signature dish, a fifth
-  more in a translation), no semicolons in any language, no ingredient of
+  more in a translation: 70 to 120, 130 to 180), no semicolons in any language, no ingredient of
   another dish named. A translation is stamped against its English.
 - Classic Era leaves out a dish its world can't teach. Forever keeps one no
   source has seen yet (`unknown`): a page when learned, never on the road.

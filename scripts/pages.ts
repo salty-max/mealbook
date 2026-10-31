@@ -5,7 +5,7 @@
  * addon/Mealbook/Pages_<locale>.lua (the client loads its own: the TOCs name
  * Pages_[TextLocale].lua; a language with no translation gets the English).
  *
- * The voices' rules (../ideas/cookbook-voices.md) the build can check:
+ * The voices' rules (docs/voices.md) the build can check:
  *   - every dish of either game (scripts/recipes.ts) has a page from each chef
  *   - no semicolons, in any language; plain ASCII in the English
  *   - a page's length: 70 to 100 words, 130 to 150 for a signature dish (said
@@ -47,7 +47,7 @@ const TRANSLATED = ["frFR", "deDE", "esES", "esMX"];
 // client's names swapped in (i18n/<locale>/regional.resolved.json from regional.json by addon-kit/regional.ts, esES's name: its
 // own) and its own Classic Era swaps (classic-names.json, never the lender's).
 const BORROWS: Record<string, string> = { esMX: "esES" };
-// (the dozen dishes a chef has more to say about: cookbook-voices.md)
+// (the dozen dishes a chef has more to say about: docs/voices.md)
 export const SIGNATURE = new Set([2543, 2542, 2795, 15906, 15910, 15865, 15933, 22761, 24801, 25659, 1262978, 1225763, 1225762]);
 
 type Page = { spell: number; title: string; paragraphs: string[]; file: string };

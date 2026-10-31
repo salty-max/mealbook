@@ -2,7 +2,7 @@
 -- dish's page: what it makes, its colours now and at each threshold, its
 -- ingredients as the game's items (counts, tooltips, how many in the bags),
 -- how it was learned and how often cooked. The chef's own page of each dish
--- goes above the facts once written (cookbook-voices.md).
+-- goes above the facts once written (docs/voices.md).
 local _, ns = ...
 local L, D, ui = ns.kit.L, ns.data, ns.ui
 local T = ui.T

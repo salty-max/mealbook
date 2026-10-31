@@ -2,7 +2,7 @@
 
 Where the recipes come from and how the chefs' pages are kept (moved from
 CLAUDE.md on 20 October 2026). The voices the pages follow:
-`../ideas/cookbook-voices.md`; the plan: `../ideas/cookbook.md`.
+`docs/voices.md`; the plan: `../ideas/cookbook.md` (outside git).
 
 ## The recipes (`scripts/recipes.ts`)
 
@@ -88,7 +88,7 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
   with `i18n/esMX/regional.json`'s names, game names from wow-data), the same sections, stamped against the English they were translated from
   (`i18n/<locale>/recipes-stamp.json`). `scripts/pages.ts` checks them (no
   semicolons, the lengths: 70 to 100 words, 130 to 150 for the signature
-  dishes, a fifth more in a translation; an ingredient of another dish
+  dishes, a fifth more in a translation: 70 to 120 and 130 to 180; an ingredient of another dish
   named on a page; a translation whose English changed since, `--stamp`
   once read) and writes `Pages_<locale>.lua` (`ns.pages[chef][spell]`, and
   `ns.classicNames`: a translation uses Forever's place names,

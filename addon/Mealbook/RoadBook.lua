@@ -66,7 +66,7 @@ local RANK_NAMES = { [75] = L["Apprentice"], [150] = L["Journeyman"], [225] = L[
 
 local function legTitle(leg)
   if leg.train == 75 then return L["Learn cooking"] end
-  if leg.train then return L["Train %s"]:format(RANK_NAMES[leg.train] or "") end
+  if leg.train then return L["Train to %s"]:format(RANK_NAMES[leg.train] or "") end
   return ns.dishName(leg.spell)
 end
 
@@ -74,7 +74,7 @@ end
 local function trainLine(leg)
   local r = leg.rank or {}
   if leg.train == 75 then
-    return r.level and L["From a cooking trainer, from level %d"]:format(r.level) or L["From a cooking trainer"]
+    return r.level and L["From a cooking trainer, at level %d"]:format(r.level) or L["From a cooking trainer"]
   end
   if r.trainers then return L["At %d: from a cooking trainer"]:format(leg.from) end
   if r.items then

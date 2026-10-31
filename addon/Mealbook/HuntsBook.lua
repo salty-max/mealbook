@@ -226,7 +226,7 @@ local function showHunts(skill, open, nextAt, found, total, auction)
     { nextAt and tostring(nextAt) or "-", L["the next opens at"] },
   })
   page:paragraph(
-    L["Some recipes no trainer teaches and no shop keeps for long: a stall with one at a time, a creature that drops it, a quest, or one only the other side gets, traded at a neutral auction house. Each opens here when your skill is ready for it."],
+    L["Some recipes no trainer teaches and no shop keeps for long. A stall has one at a time, a creature drops it, a quest gives it, or only the other side can learn it and it reaches you through a neutral auction house. Each opens here when your skill is ready for it."],
     T.soft
   )
   local mine = ns.hunts.mine()

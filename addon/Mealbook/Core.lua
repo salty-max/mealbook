@@ -251,7 +251,7 @@ ns.kit.commands({
   open = function()
     if ns.toggle then ns.toggle() end
   end,
-  usage = L["/mealbook opens the book, /mealbook road the road to 300 and /mealbook settings its settings. /mealbook chef changes chef, /mealbook tooltips shows or hides the dishes on ingredients' tooltips, /mealbook minimap the button. /mealbook welcome shows the welcome page again. /mealbook export gives this character's settings as a code, and /mealbook import CODE takes them."],
+  usage = L["/mealbook opens the book, /mealbook road opens the road to 300 and /mealbook settings opens the settings. /mealbook chef changes chef, /mealbook tooltips shows or hides the dishes on ingredients' tooltips, and /mealbook minimap shows or hides the button. /mealbook welcome shows the welcome page again. /mealbook export gives this character's settings as a code, and /mealbook import CODE takes them."],
   settings = function() return ns.openSettings() end,
   welcome = function(mode)
     if ns.showWelcome then ns.showWelcome(mode) end
@@ -272,7 +272,7 @@ ns.kit.commands({
         ns.PREFIX
           .. (
             ns.option("tooltips") and L["Ingredients' tooltips name the dishes they cook into."]
-            or L["Ingredients' tooltips left as the game's."]
+            or L["Ingredients' tooltips are back to the game's own."]
           )
       )
     end,

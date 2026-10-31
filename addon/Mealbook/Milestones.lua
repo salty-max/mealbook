@@ -127,9 +127,9 @@ local function learnable()
   return n
 end
 for _, step in ipairs({
-  { 10, L["A Few Good Dishes"] },
+  { 10, L["A Few Good Recipes"] },
   { 25, L["A Notebook of Recipes"] },
-  { 50, L["Fifty Dishes"] },
+  { 50, L["Fifty Recipes"] },
   { 75, L["A Cook's Library"] },
 }) do
   local need, title = step[1], step[2]

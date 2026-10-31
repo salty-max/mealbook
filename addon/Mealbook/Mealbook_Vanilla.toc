@@ -1,6 +1,6 @@
 ## Interface: 11509
 ## Title: Mealbook
-## Notes: A chef's cookbook that fills in as you learn to cook, and the road to 300: what to cook next and how many.
+## Notes: A chef's cookbook that fills in as you learn to cook, and the road to 300: what to cook next and how many times.
 ## Notes-frFR: Un livre de cuisine de chef qui se remplit à mesure que vous apprenez à cuisiner, et la route jusqu'à 300 : quoi cuisiner ensuite, et combien de fois.
 ## Notes-deDE: Das Kochbuch eines Meisterkochs, das sich füllt, während du kochen lernst, und der Weg zu 300: was du als Nächstes kochst und wie oft.
 ## Notes-esES: El recetario de un chef que se va llenando a medida que aprendes a cocinar, y el camino hasta 300: qué cocinar a continuación y cuántas veces.

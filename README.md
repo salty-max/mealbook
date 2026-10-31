@@ -4,7 +4,7 @@ A World of Warcraft addon for Classic Era and World of Warcraft: Forever: a
 chef's cookbook that fills in as you learn to cook, and the road to 300.
 
 - **Recipes:** every recipe you know gets its page, by chapter, written by
-  your faction's chef (Kendor Kabonka in Stormwind, Eunice Burch in the
+  your side's chef (Kendor Kabonka in Stormwind, Eunice Burch in the
   Undercity): what it makes, its colours now and at each threshold, its
   ingredients as the game's items (with how many you carry), how you
   learned it, how often you cooked it.
@@ -16,7 +16,7 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   Expert Cookbook, Artisan's quest).
 
 - **Hunts:** the recipes no trainer teaches and no shop keeps for long, a
-  stall's limited stock, a creature's drop, a quest, or the other faction's
+  stall's limited stock, a creature's drop, a quest, or the other side's
   recipe at a neutral auction house, each opening when your skill is ready
   for it: who has it, where, how often.
 
@@ -27,8 +27,9 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   first of each kind of dish, the hunts found.
 
 `/mealbook` opens the book (or its button by the minimap), `/mealbook road`
-the road, `/mealbook settings` its page in the game's Options: whose pages
-the book shows, the ingredients' tooltip line, the minimap button.
+opens the road, `/mealbook settings` opens its page in the game's Options:
+whose pages the book shows, the ingredients' tooltip line, the minimap
+button.
 
 In English, French, German and Spanish.
 

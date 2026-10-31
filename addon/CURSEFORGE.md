@@ -2,12 +2,10 @@
 
 <!-- Project description for curseforge.com and Wago (bun addon-kit/store.ts).
 The project's title on the stores: "Mealbook: Cooking Guide & Cookbook" (the
-addon's own name stays Mealbook). A draft, 19 October 2026: Mealbook is not
-released yet, read it again against what ships (the Hunts, the Milestones,
-the pantry) before the first release. -->
+addon's own name stays Mealbook). -->
 
 <!-- Summary (the project's summary on CurseForge and Wago, and the TOCs' Notes):
-A chef's cookbook that fills in as you learn to cook, and the road to 300: what to cook next and how many. -->
+A chef's cookbook that fills in as you learn to cook, and the road to 300: what to cook next and how many times. -->
 
 Mealbook is a cookbook that fills in as your character learns to cook, written by a real chef of Azeroth, and a guide that takes your cooking from where it is now to 300. Every recipe you learn gets its page, and the road tells you what to cook next, how many times, and what to buy on the way.
 
@@ -15,7 +13,7 @@ For Classic Era (including Hardcore and Season of Discovery) and World of Warcra
 
 ## The cookbook
 
-Your recipes sit in chapters: meat, fish, soups, baking, drinks, feasts and campfires. Each shows its colour for your skill right now, from orange to grey, so you can see at a glance what still teaches you something.
+Your recipes sit in the book's chapters: **Roasts and grills**, **Fish and seafood**, **Soups and stews**, **Eggs, pies and bakes**, **Drinks**, **Feasts** and **Fires and ovens**. Each shows its colour for your skill right now, from orange to grey, so you can see at a glance what still teaches you something.
 
 A dish's page holds what it makes and how many, its ingredients as the game's own items with how many you carry, the skill where it turns yellow, green and grey, how you learned it, and how often you've cooked it.
 
@@ -44,7 +42,7 @@ Some recipes no trainer teaches and no shop keeps for long. Mealbook keeps them 
 - **a stall's limited stock**, like Super-Seller 680's in Desolace: who sells it, where, how many at a time,
 - **a drop**: the likeliest creatures to carry it, their zone, their level and how often it falls,
 - **a quest**: who gives it, where, and from what level,
-- **the auction house**, for a recipe only the other faction can learn, like Crispy Bat Wing for an Alliance cook: the neutral auction houses of Booty Bay, Gadgetzan and Everlook, the nearest first, and where the other side finds it. These count for no achievement.
+- **the auction house**, for a recipe only the other side can learn, like Crispy Bat Wing for an Alliance cook: the neutral auction houses of Booty Bay, Gadgetzan and Everlook, the nearest first, and where the other side finds it. These count for no achievement.
 
 The hunts tab counts how many you've found and when the next one opens.
 
@@ -62,7 +60,7 @@ The dishes, ingredients and places are the game's own, in your client's language
 
 Open the book with `/mealbook` or the minimap button. The welcome page appears once per character and can be reopened with `/mealbook welcome`.
 
-Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the achievements' alert and sound, how long banners stay, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's within the same game, or use `/mealbook export` and `/mealbook import CODE`.
+Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the achievements' alert and sound, how long banners stay, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's settings within the same game, or use `/mealbook export` and `/mealbook import CODE`.
 
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.

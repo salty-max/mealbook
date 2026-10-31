@@ -102,6 +102,12 @@ visited (Silithus) is snobbery, not doubt.
 stew is honest, the dwarves are right about one thing. About one page in
 twelve, no more.
 
+**Foreign words.** Forever's dishes with real-world names (Rouladen,
+Bruscitti, Pamplona, Hachee, au Poivre, Linguine, Sliders) get a gloss from
+him: a word "in some foreign kitchen", "a dwarvish claim on a word". The joke
+stays in English, and a translator reworks it where the word is not foreign
+in their language (au poivre, in French).
+
 **Never.** Cruelty, real slurs, a joke that needs the reader to be stupid.
 
 ## Eunice Burch, the Horde's book

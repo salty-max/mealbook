@@ -47,7 +47,9 @@ local W = K.welcome({
       K.minimapChoice(ns.option, ns.setOption),
     }
   end,
-  footnote = L["Change them any time: /mealbook settings, or a right-click on the minimap button. /mealbook opens the book."],
+  footnote = L["Change them any time: %s, or a right-click on the minimap button."]:format("/mealbook settings")
+    .. " "
+    .. L["/mealbook opens the book."],
   open = { text = L["Open the book"], click = function() ns.toggle() end },
   exportHint = L["Copy it (Ctrl+C), then on another character: Use a code, or /mealbook import CODE."],
   importHint = L["Paste the code (/mealbook export on the other character), then press Enter."],

@@ -5,7 +5,7 @@ chapter: drink
 
 ## 1249957 Peace Tea
 
-Peacebloom steeped in spring water until the water turns the colour of straw. Do not boil it, or it smells of hay and nothing else. Steep it, and it smells of the edge of a field in the evening, behind a house I can no longer place, which is still the best smell I know. The Frostmane trolls brew it, the recipe says. I make it for the apothecaries, who need peace more than anyone and get less of it.
+Peacebloom steeped in spring water until the water turns the colour of straw. Do not boil it, or it smells of hay and nothing else. Steep it, and it smells of the edge of a field in the evening, which is still the best smell I know. The Frostmane trolls brew it, the recipe says. I make it for the apothecaries, who need peace more than anyone and get less of it.
 
 ## 1249963 Venomous Smoothie
 

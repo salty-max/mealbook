@@ -81,4 +81,4 @@ Darkclaw lobster, from the cold shores of the north, stewed in spring water and 
 
 ## 470359 Darkclaw Bisque
 
-A bisque of darkclaw lobster made with holy water from Stratholme, which I am told is drinkable, though I have read the label twice and remain unconvinced. The expedition in Silithus sells it, and I suspect they invented it to use up the holy water. It works. The water is very clean and very soft, and it lets the lobster speak for itself. Simmer, sieve, and do not ask what else that water was used for.
+A bisque of darkclaw lobster made with holy water from Stratholme, which I am told is drinkable, though I have read the label twice and remain unconvinced. Where the recipe is sold, I have yet to learn. Whoever wrote it had holy water to use up. It works. The water is very clean and very soft, and it lets the lobster speak for itself. Simmer, sieve, and do not ask what else that water was used for.

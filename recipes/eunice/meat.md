@@ -25,7 +25,7 @@ I teach this on the second day, after the charred wolf, so that my students lear
 
 ## 6413 Scorpid Surprise
 
-Orgrimmar's cooks sent this north on the first zeppelins, and the Undercity took to it. The surprise is in the stinger. Cooked until it turns from glass to chalk, it loses its venom and keeps a pleasant crunch. Undercooked, it keeps the venom, and the surprise is a different one. You can hear the change. A raw stinger rattles in the pan. A done one lies still.
+Durotar's cooks sent this north on the first zeppelins, and the Undercity took to it. The surprise is in the stinger. Cooked until it turns from glass to chalk, it loses its venom and keeps a pleasant crunch. Undercooked, it keeps the venom, and the surprise is a different one. You can hear the change. A raw stinger rattles in the pan. A done one lies still.
 
 ## 1250156 Tasty Raptor Bites
 
@@ -53,7 +53,7 @@ Every autumn the farmhouses of Lordaeron made blood sausage, and every autumn so
 
 ## 1250154 Twice-Spiced Raptor Slice
 
-Spiced before and after, because raptor is lean and the first coat cooks away. I learned to smell the moment between the two. When the slices stop hissing and begin to tick, like a pan cooling, take them off and season them again while they are hot enough to drink it. My students always forget the second coat. The dish tells on them. It smells of half a recipe.
+This is the only dish where I break my own rule and season at the end, because raptor is lean and the first coat cooks away. I learned to smell the moment between the two. When the slices stop hissing and begin to tick, like a pan cooling, take them off and season them again while they are hot enough to drink it. My students always forget the second coat. The dish tells on them. It smells of half a recipe.
 
 ## 3370 Crocolisk Steak
 

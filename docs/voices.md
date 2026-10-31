@@ -46,6 +46,13 @@ A thing remembered is not a thing used: a grandmother's thyme in a memory is
 fine, an instruction to add it is not. The pan, the fire, water to wash in
 are fine.
 
+**A recipe no source has seen** (wow-data has the recipe and no seller, the
+recipe's `unknown`): the page never names or invents a seller. Most such
+pages simply say nothing of where the recipe comes from. One that does says
+the chef has not had it from a seller: Eunice knows it by word, by reading or
+from a description, Kendor has not got it into his catalogue yet. Each says
+it in fresh words, never the same sentence twice in the book.
+
 **No semicolons**, in any language.
 
 Spelling is British (colour, grey, flavour), game names as the game spells them.

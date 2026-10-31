@@ -25,7 +25,7 @@ A farm pie from the south, and we made one very like it in Lordaeron, with pig's
 
 ## 1250157 Breakfast Omelette
 
-An egg and a great deal of mild spice, more than seems sensible, from a recipe found in a condor's nest in Redridge. I have made it as written. It smells of morning and of a spice market, and of a kitchen with a stone floor that I can almost place. Beat the egg until it is one colour, pour it into a hot pan and draw the edges in as they set. Fold it soft. The living who eat it say it wakes them up. The deathguards eat it to remind themselves what mornings were.
+An egg and a great deal of mild spice, more than seems sensible, from a recipe found in a condor's nest in Redridge. I have made it as written. It smells of morning and of a spice market. Beat the egg until it is one colour, pour it into a hot pan and draw the edges in as they set. Fold it soft. The living who eat it say it wakes them up. The deathguards eat it to remind themselves what mornings were.
 
 ## 3377 Gooey Spider Cake
 
@@ -41,7 +41,7 @@ Giant eggs and hot spice, stirred over a low heat until they set in soft curds. 
 
 ## 15933 Monster Omelet
 
-A giant egg feeds a table, and in the Undercity a table is whoever is standing nearest the stove. The eggs come from the great birds of the north, from Felwood and Winterspring, carried down by traders who have learned not to say where they found them. Beat the egg with soothing spice until it is smooth and pale, then pour it into the widest pan you own over a moderate heat and draw the edges in as they set. The smell is the guide: warm and round at first, then nutty at the edges. Nutty is the moment to fold. Brown is too late. Carry it to the table with both hands. I have watched a whole patrol of deathguards divide one of these in silence, with great care, as if it were treasure. For a moment, it was. Then they asked for another, which was the best part.
+A giant egg feeds a table, and in the Undercity a table is whoever is standing nearest the stove. The eggs come from the great birds of the north, and the recipe from traders in Felwood and Winterspring, who never say where the eggs are found. Beat the egg with soothing spice until it is smooth and pale, then pour it into the widest pan you own over a moderate heat and draw the edges in as they set. The smell is the guide: warm and round at first, then nutty at the edges. Nutty is the moment to fold. Brown is too late. Carry it to the table with both hands. I have watched a whole patrol of deathguards divide one of these in silence, with great care, as if it were treasure. For a moment, it was. Then they asked for another, which was the best part.
 
 ## 1225760 Sunrise Omelette
 

@@ -29,7 +29,7 @@ A dish of the Horde, from the dust of Durotar, and the surprise is that anyone e
 
 ## 1250156 Tasty Raptor Bites
 
-A recipe that turns up in the nests of raptors, which is either a joke or a warning. The bites are made from the egg, not the beast, and a raptor egg is a heavier, richer thing than any hen ever laid. Season it more generously than you think decent, because the yolk drinks every grain. Cook the bites small and quick. A raptor egg cooked slowly turns to rubber out of spite. I suspect the mother taught it that.
+A recipe that turns up in the nests of raptors, which is either a joke or a warning. The bites are made from the egg, not the beast, and a raptor egg is a heavier, richer thing than any hen ever laid. Season the white more generously than you think decent, and leave the yolk alone, as always: the yolk is rich enough without it. Cook the bites small and quick. A raptor egg cooked slowly turns to rubber out of spite. Its mother taught it that, I have no doubt.
 
 ## 2795 Beer Basted Boar Ribs
 
@@ -53,7 +53,7 @@ Thelsamar's dwarves make blood sausage every winter and send a few to Ironforge,
 
 ## 1250154 Twice-Spiced Raptor Slice
 
-Twice spiced, and for once a dish tells the truth about itself. The raptor is rubbed once before it is sliced and once after it is cooked, and the second time is not for flavour but for the crust. Raptor flesh is lean and quick to dry. Slice it across the grain, thin enough to see a candle through, and give it the fire for a breath, no more. A recipe I did not invent, and would have, given time.
+Twice spiced, and for once a dish tells the truth about itself. The raptor is rubbed once before it is sliced and once after it is cooked. It is the one dish where spice at the end is right: the second coat is for the sharpness, not the crust. Raptor flesh is lean and quick to dry. Slice it across the grain, thin enough to see a candle through, and give it the fire for a breath, no more. A recipe I did not invent, and would have, given time.
 
 ## 3370 Crocolisk Steak
 

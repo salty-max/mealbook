@@ -41,7 +41,7 @@ Scrambled eggs are the first test of a cook's patience, and giant scrambled eggs
 
 ## 15933 Monster Omelet
 
-A monster omelette is made from a giant egg, and a giant egg is enough to feed a table of six or one orc. The eggs come from the great birds of the north, sold in Felwood and Winterspring by people who have learned not to ask where they were gathered. Beat it with the soothing spice for longer than your arm likes. Then take the widest pan you own, set it over a moderate heat, and fold the set edges towards the centre with a fork. The temptation is to rush it, because it is large and the guests are watching. Resist. A monster omelette cooked fast is brown outside and raw within, and nobody forgives that. Fold it when the top is barely set and let the heat finish the middle on its way to the table. Then carry it in with both hands, and enjoy the silence.
+A monster omelette is made from a giant egg, and a giant egg is enough to feed a table of six or one orc. Giant eggs are the trade of the far north, and the recipe is sold in Felwood and Winterspring by merchants who keep their suppliers to themselves. Beat it with the soothing spice for longer than your arm likes. Then set the widest pan you own over a moderate heat, and fold the set edges towards the centre with a fork. The temptation is to rush it, because it is large and the guests are watching. Resist. A monster omelette cooked fast is brown outside and raw within, and nobody forgives that. Fold it when the top is barely set and let the heat finish the middle on its way to the table. Then carry it in with both hands, and enjoy the silence.
 
 ## 1225760 Sunrise Omelette
 

@@ -129,4 +129,4 @@ A mightfish is big enough to cut into steaks like beef, and it should be cooked 
 
 ## 470370 Smoked Redgill
 
-The expedition in Silithus sells this to soldiers who need food that keeps in the sand. Redgill, smoked slowly until it is dry enough to carry and still tender enough to eat. No spice. Smoke and time do the work. I learned it from an apothecary who came back from the desert with this recipe and very little else. He said it was the only thing there that did not try to kill him.
+Soldiers in Silithus live on this, because it keeps in the sand, and nobody has yet told me who sells the recipe. Redgill, smoked slowly until it is dry enough to carry and still tender enough to eat. No spice. Smoke and time do the work. I learned it from an apothecary who came back from the desert with the method and very little else. He said it was the only thing there that did not try to kill him.

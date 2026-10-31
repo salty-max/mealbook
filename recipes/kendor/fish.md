@@ -129,4 +129,4 @@ The mightfish is the one fish I butcher as if it were beef, because it is cut in
 
 ## 470370 Smoked Redgill
 
-A recipe sold in Silithus, by the expedition's quartermasters, to soldiers who needed food that would keep in the sand. Redgill, smoked slowly until it is dry enough to travel and still tender enough to eat. No spice, only smoke. The soldiers who brought it back to Stormwind asked me to approve of it. I did, which surprised them more than the desert had.
+Soldiers' food from Silithus, made to keep in the sand. Nobody has yet shown me who sells the recipe, a gap in my catalogue and not in my knowledge. The redgill hangs over a slow, cool smoke until it is as dry as the road it will travel, and no longer, or it turns to bark. No spice. The soldiers who brought it back to Stormwind asked me to approve of it. I corrected the smoke and returned it, which surprised them more than the desert had.

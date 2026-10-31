@@ -17,4 +17,4 @@ Thick logs are the fire of a master: a trial to light, and once lit they keep th
 
 ## 1263067 Iron Oven
 
-An iron oven, says the recipe, and then asks for flour, spring water and soothing spice, and no iron at all. I have read it several times. I believe the oven is the vessel and the recipe is what goes into it first. A great quantity of dough is worked with spice and baked to season the iron, as one seasons a new pan. Whatever its secret, it is a master's recipe, and I do not yet possess it, which annoys me more than I can politely say.
+An iron oven, says the recipe, and then asks for flour, spring water and soothing spice, and no iron at all. I have read it several times. I believe the dough is worked with spice and fired inside the new oven, to season the iron before anything worth eating goes in. Whatever its secret, it is a master's recipe, and I do not yet possess it, which annoys me more than I can politely say.

@@ -41,7 +41,7 @@ Firm and dark and rich, more like meat than fish, and it should be cooked like m
 
 ## 2544 Crab Cake
 
-Southshore made crab cakes on holidays, and the women argued about the spice through an open window, though I no longer know whose. I remember the arguing better than the cakes. Pick the crawler meat clean, add a pinch of mild spice, and press it together with your hands. Fry it until the outside sets. If it falls apart, press harder next time. If it bounces, press less. The arguing is optional.
+Southshore made crab cakes on holidays, and the women argued about the spice through an open window, though I no longer know whose window it was. I remember the arguing better than the cakes. Pick the crawler meat clean, add a pinch of mild spice, and press it together with your hands. Fry it until the outside sets. If it falls apart, press harder next time. If it bounces, press less. The arguing is optional.
 
 ## 25704 Smoked Sagefish
 
@@ -73,7 +73,7 @@ Its scales would blunt a cheap knife, so buy a good one before you buy the fish.
 
 ## 7213 Giant Clam Scorcho
 
-A giant clam is dense and sweet, and in Booty Bay they scorch it in hot spice for pirates. Slice it thin before the heat touches it, so the spice reaches through, then fire it fiercely and quickly. The smoke will make your eyes run. That is how you know you have used enough spice. When the smoke clears, the dish is done. Serve it to someone with a strong stomach and a short memory.
+A giant clam is dense and sweet, and in Booty Bay they scorch it in hot spice for pirates. Slice it thin before the heat touches it, so the spice reaches through, then cook it hard and fast. The smoke will make your eyes run. That is how you know you have used enough spice. When the smoke clears, the dish is done. Serve it to someone with a strong stomach and a short memory.
 
 ## 20916 Mithril Headed Trout
 
@@ -129,4 +129,4 @@ A mightfish is big enough to cut into steaks like beef, and it should be cooked 
 
 ## 470370 Smoked Redgill
 
-Soldiers in Silithus live on this, because it keeps in the sand, and nobody has yet told me who sells the recipe. Redgill, smoked slowly until it is dry enough to carry and still tender enough to eat. No spice. Smoke and time do the work. I learned it from an apothecary who came back from the desert with the method and very little else. He said it was the only thing there that did not try to kill him.
+Soldiers in Silithus live on this, because it keeps on the march, and nobody has yet told me who sells the recipe. Redgill, smoked slowly until it is dry enough to carry and still tender enough to eat. No spice. Smoke and time do the work. I learned it from an apothecary who came back from the desert with the method and very little else. He said it was the only thing there that did not try to kill him.

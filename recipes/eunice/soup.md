@@ -9,7 +9,7 @@ Felbloom, cleansed by the druids so that it no longer does what felbloom does. I
 
 ## 6416 Strider Stew
 
-Strider and apple, the first stew of the Barrens. The apple goes in with the meat and cooks away to nothing, and when you can no longer find it in the pot, the stew is done. Strider is a stubborn bird. The apple softens it. I make this for orcs who miss home and for trolls who have never had a home to miss, and they all eat it the same way, very fast.
+Strider and apple, the first stew of the Barrens. The apple goes in with the meat and cooks away to nothing, and when you can no longer find it in the pot, the stew is done. Strider is a stubborn bird. The apple softens it. I make this for orcs who miss home and for trolls who miss a home that is gone, and they all eat it the same way, very fast.
 
 ## 2543 Westfall Stew
 
@@ -57,15 +57,15 @@ A stew of the shore: crab, murloc eyes and hot spice. The eyes thicken the broth
 
 ## 15906 Dragonbreath Chili
 
-Mystery Meat is no mystery to me. I can smell exactly what it was, and in most cases I would rather not say. The Barrens taught me this dish, not Lordaeron, which never ate anything that fought back this hard. I cannot tell you how hot this chili is. I can tell you that the toasted spices sting my eyes, which is the one part of it I still feel. The last tauren who tried mine set his spoon down very carefully and asked for water in a voice I had not heard from him before. Pierce the flame sac before it goes in, or it will pierce itself. Make it for people you like, and warn them. Then watch their faces. The dish is done when they stop talking.
+Mystery Meat goes into this, and I would rather not say what my nose tells me about it. The Barrens taught me this dish, not Lordaeron, which never ate anything that fought back this hard. I cannot tell you how hot this chili is. I can tell you that the toasted spices sting my eyes, which is the one part of it I still feel. The last tauren who tried mine set his spoon down very carefully and asked for water in a voice I had not heard from him before. Pierce the flame sac before it goes in, or it will pierce itself. I make it when a zeppelin crew comes in from a long, cold run. Make it for people you like, and warn them. Then watch their faces. The dish is done when they stop talking.
 
 ## 15910 Heavy Kodo Stew
 
-The kodos of Desolace are heavier than those of the Barrens, on a diet of very little, and their meat is the densest I know. The tauren taught me this stew, and I have never changed a thing, because there is nothing to change. Heavy kodo meat, soothing spice and spring water, and a whole day over a low fire. You will smell it turn: raw, then grassy, then deep and brown, like a field after rain. Somewhere in the evening the meat comes apart in threads at the touch of a spoon. That is the moment, and no other. I make it on the coldest days for the deathguards on the walls above, and I carry it up myself. They do not need it. They line up anyway, and they are very quiet while they eat.
+The kodos of Desolace grow heavier than those of the Barrens, though the land gives them little, and their meat is the densest I know. The tauren taught me this stew, and I have never changed a thing, because there is nothing to change. Heavy kodo meat, soothing spice and spring water, and a whole day over a low fire. You will smell it turn: raw, then grassy, then deep and brown, like a field after rain. Somewhere in the evening the meat comes apart in threads at the touch of a spoon. That is the moment, and no other. I make it on the coldest days for the deathguards on the walls above, and I carry it up myself. They do not need it. They line up anyway, and they are very quiet while they eat.
 
 ## 20626 Undermine Clam Chowder
 
-A goblin chowder from Tanaris: zesty clam meat, hot spice and ice cold milk, warmed together without ever boiling. The goblins eat it scalding, which tells you everything about goblins. Keep the heat low and watch the steam. When it smells of the sea and of warm spice, and not yet of scorched milk, ladle it out. The goblin who sells it keeps one copy at a time. I bought it, so now there are two copies.
+A goblin chowder from Tanaris: zesty clam meat, hot spice and ice cold milk, warmed together without ever boiling. The goblins eat it scalding, which tells you everything about goblins. Keep the heat low and watch the steam. When it smells of the sea and of warm spice, and not yet of scorched milk, ladle it out. The goblin who sells it keeps one copy at a time. I bought it, so he has had to write himself another.
 
 ## 18243 Nightfin Soup
 

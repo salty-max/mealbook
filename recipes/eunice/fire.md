@@ -17,4 +17,4 @@ Thick logs, slow to catch and slow to die, a fire for the whole of an evening. L
 
 ## 1263067 Iron Oven
 
-Flour, spring water and soothing spice: that is the whole recipe for an iron oven. I believe the dough is worked into the new oven and baked hard, to season it, as a new pan is seasoned. I have never seen it for sale. A goblin trader told me of it, thinking I would be impressed. I was. I did not tell him. Goblins are unbearable when impressed upon, and they put it on the bill.
+Flour, spring water and soothing spice: that is the whole recipe for an iron oven. I believe the dough is worked into the new oven and baked hard, to season it, as a new pan is seasoned. I have never seen it for sale. A goblin trader told me of it, thinking I would be impressed. I was. I did not tell him. Goblins are unbearable once they know they have impressed you, and they put it on the bill.

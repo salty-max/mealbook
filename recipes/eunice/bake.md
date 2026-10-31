@@ -33,11 +33,11 @@ Spider legs, the meat drawn out and pressed into cakes with hot spice, fried unt
 
 ## 3376 Curiously Tasty Omelet
 
-A raptor egg and hot spice. The egg is richer than a hen's and sets more slowly, so be patient with the middle. Beat it hard, cook it fast, fold it soft. The curious part, the living say, is how good it is. I believe them, because they go quiet and then look at the plate as if it owed them an explanation. I make it for my students on their first good day.
+I make this from a raptor egg and hot spice. The egg is richer than a hen's and sets more slowly, so be patient with the middle. Beat it hard, cook it fast, fold it soft. The curious part, the living say, is how good it is. I believe them, because they go quiet and then look at the plate as if it owed them an explanation. I make it for my students on their first good day.
 
 ## 1250155 Giant Scrambled Eggs
 
-Giant eggs and hot spice, stirred over a low heat until they set in soft curds. It takes a long time and a steady hand, and it smells, all the while, of something rich and warm, though there is nothing in the pan but egg and spice. When the smell sharpens, stop. The eggs are about to go too far. I feed these to the deathguards after the night watch, and they eat them standing at the counter, still in their armour.
+My students dread this one. Giant eggs and hot spice must be stirred slowly until they gather in soft curds, which takes a steady hand. All the while it smells of something rich and warm, though there is nothing in the pan but egg and spice. When the smell sharpens, stop. The eggs are about to go too far. I feed these to the deathguards after the night watch, and they eat them standing at the counter, still in their armour.
 
 ## 15933 Monster Omelet
 

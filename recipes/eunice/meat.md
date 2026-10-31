@@ -25,7 +25,7 @@ I teach this on the second day, after the charred wolf, so that my students lear
 
 ## 6413 Scorpid Surprise
 
-Durotar's cooks sent this north on the first zeppelins, and the Undercity took to it. The surprise is in the stinger. Cooked until it turns from glass to chalk, it loses its venom and keeps a pleasant crunch. Undercooked, it keeps the venom, and the surprise is a different one. You can hear the change. A raw stinger rattles in the pan. A done one lies still.
+Durotar's cooks sent this north on the first zeppelins, and the Undercity took to it. The surprise is in the stinger. Cooked until it turns from glass to chalk, it loses its venom and keeps a pleasant crunch. Undercooked, it keeps the venom, and the surprise is a different one. You can hear the change. A raw stinger rattles in the pan. A done one lies still. The rogues buy them by the handful and eat them on the stairs.
 
 ## 1250156 Tasty Raptor Bites
 
@@ -53,7 +53,7 @@ Every autumn the farmhouses of Lordaeron made blood sausage, and every autumn so
 
 ## 1250154 Twice-Spiced Raptor Slice
 
-This is the only dish where I break my own rule and season at the end, because raptor is lean and the first coat cooks away. I learned to smell the moment between the two. When the slices stop hissing and begin to tick, like a pan cooling, take them off and season them again while they are hot enough to drink it. My students always forget the second coat. The dish tells on them. It smells of half a recipe.
+This is the only dish where I break my own rule of spice before the fire and season at the end, because raptor is lean and the first coat cooks away. I learned to smell the moment between the two. When the slices stop hissing and begin to tick, like a pan cooling, take them off and season them again while they are hot enough to drink it. My students always forget the second coat. The dish tells on them. It smells of half a recipe.
 
 ## 3370 Crocolisk Steak
 
@@ -61,7 +61,7 @@ Crocolisk reaches the Undercity from the Wetlands by way of people who would rat
 
 ## 2546 Dry Pork Ribs
 
-No sauce, only spice and a low fire and the whole of an afternoon, the way the farms cooked them at harvest, though I have lost which end of it. The ribs are done when the bones show a finger's width at the ends and the smell has gone from meat to something closer to toasted bread. I serve them on paper, to people who eat with their hands and do not mind who sees. In the Undercity, that is most people.
+No sauce, only spice and a low fire and the whole of an afternoon, the way the farms cooked them at harvest. I have lost which farm. The ribs are done when the bones show a finger's width at the ends and the smell has gone from meat to something closer to toasted bread. I serve them on paper, to people who eat with their hands and do not mind who sees. In the Undercity, that is most people.
 
 ## 6418 Crispy Lizard Tail
 
@@ -69,7 +69,7 @@ The Barrens taught me this one, along with patience and a respect for anything t
 
 ## 2549 Seasoned Wolf Kabob
 
-Stormwind Seasoning Herbs, the packet says, and they smell exactly like a market I remember. Whether the market stood in Stormwind or in Lordaeron, I no longer know. The wolf does not care. Thread the meat with gaps between the pieces, so the heat reaches every side, and listen for the fat to spit. When it stops spitting and starts to sing, turn the skewers. The first one goes to whoever has been waiting longest.
+Stormwind Seasoning Herbs, the packet says, and they smell exactly like a market I remember. Where that market stood, I no longer know. The wolf does not care. Thread the meat with gaps between the pieces, so the heat reaches every side, and listen for the fat to spit. When it stops spitting and starts to sing, turn the skewers. The first one goes to whoever has been waiting longest.
 
 ## 2548 Succulent Pork Ribs
 
@@ -149,7 +149,7 @@ Tiger, the name means, cut thick and rubbed with holy salts an hour before cooki
 
 ## 1250144 Bat Hachee
 
-Poor farmers made this stew, chopped meat cooked long and slow. In Lordaeron it was beef, when there was beef, or I believe it was. Down here it is bat. Chop the wings fine, add the soothing spice, and give it a low fire for an evening, until the sinew softens and the kitchen smells of cloves and of something like home. My students call it bat hash. I call it supper.
+Poor farmers made this stew, chopped meat cooked long and slow. In Lordaeron it was beef, when there was beef, or I believe it was. Down here it is bat. Chop the wings fine, add the soothing spice, and give it a low fire for an evening, until the sinew softens and the kitchen smells of the spice and of something like home. My students call it bat hash. I call it supper.
 
 ## 1250147 Bear Bruscitti
 
@@ -169,11 +169,11 @@ I rub the stag deep with soothing spice, sear it on a very hot iron and serve it
 
 ## 1250149 Swiftstrike Steak
 
-Give the tiger its soothing spice, the hottest fire you can make and the shortest time you can bear. The name is a hunter's. The method is a cook's. Strike fast, then rest long, and the resting is where everyone fails, because the smell is wonderful and the fork is right there. I make my students sit on their hands. The first time, I mean it. I learned the method from a hunter who could not wait either.
+Give the tiger meat its soothing spice, the hottest fire you can make and the shortest time you can bear. The name is a hunter's. The method is a cook's. Strike fast, then rest long, and the resting is where everyone fails, because the smell is wonderful and the fork is right there. I make my students sit on their hands, and I mean it. I learned the method from a hunter who could not wait either.
 
 ## 1250146 Flank au Poivre
 
-I looked for the pepper in this recipe and found none, whatever the name says, only red wolf flank and soothing spice, which does pepper's work well enough. Sear the flank hard, rest it while the pan cools, then pour its juices back over it. The smell when the juices meet the hot meat again is the whole point of the dish. I serve it to the apothecaries when I want something from them, and it works.
+I looked for the pepper in this recipe and found none, whatever the name says, only red wolf flank and soothing spice, which does pepper's work well enough. Sear the flank hard, rest it while the pan cools, then pour its juices back over it. The smell when they meet the warm meat is the whole point of the dish. I serve it to the apothecaries when I want something from them, and it works.
 
 ## 25659 Dirge's Kickin' Chimaerok Chops
 

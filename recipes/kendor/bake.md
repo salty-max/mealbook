@@ -37,7 +37,7 @@ Curiously tasty is the most honest name in my catalogue, because everyone who ea
 
 ## 1250155 Giant Scrambled Eggs
 
-Scrambled eggs are the first test of a cook's patience, and giant scrambled eggs are the same test in a larger pan. Giant eggs and hot spice, beaten together and stirred over a low heat, slowly, always, until they gather into soft curds. A hot pan makes them rubber. A low pan makes them silk. Most cooks cannot bear to stir for that long. Most cooks should not be allowed near a giant egg.
+Scrambled eggs are the first test of a cook's patience, and giant scrambled eggs are the same test in a larger pan. Giant eggs and hot spice, beaten together and stirred over a low heat, slowly, always, until they gather into soft curds. A hot pan makes them rubber. A gentle pan makes them silk. Most cooks cannot bear to stir for that long. Most cooks should not be allowed near a giant egg.
 
 ## 15933 Monster Omelet
 

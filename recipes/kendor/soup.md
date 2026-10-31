@@ -77,7 +77,7 @@ Turtle stewed rather than strained, which makes it a peasant's dish and none the
 
 ## 18245 Lobster Stew
 
-Darkclaw lobster, from the cold shores of the north, stewed in spring water and nothing else. A lobster needs no help, only respect. Bring the water to a simmer and give the lobster to it whole. It is done when the shell goes red, and not a breath later. Shell it, and return the meat to the broth only to warm. A lobster cooked twice is an insult. A lobster warmed twice is a stew.
+Darkclaw lobster, from the cold shores of the north, stewed in spring water and nothing else. A lobster needs no help, only respect. Bring the water to a simmer and give the lobster to it whole. It is done when the shell goes red, and not a breath later. Shell it, and return the meat to the broth only to warm. A lobster cooked twice is an insult. A lobster cooked once and warmed in its broth is a stew.
 
 ## 470359 Darkclaw Bisque
 

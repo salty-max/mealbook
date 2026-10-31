@@ -25,7 +25,7 @@ The second dish every trainer teaches, and the first one most cooks get wrong. T
 
 ## 6413 Scorpid Surprise
 
-A dish of the Horde, from the dust of Durotar, and the surprise is that anyone eats a scorpid on purpose. I have no need to taste the cooking of Orgrimmar. I have, however, read the recipe, because a master reads everything. Its one wisdom is the stinger, which must be cooked until it is opaque all through. Then the venom is gone and the bite remains. Undercooked, it keeps both. I leave you to decide which of those you would call a surprise.
+A dish of the Horde, from the dust of Durotar, and the surprise is that anyone eats a scorpid on purpose. The cooking of Orgrimmar is not a thing I need to taste. I have, however, read the recipe, because a master reads everything. Its one wisdom is the stinger, which must be cooked until it is brittle all through. Then the venom is gone and only the bite is left. Undercooked, it keeps both. I leave you to decide which of those you would call a surprise.
 
 ## 1250156 Tasty Raptor Bites
 

@@ -25,7 +25,7 @@ Mageroyal is a herb with a high opinion of itself, and royal tea is mageroyal st
 
 ## 1249964 Slimy Smoothie
 
-Slimy, it calls itself, and it is the most accurate name in this chapter. Spider ichor, mild spice and ice cold milk, shaken until the ichor stops sulking at the bottom of the glass and agrees to be a drink. Serve it at once, because it does not stay agreeable. I would not have invented this. I have, however, watched a gnome drink three, which I think says more about gnomes than about the smoothie.
+Slimy, it calls itself, and it is the most accurate name in this chapter. Spider ichor, mild spice and ice cold milk, shaken until the ichor stops sulking at the bottom and agrees to be a drink. Serve it at once, because it does not stay agreeable. I would not have invented this. I have, however, watched a gnome drink three, which I think says more about gnomes than about the smoothie.
 
 ## 1249965 Mrrggl Smrrthle
 
@@ -53,7 +53,7 @@ A drink with a flame sac in it, which the fire mages consider a recommendation. 
 
 ## 1249961 Sunny Tea
 
-Sungrass, steeped in moonberry juice, which is a joke about the sun and the moon that the recipe does not trouble to explain. The juice is warmed and the sungrass steeped until the drink turns the gold of late sun. Strain it and serve it warm, never hot. It is a cheerful drink, which is rare, and I have nothing cutting to say about it, which is rarer still.
+Sungrass, steeped in moonberry juice, which is a joke about the sun and the moon that the recipe does not trouble to explain. The juice is warmed and the sungrass steeped until the drink turns the gold of late sun. Strain it and serve it warm, but never hot. It is a cheerful drink, which is rare, and I have nothing cutting to say about it, which is rarer still.
 
 ## 1249968 Wicked Smoothie
 

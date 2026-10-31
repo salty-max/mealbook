@@ -21,7 +21,7 @@ Crab season, they call the errand that teaches this, which is a grand title for 
 
 ## 6499 Boiled Clams
 
-A clam is a mouthful of the sea, and the only way to ruin it is to forget it in the pot, which is what everyone does. The sailors at the harbour boil them in seawater and call it tradition. I call it laziness by the sea. Use good spring water, count to sixty slowly, and take them out. Rubber is for boots. If you feel the need for a sauce, you overcooked them.
+A clam is a mouthful of the sea, and the only way to ruin it is to forget it in the pot, which is what everyone does. The sailors at the harbour boil them in seawater and call it tradition. I call it laziness by the sea. Use good spring water, and take the meat out the moment it firms and turns white. Rubber is for boots. If you feel the need for a sauce, you overcooked them.
 
 ## 6415 Fillet of Frenzy
 
@@ -109,7 +109,7 @@ Squid has two good cooking times, very short and very long, and everything betwe
 
 ## 18242 Hot Smoked Bass
 
-Hot smoking is smoking at a heat that also cooks, which is faster than cold smoking and less forgiving. Hot spice goes on the summer bass. Then the bass goes into the thick of the smoke, near enough to the coals to cook through in the time cold smoke would barely colour it. Stay with it. It is done when the flesh flakes at the thickest part, and soon after that it is dry. It is the only fish I would trust to a soldier's pack, and I have trusted it to several.
+Hot smoking is smoking at a heat that also cooks, which is faster than cold smoking and less forgiving. Hot spice goes on the summer bass. Then the bass goes into the thick of the smoke, where the heat cooks it through in the time cold smoke would barely colour it. Stay with it. It is done when the flesh flakes at the thickest part, and soon after that it is dry. It is the only fish I would trust to a soldier's pack, and I have trusted it to several.
 
 ## 18244 Poached Sunscale Salmon
 
@@ -129,4 +129,4 @@ The mightfish is the one fish I butcher as if it were beef, because it is cut in
 
 ## 470370 Smoked Redgill
 
-Soldiers' food from Silithus, made to keep in the sand. Nobody has yet shown me who sells the recipe, a gap in my catalogue and not in my knowledge. The redgill hangs over a slow, cool smoke until it is as dry as the road it will travel, and no longer, or it turns to bark. No spice. The soldiers who brought it back to Stormwind asked me to approve of it. I corrected the smoke and returned it, which surprised them more than the desert had.
+Soldiers' food from Silithus, made to travel. Nobody has yet shown me who sells the recipe, a gap in my catalogue and not in my knowledge. The redgill hangs over a slow, cool smoke until it is as dry as the road it will travel, and no longer, or it turns to bark. No spice. The soldiers who brought it back to Stormwind asked me to approve of it. I corrected the smoke and returned it, which surprised them more than the desert had.

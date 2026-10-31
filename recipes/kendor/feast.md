@@ -9,7 +9,7 @@ Cookie is the murloc who keeps the kitchen of the Defias Brotherhood, deep in th
 
 ## 1225763 Grand Lobster Banquet
 
-A banquet is not a dish. It is a campaign. Twelve darkclaw lobsters, four portions of turtle, three buzzard wings and a pouch of exquisite spices, which are so called because the merchant who sells them needs a word for the price. The lobsters are poached, the turtle stewed, the buzzard roasted, and all of it brought to the table at once, which is the true difficulty. Every part must finish at the same moment, so begin with the slowest, the turtle, and end with the fastest, the lobsters, lifted out the instant they turn red. I have cooked a banquet like this for the nobility of Stormwind, and I will tell you what I learned: the guests remember the lobster, and the cook remembers the timing. Nobody remembers the buzzard. Cook it well anyway. Somebody always notices what you skipped.
+A banquet is not a dish. It is a campaign. Twelve darkclaw lobsters, four portions of turtle, three buzzard wings and a pouch of exquisite spices, which are so called because the merchant who sells them needs a word for the price. The lobsters are poached, the turtle stewed, the buzzard roasted, and all of it brought to the table at once, which is the true difficulty. Every part must finish at the same moment, so begin with the slowest, the turtle, and end with the fastest, the lobsters, lifted out the instant they turn red. I have cooked a banquet like this for the nobility of Stormwind, and I will tell you what I learned: the guests remember the lobster, and the cook remembers the timing. Nobody remembers the buzzard. Cook it well anyway. Somebody always notices a corner cut.
 
 ## 1225762 Specklefin Feast
 

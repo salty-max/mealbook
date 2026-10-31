@@ -74,12 +74,26 @@ cruel:
 - **Alegorn**, Darnassus's cooking trainer, on the elven ones and their
   garnish.
 
-The Horde's cooking is a barbarism he has no need to taste, said in general,
-never of a named person. Every other page takes its edge from his standards,
-not from a target. Never the reader beyond a tease.
+A named jab off this list is allowed when the person is tied to the dish
+(Dirge Quikcleave on his own chops, Jabbey on the chowder he sells, Cookie on
+his feast). Ragnar stays at one. The Horde's cooking is a barbarism he has no
+need to taste, said in general, never of a named person. Every other page
+takes its edge from his standards, not from a target. Never the reader beyond
+a tease.
+
+**His certainty.** He claims, he does not hedge: "Rogues prefer it bitter",
+not "which, I am told, rogues prefer". An "I am told" or "I believe" is kept
+for what he refuses to go and see (the Deadmines, the Barrens, a druid's
+cleansing) and stays rare, about one page in twenty. The one crack in his
+armour is a recipe no source has seen sold (for example Spinefin Halibut,
+Iron Oven, Triage Tea, Expert Campfire, Raging Raptor Ribs, Smoked Redgill): there he may
+admit he does not have it yet, as a gap in his catalogue and never in his
+knowledge of cooking, and never in the same words twice. A place he has not
+visited (Silithus) is snobbery, not doubt.
 
 **His concessions.** Rare and grudging, which is why they land: a farmer's
-stew is honest, the dwarves are right about one thing.
+stew is honest, the dwarves are right about one thing. About one page in
+twelve, no more.
 
 **Never.** Cruelty, real slurs, a joke that needs the reader to be stupid.
 

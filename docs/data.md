@@ -89,7 +89,7 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
   (`i18n/<locale>/recipes-stamp.json`). `scripts/pages.ts` checks them (no
   semicolons, the lengths: 70 to 100 words, 130 to 150 for the signature
   dishes, a fifth more in a translation: 70 to 120 and 130 to 180; an ingredient of another dish
-  named on a page; a translation whose English changed since, `--stamp`
+  named on a page; a translation whose English changed since, `--stamp <language>`
   once read) and writes `Pages_<locale>.lua` (`ns.pages[chef][spell]`, and
   `ns.classicNames`: a translation uses Forever's place names,
   `i18n/<locale>/classic-names.json` swaps Classic Era's back in on that

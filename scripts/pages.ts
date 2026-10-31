@@ -25,7 +25,7 @@
  *
  *   bun scripts/pages.ts           write the Pages files
  *   bun scripts/pages.ts --check   fail if one isn't up to date or a rule breaks
- *   bun scripts/pages.ts --stamp   record each translation's English as read
+ *   bun scripts/pages.ts --stamp frFR   record that translation's English as read (a language, or all; esMX reads esES's)
  *   bun scripts/pages.ts --partial the pages still to write counted, not refused
  */
 import { createHash } from "node:crypto";
@@ -35,6 +35,7 @@ import type * as WowDb from "../../wow-data/src/db";
 import { LOCALES } from "./locales-lib";
 import { cookbook, type Dish } from "./recipes";
 import { familyPath } from "./root";
+import { stampLocales } from "./stamp";
 
 // through the family folder, from a worktree too (scripts/root.ts)
 const { openDb } = (await import(familyPath("wow-data", "src", "db.ts"))) as typeof WowDb;
@@ -138,6 +139,12 @@ function luaFor(locale: string, pages: Record<string, Map<number, Page>>, swaps:
 if (import.meta.main) {
   const args = process.argv.slice(2);
   const check = args.includes("--check");
+  const stamping = stampLocales(args, TRANSLATED.filter((l) => !BORROWS[l]));
+  if (typeof stamping === "string") {
+    console.error(`✗ ${stamping}`);
+    process.exit(2);
+  }
+  const summary: string[] = [];
   const all = dishes();
   const reagentIds = [...new Set([...all.values()].flatMap((d) => d.reagents.map(([id]) => id)))];
   const problems: string[] = [];
@@ -242,6 +249,7 @@ if (import.meta.main) {
       const stampFile = join(ROOT, "i18n", from, "recipes-stamp.json");
       const stamps: Record<string, string> = existsSync(stampFile) ? JSON.parse(readFileSync(stampFile, "utf8")) : {};
       const fresh: Record<string, string> = {};
+      let stale = 0;
       for (const chef of CHEFS) {
         const mine = new Map([...read(join(ROOT, "i18n", from, "recipes", chef))].map(([s, p]) => [s, regionalise(p)]));
         verify(locale, chef, mine, true);
@@ -252,16 +260,24 @@ if (import.meta.main) {
           const en = english[chef].get(s);
           if (!en) continue;
           fresh[`${chef}/${s}`] = hash(en);
-          if (from === locale && stamps[`${chef}/${s}`] !== hash(en)) notes.push(`${locale}: ${chef}/${s}: its English changed since it was translated (--stamp once read)`);
+          if (from === locale && stamps[`${chef}/${s}`] !== hash(en)) {
+            stale++;
+            if (!stamping.includes(locale)) notes.push(`${locale}: ${chef}/${s}: its English changed since it was translated (--stamp ${locale} once read)`);
+          }
         }
       }
-      if (from === locale && args.includes("--stamp")) writeFileSync(stampFile, `${JSON.stringify(fresh, null, 2)}\n`);
+      if (from === locale && stamping.includes(locale)) {
+        stale = 0;
+        writeFileSync(stampFile, `${JSON.stringify(fresh, null, 2)}\n`);
+      }
+      if (from === locale) summary.push(`${locale}: ${Object.keys(fresh).length} translations (${stale} stale)`);
       const swapFile = join(ROOT, "i18n", locale, "classic-names.json");
       swaps = existsSync(swapFile) ? JSON.parse(readFileSync(swapFile, "utf8")) : {};
     }
     files[`Pages_${locale}.lua`] = luaFor(locale, pages, swaps);
   }
   for (const n of notes) console.log(`  ${n}`);
+  for (const l of summary) console.log(l);
   if (problems.length) {
     for (const p of problems) console.error(`✗ ${p}`);
     process.exit(1);

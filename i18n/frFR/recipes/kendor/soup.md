@@ -81,4 +81,4 @@ Du homard pince-noire, des côtes froides du nord, mijoté dans de l'eau de sour
 
 ## 470359 Bisque de Pince-noire
 
-Une bisque de homard pince-noire faite avec de l'eau sacrée de Stratholme, qu'on me dit potable, même si j'ai lu l'étiquette deux fois et que je ne suis toujours pas convaincu. L'expédition de Silithus la vend, et je soupçonne qu'elle l'a inventée pour écouler l'eau sacrée. Cela fonctionne. L'eau est très propre et très douce, et elle laisse le homard parler de lui-même. Faites frémir, tamisez, et ne demandez pas à quoi d'autre cette eau a servi.
+Une bisque de homard pince-noire à l'eau sacrée de Stratholme, qu'on me dit potable, même si j'ai lu l'étiquette deux fois sans en être convaincu. Où se vend la recette, je ne l'ai pas encore appris. Celui qui l'a écrite avait de l'eau sacrée à écouler. Cela fonctionne. Cette eau est très propre et très douce, et elle laisse au homard toute la parole. Faites frémir, tamisez, et ne demandez pas à quoi d'autre cette eau a servi.

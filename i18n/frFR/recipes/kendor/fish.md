@@ -129,4 +129,4 @@ Un grand barracuda est assez gros pour être découpé en steaks comme un taurea
 
 ## 470370 Rouget fumé
 
-Une recette vendue en Silithus par les intendants de l'expédition, à des soldats qui avaient besoin d'une nourriture qui tienne dans le sable. Du rouget, fumé lentement jusqu'à être assez sec pour voyager et encore assez tendre pour être mangé. Pas d'épices, seulement la fumée. Les soldats qui l'ont rapporté à Hurlevent m'ont demandé de l'approuver. Je l'ai fait, ce qui les a plus surpris que le désert.
+Une nourriture de soldat venue de Silithus, faite pour la route. Personne ne m'a encore montré qui en vend la recette : c'est un trou dans mon catalogue, non dans mon savoir. Le rouget pend au-dessus d'une fumée lente et froide jusqu'à devenir aussi sec que la route qui l'attend, et pas davantage, sinon ce n'est plus que de l'écorce. Pas d'épices. Les soldats qui l'ont rapporté à Hurlevent voulaient mon approbation. J'ai corrigé la fumée et je le leur ai rendu, ce qui les a plus surpris que ne l'avait fait le désert.

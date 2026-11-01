@@ -129,4 +129,4 @@ Un grand barracuda est assez gros pour être découpé en steaks comme du boeuf,
 
 ## 470370 Rouget fumé
 
-L'expédition de Silithus vend ceci aux soldats qui ont besoin d'une nourriture qui tienne dans le sable. Du rouget, fumé lentement jusqu'à être assez sec pour être emporté et encore assez tendre pour être mangé. Pas d'épices. La fumée et le temps font le travail. Je l'ai appris d'un apothicaire revenu du désert avec cette recette et pas grand-chose d'autre. Il disait que c'était la seule chose là-bas qui n'avait pas essayé de le tuer.
+Les soldats de Silithus en vivent, parce que ce rouget se garde en route, et personne ne m'a encore dit qui en vend la recette. Du rouget, fumé lentement jusqu'à être assez sec pour être emporté et encore assez tendre pour être mangé. Pas d'épices. La fumée et le temps font le travail. Je l'ai appris d'un apothicaire revenu du désert avec la méthode et pas grand-chose d'autre. Il disait que c'était la seule chose là-bas qui n'avait pas essayé de le tuer.

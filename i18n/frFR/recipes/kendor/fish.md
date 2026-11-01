@@ -53,7 +53,7 @@ La côte de la Marche de l'Ouest grouille de crabes, et les contrebandiers défi
 
 ## 8238 Délice de déviant
 
-Les poissons déviants vivent dans les bassins empoisonnés des Cavernes des lamentations, dans les Tarides, et je n'ai jamais eu le moindre désir d'aller en chercher un. La recette se trouve dans le ventre des kodos qui errent là-bas, ce qui vous dit ce que les kodos en pensent. Cuisez-le à coeur, avec des épices douces, et mangez-le à vos risques. Ses effets sur ceux qui le mangent sont, de l'avis de tous, singuliers. On me dit beaucoup de choses sur les Tarides.
+Les poissons déviants vivent dans les bassins empoisonnés des Cavernes des lamentations, dans les Tarides, et je n'ai jamais eu le moindre désir d'aller en chercher un. La recette se trouve dans le ventre des kodos qui errent là-bas, ce qui vous dit ce que les kodos en pensent. Cuisez-le bien, assaisonné d'épices douces, et mangez-le à vos risques. Ses effets sur ceux qui le mangent sont, de l'avis de tous, singuliers. On me dit beaucoup de choses sur les Tarides.
 
 ## 1252566 Délice de fantaileron
 
@@ -65,7 +65,7 @@ Le poisson-chat est un poisson de rivière, à large gueule et à moustaches, et
 
 ## 6500 Palourdes gobelines
 
-Les gobelins préparent leurs palourdes comme ils font des affaires : avec trop de chaleur et trop de bruit. J'enseigne la recette malgré tout, et je corrige la chaleur. De la chair de palourde relevée, des épices fortes, et un feu près duquel vous pouvez tenir la main un instant sans regret. Une palourde sur un feu furieux se réduit à un bouton, et un bouton se mâche. Une palourde bien cuite garde juste assez de combat pour vous rappeler qu'elle vient de la mer. Les gobelins vous feraient payer le bouton deux fois plus cher.
+Les gobelins préparent leurs palourdes comme ils font des affaires : avec trop de chaleur et trop de bruit. J'enseigne la recette malgré tout, et je corrige la chaleur. La chair de palourde relevée veut des épices fortes et un feu près duquel vous pouvez tenir la main un instant sans regret. Une palourde sur un feu furieux se réduit à un bouton, et un bouton se mâche. Une palourde bien cuite garde juste assez de combat pour vous rappeler qu'elle vient de la mer. Les gobelins vous feraient payer le bouton deux fois plus cher.
 
 ## 7828 Morue rochécaille
 
@@ -73,7 +73,7 @@ La morue est le poisson des mers froides et des cuisines honnêtes, et la morue 
 
 ## 7213 Ardeur de palourde géante
 
-Les cuisiniers de Baie-du-Butin saisissent une palourde géante dans les épices fortes et la servent aux pirates, qui mangeraient n'importe quoi qui ne mord pas, et plusieurs choses qui mordent. Je l'ai affinée. La chair de palourde géante est dense et douce, et l'astuce est le couteau : tranchez-la si fin que la lame se voit au travers, et l'épice atteindra le centre. Puis un feu féroce, et pas longtemps. Une ardeur doit roussir les sourcils du cuisinier et épargner la palourde.
+Les cuisiniers de Baie-du-Butin saisissent une palourde géante dans les épices fortes et la servent aux pirates, qui mangeraient n'importe quoi qui ne mord pas, et plusieurs choses qui mordent. Je l'ai affinée. La chair de palourde géante est serrée et douce, et l'astuce est le couteau : tranchez-la si fin que la lame se voit au travers, et l'épice atteindra le centre. Puis un feu féroce, et pas longtemps. Une ardeur doit roussir les sourcils du cuisinier et épargner la palourde.
 
 ## 20916 Truite tête-mithril
 
@@ -105,7 +105,7 @@ Un jaune-queue des hauts-fonds de Tanaris, vendu par un gobelin qui pèse son po
 
 ## 18240 Calmar grillé
 
-Le calmar a deux bonnes durées de cuisson, très courte et très longue, et tout ce qui est entre les deux le change en caoutchouc. Je préfère la courte. Quadrillez le corps au couteau, frottez-y un peu d'épices apaisantes et posez-le sur le gril le plus féroce de la maison, le temps de dire son nom deux fois. Il se recourbe, il noircit sur les bords, il est cuit. Les cuisiniers du sud lui donnent une heure dans un ragoût. Ils ont tort, mais d'une manière intéressante.
+Le calmar a deux bonnes durées de cuisson, très courte et très longue, et tout ce qui est entre les deux le change en caoutchouc. Je préfère la courte. Quadrillez le corps au couteau, frottez-y un peu d'épices apaisantes et couchez-le sur le gril le plus féroce de la maison, le temps de dire son nom deux fois. Il se recourbe, il noircit sur les bords, il est cuit. Les cuisiniers du sud lui donnent une heure dans un ragoût. Ils ont tort, mais d'une manière intéressante.
 
 ## 18242 Perche fumée
 
@@ -113,11 +113,11 @@ Fumer à chaud, c'est fumer à une chaleur qui cuit en même temps, plus rapide 
 
 ## 18244 Saumon solécaille poché
 
-Pocher, c'est l'art de cuire dans une eau qui ne bout jamais tout à fait, et c'est l'art le plus négligé de toute cuisine. Le saumon solécaille, des mers chaudes, est riche et tendre, et se déferait sous une méthode plus rude. Amenez l'eau à frissonner, non à bouillir, descendez-y le poisson et laissez-le. Quand il devient opaque, sortez-le. L'eau ne doit pas une seule fois avoir élevé la voix.
+Pocher, c'est l'art de cuire dans une eau qui frémit sans jamais bouillir, et c'est l'art le plus négligé de toute cuisine. Le saumon solécaille, des mers chaudes, est riche et tendre, et se déferait sous une méthode plus rude. Amenez l'eau à frissonner, non à bouillir, descendez-y le poisson et laissez-le. Quand il devient opaque, sortez-le. L'eau ne doit pas une seule fois avoir élevé la voix.
 
 ## 1250158 Linguines aux palourdes
 
-Linguine est le nom d'une longue pâte plate, et la recette, à son honneur, ne prétend pas en contenir. Elle a de la chair de palourde piquante, taillée en longues lanières pour faire illusion, et tournée dans les épices apaisantes. Une poêle chaude, presque pas de temps, et droit à table, car la palourde cuite un instant de trop durcit. Dans l'assiette, les lanières s'emmêlent comme des pâtes et se mangent comme des palourdes. J'approuve la supercherie.
+Linguine est le nom d'une longue pâte plate, et la recette, à son honneur, ne prétend pas en contenir. Elle contient de la chair de palourde piquante, coupée en longues lanières pour faire illusion, et tournée dans les épices apaisantes. Une poêle chaude, presque pas de temps, et droit à table, car la palourde cuite un instant de trop durcit. Dans l'assiette, les lanières s'emmêlent comme des pâtes et se mangent comme des palourdes. J'approuve la supercherie.
 
 ## 18247 Pain de saumon
 

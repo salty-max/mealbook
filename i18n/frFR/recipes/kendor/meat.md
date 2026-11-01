@@ -33,7 +33,7 @@ Une recette qui traîne dans les nids de raptors, ce qui est soit une plaisanter
 
 ## 2795 Côtes de sanglier à la bière
 
-Ragnar Thunderbrew croit que cette recette appartient à sa famille. Je la vends à Hurlevent à un prix honnête, et je l'ai améliorée. Il vous dira que les côtes veulent la bière au malt Rhapsody de la première minute à la dernière. C'est faux. Les nains arrosent dès le départ, puis s'étonnent que le dehors brûle pendant que le dedans boude. Rôtissez la côte sans rien dessus jusqu'à ce que la graisse coule claire. Alors, et pas une minute plus tôt, passez la bière au pinceau en couches fines, chacune sèche avant la suivante, pour bâtir un glaçage et non du charbon. Le résultat est sucré, sombre et collant, et c'est ce que Dun Morogh a produit de plus beau. Je le dirais à Ragnar, s'il entendait quoi que ce soit par-dessus sa propre taverne. Il le sait. Ses côtes se sont améliorées depuis.
+Ragnar Thunderbrew croit que cette recette appartient à sa famille. Je la vends à Hurlevent à un prix honnête, et je l'ai améliorée. Il vous dira que les côtes veulent la bière au malt Rhapsody de la première minute à la dernière. C'est faux. Les nains arrosent dès le départ, puis s'étonnent que le dehors brûle pendant que le dedans boude. Rôtissez la côte sans rien dessus jusqu'à ce que sa graisse coule claire. Alors, et pas une minute plus tôt, passez la bière au pinceau en couches fines, chacune sèche avant la suivante, pour bâtir un glaçage et non du charbon. Le résultat est sucré, sombre et collant, et c'est ce que Dun Morogh a produit de plus beau. Je le dirais à Ragnar, s'il entendait quoi que ce soit par-dessus sa propre taverne. Il le sait. Ses côtes se sont améliorées depuis.
 
 ## 6414 Viande de kodo rôtie
 
@@ -85,7 +85,7 @@ La venaison est la viande d'un cuisinier bien élevé. Un cerf est maigre et fie
 
 ## 15853 Steak de loup
 
-Un steak tout simple, pris au flanc d'un loup, et la simplicité est la chose la plus difficile à cuisiner. Pas de sauce derrière laquelle se cacher, pas de ragoût pour y enterrer une erreur. Le flanc est maigre : il faut le saisir vite et le laisser reposer longtemps, avec un peu d'épices pour lui rappeler qu'il est un aliment. Saignant, c'est correct. Un peu plus cuit, c'est pardonnable. Au-delà, je vous suggère un autre métier, et j'en connais plusieurs qui se passent de feu.
+Un steak sans façon, taillé dans le flanc d'un loup, et la simplicité est la chose la plus difficile à cuisiner. Pas de sauce derrière laquelle se cacher, pas de ragoût pour y enterrer une erreur. Le flanc est maigre : il faut le saisir vite et le laisser reposer longtemps, avec un peu d'épices pour lui rappeler qu'il est un aliment. Saignant, c'est correct. Un peu plus cuit, c'est pardonnable. Au-delà, je vous suggère un autre métier, et j'en connais plusieurs qui se passent de feu.
 
 ## 3398 Côtelettes de lion épicées
 
@@ -105,11 +105,11 @@ Dans les Terres ingrates, on vous dira qu'un busard ne vaut pas les braises. Ceu
 
 ## 15863 Tourte surprise
 
-Tourte surprise. J'ai relu la recette deux fois, au cas où ce serait une plaisanterie. Ce n'en est pas une. De la viande mystère et des épices fortes, cuites en un plat que les trolls du Marais des Chagrins vendent comme s'il s'agissait d'une gentillesse. La viande doit être cuite à coeur, puis cuite à coeur de nouveau, car quoi qu'elle ait été, elle est morte depuis un moment. Je ne sers pas ce plat. Je l'enseigne, pour que mes élèves sachent ce qu'ils évitent.
+Tourte surprise. J'ai relu la recette deux fois, au cas où ce serait une plaisanterie. Ce n'en est pas une. Viande mystère et épices fortes, réunies en un plat que les trolls du Marais des Chagrins vendent comme s'il s'agissait d'une gentillesse. La viande doit être cuite à coeur, puis cuite à coeur de nouveau, car quoi qu'elle ait été, elle est morte depuis un moment. Je ne sers pas ce plat. Je l'enseigne, pour que mes élèves sachent ce qu'ils évitent.
 
 ## 15856 Côtes de loup épicées
 
-Les loups du grand sud sont rouges, mal lunés et plus grands que les nôtres, et leurs côtes sont bien garnies. Feralas vend cette recette à quiconque passe par là, ce qui arrive rarement. Des épices fortes, un feu vif, puis de la patience, car le loup rouge est plus gras que notre loup gris et demande du temps pour fondre. Quand la graisse coule claire et que les os brunissent, c'est prêt. Quand la graisse fume, votre réputation aussi.
+Les loups du grand sud sont rouges, mal lunés et plus grands que les nôtres, et leurs côtes sont bien garnies. Feralas vend cette recette à quiconque passe par là, ce qui arrive rarement. Des épices fortes, un feu vif, et ensuite de la patience, car le loup rouge est plus gras que notre loup gris et demande du temps pour fondre. Quand la graisse coule claire et que les os brunissent, c'est prêt. Quand la graisse fume, votre réputation aussi.
 
 ## 15855 Rôti de raptor
 
@@ -129,7 +129,7 @@ De la viande d'araignée blanche, pressée en saucisse et enseignée par tous le
 
 ## 1250153 Paupiette de raptor
 
-Rouladen est un mot nain, ou une prétention naine sur un mot, et le plat est de la viande roulée : du raptor taillé fin, tartiné d'épices fortes, roulé et ficelé. Plus la tranche est fine, plus vite la chaleur gagne le centre, et un rouleau épais brûle dehors avant que son coeur soit cuit. Colorez d'abord les rouleaux sur toutes leurs faces, puis baissez le feu et laissez-les en paix. Coupez la ficelle avant qu'ils ne partent à l'assiette. Une ficelle dans une assiette est l'aveu d'un cuisinier qui a cessé de faire attention.
+Rouladen est un mot nain, ou une prétention naine sur un mot, et le plat est de la viande roulée : du raptor taillé fin, tartiné d'épices fortes, roulé et ficelé. Plus la tranche est fine, plus vite la chaleur gagne le centre, et un rouleau épais brûle dehors avant que son coeur soit cuit. Colorez d'abord les rouleaux de tous côtés, puis baissez le feu et laissez-les en paix. Coupez la ficelle avant qu'ils ne partent à l'assiette. Une ficelle dans une assiette est l'aveu d'un cuisinier qui a cessé de faire attention.
 
 ## 1250142 Mini-burgers de cerf savoureux
 
@@ -137,11 +137,11 @@ Les mini-burgers sont petits et nombreux, comme les jeunes cuisiniers aiment tou
 
 ## 22480 Steak de loup tendre
 
-La viande de loup tendre vient des loups du Berceau-de-l'Hiver et des contrées froides, où une bête vit lentement et garde sa graisse. C'est la meilleure viande de loup du monde, et elle est gâchée chez la plupart des cuisiniers. Des épices apaisantes, une saisie brève et féroce, puis un repos aussi long que la cuisson. Un cuisinier qui a ruiné cent loups filandreux en Elwynn comprendra enfin, avec celui-ci, ce qu'il cherchait.
+La viande de loup tendre vient des loups du Berceau-de-l'Hiver et des contrées froides, où une bête vit lentement et garde sa graisse. C'est la meilleure viande de loup du monde, et elle est gâchée chez la plupart des cuisiniers. Des épices apaisantes, puis une saisie brève et féroce, et enfin un repos aussi long que la cuisson. Un cuisinier qui a ruiné cent loups filandreux en Elwynn comprendra enfin, avec celui-ci, ce qu'il cherchait.
 
 ## 1225759 Filet de flanc
 
-Filet de flanc, un nom qui bégaie un peu, et un plat auquel rien ne manque. Le flanc de loup rouge est frotté de sels sacrés, dont le clergé vous dira qu'ils sont bénis et les marchands qu'ils sont chers. Les deux ont raison. Le sel tire l'eau de la viande et la resserre, si bien qu'elle cuit vite. Un steak béni trop cuit reste trop cuit. La Lumière ne le sauvera pas, et moi non plus.
+Filet de flanc, un nom qui bégaie un peu, et un plat auquel rien ne manque. Le flanc de loup rouge est frotté de sels sacrés, dont le clergé vous dira qu'ils sont bénis et les marchands qu'ils sont chers. Les deux ont raison. Le sel fait sortir l'eau et resserre la chair, si bien qu'elle cuit vite. Un steak béni trop cuit reste trop cuit. La Lumière ne le sauvera pas, et moi non plus.
 
 ## 1225758 Steak de rôdeur
 
@@ -149,7 +149,7 @@ Le steak de rôdeur, c'est du tigre, ce que le nom est trop poli pour dire. Les 
 
 ## 1250144 Hachis de chauve-souris
 
-Hachee est un vieux mot de ferme pour un ragoût lent de viande hachée, et ici, la viande est de la chauve-souris. Je n'aurais pas choisi la chauve-souris. La chauve-souris ne m'aurait pas choisi non plus. Des ailes hachées, des épices apaisantes, et un feu doux pendant presque toute une soirée, jusqu'à ce que les tendons rendent les armes et deviennent une chose qu'on peut servir à un invité. Celui qui l'a inventé était pauvre et malin. Je respecte les malins, et j'ai appris, avec les années, à pardonner aux pauvres.
+Hachee est un vieux mot de ferme pour un ragoût lent de viande hachée, et ici, la viande est de la chauve-souris. Je n'aurais pas choisi la chauve-souris. La chauve-souris ne m'aurait pas choisi non plus. Des ailes hachées, des épices apaisantes, et un feu doux pendant presque toute une soirée, le temps que les tendons rendent les armes et deviennent une chose qu'on peut servir à un invité. Celui qui l'a inventé était pauvre et malin. Je respecte les malins, et j'ai appris, avec les années, à pardonner aux pauvres.
 
 ## 1250147 Bruscitt d’ours
 
@@ -173,8 +173,8 @@ Le tigre de ce plat n'a pas été pris par la foudre, quoi qu'en dise le nom. Il
 
 ## 1250146 Flanchet au poivre
 
-Au poivre, annonce le nom, et la recette n'en contient pas un grain. Elle a du flanc de loup rouge et des épices apaisantes, et l'épice porte si bien la chaleur que personne ne regrette le poivre. Le flanc est un morceau travailleur, qui veut une poêle féroce et une main rapide. Ce que la viande laisse dans la poêle compte autant que la viande : grattez-le et nappez-en le steak avant de servir. Ne le découpez jamais dans la poêle où il a saisi. La poêle se souvient de la chaleur, et la viande aussi.
+Au poivre, annonce le nom, et la recette n'en contient pas un grain. Elle se contente de flanc de loup rouge et d'épices apaisantes, et l'épice porte si bien la chaleur que personne ne regrette le poivre. Le flanc est un morceau travailleur, qui veut une poêle féroce et une main rapide. Ce que la viande laisse dans la poêle compte autant que la viande : grattez-le et nappez-en le steak avant de servir. Ne le découpez jamais dans la poêle où il a saisi. La poêle se souvient de la chaleur, et la viande aussi.
 
 ## 25659 Pyro-côtelettes de chimaerok à la Dirge
 
-Dirge Quikcleave tient une cuisine à Gadgetzan, en plein désert, où il cuit le chimaerok au carburant de fusée des gobelins et fait payer le privilège. J'ai toutes les raisons de mépriser cette recette. Je n'y parviens pas. Le filet de chimaerok est la meilleure viande de Kalimdor, dense et douce, tirée de bêtes si lointaines que seuls les braves ou les affamés en rapportent. Du sel de Fonderoc venu des mines des nains, des épices fortes, et le carburant, qui ne parfume pas la viande mais flatte le feu jusqu'à une chaleur qu'aucun charbon honnête n'atteint. Mettez beaucoup de distance et très peu de carburant. Dirge vous dirait le contraire. Dirge a moins de sourcils que moi. Les côtelettes en sortent noircies et juteuses et, je l'avoue, c'est ce qu'un gobelin a fait de mieux.
+Dirge Quikcleave tient une cuisine à Gadgetzan, en plein désert, où il passe le chimaerok à la flamme du carburant de fusée des gobelins et fait payer le privilège. J'ai toutes les raisons de mépriser cette recette. Je n'y parviens pas. Le filet de chimaerok est la meilleure viande de Kalimdor, dense et douce, tirée de bêtes si lointaines que seuls les braves ou les affamés en rapportent. Du sel de Fonderoc venu des mines des nains, des épices fortes, et le carburant, qui ne parfume pas la viande mais flatte le feu jusqu'à une chaleur qu'aucun charbon honnête n'atteint. Mettez beaucoup de distance et très peu de carburant. Dirge vous dirait le contraire. Dirge a moins de sourcils que moi. Les côtelettes en sortent noircies et juteuses et, je l'avoue, c'est ce qu'un gobelin a fait de mieux.

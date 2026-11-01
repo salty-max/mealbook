@@ -21,7 +21,7 @@ Le thé de chardon est la boisson des voleurs de ce royaume, qui l'infusent avec
 
 ## 1249958 Thé royal
 
-Le mage royal est une herbe qui a une haute opinion d'elle-même, et le thé royal est du mage royal infusé dans du lait glacé, ce qui donne aussi au lait une haute opinion de lui-même. On chauffe doucement le lait et on y laisse l'herbe jusqu'à ce qu'il prenne une teinte violette pâle et l'odeur d'un beau jardin. Ne le faites pas bouillir. Le lait bouilli forme une peau, et une peau sur un thé royal est une honte, et des plus répandues. Je le sers aux nobles, qui goûtent l'ironie moins que moi.
+Le mage royal est une herbe qui a une haute opinion d'elle-même, et le thé royal est du mage royal qu'on fait infuser dans du lait glacé, ce qui donne aussi au lait une haute opinion de lui-même. On chauffe doucement le lait et on y laisse l'herbe jusqu'à ce qu'il prenne une teinte violette pâle et l'odeur d'un beau jardin. Ne le faites pas bouillir. Le lait bouilli forme une peau, et une peau sur un thé royal est une honte, et des plus répandues. Je le sers aux nobles, qui goûtent l'ironie moins que moi.
 
 ## 1249964 Frappé gélatineux
 
@@ -29,7 +29,7 @@ Gélatineux, dit-il de lui-même, et c'est le nom le plus exact de ce chapitre. 
 
 ## 1249965 Frppl mrrggl
 
-Je n'essaierai pas de prononcer le nom de cette boisson. J'ai entendu un murloc essayer, et cela ne s'est bien passé ni pour lui ni pour moi. L'aileron doit être frais, et secoué fort dans le jus de melon avec les épices fortes, assez longtemps pour que le jus se trouble légèrement et prenne la mer. C'est sucré, puis brûlant, puis quelque chose que je ne peux appeler que côtier. Les murlocs le boivent pour insulter le reste du monde. C'est, je l'avoue, une insulte bien faite.
+Le nom de cette boisson, je n'essaierai pas de le prononcer. J'ai entendu un murloc essayer, et cela ne s'est bien passé ni pour lui ni pour moi. L'aileron doit être frais, et secoué fort dans le jus de melon avec les épices fortes, assez longtemps pour que le jus se trouble légèrement et prenne la mer. C'est sucré, puis brûlant, puis quelque chose que je ne peux appeler que côtier. Les murlocs le boivent pour insulter le reste du monde. C'est, je l'avoue, une insulte bien faite.
 
 ## 1249959 Thé aux racines
 
@@ -41,7 +41,7 @@ La dorépine pousse dans les endroits durs, Strangleronce et les Hinterlands, et
 
 ## 1249966 Frappé calcifié
 
-Un frappé avec un croc dedans. J'ai lu la recette deux fois, puis une troisième avec mes lunettes. Du nectar sucré et des épices fortes, avec un grand croc moulu fin et mêlé au tout. Le croc donne à la boisson un corps crayeux et en fait la favorite des gens qui combattent les ours. Filtrez bien. Une boisson qui crisse sous la dent est une réclamation qui attend, et je n'accepte pas les réclamations.
+Un frappé avec un croc dedans. J'ai lu la recette deux fois, puis une troisième avec mes lunettes. Du nectar sucré et des épices fortes, avec un grand croc moulu fin et mêlé au tout. Le croc donne à la boisson un corps crayeux et en fait la favorite des gens qui combattent les ours. Filtrez bien. Une boisson qui crisse sous la dent, c'est une réclamation qui attend, et je n'accepte pas les réclamations.
 
 ## 1249960 Thé de triage
 
@@ -53,7 +53,7 @@ Une boisson avec un sac de flammes dedans, ce que les mages de feu tiennent pour
 
 ## 1249961 Thé du soleil
 
-De la soleillette infusée dans du jus de baie lunaire, ce qui est une plaisanterie sur le soleil et la lune que la recette ne prend pas la peine d'expliquer. On chauffe le jus et la soleillette y infuse jusqu'à ce que la boisson prenne l'or d'un soleil de fin de journée. Filtrez et servez tiède, jamais chaud. C'est une boisson gaie, ce qui est rare, et je n'ai rien de cinglant à en dire, ce qui l'est plus encore.
+De la soleillette mise à infuser dans du jus de baie lunaire, ce qui est une plaisanterie sur le soleil et la lune que la recette ne prend pas la peine d'expliquer. On chauffe le jus et la soleillette y infuse jusqu'à ce que la boisson prenne l'or d'un soleil de fin de journée. Filtrez et servez tiède, jamais chaud. C'est une boisson gaie, ce qui est rare, et je n'ai rien de cinglant à en dire, ce qui l'est plus encore.
 
 ## 1249968 Frappé pernicieux
 

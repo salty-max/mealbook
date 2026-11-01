@@ -29,7 +29,7 @@ Les ailerons de murloc donnent une soupe qui a plus de corps que vous ne le croi
 
 ## 2547 Goulash des Carmines
 
-Le goulash des Carmines, c'est de l'araignée et du condor, mijotés ensemble par les gens de Comté-du-Lac, qui ont des araignées et des condors à revendre depuis que les gnolls ont pris le reste. Les deux viandes cuisent à des vitesses très différentes, et tout l'art est dans le minutage. Le condor demande presque tout l'après-midi pour s'attendrir. L'araignée n'en demande qu'une fraction, et devient filandreuse si elle reste davantage. Ajoutez-la tard. Je vends la recette avec cet avertissement écrit dans la marge, de ma main.
+Le goulash des Carmines, c'est de l'araignée et du condor, que mijotent ensemble les gens de Comté-du-Lac, qui ont des araignées et des condors à revendre depuis que les gnolls ont pris le reste. Les deux viandes cuisent à des vitesses très différentes, et tout l'art est dans le minutage. Le condor demande presque tout l'après-midi pour s'attendrir. L'araignée n'en demande qu'une fraction, et devient filandreuse si elle reste davantage. Ajoutez-la tard. Je vends la recette avec cet avertissement écrit dans la marge, de ma main.
 
 ## 3373 Gombo de crocilisque
 
@@ -41,11 +41,11 @@ Le gombo est un plat des marais, un ragoût épais et sombre que les gens des Pa
 
 ## 15861 Ragoût de la jungle
 
-Un ragoût de Strangleronce, fait par des soldats qui avaient de la viande de tigre, de l'eau de source et des pommes, et l'esprit de les réunir. Les pommes adoucissent ce qui serait sinon un bouillon dur et sauvage. Faites d'abord dorer le tigre bien fort, car un ragoût commencé pâle reste pâle. L'eau et les pommes suivent, et le tout mijote jusqu'à ce que le fruit ait disparu. Une jungle produit beaucoup de nourriture et très peu de recettes. Celle-ci est l'une des bonnes.
+Un ragoût de Strangleronce, fait par des soldats qui disposaient de viande de tigre, d'eau de source et de pommes, et qui ont eu l'esprit de les réunir. Les pommes adoucissent ce qui serait sinon un bouillon dur et sauvage. Faites d'abord dorer le tigre bien fort, car un ragoût commencé pâle reste pâle. L'eau et les pommes suivent, et le tout mijote jusqu'à ce que le fruit ait disparu. Une jungle produit beaucoup de nourriture et très peu de recettes. Celle-ci est l'une des bonnes.
 
 ## 15865 Ragoût mystère
 
-Le ragoût mystère, c'est de la viande mystère mijotée dans de la bière naine, et le mystère est de savoir laquelle des deux fait le plus de travail. Je vais vous le dire : la bière. Une bonne bière naine brunit la viande, la détend et laisse au bouillon une amertume qui couvre une multitude de péchés. Daryl Riknussun l'enseigne à Forgefer comme un plat nain, ce qui est généreux de sa part, puisque les nains n'ont fourni que la bière et les questions. Faites-le cuire longtemps. Quoi que la viande ait été, elle doit l'oublier. Écumez à mesure que l'écume monte. Un bouillon qui bout aigrit la bière et change la viande en ficelle. Servi à Theramore et en Désolace à des gens qui ont cessé de poser des questions, il est, je l'avoue, très bon. J'ai cessé de poser des questions moi aussi. C'était plus facile que je ne le pensais.
+Le ragoût mystère, c'est de la viande mystère cuite longuement dans la bière naine, et le mystère est de savoir laquelle des deux fait le plus de travail. Je vais vous le dire : la bière. Une bonne bière naine brunit la viande, la détend et laisse au bouillon une amertume qui couvre une multitude de péchés. Daryl Riknussun l'enseigne à Forgefer comme un plat nain, ce qui est généreux de sa part, puisque les nains n'ont fourni que la bière et les questions. Faites-le cuire longtemps. Quoi que la viande ait été, elle doit l'oublier. Écumez à mesure que l'écume monte. Un bouillon qui bout aigrit la bière et change la viande en ficelle. Servi à Theramore et en Désolace à des gens qui ont cessé de poser des questions, il est, je l'avoue, très bon. J'ai cessé de poser des questions moi aussi. C'était plus facile que je ne le pensais.
 
 ## 3400 Bisque de tortue apaisante
 

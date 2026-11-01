@@ -17,4 +17,4 @@ Les bûches épaisses sont le feu d'un maître : une épreuve à allumer, et une
 
 ## 1263067 Four en fer
 
-Un four en fer, dit la recette, puis elle demande de la farine, de l'eau de source et des épices apaisantes, et pas un gramme de fer. Je l'ai relue plusieurs fois. Je crois que la pâte est travaillée avec l'épice et cuite dans le four neuf, pour culotter le fer avant qu'on y mette quoi que ce soit qui vaille d'être mangé. Quel que soit son secret, c'est une recette de maître, et je ne la possède pas encore, ce qui m'agace plus que je ne puis le dire poliment.
+Un four en fer, dit la recette, puis elle réclame farine, eau de source et épices apaisantes, et pas un gramme de fer. Je l'ai relue plusieurs fois. Je crois que l'on travaille la pâte avec l'épice et qu'on la cuit dans le four neuf, pour culotter le fer avant qu'on y mette quoi que ce soit qui vaille d'être mangé. Quel que soit son secret, c'est une recette de maître, et je ne la possède pas encore, ce qui m'agace plus que je ne puis le dire poliment.

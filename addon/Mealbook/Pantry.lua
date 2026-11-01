@@ -76,7 +76,12 @@ function P.line(item)
     names[i] = ns.ui.colourCode(ns.road.colour(D.recipes[spell], skill)) .. ns.dishName(spell) .. "|r"
   end
   local text = table.concat(names, ", ")
-  if #dishes > SHOWN then text = text .. " " .. L["and %d more"]:format(#dishes - SHOWN) end
+  local more = #dishes - SHOWN
+  if more == 1 then
+    text = text .. " " .. L["and 1 more"]
+  elseif more > 1 then
+    text = text .. " " .. L["and %d more"]:format(more)
+  end
   return L["Cooks into %s"]:format(text)
 end
 

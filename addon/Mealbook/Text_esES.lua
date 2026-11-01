@@ -65,6 +65,7 @@ ns.translate({
     ["and %d more"] = "y %d más",
     ["and %d other cooking trainer of your side"] = "y %d instructor de cocina más de tu facción",
     ["and %d other cooking trainers of your side"] = "y %d instructores de cocina más de tu facción",
+    ["and 1 more"] = "y 1 más",
     ["Another character's choices, for this one (of this game: Classic and Forever keep their own). From elsewhere: %s export there, then %s import CODE here."] = "Copia las opciones de otro personaje de este juego. Classic y Forever las guardan por separado. Para traerlas de otro juego, usa %s export allí y luego %s import CODE aquí.",
     ["Any cooking trainer teaches cooking, and its first recipes with it."] = "Cualquier instructor de cocina enseña la cocina, y sus primeras recetas con ella.",
     ["Apprentice"] = "Aprendiz",

@@ -284,6 +284,29 @@ SlashCmdList.MEALBOOK("tooltips")
 GameTooltip:SetItemByID(2672)
 check(#GameTooltip.lines == 0 and ns.option("tooltips") == false, "/mealbook tooltips: the line off")
 SlashCmdList.MEALBOOK("tooltips")
+-- past three dishes, how many more: one key for one, another for the rest
+-- (French "et 1 autre", "et %d autres")
+local knownBook = char.known
+local function knowing(item, n)
+  local k = {}
+  for _, spell in ipairs(ns.data.order) do
+    local d = ns.data.recipes[spell]
+    for i = 1, #d.reagents, 2 do
+      if d.reagents[i] == item and n > 0 and not k[spell] then
+        k[spell] = { at = 1, level = 1 }
+        n = n - 1
+      end
+    end
+  end
+  return k
+end
+-- (the line's end, so French's "et 1 autres" can't pass for "et 1 autre")
+local function endsWith(text, tail) return text:sub(-#tail) == tail end
+char.known = knowing(2678, 4) -- (Mild Spices)
+check(endsWith(P.line(2678) or "", L["and 1 more"]), "four dishes: three named, then the one more in its own words")
+char.known = knowing(2678, 5)
+check(endsWith(P.line(2678) or "", L["and %d more"]:format(2)), "five dishes: three named, then two more")
+char.known = knownBook
 local cookable = P.cookable(char.known, ns.skill(), function(i) return s.bags[i] or 0 end)
 check(#cookable > 0 and cookable[1][2] > 0, "what the bags can cook now, and how many times")
 

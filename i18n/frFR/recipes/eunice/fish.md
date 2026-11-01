@@ -33,7 +33,7 @@ L'eau froide du loch donne un poisson plus ferme que les furies du sud, et les n
 
 ## 7753 Lutjan à longue mâchoire
 
-La vase est dans la peau, pas dans la chair, et on la sent dès que le poisson rencontre la chaleur. Cuisez-le entier sur un feu modéré et retirez la peau avant de servir. La chair dessous ne sent rien d'autre que le poisson, ce qui est exactement ce qu'on attend d'un poisson. Les pêcheurs de Tirisfal mangent aussi la peau. Ils disent qu'elle leur rappelle la rivière. Ils n'avaient pas besoin de le dire.
+La vase est dans la peau, non dans la chair, et on la sent dès que le poisson rencontre la chaleur. Cuisez-le entier sur un feu modéré et ôtez la peau avant de servir. La chair dessous ne sent rien d'autre que le poisson, ce qui est exactement ce qu'on attend d'un poisson. Les pêcheurs de Tirisfal mangent aussi la peau. Ils disent qu'elle leur rappelle la rivière. Ils n'avaient pas besoin de me dire pourquoi.
 
 ## 7827 Thon arc-en-ciel
 
@@ -41,11 +41,11 @@ Ferme, sombre et riche, plus viande que poisson, et il faut le cuire comme une v
 
 ## 2544 Beignet de crabe
 
-Austrivage faisait des beignets de crabe à chaque fête, ou une fête sur deux, et les femmes se disputaient sur l'épice par la fenêtre de l'auberge, ou de la boulangerie. Je me souviens mieux des disputes que des beignets. Nettoyez bien la chair de clampant, ajoutez une pincée d'épices douces et pressez le tout à la main. Faites-le frire jusqu'à ce que l'extérieur prenne. S'il s'effondre, pressez plus fort la prochaine fois. S'il rebondit, pressez moins. La dispute est facultative.
+Austrivage faisait des beignets de crabe les jours de fête, et les femmes se disputaient sur l'épice par une fenêtre ouverte, même si je ne sais plus à qui était la fenêtre. Je me souviens mieux des disputes que des beignets. Nettoyez bien la chair de clampant, ajoutez une pincée d'épices douces et pressez le tout à la main. Faites-le frire jusqu'à ce que le dehors prenne. S'il s'effondre, pressez plus fort la prochaine fois. S'il rebondit, pressez moins. La dispute est facultative.
 
 ## 25704 Sagerelle fumée
 
-Les sagerelles viennent des lacs de Hautebrande, où ma famille allait l'été, ou bien où nous disions toujours que nous irions. Le poisson sent la sauge des rives, et la fumée fait ressortir cette odeur. De l'odeur, je suis sûre. Des étés, beaucoup moins. Une fumée basse, une pincée d'épices douces et un après-midi. Quand la chair dore et sent les herbes et la fumée de bois, c'est prêt.
+Les sagerelles viennent des lacs de Hautebrande, où ma famille allait l'été, je crois. Le poisson sent la sauge des rives, et la fumée fait ressortir cette odeur. De l'odeur, je suis sûre. Des étés, beaucoup moins. Une fumée basse, une pincée d'épices douces et un après-midi. Quand la chair dore et sent les herbes et la fumée de bois, c'est prêt. Je la fume par fournées, parce que les vivants l'achètent à pleins bras.
 
 ## 2545 Pince de crabe farcie
 
@@ -61,7 +61,7 @@ Un petit poisson vif au nom ridicule. La recette apparaît dans les Carmines, da
 
 ## 7755 Poisson-chat moustachu
 
-Le poisson-chat, c'était ce que la rivière nous donnait quand elle nous donnait quelque chose, et ma mère le dépouillait sur la marche de derrière, ou ma grand-mère. Retirez toujours la peau. Elle sent le lit de la rivière, et le lit de la rivière n'est pas un souper. La chair dessous est blanche et douce et veut une poêle chaude et un seul retournement. J'entends encore ce couteau sur la marche. Je ne vois plus la main qui le tenait.
+Le poisson-chat, c'était ce que la rivière nous donnait quand elle nous donnait quelque chose, et quelqu'un de ma famille le dépouillait sur la marche de derrière. Retirez toujours la peau. Elle sent le lit de la rivière, et le lit de la rivière n'est pas un souper. La chair dessous est blanche et douce et veut une poêle chaude et un seul retournement. J'entends encore ce couteau sur la marche. Je ne vois plus la main qui le tenait.
 
 ## 6500 Palourdes gobelines
 
@@ -73,7 +73,7 @@ Ses écailles émousseraient un mauvais couteau, alors achetez-en un bon avant d
 
 ## 7213 Ardeur de palourde géante
 
-Une palourde géante est dense et douce, et à Baie-du-Butin on la fait flamber dans des épices fortes pour les pirates. Tranchez-la fin avant que la chaleur ne la touche, pour que l'épice la traverse, puis faites-la flamber fort et vite. La fumée vous fera pleurer. C'est ainsi que vous savez que vous avez mis assez d'épices. Quand la fumée se dissipe, le plat est prêt. Servez-le à quelqu'un qui a l'estomac solide et la mémoire courte.
+Une palourde géante est dense et douce, et à Baie-du-Butin, on la saisit dans les épices fortes pour les pirates. Tranchez-la fin avant que la chaleur ne la touche, pour que l'épice la traverse, puis cuisez-la fort et vite. La fumée vous fera pleurer. C'est ainsi que vous saurez que l'épice suffit. Quand la fumée se dissipe, le plat est prêt. Servez-le à quelqu'un qui a l'estomac solide et la mémoire courte.
 
 ## 20916 Truite tête-mithril
 
@@ -85,7 +85,7 @@ La grande sagerelle, engraissée de la sauge de son lac, avec des épices fortes
 
 ## 1319313 Poisson cuirassé
 
-Un poisson en armure. Les plaques s'enlèvent avec un couteau lourd et beaucoup de patience, et la chair dessous est ferme et pâle, comme celle d'un homard. Des épices apaisantes, une chaleur modérée, et sans hâte. Les choses en armure mettent du temps à cuire, comme vous le diront les gardes noirs, et ce n'est pas de poissons qu'ils parlent. Servez-le dans ses propres plaques, lavées. Cela fait sourire les gens.
+Un poisson en armure. Les plaques s'enlèvent avec un couteau lourd et beaucoup de patience, et la chair dessous est ferme et pâle, comme celle d'un homard. Des épices apaisantes, une chaleur modérée, et aucune hâte. Les choses en armure prennent leur temps. Les gardes noirs dans leurs plaques diraient la même chose. Servez-le dans ses propres plaques, lavées. Cela fait sourire les gens. Mes élèves apprennent plus de patience avec ce poisson qu'ils n'en apprendront jamais de moi.
 
 ## 18239 Barracuda luisant cuit
 
@@ -97,11 +97,11 @@ Le rouget n'a besoin que d'une poêle chaude. Posez le filet côté peau et atte
 
 ## 15915 Chili de crabe épicé
 
-De la viande de crabe tendre et beaucoup d'épices fortes, remuées sans cesse dans une poêle assez chaude pour vous faire reculer. L'épice doit cuire dans le crabe, pas rester posée dessus. Je ne peux pas vous dire à quel point c'est fort. Je peux vous dire que les trolls le mangent sans ciller et que les orcs le mangent en faisant semblant de ne pas ciller, et je sers les deux avec le même visage impassible.
+De la viande de crabe tendre et beaucoup d'épices fortes, remuées sans cesse dans une poêle assez chaude pour vous faire reculer. L'épice doit cuire dans le crabe, non rester posée dessus. La force du piquant, je la laisse aux trolls, qui le mangent sans ciller, et aux orcs, qui le mangent en faisant semblant de ne pas ciller. Je sers les deux avec le même visage impassible. Mangez-le avec les doigts. Personne dans ma cuisine ne vous jugera.
 
 ## 18238 Jaune-queue tacheté
 
-Ferme et gras, des eaux chaudes au large de Tanaris, et d'autant meilleur qu'on en fait moins. Une poêle chaude, un seul retournement. L'odeur quand il est cuit est nette et vive, comme une brise marine qui n'a pas encore rencontré les quais. Mes élèves veulent ajouter des choses. Je leur retire le pot d'épices et le leur rends une fois le poisson mangé. La plupart ne le redemandent jamais.
+Ferme et gras, venu des eaux chaudes au large de Tanaris, il est d'autant meilleur qu'on en fait moins. Couchez-le dans une poêle chaude et laissez-le jusqu'à ce que le bord blanchisse, puis retournez-le. L'odeur, quand il est cuit, est nette et vive, comme une brise marine qui n'a pas encore rencontré les quais. Mes élèves veulent ajouter des choses. Je leur retire le pot d'épices et le leur rends une fois le poisson mangé. La plupart ne le redemandent jamais.
 
 ## 18240 Calmar grillé
 
@@ -117,7 +117,7 @@ Une eau qui ne bout jamais tout à fait, pour un poisson qui se déferait sous t
 
 ## 1250158 Linguines aux palourdes
 
-Il n'y a pas de pâtes dedans, quoi que promette le nom. Il y a de la chair de palourde piquante, en grande quantité, taillée en longs rubans et enrobée d'épices apaisantes. Cuisez un instant dans une poêle chaude et servez aussitôt, emmêlé. Cela se mange comme des pâtes et sent la mer. Je ne sais pas qui l'a inventé. Je soupçonne un cuisinier qui n'avait pas de farine et beaucoup de palourdes, et qui ne s'en est pas plaint.
+Il n'y a pas de pâtes dedans, quoi que promette le nom. Il y a de la chair de palourde piquante, taillée en longs rubans et enrobée d'épices apaisantes. Cuisez-la un instant dans une poêle chaude et servez aussitôt, tout emmêlée. Cela se mange comme des pâtes et sent la mer. Je ne sais pas qui l'a inventée. J'imagine un cuisinier qui n'avait pas de farine et beaucoup de palourdes, et qui ne s'en est pas plaint.
 
 ## 18247 Pain de saumon
 

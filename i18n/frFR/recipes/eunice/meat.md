@@ -29,7 +29,7 @@ Les cuisiniers de Durotar ont envoyé ce plat vers le nord par les premiers zepp
 
 ## 1250156 Délicieuses bouchées au raptor
 
-Un oeuf de raptor est gros comme mes deux poings, et quand on le casse il sent un peu le marais où sa mère a marché. L'épice est là pour répondre à cette odeur, et il y en a beaucoup. Battez l'oeuf, assaisonnez-le et cuisez-le en petits disques sur une pierre chaude. Les disques gonflent quand ils sont cuits. Mes élèves les mangent avant que je puisse les compter, ce qui me dit que la recette fonctionne.
+Un oeuf de raptor est gros comme mes deux poings, et quand on le casse, il sent un peu le marais où sa mère a marché. L'épice est là pour répondre à cette odeur, et il en faut beaucoup pour lui répondre. Battez l'oeuf, assaisonnez-le et cuisez-le en petits disques sur une pierre chaude. Les disques gonflent quand ils sont cuits. Mes élèves les mangent avant que j'aie pu les compter, ce qui me dit que la recette fonctionne.
 
 ## 2795 Côtes de sanglier à la bière
 
@@ -53,7 +53,7 @@ Chaque automne, les fermes de Lordaeron faisaient le boudin, et chaque automne l
 
 ## 1250154 Émincé de raptor aux deux épices
 
-On l'épice avant et après, parce que le raptor est maigre et que la première couche s'en va à la cuisson. J'ai appris à sentir le moment entre les deux. Quand les tranches cessent de siffler et se mettent à cliqueter, comme une poêle qui refroidit, retirez-les et assaisonnez-les de nouveau tant qu'elles sont assez chaudes pour boire l'épice. Mes élèves oublient toujours la seconde couche. Le plat les dénonce. Il sent la moitié d'une recette.
+C'est le seul plat où je romps ma propre règle, l'épice avant le feu, pour assaisonner aussi à la fin, parce que le raptor est maigre et que la première couche s'en va à la cuisson. J'ai appris à sentir le moment entre les deux. Quand les tranches cessent de siffler et se mettent à cliqueter, comme une poêle qui refroidit, retirez-les et assaisonnez-les de nouveau tant qu'elles sont assez chaudes pour boire l'épice. Mes élèves oublient toujours la seconde couche. Le plat les dénonce. Il sent la moitié d'une recette.
 
 ## 3370 Steak de crocilisque
 
@@ -61,7 +61,7 @@ Le crocilisque arrive à Fossoyeuse depuis les Paluns, par des gens qui préfèr
 
 ## 2546 Côtes de porc séchées
 
-Pas de sauce, seulement des épices, un feu doux et un après-midi entier, comme les fermes les cuisaient à la fin de la moisson, ou au début, je ne sais plus. Les côtes sont prêtes quand les os dépassent d'un doigt aux extrémités et que l'odeur est passée de la viande à quelque chose de plus proche du pain grillé. Je les sers sur du papier, à des gens qui mangent avec les doigts et se moquent qu'on les voie. Ici, à Fossoyeuse, c'est presque tout le monde.
+Pas de sauce, seulement l'épice, un feu bas et un après-midi entier, comme les fermes les cuisaient à la moisson. J'ai oublié laquelle. Les côtes sont prêtes quand les os dépassent d'un doigt aux extrémités et que l'odeur est passée de la viande à quelque chose de proche du pain grillé. Je les sers sur du papier, à des gens qui mangent avec les doigts et se moquent qu'on les voie. À Fossoyeuse, c'est presque tout le monde.
 
 ## 6418 Queue de lézard croquante
 
@@ -69,11 +69,11 @@ Les Tarides m'ont appris celui-ci, avec la patience et le respect de tout ce qui
 
 ## 2549 Kébab de loup assaisonné
 
-Herbes aromatiques de Stormwind, dit le sachet, et elles sentent exactement comme je me souviens du marché de l'ancienne capitale, c'est-à-dire que je ne saurais vous dire si ce souvenir est celui de Hurlevent, de Lordaeron ou d'un rêve. Le loup s'en moque. Enfilez la viande en laissant de l'espace entre les morceaux, pour que la chaleur atteigne chaque face, et guettez la graisse qui crache. Quand elle cesse de cracher et se met à chanter, retournez les brochettes.
+Herbes aromatiques de Stormwind, dit le sachet, et elles sentent exactement un marché dont je me souviens. Où se tenait ce marché, je ne le sais plus. Le loup s'en moque. Enfilez la viande en laissant de l'espace entre les morceaux, pour que la chaleur atteigne chaque face, et écoutez la graisse crachoter. Quand elle cesse de crachoter et se met à chanter, retournez les brochettes. La première va à celui qui attend depuis le plus longtemps.
 
 ## 2548 Côtes de porc aux herbes
 
-Deux portions de côtes et des épices fortes, retournées toutes les quelques minutes pour que la graisse arrose la viande en fondant. Retourner, c'est la recette. Une côte laissée à elle-même brûle dessous et boude dessus. Une côte souvent retournée en sort brillante et généreuse. Un fermier m'a appris cela, un voisin, je crois, avec une barbe rousse, ou une grange rouge. Je donne celui-ci aux élèves qui croient que cuisiner, c'est attendre. Ce n'est pas le cas. C'est faire attention pendant qu'on attend.
+Je retourne très souvent ces côtes aux épices fortes, pour que la graisse arrose la viande en fondant. Retourner, c'est la recette. Une côte laissée à elle-même brûle dessous et boude dessus. Une côte souvent retournée en sort luisante et généreuse. Un fermier m'a appris cela, un voisin, je crois, avec une barbe rousse, ou une grange rouge. Je donne celle-ci aux élèves qui croient que cuisiner, c'est attendre. Ce n'est pas cela. C'est faire attention pendant qu'on attend.
 
 ## 3397 Steak de grand ours
 
@@ -81,7 +81,7 @@ Les ours du sud sont plus grands que les nôtres, et leur viande est plus sombre
 
 ## 6419 Venaison dégraissée
 
-Il y avait des cerfs dans les bois au-dessus de la ferme, et mon père, ou mon oncle, ou un voisin avec un arc, en abattait un chaque automne. Le visage est parti. L'odeur de la viande dans la poêle, non. La venaison est maigre et fière et veut beaucoup d'épices et très peu de feu. Retirez-la tant que le coeur est encore sombre. Une viande maigre cuite à coeur n'a le goût que du regret.
+Il y avait des cerfs dans les bois au-dessus de la ferme, et mon père, ou mon oncle, ou un voisin avec un arc, en abattait un chaque automne. Le visage s'est effacé. L'odeur de la viande dans la poêle, non. La venaison est maigre et fière, et veut beaucoup d'épices et très peu de feu. Retirez-la tant que le coeur est encore sombre. Une viande maigre cuite à coeur ne sent plus que le regret.
 
 ## 15853 Steak de loup
 
@@ -89,7 +89,7 @@ Un steak tout simple, pris au flanc d'un loup, avec une pincée d'épices et rie
 
 ## 3398 Côtelettes de lion épicées
 
-Les lions des Tarides sont maigres et doux près de l'os, alors les côtelettes restent sur l'os. Des épices fortes, un feu modéré et beaucoup de retournements. Je ne peux pas vous dire à quel point elles sont relevées. Je peux vous dire que les orcs de la Croisée en redemandent à chaque fois et que les trolls en veulent moins, alors je fais deux poêles et je les laisse se disputer pour savoir laquelle est la bonne.
+Les lions des Tarides sont maigres et doux près de l'os, alors les côtelettes restent sur l'os. Des épices fortes, un feu modéré, et beaucoup de retournements. La force du piquant, c'est aux autres d'en juger, et ils ne s'en privent pas. Les orcs de la Croisée réclament plus d'épices à chaque fois et les trolls moins, alors je fais deux poêles et je les laisse se disputer pour savoir laquelle est la bonne.
 
 ## 3399 Délicieux steak de lion
 
@@ -97,7 +97,7 @@ Du lion cuit en steak plutôt qu'en côtelettes, avec des épices apaisantes pou
 
 ## 1250151 Poitrine d'ours
 
-Le morceau le plus dur de l'animal le plus dur, et la raison pour laquelle un cuisinier apprend à garder un feu bas. Frottez la poitrine d'épices fortes et laissez-la cuire une journée entière, jusqu'à ce qu'elle cède sous la fourchette comme du pain mouillé. On ne peut pas la presser. On peut seulement la regarder, et la sentir passer du fer cru à la fumée, puis à quelque chose de riche et de sombre. Quand elle sent un soir d'hiver, elle est prête.
+Mes élèves apprennent à garder le feu bas pour celui-ci, le morceau le plus dur de l'animal le plus dur. Frottez la poitrine d'épices fortes et laissez-la cuire une journée entière, jusqu'à ce qu'elle cède sous la fourchette comme du pain mouillé. On ne peut pas la brusquer. On peut seulement la regarder, et la sentir passer du fer cru à la fumée, puis à quelque chose de riche et de sombre. Quand elle sent un soir d'hiver, elle est prête.
 
 ## 4094 Aile de busard grillée
 
@@ -117,7 +117,7 @@ Les camps de Strangleronce rôtissent le raptor en gros morceaux, et moi aussi, 
 
 ## 1250150 Côtelettes de raptor bouillantes
 
-Une recette que j'ai lue sans qu'on me l'ait jamais vendue, ce qui me la rend suspecte. Les côtelettes cuisent à feu doux jusqu'à ce que la viande lâche l'os, puis sur une flamme féroce pour fixer une croûte d'épices fortes, et il y en a beaucoup. La fumée seule m'a fait monter les larmes aux yeux. Je ne peux pas vous dire à quel point elles sont fortes. Je peux vous dire que personne de ceux à qui je les ai servies n'a demandé plus d'épices.
+J'ai lu cette recette sans qu'on me l'ait jamais vendue, ce qui me la rend suspecte. Les côtelettes cuisent à feu bas jusqu'à ce que la viande lâche l'os, puis sur une flamme féroce pour fixer une épaisse croûte d'épices fortes. La fumée seule m'a fait pleurer, et personne de ceux que j'ai nourris n'a demandé plus d'épices. La croûte doit se briser comme du sucre brûlé sous le couteau. Si elle plie, les côtelettes retournent sur la flamme.
 
 ## 1295834 Bonne vieille viande de brochepâle
 
@@ -125,15 +125,15 @@ Du sanglier rôti sur l'os avec un peu d'épices douces et rien d'autre, comme l
 
 ## 21175 Saucisse d'araignée
 
-Les araignées sont la seule chose dont Fossoyeuse ne manque jamais. La viande d'araignée blanche est douce et délicate et ne prend aucune épice, ce qui est une bénédiction dans une ville qui sent tout. Pressez-la dans des boyaux assez fermes pour tenir et assez fins pour craquer. Dans la poêle, guettez le claquement. C'est le bruit le plus satisfaisant de ma cuisine, et mes élèves apprennent à l'attendre.
+Les araignées sont la seule chose dont Fossoyeuse ne manque jamais. La viande d'araignée blanche est douce et délicate et ne prend aucune épice, ce qui est une grâce dans une ville qui sent tout. Pressez-la bien serrée à la main pour qu'elle tienne, et faites-la frire jusqu'à ce que le dehors croustille. Dans la poêle, écoutez la croûte claquer sous la cuillère. C'est le bruit le plus satisfaisant de ma cuisine, et mes élèves apprennent à l'attendre.
 
 ## 1250153 Paupiette de raptor
 
-De fines tranches de raptor roulées autour d'épices fortes et ficelées. Les rouleaux cuisent de l'extérieur vers l'intérieur, alors gardez le dernier tour fin. Dorez-les sur toutes les faces, puis baissez le feu et laissez-les. Quand la ficelle fonce et sent le foin brûlé, retirez-la avant que quelqu'un la voie. Un invité pardonne beaucoup de choses, mais pas la ficelle. C'est un invité qui me l'a appris.
+Je roule de fines tranches de raptor autour des épices fortes et je les ficelle. Les rouleaux cuisent de l'extérieur vers l'intérieur, alors gardez le dernier tour fin. Dorez-les sur toutes les faces, puis baissez le feu et laissez-les. Quand la ficelle fonce et sent le foin brûlé, coupez-la avant que quelqu'un la voie. Un invité pardonne beaucoup de choses, mais pas la ficelle. C'est un invité qui me l'a appris.
 
 ## 1250142 Mini-burgers de cerf savoureux
 
-De petites galettes de cerf haché et d'épices fortes, pressées une fois et frites vite. Pressez-les deux fois et le jus file dans la poêle au lieu de l'invité. Les vivants aiment la nourriture qui se mange d'une main. J'ai vu des dockers de la tour des zeppelins en finir une douzaine entre deux arrivées et retourner au travail sans un mot. C'est la seule critique qui compte.
+Les vivants aiment la nourriture qui se mange d'une main, et la voici : du cerf haché fin avec des épices fortes, pressé une fois en petites galettes et frit vite. Pressez-les deux fois et le jus file dans la poêle au lieu d'aller à l'invité. J'ai vu des dockers de la tour des zeppelins en avaler une douzaine entre deux arrivées et retourner au travail sans un mot. C'est la critique qui compte.
 
 ## 22480 Steak de loup tendre
 
@@ -149,31 +149,31 @@ Du tigre, voilà ce que veut dire le nom, taillé épais et frotté de sels sacr
 
 ## 1250144 Hachis de chauve-souris
 
-Un ragoût de pauvre fermier, de la viande hachée cuite longtemps et doucement. En Lordaeron, c'était du boeuf, quand il y avait du boeuf, ou du moins je le crois. Ici, c'est de la chauve-souris. Hachez les ailes fin, ajoutez les épices apaisantes et donnez-lui un feu doux pendant une soirée, jusqu'à ce que les tendons fondent et que la cuisine sente le clou de girofle et quelque chose comme la maison. Mes élèves l'appellent la bouillie de chauve-souris. Moi, je l'appelle le souper.
+De pauvres fermiers faisaient ce ragoût, de la viande hachée cuite longtemps et doucement. En Lordaeron, c'était du boeuf, quand il y avait du boeuf, ou je crois que c'en était. Ici, c'est de la chauve-souris. Hachez fin les ailes, ajoutez les épices apaisantes et donnez-lui un feu bas pendant une soirée, jusqu'à ce que les tendons s'attendrissent et que la cuisine sente l'épice et quelque chose comme la maison. Mes élèves l'appellent la bouillie de chauve-souris. Moi, je l'appelle le souper.
 
 ## 1250147 Bruscitt d’ours
 
-De fines tranches de viande de grand ours en couches avec des épices apaisantes, rôties lentement jusqu'à ce que les couches se soudent. Tranchez la viande froide, sinon elle se déchire. L'odeur quand c'est prêt est le meilleur moment, sombre et douce, proche du sucre brûlé. Le nom ne me dit rien, ni à aucun de ceux à qui j'ai demandé. Celui qui l'a nommé faisait le malin. Celui qui l'a cuisiné le premier, non.
+Mes élèves se souviennent de celui-ci à son odeur : de la viande de grand ours en fines tranches, en couches avec des épices apaisantes, rôtie lentement jusqu'à ce que les couches se soudent en une seule. Tranchez la viande froide, sinon elle se déchire. Le meilleur, c'est l'odeur quand c'est prêt, sombre et douce, proche du sucre brûlé. Le nom ne me dit rien, ni à aucun de ceux à qui je l'ai demandé. Celui qui l'a nommé faisait le malin. Celui qui l'a cuisiné le premier, non.
 
 ## 1250152 Effiloché de raptor préhistorique
 
-Du raptor cuit presque une journée sur le plus petit feu que je puisse tenir, avec beaucoup d'épices apaisantes, jusqu'à ce qu'il se défasse au contact d'une fourchette. Effilochez-le à deux fourchettes, jamais au couteau. Les gardes noirs l'adorent parce qu'il se conserve et qu'il se mange dans un bol en marchant. Préhistorique, dit-il de lui-même. Les manières de certains de mes élèves aussi.
+Les gardes noirs adorent celui-ci parce qu'il se garde. Le raptor cuit presque une journée sur le feu le plus bas que je puisse tenir, avec beaucoup d'épices apaisantes, jusqu'à se défaire au contact d'une fourchette. Effilochez-le à deux fourchettes, jamais au couteau. Il se mange dans un bol en marchant, ce qui leur convient. Il se dit préhistorique. Les manières de certains de mes élèves le sont aussi.
 
 ## 1250143 Pamplona d’envergure
 
-Des ailes de busard, désossées et aplaties, roulées autour d'épices apaisantes et ficelées. C'est un travail lent et minutieux, et je le donne aux élèves qui sont fiers de leur couteau. Rôtissez doucement et tranchez en rondelles. La spirale à l'intérieur me dit tout du cuisinier qui l'a roulée. Une spirale serrée, une main soigneuse. Une spirale lâche, quelqu'un qui pensait au déjeuner.
+Mes élèves fiers de leur couteau héritent de celui-ci : des ailes de busard désossées et battues à plat, roulées autour des épices apaisantes et ficelées. C'est un travail lent et minutieux, et je vérifie chaque rouleau avant qu'il aille au four. Rôtissez doucement et tranchez en rondelles. La spirale à l'intérieur me dit tout du cuisinier qui l'a roulée. Une spirale serrée, une main soigneuse. Une spirale lâche, quelqu'un qui pensait au déjeuner.
 
 ## 1250148 Steak de cerf fumant
 
-Du cerf, frotté d'épices apaisantes et saisi sur un fer très chaud, servi aussitôt, tant qu'il fume encore. La vapeur porte l'odeur, et l'odeur est la moitié du repas pour qui peut goûter, et tout le repas pour moi. Ne le faites pas attendre. Un steak qui cesse de fumer a commencé à refroidir, et un steak froid est une promesse que quelqu'un a rompue entre la cuisine et la table.
+Je frotte le cerf profondément d'épices apaisantes, je le saisis sur un fer très chaud et je le sers aussitôt, tant qu'il fume encore. La vapeur porte l'odeur, et l'odeur est la moitié du repas pour qui peut goûter, et tout le repas pour moi. Ne le faites pas attendre. Un steak qui cesse de fumer a commencé à refroidir, et un steak froid est une promesse que quelqu'un a rompue entre la cuisine et la table.
 
 ## 1250149 Steak de frappe rapide
 
-Du tigre et des épices apaisantes, le feu le plus vif que vous puissiez faire, le temps le plus court que vous puissiez supporter. Le nom est celui d'un chasseur. La méthode est celle d'un cuisinier. Frappez vite, puis laissez reposer longtemps, et c'est au repos que tout le monde échoue, parce que l'odeur est merveilleuse et que la fourchette est juste là. Je fais asseoir mes élèves sur leurs mains. La première fois, au sens propre.
+Donnez à la viande de tigre ses épices apaisantes, le feu le plus vif que vous puissiez faire et le temps le plus court que vous puissiez supporter. Le nom est celui d'un chasseur. La méthode est celle d'un cuisinier. Frappez vite, puis laissez reposer longtemps, et c'est au repos que tout le monde échoue, parce que l'odeur est merveilleuse et que la fourchette est juste là. Je fais asseoir mes élèves sur leurs mains, et je ne plaisante pas. J'ai appris la méthode d'un chasseur qui ne savait pas attendre non plus.
 
 ## 1250146 Flanchet au poivre
 
-Il n'y a pas de poivre dedans, quoi qu'en dise le nom, seulement du flanchet de loup rouge et des épices apaisantes, qui font assez bien le travail du poivre. Saisissez le flanchet fort, laissez-le reposer pendant que la poêle refroidit, puis reversez son jus par-dessus. L'odeur quand le jus retrouve la viande chaude est tout l'intérêt du plat. Je le sers aux apothicaires quand je veux obtenir quelque chose d'eux, et cela marche.
+J'ai cherché le poivre dans cette recette sans en trouver, quoi qu'en dise le nom, seulement du flanc de loup rouge et des épices apaisantes, qui font assez bien le travail du poivre. Saisissez le flanc fort, laissez-le reposer pendant que la poêle refroidit, puis reversez son jus par-dessus. L'odeur quand le jus retrouve la viande chaude est tout l'intérêt du plat. Je le sers aux apothicaires quand je veux obtenir quelque chose d'eux, et cela marche.
 
 ## 25659 Pyro-côtelettes de chimaerok à la Dirge
 

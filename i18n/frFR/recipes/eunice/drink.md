@@ -5,7 +5,7 @@ chapter: drink
 
 ## 1249957 Thé de sérénité
 
-Du pacifique infusé dans de l'eau de source jusqu'à ce que l'eau prenne la couleur de la paille. Ne le faites pas bouillir, ou il sentira le foin et rien d'autre. Laissez-le infuser, et il sentira la lisière d'un champ le soir, derrière une maison que je ne situe plus, et c'est encore la meilleure odeur que je connaisse. Les trolls Frostmane en font, dit la recette. J'en prépare pour les apothicaires, qui ont plus besoin de paix que quiconque et en reçoivent moins que tout le monde.
+Du pacifique infusé dans de l'eau de source jusqu'à ce que l'eau prenne la couleur de la paille. Ne le faites pas bouillir, sinon il sentira le foin et rien d'autre. Laissez-le infuser, et il sentira la lisière d'un champ le soir, qui reste la meilleure odeur que je connaisse. Les trolls Frostmane en font, dit la recette. J'en prépare pour les apothicaires, qui ont plus besoin de paix que quiconque et en reçoivent moins.
 
 ## 1249963 Frappé venimeux
 
@@ -33,23 +33,23 @@ Je n'essaierai pas de prononcer le nom. Du jus de melon, des épices fortes et u
 
 ## 1249959 Thé aux racines
 
-De la vietérule, lavée et tranchée, infusée dans du jus de melon tiède jusqu'à ce que le jus fonce et sente à la fois la terre et l'été. Filtrez avec soin, parce qu'une racine laissée trop longtemps donne au thé le goût du sol. Je ne peux pas le goûter, mais je sens le sol arriver, une note lourde et humide sous la douceur. Retirez la racine avant qu'elle ne vienne. Les vivants le remarquent. Ils remarquent toujours ce que je ne peux pas sentir.
+De la vietérule, lavée et tranchée, infusée dans du jus de melon tiède jusqu'à ce que le jus fonce et sente à la fois la terre et l'été. Filtrez avec soin, parce qu'une racine laissée trop longtemps donne au thé le goût du sol. Je ne peux pas le goûter, mais je sens le sol arriver, une note lourde et humide sous la douceur. Retirez la racine avant que cette note n'arrive. Les vivants le remarquent. Ils remarquent toujours ce que je ne peux pas goûter.
 
 ## 13028 Thé de dorépine
 
-Une dorépine donne quatre tasses, ce qui vous dit sa force. Infusez-la dans une eau tout juste retirée du feu jusqu'à ce qu'elle prenne la couleur du vieux laiton, puis filtrez fort. L'odeur est vive et claire, comme une épée qu'on astique. Tous les gardes noirs des remparts en boivent, et aucun n'en a besoin. Ils ne le goûtent pas mieux que moi. Je crois qu'ils aiment la chaleur de la tasse entre leurs mains. Je ne leur ai jamais demandé.
+Un peu de dorépine va loin, ce qui vous dit sa force. Infusez-la dans une eau tout juste retirée du feu jusqu'à ce qu'elle prenne la couleur du vieux laiton, puis filtrez fort. L'odeur est vive et claire, comme une épée qu'on astique. Tous les gardes noirs des remparts en boivent, et aucun n'en a besoin. Ils ne le goûtent pas mieux que moi. Je crois qu'ils aiment la chaleur de la tasse entre leurs mains. Je ne leur ai jamais demandé.
 
 ## 1249966 Frappé calcifié
 
-Du nectar sucré, des épices fortes et un grand croc réduit en poudre. Le croc rend la boisson crayeuse et épaisse, comme du lait oublié au soleil. Filtrez-la bien, deux fois, parce qu'une boisson qui crisse sous la dent est la seule chose que personne ne pardonne. Les vivants qui se battent pour gagner leur vie en boivent le matin. Les gardes noirs, qui se battent pour gagner leur vie et ne vivent pas, en boivent par solidarité.
+Du nectar sucré, des épices fortes et un grand croc réduit en poudre. Le croc rend la boisson crayeuse et épaisse, comme du lait oublié au soleil. Filtrez-la bien, deux fois, parce qu'une boisson qui crisse sous la dent est la seule chose que personne ne pardonne. Je la prépare le soir et la laisse reposer la nuit, seule façon de faire tomber le reste de craie. Les soldats en boivent le matin. Les gardes noirs, qui se battent et ne vivent pas, en boivent par solidarité.
 
 ## 1249960 Thé de triage
 
-Du nectar sucré et de la pâlerette, un thé pour les blessés, bien que la pâlerette soit ce que mâchent les voleurs pour disparaître. Peut-être les blessés aimeraient-ils disparaître aussi. Chauffez le nectar jusqu'à ce qu'il fume, faites infuser la pâlerette et filtrez avant qu'elle ne devienne amère. On ne m'a pas vendu cette recette. Je l'ai faite d'après une description, pour les patients des apothicaires, qui ne se sont pas plaints, mais il faut dire qu'ils le peuvent rarement.
+Du nectar sucré et de la pâlerette, un thé pour les blessés, bien que la pâlerette soit ce que mâchent les voleurs pour disparaître. Peut-être les blessés aimeraient-ils disparaître aussi. Chauffez le nectar jusqu'à ce qu'il fume, faites infuser la pâlerette et filtrez avant qu'elle ne devienne amère. Personne ne m'a vendu cette recette. Je l'ai faite d'après une description, pour les patients des apothicaires, qui l'ont bue sans un mot.
 
 ## 1249967 Frappé épicé
 
-Du jus de baie lunaire, des épices apaisantes et un petit sac de flammes, percé et pressé dans le verre. Le sac de flammes chauffe et l'épice s'excuse. Secouez et buvez vite. Je ne peux pas vous dire à quel point c'est brûlant. Je peux vous dire que j'ai vu un jour un orc en boire un, puis rester immobile très longtemps, les yeux au plafond, comme si le plafond l'avait insulté.
+Du jus de baie lunaire, des épices apaisantes et un petit sac de flammes, percé et pressé dans le verre. Le sac de flammes chauffe, et l'épice adoucit le coup. Secouez et buvez vite. Je ne peux pas vous dire à quel point c'est brûlant. Je peux vous dire que j'ai vu un jour un orc en boire un, puis rester immobile très longtemps, les yeux au plafond, comme si le plafond l'avait insulté.
 
 ## 1249961 Thé du soleil
 

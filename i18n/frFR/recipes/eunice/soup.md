@@ -9,7 +9,7 @@ Une fleur gangrenée, purifiée par les druides pour qu'elle ne fasse plus ce qu
 
 ## 6416 Brouet de trotteur
 
-Du trotteur et de la pomme, le premier ragoût des Tarides. La pomme entre avec la viande et fond jusqu'à disparaître, et quand on ne la trouve plus dans la marmite, le ragoût est prêt. Le trotteur est un oiseau têtu. La pomme le raisonne. Je le prépare pour les orcs qui regrettent leur pays et pour les trolls qui n'ont jamais eu de pays à regretter, et ils le mangent tous de la même façon, très vite.
+Du trotteur et de la pomme, le premier ragoût des Tarides. La pomme entre avec la viande et fond jusqu'à disparaître, et quand on ne la trouve plus dans la marmite, le ragoût est prêt. Le trotteur est un oiseau têtu. La pomme l'adoucit. Je le prépare pour les orcs qui regrettent leur pays et pour les trolls qui regrettent un pays disparu, et ils le mangent tous de la même façon, très vite.
 
 ## 2543 Ragoût de la marche de l'Ouest
 
@@ -17,7 +17,7 @@ Un ragoût de fermier du sud, fait de ce que la terre donne quand elle donne tr�
 
 ## 6501 Soupe de palourdes
 
-Il y avait à Austrivage une maison qui servait de la soupe de palourdes, ou une femme qui en vendait sur le pas de sa porte, et l'odeur portait jusqu'au port. Je me souviens exactement de l'odeur et pas du tout de la porte. Chauffez doucement le lait glacé, ajoutez la chair de palourde et une pincée d'épices douces, et restez sous le frémissement. Le lait qui bout tranche, et on le sent arriver, une note aigre dans la vapeur. Si vous la sentez, recommencez.
+Quelqu'un, à Austrivage, vendait de la soupe de palourdes à une porte près du port, et l'odeur courait le long du quai. Je me souviens exactement de l'odeur, et pas du tout de la porte. Chauffez doucement le lait, ajoutez la chair de palourde et une pincée d'épices douces, et restez sous le frémissement. Le lait qui bout tranche, et on le sent arriver, une note aigre dans la vapeur. Si vous la sentez, recommencez.
 
 ## 6417 Brouet de rat
 
@@ -25,7 +25,7 @@ Les Tarides m'ont appris celui-ci, et Fossoyeuse l'a adopté, parce que nous ne 
 
 ## 3372 Soupe aux ailerons de murloc
 
-Deux ailerons de murloc et des épices fortes, mijotés jusqu'à ce que les ailerons fondent dans le bouillon et le laissent épais et riche, comme un fond d'os. L'odeur est celle de la mer à marée basse, ce qui paraît désagréable et ne l'est pas, une fois que l'épice s'en mêle. Les murlocs de la côte des Pins argentés protesteraient, s'ils savaient. Ils protestent contre presque tout, bruyamment, et j'ai cessé d'écouter depuis longtemps.
+Des ailerons de murloc et des épices fortes, mijotés jusqu'à fondre dans le bouillon et le laisser épais et riche, comme un fond d'os. L'odeur est celle de la mer à marée basse, ce qui paraît désagréable et ne l'est pas, une fois que l'épice s'en mêle. Les murlocs de la côte des Pins argentés protesteraient, s'ils savaient. Ils protestent contre presque tout, bruyamment, et j'ai cessé d'écouter depuis longtemps.
 
 ## 2547 Goulash des Carmines
 
@@ -37,7 +37,7 @@ De la viande de crocilisque tendre et des épices fortes, réduites jusqu'à ce 
 
 ## 24418 Ragoût épais de crocilisque
 
-Deux fois plus de crocilisque, des épices apaisantes, et un ragoût où une cuillère tient debout. Remuez par le fond, souvent, parce qu'un ragoût aussi épais attache et brûle là où vous ne le voyez pas, et l'odeur ne vous trahit que lorsqu'il est trop tard. Les soldats des marais le mangent dans des bols en fer-blanc sous la pluie, me dit-on. Mes gardes noirs le mangent dans des bols en fer-blanc au sec. Les bols en fer-blanc sont les mêmes partout.
+Du crocilisque à pleine marmite, des épices apaisantes, et un ragoût où une cuillère tient debout. Remuez par le fond, souvent, parce qu'un ragoût aussi épais attache et brûle là où vous ne le voyez pas, et l'odeur ne vous trahit que lorsqu'il est trop tard. Les soldats des marais le mangent dans des bols en fer-blanc sous la pluie, m'a-t-on dit. Mes gardes noirs le mangent dans des bols en fer-blanc au sec. Les bols en fer-blanc sont les mêmes partout.
 
 ## 15861 Ragoût de la jungle
 
@@ -45,7 +45,7 @@ De la viande de tigre, de l'eau de source et des pommes, le ragoût de Strangler
 
 ## 15865 Ragoût mystère
 
-De la viande mystère mijotée dans de la bière naine, et pour moi, il n'y a de mystère ni dans l'une ni dans l'autre. Je sens exactement ce qu'était la viande. Je sens la brasserie d'où vient la bière, et ce qu'on a renversé sur son sol. Ici, où l'on démêle les mystères au nez pour gagner sa vie, ce plat tient plutôt de l'autobiographie. Faites-le cuire longtemps et doucement, et ne le laissez jamais bouillir, sinon la bière tourne et vous le sentirez depuis l'escalier. Écumez la marmite pendant qu'elle mijote. La bière rend la viande sombre et tendre et donne au bouillon une amertume que les vivants semblent beaucoup aimer. Les apothicaires, qui devraient être plus avisés, en mangent des quantités et refusent de dire ce qu'ils croient qu'il contient. J'ai cessé de le leur dire. Ils l'apprécient davantage sans savoir, et tout le monde aussi, je crois.
+De la viande mystère mijotée dans de la bière naine, et pour moi, il n'y a de mystère ni dans l'une ni dans l'autre. Je sens exactement ce qu'était la viande. Je sens la brasserie d'où vient la bière, et ce qu'on a renversé sur son sol. Faites-le cuire longtemps et doucement, et ne le laissez jamais bouillir, sinon la bière aigrit et vous le sentirez depuis l'escalier. Écumez la marmite pendant qu'elle mijote. La bière rend la viande sombre et tendre, et donne au bouillon une amertume que les vivants semblent beaucoup aimer. Les apothicaires, qui devraient être plus avisés, en mangent des quantités et refusent de dire ce qu'ils croient qu'il contient. J'en ai vu toute une tablée se disputer là-dessus pendant une soirée. J'ai cessé de le leur dire. Ils l'apprécient davantage sans savoir, et tout le monde aussi, je crois.
 
 ## 3400 Bisque de tortue apaisante
 
@@ -57,15 +57,15 @@ Un ragoût du rivage : du crabe, des yeux de murloc et des épices fortes. Les y
 
 ## 15906 Chili de souffle de dragon
 
-La viande mystère n'a aucun mystère pour moi. Je sens exactement ce qu'elle était, et la plupart du temps je préfère ne pas le dire. Ce sont les Tarides qui m'ont appris ce plat, pas Lordaeron, qui n'a jamais rien mangé qui se défende à ce point. Je ne peux pas vous dire à quel point il est fort. Je peux vous dire que les épices grillées me piquent les yeux, la seule chose que j'en ressens encore, et que le dernier tauren qui a goûté le mien a posé sa cuillère avec beaucoup de précaution avant de demander de l'eau, d'une voix que je ne lui connaissais pas. Percez le sac de flammes avant qu'il n'entre, sinon il se percera tout seul. Faites-le pour des gens que vous aimez, et prévenez-les. Puis regardez leur visage. Le plat est réussi quand ils se taisent.
+La viande mystère entre dans ce plat, et je préfère taire ce que mon nez m'en dit. Ce sont les Tarides qui m'ont appris ce plat, non Lordaeron, qui n'a jamais rien mangé qui se défende à ce point. Je ne peux pas vous dire à quel point ce chili est fort. Je peux vous dire que les épices grillées me piquent les yeux, la seule chose que j'en ressente encore. Le dernier tauren qui a goûté le mien a posé sa cuillère avec beaucoup de précaution et demandé de l'eau d'une voix que je ne lui connaissais pas. Percez le sac de flammes avant qu'il n'entre, sinon il se percera tout seul. J'en fais quand un équipage de zeppelin rentre d'une longue traversée dans le froid. Faites-le pour des gens que vous aimez, et prévenez-les. Puis regardez leur visage. Le plat est réussi quand ils se taisent.
 
 ## 15910 Ragoût épais de kodo
 
-Les kodos de Désolace sont plus lourds que ceux des Tarides, nourris de presque rien, et leur viande est la plus dense que je connaisse. Les taurens m'ont appris ce ragoût, et je n'y ai jamais rien changé, parce qu'il n'y a rien à changer. Deux portions de viande de kodo épaisse, des épices apaisantes et de l'eau de source, et toute une journée sur un feu doux. Vous le sentirez tourner : cru, puis herbeux, puis profond et brun, comme un champ après la pluie. Quelque part dans la soirée, la viande se défait en fils au contact d'une cuillère. C'est le moment, et aucun autre. Je le prépare les jours les plus froids pour les gardes noirs sur les remparts, et je le monte moi-même. Ils n'en ont pas besoin. Ils font la queue quand même, et ils sont très silencieux en mangeant.
+Les kodos de Désolace sont plus lourds que ceux des Tarides, bien que la terre leur donne peu, et leur viande est la plus dense que je connaisse. Les taurens m'ont appris ce ragoût, et je n'y ai jamais rien changé, parce qu'il n'y a rien à changer. De la viande de kodo épaisse, des épices apaisantes et de l'eau de source, et toute une journée sur un feu bas. Vous sentirez l'odeur changer : crue, puis herbeuse, puis profonde et brune, comme un champ après la pluie. Quelque part dans la soirée, la viande se défait en fils au contact d'une cuillère. C'est le moment, et aucun autre. Je le prépare les jours les plus froids pour les gardes noirs sur les remparts au-dessus, et je le monte moi-même. Ils n'en ont pas besoin. Ils font la queue quand même, et ils sont très silencieux en mangeant.
 
 ## 20626 Soupe de palourdes d'Undermine
 
-Une soupe gobeline de Tanaris : de la chair de palourde piquante, des épices fortes et du lait glacé, chauffés ensemble sans jamais bouillir. Les gobelins la mangent brûlante, ce qui vous dit tout des gobelins. Gardez le feu bas et surveillez la vapeur. Quand elle sent la mer et l'épice chaude, et pas encore le lait brûlé, servez à la louche. Le gobelin qui la vend n'en garde qu'un exemplaire à la fois. Je l'ai acheté, et maintenant il y en a deux.
+Une soupe gobeline de Tanaris : de la chair de palourde piquante, des épices fortes et du lait glacé, chauffés ensemble sans jamais bouillir. Les gobelins la mangent brûlante, ce qui vous dit tout des gobelins. Gardez le feu bas et surveillez la vapeur. Quand elle sent la mer et l'épice chaude, et pas encore le lait brûlé, servez à la louche. Le gobelin qui la vend n'en garde qu'un exemplaire à la fois. Je l'ai acheté, alors il a dû s'en écrire un autre.
 
 ## 18243 Soupe de lutjan nagenuit
 
@@ -73,7 +73,7 @@ Un lutjan pêché la nuit, de l'eau de source, et rien d'autre. Faites frémir l
 
 ## 1250145 Ragoût de tortue savoureux
 
-De la tortue mijotée et non tamisée, un ragoût de ferme plutôt qu'une bisque de seigneur. Nous en faisions au bord d'une rivière en Lordaeron, j'en suis presque sûre, même si je ne saurais dire laquelle. Trois portions de tortue et beaucoup d'épices apaisantes, mijotées jusqu'à ce que la viande se défasse. Laissez-le épais. La texture est tout l'intérêt, et l'odeur, ronde, chaude et lente, est la raison pour laquelle les gens restent au comptoir une fois leur bol fini. J'ai cessé de leur demander de partir. Ils partiront quand le bol sera vide, et pas avant.
+Je fais mijoter cette tortue sans jamais la tamiser, parce que c'est un ragoût de ferme et non une bisque de seigneur. Nous en faisions au bord d'une rivière en Lordaeron, j'en suis presque sûre, même si je ne saurais dire laquelle. De la tortue et beaucoup d'épices apaisantes, mijotées jusqu'à ce que la viande se défasse. Laissez-le épais. La texture est tout l'intérêt, et l'odeur, ronde, chaude et lente, est la raison pour laquelle les gens restent au comptoir une fois leur bol fini. J'ai cessé de leur demander de partir. Ils partiront quand le bol sera vide, et pas avant.
 
 ## 18245 Ragoût de homard
 

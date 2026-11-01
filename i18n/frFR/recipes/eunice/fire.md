@@ -13,8 +13,8 @@ Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, avec 
 
 ## 1291341 Feu de camp de spécialiste
 
-Des bûches épaisses, lentes à prendre et lentes à mourir, un feu pour toute une soirée. Disposez-les en carré avec un passage pour l'air et allumez le petit bois dessous. Puis attendez. L'odeur change quand il est prêt, de la fumée verte à la fumée sèche, de l'âcre au doux. C'est le feu d'un spécialiste, et la leçon d'un spécialiste : la meilleure chaleur est celle qu'on a attendue. On ne m'a pas vendu cette recette. Je le bâtis d'après ce qu'on m'en a appris, et on me l'a bien appris.
+Des bûches épaisses, lentes à prendre et lentes à mourir, un feu pour toute une soirée. Disposez-les en carré avec un passage pour l'air et allumez-les par-dessous. Puis attendez. L'odeur change quand il est prêt, de la fumée verte à la fumée sèche, de l'âcre au doux. C'est le feu d'un spécialiste, et la leçon d'un spécialiste : la meilleure chaleur est celle qu'on a attendue. On ne m'a pas vendu cette recette. Je le bâtis d'après ce qu'on m'en a dit, et celui qui me l'a dit savait de quoi il parlait.
 
 ## 1263067 Four en fer
 
-De la farine, de l'eau de source et des épices apaisantes, dix mesures, cinq et quatre, pour un four en fer, dont la recette ne contient pas le moindre fer. Je crois que la pâte est travaillée dans le four neuf et cuite dure, pour le culotter, comme on culotte une poêle neuve. On ne m'a pas vendu la recette. Un marchand gobelin me l'a seulement décrite, persuadé qu'il m'impressionnerait. Il y est parvenu. Je ne le lui ai pas dit. Les gobelins sont insupportables quand ils ont impressionné quelqu'un, et ils le mettent sur la note.
+De la farine, de l'eau de source et des épices apaisantes : voilà toute la recette d'un four en fer. Je crois que la pâte est travaillée dans le four neuf et cuite dure, pour le culotter, comme on culotte une poêle neuve. Je ne l'ai jamais vue en vente. Un marchand gobelin me l'a décrite, persuadé qu'il m'impressionnerait. Il y est parvenu. Je ne le lui ai pas dit. Les gobelins sont insupportables quand ils savent qu'ils ont fait impression, et ils le mettent sur la note.

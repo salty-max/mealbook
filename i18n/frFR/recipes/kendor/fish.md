@@ -13,11 +13,11 @@ Le maquereau est un poisson gras, et la graisse est un cadeau que la plupart des
 
 ## 1247741 Flétan épineux
 
-Un poisson que je n'ai pas encore vu au marché de Hurlevent, même si les pêcheurs en parlent comme de tous les poissons qu'ils n'ont pas pris. Le flétan est un poisson large, blanc et généreux, et celui-ci, armé d'épines, se défend, me dit-on, au bout de la ligne comme en cuisine. Taillez-le épais, cuisez-le doucement, et éprouvez-le du doigt : quand la chair se sépare en lamelles, il est cuit, et une minute plus tard c'est de la craie. Quand on m'en apportera un, j'en dirai davantage, et je le dirai le premier.
+Un poisson que je n'ai pas encore vu au marché de Hurlevent, même si les pêcheurs en parlent comme de tous les poissons qu'ils n'ont pas pris. Le flétan est un poisson large, blanc et généreux, et celui-ci, armé d'épines, se défend, me dit-on, au bout de la ligne comme en cuisine. Taillez-le épais, cuisez-le doucement, et éprouvez-le du doigt : quand la chair se sépare en lamelles, il est cuit, et une minute plus tard c'est de la craie. Quand on m'en apportera un, j'en dirai davantage, et je le dirai le premier.
 
 ## 1270635 Bouchées à la chair de pinces
 
-« La saison des crabes », dit le nom de la quête qui enseigne ce plat, un bien grand titre pour ramasser des pinces sur une plage. On tire la chair des pinces, on la lie à la farine et on la frit une bouchée à la fois. La farine n'est là que pour tenir chaque bouchée en un seul morceau. Une pincée, pas un grain de plus. Une bouchée qui a le goût du pain vous a menti sur la plage.
+« La saison des crabes », dit le nom de la quête qui enseigne ce plat, un bien grand titre pour ramasser des pinces sur une plage. On tire la chair des pinces, on la lie à la farine et on la frit une bouchée à la fois. La farine n'est là que pour tenir chaque bouchée en un seul morceau. Une pincée, pas un grain de plus. Une bouchée qui a le goût du pain vous a menti sur la plage.
 
 ## 6499 Palourdes bouillies
 
@@ -65,7 +65,7 @@ Le poisson-chat est un poisson de rivière, à large gueule et à moustaches, et
 
 ## 6500 Palourdes gobelines
 
-Les gobelins préparent leurs palourdes comme ils font des affaires : avec trop de chaleur et trop de bruit. J'enseigne la recette malgré tout, et je corrige la chaleur. La chair de palourde relevée veut des épices fortes et un feu près duquel vous pouvez tenir la main un instant sans regret. Une palourde sur un feu furieux se réduit à un bouton, et un bouton se mâche. Une palourde bien cuite garde juste assez de combat pour vous rappeler qu'elle vient de la mer. Les gobelins vous feraient payer le bouton deux fois plus cher.
+Les gobelins préparent leurs palourdes comme ils font des affaires : avec trop de chaleur et trop de bruit. J'enseigne la recette malgré tout, et je corrige la chaleur. La chair de palourde relevée veut des épices fortes et un feu près duquel vous pouvez tenir la main un instant sans regret. Une palourde sur un feu furieux se réduit à un bouton, et un bouton se mâche. Une palourde bien cuite garde juste assez de combat pour vous rappeler qu'elle vient de la mer. Les gobelins vous feraient payer le bouton deux fois plus cher.
 
 ## 7828 Morue rochécaille
 
@@ -73,7 +73,7 @@ La morue est le poisson des mers froides et des cuisines honnêtes, et la morue 
 
 ## 7213 Ardeur de palourde géante
 
-Les cuisiniers de Baie-du-Butin saisissent une palourde géante dans les épices fortes et la servent aux pirates, qui mangeraient n'importe quoi qui ne mord pas, et plusieurs choses qui mordent. Je l'ai affinée. La chair de palourde géante est serrée et douce, et l'astuce est le couteau : tranchez-la si fin que la lame se voit au travers, et l'épice atteindra le centre. Puis un feu féroce, et pas longtemps. Une ardeur doit roussir les sourcils du cuisinier et épargner la palourde.
+Les cuisiniers de Baie-du-Butin saisissent une palourde géante dans les épices fortes et la servent aux pirates, qui mangeraient n'importe quoi qui ne mord pas, et plusieurs choses qui mordent. Je l'ai affinée. La chair de palourde géante est serrée et douce, et l'astuce est le couteau : tranchez-la si fin que la lame se voit au travers, et l'épice atteindra le centre. Puis un feu féroce, et pas longtemps. Une ardeur doit roussir les sourcils du cuisinier et épargner la palourde.
 
 ## 20916 Truite tête-mithril
 
@@ -121,7 +121,7 @@ Linguine est le nom d'une longue pâte plate, et la recette, à son honneur, ne 
 
 ## 18247 Pain de saumon
 
-Du saumon blanchécaille, un poisson des rivières froides, cuit entier avec des épices apaisantes dans un four plus tiède que chaud. Un poisson entier cuit de façon égale, là où un filet se dessèche sur les bords, et la peau garde le jus là où il doit être. Glissez une lame le long de l'arête : quand la chair s'en détache d'un seul morceau, le poisson est cuit. La recette se vend à Feralas, et je ferais le voyage pour elle, si Feralas était plus près.
+Du saumon blanchécaille, un poisson des rivières froides, cuit entier avec des épices apaisantes dans un four plus tiède que chaud. Un poisson entier cuit de façon égale, là où un filet se dessèche sur les bords, et la peau garde le jus là où il doit être. Glissez une lame le long de l'arête : quand la chair s'en détache d'un seul morceau, le poisson est cuit. La recette se vend à Feralas, et je ferais le voyage pour elle, si Feralas était plus près.
 
 ## 18246 Steak de barracuda
 
@@ -129,4 +129,4 @@ Le grand barracuda est le seul poisson que je découpe comme du boeuf, parce qu'
 
 ## 470370 Rouget fumé
 
-Une nourriture de soldat venue de Silithus, faite pour la route. Personne ne m'a encore montré qui en vend la recette : c'est un trou dans mon catalogue, non dans mon savoir. Le rouget pend au-dessus d'une fumée lente et froide jusqu'à devenir aussi sec que la route qui l'attend, et pas davantage, sinon ce n'est plus que de l'écorce. Pas d'épices. Les soldats qui l'ont rapporté à Hurlevent voulaient mon approbation. J'ai corrigé la fumée et je le leur ai rendu, ce qui les a plus surpris que ne l'avait fait le désert.
+Une nourriture de soldat venue de Silithus, faite pour la route. Personne ne m'a encore montré qui en vend la recette : c'est un trou dans mon catalogue, non dans mon savoir. Le rouget pend au-dessus d'une fumée lente et froide jusqu'à devenir aussi sec que la route qui l'attend, et pas davantage, sinon ce n'est plus que de l'écorce. Pas d'épices. Les soldats qui l'ont rapporté à Hurlevent voulaient mon approbation. J'ai corrigé la fumée et je le leur ai rendu, ce qui les a plus surpris que ne l'avait fait le désert.

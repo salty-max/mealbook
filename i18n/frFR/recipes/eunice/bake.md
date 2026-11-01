@@ -17,7 +17,7 @@ De la farine et rien d'autre, cuite en petits biscuits pour les créatures qui s
 
 ## 1270633 Soufflé de Mur-Céleste
 
-Des oeufs et un peu de farine, les blancs montés jusqu'à se tenir, incorporés, et cuits sans jamais ouvrir la porte. On ne voit pas un soufflé monter depuis l'extérieur du four, mais on le sent : l'odeur passe de l'oeuf mouillé au pain chaud au moment où il culmine. Sortez-le alors, et portez-le vite. Un soufflé est un souffle retenu. Il n'attendra pas que l'invité ait fini de parler.
+Des oeufs et un peu de farine, les blancs montés jusqu'à se tenir, incorporés, et cuits sans jamais ouvrir la porte. On ne voit pas un soufflé monter depuis l'extérieur du four, mais on le sent : l'odeur passe de l'oeuf mouillé au pain chaud au moment où il culmine. Sortez-le alors, et portez-le vite. Un soufflé est un souffle retenu. Il n'attendra pas que l'invité ait fini de parler.
 
 ## 2542 Tourte au foie de Broche-tripes
 
@@ -41,7 +41,7 @@ Mes élèves redoutent celui-ci. Les oeufs géants et les épices fortes doivent
 
 ## 15933 Omelette monstrueuse
 
-Un oeuf géant nourrit une table, et à Fossoyeuse, une table, c'est quiconque se tient le plus près du fourneau. Les oeufs viennent des grands oiseaux du nord, et la recette des marchands de Gangrebois et du Berceau-de-l'Hiver, qui ne disent jamais où l'on trouve les oeufs. Battez l'oeuf avec les épices apaisantes jusqu'à ce qu'il soit lisse et pâle, puis versez-le dans la plus large poêle que vous ayez, sur un feu modéré, et ramenez les bords à mesure qu'ils prennent. L'odeur vous guide : chaude et ronde d'abord, puis noisette sur les bords. Noisette, c'est le moment de plier. Brun, c'est trop tard. Portez-la à table à deux mains. J'ai vu toute une patrouille de gardes noirs en partager une en silence, avec un grand soin, comme un trésor. Un instant, c'en était un. Puis ils en ont demandé une autre, et c'était le meilleur moment.
+Un oeuf géant nourrit une table, et à Fossoyeuse, une table, c'est quiconque se tient le plus près du fourneau. Les oeufs viennent des grands oiseaux du nord, et la recette des marchands de Gangrebois et du Berceau-de-l'Hiver, qui ne disent jamais où l'on trouve les oeufs. Battez l'oeuf avec les épices apaisantes jusqu'à ce qu'il soit lisse et pâle, puis versez-le dans la plus large poêle que vous ayez, sur un feu modéré, et ramenez les bords à mesure qu'ils prennent. L'odeur vous guide : chaude et ronde d'abord, puis noisette sur les bords. Noisette, c'est le moment de plier. Brun, c'est trop tard. Portez-la à table à deux mains. J'ai vu toute une patrouille de gardes noirs en partager une en silence, avec un grand soin, comme un trésor. Un instant, c'en était un. Puis ils en ont demandé une autre, et c'était le meilleur moment.
 
 ## 1225760 Omelette du Lever de soleil
 
@@ -49,11 +49,11 @@ Des oeufs géants et des sels sacrés, dont on m'avait dit qu'ils me brûleraien
 
 ## 1294014 Confiture patte-douce
 
-Des baies d'Hyjal, réduites lentement avec des épices apaisantes jusqu'à ce qu'une goutte sur une assiette froide se ride quand on la pousse. Le meilleur, c'est l'odeur, et je peux vous le dire avec une certaine autorité : fruit sombre et épice chaude, si sucrée qu'elle en est presque bruyante. Les ours pillent les buissons pour ces baies, dit la recette. Je ferais pareil, si j'étais un ours.
+Des baies d'Hyjal, réduites lentement avec des épices apaisantes jusqu'à ce qu'une goutte sur une assiette froide se ride quand on la pousse. Le meilleur, c'est l'odeur, et je peux vous le dire avec une certaine autorité : fruit sombre et épice chaude, si sucrée qu'elle en est presque bruyante. Les ours pillent les buissons pour ces baies, dit la recette. Je ferais pareil, si j'étais un ours.
 
 ## 22761 Courante-surprise
 
-La recette vient d'un diablotin des ruines de Hache-tripes, qui entraîne quiconque la veut dans une longue course stupide. Un de mes élèves a fait la course et en est revenu avec la recette, deux nouvelles cicatrices et beaucoup à dire sur les diablotins. La racine de courante pousse dans l'ombre de ces ruines, et c'est la meilleure racine que je connaisse, terreuse et douce. Pelez-la, tranchez-la épais et rôtissez-la lentement avec des épices apaisantes jusqu'à ce que les bords foncent et que le coeur cède sous la fourchette. Vous sentirez quand c'est juste : comme des châtaignes au coin d'une rue en hiver. Ce n'est pas mon souvenir, c'est celui de mon élève, qui l'a si bien décrit que je le lui ai emprunté. Les gardes noirs l'aiment parce qu'elle les remplit. Les vivants l'aiment parce qu'elle a le goût, me disent-ils, d'un endroit sûr. J'en fais beaucoup.
+La recette vient d'un diablotin des ruines de Hache-tripes, qui entraîne quiconque la veut dans une longue course stupide. Un de mes élèves a fait la course et en est revenu avec la recette, deux nouvelles cicatrices et beaucoup à dire sur les diablotins. La racine de courante pousse dans l'ombre de ces ruines, et c'est la meilleure racine que je connaisse, terreuse et douce. Pelez-la, tranchez-la épais et rôtissez-la lentement avec des épices apaisantes jusqu'à ce que les bords foncent et que le coeur cède sous la fourchette. Vous sentirez quand c'est juste : comme des châtaignes au coin d'une rue en hiver. Ce n'est pas mon souvenir, c'est celui de mon élève, qui l'a si bien décrit que je le lui ai emprunté. Les gardes noirs l'aiment parce qu'elle les remplit. Les vivants l'aiment parce qu'elle a le goût, me disent-ils, d'un endroit sûr. J'en fais beaucoup.
 
 ## 24801 Boulettes fumées du désert
 

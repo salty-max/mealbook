@@ -37,7 +37,7 @@ Le gombo est un plat des marais, un ragoût épais et sombre que les gens des Pa
 
 ## 24418 Ragoût épais de crocilisque
 
-Épais, dit-il, et ce n'est pas un mensonge : du crocilisque en abondance, avec des épices apaisantes, mijoté jusqu'à tenir plus de la purée que de la soupe. La garnison de Theramore en vit tout l'hiver d'Âprefange et jure que c'est la seule chose chaude du marais. Elle a raison. Le danger d'un ragoût aussi dense, c'est que la chaleur s'amasse au fond de la marmite, alors gardez-y une cuillère de bois en mouvement. La plupart des ragoûts ratés meurent là.
+Épais, dit-il, et ce n'est pas un mensonge : du crocilisque en abondance, avec des épices apaisantes, mijoté jusqu'à tenir plus de la purée que de la soupe. La garnison de Theramore en vit tout l'hiver d'Âprefange et jure que c'est la seule chose chaude du marais. Elle a raison. Le danger d'un ragoût aussi dense, c'est que la chaleur s'amasse au fond de la marmite, alors gardez-y une cuillère de bois en mouvement. La plupart des ragoûts ratés meurent là.
 
 ## 15861 Ragoût de la jungle
 
@@ -45,7 +45,7 @@ Un ragoût de Strangleronce, fait par des soldats qui disposaient de viande de t
 
 ## 15865 Ragoût mystère
 
-Le ragoût mystère, c'est de la viande mystère cuite longuement dans la bière naine, et le mystère est de savoir laquelle des deux fait le plus de travail. Je vais vous le dire : la bière. Une bonne bière naine brunit la viande, la détend et laisse au bouillon une amertume qui couvre une multitude de péchés. Daryl Riknussun l'enseigne à Forgefer comme un plat nain, ce qui est généreux de sa part, puisque les nains n'ont fourni que la bière et les questions. Faites-le cuire longtemps. Quoi que la viande ait été, elle doit l'oublier. Écumez à mesure que l'écume monte. Un bouillon qui bout aigrit la bière et change la viande en ficelle. Servi à Theramore et en Désolace à des gens qui ont cessé de poser des questions, il est, je l'avoue, très bon. J'ai cessé de poser des questions moi aussi. C'était plus facile que je ne le pensais.
+Le ragoût mystère, c'est de la viande mystère cuite longuement dans la bière naine, et le mystère est de savoir laquelle des deux fait le plus de travail. Je vais vous le dire : la bière. Une bonne bière naine brunit la viande, la détend et laisse au bouillon une amertume qui couvre une multitude de péchés. Daryl Riknussun l'enseigne à Forgefer comme un plat nain, ce qui est généreux de sa part, puisque les nains n'ont fourni que la bière et les questions. Faites-le cuire longtemps. Quoi que la viande ait été, elle doit l'oublier. Écumez à mesure que l'écume monte. Un bouillon qui bout aigrit la bière et change la viande en ficelle. Servi à Theramore et en Désolace à des gens qui ont cessé de poser des questions, il est, je l'avoue, très bon. J'ai cessé de poser des questions moi aussi. C'était plus facile que je ne le pensais.
 
 ## 3400 Bisque de tortue apaisante
 
@@ -61,7 +61,7 @@ Ce plat est né d'un pari, dans une taverne où personne n'avoue avoir bu. Il a 
 
 ## 15910 Ragoût épais de kodo
 
-Les kodos de Désolace deviennent plus grands que tous ceux des Tarides en ne mangeant rien du tout, et leur viande est plus dense que toutes celles que je vends. Je n'ai nul besoin de goûter la cuisine de la Horde, et je fais une exception pour ce ragoût, parce qu'il tient moins de la Horde que du kodo, et le kodo n'y est pour rien. Des épices apaisantes, de l'eau de source, et la patience d'une journée, sur un feu si bas qu'il compte à peine pour un feu. La viande entre froide et ressort en fils. Ne la pressez pas, et ne soulevez pas le couvercle toutes les heures pour voir comment elle va. Elle fait ce que fait le kodo : elle prend son temps. En Désolace, on vend cette recette en vue des ossements de kodos qui jonchent la vallée, ce qui me semble un peu indélicat, et parfaitement pratique.
+Les kodos de Désolace deviennent plus grands que tous ceux des Tarides en ne mangeant rien du tout, et leur viande est plus dense que toutes celles que je vends. Je n'ai nul besoin de goûter la cuisine de la Horde, et je fais une exception pour ce ragoût, parce qu'il tient moins de la Horde que du kodo, et le kodo n'y est pour rien. Des épices apaisantes, de l'eau de source, et la patience d'une journée, sur un feu si bas qu'il compte à peine pour un feu. La viande entre froide et ressort en fils. Ne la pressez pas, et ne soulevez pas le couvercle toutes les heures pour voir comment elle va. Elle fait ce que fait le kodo : elle prend son temps. En Désolace, on vend cette recette en vue des ossements de kodos qui jonchent la vallée, ce qui me semble un peu indélicat, et parfaitement pratique.
 
 ## 20626 Soupe de palourdes d'Undermine
 

@@ -13,7 +13,7 @@ Un compagnon doit apprendre que tous les bois ne se valent pas, et le bois d'ét
 
 ## 1291341 Feu de camp de spécialiste
 
-Les bûches épaisses sont le feu d'un maître : une épreuve à allumer, et une fois prises, elles gardent la même chaleur toute la soirée, régulières comme un âtre. Un débutant veut des flammes. Un spécialiste veut des braises qui ne changeront pas d'avis au milieu d'un rôti, et seules les bûches épaisses les lui donnent. Empilez-les pour que l'air monte par le milieu, et attendez qu'elles prennent. La recette n'est pas encore arrivée sur mes étagères, et j'ai interrogé chaque marchand de passage. J'ai vu des cuisiniers qui croyaient ne pas en avoir besoin, et ils n'ont jamais tout à fait été des spécialistes.
+Les bûches épaisses sont le feu d'un maître : une épreuve à allumer, et une fois prises, elles gardent la même chaleur toute la soirée, régulières comme un âtre. Un débutant veut des flammes. Un spécialiste veut des braises qui ne changeront pas d'avis au milieu d'un rôti, et seules les bûches épaisses les lui donnent. Empilez-les pour que l'air monte par le milieu, et attendez qu'elles prennent. La recette n'est pas encore arrivée sur mes étagères, et j'ai interrogé chaque marchand de passage. J'ai vu des cuisiniers qui croyaient ne pas en avoir besoin, et ils n'ont jamais tout à fait été des spécialistes.
 
 ## 1263067 Four en fer
 

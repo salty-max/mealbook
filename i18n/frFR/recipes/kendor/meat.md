@@ -9,7 +9,7 @@ Tout cuisinier commence ici, avec un feu, un couteau et un loup qui n'avait aucu
 
 ## 15935 Aile de chauve-souris croustillante
 
-Cette recette vient de Tirisfal, où les cuisiniers sont morts et les chauves-souris pas encore. Elle m'est parvenue par un marchand en qui j'ai plus confiance qu'en sa marchandise. Je lui accorde ceci : une aile, c'est surtout de la peau, et la peau récompense le cuisinier qui sait la laisser tranquille. Séchez-la, pressez-la à plat dans une poêle de fer bien chaude, et tenez bon jusqu'à ce qu'elle se décolle d'elle-même. Tout l'art est là. Le reste de la cuisine de Tirisfal, je le laisse à Tirisfal.
+Cette recette vient de Tirisfal, où les cuisiniers sont morts et les chauves-souris pas encore. Elle m'est parvenue par un marchand en qui j'ai plus confiance qu'en sa marchandise. Je lui accorde ceci : une aile, c'est surtout de la peau, et la peau récompense le cuisinier qui sait la laisser tranquille. Séchez-la, pressez-la à plat dans une poêle de fer bien chaude, et tenez bon jusqu'à ce qu'elle se décolle d'elle-même. Tout l'art est là. Le reste de la cuisine de Tirisfal, je le laisse à Tirisfal.
 
 ## 2540 Viande de sanglier rôtie
 
@@ -29,7 +29,7 @@ Un plat de la Horde, venu de la poussière de Durotar, et la surprise, c'est que
 
 ## 1250156 Délicieuses bouchées au raptor
 
-Une recette qui traîne dans les nids de raptors, ce qui est soit une plaisanterie, soit un avertissement. Les bouchées se font avec l'oeuf, non avec la bête, et un oeuf de raptor est plus lourd et plus riche que tout ce qu'une poule a jamais pondu. Assaisonnez le blanc plus généreusement que la décence ne le voudrait, et laissez le jaune tranquille, comme toujours : il est assez riche sans vous. Cuisez les bouchées petites et vite. Un oeuf de raptor cuit lentement tourne au caoutchouc par pure rancune. C'est sa mère qui le lui a appris, je n'en doute pas.
+Une recette qui traîne dans les nids de raptors, ce qui est soit une plaisanterie, soit un avertissement. Les bouchées se font avec l'oeuf, non avec la bête, et un oeuf de raptor est plus lourd et plus riche que tout ce qu'une poule a jamais pondu. Assaisonnez le blanc plus généreusement que la décence ne le voudrait, et laissez le jaune tranquille, comme toujours : il est assez riche sans vous. Cuisez les bouchées petites et vite. Un oeuf de raptor cuit lentement tourne au caoutchouc par pure rancune. C'est sa mère qui le lui a appris, je n'en doute pas.
 
 ## 2795 Côtes de sanglier à la bière
 
@@ -37,7 +37,7 @@ Ragnar Thunderbrew croit que cette recette appartient à sa famille. Je la vends
 
 ## 6414 Viande de kodo rôtie
 
-Le kodo est la viande de Mulgore, rôtie là-bas par des taurens qui cuisinent à ciel ouvert, avec la plaine pour cuisine. Je ne me suis jamais tenu sous ce ciel, et je n'en ai pas l'intention. Le kodo est un animal énorme et patient, et sa viande l'est aussi : dure d'abord, généreuse à la fin. Rôtissez-la lentement et accordez-lui un long repos avant le couteau. Les taurens ont raison sur un point, et le voici : certaines viandes ne se laissent presser par personne.
+Le kodo est la viande de Mulgore, rôtie là-bas par des taurens qui cuisinent à ciel ouvert, avec la plaine pour cuisine. Je ne me suis jamais tenu sous ce ciel, et je n'en ai pas l'intention. Le kodo est un animal énorme et patient, et sa viande l'est aussi : dure d'abord, généreuse à la fin. Rôtissez-la lentement et accordez-lui un long repos avant le couteau. Les taurens ont raison sur un point, et le voici : certaines viandes ne se laissent presser par personne.
 
 ## 8607 Viande d'ours fumée
 
@@ -53,11 +53,11 @@ Les nains de Thelsamar font le boudin chaque hiver et en envoient quelques-uns �
 
 ## 1250154 Émincé de raptor aux deux épices
 
-Deux fois épicé, et pour une fois un plat dit la vérité sur lui-même. Le raptor est frotté une fois avant d'être tranché, et une fois après la cuisson. C'est le seul plat où l'épice de la fin a raison d'être : la seconde couche est pour le mordant, non pour la croûte. La chair de raptor est maigre et sèche vite. Tranchez-la en travers des fibres, assez fin pour voir une bougie au travers, et donnez-lui le feu le temps d'un souffle, pas davantage. Une recette que je n'ai pas inventée, et que j'aurais inventée, avec le temps.
+Deux fois épicé, et pour une fois un plat dit la vérité sur lui-même. Le raptor est frotté une fois avant d'être tranché, et une fois après la cuisson. C'est le seul plat où l'épice de la fin a raison d'être : la seconde couche est pour le mordant, non pour la croûte. La chair de raptor est maigre et sèche vite. Tranchez-la en travers des fibres, assez fin pour voir une bougie au travers, et donnez-lui le feu le temps d'un souffle, pas davantage. Une recette que je n'ai pas inventée, et que j'aurais inventée, avec le temps.
 
 ## 3370 Steak de crocilisque
 
-Le crocilisque est le steak de ceux qui trouvent le boeuf trop complaisant. Les Paluns en regorgent, et les chasseurs de Menethil m'apportent les queues dans des tonneaux de saumure. Malgré toutes ces dents, la queue se mange comme un poisson, blanche et serrée, et elle se cuit comme un poisson épais : une chaleur féroce, brève, et une seule fois. Le crocilisque réchauffé le lendemain est une punition que je réserve aux élèves qui l'ont laissé traîner.
+Le crocilisque est le steak de ceux qui trouvent le boeuf trop complaisant. Les Paluns en regorgent, et les chasseurs de Menethil m'apportent les queues dans des tonneaux de saumure. Malgré toutes ces dents, la queue se mange comme un poisson, blanche et serrée, et elle se cuit comme un poisson épais : une chaleur féroce, brève, et une seule fois. Le crocilisque réchauffé le lendemain est une punition que je réserve aux élèves qui l'ont laissé traîner.
 
 ## 2546 Côtes de porc séchées
 
@@ -85,7 +85,7 @@ La venaison est la viande d'un cuisinier bien élevé. Un cerf est maigre et fie
 
 ## 15853 Steak de loup
 
-Un steak sans façon, taillé dans le flanc d'un loup, et la simplicité est la chose la plus difficile à cuisiner. Pas de sauce derrière laquelle se cacher, pas de ragoût pour y enterrer une erreur. Le flanc est maigre : il faut le saisir vite et le laisser reposer longtemps, avec un peu d'épices pour lui rappeler qu'il est un aliment. Saignant, c'est correct. Un peu plus cuit, c'est pardonnable. Au-delà, je vous suggère un autre métier, et j'en connais plusieurs qui se passent de feu.
+Un steak sans façon, taillé dans le flanc d'un loup, et la simplicité est la chose la plus difficile à cuisiner. Pas de sauce derrière laquelle se cacher, pas de ragoût pour y enterrer une erreur. Le flanc est maigre : il faut le saisir vite et le laisser reposer longtemps, avec un peu d'épices pour lui rappeler qu'il est un aliment. Saignant, c'est correct. Un peu plus cuit, c'est pardonnable. Au-delà, je vous suggère un autre métier, et j'en connais plusieurs qui se passent de feu.
 
 ## 3398 Côtelettes de lion épicées
 
@@ -125,15 +125,15 @@ Une recette des Rives Claires, vendue par une femme qui n'a vu aucune raison de 
 
 ## 21175 Saucisse d'araignée
 
-De la viande d'araignée blanche, pressée en saucisse et enseignée par tous les maîtres cuisiniers du royaume comme s'il s'agissait d'une chose ordinaire. Elle ne l'est pas. La chair d'araignée est douce et fine, plus proche du crabe que du porc, et elle ne prend aucune épice parce qu'elle n'en a nul besoin. L'art est dans le pressage : assez serré pour tenir, assez lâche pour rester tendre. Bien des élèves pâlissent au mot araignée. Je leur demande s'ils ont déjà mangé du crabe, et j'attends.
+De la viande d'araignée blanche, pressée en saucisse et enseignée par tous les maîtres cuisiniers du royaume comme s'il s'agissait d'une chose ordinaire. Elle ne l'est pas. La chair d'araignée est douce et fine, plus proche du crabe que du porc, et elle ne prend aucune épice parce qu'elle n'en a nul besoin. L'art est dans le pressage : assez serré pour tenir, assez lâche pour rester tendre. Bien des élèves pâlissent au mot araignée. Je leur demande s'ils ont déjà mangé du crabe, et j'attends.
 
 ## 1250153 Paupiette de raptor
 
-Rouladen est un mot nain, ou une prétention naine sur un mot, et le plat est de la viande roulée : du raptor taillé fin, tartiné d'épices fortes, roulé et ficelé. Plus la tranche est fine, plus vite la chaleur gagne le centre, et un rouleau épais brûle dehors avant que son coeur soit cuit. Colorez d'abord les rouleaux de tous côtés, puis baissez le feu et laissez-les en paix. Coupez la ficelle avant qu'ils ne partent à l'assiette. Une ficelle dans une assiette est l'aveu d'un cuisinier qui a cessé de faire attention.
+Rouladen est un mot nain, ou une prétention naine sur un mot, et le plat est de la viande roulée : du raptor taillé fin, tartiné d'épices fortes, roulé et ficelé. Plus la tranche est fine, plus vite la chaleur gagne le centre, et un rouleau épais brûle dehors avant que son coeur soit cuit. Colorez d'abord les rouleaux de tous côtés, puis baissez le feu et laissez-les en paix. Coupez la ficelle avant qu'ils ne partent à l'assiette. Une ficelle dans une assiette est l'aveu d'un cuisinier qui a cessé de faire attention.
 
 ## 1250142 Mini-burgers de cerf savoureux
 
-Les mini-burgers sont petits et nombreux, comme les jeunes cuisiniers aiment tout. Le cerf est haché fin avec des épices fortes et pressé en galettes de la taille d'une paume. Pressez-les une fois et plus jamais : une galette pressée deux fois laisse son jus dans la poêle, où aucun invité ne le goûtera. Je n'approuve pas la nourriture conçue pour être mangée debout. J'approuve ceux-ci, même si je les mange assis, au couteau.
+Les mini-burgers sont petits et nombreux, comme les jeunes cuisiniers aiment tout. Le cerf est haché fin avec des épices fortes et pressé en galettes de la taille d'une paume. Pressez-les une fois et plus jamais : une galette pressée deux fois laisse son jus dans la poêle, où aucun invité ne le goûtera. Je n'approuve pas la nourriture conçue pour être mangée debout. J'approuve ceux-ci, même si je les mange assis, au couteau.
 
 ## 22480 Steak de loup tendre
 
@@ -153,11 +153,11 @@ Hachee est un vieux mot de ferme pour un ragoût lent de viande hachée, et ici,
 
 ## 1250147 Bruscitt d’ours
 
-Bruscitti. J'ai cherché le mot dans trois langues sans le trouver dans aucune. Le plat est assez simple pour s'expliquer seul : de la viande de grand ours tranchée fin, empilée avec des épices apaisantes entre les tranches, et rôtie lentement jusqu'à ce que la pile ne fasse plus qu'un. L'astuce est de trancher à froid, car la viande tiède se déchire sous la lame. Celui qui a nommé ce plat voulait faire étranger. Le plat, lui, n'a rien à cacher, et je l'aime mieux que son nom.
+Bruscitti. J'ai cherché le mot dans trois langues sans le trouver dans aucune. Le plat est assez simple pour s'expliquer seul : de la viande de grand ours tranchée fin, empilée avec des épices apaisantes entre les tranches, et rôtie lentement jusqu'à ce que la pile ne fasse plus qu'un. L'astuce est de trancher à froid, car la viande tiède se déchire sous la lame. Celui qui a nommé ce plat voulait faire étranger. Le plat, lui, n'a rien à cacher, et je l'aime mieux que son nom.
 
 ## 1250152 Effiloché de raptor préhistorique
 
-Préhistorique, comme si le raptor attendait depuis le commencement du monde qu'on l'effiloche. Peut-être était-ce le cas. C'est un plat de temps, non d'adresse : du raptor, lourd d'épices apaisantes, sur des braises dont vous vérifiez sans cesse qu'elles vivent encore, du matin jusqu'aux lampes du soir. N'y touchez pas. Quand il est prêt, il se rend. Défaites-le à la fourchette, jamais à la lame. Un couteau en fait du raptor tranché, et le raptor tranché est un plat moindre.
+Préhistorique, comme si le raptor attendait depuis le commencement du monde qu'on l'effiloche. Peut-être était-ce le cas. C'est un plat de temps, non d'adresse : du raptor, lourd d'épices apaisantes, sur des braises dont vous vérifiez sans cesse qu'elles vivent encore, du matin jusqu'aux lampes du soir. N'y touchez pas. Quand il est prêt, il se rend. Défaites-le à la fourchette, jamais à la lame. Un couteau en fait du raptor tranché, et le raptor tranché est un plat moindre.
 
 ## 1250143 Pamplona d’envergure
 
@@ -173,7 +173,7 @@ Le tigre de ce plat n'a pas été pris par la foudre, quoi qu'en dise le nom. Il
 
 ## 1250146 Flanchet au poivre
 
-Au poivre, annonce le nom, et la recette n'en contient pas un grain. Elle se contente de flanc de loup rouge et d'épices apaisantes, et l'épice porte si bien la chaleur que personne ne regrette le poivre. Le flanc est un morceau travailleur, qui veut une poêle féroce et une main rapide. Ce que la viande laisse dans la poêle compte autant que la viande : grattez-le et nappez-en le steak avant de servir. Ne le découpez jamais dans la poêle où il a saisi. La poêle se souvient de la chaleur, et la viande aussi.
+Au poivre, annonce le nom, et la recette n'en contient pas un grain. Elle se contente de flanc de loup rouge et d'épices apaisantes, et l'épice porte si bien la chaleur que personne ne regrette le poivre. Le flanc est un morceau travailleur, qui veut une poêle féroce et une main rapide. Ce que la viande laisse dans la poêle compte autant que la viande : grattez-le et nappez-en le steak avant de servir. Ne le découpez jamais dans la poêle où il a saisi. La poêle se souvient de la chaleur, et la viande aussi.
 
 ## 25659 Pyro-côtelettes de chimaerok à la Dirge
 

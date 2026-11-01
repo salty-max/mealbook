@@ -13,7 +13,7 @@ Tous les nouveaux cuisiniers de Tirisfal en font, parce que les chauves-souris s
 
 ## 2540 Viande de sanglier rôtie
 
-En Lordaeron, on rôtissait le sanglier à la moisson, dans une fosse derrière la grange, ou derrière l'auberge, ou derrière la grange de quelqu'un. Je me souviens nettement de la fosse et pas du tout de la grange. Ici, c'est un plat simple pour les jours simples. Rôtissez la viande en morceaux, jamais entière : un sanglier entier prend la journée, et ceux qui l'attendent ne vous la donneront pas. Quand la graisse commence à sentir le sucré plutôt que l'âcre, c'est prêt.
+En Lordaeron, on rôtissait le sanglier à la moisson, dans une fosse derrière la grange, ou derrière l'auberge, ou derrière la grange de quelqu'un. Je me souviens nettement de la fosse et pas du tout de la grange. Ici, c'est un plat simple pour les jours simples. Rôtissez la viande en morceaux, jamais entière : un sanglier entier prend la journée, et ceux qui l'attendent ne vous la donneront pas. Quand la graisse commence à sentir le sucré plutôt que l'âcre, c'est prêt.
 
 ## 6412 Kébab d'araignée kaldorei
 
@@ -133,11 +133,11 @@ Je roule de fines tranches de raptor autour des épices fortes et je les ficelle
 
 ## 1250142 Mini-burgers de cerf savoureux
 
-Les vivants aiment la nourriture qui se mange d'une main, et la voici : du cerf haché fin avec des épices fortes, pressé une fois en petites galettes et frit vite. Pressez-les deux fois et le jus file dans la poêle au lieu d'aller à l'invité. J'ai vu des dockers de la tour des zeppelins en avaler une douzaine entre deux arrivées et retourner au travail sans un mot. C'est la critique qui compte.
+Les vivants aiment la nourriture qui se mange d'une main, et la voici : du cerf haché fin avec des épices fortes, pressé une fois en petites galettes et frit vite. Pressez-les deux fois et le jus file dans la poêle au lieu d'aller à l'invité. J'ai vu des dockers de la tour des zeppelins en avaler une douzaine entre deux arrivées et retourner au travail sans un mot. C'est la critique qui compte.
 
 ## 22480 Steak de loup tendre
 
-Les loups des contrées froides vivent lentement et gardent leur graisse, et leur viande est la meilleure de tous les loups. Des épices apaisantes, une saisie brève et vive, un long repos. Vous sentirez quand c'est prêt : l'épice se réchauffe et la viande devient douce, comme une miche tout juste sortie du four. Mes élèves jurent qu'ils sentent la différence dès la première bouchée, et je les crois, parce qu'ils se taisent. Un cuisinier qui a affronté cent loups faméliques mérite celui-ci. Je le sers à mes meilleurs élèves.
+Les loups des contrées froides vivent lentement et gardent leur graisse, et leur viande est la meilleure de tous les loups. Des épices apaisantes, une saisie brève et vive, un long repos. Vous sentirez quand c'est prêt : l'épice se réchauffe et la viande devient douce, comme une miche tout juste sortie du four. Mes élèves jurent qu'ils sentent la différence dès la première bouchée, et je les crois, parce qu'ils se taisent. Un cuisinier qui a affronté cent loups faméliques mérite celui-ci. Je le sers à mes meilleurs élèves.
 
 ## 1225759 Filet de flanc
 
@@ -153,7 +153,7 @@ De pauvres fermiers faisaient ce ragoût, de la viande hachée cuite longtemps e
 
 ## 1250147 Bruscitt d’ours
 
-Mes élèves se souviennent de celui-ci à son odeur : de la viande de grand ours en fines tranches, en couches avec des épices apaisantes, rôtie lentement jusqu'à ce que les couches se soudent en une seule. Tranchez la viande froide, sinon elle se déchire. Le meilleur, c'est l'odeur quand c'est prêt, sombre et douce, proche du sucre brûlé. Le nom ne me dit rien, ni à aucun de ceux à qui je l'ai demandé. Celui qui l'a nommé faisait le malin. Celui qui l'a cuisiné le premier, non.
+Mes élèves se souviennent de celui-ci à son odeur : de la viande de grand ours en fines tranches, en couches avec des épices apaisantes, rôtie lentement jusqu'à ce que les couches se soudent en une seule. Tranchez la viande froide, sinon elle se déchire. Le meilleur, c'est l'odeur quand c'est prêt, sombre et douce, proche du sucre brûlé. Le nom ne me dit rien, ni à aucun de ceux à qui je l'ai demandé. Celui qui l'a nommé faisait le malin. Celui qui l'a cuisiné le premier, non.
 
 ## 1250152 Effiloché de raptor préhistorique
 
@@ -161,7 +161,7 @@ Les gardes noirs adorent celui-ci parce qu'il se garde. Le raptor cuit presque u
 
 ## 1250143 Pamplona d’envergure
 
-Mes élèves fiers de leur couteau héritent de celui-ci : des ailes de busard désossées et battues à plat, roulées autour des épices apaisantes et ficelées. C'est un travail lent et minutieux, et je vérifie chaque rouleau avant qu'il aille au four. Rôtissez doucement et tranchez en rondelles. La spirale à l'intérieur me dit tout du cuisinier qui l'a roulée. Une spirale serrée, une main soigneuse. Une spirale lâche, quelqu'un qui pensait au déjeuner.
+Mes élèves fiers de leur couteau héritent de celui-ci : des ailes de busard désossées et battues à plat, roulées autour des épices apaisantes et ficelées. C'est un travail lent et minutieux, et je vérifie chaque rouleau avant qu'il aille au four. Rôtissez doucement et tranchez en rondelles. La spirale à l'intérieur me dit tout du cuisinier qui l'a roulée. Une spirale serrée, une main soigneuse. Une spirale lâche, quelqu'un qui pensait au déjeuner.
 
 ## 1250148 Steak de cerf fumant
 

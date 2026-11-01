@@ -13,7 +13,7 @@ Du trotteur et de la pomme, le premier ragoût des Tarides. La pomme entre avec 
 
 ## 2543 Ragoût de la marche de l'Ouest
 
-Un ragoût de fermier du sud, fait de ce que la terre donne quand elle donne très peu : du vautour, le groin d'un Broche-tripes et un oeil de murloc, dont je ne m'excuserai pas. Nous avions un ragoût de ce genre en Lordaeron, fait de ce que les champs et la rivière voulaient bien laisser. Je me souviens de la marmite. Je me souviens qu'elle était noire et lourde, et que quelqu'un se brûlait toujours la main avec. La main de qui, je ne saurais plus le dire. L'oeil donne du corps au bouillon, alors ne l'enlevez pas pour épargner un invité délicat. Les invités délicats peuvent bien jeûner. Laissez mijoter jusqu'à ce que le vautour renonce, ce qui prend plus longtemps que vous ne le croyez. Les voyageurs du sud me disent que les fermes y sont vides maintenant. Le ragoût a survécu aux fermes, comme les ragoûts savent le faire.
+Un ragoût de fermier du sud, fait de ce que la terre donne quand elle donne très peu : du vautour, le groin d'un Broche-tripes et un oeil de murloc, dont je ne m'excuserai pas. Nous avions un ragoût de ce genre en Lordaeron, fait de ce que les champs et la rivière voulaient bien laisser. Je me souviens de la marmite. Je me souviens qu'elle était noire et lourde, et que quelqu'un se brûlait toujours la main avec. La main de qui, je ne saurais plus le dire. L'oeil donne du corps au bouillon, alors ne l'enlevez pas pour épargner un invité délicat. Les invités délicats peuvent bien jeûner. Laissez mijoter jusqu'à ce que le vautour renonce, ce qui prend plus longtemps que vous ne le croyez. Les voyageurs du sud me disent que les fermes y sont vides maintenant. Le ragoût a survécu aux fermes, comme les ragoûts savent le faire.
 
 ## 6501 Soupe de palourdes
 
@@ -33,7 +33,7 @@ De l'araignée et du condor, mijotés ensemble. Le condor est coriace et l'araig
 
 ## 3373 Gombo de crocilisque
 
-De la viande de crocilisque tendre et des épices fortes, réduites jusqu'à ce que le bouillon soit épais et assez sombre pour napper une cuillère. La couleur vous renseigne, et l'odeur aussi : quand elle passe du marais à la noisette grillée, vous y êtes. Remuez par le fond, toujours. Je ne peux pas goûter un gombo, mais je sens un gombo brûlé depuis l'autre bout de Fossoyeuse, et tout le monde aussi, me dit-on.
+De la viande de crocilisque tendre et des épices fortes, réduites jusqu'à ce que le bouillon soit épais et assez sombre pour napper une cuillère. La couleur vous renseigne, et l'odeur aussi : quand elle passe du marais à la noisette grillée, vous y êtes. Remuez par le fond, toujours. Je ne peux pas goûter un gombo, mais je sens un gombo brûlé depuis l'autre bout de Fossoyeuse, et tout le monde aussi, me dit-on.
 
 ## 24418 Ragoût épais de crocilisque
 
@@ -53,7 +53,7 @@ De la tortue et des épices apaisantes, mijotées des heures, puis passées au t
 
 ## 1295805 Ragoût de fruits de mer saumâtre
 
-Un ragoût du rivage : du crabe, des yeux de murloc et des épices fortes. Les yeux épaississent le bouillon, alors ne les enlevez pas pour ménager qui que ce soit. Le crabe entre à la fin, pour rester doux. L'odeur est celle de la mer avant qu'on l'ait rangée, sel, algue et quelque chose d'encore vivant. Mes élèves se pincent le nez la première fois. La deuxième fois, ils demandent un bol.
+Un ragoût du rivage : du crabe, des yeux de murloc et des épices fortes. Les yeux épaississent le bouillon, alors ne les enlevez pas pour ménager qui que ce soit. Le crabe entre à la fin, pour rester doux. L'odeur est celle de la mer avant qu'on l'ait rangée, sel, algue et quelque chose d'encore vivant. Mes élèves se pincent le nez la première fois. La deuxième fois, ils demandent un bol.
 
 ## 15906 Chili de souffle de dragon
 
@@ -61,15 +61,15 @@ La viande mystère entre dans ce plat, et je préfère taire ce que mon nez m'en
 
 ## 15910 Ragoût épais de kodo
 
-Les kodos de Désolace sont plus lourds que ceux des Tarides, bien que la terre leur donne peu, et leur viande est la plus dense que je connaisse. Les taurens m'ont appris ce ragoût, et je n'y ai jamais rien changé, parce qu'il n'y a rien à changer. De la viande de kodo épaisse, des épices apaisantes et de l'eau de source, et toute une journée sur un feu bas. Vous sentirez l'odeur changer : crue, puis herbeuse, puis profonde et brune, comme un champ après la pluie. Quelque part dans la soirée, la viande se défait en fils au contact d'une cuillère. C'est le moment, et aucun autre. Je le prépare les jours les plus froids pour les gardes noirs sur les remparts au-dessus, et je le monte moi-même. Ils n'en ont pas besoin. Ils font la queue quand même, et ils sont très silencieux en mangeant.
+Les kodos de Désolace sont plus lourds que ceux des Tarides, bien que la terre leur donne peu, et leur viande est la plus dense que je connaisse. Les taurens m'ont appris ce ragoût, et je n'y ai jamais rien changé, parce qu'il n'y a rien à changer. De la viande de kodo épaisse, des épices apaisantes et de l'eau de source, et toute une journée sur un feu bas. Vous sentirez l'odeur changer : crue, puis herbeuse, puis profonde et brune, comme un champ après la pluie. Quelque part dans la soirée, la viande se défait en fils au contact d'une cuillère. C'est le moment, et aucun autre. Je le prépare les jours les plus froids pour les gardes noirs sur les remparts au-dessus, et je le monte moi-même. Ils n'en ont pas besoin. Ils font la queue quand même, et ils sont très silencieux en mangeant.
 
 ## 20626 Soupe de palourdes d'Undermine
 
-Une soupe gobeline de Tanaris : de la chair de palourde piquante, des épices fortes et du lait glacé, chauffés ensemble sans jamais bouillir. Les gobelins la mangent brûlante, ce qui vous dit tout des gobelins. Gardez le feu bas et surveillez la vapeur. Quand elle sent la mer et l'épice chaude, et pas encore le lait brûlé, servez à la louche. Le gobelin qui la vend n'en garde qu'un exemplaire à la fois. Je l'ai acheté, alors il a dû s'en écrire un autre.
+Une soupe gobeline de Tanaris : de la chair de palourde piquante, des épices fortes et du lait glacé, chauffés ensemble sans jamais bouillir. Les gobelins la mangent brûlante, ce qui vous dit tout des gobelins. Gardez le feu bas et surveillez la vapeur. Quand elle sent la mer et l'épice chaude, et pas encore le lait brûlé, servez à la louche. Le gobelin qui la vend n'en garde qu'un exemplaire à la fois. Je l'ai acheté, alors il a dû s'en écrire un autre.
 
 ## 18243 Soupe de lutjan nagenuit
 
-Un lutjan pêché la nuit, de l'eau de source, et rien d'autre. Faites frémir le poisson doucement jusqu'à ce que la chair tombe des arêtes, puis retirez les arêtes avec soin. Le bouillon doit être assez clair pour qu'on lise au travers. Il ne sent presque rien, et c'est tout l'intérêt : une soupe nette et calme pour des gens qui ont eu une journée bruyante. Je la prépare pour moi, le soir, et cela ne me gêne pas de ne pas pouvoir la goûter.
+Un lutjan pêché la nuit, de l'eau de source, et rien d'autre. Faites frémir le poisson doucement jusqu'à ce que la chair tombe des arêtes, puis retirez les arêtes avec soin. Le bouillon doit être assez clair pour qu'on lise au travers. Il ne sent presque rien, et c'est tout l'intérêt : une soupe nette et calme pour des gens qui ont eu une journée bruyante. Je la prépare pour moi, le soir, et cela ne me gêne pas de ne pas pouvoir la goûter.
 
 ## 1250145 Ragoût de tortue savoureux
 

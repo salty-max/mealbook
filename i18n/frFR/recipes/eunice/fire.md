@@ -5,7 +5,7 @@ chapter: fire
 
 ## 1229737 Feu de camp basique
 
-Avant le plat, le feu. Du bois simple, empilé sans serrer pour que l'air puisse circuler, allumé par le bas et laissé tranquille. Vous entendrez quand il sera prêt : le crépitement s'apaise en un bourdonnement sourd et les flammes s'enfoncent dans les braises. Cuisinez sur les braises, jamais sur les flammes. J'enseigne cela en premier, avant le loup, parce qu'un cuisinier sans feu est un invité, et je ne garde pas d'invités dans ma cuisine.
+Avant le plat, le feu. Du bois simple, empilé sans serrer pour que l'air puisse circuler, allumé par le bas et laissé tranquille. Vous entendrez quand il sera prêt : le crépitement s'apaise en un bourdonnement sourd et les flammes s'enfoncent dans les braises. Cuisinez sur les braises, jamais sur les flammes. J'enseigne cela en premier, avant le loup, parce qu'un cuisinier sans feu est un invité, et je ne garde pas d'invités dans ma cuisine.
 
 ## 1283400 Feu de camp de compagnon
 
@@ -13,8 +13,8 @@ Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, avec 
 
 ## 1291341 Feu de camp de spécialiste
 
-Des bûches épaisses, lentes à prendre et lentes à mourir, un feu pour toute une soirée. Disposez-les en carré avec un passage pour l'air et allumez-les par-dessous. Puis attendez. L'odeur change quand il est prêt, de la fumée verte à la fumée sèche, de l'âcre au doux. C'est le feu d'un spécialiste, et la leçon d'un spécialiste : la meilleure chaleur est celle qu'on a attendue. On ne m'a pas vendu cette recette. Je le bâtis d'après ce qu'on m'en a dit, et celui qui me l'a dit savait de quoi il parlait.
+Des bûches épaisses, lentes à prendre et lentes à mourir, un feu pour toute une soirée. Disposez-les en carré avec un passage pour l'air et allumez-les par-dessous. Puis attendez. L'odeur change quand il est prêt, de la fumée verte à la fumée sèche, de l'âcre au doux. C'est le feu d'un spécialiste, et la leçon d'un spécialiste : la meilleure chaleur est celle qu'on a attendue. On ne m'a pas vendu cette recette. Je le bâtis d'après ce qu'on m'en a dit, et celui qui me l'a dit savait de quoi il parlait.
 
 ## 1263067 Four en fer
 
-De la farine, de l'eau de source et des épices apaisantes : voilà toute la recette d'un four en fer. Je crois que la pâte est travaillée dans le four neuf et cuite dure, pour le culotter, comme on culotte une poêle neuve. Je ne l'ai jamais vue en vente. Un marchand gobelin me l'a décrite, persuadé qu'il m'impressionnerait. Il y est parvenu. Je ne le lui ai pas dit. Les gobelins sont insupportables quand ils savent qu'ils ont fait impression, et ils le mettent sur la note.
+De la farine, de l'eau de source et des épices apaisantes : voilà toute la recette d'un four en fer. Je crois que la pâte est travaillée dans le four neuf et cuite dure, pour le culotter, comme on culotte une poêle neuve. Je ne l'ai jamais vue en vente. Un marchand gobelin me l'a décrite, persuadé qu'il m'impressionnerait. Il y est parvenu. Je ne le lui ai pas dit. Les gobelins sont insupportables quand ils savent qu'ils ont fait impression, et ils le mettent sur la note.

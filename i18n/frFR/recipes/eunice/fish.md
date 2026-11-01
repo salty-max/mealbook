@@ -5,7 +5,7 @@ chapter: fish
 
 ## 7751 Goujon brillant
 
-Les enfants en pêchent au bout de chaque ponton de Tirisfal, et je leur achète leurs seaux, parce qu'un enfant avec un poisson mérite une pièce. Cuisez-les entiers dans une poêle chaude, une poignée à la fois. Leurs yeux se troublent quand ils sont cuits, ce qui est le plus aimable des signaux : le poisson vous le dit lui-même. Les élèves qui ne savent rien faire d'autre savent faire cela, et je les fais commencer ici pour qu'ils aient de quoi être fiers.
+Les enfants en pêchent au bout de chaque ponton de Tirisfal, et je leur achète leurs seaux, parce qu'un enfant avec un poisson mérite une pièce. Cuisez-les entiers dans une poêle chaude, une poignée à la fois. Leurs yeux se troublent quand ils sont cuits, ce qui est le plus aimable des signaux : le poisson vous le dit lui-même. Les élèves qui ne savent rien faire d'autre savent faire cela, et je les fais commencer ici pour qu'ils aient de quoi être fiers.
 
 ## 7752 Maquereau ombré
 
@@ -37,7 +37,7 @@ La vase est dans la peau, non dans la chair, et on la sent dès que le poisson r
 
 ## 7827 Thon arc-en-ciel
 
-Ferme, sombre et riche, plus viande que poisson, et il faut le cuire comme une viande : une saisie franche dehors et très peu au coeur. La couleur vous renseigne. Rose dedans, c'est juste. Gris, c'est trop. Je ne peux pas goûter la différence. Je peux la voir, et le visage de celui qui le mange la voit aussi. Le rose vaut un hochement de tête. Le gris vaut de la politesse, ce qui est pire.
+Ferme, sombre et riche, plus viande que poisson, et il faut le cuire comme une viande : une saisie franche dehors et très peu au coeur. La couleur vous renseigne. Rose dedans, c'est juste. Gris, c'est trop. Je ne peux pas goûter la différence. Je peux la voir, et le visage de celui qui le mange la voit aussi. Le rose vaut un hochement de tête. Le gris vaut de la politesse, ce qui est pire.
 
 ## 2544 Beignet de crabe
 
@@ -65,7 +65,7 @@ Le poisson-chat, c'était ce que la rivière nous donnait quand elle nous donnai
 
 ## 6500 Palourdes gobelines
 
-Les gobelins mettent trop de chaleur dans tout, palourdes comprises. Je l'enseigne avec la chaleur corrigée. De la chair de palourde relevée, des épices fortes, un feu chaud sans être furieux. L'odeur vous dira quand vous arrêter : quand l'épice cesse de sentir le cru et se met à sentir le grillé, retirez la poêle. Une palourde cuite avec fureur devient du cuir. Les gobelins vous vendraient le cuir en l'appelant moelleux.
+Les gobelins mettent trop de chaleur dans tout, palourdes comprises. Je l'enseigne avec la chaleur corrigée. De la chair de palourde relevée, des épices fortes, un feu chaud sans être furieux. L'odeur vous dira quand vous arrêter : quand l'épice cesse de sentir le cru et se met à sentir le grillé, retirez la poêle. Une palourde cuite avec fureur devient du cuir. Les gobelins vous vendraient le cuir en l'appelant moelleux.
 
 ## 7828 Morue rochécaille
 
@@ -81,7 +81,7 @@ Un poisson de montagne froid, à la tête d'argent et au caractère de bagarreur
 
 ## 25954 Délice de sagerelle
 
-La grande sagerelle, engraissée de la sauge de son lac, avec des épices fortes pour la réveiller. Saisissez le filet côté peau jusqu'à ce que la peau crépite, puis retournez-le le temps d'un souffle. L'odeur est le délice : verte, chaude et poivrée, tout à la fois. Je le prépare quand je veux que la cuisine sente autre chose que la ville au-dessus, c'est-à-dire presque tous les jours, pour être honnête.
+La grande sagerelle, engraissée de la sauge de son lac, avec des épices fortes pour la réveiller. Saisissez le filet côté peau jusqu'à ce que la peau crépite, puis retournez-le le temps d'un souffle. L'odeur est le délice : verte, chaude et poivrée, tout à la fois. Je le prépare quand je veux que la cuisine sente autre chose que la ville au-dessus, c'est-à-dire presque tous les jours, pour être honnête.
 
 ## 1319313 Poisson cuirassé
 
@@ -109,7 +109,7 @@ Un instant ou une heure, rien entre les deux. Je choisis l'instant. Quadrillez l
 
 ## 18242 Perche fumée
 
-Fumée chaude et de près, pour que le poisson cuise en fumant. Frottez la perche d'épices fortes et suspendez-la juste au-dessus d'un feu fumeux. Surveillez la chair : quand elle passe de translucide à blanche, décrochez-la. Une perche fumée ainsi se garde des jours. J'en prépare pour les voyageurs qui prennent le zeppelin, qui ont toujours faim et sont toujours en retard, et qui la mangent avant que le zeppelin ait quitté la tour.
+Fumée chaude et de près, pour que le poisson cuise en fumant. Frottez la perche d'épices fortes et suspendez-la juste au-dessus d'un feu fumeux. Surveillez la chair : quand elle passe de translucide à blanche, décrochez-la. Une perche fumée ainsi se garde des jours. J'en prépare pour les voyageurs qui prennent le zeppelin, qui ont toujours faim et sont toujours en retard, et qui la mangent avant que le zeppelin ait quitté la tour.
 
 ## 18244 Saumon solécaille poché
 

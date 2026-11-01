@@ -5,16 +5,16 @@ chapter: fire
 
 ## 1229737 Feu de camp basique
 
-Avant le plat, il y a le feu, et avant le feu, il y a un cuisinier qui sait le faire. Du bois simple, empilé sans serrer pour que l'air puisse circuler, allumé par le bas et laissé tranquille. Un cuisinier qui ne sait pas faire un feu est un invité. Un cuisinier qui en fait un rugissant est un fanfaron. Le bon feu pour cuisiner est celui qui a cessé de vouloir vous impressionner et s'est installé en braises.
+Avant le plat, il y a le feu, et avant le feu, il y a un cuisinier qui sait le bâtir. Du bois sec, posé en croix avec de l'air entre les pièces, et la flamme portée au bas du tas, jamais au sommet. Puis laissez-le tranquille. Un cuisinier qui tisonne un jeune feu n'a pas appris à attendre. Un cuisinier qui en fait un brasier rugissant est un fanfaron. Le bon feu pour cuisiner est celui qui a cessé de vouloir vous impressionner et s'est installé en braises.
 
 ## 1283400 Feu de camp de compagnon
 
-Le bois d'étoile brûle plus chaud et plus proprement que le bois commun, et un cuisinier compagnon devrait connaître la différence avant qu'on le laisse approcher d'un meilleur feu. La recette a été trouvée dans les Cavernes des lamentations, parmi les druides qui s'y sont égarés, ce qui fait beaucoup de chemin pour un meilleur feu de camp. Empilez-le de la même façon, sans serrer, et laissez-le retomber plus bas avant de cuisiner. Un feu plus chaud pardonne moins. C'est ce que signifie être compagnon.
+Un compagnon doit apprendre que tous les bois ne se valent pas, et le bois d'étoile est la leçon. Il brûle d'une chaleur blanche et propre que le bois commun n'atteint jamais, et il y arrive vite. La recette est apparue dans les Cavernes des lamentations, parmi des druides qui avaient d'autres soucis en tête. Bâtissez-le comme le feu de base, mais n'y cuisinez pas avant que les flammes soient tout à fait retombées, car cette chaleur punit le cuisinier pressé. Un meilleur feu ne fait un meilleur cuisinier que si celui-ci l'attend.
 
 ## 1291341 Feu de camp de spécialiste
 
-Des bûches épaisses, qui mettent une éternité à prendre puis brûlent toute une soirée, régulières comme un âtre. C'est le feu d'un spécialiste, et il enseigne une leçon de spécialiste : la longue chaleur égale vaut l'attente. Disposez les bûches en carré, laissez un passage pour l'air, allumez le petit bois dessous et prenez patience avec lui. Je n'ai pas encore vu cette recette en vente. J'ai vu des cuisiniers qui croyaient ne pas en avoir besoin, et ils n'ont jamais tout à fait été des spécialistes.
+Les bûches épaisses sont le feu d'un maître : une épreuve à allumer, et une fois prises, elles gardent la même chaleur toute la soirée, régulières comme un âtre. Un débutant veut des flammes. Un spécialiste veut des braises qui ne changeront pas d'avis au milieu d'un rôti, et seules les bûches épaisses les lui donnent. Empilez-les pour que l'air monte par le milieu, et attendez qu'elles prennent. La recette n'est pas encore arrivée sur mes étagères, et j'ai interrogé chaque marchand de passage. J'ai vu des cuisiniers qui croyaient ne pas en avoir besoin, et ils n'ont jamais tout à fait été des spécialistes.
 
 ## 1263067 Four en fer
 
-Un four en fer, dit la recette, puis elle demande de la farine, de l'eau de source et des épices apaisantes, et pas un gramme de fer. Je l'ai relue plusieurs fois. Je crois que le four est le récipient, et la recette ce qu'on y met d'abord, une grande quantité de pâte travaillée avec les épices et cuite pour culotter le fer, comme on culotte une poêle neuve. Quel que soit son secret, c'est une recette de maître, et je ne la possède pas encore, ce qui m'agace plus que je ne puis le dire poliment.
+Un four en fer, dit la recette, puis elle demande de la farine, de l'eau de source et des épices apaisantes, et pas un gramme de fer. Je l'ai relue plusieurs fois. Je crois que la pâte est travaillée avec l'épice et cuite dans le four neuf, pour culotter le fer avant qu'on y mette quoi que ce soit qui vaille d'être mangé. Quel que soit son secret, c'est une recette de maître, et je ne la possède pas encore, ce qui m'agace plus que je ne puis le dire poliment.

@@ -3,6 +3,10 @@
 -- cooked, the road to 300 from the skill now, and the book opened on each
 -- tab. FOREVER=1, LOCALE=frFR (deDE, esES, esMX): those clients.
 local G = dofile("addon/test/game.lua")
+if dofile("addon/test/held.lua")(G.LOCALE) then
+  print("skipped: " .. G.LOCALE .. " held back (HIDDEN_LOCALES)")
+  os.exit(0)
+end
 local s, fire, ns = G.state, G.fire, G.ns
 local count = 0
 local function check(ok, what)

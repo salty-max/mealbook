@@ -31,7 +31,7 @@ opens the road, `/mealbook settings` opens its page in the game's Options:
 whose pages the book shows, the ingredients' tooltip line, the minimap
 button.
 
-In English, French, German and Spanish.
+In English and French.
 
 ## Building
 

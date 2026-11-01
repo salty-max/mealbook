@@ -29,11 +29,11 @@ Les cuisiniers de Durotar ont envoyé ce plat vers le nord par les premiers zepp
 
 ## 1250156 Délicieuses bouchées au raptor
 
-Un oeuf de raptor est gros comme mes deux poings, et quand on le casse, il sent un peu le marais où sa mère a marché. L'épice est là pour répondre à cette odeur, et il en faut beaucoup pour lui répondre. Battez l'oeuf, assaisonnez-le et cuisez-le en petits disques sur une pierre chaude. Les disques gonflent quand ils sont cuits. Mes élèves les mangent avant que j'aie pu les compter, ce qui me dit que la recette fonctionne.
+Un oeuf de raptor est gros comme mes deux poings, et quand on le casse, il sent un peu le marais où sa mère a marché. L'épice est là pour tenir tête à cette odeur, et il en faut beaucoup. Battez l'oeuf, assaisonnez-le et cuisez-le en petits disques sur une pierre chaude. Les disques gonflent quand ils sont cuits. Mes élèves les mangent avant que j'aie pu les compter, ce qui me dit que la recette fonctionne.
 
 ## 2795 Côtes de sanglier à la bière
 
-Un plat de nains, ce qui veut dire qu'il arrive avec une histoire sur le grand-père qui l'a inventé, et que l'histoire change selon celui qui la raconte. Je ne prends pas parti. Les côtes et la bière sont honnêtes, quel que soit le premier à les avoir cuites. Tous les nains dont j'ai entendu parler arrosent dès la première minute, puis accusent le feu de la suite. Rôtissez les côtes à nu jusqu'à ce que la graisse coule claire, et alors seulement commencez la bière, un peu à la fois, pour qu'elle devienne un glaçage. Quand elle sent le sucre brûlé, c'est allé trop loin. Quand elle sent le pain et la fumée, c'est parfait. Les gardes noirs demandent celui-ci par son nom, ce qu'ils ne font même pas pour leurs sergents. Je le prépare les jours de fête, et les jours qui en ont besoin.
+Un plat de nains, ce qui veut dire qu'il arrive avec une histoire sur le grand-père qui l'a inventé, et que l'histoire change selon celui qui la raconte. Je ne prends pas parti. Les côtes et la bière sont honnêtes, quel que soit le premier à les avoir cuites. Tous les nains dont j'ai entendu parler arrosent dès la première minute, puis accusent le feu de la suite. Rôtissez les côtes à nu jusqu'à ce que la graisse coule claire, et alors seulement commencez la bière, un peu à la fois, pour qu'elle devienne un glaçage. Quand elle sent le sucre brûlé, on est allé trop loin. Quand elle sent le pain et la fumée, c'est parfait. Les gardes noirs demandent celui-ci par son nom, ce qu'ils ne font même pas pour leurs sergents. Je le prépare les jours de fête, et les jours qui en ont besoin.
 
 ## 6414 Viande de kodo rôtie
 
@@ -149,7 +149,7 @@ Du tigre, voilà ce que veut dire le nom, taillé épais et frotté de sels sacr
 
 ## 1250144 Hachis de chauve-souris
 
-De pauvres fermiers faisaient ce ragoût, de la viande hachée cuite longtemps et doucement. En Lordaeron, c'était du boeuf, quand il y avait du boeuf, ou je crois que c'en était. Ici, c'est de la chauve-souris. Hachez fin les ailes, ajoutez les épices apaisantes et donnez-lui un feu bas pendant une soirée, jusqu'à ce que les tendons s'attendrissent et que la cuisine sente l'épice et quelque chose comme la maison. Mes élèves l'appellent la bouillie de chauve-souris. Moi, je l'appelle le souper.
+De pauvres fermiers faisaient ce ragoût, de la viande hachée cuite longtemps et doucement. En Lordaeron, c'était du boeuf, quand il y avait du boeuf, ou du moins je le crois. Ici, c'est de la chauve-souris. Hachez fin les ailes, ajoutez les épices apaisantes et donnez-lui un feu bas pendant une soirée, jusqu'à ce que les tendons s'attendrissent et que la cuisine sente l'épice et quelque chose comme la maison. Mes élèves l'appellent la bouillie de chauve-souris. Moi, je l'appelle le souper.
 
 ## 1250147 Bruscitt d’ours
 

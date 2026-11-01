@@ -17,4 +17,4 @@ Des bûches épaisses, lentes à prendre et lentes à mourir, un feu pour toute 
 
 ## 1263067 Four en fer
 
-De la farine, de l'eau de source et des épices apaisantes : voilà toute la recette d'un four en fer. Je crois que la pâte est travaillée dans le four neuf et cuite dure, pour le culotter, comme on culotte une poêle neuve. Je ne l'ai jamais vue en vente. Un marchand gobelin me l'a décrite, persuadé qu'il m'impressionnerait. Il y est parvenu. Je ne le lui ai pas dit. Les gobelins sont insupportables quand ils savent qu'ils ont fait impression, et ils le mettent sur la note.
+De la farine, de l'eau de source et des épices apaisantes : voilà toute la recette d'un four en fer. Je crois que la pâte est travaillée dans le four neuf et cuite dure, pour le culotter, comme on culotte une poêle neuve. Je n'ai jamais vu la recette en vente. Un marchand gobelin me l'a décrite, persuadé qu'il m'impressionnerait. Il y est parvenu. Je ne le lui ai pas dit. Les gobelins sont insupportables quand ils savent qu'ils ont fait impression, et ils le mettent sur la note.

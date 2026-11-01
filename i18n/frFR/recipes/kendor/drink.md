@@ -5,7 +5,7 @@ chapter: drink
 
 ## 1249957 Thé de sérénité
 
-Le pacifique est la fleur pâle qui pousse au bord de toutes les routes, et les trolls Frostmane de Dun Morogh en font ce thé avant d'attaquer nos nains. Je trouve cela étrangement rassurant. Du pacifique dans de l'eau de source, portée juste sous l'ébullition et laissée jusqu'à prendre un or pâle. Retirez-la du feu avant la première bulle, car une fleur bouillie perd sa douceur et ne garde que sa tige. Bien fait, c'est la tasse la plus paisible du royaume. Les trolls, de toute évidence, n'en ont jamais bu.
+Le pacifique est la fleur pâle qui pousse au bord de toutes les routes, et les trolls Frostmane de Dun Morogh en font ce thé avant d'attaquer nos nains. Je trouve cela étrangement rassurant. Du pacifique dans de l'eau de source, portée juste sous l'ébullition et laissée à infuser jusqu'à ce qu'elle prenne un or pâle. Retirez-la du feu avant la première bulle, car une fleur bouillie perd sa douceur et ne garde que sa tige. Bien fait, c'est la tasse la plus paisible du royaume. Les trolls, de toute évidence, n'en ont jamais bu.
 
 ## 1249963 Frappé venimeux
 
@@ -25,7 +25,7 @@ Le mage royal est une herbe qui a une haute opinion d'elle-même, et le thé roy
 
 ## 1249964 Frappé gélatineux
 
-Gélatineux, dit-il de lui-même, et c'est le nom le plus exact de ce chapitre. De l'ichor d'araignée, des épices douces et du lait glacé, secoués jusqu'à ce que l'ichor cesse de bouder au fond et consente à être une boisson. Servez-le aussitôt, car il ne reste pas conciliant longtemps. Je ne l'aurais pas inventé. J'ai cependant regardé un gnome en boire trois, ce qui en dit plus long, à mon sens, sur les gnomes que sur le frappé.
+Gélatineux, annonce le nom, et c'est le plus exact de ce chapitre. De l'ichor d'araignée, des épices douces et du lait glacé, secoués jusqu'à ce que l'ichor cesse de bouder au fond et consente à être une boisson. Servez-le aussitôt, car il ne reste pas conciliant longtemps. Je ne l'aurais pas inventé. J'ai cependant regardé un gnome en boire trois, ce qui en dit plus long, à mon sens, sur les gnomes que sur le frappé.
 
 ## 1249965 Frppl mrrggl
 

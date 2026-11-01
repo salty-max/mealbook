@@ -109,7 +109,7 @@ Un instant ou une heure, rien entre les deux. Je choisis l'instant. Quadrillez l
 
 ## 18242 Perche fumée
 
-Fumée chaude et de près, pour que le poisson cuise en fumant. Frottez la perche d'épices fortes et suspendez-la juste au-dessus d'un feu fumeux. Surveillez la chair : quand elle passe de translucide à blanche, décrochez-la. Une perche fumée ainsi se garde des jours. J'en prépare pour les voyageurs qui prennent le zeppelin, qui ont toujours faim et sont toujours en retard, et qui la mangent avant que le zeppelin ait quitté la tour.
+On la fume à chaud et de près, pour que le poisson cuise en fumant. Frottez la perche d'épices fortes et suspendez-la juste au-dessus d'un feu fumeux. Surveillez la chair : quand elle passe de translucide à blanche, décrochez-la. Une perche fumée ainsi se garde des jours. J'en prépare pour les voyageurs qui prennent le zeppelin, qui ont toujours faim et sont toujours en retard, et qui la mangent avant que le zeppelin ait quitté la tour.
 
 ## 18244 Saumon solécaille poché
 

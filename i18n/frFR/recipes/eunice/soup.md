@@ -41,11 +41,11 @@ Du crocilisque à pleine marmite, des épices apaisantes, et un ragoût où une 
 
 ## 15861 Ragoût de la jungle
 
-De la viande de tigre, de l'eau de source et des pommes, le ragoût de Strangleronce. Faites d'abord dorer la viande, puis ajoutez l'eau et les pommes et laissez mijoter jusqu'à ce que le fruit soit passé dans le bouillon. L'odeur devient sucrée, puis profonde, puis sucrée de nouveau. La seconde douceur veut dire que c'est prêt. Des trolls me l'ont appris, des Darkspear en route vers un endroit plus chaud. Ils disaient qu'il a le goût de chez eux. Je les ai crus sur parole.
+De la viande de tigre, de l'eau de source et des pommes, le ragoût de Strangleronce. Faites d'abord dorer la viande, puis ajoutez l'eau et les pommes et laissez mijoter jusqu'à ce que le fruit soit passé dans le bouillon. L'odeur devient sucrée, puis profonde, puis sucrée de nouveau. La seconde douceur veut dire que c'est prêt. Des trolls me l'ont appris, des Darkspear en route vers un endroit plus chaud. Ils disaient qu'il avait le goût de chez eux. Je les ai crus sur parole.
 
 ## 15865 Ragoût mystère
 
-De la viande mystère mijotée dans de la bière naine, et pour moi, il n'y a de mystère ni dans l'une ni dans l'autre. Je sens exactement ce qu'était la viande. Je sens la brasserie d'où vient la bière, et ce qu'on a renversé sur son sol. Faites-le cuire longtemps et doucement, et ne le laissez jamais bouillir, sinon la bière aigrit et vous le sentirez depuis l'escalier. Écumez la marmite pendant qu'elle mijote. La bière rend la viande sombre et tendre, et donne au bouillon une amertume que les vivants semblent beaucoup aimer. Les apothicaires, qui devraient être plus avisés, en mangent des quantités et refusent de dire ce qu'ils croient qu'il contient. J'en ai vu toute une tablée se disputer là-dessus pendant une soirée. J'ai cessé de le leur dire. Ils l'apprécient davantage sans savoir, et tout le monde aussi, je crois.
+De la viande mystère mijotée dans de la bière naine, et pour moi, il n'y a de mystère ni dans l'une ni dans l'autre. Je sens exactement ce qu'était la viande. Je sens la brasserie d'où vient la bière, et ce qu'on a renversé sur son sol. Faites-le cuire longtemps et doucement, et ne le laissez jamais bouillir, sinon la bière aigrit et vous le sentirez depuis l'escalier. Écumez la marmite pendant qu'elle mijote. La bière rend la viande sombre et tendre, et donne au bouillon une amertume que les vivants semblent beaucoup aimer. Les apothicaires, qui devraient être plus avisés, en mangent des quantités et refusent de dire ce qu'ils croient qu'il contient. J'en ai vu toute une tablée se disputer là-dessus pendant une soirée. J'ai cessé de le leur dire. Ils l'apprécient davantage sans savoir, et je crois que c'est vrai de tout le monde.
 
 ## 3400 Bisque de tortue apaisante
 
@@ -69,11 +69,11 @@ Une soupe gobeline de Tanaris : de la chair de palourde piquante, des épices f
 
 ## 18243 Soupe de lutjan nagenuit
 
-Un lutjan pêché la nuit, de l'eau de source, et rien d'autre. Faites frémir le poisson doucement jusqu'à ce que la chair tombe des arêtes, puis retirez les arêtes avec soin. Le bouillon doit être assez clair pour qu'on lise au travers. Il ne sent presque rien, et c'est tout l'intérêt : une soupe nette et calme pour des gens qui ont eu une journée bruyante. Je la prépare pour moi, le soir, et cela ne me gêne pas de ne pas pouvoir la goûter.
+Un lutjan pêché la nuit, de l'eau de source, et rien d'autre. Faites frémir le poisson doucement jusqu'à ce que la chair tombe des arêtes, puis retirez les arêtes avec soin. Le bouillon doit être assez clair pour qu'on lise au travers. Il ne sent presque rien, et tout est là : une soupe nette et calme pour des gens qui ont eu une journée bruyante. Je la prépare pour moi, le soir, et cela ne me gêne pas de ne pas pouvoir la goûter.
 
 ## 1250145 Ragoût de tortue savoureux
 
-Je fais mijoter cette tortue sans jamais la tamiser, parce que c'est un ragoût de ferme et non une bisque de seigneur. Nous en faisions au bord d'une rivière en Lordaeron, j'en suis presque sûre, même si je ne saurais dire laquelle. De la tortue et beaucoup d'épices apaisantes, mijotées jusqu'à ce que la viande se défasse. Laissez-le épais. La texture est tout l'intérêt, et l'odeur, ronde, chaude et lente, est la raison pour laquelle les gens restent au comptoir une fois leur bol fini. J'ai cessé de leur demander de partir. Ils partiront quand le bol sera vide, et pas avant.
+Je fais mijoter cette tortue sans jamais la tamiser, parce que c'est un ragoût de ferme et non une bisque de seigneur. Nous en faisions au bord d'une rivière en Lordaeron, j'en suis presque sûre, même si je ne saurais dire laquelle. De la tortue et beaucoup d'épices apaisantes, mijotées jusqu'à ce que la viande se défasse. Laissez-le épais. La texture compte avant tout, et l'odeur, ronde, chaude et lente, est la raison pour laquelle les gens restent au comptoir une fois leur bol fini. J'ai cessé de leur demander de partir. Ils partiront quand le bol sera vide, et pas avant.
 
 ## 18245 Ragoût de homard
 

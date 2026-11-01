@@ -25,7 +25,7 @@ Une palourde, c'est une bouchée de mer, et la seule façon de la gâcher est de
 
 ## 6415 Filet de furie
 
-Les furies de Sombrivage ne sont que dents et mauvaises manières, et les elfes de la nuit les lèvent en filets avec une révérence que je trouve excessive. Alegorn voudrait que vous posiez le filet sur une feuille et que vous murmuriez au-dessus. Je voudrais que vous l'assaisonniez légèrement et le cuisiez vite, car la chair de furie est molle et se défait pour peu qu'on la regarde lentement. Une poêle chaude, la peau d'abord, et un seul retournement quand la chair blanchit au bord. La feuille est facultative. Le murmure ne me regarde pas.
+Les furies de Sombrivage ne sont que dents et mauvaises manières, et les elfes de la nuit les lèvent en filets avec une révérence que je trouve excessive. Alegorn voudrait que vous posiez le filet sur une feuille et que vous murmuriez au-dessus. Je voudrais que vous l'assaisonniez légèrement et le cuisiez vite, car la chair de furie est molle et se défait si vous la regardez trop longtemps. Une poêle chaude, la peau d'abord, et un seul retournement quand la chair blanchit au bord. La feuille est facultative. Le murmure ne me regarde pas.
 
 ## 7754 Délice de furie du loch
 
@@ -57,11 +57,11 @@ Les poissons déviants vivent dans les bassins empoisonnés des Cavernes des lam
 
 ## 1252566 Délice de fantaileron
 
-Fantaileron. Quelqu'un a donné ce nom à un poisson, et quelqu'un d'autre l'a approuvé. Gnolls et murlocs promènent la recette dans leurs sacs à travers les Carmines, et ni les uns ni les autres ne sont connus pour leur cuisine, alors ils l'ont volée à quelqu'un qui l'était. Le poisson est un petit bijou, et fragile. Des épices douces, à peine, et une poêle chaude, brièvement. Le nom promet de la fantaisie. Le plat livre un souper, ce qui vaut mieux et se révèle bien plus fiable. Mangez-le aussitôt.
+Fantaileron. Quelqu'un a donné ce nom à un poisson, et quelqu'un d'autre l'a approuvé. Gnolls et murlocs promènent la recette dans leurs sacs à travers les Carmines, et ni les uns ni les autres ne sont connus pour leur cuisine, alors ils l'ont volée à quelqu'un qui l'était. Le poisson est un petit bijou, et fragile. Des épices douces, à peine, et une poêle chaude, brièvement. Le nom promet de la fantaisie. Le plat offre un souper, ce qui vaut mieux et se révèle bien plus fiable. Mangez-le aussitôt.
 
 ## 7755 Poisson-chat moustachu
 
-Le poisson-chat est un poisson de rivière, à large gueule et à moustaches, et généralement méprisé par ceux qui ne l'ont jamais cuisiné comme il faut. Leur erreur est la peau. Elle garde toutes les saveurs du lit de la rivière, et personne ne m'a jamais demandé un lit de rivière. Ôtez-la avant que la poêle voie le poisson, et ce qui reste est doux, sucré et assez ferme pour frire à vif sans se défaire. Les pêcheurs des rivières de Hautebrande ne jurent que par lui, puis le font frire entier, ce qui explique leur réputation de cuisiniers.
+Le poisson-chat est un poisson de rivière, à large gueule et à moustaches, et généralement méprisé par ceux qui ne l'ont jamais cuisiné comme il faut. Leur erreur est la peau. Elle garde toutes les saveurs du lit de la rivière, et personne ne m'a jamais demandé un lit de rivière. Ôtez-la avant que la poêle voie le poisson, et ce qui reste est doux, sucré et assez ferme pour frire à feu vif sans se défaire. Les pêcheurs des rivières de Hautebrande ne jurent que par lui, puis le font frire entier, ce qui explique leur réputation de cuisiniers.
 
 ## 6500 Palourdes gobelines
 
@@ -77,7 +77,7 @@ Les cuisiniers de Baie-du-Butin saisissent une palourde géante dans les épices
 
 ## 20916 Truite tête-mithril
 
-Une truite à la tête argentée couleur de mithril, ce qui explique le nom, et au caractère assorti, ce qui explique les bandages des pêcheurs. C'est un poisson de montagne, au sang froid dans tous les sens du terme. Gardez la peau, et nappez-lui le dos de la graisse de la poêle pendant qu'elle cuit. Sa chair est pâle et fine. La tête reste en place pour la table. Une truite sans sa tête a l'air gênée, et le cuisinier qui l'a servie aussi.
+Une truite à la tête argentée couleur de mithril, ce qui explique le nom, et au caractère assorti, ce qui explique les bandages des pêcheurs. C'est un poisson de montagne, à sang froid dans tous les sens du terme. Gardez la peau, et nappez-lui le dos de la graisse de la poêle pendant qu'elle cuit. Sa chair est pâle et fine. La tête reste en place pour la table. Une truite sans sa tête a l'air gênée, et le cuisinier qui l'a servie aussi.
 
 ## 25954 Délice de sagerelle
 
@@ -109,7 +109,7 @@ Le calmar a deux bonnes durées de cuisson, très courte et très longue, et tou
 
 ## 18242 Perche fumée
 
-Fumer à chaud, c'est fumer à une chaleur qui cuit en même temps, plus rapide que le fumage à froid et moins indulgent. Les épices fortes vont sur la perche d'été. Puis la perche va au plus épais de la fumée, où la chaleur la cuit à coeur dans le temps qu'une fumée froide mettrait à peine à la colorer. Restez près d'elle. Elle est cuite quand la chair s'effeuille à l'endroit le plus épais, et peu après, elle est sèche. C'est le seul poisson que je confierais au sac d'un soldat, et je l'ai confié à plusieurs.
+Fumer à chaud, c'est fumer assez chaud pour cuire en même temps, plus rapide que le fumage à froid et moins indulgent. Les épices fortes vont sur la perche d'été. Puis la perche va au plus épais de la fumée, où la chaleur la cuit à coeur dans le temps qu'une fumée froide mettrait à peine à la colorer. Restez près d'elle. Elle est cuite quand la chair s'effeuille à l'endroit le plus épais, et peu après, elle est sèche. C'est le seul poisson que je confierais au sac d'un soldat, et je l'ai confié à plusieurs.
 
 ## 18244 Saumon solécaille poché
 

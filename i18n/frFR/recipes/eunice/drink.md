@@ -5,7 +5,7 @@ chapter: drink
 
 ## 1249957 Thé de sérénité
 
-Du pacifique infusé dans de l'eau de source jusqu'à ce que l'eau prenne la couleur de la paille. Ne le faites pas bouillir, sinon il sentira le foin et rien d'autre. Laissez-le infuser, et il sentira la lisière d'un champ le soir, qui reste la meilleure odeur que je connaisse. Les trolls Frostmane en font, dit la recette. J'en prépare pour les apothicaires, qui ont plus besoin de paix que quiconque et en reçoivent moins.
+Du pacifique infusé dans de l'eau de source jusqu'à ce qu'elle prenne la couleur de la paille. Ne le faites pas bouillir, sinon il sentira le foin et rien d'autre. Laissez-le infuser, et il sentira la lisière d'un champ le soir, qui reste la meilleure odeur que je connaisse. Les trolls Frostmane en font, dit la recette. J'en prépare pour les apothicaires, qui ont plus besoin de paix que quiconque et en reçoivent moins.
 
 ## 1249963 Frappé venimeux
 
@@ -13,11 +13,11 @@ De l'eau de source, des épices douces et une petite glande à venin, écrasée 
 
 ## 21144 Lait de poule
 
-Le Voile d'hiver, et l'oncle de quelqu'un qui fait du lait de poule dans un grand saladier, trop fort, chaque année. Je ne vois pas son visage, mais je l'entends chanter. Un oeuf, du lait glacé, de l'eau-de-vie spéciale et des épices spéciales, battus jusqu'à ce que ce soit pâle et épais. L'eau-de-vie entre en dernier et avec modération, ce dont aucun oncle n'a jamais fait preuve. Cela sent la muscade, le bois tiède et un peu les ennuis. Servez-le froid et gardez un oeil sur le saladier.
+Le Voile d'hiver, et l'oncle de quelqu'un qui fait du lait de poule dans un grand saladier, trop fort, chaque année. Je ne vois pas son visage, mais je l'entends chanter. Un oeuf, du lait glacé, de l'eau de vie spéciale et des épices spéciales, battus jusqu'à ce que le mélange pâlisse et épaississe. L'eau de vie spéciale entre en dernier et avec modération, ce dont aucun oncle n'a jamais fait preuve. Cela sent la muscade, le bois tiède et un peu les ennuis. Servez-le froid et gardez un oeil sur le saladier.
 
 ## 9513 Thé de chardon
 
-Du chardonnier infusé dans de l'eau de source jusqu'à ce qu'il tourne au vert doré, puis filtré. Tous les voleurs de Fossoyeuse en boivent avant le travail, et Fossoyeuse compte beaucoup de voleurs. Ils viennent à mon comptoir à des heures étranges et paient le compte exact. Ne le laissez pas infuser trop longtemps. Il devient amer, et les voleurs, qui l'aiment amer, le boiront quand même et repartiront sans un mot.
+Du chardonnier infusé dans de l'eau de source jusqu'à ce qu'il tourne au vert doré, puis filtré. Tous les voleurs de Fossoyeuse en boivent avant le travail, et Fossoyeuse compte beaucoup de voleurs. Ils viennent à mon comptoir à des heures étranges et paient le compte exact. Ne le laissez pas infuser trop longtemps. Il devient amer, et les voleurs, qui l'aiment amer, le boiront volontiers et repartiront sans un mot.
 
 ## 1249958 Thé royal
 
@@ -29,7 +29,7 @@ Du lait glacé, des épices douces et de l'ichor d'araignée, secoués jusqu'à 
 
 ## 1249965 Frppl mrrggl
 
-Je n'essaierai pas de prononcer le nom. Du jus de melon, des épices fortes et un aileron de murloc, secoués jusqu'à ce que l'aileron cède son corps au jus. Cela sent un melon parti au bord de la mer et revenu changé. Les murlocs des Pins argentés en seraient honorés, je crois, ou furieux. Avec les murlocs, c'est difficile à dire, et le bruit est le même. Je le sers aux courageux, et à ceux qui s'ennuient beaucoup.
+Je n'essaierai pas de prononcer le nom. Du jus de melon, des épices fortes et un aileron de murloc, secoués jusqu'à ce que l'aileron cède sa substance au jus. Cela sent un melon parti au bord de la mer et revenu changé. Les murlocs des Pins argentés en seraient honorés, je crois, ou furieux. Avec les murlocs, c'est difficile à dire, et le bruit est le même. Je le sers aux courageux, et à ceux qui s'ennuient beaucoup.
 
 ## 1249959 Thé aux racines
 
@@ -41,7 +41,7 @@ Un peu de dorépine va loin, ce qui vous dit sa force. Infusez-la dans une eau t
 
 ## 1249966 Frappé calcifié
 
-Du nectar sucré, des épices fortes et un grand croc réduit en poudre. Le croc rend la boisson crayeuse et épaisse, comme du lait oublié au soleil. Filtrez-la bien, deux fois, parce qu'une boisson qui crisse sous la dent est la seule chose que personne ne pardonne. Je la prépare le soir et la laisse reposer la nuit, seule façon de faire tomber le reste de craie. Les soldats en boivent le matin. Les gardes noirs, qui se battent et ne vivent pas, en boivent par solidarité.
+Du nectar sucré, des épices fortes et un grand croc réduit en poudre. Le croc rend la boisson crayeuse et épaisse, comme du lait oublié au soleil. Filtrez-la bien, deux fois, parce qu'une boisson qui crisse sous la dent est la seule chose que personne ne pardonne. Je la prépare le soir et la laisse reposer la nuit : c'est la seule façon de faire tomber le reste de craie. Les soldats en boivent le matin. Les gardes noirs, qui se battent et ne vivent pas, en boivent par solidarité.
 
 ## 1249960 Thé de triage
 

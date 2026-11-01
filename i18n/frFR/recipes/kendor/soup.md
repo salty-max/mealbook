@@ -37,7 +37,7 @@ Le gombo est un plat des marais, un ragoût épais et sombre que les gens des Pa
 
 ## 24418 Ragoût épais de crocilisque
 
-Épais, dit-il, et ce n'est pas un mensonge : du crocilisque en abondance, avec des épices apaisantes, mijoté jusqu'à tenir plus de la purée que de la soupe. La garnison de Theramore en vit tout l'hiver d'Âprefange et jure que c'est la seule chose chaude du marais. Elle a raison. Le danger d'un ragoût aussi dense, c'est que la chaleur s'amasse au fond de la marmite, alors gardez-y une cuillère de bois en mouvement. La plupart des ragoûts ratés meurent là.
+Épais, dit le nom, et ce n'est pas un mensonge : du crocilisque en abondance, avec des épices apaisantes, mijoté jusqu'à tenir plus de la purée que de la soupe. La garnison de Theramore en vit tout l'hiver d'Âprefange et jure que c'est la seule chose chaude du marais. Elle a raison. Le danger d'un ragoût aussi dense, c'est que la chaleur s'amasse au fond de la marmite, alors gardez-y une cuillère de bois en mouvement. La plupart des ragoûts ratés meurent là.
 
 ## 15861 Ragoût de la jungle
 
@@ -49,7 +49,7 @@ Le ragoût mystère, c'est de la viande mystère cuite longuement dans la bière
 
 ## 3400 Bisque de tortue apaisante
 
-Une bisque est une soupe lisse, et la bisque de tortue est lisse parce que la tortue a abandonné tout ce qu'elle avait à donner. La viande de tortue et les épices apaisantes mijotent tout l'après-midi, puis la marmite entière passe au tamis fin. Pressez avec le dos d'une louche jusqu'à ce qu'il ne reste rien où une cuillère puisse accrocher. Sautez cette étape et vous aurez une soupe de tortue, ce qui est une chose différente et moindre. Apaisante, dit-elle d'elle-même. Je dirais patiente, et j'aurais raison.
+Une bisque est une soupe lisse, et la bisque de tortue est lisse parce que la tortue a abandonné tout ce qu'elle avait à donner. La viande de tortue et les épices apaisantes mijotent tout l'après-midi, puis la marmite entière passe au tamis fin. Pressez avec le dos d'une louche jusqu'à ce qu'il ne reste rien où une cuillère puisse accrocher. Sautez cette étape et vous aurez une soupe de tortue, ce qui est une chose différente et moindre. Apaisante, dit le nom. Je dirais patiente, et j'aurais raison.
 
 ## 1295805 Ragoût de fruits de mer saumâtre
 
@@ -57,7 +57,7 @@ Un ragoût du rivage, fait de ce que le rivage offre, c'est-à-dire du crabe et,
 
 ## 15906 Chili de souffle de dragon
 
-Ce plat est né d'un pari, dans une taverne où personne n'avoue avoir bu. Il a dépassé ses origines, comme moi. La plupart des cuisiniers en font un concours et le cuisinent comme une arme, ce qui en dit plus long sur eux que sur le chili. La viande mystère est un nom, non une excuse. Parez-la comme si elle avait une réputation à perdre. Faites griller les épices avant que rien d'autre ne les touche, pour les réveiller. Le petit sac de flammes entre en dernier, percé une seule fois, et vous reculez bien. Vous comprendrez pourquoi le jour où vous vous tromperez. Bien fait, le feu arrive tard et repart lentement, comme un bon invité. Mal fait, il arrive le premier et reste toute la soirée, et les Veilleurs peuvent bien le garder.
+Ce plat est né d'un pari, dans une taverne où personne n'avoue avoir bu. Il a dépassé ses origines, comme moi. La plupart des cuisiniers en font un concours et le cuisinent comme une arme, ce qui en dit plus long sur eux que sur le chili. La viande mystère est un nom, non une excuse. Parez-la comme si elle avait une réputation à perdre. Faites griller les épices avant que rien d'autre ne les touche, pour les réveiller. Le petit sac de flammes entre en dernier, percé une seule fois, et reculez bien. Vous comprendrez pourquoi le jour où vous vous tromperez. Bien fait, le feu arrive tard et repart lentement, comme un bon invité. Mal fait, il arrive le premier et reste toute la soirée, et les Veilleurs peuvent bien le garder.
 
 ## 15910 Ragoût épais de kodo
 
@@ -73,7 +73,7 @@ Le nagenuit est un lutjan pêché après la tombée du jour, ce qui explique les
 
 ## 1250145 Ragoût de tortue savoureux
 
-De la tortue mijotée plutôt que tamisée, ce qui en fait un plat de paysan, et il ne s'en porte pas plus mal. De la tortue et une main généreuse d'épices apaisantes, mijotées jusqu'à ce qu'une cuillère partage la viande sans aide. Ne la tamisez pas. La texture est tout l'intérêt d'un ragoût, et un ragoût de tortue en a beaucoup, dont une part voulue. Servez-le épais, dans des bols, sans vous excuser d'être honnête.
+De la tortue mijotée plutôt que tamisée, ce qui en fait un plat de paysan, et il ne s'en porte pas plus mal. De la tortue et une main généreuse d'épices apaisantes, mijotées jusqu'à ce qu'une cuillère partage la viande sans aide. Ne la tamisez pas. La texture est tout l'intérêt d'un ragoût, et un ragoût de tortue en a beaucoup, dont une part est voulue. Servez-le épais, dans des bols, sans vous excuser d'être honnête.
 
 ## 18245 Ragoût de homard
 

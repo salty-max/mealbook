@@ -5,7 +5,7 @@ chapter: bake
 
 ## 21143 Biscuit au pain d'épices
 
-Le Voile d'hiver, en Lordaeron, sentait ces biscuits dans toutes les cuisines de la rue à la fois, ou du moins je le crois. Je me souviens si nettement de l'odeur qu'il m'arrive de la sentir à Fossoyeuse en plein été, ce qui ne peut pas être vrai. Des épices spéciales et un oeuf, travaillés ensemble et cuits jusqu'à ce que les bords foncent et que le coeur cède encore. Ils durcissent en refroidissant. J'en fais à chaque Voile d'hiver pour les enfants des équipages des zeppelins. Ils ne demandent pas pourquoi j'en fais autant.
+Au Voile d'hiver, en Lordaeron, toutes les cuisines de la rue sentaient ces biscuits à la fois, ou du moins je le crois. Je me souviens si nettement de l'odeur qu'il m'arrive de la sentir à Fossoyeuse en plein été, ce qui ne peut pas être vrai. Des épices spéciales et un oeuf, travaillés ensemble et cuits jusqu'à ce que les bords foncent et que le coeur reste tendre. Ils durcissent en refroidissant. J'en fais à chaque Voile d'hiver pour les enfants des équipages des zeppelins. Ils ne demandent pas pourquoi j'en fais autant.
 
 ## 8604 Oeufs aux herbes
 
@@ -17,11 +17,11 @@ De la farine et rien d'autre, cuite en petits biscuits pour les créatures qui s
 
 ## 1270633 Soufflé de Mur-Céleste
 
-Des oeufs et un peu de farine, les blancs montés jusqu'à se tenir, incorporés, et cuits sans jamais ouvrir la porte. On ne voit pas un soufflé monter depuis l'extérieur du four, mais on le sent : l'odeur passe de l'oeuf mouillé au pain chaud au moment où il culmine. Sortez-le alors, et portez-le vite. Un soufflé est un souffle retenu. Il n'attendra pas que l'invité ait fini de parler.
+Des oeufs et un peu de farine, les blancs montés en neige ferme, incorporés, et cuits sans jamais ouvrir la porte. On ne voit pas un soufflé monter depuis l'extérieur du four, mais on le sent : l'odeur passe de l'oeuf mouillé au pain chaud au moment où il culmine. Sortez-le alors, et portez-le vite. Un soufflé est un souffle retenu. Il n'attendra pas que l'invité ait fini de parler.
 
 ## 2542 Tourte au foie de Broche-tripes
 
-Une tourte de ferme du sud, et nous en faisions une toute pareille en Lordaeron, avec du foie de porc, les jours où le boucher était passé. Je revois le plat à tourte. Il était bleu, avec un éclat sur le bord, il refroidissait sur le rebord d'une fenêtre, et je ne sais pas de quelle fenêtre il s'agissait. Le foie de Broche-tripes est fort et sombre. Rincez-le à l'eau froide avant de le cuire, pour calmer l'amertume, puis assaisonnez-le d'épices douces et faites-le cuire à four doux. Le foie cuit vite sent le fer et devient gris. Le foie cuit lentement sent quelque chose de riche et de doux, comme la terre tiède après la pluie, et c'est là qu'il est prêt. Mes élèves la préparent pour les vivants de passage, et les vivants la mangent comme si elle leur était familière. Peut-être l'est-elle, pour eux.
+Une tourte de ferme du sud, et nous en faisions une toute pareille en Lordaeron, avec du foie de porc, les jours où le boucher était passé. Je revois le plat à tourte. Il était bleu, avec un éclat sur le bord, il refroidissait sur le rebord d'une fenêtre, et je ne sais pas de quelle fenêtre il s'agissait. Le foie de Broche-tripes est fort et sombre. Rincez-le à l'eau froide avant de le cuire, pour calmer l'amertume, puis assaisonnez-le d'épices douces et faites-le cuire à four doux. Un foie cuit trop vite sent le fer et devient gris. Un foie cuit lentement sent quelque chose de riche et de doux, comme la terre tiède après la pluie, et c'est là qu'il est prêt. Mes élèves la préparent pour les vivants de passage, et les vivants la mangent comme si elle leur était familière. Peut-être l'est-elle, pour eux.
 
 ## 1250157 Omelette de petit déjeuner
 
@@ -41,7 +41,7 @@ Mes élèves redoutent celui-ci. Les oeufs géants et les épices fortes doivent
 
 ## 15933 Omelette monstrueuse
 
-Un oeuf géant nourrit une table, et à Fossoyeuse, une table, c'est quiconque se tient le plus près du fourneau. Les oeufs viennent des grands oiseaux du nord, et la recette des marchands de Gangrebois et du Berceau-de-l'Hiver, qui ne disent jamais où l'on trouve les oeufs. Battez l'oeuf avec les épices apaisantes jusqu'à ce qu'il soit lisse et pâle, puis versez-le dans la plus large poêle que vous ayez, sur un feu modéré, et ramenez les bords à mesure qu'ils prennent. L'odeur vous guide : chaude et ronde d'abord, puis noisette sur les bords. Noisette, c'est le moment de plier. Brun, c'est trop tard. Portez-la à table à deux mains. J'ai vu toute une patrouille de gardes noirs en partager une en silence, avec un grand soin, comme un trésor. Un instant, c'en était un. Puis ils en ont demandé une autre, et c'était le meilleur moment.
+Un oeuf géant nourrit une table, et à Fossoyeuse, une table, c'est quiconque se tient le plus près du fourneau. Les oeufs viennent des grands oiseaux du nord, et la recette vient des marchands de Gangrebois et du Berceau-de-l'Hiver, qui ne disent jamais où l'on trouve les oeufs. Battez l'oeuf avec les épices apaisantes jusqu'à ce qu'il soit lisse et pâle, puis versez-le dans la plus large poêle que vous ayez, sur un feu modéré, et ramenez les bords à mesure qu'ils prennent. L'odeur vous guide : chaude et ronde d'abord, puis noisette sur les bords. Noisette, c'est le moment de plier. Brun, c'est trop tard. Portez-la à table à deux mains. J'ai vu toute une patrouille de gardes noirs en partager une en silence, avec un grand soin, comme un trésor. Un instant, c'en était un. Puis ils en ont demandé une autre, et c'était le meilleur moment.
 
 ## 1225760 Omelette du Lever de soleil
 
@@ -57,4 +57,4 @@ La recette vient d'un diablotin des ruines de Hache-tripes, qui entraîne quicon
 
 ## 24801 Boulettes fumées du désert
 
-Le Cercle cénarien l'enseigne en Silithus à ceux qui ont fait leurs preuves dans le désert. Les soldats de la Horde l'ont rapportée parmi leurs cicatrices. La chair de ver des sables est dense, pâle et pleine de sable. Lavez-la jusqu'à ce que l'eau coule claire, hachez-la fin avec les épices apaisantes et roulez-la en petites boulettes bien serrées, pour qu'elles tiennent dans la fumée. Puis fumez-les lentement sur un feu bas. La fumée parfume le dehors pendant que la vapeur cuit le coeur, et l'odeur passe du cru au sucré, puis à quelque chose comme le grain grillé. Quand elle arrive au grain, elles sont prêtes. Je ne peux pas vous dire quel goût elles ont. Je peux vous dire qu'un soldat qui avait perdu trois amis dans ce désert en a mangé une assiette dans ma cuisine et a pleuré. Puis il m'a demandé la recette, et je la lui ai donnée.
+Le Cercle cénarien les enseigne en Silithus à ceux qui ont fait leurs preuves dans le désert. Les soldats de la Horde les ont rapportées parmi leurs cicatrices. La chair de ver des sables est dense, pâle et pleine de sable. Lavez-la jusqu'à ce que l'eau coule claire, hachez-la fin avec les épices apaisantes et roulez-la en petites boulettes bien serrées, pour qu'elles tiennent dans la fumée. Puis fumez-les lentement sur un feu bas. La fumée parfume le dehors pendant que la vapeur cuit le coeur, et l'odeur passe du cru au sucré, puis à quelque chose comme le grain grillé. Quand elle arrive au grain, elles sont prêtes. Je ne peux pas vous dire quel goût elles ont. Je peux vous dire qu'un soldat qui avait perdu trois amis dans ce désert en a mangé une assiette dans ma cuisine et a pleuré. Puis il m'a demandé la recette, et je la lui ai donnée.

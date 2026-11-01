@@ -53,7 +53,7 @@ Les nains de Thelsamar font le boudin chaque hiver et en envoient quelques-uns �
 
 ## 1250154 Émincé de raptor aux deux épices
 
-Deux fois épicé, et pour une fois un plat dit la vérité sur lui-même. Le raptor est frotté une fois avant d'être tranché, et une fois après la cuisson. C'est le seul plat où l'épice de la fin a raison d'être : la seconde couche est pour le mordant, non pour la croûte. La chair de raptor est maigre et sèche vite. Tranchez-la en travers des fibres, assez fin pour voir une bougie au travers, et donnez-lui le feu le temps d'un souffle, pas davantage. Une recette que je n'ai pas inventée, et que j'aurais inventée, avec le temps.
+Deux fois épicé, et pour une fois un plat dit la vérité sur lui-même. Le raptor est frotté une fois avant d'être tranché, et une fois après la cuisson. C'est le seul plat où l'épice de la fin a raison d'être : la seconde couche est pour le mordant, non pour la croûte. La chair de raptor est maigre et sèche vite. Tranchez-la en travers des fibres, assez fin pour voir une bougie au travers, et donnez-lui le feu le temps d'un souffle, pas davantage. Une recette que je n'ai pas inventée, et que j'aurais inventée, si l'on m'en avait laissé le temps.
 
 ## 3370 Steak de crocilisque
 
@@ -93,11 +93,11 @@ Des lions des Tarides, coupés en côtelettes et brûlés aux épices fortes par
 
 ## 3399 Délicieux steak de lion
 
-Délicieux, dit-il de lui-même, et c'est bien trop modeste. Du lion et des épices apaisantes, laissé entier en steak, la seule manière civilisée de manger un lion. L'épice apaisante n'est pas là pour calmer le cuisinier. Elle arrondit la douceur de la viande. Saisissez, laissez reposer, et tranchez en travers des fibres. Un steak de lion tranché dans le sens du fil se mâche comme une dispute impossible à gagner, et j'ai vu des élèves s'y essayer.
+Délicieux, dit le nom, et c'est bien trop modeste. Du lion et des épices apaisantes, laissé entier en steak, la seule manière civilisée de manger un lion. L'épice apaisante n'est pas là pour calmer le cuisinier. Elle arrondit la douceur de la viande. Saisissez, laissez reposer, et tranchez en travers des fibres. Un steak de lion tranché dans le sens du fil se mâche comme une dispute impossible à gagner, et j'ai vu des élèves s'y essayer.
 
 ## 1250151 Poitrine d'ours
 
-La poitrine est le morceau d'un cuisinier patient, et la poitrine d'ours celui d'un saint. C'est la partie la plus dure de l'animal, tout en travail et en vieux muscle. Frottez-la d'épices fortes et donnez-lui le plus petit feu que vous puissiez entretenir, et une journée entière. Quelque part dans la soirée, elle rend les armes et se défait sous la fourchette. Je ne peux pas vous dire l'heure. Je peux vous dire que le cuisinier qui vérifie trop souvent n'y arrive jamais.
+La poitrine est le morceau d'un cuisinier patient, et la poitrine d'ours celui d'un saint. C'est la partie la plus dure de l'animal, tout en travail et en vieux muscle. Frottez-la d'épices fortes et donnez-lui le feu le plus doux que vous puissiez entretenir, et une journée entière. Quelque part dans la soirée, elle rend les armes et se défait sous la fourchette. Je ne peux pas vous dire l'heure. Je peux vous dire que le cuisinier qui vérifie trop souvent n'y arrive jamais.
 
 ## 4094 Aile de busard grillée
 
@@ -125,7 +125,7 @@ Une recette des Rives Claires, vendue par une femme qui n'a vu aucune raison de 
 
 ## 21175 Saucisse d'araignée
 
-De la viande d'araignée blanche, pressée en saucisse et enseignée par tous les maîtres cuisiniers du royaume comme s'il s'agissait d'une chose ordinaire. Elle ne l'est pas. La chair d'araignée est douce et fine, plus proche du crabe que du porc, et elle ne prend aucune épice parce qu'elle n'en a nul besoin. L'art est dans le pressage : assez serré pour tenir, assez lâche pour rester tendre. Bien des élèves pâlissent au mot araignée. Je leur demande s'ils ont déjà mangé du crabe, et j'attends.
+De la viande d'araignée blanche, pressée en saucisse et enseignée par tous les maîtres cuisiniers du royaume comme s'il s'agissait d'une chose ordinaire. Elle ne l'est pas. La chair d'araignée est douce et fine, plus proche du crabe que du porc, et elle ne prend aucune épice parce qu'elle n'en a pas besoin. L'art est dans le pressage : assez serré pour tenir, assez lâche pour rester tendre. Bien des élèves pâlissent au mot araignée. Je leur demande s'ils ont déjà mangé du crabe, et j'attends.
 
 ## 1250153 Paupiette de raptor
 
@@ -137,7 +137,7 @@ Les mini-burgers sont petits et nombreux, comme les jeunes cuisiniers aiment tou
 
 ## 22480 Steak de loup tendre
 
-La viande de loup tendre vient des loups du Berceau-de-l'Hiver et des contrées froides, où une bête vit lentement et garde sa graisse. C'est la meilleure viande de loup du monde, et elle est gâchée chez la plupart des cuisiniers. Des épices apaisantes, puis une saisie brève et féroce, et enfin un repos aussi long que la cuisson. Un cuisinier qui a ruiné cent loups filandreux en Elwynn comprendra enfin, avec celui-ci, ce qu'il cherchait.
+La viande de loup tendre vient des loups du Berceau-de-l'Hiver et des contrées froides, où une bête vit lentement et garde sa graisse. C'est la meilleure viande de loup du monde, et elle est gâchée chez la plupart des cuisiniers. Des épices apaisantes, puis une saisie brève et féroce, et enfin un repos aussi long que la cuisson. Un cuisinier qui a ruiné cent loups filandreux dans la forêt d'Elwynn comprendra enfin, avec celui-ci, ce qu'il cherchait.
 
 ## 1225759 Filet de flanc
 
@@ -173,7 +173,7 @@ Le tigre de ce plat n'a pas été pris par la foudre, quoi qu'en dise le nom. Il
 
 ## 1250146 Flanchet au poivre
 
-Au poivre, annonce le nom, et la recette n'en contient pas un grain. Elle se contente de flanc de loup rouge et d'épices apaisantes, et l'épice porte si bien la chaleur que personne ne regrette le poivre. Le flanc est un morceau travailleur, qui veut une poêle féroce et une main rapide. Ce que la viande laisse dans la poêle compte autant que la viande : grattez-le et nappez-en le steak avant de servir. Ne le découpez jamais dans la poêle où il a saisi. La poêle se souvient de la chaleur, et la viande aussi.
+Au poivre, annonce le nom, et la recette n'en contient pas. Elle se contente de flanc de loup rouge et d'épices apaisantes, et l'épice porte si bien la chaleur que personne ne regrette le poivre. Le flanc est un morceau travailleur, qui veut une poêle féroce et une main rapide. Ce que la viande laisse dans la poêle compte autant que la viande : grattez-le et nappez-en le steak avant de servir. Ne le découpez jamais dans la poêle où il a saisi. La poêle se souvient de la chaleur, et la viande aussi.
 
 ## 25659 Pyro-côtelettes de chimaerok à la Dirge
 

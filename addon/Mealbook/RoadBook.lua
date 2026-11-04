@@ -333,7 +333,7 @@ end
 ns.addTab(ns.TAB.road, {
   build = function(b)
     book = b
-    list = ui.newList(book.left, style, rows, true)
+    list = ui.newList(book.left, style, rows, false)
     page = ui.newPage(book.sheet, "MealbookRoadPage")
   end,
   show = function(n)

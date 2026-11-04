@@ -215,7 +215,7 @@ end
 ns.addTab(ns.TAB.recipes, {
   build = function(b)
     book = b
-    list = ui.newList(book.left, style, rows, true)
+    list = ui.newList(book.left, style, rows, false)
     page = ui.newPage(book.sheet, "MealbookRecipePage")
   end,
   show = function(n)

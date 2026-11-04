@@ -270,7 +270,7 @@ end
 ns.addTab(ns.TAB.hunts, {
   build = function(b)
     book = b
-    list = ui.newList(book.left, style, rows, true)
+    list = ui.newList(book.left, style, rows, false)
     page = ui.newPage(book.sheet, "MealbookHuntsPage")
   end,
   show = function(n)

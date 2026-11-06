@@ -32,3 +32,12 @@ end
 function ns.updateMinimapButton()
   if M then M:update() end
 end
+
+-- The key binding (the kit's K.binding, Bindings.xml): one key or pad button opens and closes the window as the
+-- minimap button's click does.
+ns.kit.binding({
+  key = "MEALBOOK",
+  name = "Mealbook",
+  global = "MealbookBinding",
+  toggle = function() ns.toggle() end,
+})

@@ -671,4 +671,15 @@ G.advance(0.5)
 check(redrawn == 1, "an ingredient's name in: the page again")
 ns.kitBook.refresh = refresh
 
+-- the key binding (Bindings.xml calls this global): it opens and closes the window as ns.toggle does
+do
+  check(type(MealbookBinding) == "function", "the key binding's function is there")
+  local was = MealbookFrame and MealbookFrame:IsShown() or false
+  MealbookBinding()
+  check(MealbookFrame and MealbookFrame:IsShown() == not was, "the key binding opens the window")
+  MealbookBinding()
+  check(MealbookFrame:IsShown() == was, "… and a second press closes it")
+  check(BINDING_HEADER_MEALBOOK ~= nil, "… under the addon's own heading")
+end
+
 io.write(("Mealbook: %d checks passed (%s, %s).\n"):format(count, G.LOCALE, G.FOREVER and "Forever" or "Classic Era"))

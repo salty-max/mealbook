@@ -152,3 +152,7 @@ German and Spanish (deDE, esES, esMX) are held back from players since 1 Novembe
   esMX shares esES's words and pages, with its own client's names
   (`i18n/esMX/regional.json` (game names from wow-data through addon-kit/regional.ts, `regional.resolved.json`; the hand file keeps words), swapped in by the build) and decimal point. The dishes', ingredients' and
   recipes' names are the game's, by id, in the client's language.
+
+## The key binding
+
+For a controller player (no keyboard for the slash command, a cursor to steer to the minimap button). `addon/Mealbook/Bindings.xml` and `ns.kit.binding(...)` at the end of `Minimap.lua`: one key or pad button, chosen in the game's Key Bindings under the addon's own heading ("Open <the addon>"), opens and closes the book through `ns.toggle`, as the minimap button's click does. The binding does nothing until the player puts a key on it. The kit's `K.binding`, the file, what the game does in each game and what is not verified: `addon-kit/docs/controller.md`, "Opening by a pad button". `bun run bindings` (part of `check`) checks the file, the function and the package.

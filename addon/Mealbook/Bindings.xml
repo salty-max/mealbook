@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="MEALBOOK_OPEN" category="BINDING_HEADER_MEALBOOK">
+		MealbookBinding();
+	</Binding>
+</Bindings>

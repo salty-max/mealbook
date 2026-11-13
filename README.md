@@ -8,6 +8,9 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
   Undercity): what it makes, its colours now and at each threshold, its
   ingredients as the game's items (with how many you carry), how you
   learned it, how often you cooked it.
+- **Effects:** a choice under the search lists the dishes you know by what
+  they do (attack power, healing, a stat, regeneration, fishing skill, any
+  other buff or none), each with how many give it.
 - **The road:** from your skill now (or nothing) to 300, the surest recipe
   at each step, one you know or one to learn on the way, where to learn it,
   how many casts it takes on average, what to buy or gather and where (the
@@ -29,7 +32,8 @@ chef's cookbook that fills in as you learn to cook, and the road to 300.
 `/mealbook` opens the book (or its button by the minimap), `/mealbook road`
 opens the road, `/mealbook settings` opens its page in the game's Options:
 whose pages the book shows, the ingredients' tooltip line, the minimap
-button.
+button, the book's size and the paper colours (a reload applies them). One
+key or pad button can open the book: **Options > Key Bindings > Open Mealbook**.
 
 In English and French.
 

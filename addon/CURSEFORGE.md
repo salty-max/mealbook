@@ -15,6 +15,8 @@ For Classic Era (including Hardcore and Season of Discovery) and World of Warcra
 
 Your recipes sit in the book's chapters: **Roasts and grills**, **Fish and seafood**, **Soups and stews**, **Eggs, pies and bakes**, **Drinks**, **Feasts** and **Fires and ovens**. Each shows its colour for your skill right now, from orange to grey, so you can see at a glance what still teaches you something.
 
+Under the search, a choice of effects lists the dishes you know by what eating them does: attack power, spell damage, healing power, a stat, mana or health regeneration, fishing skill, any other buff, or no bonus (a campfire or an oven has none). Each shows how many of your dishes give it, and the chapters then list only those dishes.
+
 A dish's page holds what it makes and how many, its ingredients as the game's own items with how many you carry, the skill where it turns yellow, green and grey, how you learned it, and how often you've cooked it.
 
 Above the facts, the chef has a word about the dish. Alliance cooks read **Kendor Kabonka**, Stormwind's master of cooking recipes, proud, exacting and rarely impressed. Horde cooks read **Eunice Burch**, who teaches in the Undercity's kitchens, cannot taste the food any more and cooks by smell and memory. Every dish has a page from each of them. `/mealbook chef` lets you read the other one.
@@ -61,6 +63,10 @@ The dishes, ingredients and places are the game's own, in your client's language
 Open the book with `/mealbook` or the minimap button. The welcome page appears once per character and can be reopened with `/mealbook welcome`.
 
 Settings are under **Options > AddOns > Mealbook**, through `/mealbook settings` or a right-click on the minimap button: whose pages the book shows, the achievements' alert and sound, how long banners stay, the ingredients' tooltip line and the minimap button. Each character has its own. Copy another character's settings within the same game, or use `/mealbook export` and `/mealbook import CODE`.
+
+Two choices change how the book looks. **Book size** makes the whole window larger, in four steps from Normal to Largest. **Paper colours** replace the dark look with dark ink on tan paper, which some players find easier on the eyes. Paper colours take effect after a reload, and the settings page ends with a **Reload** button for it.
+
+**Options > Key Bindings** lists **Open Mealbook** under a heading of its own. Put a key on it, or on Forever a controller button, and one press opens or closes the book. Nothing is bound until you choose.
 
 - `/mealbook road` opens the road to 300.
 - `/mealbook chef` switches to the other chef's pages.

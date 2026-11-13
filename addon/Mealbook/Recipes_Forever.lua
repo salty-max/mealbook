@@ -84,7 +84,7 @@ ns.data = {
     [2545] = { item = 2682, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 2675, 1, 2678, 1 }, items = { 2698 } }, -- Cooked Crab Claw
     [8238] = { item = 6657, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 6522, 1, 2678, 1 }, items = { 6661 } }, -- Savory Deviate Delight
     [1252566] = { item = 251525, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 251524, 1, 2678, 1 }, items = { 251526 } }, -- Savory Whimsyfin Delight
-    [1283400] = { item = 279961, made = { 1, 1 }, learn = 90, yellow = 95, grey = 105, chapter = "fire", reagents = { 11291, 1 }, items = { 273087 } }, -- Journeyman Campfire
+    [1283400] = { item = 279961, made = { 1, 1 }, learn = 90, yellow = 95, grey = 95, chapter = "fire", reagents = { 11291, 1 }, items = { 273087 } }, -- Journeyman Campfire
     [6501] = { item = 5526, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5503, 1, 1179, 1, 2678, 1 }, items = { 5528 } }, -- Clam Chowder
     [6417] = { item = 5478, made = { 2, 2 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5051, 1 }, items = { 5487 } }, -- Dig Rat Stew
     [3372] = { item = 3663, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 1468, 2, 2692, 1 }, items = { 3680 } }, -- Murloc Fin Soup
@@ -105,7 +105,7 @@ ns.data = {
     [15853] = { item = 12209, made = { 1, 1 }, learn = 125, yellow = 165, grey = 205, chapter = "meat", reagents = { 1015, 1, 2678, 1 }, items = { 12227 } }, -- Lean Wolf Steak
     [3398] = { item = 3727, made = { 1, 1 }, learn = 125, yellow = 175, grey = 215, chapter = "meat", reagents = { 3731, 1, 2692, 1 }, items = { 3735 } }, -- Hot Lion Chops
     [3376] = { item = 3665, made = { 1, 1 }, learn = 130, yellow = 170, grey = 210, chapter = "bake", reagents = { 3685, 1, 2692, 1 }, items = { 3682 } }, -- Curiously Tasty Omelet
-    [1262978] = { item = 279957, made = { 1, 1 }, learn = 140, yellow = 145, grey = 150, chapter = "feast", reagents = { 12037, 2, 12204, 1, 3713, 1 }, items = { 273102 } }, -- Cookie's Feast
+    [1262978] = { item = 279957, made = { 1, 1 }, learn = 140, yellow = 145, grey = 145, chapter = "feast", reagents = { 12037, 2, 12204, 1, 3713, 1 }, items = { 273102 } }, -- Cookie's Feast
     [24418] = { item = 20074, made = { 1, 1 }, learn = 150, yellow = 160, grey = 200, chapter = "soup", reagents = { 3667, 2, 3713, 1 }, items = { 20075 } }, -- Heavy Crocolisk Stew
     [3399] = { item = 3728, made = { 1, 1 }, learn = 150, yellow = 190, grey = 230, chapter = "meat", reagents = { 3731, 2, 3713, 1 }, items = { 3736 } }, -- Tasty Lion Steak
     [7828] = { item = 4594, made = { 1, 1 }, learn = 175, yellow = 190, grey = 230, chapter = "fish", reagents = { 6362, 1 }, items = { 6369 } }, -- Rockscale Cod
@@ -126,7 +126,7 @@ ns.data = {
     [1249960] = { item = 249868, made = { 1, 1 }, learn = 180, yellow = 195, grey = 235, chapter = "drink", reagents = { 1708, 1, 3818, 2 }, items = { 249882 }, unknown = true }, -- Triage Tea
     [1250150] = { item = 250073, made = { 1, 1 }, learn = 180, yellow = 280, grey = 310, chapter = "meat", reagents = { 12184, 2, 2692, 3 }, items = { 250181 }, unknown = true }, -- Raging Raptor Ribs
     [1295834] = { item = 274976, made = { 1, 1 }, learn = 185, yellow = 200, grey = 230, chapter = "meat", reagents = { 769, 2, 2678, 1 }, items = { 274977 } }, -- Plain Ol' Paletusk
-    [1291341] = { item = 279974, made = { 1, 1 }, learn = 200, yellow = 205, grey = 220, chapter = "fire", reagents = { 272941, 1 }, items = { 273101 }, unknown = true }, -- Expert Campfire
+    [1291341] = { item = 279974, made = { 1, 1 }, learn = 200, yellow = 205, grey = 205, chapter = "fire", reagents = { 272941, 1 }, items = { 273101 }, unknown = true }, -- Expert Campfire
     [1249967] = { item = 249875, made = { 1, 1 }, learn = 200, yellow = 215, grey = 225, chapter = "drink", reagents = { 1645, 1, 3713, 3, 4402, 1 }, items = { 249889 } }, -- Spicy Smoothie
     [1295805] = { item = 274971, made = { 1, 1 }, learn = 200, yellow = 220, grey = 240, chapter = "soup", reagents = { 730, 2, 12206, 1, 2692, 1 }, items = { 274972 }, unknown = true }, -- Briny Seafood Stew
     [1249961] = { item = 249869, made = { 1, 1 }, learn = 200, yellow = 220, grey = 250, chapter = "drink", reagents = { 1645, 1, 8838, 2 }, items = { 249883 }, unknown = true }, -- Sunny Tea

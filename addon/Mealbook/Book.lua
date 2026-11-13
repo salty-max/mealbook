@@ -11,14 +11,19 @@ local K, L = ns.kit, ns.kit.L
 local T = K.T
 local ICON = "Interface\\AddOns\\Mealbook\\Media\\Logo"
 
--- The skill's colours, the game's cooking window's.
+-- The skill's colours, the game's cooking window's, and the paper's own for
+-- each (darkened by hand, not by one rule, so yellow and grey stay apart: the
+-- same darkening makes both near black). A colour is made when it is drawn.
 local COLOURS = {
-  red = { "|cffff2020", L["too hard"] },
-  orange = { "|cffff8040", L["orange"] },
-  yellow = { "|cffffff00", L["yellow"] },
-  green = { "|cff40c040", L["green"] },
-  grey = { "|cff808080", L["grey"] },
+  red = { { 1, 0.125, 0.125 }, L["too hard"], { 0.50, 0.04, 0.04 } },
+  orange = { { 1, 0.5, 0.25 }, L["orange"], { 0.42, 0.17, 0.0 } },
+  yellow = { { 1, 1, 0 }, L["yellow"], { 0.30, 0.25, 0.0 } },
+  green = { { 0.25, 0.75, 0.25 }, L["green"], { 0.03, 0.29, 0.07 } },
+  grey = { { 0.5, 0.5, 0.5 }, L["grey"], { 0.24, 0.25, 0.29 } },
 }
+ns.PAPER_COLOURS = COLOURS -- (for the tests: every one reads on the paper, and they stay apart)
+-- (tooltip: the game's tooltip is dark whatever the look, so its words keep the game's colour)
+local function hexOf(name, tooltip) return K.hex(COLOURS[name][(K.paper and not tooltip) and 3 or 1]) end
 
 -- The chapters, in the book's order.
 local CHAPTERS = {
@@ -102,15 +107,15 @@ end)
 -- ── the parts every tab is made of ───────────────────────────────────────────
 local function query() return ns.kit.query(B.frame.search) end
 local function day(stamp) return K.day(stamp and stamp.at) end
-local function colourWord(name) return COLOURS[name][1] .. COLOURS[name][2] .. "|r" end
-local function colourCode(name) return COLOURS[name][1] end
+local function colourWord(name) return hexOf(name) .. COLOURS[name][2] .. "|r" end
+local function colourCode(name) return hexOf(name) end
 -- A dish's colours at its thresholds: orange 1, yellow 45, green 65, grey 85.
 local function thresholds(d)
   return table.concat({
-    COLOURS.orange[1] .. d.learn .. "|r",
-    COLOURS.yellow[1] .. d.yellow .. "|r",
-    COLOURS.green[1] .. ns.road.green(d) .. "|r",
-    COLOURS.grey[1] .. d.grey .. "|r",
+    hexOf("orange") .. d.learn .. "|r",
+    hexOf("yellow") .. d.yellow .. "|r",
+    hexOf("green") .. ns.road.green(d) .. "|r",
+    hexOf("grey") .. d.grey .. "|r",
   }, "  ")
 end
 local function have(item) return GetItemCount and GetItemCount(item) or 0 end
@@ -195,6 +200,7 @@ ns.ui = {
   day = day,
   colourWord = colourWord,
   colourCode = colourCode,
+  tipCode = function(name) return hexOf(name, true) end,
   thresholds = thresholds,
   have = have,
   dishPicture = dishPicture,

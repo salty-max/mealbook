@@ -73,7 +73,7 @@ function P.line(item)
   local names = {}
   for i = 1, math.min(#dishes, SHOWN) do
     local spell = dishes[i]
-    names[i] = ns.ui.colourCode(ns.road.colour(D.recipes[spell], skill)) .. ns.dishName(spell) .. "|r"
+    names[i] = ns.ui.tipCode(ns.road.colour(D.recipes[spell], skill)) .. ns.dishName(spell) .. "|r"
   end
   local text = table.concat(names, ", ")
   local more = #dishes - SHOWN
@@ -175,7 +175,7 @@ end
 function P.addSources(tip, item)
   local src, ui = P.sources(item), ns.ui
   if not src then return end
-  local accent = ns.kit.T.accent
+  local accent = ns.kit.TIP_NEW -- (the game's tooltip is dark whatever the look)
   local function line(text) tip:AddLine(text, accent[1], accent[2], accent[3], true) end
   if src.sellers[1] then
     line(L["Sold by %s"]:format(joined(src.sellers, 2, function(v)

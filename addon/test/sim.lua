@@ -24,6 +24,10 @@ end
 local NEW_PAGE = L["A new page: %s."]:match("^(.-)%%s")
 
 -- ── a cook's first login ─────────────────────────────────────────────────────
+-- (PAPER=1: a character who chose the paper look and the largest book)
+if os.getenv("PAPER") == "1" then
+  MealbookSettings = { profiles = { [UnitName("player") .. " - " .. GetRealmName()] = { paper = true, bookSize = 4 } } }
+end
 s.skill = { rank = 12, max = 75 }
 s.known = { [2538] = true, [2540] = true, [8604] = true }
 -- (a book from before its version, 0.1.x's shape: kept, then stamped)
@@ -776,6 +780,100 @@ do
   MealbookBinding()
   check(MealbookFrame:IsShown() == was, "… and a second press closes it")
   check(BINDING_HEADER_MEALBOOK ~= nil, "… under the addon's own heading")
+end
+
+-- ── the book's size and the paper look ───────────────────────────────────────
+do
+  local K = ns.kit
+  local PAPER = os.getenv("PAPER") == "1"
+  check(
+    K.paper == PAPER and ns.option("paper") == PAPER,
+    "the look: the character's choice is the kit's (" .. (PAPER and "paper" or "dark") .. ")"
+  )
+  check(ns.option("bookSize") == (PAPER and 4 or 1), "the book size is the character's choice, Normal by default")
+  check(K.lookGet and K.lookGet("bookSize") == ns.option("bookSize"), "the kit reads the look from the options")
+  UIParent.w, UIParent.h = 1920, 1080 -- (a screen that holds the largest book)
+  if not MealbookFrame then ns.toggle() end
+  local sizes = { 1, 1.15, 1.3, 1.5 }
+  for step = 1, 4 do
+    ns.setOption("bookSize", step)
+    K.resize(step) -- (what the Book size choice calls)
+    check(
+      math.abs(MealbookFrame:GetScale() - sizes[step]) < 1e-9
+        and math.abs(MealbookFrame:GetScale() - K.scaleFor(step, K.BOOK_W, K.BOOK_H)) < 1e-9,
+      "size " .. step .. " scales the open window at once to " .. sizes[step]
+    )
+  end
+  ns.setOption("bookSize", PAPER and 4 or 1)
+  K.resize(PAPER and 4 or 1)
+  ns.setOption("paper", PAPER)
+  -- the skill colours on paper: each reads (3 to 1 at least, a hue's meaning: README) and they stay apart
+  local names, last = { "red", "orange", "yellow", "green", "grey" }, nil
+  for i, a in ipairs(names) do
+    local c = ns.PAPER_COLOURS[a][3]
+    check(
+      K.contrast(c, K.PAPER.ground) >= 3 and K.contrast(c, K.PAPER.back) >= 3,
+      "paper: the skill colour " .. a .. " reads on the paper"
+    )
+    for j = i + 1, #names do
+      local d = ns.PAPER_COLOURS[names[j]][3]
+      local dist = math.sqrt((c[1] - d[1]) ^ 2 + (c[2] - d[2]) ^ 2 + (c[3] - d[3]) ^ 2)
+      check(dist >= 0.1, "paper: " .. a .. " and " .. names[j] .. " stay apart (" .. ("%.2f"):format(dist) .. ")")
+    end
+  end
+  local code = ns.profiles:export()
+  check(code:find(":z%d") and code:find(":p%d"), "the profile's code carries the size and the paper")
+end
+
+-- RENDER=dir [PAPER=1] luajit addon/test/sim.lua: the book as HTML (addon-kit/render.lua), for a look
+-- at size 1 and 4 and on paper before a build (Chrome's fonts: the game has the last word)
+if os.getenv("RENDER") then
+  local render = dofile("../addon-kit/render.lua")
+  local K, ui = ns.kit, ns.ui
+  local rows = { { "Roasts and grills", "section" } }
+  local shown = { 2538, 2540, 2795, 6412 }
+  local picked
+  for i, spell in ipairs(shown) do
+    local d = ns.recipe(spell)
+    if d then
+      table.insert(rows, { ns.dishName(spell), "row", picked = i == 1, count = ui.colourWord("green") })
+      picked = picked or spell
+    end
+  end
+  table.insert(rows, { "Soups and stews", "section" })
+  table.insert(rows, { "No more dishes known yet.", "empty" })
+  local d = ns.recipe(picked)
+  local page = ns.pages and ns.pages.kendor and ns.pages.kendor[picked]
+  render(K, os.getenv("RENDER"), {
+    scene = "book",
+    title = "Mealbook",
+    tabs = { "Recipes", "The road", "Hunts", "Achievements" },
+    count = "4 of 120 dishes",
+    rows = rows,
+    page = {
+      heading = ns.dishName(picked),
+      sub = "Roasts and grills  -  skill " .. tostring(d.learn),
+      blocks = {
+        { "para", ui.thresholds(d) .. "   orange, yellow, green and grey at these skills" },
+        { "para", page and page[1] or "" },
+        { "rule" },
+        {
+          "para",
+          ui.colourWord("red")
+            .. "  "
+            .. ui.colourWord("orange")
+            .. "  "
+            .. ui.colourWord("yellow")
+            .. "  "
+            .. ui.colourWord("green")
+            .. "  "
+            .. ui.colourWord("grey"),
+        },
+        { "card", "Ingredients", "a card on the page" },
+        { "bar", 60, "The road to 300" },
+      },
+    },
+  })
 end
 
 io.write(("Mealbook: %d checks passed (%s, %s).\n"):format(count, G.LOCALE, G.FOREVER and "Forever" or "Classic Era"))

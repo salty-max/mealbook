@@ -109,7 +109,7 @@ function ns.skill() return char and char.skill and char.skill.rank or 0, char an
 local dishLink = ns.kit.links("mealbook", function(target)
   local spell = tonumber(target:match("^dish:(%d+)$") or "")
   if spell and ns.openDish then ns.openDish(spell) end
-end)
+end, "ffd100") -- (chat is dark whatever the look: the game's link yellow)
 
 -- ── the recipes known ────────────────────────────────────────────────────────
 -- A recipe joins the book the first time the game says it is known: quietly

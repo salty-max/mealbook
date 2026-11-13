@@ -36,87 +36,87 @@ ns.data = {
     25659,
   },
   recipes = {
-    [7751] = { item = 6290, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "fish", reagents = { 6291, 1 }, items = { 6325 } }, -- Brilliant Smallfish
-    [2538] = { item = 2679, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 2672, 1 }, skill = true }, -- Charred Wolf Meat
-    [15935] = { item = 12224, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 12223, 1, 2678, 1 }, items = { 12226 } }, -- Crispy Bat Wing
-    [21143] = { item = 17197, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "bake", reagents = { 6889, 1, 17194, 1 }, items = { 17200 } }, -- Gingerbread Cookie
-    [8604] = { item = 6888, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "bake", reagents = { 6889, 1, 2678, 1 }, skill = true }, -- Herb Baked Egg
-    [2540] = { item = 2681, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 769, 1 }, skill = true }, -- Roasted Boar Meat
-    [7752] = { item = 787, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "fish", reagents = { 6303, 1 }, items = { 6326 } }, -- Slitherskin Mackerel
-    [6412] = { item = 5472, made = { 1, 1 }, learn = 10, yellow = 50, grey = 90, chapter = "meat", reagents = { 5465, 1 }, items = { 5482 } }, -- Kaldorei Spider Kabob
-    [2539] = { item = 2680, made = { 1, 1 }, learn = 10, yellow = 50, grey = 90, chapter = "meat", reagents = { 2672, 1, 2678, 1 }, trainer = true }, -- Spiced Wolf Meat
-    [6413] = { item = 5473, made = { 1, 1 }, learn = 20, yellow = 60, grey = 100, chapter = "meat", reagents = { 5466, 1 }, items = { 5483 } }, -- Scorpid Surprise
-    [2795] = { item = 2888, made = { 1, 1 }, learn = 25, yellow = 60, grey = 100, chapter = "meat", reagents = { 2886, 1, 2894, 1 }, items = { 2889 } }, -- Beer Basted Boar Ribs
-    [21144] = { item = 17198, made = { 1, 1 }, learn = 35, yellow = 75, grey = 115, chapter = "drink", reagents = { 6889, 1, 1179, 1, 17196, 1, 17194, 1 }, items = { 17201 } }, -- Egg Nog
-    [6414] = { item = 5474, made = { 2, 2 }, learn = 35, yellow = 75, grey = 115, chapter = "meat", reagents = { 5467, 1, 2678, 1 }, items = { 5484 } }, -- Roasted Kodo Meat
-    [8607] = { item = 6890, made = { 1, 1 }, learn = 40, yellow = 80, grey = 120, chapter = "meat", reagents = { 3173, 1 }, items = { 6892 } }, -- Smoked Bear Meat
-    [6499] = { item = 5525, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 5503, 1, 159, 1 }, trainer = true }, -- Boiled Clams
-    [2541] = { item = 2684, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "meat", reagents = { 2673, 1 }, trainer = true }, -- Coyote Steak
-    [6415] = { item = 5476, made = { 2, 2 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 5468, 1, 2678, 1 }, items = { 5485 } }, -- Fillet of Frenzy
-    [2542] = { item = 724, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "bake", reagents = { 723, 1, 2678, 1 }, items = { 2697 } }, -- Goretusk Liver Pie
-    [7754] = { item = 6316, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 6317, 1, 2678, 1 }, items = { 6329 } }, -- Loch Frenzy Delight
-    [7753] = { item = 4592, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 6289, 1 }, items = { 6328 } }, -- Longjaw Mud Snapper
-    [7827] = { item = 5095, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 6361, 1 }, items = { 6368 } }, -- Rainbow Fin Albacore
-    [6416] = { item = 5477, made = { 2, 2 }, learn = 50, yellow = 90, grey = 130, chapter = "soup", reagents = { 5469, 1, 4536, 1 }, items = { 5486 } }, -- Strider Stew
-    [3371] = { item = 3220, made = { 2, 2 }, learn = 60, yellow = 100, grey = 140, chapter = "meat", reagents = { 3173, 1, 3172, 1, 3174, 1 }, items = { 3679 } }, -- Blood Sausage
-    [9513] = { item = 7676, made = { 1, 1 }, learn = 60, yellow = 100, grey = 140, chapter = "drink", reagents = { 2452, 1, 159, 1 }, items = { 18160 } }, -- Thistle Tea
-    [2544] = { item = 2683, made = { 1, 1 }, learn = 75, yellow = 115, grey = 155, chapter = "fish", reagents = { 2674, 1, 2678, 1 }, trainer = true }, -- Crab Cake
-    [2543] = { item = 733, made = { 1, 1 }, learn = 75, yellow = 115, grey = 155, chapter = "soup", reagents = { 729, 1, 730, 1, 731, 1 }, items = { 728 } }, -- Westfall Stew
-    [3370] = { item = 3662, made = { 1, 1 }, learn = 80, yellow = 120, grey = 160, chapter = "meat", reagents = { 2924, 1, 2678, 1 }, items = { 3678 } }, -- Crocolisk Steak
-    [2546] = { item = 2687, made = { 1, 1 }, learn = 80, yellow = 120, grey = 160, chapter = "meat", reagents = { 2677, 1, 2678, 1 }, trainer = true }, -- Dry Pork Ribs
-    [25704] = { item = 21072, made = { 1, 1 }, learn = 80, yellow = 120, grey = 160, chapter = "fish", reagents = { 21071, 1, 2678, 1 }, items = { 21099 } }, -- Smoked Sagefish
-    [2545] = { item = 2682, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 2675, 1, 2678, 1 }, items = { 2698 } }, -- Cooked Crab Claw
-    [8238] = { item = 6657, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 6522, 1, 2678, 1 }, items = { 6661 } }, -- Savory Deviate Delight
-    [6501] = { item = 5526, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5503, 1, 1179, 1, 2678, 1 }, items = { 5528 } }, -- Clam Chowder
-    [6417] = { item = 5478, made = { 2, 2 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5051, 1 }, items = { 5487 } }, -- Dig Rat Stew
-    [3372] = { item = 3663, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 1468, 2, 2692, 1 }, items = { 3680 } }, -- Murloc Fin Soup
-    [2547] = { item = 1082, made = { 1, 1 }, learn = 100, yellow = 135, grey = 175, chapter = "soup", reagents = { 1081, 1, 1080, 1 }, items = { 2699 } }, -- Redridge Goulash
-    [7755] = { item = 4593, made = { 1, 1 }, learn = 100, yellow = 140, grey = 180, chapter = "fish", reagents = { 6308, 1 }, items = { 6330 } }, -- Bristle Whisker Catfish
-    [6418] = { item = 5479, made = { 2, 2 }, learn = 100, yellow = 140, grey = 180, chapter = "meat", reagents = { 5470, 1, 2692, 1 }, items = { 5488 } }, -- Crispy Lizard Tail
-    [2549] = { item = 1017, made = { 3, 3 }, learn = 100, yellow = 140, grey = 180, chapter = "meat", reagents = { 1015, 2, 2665, 1 }, items = { 2701 } }, -- Seasoned Wolf Kabob
-    [2548] = { item = 2685, made = { 1, 1 }, learn = 110, yellow = 130, grey = 170, chapter = "meat", reagents = { 2677, 2, 2692, 1 }, items = { 2700 } }, -- Succulent Pork Ribs
-    [3397] = { item = 3726, made = { 1, 1 }, learn = 110, yellow = 150, grey = 190, chapter = "meat", reagents = { 3730, 1, 2692, 1 }, items = { 3734 } }, -- Big Bear Steak
-    [3377] = { item = 3666, made = { 1, 1 }, learn = 110, yellow = 150, grey = 190, chapter = "bake", reagents = { 2251, 2, 2692, 1 }, items = { 3683 } }, -- Gooey Spider Cake
-    [6419] = { item = 5480, made = { 2, 2 }, learn = 110, yellow = 150, grey = 190, chapter = "meat", reagents = { 5471, 1, 2678, 4 }, items = { 5489 } }, -- Lean Venison
-    [3373] = { item = 3664, made = { 1, 1 }, learn = 120, yellow = 160, grey = 200, chapter = "soup", reagents = { 3667, 1, 2692, 1 }, items = { 3681 } }, -- Crocolisk Gumbo
-    [6500] = { item = 5527, made = { 1, 1 }, learn = 125, yellow = 165, grey = 205, chapter = "fish", reagents = { 5504, 1, 2692, 1 }, trainer = true }, -- Goblin Deviled Clams
-    [15853] = { item = 12209, made = { 1, 1 }, learn = 125, yellow = 165, grey = 205, chapter = "meat", reagents = { 1015, 1, 2678, 1 }, items = { 12227 } }, -- Lean Wolf Steak
-    [3398] = { item = 3727, made = { 1, 1 }, learn = 125, yellow = 175, grey = 215, chapter = "meat", reagents = { 3731, 1, 2692, 1 }, items = { 3735 } }, -- Hot Lion Chops
-    [3376] = { item = 3665, made = { 1, 1 }, learn = 130, yellow = 170, grey = 210, chapter = "bake", reagents = { 3685, 1, 2692, 1 }, items = { 3682 } }, -- Curiously Tasty Omelet
-    [24418] = { item = 20074, made = { 1, 1 }, learn = 150, yellow = 160, grey = 200, chapter = "soup", reagents = { 3667, 2, 3713, 1 }, items = { 20075 } }, -- Heavy Crocolisk Stew
-    [3399] = { item = 3728, made = { 1, 1 }, learn = 150, yellow = 190, grey = 230, chapter = "meat", reagents = { 3731, 2, 3713, 1 }, items = { 3736 } }, -- Tasty Lion Steak
-    [7828] = { item = 4594, made = { 1, 1 }, learn = 175, yellow = 190, grey = 230, chapter = "fish", reagents = { 6362, 1 }, items = { 6369 } }, -- Rockscale Cod
-    [4094] = { item = 4457, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 3404, 1, 2692, 1 }, trainer = true, items = { 4609 } }, -- Barbecued Buzzard Wing
-    [15863] = { item = 12213, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 12037, 1, 2692, 1 }, items = { 12232 } }, -- Carrion Surprise
-    [7213] = { item = 6038, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "fish", reagents = { 4655, 1, 2692, 1 }, items = { 6039 } }, -- Giant Clam Scorcho
-    [13028] = { item = 10841, made = { 4, 4 }, learn = 175, yellow = 215, grey = 255, chapter = "drink", reagents = { 3821, 1, 159, 1 }, trainer = true }, -- Goldthorn Tea
-    [15856] = { item = 13851, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 12203, 1, 2692, 1 }, items = { 12229 } }, -- Hot Wolf Ribs
-    [15861] = { item = 12212, made = { 2, 2 }, learn = 175, yellow = 215, grey = 255, chapter = "soup", reagents = { 12202, 1, 159, 1, 4536, 2 }, items = { 12231 } }, -- Jungle Stew
-    [20916] = { item = 8364, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "fish", reagents = { 8365, 1 }, items = { 17062 } }, -- Mithril Headed Trout
-    [15865] = { item = 12214, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "soup", reagents = { 12037, 1, 2596, 1 }, items = { 12233 } }, -- Mystery Stew
-    [15855] = { item = 12210, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 12184, 1, 2692, 1 }, items = { 12228 } }, -- Roast Raptor
-    [25954] = { item = 21217, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "fish", reagents = { 21153, 1, 2692, 1 }, items = { 21219 } }, -- Sagefish Delight
-    [3400] = { item = 3729, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "soup", reagents = { 3712, 1, 3713, 1 }, items = { 3737 } }, -- Soothing Turtle Bisque
-    [15906] = { item = 12217, made = { 1, 1 }, learn = 200, yellow = 240, grey = 280, chapter = "soup", reagents = { 12037, 1, 4402, 1, 2692, 1 }, items = { 12239 } }, -- Dragonbreath Chili
-    [15910] = { item = 12215, made = { 2, 2 }, learn = 200, yellow = 240, grey = 280, chapter = "soup", reagents = { 12204, 2, 3713, 1, 159, 1 }, items = { 12240 } }, -- Heavy Kodo Stew
-    [21175] = { item = 17222, made = { 1, 1 }, learn = 200, yellow = 240, grey = 280, chapter = "meat", reagents = { 12205, 2 }, trainer = true }, -- Spider Sausage
-    [18239] = { item = 13927, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 13754, 1, 3713, 1 }, items = { 13940 } }, -- Cooked Glossy Mightfish
-    [18241] = { item = 13930, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 13758, 1 }, items = { 13941 } }, -- Filet of Redgill
-    [15933] = { item = 12218, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "bake", reagents = { 12207, 1, 3713, 2 }, items = { 16110 } }, -- Monster Omelet
-    [15915] = { item = 12216, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 12206, 1, 2692, 2 }, items = { 16111 } }, -- Spiced Chili Crab
-    [18238] = { item = 6887, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 4603, 1 }, items = { 13939 } }, -- Spotted Yellowtail
-    [22480] = { item = 18045, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "meat", reagents = { 12208, 1, 3713, 1 }, items = { 18046 } }, -- Tender Wolf Steak
-    [20626] = { item = 16766, made = { 2, 2 }, learn = 225, yellow = 265, grey = 305, chapter = "soup", reagents = { 7974, 2, 2692, 1, 1179, 1 }, items = { 16767 } }, -- Undermine Clam Chowder
-    [18240] = { item = 13928, made = { 1, 1 }, learn = 240, yellow = 280, grey = 320, chapter = "fish", reagents = { 13755, 1, 3713, 1 }, items = { 13942 } }, -- Grilled Squid
-    [18242] = { item = 13929, made = { 1, 1 }, learn = 240, yellow = 280, grey = 320, chapter = "fish", reagents = { 13756, 1, 2692, 2 }, items = { 13943 } }, -- Hot Smoked Bass
-    [18243] = { item = 13931, made = { 1, 1 }, learn = 250, yellow = 290, grey = 330, chapter = "soup", reagents = { 13759, 1, 159, 1 }, items = { 13945 } }, -- Nightfin Soup
-    [18244] = { item = 13932, made = { 1, 1 }, learn = 250, yellow = 290, grey = 330, chapter = "fish", reagents = { 13760, 1 }, items = { 13946 } }, -- Poached Sunscale Salmon
-    [18247] = { item = 13935, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "fish", reagents = { 13889, 1, 3713, 1 }, items = { 13949 } }, -- Baked Salmon
-    [18245] = { item = 13933, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "soup", reagents = { 13888, 1, 159, 1 }, items = { 13947 } }, -- Lobster Stew
-    [18246] = { item = 13934, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "fish", reagents = { 13893, 1, 2692, 1, 3713, 1 }, items = { 13948 } }, -- Mightfish Steak
-    [22761] = { item = 18254, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "bake", reagents = { 18255, 1, 3713, 1 }, items = { 18267 } }, -- Runn Tum Tuber Surprise
-    [24801] = { item = 20452, made = { 1, 1 }, learn = 285, yellow = 325, grey = 365, chapter = "bake", reagents = { 20424, 1, 3713, 1 }, quests = { 8313 } }, -- Smoked Desert Dumplings
-    [25659] = { item = 21023, made = { 5, 5 }, learn = 300, yellow = 325, grey = 365, chapter = "meat", reagents = { 2692, 1, 9061, 1, 8150, 1, 21024, 1 }, items = { 21025 } }, -- Dirge's Kickin' Chimaerok Chops
+    [7751] = { item = 6290, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "fish", reagents = { 6291, 1 }, effects = { "none" }, items = { 6325 } }, -- Brilliant Smallfish
+    [2538] = { item = 2679, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 2672, 1 }, effects = { "none" }, skill = true }, -- Charred Wolf Meat
+    [15935] = { item = 12224, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 12223, 1, 2678, 1 }, effects = { "stamina", "spirit" }, items = { 12226 } }, -- Crispy Bat Wing
+    [21143] = { item = 17197, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "bake", reagents = { 6889, 1, 17194, 1 }, effects = { "stamina", "spirit" }, items = { 17200 } }, -- Gingerbread Cookie
+    [8604] = { item = 6888, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "bake", reagents = { 6889, 1, 2678, 1 }, effects = { "stamina", "spirit" }, skill = true }, -- Herb Baked Egg
+    [2540] = { item = 2681, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 769, 1 }, effects = { "none" }, skill = true }, -- Roasted Boar Meat
+    [7752] = { item = 787, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "fish", reagents = { 6303, 1 }, effects = { "none" }, items = { 6326 } }, -- Slitherskin Mackerel
+    [6412] = { item = 5472, made = { 1, 1 }, learn = 10, yellow = 50, grey = 90, chapter = "meat", reagents = { 5465, 1 }, effects = { "stamina", "spirit" }, items = { 5482 } }, -- Kaldorei Spider Kabob
+    [2539] = { item = 2680, made = { 1, 1 }, learn = 10, yellow = 50, grey = 90, chapter = "meat", reagents = { 2672, 1, 2678, 1 }, effects = { "stamina", "spirit" }, trainer = true }, -- Spiced Wolf Meat
+    [6413] = { item = 5473, made = { 1, 1 }, learn = 20, yellow = 60, grey = 100, chapter = "meat", reagents = { 5466, 1 }, effects = { "none" }, items = { 5483 } }, -- Scorpid Surprise
+    [2795] = { item = 2888, made = { 1, 1 }, learn = 25, yellow = 60, grey = 100, chapter = "meat", reagents = { 2886, 1, 2894, 1 }, effects = { "stamina", "spirit" }, items = { 2889 } }, -- Beer Basted Boar Ribs
+    [21144] = { item = 17198, made = { 1, 1 }, learn = 35, yellow = 75, grey = 115, chapter = "drink", reagents = { 6889, 1, 1179, 1, 17196, 1, 17194, 1 }, effects = { "stamina", "spirit" }, items = { 17201 } }, -- Egg Nog
+    [6414] = { item = 5474, made = { 2, 2 }, learn = 35, yellow = 75, grey = 115, chapter = "meat", reagents = { 5467, 1, 2678, 1 }, effects = { "stamina", "spirit" }, items = { 5484 } }, -- Roasted Kodo Meat
+    [8607] = { item = 6890, made = { 1, 1 }, learn = 40, yellow = 80, grey = 120, chapter = "meat", reagents = { 3173, 1 }, effects = { "none" }, items = { 6892 } }, -- Smoked Bear Meat
+    [6499] = { item = 5525, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 5503, 1, 159, 1 }, effects = { "stamina", "spirit" }, trainer = true }, -- Boiled Clams
+    [2541] = { item = 2684, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "meat", reagents = { 2673, 1 }, effects = { "stamina", "spirit" }, trainer = true }, -- Coyote Steak
+    [6415] = { item = 5476, made = { 2, 2 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 5468, 1, 2678, 1 }, effects = { "stamina", "spirit" }, items = { 5485 } }, -- Fillet of Frenzy
+    [2542] = { item = 724, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "bake", reagents = { 723, 1, 2678, 1 }, effects = { "stamina", "spirit" }, items = { 2697 } }, -- Goretusk Liver Pie
+    [7754] = { item = 6316, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 6317, 1, 2678, 1 }, effects = { "none" }, items = { 6329 } }, -- Loch Frenzy Delight
+    [7753] = { item = 4592, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 6289, 1 }, effects = { "none" }, items = { 6328 } }, -- Longjaw Mud Snapper
+    [7827] = { item = 5095, made = { 1, 1 }, learn = 50, yellow = 90, grey = 130, chapter = "fish", reagents = { 6361, 1 }, effects = { "none" }, items = { 6368 } }, -- Rainbow Fin Albacore
+    [6416] = { item = 5477, made = { 2, 2 }, learn = 50, yellow = 90, grey = 130, chapter = "soup", reagents = { 5469, 1, 4536, 1 }, effects = { "stamina", "spirit" }, items = { 5486 } }, -- Strider Stew
+    [3371] = { item = 3220, made = { 2, 2 }, learn = 60, yellow = 100, grey = 140, chapter = "meat", reagents = { 3173, 1, 3172, 1, 3174, 1 }, effects = { "stamina", "spirit" }, items = { 3679 } }, -- Blood Sausage
+    [9513] = { item = 7676, made = { 1, 1 }, learn = 60, yellow = 100, grey = 140, chapter = "drink", reagents = { 2452, 1, 159, 1 }, effects = { "none" }, items = { 18160 } }, -- Thistle Tea
+    [2544] = { item = 2683, made = { 1, 1 }, learn = 75, yellow = 115, grey = 155, chapter = "fish", reagents = { 2674, 1, 2678, 1 }, effects = { "stamina", "spirit" }, trainer = true }, -- Crab Cake
+    [2543] = { item = 733, made = { 1, 1 }, learn = 75, yellow = 115, grey = 155, chapter = "soup", reagents = { 729, 1, 730, 1, 731, 1 }, effects = { "none" }, items = { 728 } }, -- Westfall Stew
+    [3370] = { item = 3662, made = { 1, 1 }, learn = 80, yellow = 120, grey = 160, chapter = "meat", reagents = { 2924, 1, 2678, 1 }, effects = { "stamina", "spirit" }, items = { 3678 } }, -- Crocolisk Steak
+    [2546] = { item = 2687, made = { 1, 1 }, learn = 80, yellow = 120, grey = 160, chapter = "meat", reagents = { 2677, 1, 2678, 1 }, effects = { "stamina", "spirit" }, trainer = true }, -- Dry Pork Ribs
+    [25704] = { item = 21072, made = { 1, 1 }, learn = 80, yellow = 120, grey = 160, chapter = "fish", reagents = { 21071, 1, 2678, 1 }, effects = { "mana" }, items = { 21099 } }, -- Smoked Sagefish
+    [2545] = { item = 2682, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 2675, 1, 2678, 1 }, effects = { "none" }, items = { 2698 } }, -- Cooked Crab Claw
+    [8238] = { item = 6657, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 6522, 1, 2678, 1 }, effects = { "none" }, items = { 6661 } }, -- Savory Deviate Delight
+    [6501] = { item = 5526, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5503, 1, 1179, 1, 2678, 1 }, effects = { "none" }, items = { 5528 } }, -- Clam Chowder
+    [6417] = { item = 5478, made = { 2, 2 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5051, 1 }, effects = { "none" }, items = { 5487 } }, -- Dig Rat Stew
+    [3372] = { item = 3663, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 1468, 2, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 3680 } }, -- Murloc Fin Soup
+    [2547] = { item = 1082, made = { 1, 1 }, learn = 100, yellow = 135, grey = 175, chapter = "soup", reagents = { 1081, 1, 1080, 1 }, effects = { "stamina", "spirit" }, items = { 2699 } }, -- Redridge Goulash
+    [7755] = { item = 4593, made = { 1, 1 }, learn = 100, yellow = 140, grey = 180, chapter = "fish", reagents = { 6308, 1 }, effects = { "none" }, items = { 6330 } }, -- Bristle Whisker Catfish
+    [6418] = { item = 5479, made = { 2, 2 }, learn = 100, yellow = 140, grey = 180, chapter = "meat", reagents = { 5470, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 5488 } }, -- Crispy Lizard Tail
+    [2549] = { item = 1017, made = { 3, 3 }, learn = 100, yellow = 140, grey = 180, chapter = "meat", reagents = { 1015, 2, 2665, 1 }, effects = { "stamina", "spirit" }, items = { 2701 } }, -- Seasoned Wolf Kabob
+    [2548] = { item = 2685, made = { 1, 1 }, learn = 110, yellow = 130, grey = 170, chapter = "meat", reagents = { 2677, 2, 2692, 1 }, effects = { "none" }, items = { 2700 } }, -- Succulent Pork Ribs
+    [3397] = { item = 3726, made = { 1, 1 }, learn = 110, yellow = 150, grey = 190, chapter = "meat", reagents = { 3730, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 3734 } }, -- Big Bear Steak
+    [3377] = { item = 3666, made = { 1, 1 }, learn = 110, yellow = 150, grey = 190, chapter = "bake", reagents = { 2251, 2, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 3683 } }, -- Gooey Spider Cake
+    [6419] = { item = 5480, made = { 2, 2 }, learn = 110, yellow = 150, grey = 190, chapter = "meat", reagents = { 5471, 1, 2678, 4 }, effects = { "stamina", "spirit" }, items = { 5489 } }, -- Lean Venison
+    [3373] = { item = 3664, made = { 1, 1 }, learn = 120, yellow = 160, grey = 200, chapter = "soup", reagents = { 3667, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 3681 } }, -- Crocolisk Gumbo
+    [6500] = { item = 5527, made = { 1, 1 }, learn = 125, yellow = 165, grey = 205, chapter = "fish", reagents = { 5504, 1, 2692, 1 }, effects = { "stamina", "spirit" }, trainer = true }, -- Goblin Deviled Clams
+    [15853] = { item = 12209, made = { 1, 1 }, learn = 125, yellow = 165, grey = 205, chapter = "meat", reagents = { 1015, 1, 2678, 1 }, effects = { "stamina", "spirit" }, items = { 12227 } }, -- Lean Wolf Steak
+    [3398] = { item = 3727, made = { 1, 1 }, learn = 125, yellow = 175, grey = 215, chapter = "meat", reagents = { 3731, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 3735 } }, -- Hot Lion Chops
+    [3376] = { item = 3665, made = { 1, 1 }, learn = 130, yellow = 170, grey = 210, chapter = "bake", reagents = { 3685, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 3682 } }, -- Curiously Tasty Omelet
+    [24418] = { item = 20074, made = { 1, 1 }, learn = 150, yellow = 160, grey = 200, chapter = "soup", reagents = { 3667, 2, 3713, 1 }, effects = { "stamina", "spirit" }, items = { 20075 } }, -- Heavy Crocolisk Stew
+    [3399] = { item = 3728, made = { 1, 1 }, learn = 150, yellow = 190, grey = 230, chapter = "meat", reagents = { 3731, 2, 3713, 1 }, effects = { "stamina", "spirit" }, items = { 3736 } }, -- Tasty Lion Steak
+    [7828] = { item = 4594, made = { 1, 1 }, learn = 175, yellow = 190, grey = 230, chapter = "fish", reagents = { 6362, 1 }, effects = { "none" }, items = { 6369 } }, -- Rockscale Cod
+    [4094] = { item = 4457, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 3404, 1, 2692, 1 }, effects = { "stamina", "spirit" }, trainer = true, items = { 4609 } }, -- Barbecued Buzzard Wing
+    [15863] = { item = 12213, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 12037, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 12232 } }, -- Carrion Surprise
+    [7213] = { item = 6038, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "fish", reagents = { 4655, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 6039 } }, -- Giant Clam Scorcho
+    [13028] = { item = 10841, made = { 4, 4 }, learn = 175, yellow = 215, grey = 255, chapter = "drink", reagents = { 3821, 1, 159, 1 }, effects = { "none" }, trainer = true }, -- Goldthorn Tea
+    [15856] = { item = 13851, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 12203, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 12229 } }, -- Hot Wolf Ribs
+    [15861] = { item = 12212, made = { 2, 2 }, learn = 175, yellow = 215, grey = 255, chapter = "soup", reagents = { 12202, 1, 159, 1, 4536, 2 }, effects = { "stamina", "spirit" }, items = { 12231 } }, -- Jungle Stew
+    [20916] = { item = 8364, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "fish", reagents = { 8365, 1 }, effects = { "none" }, items = { 17062 } }, -- Mithril Headed Trout
+    [15865] = { item = 12214, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "soup", reagents = { 12037, 1, 2596, 1 }, effects = { "stamina", "spirit" }, items = { 12233 } }, -- Mystery Stew
+    [15855] = { item = 12210, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "meat", reagents = { 12184, 1, 2692, 1 }, effects = { "stamina", "spirit" }, items = { 12228 } }, -- Roast Raptor
+    [25954] = { item = 21217, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "fish", reagents = { 21153, 1, 2692, 1 }, effects = { "mana" }, items = { 21219 } }, -- Sagefish Delight
+    [3400] = { item = 3729, made = { 1, 1 }, learn = 175, yellow = 215, grey = 255, chapter = "soup", reagents = { 3712, 1, 3713, 1 }, effects = { "stamina", "spirit" }, items = { 3737 } }, -- Soothing Turtle Bisque
+    [15906] = { item = 12217, made = { 1, 1 }, learn = 200, yellow = 240, grey = 280, chapter = "soup", reagents = { 12037, 1, 4402, 1, 2692, 1 }, effects = { "other" }, items = { 12239 } }, -- Dragonbreath Chili
+    [15910] = { item = 12215, made = { 2, 2 }, learn = 200, yellow = 240, grey = 280, chapter = "soup", reagents = { 12204, 2, 3713, 1, 159, 1 }, effects = { "stamina", "spirit" }, items = { 12240 } }, -- Heavy Kodo Stew
+    [21175] = { item = 17222, made = { 1, 1 }, learn = 200, yellow = 240, grey = 280, chapter = "meat", reagents = { 12205, 2 }, effects = { "stamina", "spirit" }, trainer = true }, -- Spider Sausage
+    [18239] = { item = 13927, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 13754, 1, 3713, 1 }, effects = { "stamina" }, items = { 13940 } }, -- Cooked Glossy Mightfish
+    [18241] = { item = 13930, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 13758, 1 }, effects = { "none" }, items = { 13941 } }, -- Filet of Redgill
+    [15933] = { item = 12218, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "bake", reagents = { 12207, 1, 3713, 2 }, effects = { "stamina", "spirit" }, items = { 16110 } }, -- Monster Omelet
+    [15915] = { item = 12216, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 12206, 1, 2692, 2 }, effects = { "stamina", "spirit" }, items = { 16111 } }, -- Spiced Chili Crab
+    [18238] = { item = 6887, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "fish", reagents = { 4603, 1 }, effects = { "none" }, items = { 13939 } }, -- Spotted Yellowtail
+    [22480] = { item = 18045, made = { 1, 1 }, learn = 225, yellow = 265, grey = 305, chapter = "meat", reagents = { 12208, 1, 3713, 1 }, effects = { "stamina", "spirit" }, items = { 18046 } }, -- Tender Wolf Steak
+    [20626] = { item = 16766, made = { 2, 2 }, learn = 225, yellow = 265, grey = 305, chapter = "soup", reagents = { 7974, 2, 2692, 1, 1179, 1 }, effects = { "none" }, items = { 16767 } }, -- Undermine Clam Chowder
+    [18240] = { item = 13928, made = { 1, 1 }, learn = 240, yellow = 280, grey = 320, chapter = "fish", reagents = { 13755, 1, 3713, 1 }, effects = { "agility" }, items = { 13942 } }, -- Grilled Squid
+    [18242] = { item = 13929, made = { 1, 1 }, learn = 240, yellow = 280, grey = 320, chapter = "fish", reagents = { 13756, 1, 2692, 2 }, effects = { "spirit" }, items = { 13943 } }, -- Hot Smoked Bass
+    [18243] = { item = 13931, made = { 1, 1 }, learn = 250, yellow = 290, grey = 330, chapter = "soup", reagents = { 13759, 1, 159, 1 }, effects = { "mana" }, items = { 13945 } }, -- Nightfin Soup
+    [18244] = { item = 13932, made = { 1, 1 }, learn = 250, yellow = 290, grey = 330, chapter = "fish", reagents = { 13760, 1 }, effects = { "health" }, items = { 13946 } }, -- Poached Sunscale Salmon
+    [18247] = { item = 13935, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "fish", reagents = { 13889, 1, 3713, 1 }, effects = { "none" }, items = { 13949 } }, -- Baked Salmon
+    [18245] = { item = 13933, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "soup", reagents = { 13888, 1, 159, 1 }, effects = { "none" }, items = { 13947 } }, -- Lobster Stew
+    [18246] = { item = 13934, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "fish", reagents = { 13893, 1, 2692, 1, 3713, 1 }, effects = { "stamina" }, items = { 13948 } }, -- Mightfish Steak
+    [22761] = { item = 18254, made = { 1, 1 }, learn = 275, yellow = 315, grey = 355, chapter = "bake", reagents = { 18255, 1, 3713, 1 }, effects = { "intellect" }, items = { 18267 } }, -- Runn Tum Tuber Surprise
+    [24801] = { item = 20452, made = { 1, 1 }, learn = 285, yellow = 325, grey = 365, chapter = "bake", reagents = { 20424, 1, 3713, 1 }, effects = { "strength" }, quests = { 8313 } }, -- Smoked Desert Dumplings
+    [25659] = { item = 21023, made = { 5, 5 }, learn = 300, yellow = 325, grey = 365, chapter = "meat", reagents = { 2692, 1, 9061, 1, 8150, 1, 21024, 1 }, effects = { "stamina" }, items = { 21025 } }, -- Dirge's Kickin' Chimaerok Chops
   },
   recipeItems = {
     [728] = { spell = 2543, sold = { 340 }, quests = { 38 } },

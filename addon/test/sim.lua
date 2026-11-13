@@ -546,6 +546,102 @@ check(
     and ingredient.point[2] ~= made.point[2],
   "a dish's page: its ingredient and what it makes, each in its own row"
 )
+-- what a dish does: every dish has its effects, from the fixed set; the select
+-- under the search lists the effects the known dishes give, with how many, and
+-- a choice keeps only those dishes
+local FIXED = {}
+for _, e in ipairs({
+  "attack",
+  "spell",
+  "healing",
+  "strength",
+  "agility",
+  "stamina",
+  "intellect",
+  "spirit",
+  "mana",
+  "health",
+  "fishing",
+  "other",
+  "none",
+}) do
+  FIXED[e] = true
+end
+local effectsOk = true
+for spell, d in pairs(D.recipes) do
+  effectsOk = effectsOk and d.effects and #d.effects > 0
+  for _, e in ipairs(d.effects or {}) do
+    effectsOk = effectsOk and FIXED[e]
+  end
+  if d.effects and d.effects[1] == "none" then effectsOk = effectsOk and #d.effects == 1 end
+end
+check(effectsOk, "every dish has effects from the fixed set, none alone")
+check(D.recipes[2538].effects[1] == "none", "Charred Wolf Meat: no bonus")
+-- (the two games differ: Beer Basted Boar Ribs, Stamina and Spirit in Classic Era,
+-- Strength in Forever; Brilliant Smallfish, nothing in Classic Era, attack power in Forever)
+local ribs, fish = D.recipes[2795].effects, D.recipes[7751].effects
+if G.FOREVER then
+  check(
+    #ribs == 1 and ribs[1] == "strength" and fish[1] == "attack",
+    "Forever: ribs give Strength, the smallfish attack power"
+  )
+else
+  check(
+    #ribs == 2 and ribs[1] == "stamina" and ribs[2] == "spirit" and fish[1] == "none",
+    "Classic Era: ribs give Stamina and Spirit, the smallfish nothing"
+  )
+end
+local choices = ns.effectChoices()
+check(
+  choices[1].value == "" and choices[1].text == L["Every effect"] and #choices >= 3,
+  "the select: every effect first, then the effects the known dishes give"
+)
+for i = 2, #choices do
+  local want = choices[i].value
+  local n = 0
+  for _, spell in ipairs(D.order) do
+    if ns.knows(spell) and ns.gives(spell, want) then n = n + 1 end
+  end
+  check(
+    n > 0 and choices[i].text:find("(" .. n .. ")", 1, true),
+    "an effect's count is the known dishes that give it: " .. want
+  )
+end
+check(
+  ns.gives(2538, "none") and not ns.gives(2538, "attack") and ns.gives(2538, ""),
+  "a dish gives what its data says, every effect with no choice"
+)
+-- a choice keeps only the dishes that give it, each chapter's, none the rest
+local function shownDishes()
+  local n, note = 0, false
+  for _, r in ipairs(ns.listRows) do
+    if r:IsShown() and r.kind == "dish" then n = n + 1 end
+    if r:IsShown() and r.kind == "section" and r.text:GetText() == L["Nothing found"] then note = true end
+  end
+  return n, note
+end
+for i = 2, #choices do
+  ns.kitBook:setFilter(1, choices[i].value)
+  ns.refresh()
+  local want = 0
+  for _, spell in ipairs(D.order) do
+    if ns.knows(spell) and ns.gives(spell, choices[i].value) then want = want + 1 end
+  end
+  check(shownDishes() == want, "the list holds the dishes known that give " .. choices[i].value)
+end
+ns.kitBook:setFilter(1, "fishing")
+ns.refresh()
+for _, spell in ipairs(D.order) do
+  if ns.knows(spell) and ns.gives(spell, "fishing") then s.noFishing = true end
+end
+if not s.noFishing then
+  local n, note = shownDishes()
+  check(n == 0 and note, "an effect no dish known gives: Nothing found")
+end
+check(ns.kitBook.frame.filter:IsShown(), "the select shows on the Recipes tab")
+ns.kitBook:setFilter(1, nil)
+ns.refresh()
+
 SlashCmdList.MEALBOOK("road")
 check(MealbookFrame.tab == 2, "/mealbook road opens the road")
 -- every leg's page, a stop's and a recipe to learn's among them, on each side

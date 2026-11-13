@@ -48,6 +48,20 @@ type Game = "classic" | "forever";
 export const CHAPTERS = ["fish", "soup", "meat", "bake", "drink", "feast", "fire"] as const;
 type Chapter = (typeof CHAPTERS)[number];
 
+// What a dish does, a small fixed set: the book's choice under its search. A
+// dish gives each one its Well Fed buff holds (several: a Sunrise Omelette),
+// `other` a buff none of them names, `none` no buff at all (it only restores).
+export const EFFECTS = ["attack", "spell", "healing", "strength", "agility", "stamina", "intellect", "spirit", "mana", "health", "fishing", "other", "none"] as const;
+export type Effect = (typeof EFFECTS)[number];
+// The stats an aura 29 (modifies a stat) names, by its misc value.
+const STATS: Effect[] = ["strength", "agility", "stamina", "intellect", "spirit"];
+// Auras that are the eating itself or a trigger, never a bonus: the health
+// and mana it restores (84, 85), the periodic triggers that start the buff
+// (23, 227), a periodic dummy (226), and what is no bonus to a player: a
+// poison's periodic damage (3, Scorpid Surprise) and a transformation (56,
+// the Savory Deviate Delights). The proc a chili gives (42) is a bonus: other.
+const EATING_AURAS = new Set([3, 23, 56, 84, 85, 226, 227]);
+
 export type Dish = {
   spell: number;
   name: string; // (English, for the script's own messages and the order only: the addon names it by id)
@@ -58,6 +72,7 @@ export type Dish = {
   grey: number;
   chapter: Chapter;
   reagents: [number, number][];
+  effects: Effect[]; // (what eating it gives, in EFFECTS' order)
   from: { skill?: true; trainer?: true; items: number[]; quests: number[] };
   unknown?: true;
 };
@@ -122,6 +137,41 @@ const chapters = (): Record<string, Chapter> => JSON.parse(readFileSync(join(ROO
 export function cookbook(game: Game) {
   const db = openDb(game);
   const all = <T>(sql: string, ...p: (number | string)[]) => db.query(sql).all(...p) as T[];
+  // What eating an item gives: its use spell and every spell that one
+  // triggers (the eating, then the Well Fed buff, which Classic Era's client
+  // hangs under a periodic trigger and Forever's under another), each aura
+  // effect one of the categories, the restoring itself left out.
+  const effectsOf = (item: number, chapter: Chapter): Effect[] => {
+    const found = new Set<Effect>();
+    const seen = new Set<number>();
+    const visit = (spell: number, depth: number) => {
+      if (seen.has(spell) || depth > 4) return;
+      seen.add(spell);
+      for (const e of all<{ aura: number; misc: number; trigger: number }>(
+        "SELECT EffectAura aura, EffectMiscValue_0 misc, EffectTriggerSpell trigger FROM client_SpellEffect WHERE SpellID = ? AND Effect = 6",
+        spell,
+      )) {
+        if (e.trigger) visit(e.trigger, depth + 1);
+        if (!e.aura || EATING_AURAS.has(e.aura)) continue;
+        if (e.aura === 29 && STATS[e.misc]) found.add(STATS[e.misc]);
+        else if (e.aura === 99 || e.aura === 124) found.add("attack");
+        else if (e.aura === 13 && e.misc === 126) found.add("spell");
+        else if (e.aura === 135 && e.misc === 126) found.add("healing");
+        else if (e.aura === 24) found.add("mana");
+        else if (e.aura === 8) found.add("health");
+        else if (e.aura === 30 && e.misc === 356) found.add("fishing");
+        else found.add("other");
+      }
+      // (a trigger kept on an effect that isn't an aura: the spell it names)
+      for (const e of all<{ trigger: number }>("SELECT EffectTriggerSpell trigger FROM client_SpellEffect WHERE SpellID = ? AND Effect != 6 AND EffectTriggerSpell > 0", spell)) visit(e.trigger, depth + 1);
+    };
+    for (const u of all<{ spell: number }>("SELECT spell_id spell FROM item_spell WHERE item_id = ? AND trigger = 0", item)) visit(u.spell, 0);
+    const out = EFFECTS.filter((x) => found.has(x));
+    // (a feast or a fire lays an object down whose buff the data doesn't
+    // reach from the dish: other, never "no bonus")
+    if (!out.length && (chapter === "feast" || chapter === "fire")) return ["other"];
+    return out.length ? out : ["none"];
+  };
   // The capitals (the game's own: a top-level area flagged a capital, its side
   // from the area's faction mask): someone friendly to all who stands in one
   // serves its side (the Winter Veil's vendors in Orgrimmar or Stormwind).
@@ -275,6 +325,7 @@ export function cookbook(game: Game) {
       grey: r.grey,
       chapter,
       reagents,
+      effects: effectsOf(r.item, chapter),
       from,
       ...(!known && { unknown: true as const }),
     });
@@ -808,6 +859,7 @@ export function lua(game: Game): string {
       `grey = ${d.grey}`,
       `chapter = "${d.chapter}"`,
       `reagents = ${list(d.reagents.flat())}`,
+      `effects = { ${d.effects.map((e) => `"${e}"`).join(", ")} }`,
     ];
     if (f.skill) parts.push("skill = true");
     if (f.trainer) parts.push("trainer = true");

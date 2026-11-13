@@ -21,8 +21,52 @@ local function known()
   return out
 end
 
+-- What a dish does, the choice under the search (the data's `effects`, by
+-- scripts/recipes.ts): the order the select lists them in.
+local EFFECTS = {
+  { "attack", L["Attack power"] },
+  { "spell", L["Spell damage"] },
+  { "healing", L["Healing power"] },
+  { "strength", L["Strength"] },
+  { "agility", L["Agility"] },
+  { "stamina", L["Stamina"] },
+  { "intellect", L["Intellect"] },
+  { "spirit", L["Spirit"] },
+  { "mana", L["Mana regeneration"] },
+  { "health", L["Health regeneration"] },
+  { "fishing", L["Fishing skill"] },
+  { "other", L["Other"] },
+  { "none", L["No bonus"] },
+}
+local EVERY = ""
+-- Does the dish give the effect? (every one, with no choice made)
+local function gives(spell, effect)
+  if effect == EVERY or effect == nil then return true end
+  for _, e in ipairs(D.recipes[spell].effects or {}) do
+    if e == effect then return true end
+  end
+  return false
+end
+-- The select's choices: every effect, then those a dish known has, with how
+-- many (the Codex's kinds, the same way).
+local function effects()
+  local out = { { value = EVERY, text = L["Every effect"] } }
+  local have = known()
+  for _, e in ipairs(EFFECTS) do
+    local n = 0
+    for _, spell in ipairs(have) do
+      if gives(spell, e[1]) then n = n + 1 end
+    end
+    if n > 0 then table.insert(out, { value = e[1], text = ("%s (%d)"):format(e[2], n) }) end
+  end
+  return out
+end
+
+ns.gives, ns.effectChoices, ns.listRows = gives, effects, rows -- (for the tests)
+
 local function refreshList()
   local q, char = ui.query(), ns.book()
+  local only = ns.filterOf(ns.TAB.recipes)
   local skill = ns.skill()
   list:begin()
   if q == "" then
@@ -38,7 +82,7 @@ local function refreshList()
     local first = true
     for _, spell in ipairs(known()) do
       local name = ns.dishName(spell)
-      if D.recipes[spell].chapter == chapter[1] and ns.kit.finds(name, q) then
+      if D.recipes[spell].chapter == chapter[1] and gives(spell, only) and ns.kit.finds(name, q) then
         if first then
           list:gap(6)
           list:add("section", chapter[2])
@@ -56,7 +100,7 @@ local function refreshList()
       end
     end
   end
-  if not any and q ~= "" then list:add("section", L["Nothing found"]) end
+  if not any and (q ~= "" or only ~= EVERY) then list:add("section", L["Nothing found"]) end
   list:finish()
 end
 
@@ -215,7 +259,7 @@ end
 ns.addTab(ns.TAB.recipes, {
   build = function(b)
     book = b
-    list = ui.newList(book.left, style, rows, false)
+    list = ui.newList(book.left, style, rows, true)
     page = ui.newPage(book.sheet, "MealbookRecipePage")
   end,
   show = function(n)
@@ -224,6 +268,7 @@ ns.addTab(ns.TAB.recipes, {
     page:SetShown(here)
   end,
   refresh = refresh,
+  filter = { default = EVERY, options = effects },
 })
 
 function ns.openDish(spell)

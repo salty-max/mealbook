@@ -49,10 +49,12 @@ local B = K.book({
   first = TAB.recipes,
   search = "MealbookSearch",
   settle = 0.3,
+  filter = true, -- (the Recipes tab's effect)
 })
 ns.kitBook = B -- (for the tests)
 function ns.addTab(n, tab) B:add(n, tab) end
 function ns.refresh() B:refresh() end
+function ns.filterOf(n) return B:filterOf(n) end
 function ns.showTab(n) B:show(n) end
 function ns.toggle() B:toggle() end
 function ns.openTab(n) B:open(n) end

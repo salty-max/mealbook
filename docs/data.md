@@ -6,6 +6,17 @@ CLAUDE.md on 20 October 2026). The voices the pages follow:
 
 ## The recipes (`scripts/recipes.ts`)
 
+- `effects` of a dish (what eating it gives, for the Recipes tab's select):
+  the item's use spell and every spell it triggers (`item_spell`, then
+  `client_SpellEffect`'s trigger spells: the eating, then the Well Fed buff,
+  Classic Era's client under a periodic trigger, Forever's under another),
+  each aura effect one category: a stat (aura 29, misc 0 to 4), attack power
+  (99, 124), spell damage (13) and healing (135) of all schools, mana (24) and
+  health (8) regenerated, the Fishing skill (30, 356); `other` any other buff
+  (Herbalism, critical strike, armour, speed in a zone), `none` no buff (it
+  only restores). The restoring itself (84, 85, the triggers) is left out. A
+  dish may give several. The words are the addon's own (`L`), not the game's
+  aura text, which wow-data holds in English only.
 - `scripts/recipes.ts`: the recipes from wow-data's databases, each game's
   own (`--check` in `bun run check`): every dish of the cooking skill line
   (185, a spell that creates an item), what it makes and how many (Classic

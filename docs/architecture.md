@@ -105,7 +105,7 @@ German and Spanish (deDE, esES, esMX) are held back from players since 1 Novembe
   and the game found); `RecipesBook.lua` (the dishes known by
   chapter, each in its colour now; a dish's page: its figures, ingredients
   and what it makes as the game's items, its colours, how it was learned;
-  the chef's page above the facts); `RoadBook.lua` (the
+  the chef's page above the facts; the select under the search, `effects`: every effect or the one a dish gives, with how many dishes known give it, the kit's `filter` as the Codex's kinds); `RoadBook.lua` (the
   road's legs, the road as cards, where it stops; a leg's page: where to
   learn its recipe, its casts (about), what the bags can cook and still
   lack, its shopping list against the bags, where to get each ingredient

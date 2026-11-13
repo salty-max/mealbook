@@ -42,7 +42,7 @@ ns.data = {
   },
   recipes = {
     [1255241] = { item = 252683, made = { 1, 1 }, learn = 1, yellow = 0, grey = 0, chapter = "soup", reagents = { 252948, 1, 5471, 1, 12207, 1 }, effects = { "stamina", "other" }, items = { 252949 }, unknown = true }, -- Cleansing Stew
-    [1229737] = { item = 279981, made = { 1, 1 }, learn = 1, yellow = 1, grey = 5, chapter = "fire", reagents = { 4470, 1 }, effects = { "other" }, skill = true }, -- Basic Campfire
+    [1229737] = { item = 279981, made = { 1, 1 }, learn = 1, yellow = 1, grey = 5, chapter = "fire", reagents = { 4470, 1 }, effects = { "none" }, skill = true }, -- Basic Campfire
     [7751] = { item = 6290, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "fish", reagents = { 6291, 1 }, effects = { "attack" }, items = { 6325 } }, -- Brilliant Smallfish
     [2538] = { item = 2679, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 2672, 1 }, effects = { "none" }, skill = true }, -- Charred Wolf Meat
     [15935] = { item = 12224, made = { 1, 1 }, learn = 1, yellow = 45, grey = 85, chapter = "meat", reagents = { 12223, 1, 2678, 1 }, effects = { "intellect" }, items = { 12226 } }, -- Crispy Bat Wing
@@ -84,7 +84,7 @@ ns.data = {
     [2545] = { item = 2682, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 2675, 1, 2678, 1 }, effects = { "intellect" }, items = { 2698 } }, -- Cooked Crab Claw
     [8238] = { item = 6657, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 6522, 1, 2678, 1 }, effects = { "none" }, items = { 6661 } }, -- Savory Deviate Delight
     [1252566] = { item = 251525, made = { 1, 1 }, learn = 85, yellow = 125, grey = 165, chapter = "fish", reagents = { 251524, 1, 2678, 1 }, effects = { "none" }, items = { 251526 } }, -- Savory Whimsyfin Delight
-    [1283400] = { item = 279961, made = { 1, 1 }, learn = 90, yellow = 95, grey = 95, chapter = "fire", reagents = { 11291, 1 }, effects = { "other" }, items = { 273087 } }, -- Journeyman Campfire
+    [1283400] = { item = 279961, made = { 1, 1 }, learn = 90, yellow = 95, grey = 95, chapter = "fire", reagents = { 11291, 1 }, effects = { "none" }, items = { 273087 } }, -- Journeyman Campfire
     [6501] = { item = 5526, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5503, 1, 1179, 1, 2678, 1 }, effects = { "none" }, items = { 5528 } }, -- Clam Chowder
     [6417] = { item = 5478, made = { 2, 2 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 5051, 1 }, effects = { "none" }, items = { 5487 } }, -- Dig Rat Stew
     [3372] = { item = 3663, made = { 1, 1 }, learn = 90, yellow = 130, grey = 170, chapter = "soup", reagents = { 1468, 2, 2692, 1 }, effects = { "stamina" }, items = { 3680 } }, -- Murloc Fin Soup
@@ -126,7 +126,7 @@ ns.data = {
     [1249960] = { item = 249868, made = { 1, 1 }, learn = 180, yellow = 195, grey = 235, chapter = "drink", reagents = { 1708, 1, 3818, 2 }, effects = { "healing" }, items = { 249882 }, unknown = true }, -- Triage Tea
     [1250150] = { item = 250073, made = { 1, 1 }, learn = 180, yellow = 280, grey = 310, chapter = "meat", reagents = { 12184, 2, 2692, 3 }, effects = { "intellect" }, items = { 250181 }, unknown = true }, -- Raging Raptor Ribs
     [1295834] = { item = 274976, made = { 1, 1 }, learn = 185, yellow = 200, grey = 230, chapter = "meat", reagents = { 769, 2, 2678, 1 }, effects = { "strength" }, items = { 274977 } }, -- Plain Ol' Paletusk
-    [1291341] = { item = 279974, made = { 1, 1 }, learn = 200, yellow = 205, grey = 205, chapter = "fire", reagents = { 272941, 1 }, effects = { "other" }, items = { 273101 }, unknown = true }, -- Expert Campfire
+    [1291341] = { item = 279974, made = { 1, 1 }, learn = 200, yellow = 205, grey = 205, chapter = "fire", reagents = { 272941, 1 }, effects = { "none" }, items = { 273101 }, unknown = true }, -- Expert Campfire
     [1249967] = { item = 249875, made = { 1, 1 }, learn = 200, yellow = 215, grey = 225, chapter = "drink", reagents = { 1645, 1, 3713, 3, 4402, 1 }, effects = { "spirit" }, items = { 249889 } }, -- Spicy Smoothie
     [1295805] = { item = 274971, made = { 1, 1 }, learn = 200, yellow = 220, grey = 240, chapter = "soup", reagents = { 730, 2, 12206, 1, 2692, 1 }, effects = { "spell" }, items = { 274972 }, unknown = true }, -- Briny Seafood Stew
     [1249961] = { item = 249869, made = { 1, 1 }, learn = 200, yellow = 220, grey = 250, chapter = "drink", reagents = { 1645, 1, 8838, 2 }, effects = { "healing" }, items = { 249883 }, unknown = true }, -- Sunny Tea
@@ -169,7 +169,7 @@ ns.data = {
     [1225763] = { item = 238642, made = { 1, 1 }, learn = 280, yellow = 290, grey = 310, chapter = "feast", reagents = { 13888, 12, 3712, 4, 3404, 3, 239017, 1 }, effects = { "other" }, items = { 250399 }, unknown = true }, -- Grand Lobster Banquet
     [1225762] = { item = 238641, made = { 1, 1 }, learn = 280, yellow = 290, grey = 310, chapter = "feast", reagents = { 4603, 12, 12184, 4, 6362, 3, 239017, 1 }, effects = { "other" }, items = { 250398 }, unknown = true }, -- Specklefin Feast
     [24801] = { item = 20452, made = { 1, 1 }, learn = 285, yellow = 325, grey = 365, chapter = "bake", reagents = { 20424, 1, 3713, 1 }, effects = { "strength" }, quests = { 8313 } }, -- Smoked Desert Dumplings
-    [1263067] = { item = 279982, made = { 1, 1 }, learn = 300, yellow = 300, grey = 300, chapter = "fire", reagents = { 10284, 10, 159, 5, 3713, 4 }, effects = { "other" }, items = { 273115 }, unknown = true }, -- Iron Oven
+    [1263067] = { item = 279982, made = { 1, 1 }, learn = 300, yellow = 300, grey = 300, chapter = "fire", reagents = { 10284, 10, 159, 5, 3713, 4 }, effects = { "none" }, items = { 273115 }, unknown = true }, -- Iron Oven
     [470359] = { item = 232436, made = { 1, 1 }, learn = 300, yellow = 325, grey = 365, chapter = "soup", reagents = { 13888, 1, 227813, 1 }, effects = { "spell" }, unknown = true }, -- Darkclaw Bisque
     [25659] = { item = 21023, made = { 5, 5 }, learn = 300, yellow = 325, grey = 365, chapter = "meat", reagents = { 2692, 1, 9061, 1, 8150, 1, 21024, 1 }, effects = { "stamina" }, items = { 21025 } }, -- Dirge's Kickin' Chimaerok Chops
     [470370] = { item = 232438, made = { 1, 1 }, learn = 300, yellow = 325, grey = 365, chapter = "fish", reagents = { 13758, 1 }, effects = { "healing" }, unknown = true }, -- Smoked Redgill

@@ -167,9 +167,9 @@ export function cookbook(game: Game) {
     };
     for (const u of all<{ spell: number }>("SELECT spell_id spell FROM item_spell WHERE item_id = ? AND trigger = 0", item)) visit(u.spell, 0);
     const out = EFFECTS.filter((x) => found.has(x));
-    // (a feast or a fire lays an object down whose buff the data doesn't
-    // reach from the dish: other, never "no bonus")
-    if (!out.length && (chapter === "feast" || chapter === "fire")) return ["other"];
+    // (a feast lays a table down whose buff the data doesn't reach from the
+    // dish: other, never "no bonus"; a fire has no buff to find: none)
+    if (!out.length && chapter === "feast") return ["other"];
     return out.length ? out : ["none"];
   };
   // The capitals (the game's own: a top-level area flagged a capital, its side

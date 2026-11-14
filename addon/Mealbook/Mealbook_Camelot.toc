@@ -4,7 +4,7 @@
 ## Notes-frFR: Un livre de cuisine de chef qui se remplit à mesure que vous apprenez à cuisiner, et la route jusqu'à 300 : quoi cuisiner ensuite, et combien de fois.
 ## Category: Professions
 ## Author: salty-max
-## Version: 0.2.1
+## Version: 0.3.0
 ## SavedVariablesPerCharacter: MealbookChar
 ## SavedVariables: MealbookSettings
 ## IconTexture: Interface\AddOns\Mealbook\Media\Logo
